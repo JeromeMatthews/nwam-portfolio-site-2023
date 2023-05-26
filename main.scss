@@ -23,7 +23,7 @@ $text: $textBase $text2x;
 $f-style-n: normal;
 
 //NOTE: Font weights for portfolio website. Applicable on all pages and their Viewport Variants.
-$f-weights: 900 400;
+$f-weights: 900 700 400;
 
 
 //NOTE: Font lists for portfolio website. Applicable on all pages and their Viewport Variants.
@@ -44,7 +44,7 @@ font-size: nth($text, 2);
 @mixin bodyCopyMobile-p{
 font-size: nth($text, 1);
 font-family: $font-list-b;
-font-weight:nth($f-weights, 2); 
+font-weight:nth($f-weights, 3); 
 font-style: normal;
 }
 
@@ -56,7 +56,7 @@ font-style: normal;
 	@include heroCopyMobile-p;
 }
 
-.hero--body {
+.hero__copy-body {
     @include bodyCopyMobile-p;
 }
 
