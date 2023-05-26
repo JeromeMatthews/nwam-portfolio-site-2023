@@ -1,0 +1,64 @@
+@import url("/partials/_base.scss");
+
+
+//SECTION: UNIVERSAL VARIABLES, LISTS & MIXINS
+
+
+//NOTE: Font sizes for Navigation - All Home page Viewport Variants.
+$navTextBig: 1.25rem; //20px
+$navTextSmall: 0.62rem; //10px
+
+
+//NOTE: Font sizes for Call To Action Button - All Home page Viewport Variants.
+$CTABTextHomeSmall: 0.93rem; //15px
+$CTABTextHome: 1.87rem; //30px 
+
+//NOTE: Font sizes for body text font Futura PT book - All Home page Viewport Variants.
+$textBase: 1rem; //16px
+$text2x: 2.06rem; //33px
+//Full list:
+$text: $textBase $text2x;
+
+//NOTE: Font styles for portfolio website. Applicable on all pages and their Viewport Variants.
+$f-style-n: normal;
+
+//NOTE: Font weights for portfolio website. Applicable on all pages and their Viewport Variants.
+$f-weights: 900 400;
+
+
+//NOTE: Font lists for portfolio website. Applicable on all pages and their Viewport Variants.
+$font-list-h:  proxima-nova, Arial, Helvetica, sans-serif;
+$font-list-b: futura-pt, Helvetica, Arial, sans-serif;
+
+
+@mixin heroCopyMobile-p {
+font-family: $font-list-h;
+font-weight: nth($f-weights, 1);
+font-style: normal;
+font-size: nth($text, 2);
+
+}
+
+
+
+@mixin bodyCopyMobile-p{
+font-size: nth($text, 1);
+font-family: $font-list-b;
+font-weight:nth($f-weights, 2); 
+font-style: normal;
+}
+
+
+
+.hero {
+
+    // font: $mobile-hero-f;
+	@include heroCopyMobile-p;
+}
+
+.hero--body {
+    @include bodyCopyMobile-p;
+}
+
+//!SECTION UNIVERSAL VARIABLES, LISTS & MIXINS - END 
+

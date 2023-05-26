@@ -1,0 +1,14 @@
+@import url("/partials/_base.scss");
+.hero {
+  font-family: proxima-nova, Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 2.06rem;
+}
+
+.hero--body {
+  font-size: 1rem;
+  font-family: futura-pt, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}/*# sourceMappingURL=main.css.map */
