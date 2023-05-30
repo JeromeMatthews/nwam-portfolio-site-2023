@@ -11,4 +11,48 @@
   font-family: futura-pt, Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+.sitenav-logo-contact-container {
+  margin: 0 10px;
+}
+
+.sitenav-container {
+  position: relative;
+}
+
+.sitenav__logo {
+  width: 94px;
+  height: 53px;
+  position: absolute;
+  top: 0px;
+  left: 26px;
+}
+
+.sitenav__contactNum {
+  position: absolute;
+  display: inline-block;
+  width: 115px;
+  top: 40px;
+  left: 38px;
+  font-family: proxima-nova, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.62rem;
+}
+
+.sitenav__links {
+  display: none;
+}
+
+.sitenav__links--show {
+  display: inline-block;
+}
+
+.sitenav__mobile-nav {
+  position: absolute;
+  left: 303px;
+  top: 17px;
+  width: 20px;
+  height: 20px;
 }/*# sourceMappingURL=main.css.map */

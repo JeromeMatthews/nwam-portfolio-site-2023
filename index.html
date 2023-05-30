@@ -1,70 +1,104 @@
 <!DOCTYPE html5>
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="The portfolio website of nomadwebandmedia.com. It Showcases  web design and web development projects done by Jerome Derryl Matthews.">
-        <meta name="keywords" content="web design, web development, design blog,personal portfolio"> <!-- look into generating keywords from a keyword pattern finder online near to site launch to refine SEO efforts. Use site's content for data mining.-->
-        <meta name="author" content="Jerome Derryl Matthews">
-       
-        <link rel="stylesheet" href="https://use.typekit.net/llu1gif.css">
-         <!-- project font imports from ADOBE fonts. Using the typekit.net CDN 
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="The portfolio website of nomadwebandmedia.com. It Showcases  web design and web development projects done by Jerome Derryl Matthews."
+		/>
+		<meta
+			name="keywords"
+			content="web design, web development, design blog,personal portfolio website, freelancer, web application development"
+		/>
+		<!-- look into generating keywords from a keyword pattern finder online near to site launch to refine SEO efforts. Use site's content for data mining.-->
+		<meta name="author" content="Jerome Derryl Matthews" />
+
+		<link rel="stylesheet" href="https://use.typekit.net/llu1gif.css" />
+		<!-- project font imports from ADOBE fonts. Using the typekit.net CDN 
         for font delivery-->
-        <link rel="stylesheet" href="main.css">
-        <!-- project main Stylesheet file. Complied from the main SCSS-->
+		<link rel="stylesheet" href="main.css" />
+		<!-- project main Stylesheet file. Complied from the main SCSS-->
 
-        <title>home - nomadWebAndMedia</title>
-    </head>
-    <body>
-        <header class="header">
-            <nav class="sitenav">
-                <div class="sitenav__logo">
-                    <img src="/img-mobile-p/Nomad-orange.png" href="#" alt=" nomadWebAndMedia company logo" />
-                    <span class="sitenav__contactNum">(1876)-369-9341</span>
-                </div><!-- end Logo-->
-                <ul class="sitenav__links">
-                    <li href="#">projects</li>
-                    <li href="#">about</li>
-                    <li href="#">contact</li>
-                    <li href="#">blog</li>
-                </ul><!-- end Ul-->
-            </nav><!-- end Navigation -->
-        </header> <!-- end Header -->
+		<title>nomad-home</title>
+	</head>
+	<body>
+		<header class="header">
+			<nav class="sitenav-container">
+				<div class="sitenav-logo-contact-container">
+					<img class="sitenav__logo"
+						src="/img-mobile-p/Nomad-orange.png"
+						href="/index.html"
+						alt=" nomadWebAndMedia company logo"
+					/><!-- end Logo-->
+					<span class="sitenav__contactNum">(1876)-369-9341</span>
 
-        <main class="main__container">
+                    <img class="sitenav__mobile-nav" src="/img-mobile-p/icons8-hamburger-menu.png" alt="mobile navigation menu icon. Click for navigation">
+				</div><!-- end Site Navigation Logo, Contact number, and Mobile Nav Contatiner-->
+				
+				<ul class="sitenav__links">
+					<li href="#">projects</li>
+					<li href="#">about</li>
+					<li href="#">contact</li>
+					<li href="#">blog</li>
+				</ul><!-- end Ul-->
+			</nav>
+			<!-- end Navigation -->
+		</header>
+		<!-- end Header -->
 
-            <section class="hero-section-1">
-                <article class="hero__article">
-                    <p class="hero__copy">It all started when... 
-                        <br> So, there I was... 
-                        <br>Once upon a time...
-                    </p>
-                </article><!-- end Article-->
+		<main class="main-container">
+			<section class="hero-section-1">
+				<article class="hero__article">
+					<p class="hero__copy">
+						It all started when... <br />
+						So, there I was... <br />Once upon a time...
+					</p>
+				</article>
+				<!-- end Article-->
+			</section>
+			<!-- end Hero Section - 1 -->
 
-            </section><!-- end Hero Section - 1 -->
+			<section class="hero-section-2">
+				<article class="hero__article-2">
+					<p class="hero__copy-body">
+						Every great experience has an element of a narrative to it.
 
+						<br />Stories move us and help us communicate complex ideas across distance
+						and time.
 
+						<br />Stories form a universal framework for understanding. Which can be
+						appreciated in any language, culture, and at any time.
+						<br />
+						Let's tell your story.
+					</p>
+				</article>
+				<!-- end Article-->
+			</section>
+			<!-- end Hero Section - 2-->
 
-            <section class="hero-section-2">
-                <article class="hero__article-2">
-                    <p class="hero__copy-body">Every great experience has an element of a narrative to it.
-                    
-                    <br>Stories move us and help us communicate complex ideas across distance and time. 
-                    
-                    <br>Stories form a universal framework for understanding. Which can be appreciated in any language, culture, and at any time.
-                    <br>
-                    Let's tell your story.
-                </p>
-                </article><!-- end Article-->
-            </section><!-- end Hero Section - 2-->
+			<section class="hero-section-3">
+				<button class="hero-button">share your story</button>
+			</section>
+			<!-- end Hero Section - 3-->
+		</main>
+		<!-- end Main Content -->
 
-            <section class="hero-section-3">
-                <button class="hero-button">share your story</button>
-            </section><!-- end Hero Section - 3-->
-        </main><!-- end Main Content -->
+		<footer class="main-footer">
+			<!-- social-media-icons-->
+			<ul class="main-footer__social-icons">
+				<li href="#"><img src="/sm-icons/icons8-youtube.svg" alt="youtube" />youtube</li>
+				<li href="#"><img src="/sm-icons/icons8-behance.svg" alt="behance" />behance</li>
+				<li href="#"><img src="/sm-icons/icons8-facebook.svg" alt="facebook" />facebook</li>
+				<li href="#">
+					<img src="/sm-icons/icons8-instagram.svg" alt="instagram" />instagram
+				</li>
+				<li href="#"><img src="/sm-icons/icons8-linkedin.svg" alt="linkedin" />linkedin</li>
+			</ul>
+			<!-- end Social-media-icons-->
+		</footer>
+		<!-- end Main Footer-->
 
-        <footer class="main-footer">
-            <!-- social-media-icons-->
-        </footer><!-- end Main Footer-->
-    </body>
+        <script src="/main.js" type="text/javascript" defer></script><!-- end script -->
+	</body>
 </html>

@@ -1,17 +1,14 @@
 @import url("/partials/_base.scss");
 
-
 //SECTION: UNIVERSAL VARIABLES, LISTS & MIXINS
-
 
 //NOTE: Font sizes for Navigation - All Home page Viewport Variants.
 $navTextBig: 1.25rem; //20px
 $navTextSmall: 0.62rem; //10px
 
-
 //NOTE: Font sizes for Call To Action Button - All Home page Viewport Variants.
 $CTABTextHomeSmall: 0.93rem; //15px
-$CTABTextHome: 1.87rem; //30px 
+$CTABTextHome: 1.87rem; //30px
 
 //NOTE: Font sizes for body text font Futura PT book - All Home page Viewport Variants.
 $textBase: 1rem; //16px
@@ -25,40 +22,102 @@ $f-style-n: normal;
 //NOTE: Font weights for portfolio website. Applicable on all pages and their Viewport Variants.
 $f-weights: 900 700 400;
 
-
 //NOTE: Font lists for portfolio website. Applicable on all pages and their Viewport Variants.
-$font-list-h:  proxima-nova, Arial, Helvetica, sans-serif;
+$font-list-h: proxima-nova, Arial, Helvetica, sans-serif;
 $font-list-b: futura-pt, Helvetica, Arial, sans-serif;
 
+@mixin heroContactNumSmall {
+	font-family: $font-list-h;
+	font-weight: nth($f-weights, 3); //normall = 400;
+	font-style: $f-style-n; // font-style=normal;
+	font-size: $navTextSmall; // font-size = 0.62 rem / 10 px;
+}
 
 @mixin heroCopyMobile-p {
-font-family: $font-list-h;
-font-weight: nth($f-weights, 1);
-font-style: normal;
-font-size: nth($text, 2);
-
+	font-family: $font-list-h;
+	font-weight: nth($f-weights, 1);
+	font-style: normal;
+	font-size: nth($text, 2);
 }
 
-
-
-@mixin bodyCopyMobile-p{
-font-size: nth($text, 1);
-font-family: $font-list-b;
-font-weight:nth($f-weights, 3); 
-font-style: normal;
+@mixin bodyCopyMobile-p {
+	font-size: nth($text, 1);
+	font-family: $font-list-b;
+	font-weight: nth($f-weights, 3);
+	font-style: normal;
 }
 
-
-
-.hero__copy{
-
-    // font: $mobile-hero-f;
+.hero__copy {
+	// font: $mobile-hero-f;
 	@include heroCopyMobile-p;
 }
 
 .hero__copy-body {
-    @include bodyCopyMobile-p;
+	@include bodyCopyMobile-p;
 }
 
-//!SECTION UNIVERSAL VARIABLES, LISTS & MIXINS - END 
+//!SECTION UNIVERSAL VARIABLES, LISTS & MIXINS - END
 
+//SECTION: MOBILE- PORTRAIT - LAYOUT - FLEXBOX
+
+// @mixin m-p-layout-flexbox{
+//     display:flex;
+//             flex-direction: column;
+//             flex-wrap: wrap;
+//             column-gap: 10px;
+
+// }
+
+//SECTION: MOBILE - PORTRAIT - NAVIGATION
+
+// .header {
+// }
+
+
+.sitenav-logo-contact-container {
+    margin: 0 10px;
+}
+.sitenav-container{
+	position: relative;
+}
+
+.sitenav__logo {
+	width: 94px;
+	height: 53px;
+	position: absolute;
+	top: 0px;
+	left: 26px;
+}
+
+.sitenav__contactNum {
+	position: absolute;
+	display: inline-block;
+	width: 115px;
+    top: 40px;
+	left: 38px;
+
+	@include heroContactNumSmall;
+}
+
+//NOTE: Mobile navigation links html code hidden since they'll only be shown in the overlay prompt. After Clicking Hamburger menu icon.
+.sitenav__links {
+	display: none;
+}
+
+.sitenav__links--show {
+	display: inline-block;
+}
+
+
+.sitenav__mobile-nav{
+    position: absolute;
+    left: 303px;
+    top: 17px;
+    width: 20px;
+    height: 20px;
+
+
+}
+//!SECTION END - MOBILE - PORTRAIT - NAVIGATION
+
+//!SECTION END-  MOBILE- PORTRAIT - LAYOUT - FLEXBOX
