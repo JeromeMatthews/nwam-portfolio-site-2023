@@ -1,5 +1,5 @@
 @import url("/partials/_base.scss");
-.hero {
+.hero__copy {
   font-family: proxima-nova, Arial, Helvetica, sans-serif;
   font-weight: 900;
   font-style: normal;
