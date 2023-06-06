@@ -53,6 +53,25 @@
 .sitenav__links {
   z-index: 3;
   position: fixed;
+  top: 15vh;
+  left: 65px;
+  margin: auto;
+  text-align: center;
+  font-family: futura-pt, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.87rem;
+}
+.sitenav__links li {
+  width: 140px;
+  height: 67px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  list-style: none;
+  background-color: rgba(109, 109, 109, 0.2);
+}
+.sitenav__links li > a {
+  text-decoration: none;
   color: #fff;
 }
 
@@ -70,7 +89,7 @@
 
 .--mobile-overlay {
   position: fixed;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.9);
   width: 100vw;
   height: 100vh;
   z-index: 2;
