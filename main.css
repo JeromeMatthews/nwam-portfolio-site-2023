@@ -1,4 +1,4 @@
-@import url("/partials/_base.scss");
+@import url("/partials/_base.css");
 .hero__copy {
   font-family: proxima-nova, Arial, Helvetica, sans-serif;
   font-weight: 900;
@@ -13,27 +13,28 @@
   font-style: normal;
 }
 
-.sitenav-logo-contact-container {
-  margin: 0 10px;
+.sitenav--container {
+  position: relative;
+  z-index: 1;
 }
 
-.sitenav-container {
+.sitenav-logo-contact-container {
   position: relative;
 }
 
 .sitenav__logo {
+  position: absolute;
   width: 94px;
   height: 53px;
-  position: absolute;
   top: 0px;
   left: 26px;
 }
 
 .sitenav__contactNum {
-  position: absolute;
+  position: relative;
   display: inline-block;
   width: 115px;
-  top: 40px;
+  top: 45px;
   left: 38px;
   font-family: proxima-nova, Arial, Helvetica, sans-serif;
   font-weight: 400;
@@ -41,21 +42,26 @@
   font-size: 0.62rem;
 }
 
-.sitenav__links {
+.sitenav__links--hide {
   display: none;
 }
 
 .sitenav__links--show {
-  display: inline-block;
+  display: block;
 }
 
-.sitenav__mobile-nav {
+.sitenav__links {
+  z-index: 3;
+  position: fixed;
+  color: #fff;
+}
+
+.sitenav__hamburger {
   position: absolute;
-  left: 303px;
-  top: 17px;
+  right: 36px;
+  top: 20px;
   width: 20px;
   height: 20px;
-  z-index: 1;
 }
 
 .--overlay-remove {
@@ -63,8 +69,9 @@
 }
 
 .--mobile-overlay {
+  position: fixed;
   background-color: black;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   z-index: 2;
 }/*# sourceMappingURL=main.css.map */

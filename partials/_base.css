@@ -1,9 +1,11 @@
-//SECTION: [UNIVERSAL DEFAULTS]
-* {
+
+/*SECTION: [UNIVERSAL DEFAULTS]*/
+*{
 	box-sizing: border-box;
 }
 
 body {
+	margin: 0;
 	color:rgb(139, 139, 139);
 	background-color: antiquewhite;
 }
