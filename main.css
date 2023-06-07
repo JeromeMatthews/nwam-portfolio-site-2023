@@ -53,22 +53,44 @@
 .sitenav__links {
   z-index: 3;
   position: fixed;
-  top: 15vh;
-  left: 65px;
+  left: 72px;
   margin: auto;
-  text-align: center;
   font-family: futura-pt, Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 1.87rem;
 }
-.sitenav__links li {
+.sitenav__links #projects {
+  text-align: center;
   width: 140px;
   height: 67px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  list-style: none;
   background-color: rgba(109, 109, 109, 0.2);
+  position: relative;
+  margin-top: 67px;
+}
+.sitenav__links #about, .sitenav__links #contact {
+  text-align: center;
+  width: 140px;
+  height: 67px;
+  background-color: rgba(109, 109, 109, 0.2);
+  position: relative;
+  margin-top: 130px;
+  margin-bottom: 130px;
+}
+.sitenav__links #blog {
+  text-align: center;
+  width: 140px;
+  height: 67px;
+  background-color: rgba(109, 109, 109, 0.2);
+  position: relative;
+  margin-bottom: 66px;
+}
+.sitenav__links #projects-text, .sitenav__links #about-text, .sitenav__links #contact-text, .sitenav__links #blog-text {
+  position: relative;
+  top: 15px;
+}
+.sitenav__links li {
+  list-style: none;
 }
 .sitenav__links li > a {
   text-decoration: none;
@@ -93,4 +115,30 @@
   width: 100vw;
   height: 100vh;
   z-index: 2;
+}
+
+.main-footer__social-icons {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  text-decoration: none;
+  justify-content: center;
+}
+.main-footer__social-icons li {
+  margin-right: 10px;
+}
+
+body {
+  background-image: url("/img-mobile-p/m-p-home-bg-img.png");
+  background-position: fill;
+  background-repeat: no-repeat;
+}
+body .hero__copy {
+  color: #FFBF00;
+}
+body .hero__copy-body {
+  color: #FFFFFF;
 }/*# sourceMappingURL=main.css.map */

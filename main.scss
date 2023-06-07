@@ -114,6 +114,14 @@ $font-list-b: futura-pt, Helvetica, Arial, sans-serif;
 	@include heroContactNumSmall;
 }
 
+@mixin navOverlayMenuStyles {
+		text-align: center;
+		width: 140px;
+		height: 67px;
+		background-color: rgba(109, 109, 109,0.20);
+		position: relative;
+}
+
 //NOTE: Mobile navigation links html code hidden since they'll only be shown in the overlay prompt. After Clicking Hamburger menu icon.
 .sitenav__links--hide {
 	display: none;
@@ -127,26 +135,44 @@ $font-list-b: futura-pt, Helvetica, Arial, sans-serif;
 .sitenav__links {
 	z-index: 3;
 	position: fixed;
-	top: 15vh;
-	left: 65px;
+	left: 72px;
 	margin: auto;
-	text-align: center;
+
 	
 	@include mobileNavOverlayMenu;
 
+	#projects{
+		@include navOverlayMenuStyles;
+		margin-top:67px;
+	}
+
+	 #about, #contact{
+		@include navOverlayMenuStyles;
+		margin-top: 130px;
+		margin-bottom: 130px;
+	}
+
+	#blog{
+		@include navOverlayMenuStyles;
+		margin-bottom: 66px;
+	}
+
+	#projects-text, #about-text, #contact-text, #blog-text{
+		position: relative;
+		top: 15px;
+	}
+
 	li{
-		width: 140px;
-		height: 67px;
-		margin-top: 50px;
-		margin-bottom: 50px;	
+			
 		list-style: none;
-		background-color: rgba(109, 109, 109,0.20);
+		
 		
 	}
 
 	 li > a{
 		text-decoration: none;
 		color: #fff;
+		
 		
 	}
 }
@@ -171,6 +197,51 @@ $font-list-b: futura-pt, Helvetica, Arial, sans-serif;
 	z-index: 2; //NOTE: mobile-overlay needs to be higher than the parent's z-index.
 }
 
+
+
+
+
+
 //!SECTION END - MOBILE - PORTRAIT - NAVIGATION
+
+//SECTION MOBILE - PORTRAIT - NAVIGATION - FOOTER
+.main-footer__social-icons{
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	list-style: none;
+	text-decoration: none; 	
+	justify-content: center;
+	
+	li{
+			
+			margin-right: 10px;
+	}
+}
+
+
+
+//!SECTION  END - MOBILE - PORTRAIT - NAVIGATION - FOOTER
+
+
+
+//SECTION MOBILE - PORTRAIT - BODY 
+body{
+	background-image: url("/img-mobile-p/m-p-home-bg-img.png");
+	background-position: fill;
+	background-repeat: no-repeat;
+
+	.hero__copy{
+		color: #FFBF00;
+	}
+
+	.hero__copy-body{
+		color: #FFFFFF;
+	}
+}
+
+//!SECTION  END- MOBILE - PORTRAIT - BODY 
 
 //!SECTION END-  MOBILE- PORTRAIT - LAYOUT - FLEXBOX
