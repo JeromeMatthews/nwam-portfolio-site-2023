@@ -40,6 +40,7 @@
   font-weight: 400;
   font-style: normal;
   font-size: 0.62rem;
+  color: #fff;
 }
 
 .sitenav__links--hide {
@@ -159,6 +160,10 @@ body .hero-button {
   width: 173px;
   height: 34px;
   margin-bottom: 102px;
+  font-family: proxima-nova, Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 0.93rem;
 }
 
 .main-footer {
