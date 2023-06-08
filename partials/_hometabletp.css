@@ -1,0 +1,9 @@
+/*SECTION ABOVE MOBILE PHONES - TABLET  - PORTRAIT -  >480px */
+@media (min-width: 480px) {
+	body{
+		background: url("/img-tablet-p/")
+	};
+
+}
+/*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - PORTRAIT -   >480px */
+/*!SECTION: END - [RESPONSIVE DESIGN] */

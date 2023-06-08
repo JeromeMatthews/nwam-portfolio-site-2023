@@ -1,4 +1,5 @@
 @import url("/partials/_base.css");
+
 .hero__copy {
   font-family: proxima-nova, Arial, Helvetica, sans-serif;
   font-weight: 900;
@@ -182,4 +183,8 @@ body .hero-button {
 }
 .main-footer__social-icons li {
   margin-right: 10px;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*SECTION: [RESPONSIVE DESIGN] */
+/*NOTE : Query breakpoints*//*# sourceMappingURL=main.css.map */
+@import url("/partials/_hometabletp.css");
