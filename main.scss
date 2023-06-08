@@ -45,7 +45,6 @@ $font-list-b: futura-pt, Helvetica, Arial, sans-serif;
 	font-weight: nth($f-weights, 3);
 	font-style: $f-style-n;
 	font-size: $text1x-87; //30px;
-	
 }
 
 @mixin heroContactNumSmall {
@@ -115,11 +114,11 @@ $font-list-b: futura-pt, Helvetica, Arial, sans-serif;
 }
 
 @mixin navOverlayMenuStyles {
-		text-align: center;
-		width: 140px;
-		height: 67px;
-		background-color: rgba(109, 109, 109,0.20);
-		position: relative;
+	text-align: center;
+	width: 140px;
+	height: 67px;
+	background-color: rgba(109, 109, 109, 0.2);
+	position: relative;
 }
 
 //NOTE: Mobile navigation links html code hidden since they'll only be shown in the overlay prompt. After Clicking Hamburger menu icon.
@@ -128,9 +127,8 @@ $font-list-b: futura-pt, Helvetica, Arial, sans-serif;
 }
 
 .sitenav__links--show {
-	display:block;
+	display: block;
 }
-
 
 .sitenav__links {
 	z-index: 3;
@@ -138,42 +136,40 @@ $font-list-b: futura-pt, Helvetica, Arial, sans-serif;
 	left: 72px;
 	margin: auto;
 
-	
 	@include mobileNavOverlayMenu;
 
-	#projects{
+	#projects {
 		@include navOverlayMenuStyles;
-		margin-top:67px;
+		margin-top: 67px;
 	}
 
-	 #about, #contact{
+	#about,
+	#contact {
 		@include navOverlayMenuStyles;
 		margin-top: 130px;
 		margin-bottom: 130px;
 	}
 
-	#blog{
+	#blog {
 		@include navOverlayMenuStyles;
 		margin-bottom: 66px;
 	}
 
-	#projects-text, #about-text, #contact-text, #blog-text{
+	#projects-text,
+	#about-text,
+	#contact-text,
+	#blog-text {
 		position: relative;
 		top: 15px;
 	}
 
-	li{
-			
+	li {
 		list-style: none;
-		
-		
 	}
 
-	 li > a{
+	li > a {
 		text-decoration: none;
 		color: #fff;
-		
-		
 	}
 }
 
@@ -191,57 +187,86 @@ $font-list-b: futura-pt, Helvetica, Arial, sans-serif;
 
 .--mobile-overlay {
 	position: fixed;
-	background-color: rgba(0, 0, 0,0.9);
+	background-color: rgba(0, 0, 0, 0.9);
 	width: 100vw;
 	height: 100vh;
 	z-index: 2; //NOTE: mobile-overlay needs to be higher than the parent's z-index.
 }
 
-
-
-
-
-
 //!SECTION END - MOBILE - PORTRAIT - NAVIGATION
 
+
+
+//SECTION MOBILE - PORTRAIT - BODY
+
+	.main-container{
+		position: relative;
+		top: 220px;
+	}
+body {
+	background-image: url("/img-mobile-p/m-p-home-bg-img.png");
+	background-position: top 0px left -367px;
+	background-repeat: no-repeat;
+
+	.hero__copy {
+		color: #ffbf00;
+		margin: 0px 26px 61px 26px;
+		letter-spacing: 0px;
+		text-shadow: 0px 1px 1px #000000;
+		line-height: 90%; //NOTE: The property for brining text vertically closer together.
+	}
+
+	.hero__copy-body {
+		color: #ffffff;
+		margin: auto 57px;
+		letter-spacing: 0px;
+		text-shadow: 1px 1px 0px #00000059;
+		opacity: 1;
+		text-align: center;
+		line-height: 98%; //NOTE: The property for brining text vertically closer together.
+		margin-bottom: 49px;
+		
+	}
+
+	.hero-button {
+		background: #ffbf00 0% 0% no-repeat padding-box;
+		box-shadow: 0px 2px 0px #000000;
+		border: 1px solid #707070;
+		border-radius: 8px;
+		opacity: 1;
+		position: relative;		
+		left: 94px;
+		width: 173px;
+		height: 34px;
+		margin-bottom: 102px;
+
+	}
+}
+
+//!SECTION  END- MOBILE - PORTRAIT - BODY
+
+
 //SECTION MOBILE - PORTRAIT - NAVIGATION - FOOTER
-.main-footer__social-icons{
+
+.main-footer{
+	margin-bottom: 30px;
+}
+.main-footer__social-icons {
 	margin: 0px;
 	padding: 0px;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	list-style: none;
-	text-decoration: none; 	
+	text-decoration: none;
 	justify-content: center;
-	
-	li{
-			
-			margin-right: 10px;
+
+	li {
+		margin-right: 10px;
+		
 	}
 }
-
-
 
 //!SECTION  END - MOBILE - PORTRAIT - NAVIGATION - FOOTER
-
-
-
-//SECTION MOBILE - PORTRAIT - BODY 
-body{
-	background-image: url("/img-mobile-p/m-p-home-bg-img.png");
-	background-position: fill;
-	background-repeat: no-repeat;
-
-	.hero__copy{
-		color: #FFBF00;
-	}
-
-	.hero__copy-body{
-		color: #FFFFFF;
-	}
-}
-
-//!SECTION  END- MOBILE - PORTRAIT - BODY 
 
 //!SECTION END-  MOBILE- PORTRAIT - LAYOUT - FLEXBOX
