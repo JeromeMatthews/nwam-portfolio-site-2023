@@ -1,5 +1,5 @@
 @import url("/partials/_base.css");
-@import url("/partials/_hometabletp.css");
+
 
 //SECTION: UNIVERSAL VARIABLES, LISTS & MIXINS
 
@@ -286,4 +286,9 @@ body {
 
 /*SECTION: [RESPONSIVE DESIGN] */
 /*NOTE : Query breakpoints*/
-
+		//SECTION: HOME/LANDING PAGE: mobile -> Desktop
+		@import url("/partials/_homeTabletP.css");
+		@import url("/partials/_homeTabletL.css");
+		@import url("/partials/_homeDesktopL.css");
+		//!SECTION: END - HOME/LANDING PAGE: mobile -> Desktop
+		/*!SECTION: END - [RESPONSIVE DESIGN] */

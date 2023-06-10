@@ -1,5 +1,7 @@
 @import url("/partials/_base.css");
-
+@import url("/partials/_homeTabletP.css");
+@import url("/partials/_homeTabletL.css");
+@import url("/partials/_homeDesktopL.css");
 .hero__copy {
   font-family: proxima-nova, Arial, Helvetica, sans-serif;
   font-weight: 900;
@@ -186,5 +188,5 @@ body .hero-button {
 }
 
 /*SECTION: [RESPONSIVE DESIGN] */
-/*NOTE : Query breakpoints*//*# sourceMappingURL=main.css.map */
-@import url("/partials/_hometabletp.css");
+/*NOTE : Query breakpoints*/
+/*!SECTION: END - [RESPONSIVE DESIGN] *//*# sourceMappingURL=main.css.map */
