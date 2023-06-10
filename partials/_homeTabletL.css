@@ -1,5 +1,5 @@
 /*SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1000px */
-@media (min-width: 1000px) {
+@media (min-width: 800px) {
 	body{
 		background: url("/img-tablet-l/medium-cody-board-stargazing-sullivan-unsplash.jpg") !important
 		/*Using the  !important flag to overide the assignment of the background images for the diffrent veiwport variants of the design.*/

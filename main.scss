@@ -40,7 +40,7 @@ $f-weights: 900 700 400;
 //NOTE: Font lists for portfolio website. Applicable on all pages and their Viewport Variants.
 $font-list-h: proxima-nova, Arial, Helvetica, sans-serif;
 $font-list-b: futura-pt, Helvetica, Arial, sans-serif;
-
+//SECTION MIXINS 
 @mixin mobileNavOverlayMenu {
 	font-family: $font-list-b;
 	font-weight: nth($f-weights, 3);
@@ -77,19 +77,28 @@ $font-list-b: futura-pt, Helvetica, Arial, sans-serif;
 	font-size: $textSmall-93;
 } 
 
-.hero__copy {
-	// font: $mobile-hero-f;
-	@include heroCopyMobile-p;
+@mixin navOverlayMenuStyles {
+	text-align: center;
+	width: 140px;
+	height: 67px;
+	background-color: rgba(109, 109, 109, 0.2);
+	position: relative;
 }
 
-.hero__copy-body {
-	@include bodyCopyMobile-p;
+@mixin flexMix {
+	display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
 }
+
+//!SECTION END - MIXINS 
 
 //!SECTION UNIVERSAL VARIABLES, LISTS & MIXINS - END
 
-//SECTION: MOBILE- PORTRAIT - LAYOUT - FLEXBOX
 
+
+//SECTION: MOBILE- PORTRAIT - LAYOUT - FLEXBOX
 //SECTION: MOBILE - PORTRAIT - NAVIGATION
 
 // .header {
@@ -123,13 +132,7 @@ $font-list-b: futura-pt, Helvetica, Arial, sans-serif;
 	color: #fff;
 }
 
-@mixin navOverlayMenuStyles {
-	text-align: center;
-	width: 140px;
-	height: 67px;
-	background-color: rgba(109, 109, 109, 0.2);
-	position: relative;
-}
+
 
 //NOTE: Mobile navigation links html code hidden since they'll only be shown in the overlay prompt. After Clicking Hamburger menu icon.
 .sitenav__links--hide {
@@ -210,15 +213,22 @@ $font-list-b: futura-pt, Helvetica, Arial, sans-serif;
 //SECTION MOBILE - PORTRAIT - BODY
 
 	.main-container{
+		justify-content: center;
 		position: relative;
 		top: 220px;
 	}
+
+	.hero-section-1, .hero-section-2, .hero-section-3 {
+		@include flexMix;
+	}
+
 body {
 	background-image: url("/img-mobile-p/m-p-home-bg-img.png");
 	background-position: top 0px left -367px;
 	background-repeat: no-repeat;
 
 	.hero__copy {
+		@include heroCopyMobile-p;
 		color: #ffbf00;
 		margin: 0px 26px 61px 26px;
 		letter-spacing: 0px;
@@ -227,6 +237,7 @@ body {
 	}
 
 	.hero__copy-body {
+		@include bodyCopyMobile-p;
 		color: #ffffff;
 		margin: auto 57px;
 		letter-spacing: 0px;
@@ -245,12 +256,11 @@ body {
 		border-radius: 8px;
 		opacity: 1;
 		position: relative;		
-		left: 94px;
+		// left: 94px;
 		width: 173px;
 		height: 34px;
 		margin-bottom: 102px;
 		@include CTAbuttonMobile-p;
-
 	}
 }
 
