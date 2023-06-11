@@ -1,6 +1,4 @@
 @import url("/partials/_base.css");
-
-
 //SECTION: UNIVERSAL VARIABLES, LISTS & MIXINS
 
 //SECTION FONT SIZING FOR ALL VIEWPORT VARIANTS: D-L,T-L, T-P, M-P
@@ -94,9 +92,8 @@ $font-list-b: futura-pt, Helvetica, Arial, sans-serif;
 
 //!SECTION END - MIXINS 
 
+
 //!SECTION UNIVERSAL VARIABLES, LISTS & MIXINS - END
-
-
 
 //SECTION: MOBILE- PORTRAIT - LAYOUT - FLEXBOX
 //SECTION: MOBILE - PORTRAIT - NAVIGATION
@@ -131,8 +128,6 @@ $font-list-b: futura-pt, Helvetica, Arial, sans-serif;
 	@include heroContactNumSmall;
 	color: #fff;
 }
-
-
 
 //NOTE: Mobile navigation links html code hidden since they'll only be shown in the overlay prompt. After Clicking Hamburger menu icon.
 .sitenav__links--hide {
@@ -208,19 +203,19 @@ $font-list-b: futura-pt, Helvetica, Arial, sans-serif;
 
 //!SECTION END - MOBILE - PORTRAIT - NAVIGATION
 
-
-
 //SECTION MOBILE - PORTRAIT - BODY
 
-	.main-container{
-		justify-content: center;
-		position: relative;
-		top: 220px;
-	}
+.main-container {
+	justify-content: center;
+	position: relative;
+	top: 220px;
+}
 
-	.hero-section-1, .hero-section-2, .hero-section-3 {
-		@include flexMix;
-	}
+.hero-section-1,
+.hero-section-2,
+.hero-section-3 {
+	@include flexMix;
+}
 
 body {
 	background-image: url("/img-mobile-p/m-p-home-bg-img.png");
@@ -246,7 +241,6 @@ body {
 		text-align: center;
 		line-height: 98%; //NOTE: The property for brining text vertically closer together.
 		margin-bottom: 49px;
-		
 	}
 
 	.hero-button {
@@ -255,7 +249,7 @@ body {
 		border: 1px solid #707070;
 		border-radius: 8px;
 		opacity: 1;
-		position: relative;		
+		position: relative;
 		// left: 94px;
 		width: 173px;
 		height: 34px;
@@ -266,10 +260,9 @@ body {
 
 //!SECTION  END- MOBILE - PORTRAIT - BODY
 
-
 //SECTION MOBILE - PORTRAIT - NAVIGATION - FOOTER
 
-.main-footer{
+.main-footer {
 	margin-bottom: 30px;
 }
 .main-footer__social-icons {
@@ -284,7 +277,6 @@ body {
 
 	li {
 		margin-right: 10px;
-		
 	}
 }
 
@@ -292,13 +284,9 @@ body {
 
 //!SECTION END-  MOBILE- PORTRAIT - LAYOUT - FLEXBOX
 
-
-
 /*SECTION: [RESPONSIVE DESIGN] */
 /*NOTE : Query breakpoints*/
-		//SECTION: HOME/LANDING PAGE: mobile -> Desktop
-		@import url("/partials/_homeTabletP.css");
-		@import url("/partials/_homeTabletL.css");
-		@import url("/partials/_homeDesktopL.css");
-		//!SECTION: END - HOME/LANDING PAGE: mobile -> Desktop
-		/*!SECTION: END - [RESPONSIVE DESIGN] */
+//SECTION: HOME/LANDING PAGE: mobile -> Desktop
+
+//!SECTION: END - HOME/LANDING PAGE: mobile -> Desktop
+/*!SECTION: END - [RESPONSIVE DESIGN] */

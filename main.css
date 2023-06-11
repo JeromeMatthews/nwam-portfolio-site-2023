@@ -1,7 +1,4 @@
 @import url("/partials/_base.css");
-@import url("/partials/_homeTabletP.css");
-@import url("/partials/_homeTabletL.css");
-@import url("/partials/_homeDesktopL.css");
 .sitenav--container {
   position: relative;
   z-index: 1;
@@ -117,7 +114,9 @@
   top: 220px;
 }
 
-.hero-section-1, .hero-section-2, .hero-section-3 {
+.hero-section-1,
+.hero-section-2,
+.hero-section-3 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

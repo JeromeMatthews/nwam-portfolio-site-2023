@@ -1,0 +1,94 @@
+//SECTION: UNIVERSAL VARIABLES, LISTS & MIXINS
+
+//SECTION FONT SIZING FOR ALL VIEWPORT VARIANTS: D-L,T-L, T-P, M-P
+//NOTE: Font sizes:
+$text7x-18: 7.18rem; //115px;
+$text5x-62: 5.62rem; //90px;
+$text5x: 5.31rem; //85px;
+$text5x: 5rem; //80px;
+$text4x-6: 4.06rem; //65px;
+$text3x-59: 3.59rem; //57.5px
+$text3x-43: 3.43rem; //55px;
+$text3x-12: 3.12rem; //50px;
+$text2X-81: 2.81rem; //45px;
+$text2x-5: 2.5rem; //40px;
+$text2x-18: 2.18rem; //35px;
+$text2x-6: 2.06rem; //33px;
+$text1x-87: 1.87rem; //30px;
+$text1x-56: 1.56rem; //25px;
+$text1x-37: 1.37rem; //22px;
+$text1x-31: 1.31rem; //21px;
+$text1X-25: 1.25rem; //20px;
+$text1x-12: 1.12rem; //18px;
+$text1x-06: 1.06rem; //17px;
+$textBase: 1rem; //16px;
+$textSmall-93: 0.93rem; //15px;
+$textSmall-87: 0.87rem; //14px;
+$textSmall-75: 0.75rem; //12px;
+$TextSmall-62: 0.62rem; //10px;
+//!SECTION - END FONT SIZING FOR VIEWPORTS ----------------
+
+//NOTE: Font styles for portfolio website. Applicable on all pages and their Viewport Variants.
+$f-style-n: normal;
+
+//NOTE: Font weights for portfolio website. Applicable on all pages and their Viewport Variants.
+$f-weights: 900 700 400;
+
+//NOTE: Font lists for portfolio website. Applicable on all pages and their Viewport Variants.
+$font-list-h: proxima-nova, Arial, Helvetica, sans-serif;
+$font-list-b: futura-pt, Helvetica, Arial, sans-serif;
+//SECTION MIXINS 
+@mixin mobileNavOverlayMenu {
+	font-family: $font-list-b;
+	font-weight: nth($f-weights, 3);
+	font-style: $f-style-n;
+	font-size: $text1x-87; //30px;
+}
+
+@mixin heroContactNumSmall {
+	font-family: $font-list-h;
+	font-weight: nth($f-weights, 3); //normall = 400;
+	font-style: $f-style-n; // font-style=normal;
+	font-size: $TextSmall-62; //10px;
+}
+
+@mixin heroCopyMobile-p {
+	font-family: $font-list-h;
+	font-weight: nth($f-weights, 1);
+	font-style: normal;
+	font-size: $text2x-6; //33px;
+}
+
+@mixin bodyCopyMobile-p {
+	font-size: $textBase; //16px;
+	font-family: $font-list-b;
+	font-weight: nth($f-weights, 3);
+	font-style: normal;
+	
+}
+
+@mixin CTAbuttonMobile-p {
+	font-family: $font-list-h;
+	font-weight: nth($f-weights, 1);
+	font-style: normal;
+	font-size: $textSmall-93;
+} 
+
+@mixin navOverlayMenuStyles {
+	text-align: center;
+	width: 140px;
+	height: 67px;
+	background-color: rgba(109, 109, 109, 0.2);
+	position: relative;
+}
+
+@mixin flexMix {
+	display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+}
+
+//!SECTION END - MIXINS 
+
+//!SECTION UNIVERSAL VARIABLES, LISTS & MIXINS - END
