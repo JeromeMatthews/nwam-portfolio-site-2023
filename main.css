@@ -1,4 +1,4 @@
-@import url("/partials/_base.css");
+@import "/partials/_base.css";
 .sitenav--container {
   position: relative;
   z-index: 1;
@@ -113,6 +113,11 @@
   position: relative;
   top: 220px;
 }
+@media (max-width: 359px) {
+  .main-container {
+    top: 150px;
+  }
+}
 
 .hero-section-1,
 .hero-section-2,
@@ -127,6 +132,7 @@ body {
   background-image: url("/img-mobile-p/m-p-home-bg-img.png");
   background-position: top 0px left -367px;
   background-repeat: no-repeat;
+  background-attachment: scroll;
 }
 body .hero__copy {
   font-family: proxima-nova, Arial, Helvetica, sans-serif;
@@ -138,6 +144,7 @@ body .hero__copy {
   letter-spacing: 0px;
   text-shadow: 0px 1px 1px #000000;
   line-height: 90%;
+  text-align: center;
 }
 body .hero__copy-body {
   font-size: 1rem;
@@ -152,6 +159,11 @@ body .hero__copy-body {
   text-align: center;
   line-height: 98%;
   margin-bottom: 49px;
+}
+@media (max-width: 359px) {
+  body .hero__copy-body {
+    margin: 0px 57px 9px;
+  }
 }
 body .hero-button {
   background: #ffbf00 0% 0% no-repeat padding-box;
@@ -168,6 +180,11 @@ body .hero-button {
   font-style: normal;
   font-size: 0.93rem;
 }
+@media (max-width: 359px) {
+  body .hero-button {
+    margin-bottom: 50px;
+  }
+}
 
 .main-footer {
   margin-bottom: 30px;
@@ -179,6 +196,7 @@ body .hero-button {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
   list-style: none;
   text-decoration: none;
   justify-content: center;
@@ -189,4 +207,55 @@ body .hero-button {
 
 /*SECTION: [RESPONSIVE DESIGN] */
 /*NOTE : Query breakpoints*/
+/*SECTION ABOVE MOBILE PHONES - TABLET  - PORTRAIT -  >480px */
+@media (min-width: 480px) {
+  /*SECTION: MOBILE - PORTRAIT - NAVIGATION*/
+  /* // .header {
+  // } */
+  .sitenav--container {
+    position: relative;
+    z-index: 1;
+  }
+  .sitenav-logo-contact-container {
+    position: relative;
+  }
+  .sitenav__logo {
+    position: absolute;
+    width: 94px;
+    height: 53px;
+    top: 0px;
+    left: 26px;
+  }
+  .sitenav__contactNum {
+    position: relative;
+    display: inline-block;
+    width: 115px;
+    top: 45px;
+    left: 38px;
+    color: #fff;
+  }
+  /*NOTE: Mobile navigation links html code hidden since they'll only be shown in the overlay prompt. After Clicking Hamburger menu icon.*/
+  /*!SECTION END - MOBILE - PORTRAIT - NAVIGATION*/
+  body {
+    background: url("/img-tablet-p/campfire-conversations.jpeg") !important;
+  }
+}
+/*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - PORTRAIT -   >480px */
+/*!SECTION: END - [RESPONSIVE DESIGN] */
+/*SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1000px */
+@media (min-width: 800px) {
+  body {
+    background: url("/img-tablet-l/medium-cody-board-stargazing-sullivan-unsplash.jpg") !important;
+  }
+}
+/*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >1000px */
+/*!SECTION: END - [RESPONSIVE DESIGN] */
+/*SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1000px */
+@media (min-width: 1920px) {
+  body {
+    background: url("/img-desktop-l/pexels-marcelo-jaboo-Chair-spotlight.jpg") !important;
+  }
+}
+/*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >1000px */
+/*!SECTION: END - [RESPONSIVE DESIGN] */
 /*!SECTION: END - [RESPONSIVE DESIGN] *//*# sourceMappingURL=main.css.map */
