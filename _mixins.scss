@@ -13,25 +13,38 @@
 	font-size: $TextSmall-62; //10px;
 }
 
-@mixin heroCopyMobile-p {
+@mixin heroCopy {
 	font-family: $font-list-h;
 	font-weight: nth($f-weights, 1);
 	font-style: normal;
+}
+
+@mixin heroCopyMobile-p {
+	@include heroCopy;
 	font-size: $text2x-6; //33px;
 }
 
-@mixin bodyCopyMobile-p {
-	font-size: $textBase; //16px;
+@mixin bodyCopy{
 	font-family: $font-list-b;
 	font-weight: nth($f-weights, 3);
 	font-style: normal;
+}
+
+@mixin bodyCopyMobile-p {
+	@include bodyCopy;
+	font-size: $textBase; //16px;
 	
 }
 
-@mixin CTAbuttonMobile-p {
+
+@mixin CTAButton {
 	font-family: $font-list-h;
 	font-weight: nth($f-weights, 1);
 	font-style: normal;
+}
+
+@mixin CTAbuttonMobile-p {
+	@include CTAButton;
 	font-size: $textSmall-93;
 } 
 

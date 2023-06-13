@@ -4,6 +4,12 @@
 //SECTION: UNIVERSAL VARIABLES, LISTS & MIXINS
 //!SECTION UNIVERSAL VARIABLES, LISTS & MIXINS - END
 
+/*SECTION: [RESPONSIVE DESIGN] */
+/*NOTE : Query breakpoints*/
+
+
+
+
 //SECTION: MOBILE- PORTRAIT - LAYOUT - FLEXBOX
 //SECTION: MOBILE - PORTRAIT - NAVIGATION
 
@@ -110,6 +116,10 @@
 	z-index: 2; //NOTE: mobile-overlay needs to be higher than the parent's z-index.
 }
 
+
+.mainnav__links{
+	display: none;
+}
 //!SECTION END - MOBILE - PORTRAIT - NAVIGATION
 
 //SECTION MOBILE - PORTRAIT - BODY
@@ -204,13 +214,10 @@ body {
 //!SECTION  END - MOBILE - PORTRAIT - NAVIGATION - FOOTER
 
 //!SECTION END-  MOBILE- PORTRAIT - LAYOUT - FLEXBOX
-
-/*SECTION: [RESPONSIVE DESIGN] */
-/*NOTE : Query breakpoints*/
-
 //SECTION: HOME/LANDING PAGE: mobile -> Desktop
-@import "home/hometabletp";
-@import "home/homeTabletL";
-@import "home/homeDesktopL";
+@import "home/_hometabletp";
+// @import "home/homeTabletL";
+// @import "home/homeDesktopL";
+
 //!SECTION: END - HOME/LANDING PAGE: mobile -> Desktop
 /*!SECTION: END - [RESPONSIVE DESIGN] */

@@ -1,4 +1,6 @@
 @import "/partials/_base.css";
+/*SECTION: [RESPONSIVE DESIGN] */
+/*NOTE : Query breakpoints*/
 .sitenav--container {
   position: relative;
   z-index: 1;
@@ -108,6 +110,10 @@
   z-index: 2;
 }
 
+.mainnav__links {
+  display: none;
+}
+
 .main-container {
   justify-content: center;
   position: relative;
@@ -147,10 +153,10 @@ body .hero__copy {
   text-align: center;
 }
 body .hero__copy-body {
-  font-size: 1rem;
   font-family: futura-pt, Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 1rem;
   color: #ffffff;
   margin: auto 57px;
   letter-spacing: 0px;
@@ -205,13 +211,11 @@ body .hero-button {
   margin-right: 10px;
 }
 
-/*SECTION: [RESPONSIVE DESIGN] */
-/*NOTE : Query breakpoints*/
-/*SECTION ABOVE MOBILE PHONES - TABLET  - PORTRAIT -  >480px */
-@media (min-width: 480px) {
-  /*SECTION: MOBILE - PORTRAIT - NAVIGATION*/
+/*SECTION ABOVE MOBILE PHONES - TABLET  - PORTRAIT -  >800px */
+@media (min-width: 800px) {
+  /*SECTION: TABLEY- PORTRAIT - NAVIGATION*/
   /* // .header {
-  // } */
+  			// } */
   .sitenav--container {
     position: relative;
     z-index: 1;
@@ -222,40 +226,137 @@ body .hero-button {
   .sitenav__logo {
     position: absolute;
     width: 94px;
-    height: 53px;
-    top: 0px;
-    left: 26px;
+    height: 45px;
+    top: 23px;
+    left: 170px;
   }
   .sitenav__contactNum {
     position: relative;
     display: inline-block;
     width: 115px;
-    top: 45px;
-    left: 38px;
+    top: 57px;
+    left: 184px;
     color: #fff;
   }
   /*NOTE: Mobile navigation links html code hidden since they'll only be shown in the overlay prompt. After Clicking Hamburger menu icon.*/
-  /*!SECTION END - MOBILE - PORTRAIT - NAVIGATION*/
+  .sitenav__hamburger {
+    display: none;
+  }
+  .sitenav__links {
+    display: none;
+  }
+  .mainnav__links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: proxima-nova, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.93rem;
+  }
+  .mainnav__links li {
+    padding: 0px 11px;
+    list-style: none;
+  }
+  .mainnav__links li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  /*!SECTION END - TABLET - PORTRAIT - NAVIGATION*/
+  .hero-section-1,
+  .hero-section-2,
+  .hero-section-3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
   body {
-    background: url("/img-tablet-p/campfire-conversations.jpeg") !important;
+    background: url("/img-tablet-p/tablet-home-bg.png") !important;
+    /*Using the  !important flag to overide the assignment of the background images for the diffrent veiwport variants of the design.*/
+    background-position: top 0px left -367px;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+  }
+  body .hero__copy {
+    font-family: proxima-nova, Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 3.43rem;
+    color: #ffbf00;
+    position: relative;
+    top: -46px;
+    margin: 0px 126px 63px 126px;
+    letter-spacing: 0px;
+    text-shadow: 0px 1px 1px #000000;
+    line-height: 100%;
+    text-align: center;
+  }
+  body .hero__copy-body {
+    font-family: futura-pt, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.12rem;
+    color: #ffffff;
+    position: relative;
+    top: -28px;
+    margin: 0px 190px 117px;
+    letter-spacing: 0px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3490196078);
+    opacity: 1;
+    text-align: center;
+    line-height: 98%;
   }
 }
-/*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - PORTRAIT -   >480px */
-/*!SECTION: END - [RESPONSIVE DESIGN] */
-/*SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1000px */
+@media (min-width: 800px) and (max-width: 359px) {
+  body .hero__copy-body {
+    margin: 0px 57px 9px;
+  }
+}
 @media (min-width: 800px) {
-  body {
-    background: url("/img-tablet-l/medium-cody-board-stargazing-sullivan-unsplash.jpg") !important;
+  body .hero-button {
+    background: #ffbf00 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 0px #000000;
+    border: 1px solid #707070;
+    border-radius: 8px;
+    opacity: 1;
+    position: relative;
+    width: 173px;
+    height: 34px;
+    margin-bottom: 102px;
+    font-family: proxima-nova, Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 0.93rem;
   }
 }
-/*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >1000px */
-/*!SECTION: END - [RESPONSIVE DESIGN] */
-/*SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1000px */
-@media (min-width: 1920px) {
-  body {
-    background: url("/img-desktop-l/pexels-marcelo-jaboo-Chair-spotlight.jpg") !important;
+@media (min-width: 800px) and (max-width: 359px) {
+  body .hero-button {
+    margin-bottom: 50px;
   }
 }
-/*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >1000px */
+@media (min-width: 800px) {
+  body .main-footer {
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 800px) {
+  body .main-footer__social-icons {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    text-decoration: none;
+    justify-content: center;
+  }
+  body .main-footer__social-icons li {
+    margin-right: 10px;
+  }
+}
+/*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - PORTRAIT -   >800px */
 /*!SECTION: END - [RESPONSIVE DESIGN] */
 /*!SECTION: END - [RESPONSIVE DESIGN] *//*# sourceMappingURL=main.css.map */

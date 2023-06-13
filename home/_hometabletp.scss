@@ -1,0 +1,151 @@
+/*SECTION ABOVE MOBILE PHONES - TABLET  - PORTRAIT -  >800px */
+@media (min-width: 800px) {
+	/*SECTION: TABLEY- PORTRAIT - NAVIGATION*/
+	/* // .header {
+				// } */
+
+	.sitenav--container {
+		position: relative;
+		z-index: 1;
+	}
+
+	.sitenav-logo-contact-container {
+		position: relative;
+	}
+
+	.sitenav__logo {
+		position: absolute;
+		width: 94px;
+		height: 45px;
+		top: 23px;
+		left: 170px;
+	}
+
+	.sitenav__contactNum {
+		position: relative;
+		display: inline-block;
+		width: 115px;
+		top: 57px;
+		left: 184px;
+
+		color: #fff;
+	}
+
+	/*NOTE: Mobile navigation links html code hidden since they'll only be shown in the overlay prompt. After Clicking Hamburger menu icon.*/
+
+	.sitenav__hamburger {
+		display: none;
+	}
+
+	.sitenav__links {
+		display: none;
+	}
+
+	.mainnav__links {
+		@include flexMix;
+		font-family: $font-list-h;
+		font-weight: nth($f-weights, 3); //normall = 400;
+		font-style: $f-style-n; // font-style=normal;
+		font-size: $textSmall-93; //15px;
+
+		li {
+			padding: 0px 11px;
+			a {
+				text-decoration: none;
+				color: #fff;
+			}
+			list-style: none;
+		}
+	}
+
+	/*!SECTION END - TABLET - PORTRAIT - NAVIGATION*/
+
+	//SECTION MOBILE - PORTRAIT - BODY
+
+	.hero-section-1,
+	.hero-section-2,
+	.hero-section-3 {
+		@include flexMix;
+	}
+
+	body {
+		background: url("/img-tablet-p/tablet-home-bg.png") !important;
+		/*Using the  !important flag to overide the assignment of the background images for the diffrent veiwport variants of the design.*/
+
+		background-position: top 0px left -367px;
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+
+		.hero__copy {
+			@include heroCopy;
+			font-size: $text3x-43; //55px;
+			color: #ffbf00;
+			position: relative;
+			top: -46px;
+			margin: 0px 126px 63px 126px;
+			letter-spacing: 0px;
+			text-shadow: 0px 1px 1px #000000;
+			line-height: 100%; //NOTE: The property for brining text vertically closer together.
+			text-align: center;
+		}
+
+		.hero__copy-body {
+			@include bodyCopy;
+			font-size: $text1x-12; //18px;
+			color: #ffffff;
+			position: relative;
+			top: -28px;
+			margin: 0px 190px 117px;
+			letter-spacing: 0px;
+			text-shadow: 1px 1px 0px #00000059;
+			opacity: 1;
+			text-align: center;
+			line-height: 98%; //NOTE: The property for brining text vertically closer together.
+			@media (max-width: 359px) {
+				margin: 0px 57px 9px;
+			}
+		}
+
+		.hero-button {
+			background: #ffbf00 0% 0% no-repeat padding-box;
+			box-shadow: 0px 2px 0px #000000;
+			border: 1px solid #707070;
+			border-radius: 8px;
+			opacity: 1;
+			position: relative;
+			width: 173px;
+			height: 34px;
+			margin-bottom: 102px;
+			@include CTAButton;
+			font-size: $textSmall-93;//15px;
+
+			@media (max-width: 359px) {
+				margin-bottom: 50px;
+			}
+		}
+
+		//!SECTION  END- MOBILE - PORTRAIT - BODY
+
+		//SECTION MOBILE - PORTRAIT - NAVIGATION - FOOTER
+
+		.main-footer {
+			margin-bottom: 30px;
+		}
+		.main-footer__social-icons {
+			margin: 0px;
+			padding: 0px;
+			@include flexMix;
+			list-style: none;
+			text-decoration: none;
+			justify-content: center;
+
+			li {
+				margin-right: 10px;
+			}
+		}
+
+		//!SECTION  END - MOBILE - PORTRAIT - NAVIGATION - FOOTER
+	}
+}
+/*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - PORTRAIT -   >800px */
+/*!SECTION: END - [RESPONSIVE DESIGN] */
