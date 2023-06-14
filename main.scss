@@ -7,13 +7,10 @@
 /*SECTION: [RESPONSIVE DESIGN] */
 /*NOTE : Query breakpoints*/
 
-
-
-
 //SECTION: MOBILE- PORTRAIT - LAYOUT - FLEXBOX
 //SECTION: MOBILE - PORTRAIT - NAVIGATION
 
-// .header {  
+// .header {
 // }
 
 .sitenav--container {
@@ -116,8 +113,7 @@
 	z-index: 2; //NOTE: mobile-overlay needs to be higher than the parent's z-index.
 }
 
-
-.mainnav__links{
+.mainnav__links {
 	display: none;
 }
 //!SECTION END - MOBILE - PORTRAIT - NAVIGATION
@@ -128,10 +124,9 @@
 	justify-content: center;
 	position: relative;
 	top: 220px;
-	@media(max-width: 359px){
+	@media (max-width: 359px) {
 		top: 150px;
 	}
-	
 }
 
 .hero-section-1,
@@ -141,7 +136,7 @@
 }
 
 body {
-	background-image: url("/img-mobile-p/m-p-home-bg-img.png");
+	background-image: url("/img/img-mobile-p/m-p-home-bg-img.png");
 	background-position: top 0px left -367px;
 	background-repeat: no-repeat;
 	background-attachment: scroll;
@@ -166,7 +161,7 @@ body {
 		text-align: center;
 		line-height: 98%; //NOTE: The property for brining text vertically closer together.
 		margin-bottom: 49px;
-		@media(max-width: 359px){
+		@media (max-width: 359px) {
 			margin: 0px 57px 9px;
 		}
 	}
@@ -184,8 +179,7 @@ body {
 		margin-bottom: 102px;
 		@include CTAbuttonMobile-p;
 
-
-		@media(max-width: 359px){
+		@media (max-width: 359px) {
 			margin-bottom: 50px;
 		}
 	}
@@ -216,8 +210,8 @@ body {
 //!SECTION END-  MOBILE- PORTRAIT - LAYOUT - FLEXBOX
 //SECTION: HOME/LANDING PAGE: mobile -> Desktop
 @import "home/_hometabletp";
-// @import "home/homeTabletL";
-// @import "home/homeDesktopL";
+@import "home/_homeTabletL";
+@import "home/_homeDesktopL";
 
 //!SECTION: END - HOME/LANDING PAGE: mobile -> Desktop
 /*!SECTION: END - [RESPONSIVE DESIGN] */

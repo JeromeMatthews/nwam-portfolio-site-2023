@@ -135,7 +135,7 @@
 }
 
 body {
-  background-image: url("/img-mobile-p/m-p-home-bg-img.png");
+  background-image: url("/img/img-mobile-p/m-p-home-bg-img.png");
   background-position: top 0px left -367px;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -273,7 +273,7 @@ body .hero-button {
     justify-content: center;
   }
   body {
-    background: url("/img-tablet-p/tablet-home-bg.png") !important;
+    background: url("/img/img-tablet-p/tablet-home-bg.png") !important;
     /*Using the  !important flag to overide the assignment of the background images for the diffrent veiwport variants of the design.*/
     background-position: top 0px left -367px;
     background-repeat: no-repeat;
@@ -358,5 +358,21 @@ body .hero-button {
   }
 }
 /*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - PORTRAIT -   >800px */
+/*!SECTION: END - [RESPONSIVE DESIGN] */
+/*SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1000px */
+@media (min-width: 1000px) {
+  body {
+    background: url("/img/img-tablet-l/medium-cody-board-stargazing-sullivan-unsplash.jpg") !important;
+  }
+}
+/*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >1000px */
+/*!SECTION: END - [RESPONSIVE DESIGN] */
+/*SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1000px */
+@media (min-width: 1920px) {
+  body {
+    background: url("/img/img-desktop-l/pexels-marcelo-jaboo-Chair-spotlight.jpg") !important;
+  }
+}
+/*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >1000px */
 /*!SECTION: END - [RESPONSIVE DESIGN] */
 /*!SECTION: END - [RESPONSIVE DESIGN] *//*# sourceMappingURL=main.css.map */
