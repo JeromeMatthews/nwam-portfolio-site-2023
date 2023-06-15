@@ -1,0 +1,178 @@
+@import "..//partials/_base.css";
+/*SECTION: [RESPONSIVE DESIGN] */
+/*NOTE : Query breakpoints*/
+.sitenav--container {
+  position: relative;
+  z-index: 1;
+}
+
+.sitenav-logo-contact-container {
+  position: relative;
+}
+
+.sitenav__logo {
+  position: absolute;
+  width: 94px;
+  height: 53px;
+  top: 0px;
+  left: 26px;
+}
+
+.sitenav__contactNum {
+  position: relative;
+  display: inline-block;
+  width: 115px;
+  top: 45px;
+  left: 38px;
+  font-family: proxima-nova, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.62rem;
+  color: #fff;
+}
+
+.sitenav__links--hide {
+  display: none;
+}
+
+.sitenav__links--show {
+  display: block;
+}
+
+.sitenav__links {
+  z-index: 3;
+  position: fixed;
+  left: 72px;
+  margin: auto;
+  font-family: futura-pt, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.87rem;
+}
+.sitenav__links #projects {
+  text-align: center;
+  width: 140px;
+  height: 67px;
+  background-color: rgba(109, 109, 109, 0.2);
+  position: relative;
+  margin-top: 67px;
+}
+.sitenav__links #about,
+.sitenav__links #contact {
+  text-align: center;
+  width: 140px;
+  height: 67px;
+  background-color: rgba(109, 109, 109, 0.2);
+  position: relative;
+  margin-top: 130px;
+  margin-bottom: 130px;
+}
+.sitenav__links #blog {
+  text-align: center;
+  width: 140px;
+  height: 67px;
+  background-color: rgba(109, 109, 109, 0.2);
+  position: relative;
+  margin-bottom: 66px;
+}
+.sitenav__links #projects-text,
+.sitenav__links #about-text,
+.sitenav__links #contact-text,
+.sitenav__links #blog-text {
+  position: relative;
+  top: 15px;
+}
+.sitenav__links li {
+  list-style: none;
+}
+.sitenav__links li > a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.sitenav__hamburger {
+  position: absolute;
+  right: 36px;
+  top: 20px;
+  width: 20px;
+  height: 20px;
+}
+
+.--overlay-remove {
+  display: none;
+}
+
+.--mobile-overlay {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+}
+
+.mainnav__links {
+  display: none;
+}
+
+.main-container {
+  justify-content: center;
+  position: relative;
+  top: 102px;
+}
+@media (max-width: 359px) {
+  .main-container {
+    top: 102px;
+  }
+}
+
+.show-box__link {
+  text-decoration: none;
+  color: #fff;
+}
+
+#show-box-1,
+#show-box-2,
+#show-box-3 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 197px;
+  height: 197px;
+  background-color: rgba(124, 170, 37, 0.233);
+  margin: 0px 81px 4px;
+  border-radius: 3px;
+}
+
+.projects-overlay {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.295);
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  background-image: url("/img/img-mobile-p/mobile-ps-bg.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+body .show-box .show-box__title {
+  font-family: proxima-nova, Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.12rem;
+}
+body .show-box .show-box__subtitle {
+  font-family: futura-pt, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.06rem;
+}
+body .show-box .show-box__text {
+  text-align: center;
+  font-family: futura-pt, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.75rem;
+}/*# sourceMappingURL=main.css.map */
