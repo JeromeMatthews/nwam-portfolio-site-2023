@@ -1,0 +1,168 @@
+@import "..//partials/_base.css";
+@import "..//partials/variables";
+@import "..//partials/mixins";
+//SECTION: UNIVERSAL VARIABLES, LISTS & MIXINS
+//!SECTION UNIVERSAL VARIABLES, LISTS & MIXINS - END
+
+/*SECTION: [RESPONSIVE DESIGN] */
+/*NOTE : Query breakpoints*/
+
+//SECTION: MOBILE- PORTRAIT - LAYOUT - FLEXBOX
+//SECTION: MOBILE - PORTRAIT - NAVIGATION
+
+// .header {
+// }
+
+.sitenav--container {
+	position: relative;
+	z-index: 1;
+}
+
+.sitenav-logo-contact-container {
+	position: relative;
+}
+
+.sitenav__logo {
+	position: absolute;
+	width: 94px;
+	height: 53px;
+	top: 0px;
+	left: 26px;
+}
+
+.sitenav__contactNum {
+	position: relative;
+	display: inline-block;
+	width: 115px;
+	top: 45px;
+	left: 38px;
+
+	@include heroContactNumSmall;
+	color: #fff;
+}
+
+//NOTE: Mobile navigation links html code hidden since they'll only be shown in the overlay prompt. After Clicking Hamburger menu icon.
+.sitenav__links--hide {
+	display: none;
+}
+
+.sitenav__links--show {
+	display: block;
+}
+
+.sitenav__links {
+	z-index: 11;
+	position: fixed;
+	left: 72px;
+	margin: auto;
+
+	@include mobileNavOverlayMenu;
+
+	#projects {
+		@include navOverlayMenuStyles;
+		margin-top: 67px;
+	}
+
+	#about,
+	#contact {
+		@include navOverlayMenuStyles;
+		margin-top: 130px;
+		margin-bottom: 130px;
+	}
+
+	#blog {
+		@include navOverlayMenuStyles;
+		margin-bottom: 66px;
+	}
+
+	#projects-text,
+	#about-text,
+	#contact-text,
+	#blog-text {
+		position: relative;
+		top: 15px;
+	}
+
+	li {
+		list-style: none;
+	}
+
+	li > a {
+		text-decoration: none;
+		color: #fff;
+	}
+}
+
+.sitenav__hamburger {
+	position: absolute;
+	right: 36px;
+	top: 20px;
+	width: 20px;
+	height: 20px;
+}
+
+.--overlay-remove {
+	display: none; //NOTE: general removal utility class
+}
+
+.--mobile-overlay {
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0.9);
+	width: 100vw;
+	height: 100vh;
+	z-index: 10; //NOTE: mobile-overlay needs to be higher than the parent's z-index.
+}
+
+.mainnav__links {
+	display: none;
+}
+//!SECTION END - MOBILE - PORTRAIT - NAVIGATION
+
+//SECTION MOBILE - PORTRAIT - BODY
+
+.main-container {
+	justify-content: center;
+	position: relative;
+	top: 102px;
+	@media (max-width: 359px) {
+		top: 102px;
+	}
+}
+
+
+
+body {
+	background-image: url("/img/img-mobile-p/nishida-sensei-hi5.png");
+	background-repeat: no-repeat;
+    background-position: left -155px top 0px;
+	background-attachment: scroll;
+
+	.show-box {
+		.show-box__title {
+			@include projectTitle;
+		}
+		.show-box__subtitle {
+			@include projectSubTitle;
+		}
+		.show-box__text {
+			text-align: center;
+			@include projectText;
+		}
+	}
+}
+
+
+.sitenav-overlay {
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0.295);
+	width: 100vw;
+	height: 100vh;
+}
+
+.case-studies-atf-overlay {
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0.295);
+	width: 370px;
+	height: 800px;
+    //Specifically described the dimensions of the viewport in px as the overlay is only for the first two sections of the overall page content layout. No overlay is needed for the BETWEEN THE LINES and project details sections.
+}
