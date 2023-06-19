@@ -16,6 +16,7 @@
   height: 53px;
   top: 0px;
   left: 26px;
+  z-index: 7;
 }
 
 .sitenav__contactNum {
@@ -29,6 +30,7 @@
   font-style: normal;
   font-size: 0.62rem;
   color: #fff;
+  z-index: 7;
 }
 
 .sitenav__links--hide {
@@ -96,6 +98,7 @@
   top: 20px;
   width: 20px;
   height: 20px;
+  z-index: 7;
 }
 
 .--overlay-remove {
@@ -117,7 +120,6 @@
 .main-container {
   justify-content: center;
   position: relative;
-  top: 102px;
 }
 @media (max-width: 359px) {
   .main-container {
@@ -125,42 +127,57 @@
   }
 }
 
-body {
-  background-image: url("/img/img-mobile-p/nishida-sensei-hi5.png");
+body .atf-1,
+body .btf-2,
+body .btl,
+body .btl-content-block-1,
+body .btl-content-block-2,
+body .mobile-cta-footer {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+body .atf-1 {
+  height: 800px;
+  top: -40px;
+  background-image: url("/img/img-mobile-p/nishida-sensei-hi5-overlayedit.jpg");
   background-repeat: no-repeat;
-  background-position: left -155px top 0px;
+  background-position: -150px center;
   background-attachment: scroll;
 }
-body .show-box .show-box__title {
-  font-family: proxima-nova, Arial, Helvetica, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 1.12rem;
+body .atf-1 .cs-project, body .atf-1 .cs-project__title, body .atf-1 .cs-project__services, body .atf-1 .cs-project__service, body .atf-1 .cs-client-details, body .atf-1 .cs-client-details__title, body .atf-1 .cs-client-details__status, body .atf-1 .cs-client-details__text, body .atf-1 .status-flag {
+  list-style: none;
+  color: #fff;
 }
-body .show-box .show-box__subtitle {
-  font-family: futura-pt, Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.06rem;
-}
-body .show-box .show-box__text {
-  text-align: center;
-  font-family: futura-pt, Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 0.75rem;
-}
-
-.sitenav-overlay {
-  position: fixed;
-  background-color: rgba(0, 0, 0, 0.295);
-  width: 100vw;
-  height: 100vh;
-}
-
-.case-studies-atf-overlay {
-  position: fixed;
-  background-color: rgba(0, 0, 0, 0.473);
-  width: 370px;
+body .btf-2 {
   height: 800px;
+  top: -60px;
+  background-image: url("/img/img-mobile-p/shortwood-bg-overlayedit.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  color: #fff;
+}
+body .btl {
+  top: -80px;
+  height: 215px;
+  background-color: #ffd866;
+  color: #363226;
+}
+body .btl-content-block-1 {
+  top: -100px;
+  background-color: #fcf8ec;
+  color: black;
+}
+body .btl-content-block-2 {
+  top: -120px;
+  background-color: #ffd866;
+  color: black;
+}
+body .mobile-cta-footer {
+  top: -140px;
+  background-color: #fff;
+  color: black;
 }/*# sourceMappingURL=main.css.map */

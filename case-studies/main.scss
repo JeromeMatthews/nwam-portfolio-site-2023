@@ -28,6 +28,7 @@
 	height: 53px;
 	top: 0px;
 	left: 26px;
+	z-index: 7;
 }
 
 .sitenav__contactNum {
@@ -39,6 +40,7 @@
 
 	@include heroContactNumSmall;
 	color: #fff;
+	z-index: 7;
 }
 
 //NOTE: Mobile navigation links html code hidden since they'll only be shown in the overlay prompt. After Clicking Hamburger menu icon.
@@ -99,6 +101,7 @@
 	top: 20px;
 	width: 20px;
 	height: 20px;
+	z-index: 7;
 }
 
 .--overlay-remove {
@@ -123,46 +126,169 @@
 .main-container {
 	justify-content: center;
 	position: relative;
-	top: 102px;
 	@media (max-width: 359px) {
 		top: 102px;
 	}
 }
 
-
-
 body {
-	background-image: url("/img/img-mobile-p/nishida-sensei-hi5.png");
-	background-repeat: no-repeat;
-    background-position: left -155px top 0px;
-	background-attachment: scroll;
+	.atf-1,
+	.btf-2,
+	.btl,
+	.btl-content-block-1,
+	.btl-content-block-2,
+	.mobile-cta-footer {
+		position: relative;
+		width: 100%;
+		@include flexMix;
+	}
 
-	.show-box {
-		.show-box__title {
-			@include projectTitle;
+	.atf-1 {
+		height: 800px;
+		top: -40px; //moving the section container itself
+		background-image: url("/img/img-mobile-p/nishida-sensei-hi5-overlayedit.jpg");
+		background-repeat: no-repeat;
+		background-position: -150px center; // first value left and right, second - top and bottom.
+		background-attachment: scroll;
+		
+		
+
+		.cs-project, .cs-project__title, .cs-project__services, .cs-project__service, .cs-client-details, .cs-client-details__title, .cs-client-details__status, .cs-client-details__text, .status-flag{
+			list-style: none;
+			color: #fff;
 		}
-		.show-box__subtitle {
-			@include projectSubTitle;
+
+		.cs-project{
+
+			.cs-project__title{
+
+			}
+
+			.cs-project__services{
+
+
+				.cs-project__service{
+
+				}
+
+
+			}
 		}
-		.show-box__text {
-			text-align: center;
-			@include projectText;
+
+		.cs-client-details{
+
+			.cs-client-details__title{
+
+
+			}
+			.cs-client-details__status{
+
+
+			}
+			.status-flag{
+
+
+			}
+			.cs-client-details__text{
+
+
+			}
+		}
+
+		.cs-project-desc{
+			.cs-project-desc__title{
+
+
+			}
+			.cs-project-desc__text{
+
+
+			}
+		}
+
+		.cs-project-sum{
+
+			.cs-project-sum__text-1{
+				.cs-project-sum__text__head{}
+				.cs-project-sum__text__body{}
+			}
+
+			.cs-project-sum__text-2{
+				.cs-project-sum__text__head{}
+				.cs-project-sum__text__body{}
+			}
+		}
+
+
+
+
+		
+	}// END of ATF--
+
+	//BTF --------
+
+	.btf-2 {
+		height: 800px;
+		top: -60px;
+
+		background-image: url("/img/img-mobile-p/shortwood-bg-overlayedit.jpg");
+		background-repeat: no-repeat;
+
+		// background-position: left -1px top 801px;
+		background-attachment: scroll;
+		color: #fff;
+	}// END of BTF-- 
+
+	//BETWEEN THE LINES
+
+	.btl {
+		top: -80px;
+		height: 215px;
+		background-color: #ffd866;
+		color: #363226;
+
+		.btl__title{}
+		.btl__text{}
+
+
+	}
+
+	.btl-content-block-1 {
+		top: -100px;
+		background-color: #fcf8ec;
+		color: black;
+
+
+		.btl-content-block__time{}
+		.btl-content-block__sub{}
+		.btl-content-block__text{}
+
+
+
+	}
+
+	.btl-content-block-2 {
+		top: -120px;
+		background-color: #ffd866;
+		color: black;
+
+
+		.btl-content-block__time{}
+		.btl-content-block__time__sub{}
+		.btl-content-block__sub{}
+		.btl-content-block__text{}
+
+	}
+
+	.mobile-cta-footer {
+		top: -140px;
+		background-color: #fff;
+		color: black;
+
+		.mobile-cta-footer__text {
+			
 		}
 	}
 }
 
 
-.sitenav-overlay {
-	position: fixed;
-	background-color: rgba(0, 0, 0, 0.295);
-	width: 100vw;
-	height: 100vh;
-}
-
-.case-studies-atf-overlay {
-	position: fixed;
-	background-color: rgba(0, 0, 0, 0.473);
-	width: 370px;
-	height: 800px;
-    //Specifically described the dimensions of the viewport in px as the overlay is only for the first two sections of the overall page content layout. No overlay is needed for the BETWEEN THE LINES and project details sections.
-}
