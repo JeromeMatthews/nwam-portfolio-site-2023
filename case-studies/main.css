@@ -139,6 +139,9 @@ body .mobile-cta-footer {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  justify-content: center;
+  align-content: center;
+  justify-content: center;
 }
 body .atf-1 {
   height: 800px;
@@ -148,9 +151,74 @@ body .atf-1 {
   background-position: -150px center;
   background-attachment: scroll;
 }
-body .atf-1 .cs-project, body .atf-1 .cs-project__title, body .atf-1 .cs-project__services, body .atf-1 .cs-project__service, body .atf-1 .cs-client-details, body .atf-1 .cs-client-details__title, body .atf-1 .cs-client-details__status, body .atf-1 .cs-client-details__text, body .atf-1 .status-flag {
+body .atf-1 .cs-project,
+body .atf-1 .cs-project__title,
+body .atf-1 .cs-project__services,
+body .atf-1 .cs-project__service,
+body .atf-1 .cs-client-details,
+body .atf-1 .cs-client-details__title,
+body .atf-1 .cs-client-details__status,
+body .atf-1 .cs-client-details__text,
+body .atf-1 .status-flag {
   list-style: none;
   color: #fff;
+  text-align: center;
+}
+body .atf-1 .cs-project {
+  position: relative;
+  width: 287px;
+  height: 325px;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(255, 255, 255, 0.11);
+  border-radius: 4%;
+  margin: 0 36px;
+  margin-bottom: 30px;
+}
+body .atf-1 .cs-project .cs-project__title {
+  font-family: proxima-nova, Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 2.5rem;
+  line-height: 95%;
+}
+body .atf-1 .cs-project .cs-project__services .cs-project__service {
+  font-family: futura-pt, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.93rem;
+}
+body .atf-1 .cs-client-details {
+  position: relative;
+  width: 287px;
+  height: 325px;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(255, 255, 255, 0.11);
+  border-radius: 4%;
+  margin: 0 36px;
+}
+body .atf-1 .cs-client-details .cs-client-details__title {
+  font-family: proxima-nova, Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 2.5rem;
+  line-height: 95%;
+}
+body .atf-1 .cs-client-details .cs-client-details__status {
+  font-family: proxima-nova, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+body .atf-1 .cs-client-details .status-flag {
+  font-family: proxima-nova, Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-size: 1.25rem;
+}
+body .atf-1 .cs-client-details .cs-client-details__text {
+  font-family: futura-pt, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.93rem;
 }
 body .btf-2 {
   height: 800px;
@@ -159,6 +227,56 @@ body .btf-2 {
   background-repeat: no-repeat;
   background-attachment: scroll;
   color: #fff;
+  text-align: center;
+}
+body .btf-2 .cs-project-desc__title,
+body .btf-2 .cs-project-sum__title {
+  font-family: proxima-nova, Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 2.5rem;
+  line-height: 95%;
+}
+body .btf-2 .cs-project-desc {
+  position: relative;
+  width: 287px;
+  height: 325px;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(255, 255, 255, 0.11);
+  border-radius: 4%;
+  margin: 0 36px;
+  top: -9px;
+}
+body .btf-2 .cs-project-desc .cs-project-desc__text {
+  font-family: futura-pt, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.93rem;
+}
+body .btf-2 .cs-project-sum {
+  position: relative;
+  width: 287px;
+  height: 325px;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(255, 255, 255, 0.11);
+  border-radius: 4%;
+  margin: 0 36px;
+  height: 420px;
+  top: -1px;
+}
+body .btf-2 .cs-project-sum .cs-project-sum__text-1 .cs-project-sum__text__head {
+  font-family: futura-pt, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.93rem;
+}
+body .btf-2 .cs-project-sum .cs-project-sum__text-1 .cs-project-sum__text__body {
+  font-family: futura-pt, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.93rem;
 }
 body .btl {
   top: -80px;

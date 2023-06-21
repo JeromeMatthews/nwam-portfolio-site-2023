@@ -2,6 +2,16 @@
 @import "..//partials/variables";
 @import "..//partials/mixins";
 //SECTION: UNIVERSAL VARIABLES, LISTS & MIXINS
+@mixin csContentBox {
+	position: relative;
+	width: 287px;
+	height: 325px;
+	top: 0px;
+	left: 0px;
+	background-color: rgba(255, 255, 255, 0.11);
+	border-radius: 4%;
+	margin: 0 36px;
+}
 //!SECTION UNIVERSAL VARIABLES, LISTS & MIXINS - END
 
 /*SECTION: [RESPONSIVE DESIGN] */
@@ -141,6 +151,9 @@ body {
 		position: relative;
 		width: 100%;
 		@include flexMix;
+		justify-content: center;
+		align-content: center;
+		justify-content: center;
 	}
 
 	.atf-1 {
@@ -150,80 +163,73 @@ body {
 		background-repeat: no-repeat;
 		background-position: -150px center; // first value left and right, second - top and bottom.
 		background-attachment: scroll;
-		
-		
 
-		.cs-project, .cs-project__title, .cs-project__services, .cs-project__service, .cs-client-details, .cs-client-details__title, .cs-client-details__status, .cs-client-details__text, .status-flag{
+		.cs-project,
+		.cs-project__title,
+		.cs-project__services,
+		.cs-project__service,
+		.cs-client-details,
+		.cs-client-details__title,
+		.cs-client-details__status,
+		.cs-client-details__text,
+		.status-flag {
 			list-style: none;
 			color: #fff;
+			text-align: center;
 		}
 
-		.cs-project{
+		//All content block title styles - Above the Fold and Below
 
-			.cs-project__title{
+		.cs-project {
+			@include csContentBox;
 
+			.cs-project__title {
+				font-family: $font-list-h;
+				font-weight: nth($f-weights, 1);
+				font-style: normal;
+				font-size: $text2x-5; //40px;
+				line-height: 95%;
 			}
 
-			.cs-project__services{
-
-
-				.cs-project__service{
-
+			.cs-project__services {
+				.cs-project__service {
+					font-family: $font-list-b;
+					font-weight: nth($f-weights, 3);
+					font-style: normal;
+					font-size: $textSmall-93; //15px;
+					
 				}
-
-
 			}
+			margin-bottom: 30px;
 		}
 
-		.cs-client-details{
-
-			.cs-client-details__title{
-
-
+		.cs-client-details {
+			@include csContentBox;
+			.cs-client-details__title {
+				font-family: $font-list-h;
+				font-weight: nth($f-weights, 1);
+				font-style: normal;
+				font-size: $text2x-5; //40px;
+				line-height: 95%;
 			}
-			.cs-client-details__status{
 
-
+			.cs-client-details__status {
+				font-family: $font-list-h;
+				font-weight: nth($f-weights, 3);
 			}
-			.status-flag{
-
-
+			.status-flag {
+				font-family: $font-list-h;
+				font-weight: nth($f-weights, 1);
+				font-size: $text1X-25; //20px;
 			}
-			.cs-client-details__text{
-
-
-			}
-		}
-
-		.cs-project-desc{
-			.cs-project-desc__title{
-
-
-			}
-			.cs-project-desc__text{
-
-
+			.cs-client-details__text {
+				font-family: $font-list-b;
+				font-weight: nth($f-weights, 3);
+				font-style: normal;
+				font-size: $textSmall-93; //15px;
 			}
 		}
-
-		.cs-project-sum{
-
-			.cs-project-sum__text-1{
-				.cs-project-sum__text__head{}
-				.cs-project-sum__text__body{}
-			}
-
-			.cs-project-sum__text-2{
-				.cs-project-sum__text__head{}
-				.cs-project-sum__text__body{}
-			}
-		}
-
-
-
-
-		
-	}// END of ATF--
+	} // END of ATF--
 
 	//BTF --------
 
@@ -237,7 +243,55 @@ body {
 		// background-position: left -1px top 801px;
 		background-attachment: scroll;
 		color: #fff;
-	}// END of BTF-- 
+		text-align: center;
+
+		.cs-project-desc__title,
+		.cs-project-sum__title {
+			font-family: $font-list-h;
+			font-weight: nth($f-weights, 1);
+			font-style: normal;
+			font-size: $text2x-5; //40px;
+			line-height: 95%;
+		}
+
+		.cs-project-desc {
+			@include csContentBox;
+			top:-9px;
+
+			.cs-project-desc__text {
+				font-family: $font-list-b;
+				font-weight: nth($f-weights, 3);
+				font-style: normal;
+				font-size: $textSmall-93; //15px;
+			}
+		}
+
+		.cs-project-sum {
+			@include csContentBox;
+			height: 420px;
+			top:-1px;
+		
+			.cs-project-sum__text-1 {
+
+				.cs-project-sum__text__head {
+					font-family: $font-list-b;
+					font-weight: nth($f-weights, 3);
+					font-style: normal;
+					font-size: $textSmall-93; //15px;
+				}
+				.cs-project-sum__text__body {
+					font-family: $font-list-b;
+					font-weight: nth($f-weights, 3);
+					font-style: normal;
+					font-size: $textSmall-93; //15px;
+				
+				}
+			}
+
+		}// END of Project-sum
+	}// END of BTF--
+
+	 
 
 	//BETWEEN THE LINES
 
@@ -247,10 +301,10 @@ body {
 		background-color: #ffd866;
 		color: #363226;
 
-		.btl__title{}
-		.btl__text{}
-
-
+		.btl__title {
+		}
+		.btl__text {
+		}
 	}
 
 	.btl-content-block-1 {
@@ -258,13 +312,12 @@ body {
 		background-color: #fcf8ec;
 		color: black;
 
-
-		.btl-content-block__time{}
-		.btl-content-block__sub{}
-		.btl-content-block__text{}
-
-
-
+		.btl-content-block__time {
+		}
+		.btl-content-block__sub {
+		}
+		.btl-content-block__text {
+		}
 	}
 
 	.btl-content-block-2 {
@@ -272,12 +325,14 @@ body {
 		background-color: #ffd866;
 		color: black;
 
-
-		.btl-content-block__time{}
-		.btl-content-block__time__sub{}
-		.btl-content-block__sub{}
-		.btl-content-block__text{}
-
+		.btl-content-block__time {
+		}
+		.btl-content-block__time__sub {
+		}
+		.btl-content-block__sub {
+		}
+		.btl-content-block__text {
+		}
 	}
 
 	.mobile-cta-footer {
@@ -286,9 +341,6 @@ body {
 		color: black;
 
 		.mobile-cta-footer__text {
-			
 		}
 	}
-}
-
-
+ }
