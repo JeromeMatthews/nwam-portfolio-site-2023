@@ -191,6 +191,7 @@ body {
 			}
 
 			.cs-project__services {
+				padding: 0%;
 				.cs-project__service {
 					font-family: $font-list-b;
 					font-weight: nth($f-weights, 3);
@@ -198,7 +199,7 @@ body {
 					font-size: $textSmall-93; //15px;
 				}
 			}
-			margin-bottom: 30px;
+			margin: 30px 30px;
 		}
 
 		.cs-client-details {
@@ -404,9 +405,8 @@ body {
 	}
 
 	.mobile-cta-footer {
-
 		height: 800px;
-		
+
 		background-color: #fff;
 		color: black;
 
@@ -425,7 +425,7 @@ body {
 				height: 30px;
 				position: relative;
 				top: -32px;
-				left: 182px;
+				left: 185px;
 			}
 		}
 
@@ -441,7 +441,6 @@ body {
 			font-style: normal;
 			font-size: $text1X-25; //20px;
 			position: relative;
-			
 		}
 
 		.mobile-cta-footer__sm-links {
@@ -449,7 +448,6 @@ body {
 			list-style: none;
 			align-content: center;
 			position: relative;
-			// top: -35px;
 			padding: 0px; //reseting the padding to default of zero.
 		}
 	}
