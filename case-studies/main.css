@@ -283,19 +283,152 @@ body .btl {
   height: 215px;
   background-color: #ffd866;
   color: #363226;
+  text-align: center;
+}
+body .btl .btl__title {
+  line-height: 150%;
+  margin-bottom: 2px;
+}
+body .btl .btl__title .btl__title-1 {
+  font-family: proxima-nova, Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 3.43rem;
+}
+body .btl .btl__title .btl__title-2 {
+  font-family: proxima-nova, Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 2.81rem;
+}
+body .btl .btl__text {
+  line-height: 150%;
+}
+body .btl .btl__text .btl__text-1 {
+  font-family: proxima-nova, Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 1.06rem;
+}
+body .btl .btl__text .btl__text-2 {
+  font-family: proxima-nova, Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 0.87rem;
 }
 body .btl-content-block-1 {
   top: -100px;
   background-color: #fcf8ec;
   color: black;
+  flex-direction: column;
+  text-align: center;
+  height: 1200px;
+  padding: 0 30px;
+}
+body .btl-content-block-1 .btl-content-block__time {
+  font-family: proxima-nova, Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.25rem;
+  position: relative;
+}
+body .btl-content-block-1 .btl-content-block__time-text_2 {
+  font-family: proxima-nova, Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.12rem;
+  position: relative;
+  top: -50px;
+}
+body .btl-content-block-1 .btl-content-block__sub {
+  font-family: futura-pt, Helvetica, Arial, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 0.93rem;
+}
+body .btl-content-block-1 .btl-content-block__text {
+  font-family: futura-pt, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.93rem;
 }
 body .btl-content-block-2 {
   top: -120px;
   background-color: #ffd866;
   color: black;
+  height: 600px;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 30px;
+}
+body .btl-content-block-2 .btl-content-block__time {
+  font-family: proxima-nova, Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.25rem;
+  position: relative;
+}
+body .btl-content-block-2 .btl-content-block__time__sub {
+  font-family: proxima-nova, Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.12rem;
+  position: relative;
+  top: -50px;
+  left: 0px;
+}
+body .btl-content-block-2 .btl-content-block__sub {
+  font-family: futura-pt, Helvetica, Arial, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 0.93rem;
+}
+body .btl-content-block-2 .btl-content-block__text {
+  font-family: futura-pt, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.93rem;
 }
 body .mobile-cta-footer {
   top: -140px;
   background-color: #fff;
   color: black;
+}
+body .mobile-cta-footer .mobile-cta-footer-branding .mobile-cta-footer-branding__text-1,
+body .mobile-cta-footer .mobile-cta-footer-branding .mobile-cta-footer-branding__text-2 {
+  font-family: proxima-nova, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.56rem;
+}
+body .mobile-cta-footer .mobile-cta-footer-branding .mobile-cta-footer__logo {
+  width: 83px;
+  height: 30px;
+  position: relative;
+  top: -57px;
+  left: 170px;
+}
+body .mobile-cta-footer .mobile-cta-footer__button {
+  width: 258px;
+  height: 50px;
+  background: #f5b600 0% 0% no-repeat padding-box;
+  box-shadow: 0px 2px 0px #000000;
+  border-radius: 5px;
+  font-family: proxima-nova, Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 1.25rem;
+  position: relative;
+  top: -50px;
+}
+body .mobile-cta-footer .mobile-cta-footer__sm-links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  align-content: center;
+  position: relative;
+  top: -35px;
+  padding: 0px;
 }/*# sourceMappingURL=main.css.map */
