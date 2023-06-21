@@ -20,7 +20,7 @@
 }
 
 .sitenav__contactNum {
-  position: relative;
+  position: absolute;
   display: inline-block;
   width: 115px;
   top: 45px;
@@ -145,7 +145,6 @@ body .mobile-cta-footer {
 }
 body .atf-1 {
   height: 800px;
-  top: -40px;
   background-image: url("/img/img-mobile-p/nishida-sensei-hi5-overlayedit.jpg");
   background-repeat: no-repeat;
   background-position: -150px center;
@@ -222,7 +221,6 @@ body .atf-1 .cs-client-details .cs-client-details__text {
 }
 body .btf-2 {
   height: 800px;
-  top: -60px;
   background-image: url("/img/img-mobile-p/shortwood-bg-overlayedit.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -279,7 +277,6 @@ body .btf-2 .cs-project-sum .cs-project-sum__text-1 .cs-project-sum__text__body 
   font-size: 0.93rem;
 }
 body .btl {
-  top: -80px;
   height: 215px;
   background-color: #ffd866;
   color: #363226;
@@ -317,7 +314,6 @@ body .btl .btl__text .btl__text-2 {
   font-size: 0.87rem;
 }
 body .btl-content-block-1 {
-  top: -100px;
   background-color: #fcf8ec;
   color: black;
   flex-direction: column;
@@ -353,10 +349,9 @@ body .btl-content-block-1 .btl-content-block__text {
   font-size: 0.93rem;
 }
 body .btl-content-block-2 {
-  top: -120px;
   background-color: #ffd866;
   color: black;
-  height: 600px;
+  height: 800px;
   flex-direction: column;
   text-align: center;
   padding: 0 30px;
@@ -390,7 +385,7 @@ body .btl-content-block-2 .btl-content-block__text {
   font-size: 0.93rem;
 }
 body .mobile-cta-footer {
-  top: -140px;
+  height: 800px;
   background-color: #fff;
   color: black;
 }
@@ -400,13 +395,14 @@ body .mobile-cta-footer .mobile-cta-footer-branding .mobile-cta-footer-branding_
   font-weight: 400;
   font-style: normal;
   font-size: 1.56rem;
+  margin: 0px 12px;
 }
 body .mobile-cta-footer .mobile-cta-footer-branding .mobile-cta-footer__logo {
   width: 83px;
   height: 30px;
   position: relative;
-  top: -57px;
-  left: 170px;
+  top: -32px;
+  left: 182px;
 }
 body .mobile-cta-footer .mobile-cta-footer__button {
   width: 258px;
@@ -419,7 +415,6 @@ body .mobile-cta-footer .mobile-cta-footer__button {
   font-style: normal;
   font-size: 1.25rem;
   position: relative;
-  top: -50px;
 }
 body .mobile-cta-footer .mobile-cta-footer__sm-links {
   display: flex;
@@ -429,6 +424,5 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
   list-style: none;
   align-content: center;
   position: relative;
-  top: -35px;
   padding: 0px;
 }/*# sourceMappingURL=main.css.map */
