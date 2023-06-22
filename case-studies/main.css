@@ -1,6 +1,4 @@
 @import "..//partials/_base.css";
-/*SECTION: [RESPONSIVE DESIGN] */
-/*NOTE : Query breakpoints*/
 .sitenav--container {
   position: relative;
   z-index: 1;
@@ -117,6 +115,8 @@
   display: none;
 }
 
+/*SECTION: [RESPONSIVE DESIGN] */
+/*NOTE : Query breakpoints*/
 .main-container {
   justify-content: center;
   position: relative;

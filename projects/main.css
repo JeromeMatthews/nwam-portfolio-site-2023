@@ -1,6 +1,4 @@
 @import "..//partials/_base.css";
-/*SECTION: [RESPONSIVE DESIGN] */
-/*NOTE : Query breakpoints*/
 .sitenav--container {
   position: relative;
   z-index: 1;
@@ -16,10 +14,11 @@
   height: 53px;
   top: 0px;
   left: 26px;
+  z-index: 7;
 }
 
 .sitenav__contactNum {
-  position: relative;
+  position: absolute;
   display: inline-block;
   width: 115px;
   top: 45px;
@@ -29,6 +28,7 @@
   font-style: normal;
   font-size: 0.62rem;
   color: #fff;
+  z-index: 7;
 }
 
 .sitenav__links--hide {
@@ -96,6 +96,7 @@
   top: 20px;
   width: 20px;
   height: 20px;
+  z-index: 7;
 }
 
 .--overlay-remove {
@@ -114,6 +115,8 @@
   display: none;
 }
 
+/*SECTION: [RESPONSIVE DESIGN] */
+/*NOTE : Query breakpoints*/
 .main-container {
   justify-content: center;
   position: relative;
