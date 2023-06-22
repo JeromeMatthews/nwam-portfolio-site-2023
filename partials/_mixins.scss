@@ -64,6 +64,14 @@
 		justify-content: center;
 }
 
+@mixin flexMix-col {
+	display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-content: center;
+		flex-direction: column;
+}
+
 
 //!SECTION END - HOME/LANDING PAGE MIXINS:
 
