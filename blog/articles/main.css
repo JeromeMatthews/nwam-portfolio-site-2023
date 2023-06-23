@@ -120,4 +120,67 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
+}
+body .main-container .article-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: #fff;
+  margin: 0px 37px;
+}
+body .main-container .article-container .article__title, body .main-container .article-container .article__sub_title, body .main-container .article-container .article-sm-top {
+  margin: 0px;
+  padding: 0px;
+}
+body .main-container .article-container .article__title {
+  font-family: proxima-nova, Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 2.5rem;
+}
+body .main-container .article-container .article__sub_title {
+  font-family: proxima-nova, Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 0.93rem;
+}
+body .main-container .article-container .article-sm-top {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+body .main-container .article-container .article-sm-top .article-sm-top-link {
+  list-style: none;
+}
+body .main-container .article-container .article__content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  flex-direction: column;
+}
+body .main-container .article-container .article__content .support-topic .support-topic__head {
+  font-family: proxima-nova, Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 1.56rem;
+}
+body .main-container .article-container .article__content .support-topic .support-topic__body {
+  font-family: futura-pt, Helvetica, Arial, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 0.93rem;
+}
+body .main-container .article-container .article-sm-bottom {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+body .main-container .article-container .article-sm-bottom .article-sm-bottom-link {
+  list-style: none;
 }/*# sourceMappingURL=main.css.map */

@@ -12,40 +12,78 @@ body{
 
     .main-container{
 
-        .article-container{
-            .article__title{
+                .article-container{
+                     @include flexMix-col;
+                     text-align: center;
+                     color: #fff;
+                     margin: 0px 37px;
 
-            }
-            .article__subtitle{
+                     .article__title,.article__sub_title,.article-sm-top{
+                        margin: 0px;
+                        padding: 0px;
+                     }
+                    .article__title{
+                        font-family: $font-list-h;
+                        font-weight: nth($f-weights, 1);
+                        font-style: normal;
+                        font-size: $text2x-5; //40px;
 
-            }
+                    }
+                    .article__sub_title{
 
-            .article-sm-top{
-
-                .article-sm-top-link{
-
-                }
-
-            }
-
-            .article__content{
-
-                .support-topic{
-                    .support-topic__head{
+                        font-family: $font-list-h;
+                        font-weight: nth($f-weights, 2);
+                        font-style: normal;
+                        font-size: $textSmall-93; //15px;
 
                     }
 
-                    .support-topic__body{
+                    .article-sm-top{
+                        @include flexMix;
                         
+                        .article-sm-top-link{
+
+                            list-style:none ;
+                        }
+
                     }
 
-                }
+                    .article__content{
+                        @include flexMix-col;
+
+                        .support-topic{
+                            .support-topic__head{
+                                font-family: $font-list-h;
+                                font-weight: nth($f-weights, 1);
+                                font-style: normal;
+                                font-size: $text1x-56; //25px;
+
+                            }
+
+                            .support-topic__body{
+
+                                font-family: $font-list-b;
+                        font-weight: nth($f-weights, 1);
+                        font-style: normal;
+                        font-size: $textSmall-93; //15px;
+                                
+
+                            }
+
+                        }      
+
+                    }
+
+                    .article-sm-bottom{
+                        @include flexMix;
+
+                        .article-sm-bottom-link{
+                            list-style: none;
 
 
+                        }
+
+                    }
             }
-
-        }
-
     }
-
 }
