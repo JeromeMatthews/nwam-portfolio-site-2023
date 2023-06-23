@@ -1,0 +1,51 @@
+@import "../../partials/_base.css";
+@import "../../partials/variables";
+@import "../../partials/mixins";
+@import "../../partials/nav-base-mobile";
+
+body{
+    background-image: url("/img/img-mobile-p/pexels-marcelo-jaboo-Chair-spotlight.jpg");
+	background-repeat: no-repeat;
+    background-position: center center;
+	background-attachment:fixed;
+
+
+    .main-container{
+
+        .article-container{
+            .article__title{
+
+            }
+            .article__subtitle{
+
+            }
+
+            .article-sm-top{
+
+                .article-sm-top-link{
+
+                }
+
+            }
+
+            .article__content{
+
+                .support-topic{
+                    .support-topic__head{
+
+                    }
+
+                    .support-topic__body{
+                        
+                    }
+
+                }
+
+
+            }
+
+        }
+
+    }
+
+}
