@@ -1,0 +1,111 @@
+@import "..//partials/_base.css";
+@import "..//partials/variables";
+@import "..//partials/mixins";
+@import "..//partials/nav-base-mobile";
+
+body {
+	background-image: url("/img/img-mobile-p/mobile-about-bg.png");
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+
+	.main-container {
+		.about-hero,
+		.body-sect-1,
+		.body-sect-2,
+		.body-sect-3,
+		.mobile-cta-footer {
+			@include flexMix-col;
+			text-align: center;
+		}
+		color: #fff;
+		.about-hero {
+			.about-hero__copy {
+                
+			}
+			.about-hero__text {
+			}
+		}
+
+		//BTF =======================
+
+		.body-sect-1 {
+			.body-sect-1-art {
+				.body-sect-1__head {
+				}
+				.body-sect-1__text {
+				}
+			}
+		}
+
+		.body-sect-2 {
+			.body-sect-2-art {
+				.body-sect-2__head {
+				}
+				.body-sect-2__text {
+				}
+			}
+		}
+
+		.body-sect-3 {
+			.body-sect-3-art {
+				.body-sect-3__head {
+				}
+				.body-sect-3__text {
+				}
+			}
+		}
+
+		.mobile-cta-footer {
+			height: 800px;
+
+			background-color: #fff;
+			color: black;
+
+			.mobile-cta-footer-branding {
+				.mobile-cta-footer-branding__text-1,
+				.mobile-cta-footer-branding__text-2 {
+					font-family: $font-list-h;
+					font-weight: nth($f-weights, 3);
+					font-style: normal;
+					font-size: $text1x-56; //25px;
+					margin: 0px 12px;
+				}
+
+				.mobile-cta-footer-branding__text-2 {
+					position: relative;
+					left: -45px;
+				}
+
+				.mobile-cta-footer__logo {
+					width: 83px;
+					height: 30px;
+					position: relative;
+					top: -32px;
+					left: 85px;
+				}
+			}
+
+			.mobile-cta-footer__button {
+				width: 258px;
+				height: 50px;
+				background: #f5b600 0% 0% no-repeat padding-box;
+				box-shadow: 0px 2px 0px #000000;
+				border-radius: 5px;
+
+				font-family: $font-list-h;
+				font-weight: nth($f-weights, 1);
+				font-style: normal;
+				font-size: $text1X-25; //20px;
+				position: relative;
+			}
+
+			.mobile-cta-footer__sm-links {
+				@include flexMix;
+				list-style: none;
+				align-content: center;
+				position: relative;
+				padding: 0px; //reseting the padding to default of zero.
+			}
+		} //end mobile-cta-footer
+	} //end main-container
+} //end body
