@@ -9,7 +9,7 @@
 }
 
 .sitenav__logo {
-  position: relative;
+  position: absolute;
   width: 94px;
   height: 53px;
   top: 0px;
