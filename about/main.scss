@@ -3,6 +3,20 @@
 @import "..//partials/mixins";
 @import "..//partials/nav-base-mobile";
 
+@mixin aboutTitleCopy {
+	font-family: $font-list-h;
+	font-weight: nth($f-weights, 1);
+	font-style: normal;
+	font-size: $text2x-5; //40px;
+}
+
+@mixin aboutBodyCopy{
+    font-family: $font-list-b;
+	font-weight: nth($f-weights, 3);
+	font-style: normal;
+	font-size: $textSmall-93; //15px;
+}
+
 body {
 	background-image: url("/img/img-mobile-p/mobile-about-bg.png");
 	background-repeat: no-repeat;
@@ -20,9 +34,12 @@ body {
 		color: #fff;
 		.about-hero {
 			.about-hero__copy {
-                
 			}
 			.about-hero__text {
+                position: relative;
+                top: 220px;
+				@include aboutTitleCopy;
+                color: #E1A700;
 			}
 		}
 
@@ -31,8 +48,11 @@ body {
 		.body-sect-1 {
 			.body-sect-1-art {
 				.body-sect-1__head {
+                    @include aboutTitleCopy;
+                   
 				}
 				.body-sect-1__text {
+                   @include aboutBodyCopy;
 				}
 			}
 		}
@@ -40,8 +60,10 @@ body {
 		.body-sect-2 {
 			.body-sect-2-art {
 				.body-sect-2__head {
+                    @include aboutTitleCopy;
 				}
 				.body-sect-2__text {
+                    @include aboutBodyCopy;
 				}
 			}
 		}
@@ -49,8 +71,10 @@ body {
 		.body-sect-3 {
 			.body-sect-3-art {
 				.body-sect-3__head {
+                    @include aboutTitleCopy;
 				}
 				.body-sect-3__text {
+                    @include aboutBodyCopy;
 				}
 			}
 		}
