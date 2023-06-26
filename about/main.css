@@ -119,9 +119,10 @@ body {
   background-image: url("/img/img-mobile-p/mobile-about-bg.png");
   background-repeat: no-repeat;
   background-attachment: scroll;
+  background-color: #fff;
 }
 body .main-container {
-  color: #fff;
+  color: #000000;
 }
 body .main-container .about-hero,
 body .main-container .body-sect-1,
@@ -134,15 +135,22 @@ body .main-container .mobile-cta-footer {
   align-content: center;
   flex-direction: column;
   text-align: center;
+  margin: auto 37px;
+}
+body .main-container .about-hero .about-hero__copy {
+  position: relative;
+  margin: 200px auto;
 }
 body .main-container .about-hero .about-hero__text {
   position: relative;
-  top: 220px;
   font-family: proxima-nova, Arial, Helvetica, sans-serif;
   font-weight: 900;
   font-style: normal;
   font-size: 2.5rem;
-  color: #E1A700;
+  color: #e1a700;
+}
+body .main-container .body-sect-1__text, body .main-container .body-sect-2__text, body .main-container .body-sect-3__text {
+  padding: 10px;
 }
 body .main-container .body-sect-1 .body-sect-1-art .body-sect-1__head {
   font-family: proxima-nova, Arial, Helvetica, sans-serif;
@@ -155,6 +163,9 @@ body .main-container .body-sect-1 .body-sect-1-art .body-sect-1__text {
   font-weight: 400;
   font-style: normal;
   font-size: 0.93rem;
+}
+body .main-container .body-sect-1 .body-sect-1-art .body-sect-1__text i {
+  font-style: italic;
 }
 body .main-container .body-sect-2 .body-sect-2-art .body-sect-2__head {
   font-family: proxima-nova, Arial, Helvetica, sans-serif;
@@ -182,7 +193,8 @@ body .main-container .body-sect-3 .body-sect-3-art .body-sect-3__text {
 }
 body .main-container .mobile-cta-footer {
   height: 800px;
-  background-color: #fff;
+  position: relative;
+  top: 200px;
   color: black;
 }
 body .main-container .mobile-cta-footer .mobile-cta-footer-branding .mobile-cta-footer-branding__text-1,

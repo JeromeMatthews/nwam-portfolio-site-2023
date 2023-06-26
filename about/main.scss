@@ -10,8 +10,8 @@
 	font-size: $text2x-5; //40px;
 }
 
-@mixin aboutBodyCopy{
-    font-family: $font-list-b;
+@mixin aboutBodyCopy {
+	font-family: $font-list-b;
 	font-weight: nth($f-weights, 3);
 	font-style: normal;
 	font-size: $textSmall-93; //15px;
@@ -21,6 +21,7 @@ body {
 	background-image: url("/img/img-mobile-p/mobile-about-bg.png");
 	background-repeat: no-repeat;
 	background-attachment: scroll;
+	background-color: #fff;
 
 	.main-container {
 		.about-hero,
@@ -30,29 +31,37 @@ body {
 		.mobile-cta-footer {
 			@include flexMix-col;
 			text-align: center;
+			margin: auto 37px;
 		}
-		color: #fff;
+		color: #000000;
 		.about-hero {
 			.about-hero__copy {
+				position: relative;
+				margin: 200px auto;
 			}
 			.about-hero__text {
-                position: relative;
-                top: 220px;
+				position: relative;
 				@include aboutTitleCopy;
-                color: #E1A700;
+				color: #e1a700;
 			}
 		}
 
 		//BTF =======================
+		.body-sect-1__text,.body-sect-2__text,.body-sect-3__text{
+			padding: 10px;
+		}
 
 		.body-sect-1 {
 			.body-sect-1-art {
 				.body-sect-1__head {
-                    @include aboutTitleCopy;
-                   
+					@include aboutTitleCopy;
 				}
 				.body-sect-1__text {
-                   @include aboutBodyCopy;
+					
+					@include aboutBodyCopy;
+					i{
+						font-style: italic;
+					}
 				}
 			}
 		}
@@ -60,10 +69,10 @@ body {
 		.body-sect-2 {
 			.body-sect-2-art {
 				.body-sect-2__head {
-                    @include aboutTitleCopy;
+					@include aboutTitleCopy;
 				}
 				.body-sect-2__text {
-                    @include aboutBodyCopy;
+					@include aboutBodyCopy;
 				}
 			}
 		}
@@ -71,10 +80,10 @@ body {
 		.body-sect-3 {
 			.body-sect-3-art {
 				.body-sect-3__head {
-                    @include aboutTitleCopy;
+					@include aboutTitleCopy;
 				}
 				.body-sect-3__text {
-                    @include aboutBodyCopy;
+					@include aboutBodyCopy;
 				}
 			}
 		}
@@ -82,7 +91,9 @@ body {
 		.mobile-cta-footer {
 			height: 800px;
 
-			background-color: #fff;
+			position: relative;
+			top: 200px;
+
 			color: black;
 
 			.mobile-cta-footer-branding {
