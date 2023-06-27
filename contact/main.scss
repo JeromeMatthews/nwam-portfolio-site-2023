@@ -8,9 +8,97 @@ body {
 	background-repeat: no-repeat;
 	background-attachment: scroll;
 	background-color: #fff;
-    
-    .main-container{
 
-        
-    }
-}
+	.main-container {
+		.contact-container {
+          
+
+			.contact-heroCopy {
+                margin: 0px;
+                padding: 0px;
+				position: relative;
+				top: 130px;
+				font-family: $font-list-h;
+				font-size: $text1x-56; //25px;
+				font-weight: nth($f-weights, 1);
+				color: #fff;
+				text-align: center;
+			} //end contact-heroCopy
+
+			.contactheroimg {
+                margin: 0px;
+                padding: 0px;
+				position: relative;
+				top: 110px;
+				left: 88px;
+				height: 95px;
+			}
+		} //end contact-container
+
+		.contact-form,
+		.contact-form__elements,
+		.contact-form__element,
+		.contact-form__label,
+		.contact-form__input {
+			margin: 0px;
+			padding: 0px;
+		} //end contact-form elements grouping
+
+		.contact-form {
+			position: relative;
+			top: 100px;
+			.contact-form__elements {
+				@include flexMix-col;
+				text-align: center;
+				align-content: center;
+
+				.contact-form__element {
+					display: inline-block;
+					margin: 6px auto;
+
+					list-style: none;
+
+					.contact-form__label {
+						position: relative;
+						//to align the labels with the inputs.
+						background-color: #ffbf00;
+						font-family: $font-list-b;
+						font-size: $textSmall-93; //15px;
+						font-weight: nth($f-weights, 3);
+						color: #000000;
+
+						width: 69px;
+						height: 30px;
+						padding: 5px 15px 6px 15px;
+
+						#project-name {
+						}
+
+						.contact-form__input {
+							background-color: #ffbf00;
+							font-family: $font-list-b;
+							font-size: $textSmall-93; //15px;
+							font-weight: nth($f-weights, 3);
+							color: #000000;
+						}
+					} //end contact-form__label
+				} //end contact-form__element
+
+				.mobile-cta-footer__button {
+					width: 196px;
+					height: 41px;
+					background: #f5b600 0% 0% no-repeat padding-box;
+					box-shadow: 0px 2px 0px #000000;
+					border: 1px solid var(--unnamed-color-707070);
+					border-radius: 5px;
+
+					font-family: $font-list-h;
+					font-weight: nth($f-weights, 1);
+					font-style: normal;
+					font-size: $text1X-25; //20px;
+					position: relative;
+				}
+			} //end contact-form__element
+		} //end contact-form
+	} //end main-container
+} //end body

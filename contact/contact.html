@@ -118,32 +118,42 @@
         <main class="main-container">
             <section class="contact-container">
                 <h1 class="contact-heroCopy">
-                    So, What's your story?... Let's tell it, with
+                    So, What's your story?... 
                 </h1>
-                <img src="/img/img-mobile-p/Nomad-orange.png" alt="nomad-logo-orange" class="contactheroimg" />
+                <h1 class="contact-heroCopy">
+                    Let's tell it, with
+                </h1>
+
+                <img class="contactheroimg"  src="/img/img-mobile-p/Nomad-orange.png" alt="nomad-logo-orange" />
 
                 <!-- contact form-->
-                <form action="submit">
-                    <ul>
-                        <li>
-                            <label for="name">name</label>
-                            <input type="text" id="name" name="prospect-name" value="your name">
+                <form class="contact-form" action="submit">
+                    <ul class="contact-form__elements">
+                        <li  class="contact-form__element">
+
+                            <label class="contact-form__label" for="name">name</label>
+                      
+                            <input class="contact-form__input"  type="text" size="30" style="height:30px;  position: relative;
+                            left: -5px; text-align: center;"bid="name" name="prospect-name" value="your name">
+
                         </li>
-                        <li>
-                            <label for="email">email</label>
-                            <input type="email" id="email" name="prospect-email"
+                        <li class="contact-form__element">
+                                <label class="contact-form__label" for="email">email</label>
+
+                            
+                            <input class="contact-form__input" type="email" size="29" style="height:30px;  position: relative;
+                            left: -5px; text-align: center;" id="email" name="prospect-email"
                             value="your email">
                         </li>
-                        <li>
-                            <label for="project-name">project name</label>
-                            <input type="text" id="project-name" name="prospect-name"
+                        <li class="contact-form__element">
+                            <label class="contact-form__label" id="project-name" for="project-name">project</label>
+                            <input class="contact-form__input" type="text" size="29" style="height:30px;  position: relative;
+                            left: -5px; text-align: center;" id="project-name" name="project-name"
                             value="your project name">
                         </li>
-                        <label for="project-desc">Project Description</label>
-                        <textarea name="project-desc" id="project-desc" cols="30" rows="10">
-                        Your story...
+                        <textarea  name="project-desc" id="project-desc" cols="30" rows="10" placeholder="Your story...">
                         </textarea>
-                        <li>
+                        <li class="contact-form__element">
                             <button class="mobile-cta-footer__button" type="submit" id="contact-submit">share your story</button>
                         </li>
                     </ul>

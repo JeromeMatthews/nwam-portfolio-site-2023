@@ -1,0 +1,199 @@
+@import "..//partials/_base.css";
+.sitenav--container {
+  position: relative;
+  z-index: 1;
+}
+
+.sitenav-logo-contact-container {
+  position: relative;
+}
+
+.sitenav__logo {
+  position: absolute;
+  width: 94px;
+  height: 53px;
+  top: 0px;
+  left: 26px;
+  z-index: 7;
+}
+
+.sitenav__contactNum {
+  position: absolute;
+  display: inline-block;
+  width: 115px;
+  top: 45px;
+  left: 38px;
+  font-family: proxima-nova, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.62rem;
+  color: #fff;
+  z-index: 7;
+}
+
+.sitenav__links--hide {
+  display: none;
+}
+
+.sitenav__links--show {
+  display: block;
+}
+
+.sitenav__links {
+  z-index: 11;
+  position: fixed;
+  left: 72px;
+  margin: auto;
+  font-family: futura-pt, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.87rem;
+}
+.sitenav__links #projects {
+  text-align: center;
+  width: 140px;
+  height: 67px;
+  background-color: rgba(109, 109, 109, 0.2);
+  position: relative;
+  margin-top: 67px;
+}
+.sitenav__links #about,
+.sitenav__links #contact {
+  text-align: center;
+  width: 140px;
+  height: 67px;
+  background-color: rgba(109, 109, 109, 0.2);
+  position: relative;
+  margin-top: 130px;
+  margin-bottom: 130px;
+}
+.sitenav__links #blog {
+  text-align: center;
+  width: 140px;
+  height: 67px;
+  background-color: rgba(109, 109, 109, 0.2);
+  position: relative;
+  margin-bottom: 66px;
+}
+.sitenav__links #projects-text,
+.sitenav__links #about-text,
+.sitenav__links #contact-text,
+.sitenav__links #blog-text {
+  position: relative;
+  top: 15px;
+}
+.sitenav__links li {
+  list-style: none;
+}
+.sitenav__links li > a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.sitenav__hamburger {
+  position: absolute;
+  right: 36px;
+  top: 20px;
+  width: 20px;
+  height: 20px;
+  z-index: 7;
+}
+
+.--overlay-remove {
+  display: none;
+}
+
+.--mobile-overlay {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+}
+
+.mainnav__links {
+  display: none;
+}
+
+body {
+  background-image: url("/img/img-mobile-p/mobile-contact-bg.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-color: #fff;
+}
+body .main-container .contact-container .contact-heroCopy {
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  top: 130px;
+  font-family: proxima-nova, Arial, Helvetica, sans-serif;
+  font-size: 1.56rem;
+  font-weight: 900;
+  color: #fff;
+  text-align: center;
+}
+body .main-container .contact-container .contactheroimg {
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  top: 110px;
+  left: 88px;
+  height: 95px;
+}
+body .main-container .contact-form,
+body .main-container .contact-form__elements,
+body .main-container .contact-form__element,
+body .main-container .contact-form__label,
+body .main-container .contact-form__input {
+  margin: 0px;
+  padding: 0px;
+}
+body .main-container .contact-form {
+  position: relative;
+  top: 100px;
+}
+body .main-container .contact-form .contact-form__elements {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-content: center;
+}
+body .main-container .contact-form .contact-form__elements .contact-form__element {
+  display: inline-block;
+  margin: 6px auto;
+  list-style: none;
+}
+body .main-container .contact-form .contact-form__elements .contact-form__element .contact-form__label {
+  position: relative;
+  background-color: #ffbf00;
+  font-family: futura-pt, Helvetica, Arial, sans-serif;
+  font-size: 0.93rem;
+  font-weight: 400;
+  color: #000000;
+  width: 69px;
+  height: 30px;
+  padding: 5px 15px 6px 15px;
+}
+body .main-container .contact-form .contact-form__elements .contact-form__element .contact-form__label .contact-form__input {
+  background-color: #ffbf00;
+  font-family: futura-pt, Helvetica, Arial, sans-serif;
+  font-size: 0.93rem;
+  font-weight: 400;
+  color: #000000;
+}
+body .main-container .contact-form .contact-form__elements .mobile-cta-footer__button {
+  width: 196px;
+  height: 41px;
+  background: #f5b600 0% 0% no-repeat padding-box;
+  box-shadow: 0px 2px 0px #000000;
+  border: 1px solid var(--unnamed-color-707070);
+  border-radius: 5px;
+  font-family: proxima-nova, Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 1.25rem;
+  position: relative;
+}/*# sourceMappingURL=main.css.map */
