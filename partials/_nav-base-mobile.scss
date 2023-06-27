@@ -75,13 +75,17 @@
 		top: 15px;
 	}
 
+	 a{
+		text-decoration: none;
+	}
+
 	li {
 		list-style: none;
 	}
 
-	li > a {
+	a > li {
 		text-decoration: none;
-		color: #fff;
+		color: #ffffff;
 	}
 }
 

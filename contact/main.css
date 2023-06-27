@@ -82,12 +82,15 @@
   position: relative;
   top: 15px;
 }
+.sitenav__links a {
+  text-decoration: none;
+}
 .sitenav__links li {
   list-style: none;
 }
-.sitenav__links li > a {
+.sitenav__links a > li {
   text-decoration: none;
-  color: #fff;
+  color: #ffffff;
 }
 
 .sitenav__hamburger {
