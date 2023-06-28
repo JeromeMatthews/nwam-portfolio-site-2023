@@ -162,7 +162,7 @@ body .hero__copy-body {
   font-family: futura-pt, Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1rem;
+  font-size: 1.25rem;
   color: #ffffff;
   margin: auto 57px;
   letter-spacing: 0px;
@@ -186,7 +186,7 @@ body .hero-button {
   position: relative;
   width: 173px;
   height: 34px;
-  margin-bottom: 102px;
+  margin-bottom: 51px;
   font-family: proxima-nova, Arial, Helvetica, sans-serif;
   font-weight: 900;
   font-style: normal;
@@ -218,8 +218,15 @@ body .hero-button {
 }
 
 /*SECTION ABOVE MOBILE PHONES - TABLET  - PORTRAIT -  >800px */
+@media (min-width: 440px) {
+  body {
+    background-position: top 0% center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+  }
+}
 @media (min-width: 800px) {
-  /*SECTION: TABLEY- PORTRAIT - NAVIGATION*/
+  /*SECTION: TABLET PORTRAIT - NAVIGATION*/
   /* // .header {
   			// } */
   .sitenav--container {
@@ -279,7 +286,7 @@ body .hero-button {
     justify-content: center;
   }
   body {
-    background: url("/img/img-tablet-p/tablet-home-bg.png") !important;
+    background: url("/img/img-tablet-p/m-p-home-bg-img.png") !important;
     /*Using the  !important flag to overide the assignment of the background images for the diffrent veiwport variants of the design.*/
     background-position: top 0px left -367px;
     background-repeat: no-repeat;
@@ -330,7 +337,7 @@ body .hero-button {
     position: relative;
     width: 173px;
     height: 34px;
-    margin-bottom: 102px;
+    margin-bottom: 51px;
     font-family: proxima-nova, Arial, Helvetica, sans-serif;
     font-weight: 900;
     font-style: normal;

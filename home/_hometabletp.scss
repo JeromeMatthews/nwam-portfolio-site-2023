@@ -1,6 +1,16 @@
 /*SECTION ABOVE MOBILE PHONES - TABLET  - PORTRAIT -  >800px */
+
+@media (min-width: 440px) {
+	body {
+		background-position: top 0% center;
+		//Once we get to this width, just allow the background to display normally.
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+	}
+}
+
 @media (min-width: 800px) {
-	/*SECTION: TABLEY- PORTRAIT - NAVIGATION*/
+	/*SECTION: TABLET PORTRAIT - NAVIGATION*/
 	/* // .header {
 				// } */
 
@@ -69,7 +79,7 @@
 	}
 
 	body {
-		background: url("/img/img-tablet-p/tablet-home-bg.png") !important;
+		background: url("/img/img-tablet-p/m-p-home-bg-img.png") !important;
 		/*Using the  !important flag to overide the assignment of the background images for the diffrent veiwport variants of the design.*/
 
 		background-position: top 0px left -367px;
@@ -115,9 +125,9 @@
 			position: relative;
 			width: 173px;
 			height: 34px;
-			margin-bottom: 102px;
+			margin-bottom: 51px;
 			@include CTAButton;
-			font-size: $textSmall-93;//15px;
+			font-size: $textSmall-93; //15px;
 
 			@media (max-width: 359px) {
 				margin-bottom: 50px;

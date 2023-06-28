@@ -33,7 +33,7 @@
 
 @mixin bodyCopyMobile-p {
 	@include bodyCopy;
-	font-size: $textBase; //16px;
+	font-size: $text1X-25; //20px; Instead of 16px for better readability
 	
 }
 
