@@ -286,9 +286,9 @@ body .hero-button {
     justify-content: center;
   }
   body {
-    background: url("/img/img-tablet-p/m-p-home-bg-img.png") !important;
+    background: url("/img/img-tablet-p/m-p-home-bg-img.png");
     /*Using the  !important flag to overide the assignment of the background images for the diffrent veiwport variants of the design.*/
-    background-position: top 0px left -367px;
+    background-position: top 0px left -177px;
     background-repeat: no-repeat;
     background-attachment: scroll;
   }
@@ -299,7 +299,7 @@ body .hero-button {
     font-size: 3.43rem;
     color: #ffbf00;
     position: relative;
-    top: -46px;
+    top: -126px;
     margin: 0px 126px 63px 126px;
     letter-spacing: 0px;
     text-shadow: 0px 1px 1px #000000;
@@ -313,8 +313,8 @@ body .hero-button {
     font-size: 1.12rem;
     color: #ffffff;
     position: relative;
-    top: -28px;
-    margin: 0px 190px 117px;
+    top: -122px;
+    margin: 0px 190px 0px;
     letter-spacing: 0px;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3490196078);
     opacity: 1;
@@ -335,22 +335,19 @@ body .hero-button {
     border-radius: 8px;
     opacity: 1;
     position: relative;
+    top: -44px;
     width: 173px;
     height: 34px;
-    margin-bottom: 51px;
     font-family: proxima-nova, Arial, Helvetica, sans-serif;
     font-weight: 900;
     font-style: normal;
+    margin-bottom: -32px;
     font-size: 0.93rem;
-  }
-}
-@media (min-width: 800px) and (max-width: 359px) {
-  body .hero-button {
-    margin-bottom: 50px;
   }
 }
 @media (min-width: 800px) {
   body .main-footer {
+    margin-top: 15px;
     margin-bottom: 30px;
   }
 }
@@ -368,6 +365,17 @@ body .hero-button {
   }
   body .main-footer__social-icons li {
     margin-right: 10px;
+  }
+}
+@media (min-width: 800px) {
+  .nav-chevrons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .nav-chevrons .left-chev {
+    margin-right: 50px;
   }
 }
 /*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - PORTRAIT -   >800px */

@@ -79,10 +79,10 @@
 	}
 
 	body {
-		background: url("/img/img-tablet-p/m-p-home-bg-img.png") !important;
+		background: url("/img/img-tablet-p/m-p-home-bg-img.png");
 		/*Using the  !important flag to overide the assignment of the background images for the diffrent veiwport variants of the design.*/
 
-		background-position: top 0px left -367px;
+		background-position: top 0px left -177px;
 		background-repeat: no-repeat;
 		background-attachment: scroll;
 
@@ -91,7 +91,7 @@
 			font-size: $text3x-43; //55px;
 			color: #ffbf00;
 			position: relative;
-			top: -46px;
+			top: -126px;
 			margin: 0px 126px 63px 126px;
 			letter-spacing: 0px;
 			text-shadow: 0px 1px 1px #000000;
@@ -104,8 +104,8 @@
 			font-size: $text1x-12; //18px;
 			color: #ffffff;
 			position: relative;
-			top: -28px;
-			margin: 0px 190px 117px;
+			top: -122px;
+			margin: 0px 190px 0px;
 			letter-spacing: 0px;
 			text-shadow: 1px 1px 0px #00000059;
 			opacity: 1;
@@ -123,14 +123,14 @@
 			border-radius: 8px;
 			opacity: 1;
 			position: relative;
+			top: -44px;
 			width: 173px;
 			height: 34px;
-			margin-bottom: 51px;
 			@include CTAButton;
-			font-size: $textSmall-93; //15px;
+			margin-bottom: -32px;;
 
+			font-size: $textSmall-93; //15px;
 			@media (max-width: 359px) {
-				margin-bottom: 50px;
 			}
 		}
 
@@ -139,6 +139,7 @@
 		//SECTION MOBILE - PORTRAIT - NAVIGATION - FOOTER
 
 		.main-footer {
+			margin-top: 15px;
 			margin-bottom: 30px;
 		}
 		.main-footer__social-icons {
@@ -155,6 +156,14 @@
 		}
 
 		//!SECTION  END - MOBILE - PORTRAIT - NAVIGATION - FOOTER
+	}
+
+	.nav-chevrons {
+		@include flexMix;
+		.left-chev {
+			margin-right: 50px;
+		}
+
 	}
 }
 /*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - PORTRAIT -   >800px */
