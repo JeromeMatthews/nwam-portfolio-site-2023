@@ -81,6 +81,11 @@ body {
 
 //SECTION MOBILE - PORTRAIT - NAVIGATION - FOOTER
 
+
+.nav-chevrons {
+	display: none; //remove the background slideshow navigation handles on mobile. 
+}
+
 .main-footer {
 	margin-bottom: 30px;
 }

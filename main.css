@@ -198,6 +198,10 @@ body .hero-button {
   }
 }
 
+.nav-chevrons {
+  display: none;
+}
+
 .main-footer {
   margin-bottom: 30px;
 }
