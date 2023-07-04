@@ -292,7 +292,7 @@ body .hero-button {
   body {
     background: url("/img/img-tablet-p/m-p-home-bg-img.png");
     /*Using the  !important flag to overide the assignment of the background images for the diffrent veiwport variants of the design.*/
-    background-position: top 0px left -177px;
+    background-position: top 0px left -90px;
     background-repeat: no-repeat;
     background-attachment: scroll;
   }
@@ -386,12 +386,137 @@ body .hero-button {
 /*!SECTION: END - [RESPONSIVE DESIGN] */
 /*SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1000px */
 @media (min-width: 1000px) {
-  body {
-    background: url("/img/img-tablet-l/medium-cody-board-stargazing-sullivan-unsplash.jpg") !important;
+  .main-container {
+    justify-content: center;
+    position: relative;
+    top: 220px;
+  }
+  /*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >1000px */
+  /*!SECTION: END - [RESPONSIVE DESIGN] */
+}
+@media (min-width: 1000px) and (max-width: 359px) {
+  .main-container {
+    top: 150px;
   }
 }
-/*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >1000px */
-/*!SECTION: END - [RESPONSIVE DESIGN] */
+@media (min-width: 1000px) {
+  .hero-section-1,
+  .hero-section-2,
+  .hero-section-3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (min-width: 1000px) {
+  body {
+    background: url("/img/img-tablet-l/tablet-landscape-home-bg.png");
+    /*Using the  !important flag to overide the assignment of the background images for the diffrent veiwport variants of the design.*/
+    background-position: top 0px left 0px;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+  }
+  body .hero__copy {
+    top: -200px;
+    right: -60px;
+    font-family: proxima-nova, Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 2.18rem;
+    color: #ffbf00;
+    margin: 0px 26px 61px 234px;
+    letter-spacing: 0px;
+    text-shadow: 0px 1px 1px #000000;
+    line-height: 110%;
+    text-align: right;
+  }
+  body .hero__article-2 {
+    width: 65vw;
+  }
+  body .hero__article-2 .hero__copy-body {
+    font-family: futura-pt, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.25rem;
+    color: #ffffff;
+    position: relative;
+    top: -260px;
+    right: -50px;
+    margin: 0px 50px 0px 200px;
+    letter-spacing: 0px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3490196078);
+    opacity: 1;
+    text-align: right;
+    line-height: 100%;
+  }
+}
+@media (min-width: 1000px) and (max-width: 359px) {
+  body .hero__article-2 .hero__copy-body {
+    margin: 0px 57px 9px;
+  }
+}
+@media (min-width: 1000px) {
+  body .hero-button {
+    background: #ffbf00 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 0px #000000;
+    border: 1px solid #707070;
+    border-radius: 8px;
+    opacity: 1;
+    position: relative;
+    top: -250px;
+    left: 237px;
+    width: 173px;
+    height: 34px;
+    margin-bottom: 51px;
+    font-family: proxima-nova, Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 0.93rem;
+  }
+}
+@media (min-width: 1000px) and (max-width: 359px) {
+  body .hero-button {
+    margin-bottom: 50px;
+  }
+}
+@media (min-width: 1000px) {
+  body .nav-chevrons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px;
+    position: relative;
+    top: -50px;
+  }
+  body .nav-chevrons .left-chev {
+    margin-right: 50px;
+  }
+}
+@media (min-width: 1000px) {
+  body .main-footer {
+    margin: 0px;
+    position: relative;
+    top: -40px;
+  }
+}
+@media (min-width: 1000px) {
+  body .main-footer__social-icons {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    text-decoration: none;
+    justify-content: center;
+  }
+  body .main-footer__social-icons li {
+    margin-right: 10px;
+  }
+}
 /*SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1000px */
 @media (min-width: 1920px) {
   body {

@@ -1,10 +1,120 @@
 /*SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1000px */
 @media (min-width: 1000px) {
-	body{
-		background: url("/img/img-tablet-l/medium-cody-board-stargazing-sullivan-unsplash.jpg") !important
-		/*Using the  !important flag to overide the assignment of the background images for the diffrent veiwport variants of the design.*/
-	};
+	//SECTION MOBILE - PORTRAIT - BODY
 
-}
-/*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >1000px */
-/*!SECTION: END - [RESPONSIVE DESIGN] */
+	.main-container {
+		justify-content: center;
+		position: relative;
+		top: 220px;
+		@media (max-width: 359px) {
+			top: 150px;
+		}
+	} // end main container
+
+	.hero-section-1,
+	.hero-section-2,
+	.hero-section-3 {
+		@include flexMix;
+	}
+
+	body {
+		background: url("/img/img-tablet-l/tablet-landscape-home-bg.png");
+		/*Using the  !important flag to overide the assignment of the background images for the diffrent veiwport variants of the design.*/
+
+		background-position: top 0px left 0px;
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+
+		.hero__copy {
+			top: -200px;
+			right: -60px;
+			@include heroCopy;
+			font-size: $text2x-18; //35px;
+			color: #ffbf00;
+			margin: 0px 26px 61px 234px;
+			letter-spacing: 0px;
+			text-shadow: 0px 1px 1px #000000;
+			line-height: 110%; //NOTE: The property for brining text vertically closer together.
+			text-align: right;
+		}
+
+		.hero__article-2 {
+			width: 65vw; //give the boxed look from the design.
+
+			.hero__copy-body {
+				@include bodyCopy;
+				font-size: $text1X-25; //20px; // initial design was 15... but bettter readability at 20px - for minimum in body copy.
+				color: #ffffff;
+				position: relative;
+				top: -260px;
+				right: -50px;
+				margin: 0px 50px 0px 200px;
+				letter-spacing: 0px;
+				text-shadow: 1px 1px 0px #00000059;
+				opacity: 1;
+				text-align: right;
+				line-height: 100%; //NOTE: The property for brining text vertically closer together.
+				// margin-bottom: 49px;// turn off the botttom margin for design at this variant.
+				@media (max-width: 359px) {
+					margin: 0px 57px 9px;
+				} //end hero__copy-body
+			} // end hero__article-2
+		}
+
+		.hero-button {
+			background: #ffbf00 0% 0% no-repeat padding-box;
+			box-shadow: 0px 2px 0px #000000;
+			border: 1px solid #707070;
+			border-radius: 8px;
+			opacity: 1;
+			position: relative;
+			top: -250px;
+			left: 237px;
+			width: 173px;
+			height: 34px;
+			margin-bottom: 51px;
+			@include CTAbuttonMobile-p;
+
+			@media (max-width: 359px) {
+				margin-bottom: 50px;
+			}
+		}// end hero-button
+
+
+
+		
+	.nav-chevrons {
+		@include flexMix;
+		margin: 0px;
+			position:relative;
+			top: -50px;
+		.left-chev {
+			margin-right: 50px;
+		}
+
+	}
+
+
+		
+		.main-footer {
+			margin: 0px;
+			position:relative;
+			top: -40px;
+		}
+		.main-footer__social-icons {
+			margin: 0px;
+			padding: 0px;
+			@include flexMix;
+			list-style: none;
+			text-decoration: none;
+			justify-content: center;
+
+			li {
+				margin-right: 10px;
+			}
+		}// end main-footer__social-icons
+
+	} // end body
+	/*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >1000px */
+	/*!SECTION: END - [RESPONSIVE DESIGN] */
+} // end Media Query
