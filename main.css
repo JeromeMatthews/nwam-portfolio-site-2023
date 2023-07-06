@@ -229,7 +229,7 @@ body .hero-button {
     background-attachment: scroll;
   }
 }
-@media (min-width: 800px) {
+@media (min-width: 768px) {
   /*SECTION: TABLET PORTRAIT - NAVIGATION*/
   /* // .header {
   			// } */
@@ -326,12 +326,12 @@ body .hero-button {
     line-height: 98%;
   }
 }
-@media (min-width: 800px) and (max-width: 359px) {
+@media (min-width: 768px) and (max-width: 359px) {
   body .hero__copy-body {
     margin: 0px 57px 9px;
   }
 }
-@media (min-width: 800px) {
+@media (min-width: 768px) {
   body .hero-button {
     background: #ffbf00 0% 0% no-repeat padding-box;
     box-shadow: 0px 2px 0px #000000;
@@ -349,13 +349,13 @@ body .hero-button {
     font-size: 0.93rem;
   }
 }
-@media (min-width: 800px) {
+@media (min-width: 768px) {
   body .main-footer {
     margin-top: 15px;
     margin-bottom: 30px;
   }
 }
-@media (min-width: 800px) {
+@media (min-width: 768px) {
   body .main-footer__social-icons {
     margin: 0px;
     padding: 0px;
@@ -371,7 +371,7 @@ body .hero-button {
     margin-right: 10px;
   }
 }
-@media (min-width: 800px) {
+@media (min-width: 768px) {
   .nav-chevrons {
     display: flex;
     flex-direction: row;
@@ -385,7 +385,7 @@ body .hero-button {
 /*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - PORTRAIT -   >800px */
 /*!SECTION: END - [RESPONSIVE DESIGN] */
 /*SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1000px */
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
   .main-container {
     justify-content: center;
     position: relative;
@@ -394,12 +394,12 @@ body .hero-button {
   /*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >1000px */
   /*!SECTION: END - [RESPONSIVE DESIGN] */
 }
-@media (min-width: 1000px) and (max-width: 359px) {
+@media (min-width: 1024px) and (max-width: 359px) {
   .main-container {
     top: 150px;
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
   .hero-section-1,
   .hero-section-2,
   .hero-section-3 {
@@ -409,7 +409,7 @@ body .hero-button {
     justify-content: center;
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
   body {
     background: url("/img/img-tablet-l/tablet-landscape-home-bg.png");
     /*Using the  !important flag to overide the assignment of the background images for the diffrent veiwport variants of the design.*/
@@ -451,12 +451,12 @@ body .hero-button {
     line-height: 100%;
   }
 }
-@media (min-width: 1000px) and (max-width: 359px) {
+@media (min-width: 1024px) and (max-width: 359px) {
   body .hero__article-2 .hero__copy-body {
     margin: 0px 57px 9px;
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
   body .hero-button {
     background: #ffbf00 0% 0% no-repeat padding-box;
     box-shadow: 0px 2px 0px #000000;
@@ -475,12 +475,12 @@ body .hero-button {
     font-size: 0.93rem;
   }
 }
-@media (min-width: 1000px) and (max-width: 359px) {
+@media (min-width: 1024px) and (max-width: 359px) {
   body .hero-button {
     margin-bottom: 50px;
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
   body .nav-chevrons {
     display: flex;
     flex-direction: row;
@@ -494,14 +494,14 @@ body .hero-button {
     margin-right: 50px;
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
   body .main-footer {
     margin: 0px;
     position: relative;
     top: -40px;
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
   body .main-footer__social-icons {
     margin: 0px;
     padding: 0px;
