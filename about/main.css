@@ -240,4 +240,109 @@ body .main-container .mobile-cta-footer .mobile-cta-footer__sm-links {
   align-content: center;
   position: relative;
   padding: 0px;
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: url("/img/img-tablet-p/tablet-about-bg.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-color: #fff;
+  }
+  body .main-container {
+    color: #000000;
+  }
+  body .main-container .about-hero,
+  body .main-container .body-sect-1,
+  body .main-container .body-sect-2,
+  body .main-container .body-sect-3,
+  body .main-container .mobile-cta-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: auto 137px;
+  }
+  body .main-container .about-hero .about-hero__copy {
+    position: relative;
+    margin: 295px -90px 540px;
+  }
+  body .main-container .about-hero .about-hero__text {
+    position: relative;
+    font-family: proxima-nova, Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 2.5rem;
+    font-size: 2.81rem;
+    color: #e1a700;
+  }
+  body .main-container .body-sect-1 .body-sect-1-art .body-sect-1__head {
+    margin: auto 67px;
+    font-family: proxima-nova, Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 2.5rem;
+    font-size: 2.81rem;
+  }
+  body .main-container .body-sect-1 .body-sect-1-art .body-sect-1__text {
+    font-family: futura-pt, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.93rem;
+    font-size: 1.25rem;
+  }
+  body .main-container .body-sect-1 .body-sect-1-art .body-sect-1__text i {
+    font-style: italic;
+  }
+  body .main-container .body-sect-2 .body-sect-2-art .body-sect-2__head {
+    margin: 97px;
+    font-family: proxima-nova, Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 2.5rem;
+    font-size: 2.81rem;
+  }
+  body .main-container .body-sect-2 .body-sect-2-art .body-sect-2__text {
+    font-family: futura-pt, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.93rem;
+    font-size: 1.25rem;
+  }
+  body .main-container .body-sect-3 .body-sect-3-art .body-sect-3__head {
+    margin: 97px;
+    font-family: proxima-nova, Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 2.5rem;
+    font-size: 2.81rem;
+  }
+  body .main-container .body-sect-3 .body-sect-3-art .body-sect-3__text {
+    font-family: futura-pt, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.93rem;
+    font-size: 1.25rem;
+  }
+  body .main-container .mobile-cta-footer .mobile-cta-footer-branding .mobile-cta-footer-branding__text-1,
+  body .main-container .mobile-cta-footer .mobile-cta-footer-branding .mobile-cta-footer-branding__text-2 {
+    font-size: 2.81rem;
+  }
+  body .main-container .mobile-cta-footer .mobile-cta-footer-branding .mobile-cta-footer-branding__text-2 {
+    position: relative;
+    left: -85px;
+  }
+  body .main-container .mobile-cta-footer .mobile-cta-footer-branding .mobile-cta-footer__logo {
+    width: 155px;
+    height: 50px;
+    top: -55px;
+    left: 149px;
+  }
+  body .main-container .mobile-cta-footer .mobile-cta-footer__button {
+    width: 397px;
+    height: 73px;
+    font-size: 1.87rem;
+  }
 }/*# sourceMappingURL=main.css.map */

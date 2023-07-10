@@ -1,0 +1,123 @@
+@media (min-width: 768px) {
+	body {
+		background-image: url("/img/img-tablet-p/tablet-about-bg.png");
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+		background-color: #fff;
+
+		.main-container {
+			.about-hero,
+			.body-sect-1,
+			.body-sect-2,
+			.body-sect-3,
+			.mobile-cta-footer {
+				//NOTE: variant change
+				@include flexMix-col;
+				text-align: center;
+				margin: auto 137px;
+			}
+
+  
+
+			color: #000000;
+			.about-hero {
+				.about-hero__copy {
+					position: relative;
+					//NOTE: variant change
+					margin: 295px -90px 540px; // reminder: /\ up > & < then v for margin order.
+				}
+				.about-hero__text {
+					position: relative;
+					@include aboutTitleCopy;
+					//NOTE: variant change
+					font-size: $text2X-81; //45px;
+					color: #e1a700;
+				}
+			} //end of about-hero
+
+			
+
+			.body-sect-1 {
+				.body-sect-1-art {
+					.body-sect-1__head {
+						//NOTE: variant change
+						margin: auto 67px;
+
+						@include aboutTitleCopy;
+						font-size: $text2X-81; //45px;
+					}
+					.body-sect-1__text {
+						@include aboutBodyCopy;
+						font-size: $text1X-25; //20px;
+						i {
+							font-style: italic;
+						}
+					} //body-sect-1__text
+				}
+			} //end of body-sect-1
+
+			.body-sect-2 {
+				.body-sect-2-art {
+					.body-sect-2__head {
+						margin:  97px; // just for styling to match the design variant, deliberate narrowing of the left and right margins of the section title.
+						@include aboutTitleCopy;
+						font-size: $text2X-81; //45px;
+					}
+					.body-sect-2__text {
+						//NOTE: variant change
+						@include aboutBodyCopy;
+						font-size: $text1X-25; //20px;
+					}
+				}
+			} //end of body-sect-2
+
+			.body-sect-3 {
+				.body-sect-3-art {
+					.body-sect-3__head {
+						//NOTE: variant change
+						margin:  97px;  // just for styling to match the design variant, deliberate narrowing of the left and right margins of the section title.
+
+						@include aboutTitleCopy;
+						font-size: $text2X-81; //45px;
+					}
+					.body-sect-3__text {
+						//NOTE: variant change
+						@include aboutBodyCopy;
+						font-size: $text1X-25; //20px;
+					}
+				}
+			} //end of body-sect-3
+
+			.mobile-cta-footer {
+				.mobile-cta-footer-branding {
+					.mobile-cta-footer-branding__text-1,
+					.mobile-cta-footer-branding__text-2 {
+						//NOTE: variant change
+						font-size: $text2X-81; //45px;
+					}
+
+					.mobile-cta-footer-branding__text-2 {
+						//NOTE: variant change
+						position: relative;
+						left: -85px;
+					}
+
+					.mobile-cta-footer__logo {
+						//NOTE: variant change
+						width: 155px;
+						height: 50px;
+						top: -55px;
+						left: 149px;
+					}
+				} //end of cta-footer-branding
+
+				.mobile-cta-footer__button {
+					//NOTE: variant change
+					width: 397px;
+					height: 73px;
+					font-size: $text1x-87; //30px;
+				}
+			} // end of mobile-cta-footer
+		} // end of main-container
+	} //end of body
+} // end of Media Query

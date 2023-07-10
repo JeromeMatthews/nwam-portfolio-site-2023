@@ -70,9 +70,11 @@ body {
 			.body-sect-2-art {
 				.body-sect-2__head {
 					@include aboutTitleCopy;
+
 				}
 				.body-sect-2__text {
 					@include aboutBodyCopy;
+
 				}
 			}
 		}
@@ -118,7 +120,7 @@ body {
 					top: -32px;
 					left: 85px;
 				}
-			}
+			}//end of mobile-cta-footer-branding
 
 			.mobile-cta-footer__button {
 				width: 258px;
@@ -144,3 +146,7 @@ body {
 		} //end mobile-cta-footer
 	} //end main-container
 } //end body
+
+
+@import "../about/_aboutTabletP";
+
