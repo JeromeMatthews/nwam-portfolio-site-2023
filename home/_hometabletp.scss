@@ -1,5 +1,5 @@
 /*SECTION ABOVE MOBILE PHONES - TABLET  - PORTRAIT -  >800px */
-
+// @import "..//partials/nav-base-tablet";
 @media (min-width: 440px) {
 	body {
 		background-position: top 0% center;
@@ -10,65 +10,7 @@
 }
 
 @media (min-width: 768px) {
-	/*SECTION: TABLET PORTRAIT - NAVIGATION*/
-	/* // .header {
-				// } */
 
-	.sitenav--container {
-		position: relative;
-		z-index: 1;
-	}
-
-	.sitenav-logo-contact-container {
-		position: relative;
-	}
-
-	.sitenav__logo {
-		position: absolute;
-		width: 94px;
-		height: 45px;
-		top: 23px;
-		left: 170px;
-	}
-
-	.sitenav__contactNum {
-		position: relative;
-		display: inline-block;
-		width: 115px;
-		top: 57px;
-		left: 184px;
-
-		color: #fff;
-	}
-
-	/*NOTE: Mobile navigation links html code hidden since they'll only be shown in the overlay prompt. After Clicking Hamburger menu icon.*/
-
-	.sitenav__hamburger {
-		display: none;
-	}
-
-	.sitenav__links {
-		display: none;
-	}
-
-	.mainnav__links {
-		@include flexMix;
-		font-family: $font-list-h;
-		font-weight: nth($f-weights, 3); //normall = 400;
-		font-style: $f-style-n; // font-style=normal;
-		font-size: $textSmall-93; //15px;
-
-		li {
-			padding: 0px 11px;
-			a {
-				text-decoration: none;
-				color: #fff;
-			}
-			list-style: none;
-		}
-	}
-
-	/*!SECTION END - TABLET - PORTRAIT - NAVIGATION*/
 
 	//SECTION MOBILE - PORTRAIT - BODY
 

@@ -431,4 +431,320 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
   align-content: center;
   position: relative;
   padding: 0px;
+}
+
+@media (min-width: 768px) {
+  .main-container {
+    justify-content: center;
+    position: relative;
+  }
+}
+@media (min-width: 768px) and (max-width: 359px) {
+  .main-container {
+    top: 102px;
+  }
+}
+@media (min-width: 768px) {
+  body .atf-1,
+  body .btf-2,
+  body .btl,
+  body .btl-content-block-1,
+  body .btl-content-block-2,
+  body .mobile-cta-footer {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: center;
+    align-content: center;
+    justify-content: center;
+  }
+  body .atf-1 {
+    height: 1100px;
+    background-image: url("/img/img-tablet-p/tablet-ps-ng-bg.png");
+    background-repeat: no-repeat;
+    background-position: left 0px top 0px;
+    background-attachment: scroll;
+  }
+  body .atf-1 .cs-project,
+  body .atf-1 .cs-project__title,
+  body .atf-1 .cs-project__services,
+  body .atf-1 .cs-project__service,
+  body .atf-1 .cs-client-details,
+  body .atf-1 .cs-client-details__title,
+  body .atf-1 .cs-client-details__status,
+  body .atf-1 .cs-client-details__text,
+  body .atf-1 .status-flag {
+    list-style: none;
+    color: #fff;
+    text-align: center;
+  }
+  body .atf-1 .cs-project {
+    position: relative;
+    width: 287px;
+    height: 325px;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(255, 255, 255, 0.11);
+    border-radius: 4%;
+    margin: 0 36px;
+    margin: 30px 30px;
+  }
+  body .atf-1 .cs-project .cs-project__title {
+    font-family: proxima-nova, Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 2.5rem;
+    line-height: 95%;
+  }
+  body .atf-1 .cs-project .cs-project__services {
+    padding: 0%;
+  }
+  body .atf-1 .cs-project .cs-project__services .cs-project__service {
+    font-family: futura-pt, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.93rem;
+  }
+  body .atf-1 .cs-client-details {
+    position: relative;
+    width: 287px;
+    height: 325px;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(255, 255, 255, 0.11);
+    border-radius: 4%;
+    margin: 0 36px;
+  }
+  body .atf-1 .cs-client-details .cs-client-details__title {
+    font-family: proxima-nova, Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 2.5rem;
+    line-height: 95%;
+  }
+  body .atf-1 .cs-client-details .cs-client-details__status {
+    font-family: proxima-nova, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+  }
+  body .atf-1 .cs-client-details .status-flag {
+    font-family: proxima-nova, Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 1.25rem;
+  }
+  body .atf-1 .cs-client-details .cs-client-details__text {
+    font-family: futura-pt, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.93rem;
+  }
+  body .btf-2 {
+    height: 800px;
+    background-image: url("/img/img-mobile-p/shortwood-bg-overlayedit.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    color: #fff;
+    text-align: center;
+  }
+  body .btf-2 .cs-project-desc__title,
+  body .btf-2 .cs-project-sum__title {
+    font-family: proxima-nova, Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 2.5rem;
+    line-height: 95%;
+  }
+  body .btf-2 .cs-project-desc {
+    position: relative;
+    width: 287px;
+    height: 325px;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(255, 255, 255, 0.11);
+    border-radius: 4%;
+    margin: 0 36px;
+    top: -9px;
+  }
+  body .btf-2 .cs-project-desc .cs-project-desc__text {
+    font-family: futura-pt, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.93rem;
+  }
+  body .btf-2 .cs-project-sum {
+    position: relative;
+    width: 287px;
+    height: 325px;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(255, 255, 255, 0.11);
+    border-radius: 4%;
+    margin: 0 36px;
+    height: 420px;
+    top: -1px;
+  }
+  body .btf-2 .cs-project-sum .cs-project-sum__text-1 .cs-project-sum__text__head {
+    font-family: futura-pt, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.93rem;
+  }
+  body .btf-2 .cs-project-sum .cs-project-sum__text-1 .cs-project-sum__text__body {
+    font-family: futura-pt, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.93rem;
+  }
+  body .btl {
+    height: 215px;
+    background-color: #ffd866;
+    color: #363226;
+    text-align: center;
+  }
+  body .btl .btl__title {
+    line-height: 150%;
+    margin-bottom: 2px;
+  }
+  body .btl .btl__title .btl__title-1 {
+    font-family: proxima-nova, Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 3.43rem;
+  }
+  body .btl .btl__title .btl__title-2 {
+    font-family: proxima-nova, Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 2.81rem;
+  }
+  body .btl .btl__text {
+    line-height: 150%;
+  }
+  body .btl .btl__text .btl__text-1 {
+    font-family: proxima-nova, Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 1.06rem;
+  }
+  body .btl .btl__text .btl__text-2 {
+    font-family: proxima-nova, Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 0.87rem;
+  }
+  body .btl-content-block-1 {
+    background-color: #fcf8ec;
+    color: black;
+    flex-direction: column;
+    text-align: center;
+    height: 1200px;
+    padding: 0 30px;
+  }
+  body .btl-content-block-1 .btl-content-block__time {
+    font-family: proxima-nova, Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.25rem;
+    position: relative;
+  }
+  body .btl-content-block-1 .btl-content-block__time-text_2 {
+    font-family: proxima-nova, Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.12rem;
+    position: relative;
+    top: -50px;
+  }
+  body .btl-content-block-1 .btl-content-block__sub {
+    font-family: futura-pt, Helvetica, Arial, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 0.93rem;
+  }
+  body .btl-content-block-1 .btl-content-block__text {
+    font-family: futura-pt, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.93rem;
+  }
+  body .btl-content-block-2 {
+    background-color: #ffd866;
+    color: black;
+    height: 800px;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 30px;
+  }
+  body .btl-content-block-2 .btl-content-block__time {
+    font-family: proxima-nova, Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.25rem;
+    position: relative;
+  }
+  body .btl-content-block-2 .btl-content-block__time__sub {
+    font-family: proxima-nova, Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.12rem;
+    position: relative;
+    top: -50px;
+    left: 0px;
+  }
+  body .btl-content-block-2 .btl-content-block__sub {
+    font-family: futura-pt, Helvetica, Arial, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 0.93rem;
+  }
+  body .btl-content-block-2 .btl-content-block__text {
+    font-family: futura-pt, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.93rem;
+  }
+  body .mobile-cta-footer {
+    height: 800px;
+    background-color: #fff;
+    color: black;
+  }
+  body .mobile-cta-footer .mobile-cta-footer-branding .mobile-cta-footer-branding__text-1,
+  body .mobile-cta-footer .mobile-cta-footer-branding .mobile-cta-footer-branding__text-2 {
+    font-family: proxima-nova, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.56rem;
+    margin: 0px 12px;
+  }
+  body .mobile-cta-footer .mobile-cta-footer-branding .mobile-cta-footer__logo {
+    width: 83px;
+    height: 30px;
+    position: relative;
+    top: -32px;
+    left: 185px;
+  }
+  body .mobile-cta-footer .mobile-cta-footer__button {
+    width: 258px;
+    height: 50px;
+    background: #f5b600 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 0px #000000;
+    border-radius: 5px;
+    font-family: proxima-nova, Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 1.25rem;
+    position: relative;
+  }
+  body .mobile-cta-footer .mobile-cta-footer__sm-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    align-content: center;
+    position: relative;
+    padding: 0px;
+  }
 }/*# sourceMappingURL=main.css.map */

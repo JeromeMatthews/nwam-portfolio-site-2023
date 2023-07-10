@@ -230,57 +230,6 @@ body .hero-button {
   }
 }
 @media (min-width: 768px) {
-  /*SECTION: TABLET PORTRAIT - NAVIGATION*/
-  /* // .header {
-  			// } */
-  .sitenav--container {
-    position: relative;
-    z-index: 1;
-  }
-  .sitenav-logo-contact-container {
-    position: relative;
-  }
-  .sitenav__logo {
-    position: absolute;
-    width: 94px;
-    height: 45px;
-    top: 23px;
-    left: 170px;
-  }
-  .sitenav__contactNum {
-    position: relative;
-    display: inline-block;
-    width: 115px;
-    top: 57px;
-    left: 184px;
-    color: #fff;
-  }
-  /*NOTE: Mobile navigation links html code hidden since they'll only be shown in the overlay prompt. After Clicking Hamburger menu icon.*/
-  .sitenav__hamburger {
-    display: none;
-  }
-  .sitenav__links {
-    display: none;
-  }
-  .mainnav__links {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    font-family: proxima-nova, Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 0.93rem;
-  }
-  .mainnav__links li {
-    padding: 0px 11px;
-    list-style: none;
-  }
-  .mainnav__links li a {
-    text-decoration: none;
-    color: #fff;
-  }
-  /*!SECTION END - TABLET - PORTRAIT - NAVIGATION*/
   .hero-section-1,
   .hero-section-2,
   .hero-section-3 {
