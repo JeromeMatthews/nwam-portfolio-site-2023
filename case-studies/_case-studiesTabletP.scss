@@ -24,7 +24,7 @@
 
 	body {
 		.atf-1 {
-			height: 1024px; // height of the containing box
+			height: 1000px; // height of the containing box
 			background-image: url("/img/img-tablet-p/tablet-ps-ng-bg.png");
 			background-repeat: no-repeat;
 			background-position: left 0px top 0px; // first value left and right, second - top and bottom.
@@ -67,7 +67,7 @@
 					}
 				}
 				position: relative;
-				top: -230px;
+				top: -243px;
 				left: 40px;
 			}
 
@@ -98,7 +98,7 @@
 				}
 
 				position: relative;
-				top: 100px;
+				top: 90px;
 				left: -320px;
 			}
 		} // END of ATF--
@@ -165,6 +165,7 @@
 		//BETWEEN THE LINES
 
 		.btl {
+			@include flexMix-col;
 			height: 215px;
 			background-color: #ffd866;
 			color: #363226;
@@ -209,8 +210,9 @@
 			background-color: #fcf8ec;
 			color: black;
 			flex-direction: column;
+			flex-wrap: nowrap;
 			text-align: center;
-			height: 1200px;
+			height: 800px; // reseting height of container.
 			padding: 0 30px;
 
 			.btl-content-block__time {
@@ -249,38 +251,11 @@
 			flex-direction: column;
 			text-align: center;
 			padding: 0 30px;
-
-			.btl-content-block__time {
-				font-family: $font-list-h;
-				font-weight: nth($f-weights, 2);
-				font-style: normal;
-				font-size: $text1X-25; //20px;
-				position: relative;
-			}
-			.btl-content-block__time__sub {
-				font-family: $font-list-h;
-				font-weight: nth($f-weights, 2);
-				font-style: normal;
-				font-size: $text1x-12; //16px;
-				position: relative;
-				top: -50px;
-				left: 0px;
-			}
-			.btl-content-block__sub {
-				font-family: $font-list-b;
-				font-weight: nth($f-weights, 1);
-				font-style: normal;
-				font-size: $textSmall-93; //15px;
-			}
-			.btl-content-block__text {
-				font-family: $font-list-b;
-				font-weight: nth($f-weights, 3);
-				font-style: normal;
-				font-size: $textSmall-93; //15px;
-			}
 		}
 
 		.mobile-cta-footer {
+			@include flexMix-col;
+			align-items: center;
 			height: 800px;
 
 			background-color: #fff;
@@ -292,22 +267,22 @@
 					font-family: $font-list-h;
 					font-weight: nth($f-weights, 3);
 					font-style: normal;
-					font-size: $text1x-56; //25px;
+					font-size: $text2X-81; //45px;
 					margin: 0px 12px;
 				}
 
 				.mobile-cta-footer__logo {
-					width: 83px;
-					height: 30px;
+					width: 155px;
+					height: 55px;
 					position: relative;
-					top: -32px;
-					left: 185px;
+					top: -59px;
+					left: 315px;
 				}
 			}
 
 			.mobile-cta-footer__button {
-				width: 258px;
-				height: 50px;
+				width: 379px;
+				height: 74px;
 				background: #f5b600 0% 0% no-repeat padding-box;
 				box-shadow: 0px 2px 0px #000000;
 				border-radius: 5px;
@@ -315,8 +290,10 @@
 				font-family: $font-list-h;
 				font-weight: nth($f-weights, 1);
 				font-style: normal;
-				font-size: $text1X-25; //20px;
+				font-size: $text1x-87; //30px;
 				position: relative;
+				margin: auto 0px;
+				text-align: center;
 			}
 
 			.mobile-cta-footer__sm-links {

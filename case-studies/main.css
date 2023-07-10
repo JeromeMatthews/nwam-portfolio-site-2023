@@ -446,7 +446,7 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
 }
 @media (min-width: 768px) {
   body .atf-1 {
-    height: 1024px;
+    height: 1000px;
     background-image: url("/img/img-tablet-p/tablet-ps-ng-bg.png");
     background-repeat: no-repeat;
     background-position: left 0px top 0px;
@@ -475,7 +475,7 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
     border-radius: 4%;
     margin: 0 36px;
     position: relative;
-    top: -230px;
+    top: -243px;
     left: 40px;
   }
   body .atf-1 .cs-project .cs-project__title {
@@ -504,7 +504,7 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
     border-radius: 4%;
     margin: 0 36px;
     position: relative;
-    top: 100px;
+    top: 90px;
     left: -320px;
   }
   body .atf-1 .cs-client-details .cs-client-details__title {
@@ -591,6 +591,11 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
     font-size: 0.93rem;
   }
   body .btl {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
     height: 215px;
     background-color: #ffd866;
     color: #363226;
@@ -631,8 +636,9 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
     background-color: #fcf8ec;
     color: black;
     flex-direction: column;
+    flex-wrap: nowrap;
     text-align: center;
-    height: 1200px;
+    height: 800px;
     padding: 0 30px;
   }
   body .btl-content-block-1 .btl-content-block__time {
@@ -670,35 +676,13 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
     text-align: center;
     padding: 0 30px;
   }
-  body .btl-content-block-2 .btl-content-block__time {
-    font-family: proxima-nova, Arial, Helvetica, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 1.25rem;
-    position: relative;
-  }
-  body .btl-content-block-2 .btl-content-block__time__sub {
-    font-family: proxima-nova, Arial, Helvetica, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 1.12rem;
-    position: relative;
-    top: -50px;
-    left: 0px;
-  }
-  body .btl-content-block-2 .btl-content-block__sub {
-    font-family: futura-pt, Helvetica, Arial, sans-serif;
-    font-weight: 900;
-    font-style: normal;
-    font-size: 0.93rem;
-  }
-  body .btl-content-block-2 .btl-content-block__text {
-    font-family: futura-pt, Helvetica, Arial, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 0.93rem;
-  }
   body .mobile-cta-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
     height: 800px;
     background-color: #fff;
     color: black;
@@ -708,27 +692,29 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
     font-family: proxima-nova, Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 1.56rem;
+    font-size: 2.81rem;
     margin: 0px 12px;
   }
   body .mobile-cta-footer .mobile-cta-footer-branding .mobile-cta-footer__logo {
-    width: 83px;
-    height: 30px;
+    width: 155px;
+    height: 55px;
     position: relative;
-    top: -32px;
-    left: 185px;
+    top: -59px;
+    left: 315px;
   }
   body .mobile-cta-footer .mobile-cta-footer__button {
-    width: 258px;
-    height: 50px;
+    width: 379px;
+    height: 74px;
     background: #f5b600 0% 0% no-repeat padding-box;
     box-shadow: 0px 2px 0px #000000;
     border-radius: 5px;
     font-family: proxima-nova, Arial, Helvetica, sans-serif;
     font-weight: 900;
     font-style: normal;
-    font-size: 1.25rem;
+    font-size: 1.87rem;
     position: relative;
+    margin: auto 0px;
+    text-align: center;
   }
   body .mobile-cta-footer .mobile-cta-footer__sm-links {
     display: flex;
