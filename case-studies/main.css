@@ -445,24 +445,8 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
   }
 }
 @media (min-width: 768px) {
-  body .atf-1,
-  body .btf-2,
-  body .btl,
-  body .btl-content-block-1,
-  body .btl-content-block-2,
-  body .mobile-cta-footer {
-    position: relative;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    justify-content: center;
-    align-content: center;
-    justify-content: center;
-  }
   body .atf-1 {
-    height: 1100px;
+    height: 1024px;
     background-image: url("/img/img-tablet-p/tablet-ps-ng-bg.png");
     background-repeat: no-repeat;
     background-position: left 0px top 0px;
@@ -490,7 +474,9 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
     background-color: rgba(255, 255, 255, 0.11);
     border-radius: 4%;
     margin: 0 36px;
-    margin: 30px 30px;
+    position: relative;
+    top: -230px;
+    left: 40px;
   }
   body .atf-1 .cs-project .cs-project__title {
     font-family: proxima-nova, Arial, Helvetica, sans-serif;
@@ -517,6 +503,9 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
     background-color: rgba(255, 255, 255, 0.11);
     border-radius: 4%;
     margin: 0 36px;
+    position: relative;
+    top: 100px;
+    left: -320px;
   }
   body .atf-1 .cs-client-details .cs-client-details__title {
     font-family: proxima-nova, Arial, Helvetica, sans-serif;
@@ -541,10 +530,8 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
     font-size: 0.93rem;
   }
   body .btf-2 {
-    height: 800px;
-    background-image: url("/img/img-mobile-p/shortwood-bg-overlayedit.jpg");
-    background-repeat: no-repeat;
-    background-attachment: scroll;
+    height: 0px;
+    background-image: none;
     color: #fff;
     text-align: center;
   }
@@ -566,6 +553,9 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
     border-radius: 4%;
     margin: 0 36px;
     top: -9px;
+    position: relative;
+    top: -695px;
+    left: 335px;
   }
   body .btf-2 .cs-project-desc .cs-project-desc__text {
     font-family: futura-pt, Helvetica, Arial, sans-serif;
@@ -584,6 +574,9 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
     margin: 0 36px;
     height: 420px;
     top: -1px;
+    position: relative;
+    top: -364px;
+    left: -25px;
   }
   body .btf-2 .cs-project-sum .cs-project-sum__text-1 .cs-project-sum__text__head {
     font-family: futura-pt, Helvetica, Arial, sans-serif;
