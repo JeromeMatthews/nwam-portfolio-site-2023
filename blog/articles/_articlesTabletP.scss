@@ -1,0 +1,26 @@
+/*SECTION ABOVE MOBILE PHONES - TABLET RANGE  - PORTRAIT -   >800px*/
+
+@media(mid-width: 768px){
+
+    body{
+        .main-container{
+            .article-container{
+                .article__title{
+                    //NOTE: design variant
+                    font-size: $text2x-5; //40px;
+
+
+                }//end article__title
+
+
+
+
+            }// end article-container
+        }//end main-container
+    }//end body
+
+
+}//end media query
+
+
+/*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - PORTRAIT -   >800px*/
