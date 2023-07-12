@@ -10,7 +10,10 @@
 }
 
 @media (min-width: 768px) {
-
+	.main-container {
+		//NOTE: design variant
+		top: 380px;
+	}
 
 	//SECTION MOBILE - PORTRAIT - BODY
 
@@ -21,10 +24,10 @@
 	}
 
 	body {
-		background: url("/img/img-tablet-p/m-p-home-bg-img.png");
+		background: url("/img/img-tablet-p/tabletP-home-bg.png");
 		/*Using the  !important flag to overide the assignment of the background images for the diffrent veiwport variants of the design.*/
 
-		background-position: top 0px left -90px;
+		background-position: top 0px left 0px;
 		background-repeat: no-repeat;
 		background-attachment: scroll;
 
@@ -69,7 +72,7 @@
 			width: 173px;
 			height: 34px;
 			@include CTAButton;
-			margin-bottom: -32px;;
+			margin-bottom: -32px;
 
 			font-size: $textSmall-93; //15px;
 			@media (max-width: 359px) {
@@ -105,7 +108,6 @@
 		.left-chev {
 			margin-right: 50px;
 		}
-
 	}
 }
 /*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - PORTRAIT -   >800px */

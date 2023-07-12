@@ -1,5 +1,4 @@
 @import "..//partials/_base.css";
-@import "//contact/_contactTabletP";
 .sitenav--container {
   position: relative;
   z-index: 1;
@@ -200,4 +199,38 @@ body .main-container .contact-form .contact-form__elements .mobile-cta-footer__b
   font-style: normal;
   font-size: 1.25rem;
   position: relative;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*SECTION ABOVE MOBILE PHONES - TABLET RANGE  - PORTRAIT -   >800px */
+/*SECTION: END - [RESPONSIVE DESIGN] */
+@media (min-width: 768px) {
+  body {
+    background-image: url("/img/img-tablet-p/tablet-contact-bg.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-color: #fff;
+  }
+  body .main-container {
+    position: relative;
+    top: 110px;
+  }
+  body .main-container .contact-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
+  }
+  body .main-container .contact-container .contact-heroCopy {
+    font-size: 2.18rem;
+  }
+  body .main-container .contact-container .contactheroimg {
+    margin: 25px auto;
+    padding: 0px;
+    left: 0px;
+    width: 150px;
+    height: 80px;
+  }
+}
+/*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - PORTRAIT -   >800px */
+/*!SECTION: END - [RESPONSIVE DESIGN] *//*# sourceMappingURL=main.css.map */

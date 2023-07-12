@@ -1,14 +1,39 @@
-@media(min-width: 768px){
+/*SECTION ABOVE MOBILE PHONES - TABLET RANGE  - PORTRAIT -   >800px */
+/*SECTION: END - [RESPONSIVE DESIGN] */
 
 
+@media (min-width: 768px) {
+	body {
+		background-image: url("/img/img-tablet-p/tablet-contact-bg.png");
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+		background-color: #fff;
 
-    body {
-        background-image: url("/img/img-tablet-p/tablet-contact-bg.png");
-        background-repeat: no-repeat;
-        background-attachment: scroll;
-        background-color: #fff;
-    }//end of body-container 
+		.main-container {
+			//NOTE design varitant
+			position: relative;
+			top: 110px;
+			.contact-container {
+				@include flexMix-col;
 
+				.contact-heroCopy {
+                   font-size: $text2x-18;//35px;
+				} // end of contact-heroCopy
 
+				.contactheroimg {
+					//NOTE design varitant
+					margin: 25px auto;
+					padding: 0px;
+					// position: relative;
+					// top: 110px;
+					left: 0px; //reseting left positioning from mobile settings.
+					width: 150px;
+					height: 80px;
+				}
+			} //end of contact-container
+		} // end main-container
+	} //end of body-container
+} // end of media query
 
-}// end of media query
+/*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - PORTRAIT -   >800px */
+/*!SECTION: END - [RESPONSIVE DESIGN] */

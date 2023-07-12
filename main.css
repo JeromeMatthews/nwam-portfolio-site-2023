@@ -230,6 +230,9 @@ body .hero-button {
   }
 }
 @media (min-width: 768px) {
+  .main-container {
+    top: 380px;
+  }
   .hero-section-1,
   .hero-section-2,
   .hero-section-3 {
@@ -239,9 +242,9 @@ body .hero-button {
     justify-content: center;
   }
   body {
-    background: url("/img/img-tablet-p/m-p-home-bg-img.png");
+    background: url("/img/img-tablet-p/tabletP-home-bg.png");
     /*Using the  !important flag to overide the assignment of the background images for the diffrent veiwport variants of the design.*/
-    background-position: top 0px left -90px;
+    background-position: top 0px left 0px;
     background-repeat: no-repeat;
     background-attachment: scroll;
   }
