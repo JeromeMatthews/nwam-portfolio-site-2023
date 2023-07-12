@@ -9,3 +9,12 @@ past and current, that demonstrate the skills and capabilities of Jerome through
 work at nomad web and media.
 
 Nomad is a print, web, and graphic design and development start up run solely by Jerome. For queries on working with Jerome please contact: jerome_matthews@live.com.
+
+
+
+- Tools used for documentation: Developer Extensions
+
+Live Server - Ritwick Dey
+Prettier - Prettier
+Comment Anchors - Starlane Studios
+Auto Rename Tag - Jun Han 

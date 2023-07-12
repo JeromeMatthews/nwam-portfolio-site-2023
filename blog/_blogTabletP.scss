@@ -1,0 +1,48 @@
+/*SECTION ABOVE MOBILE PHONES - TABLET RANGE  - PORTRAIT -   >800px */
+@media (min-width: 768px) {
+	body {
+		//NOTE: design variant
+		background-image: url("/img/img-tablet-p/tablet-blog-bg.png");
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+
+		.main-container {
+			.blog-box-group {
+				//NOTE: design variant: As more get added switch to flex direction row / CSS GRID, for better layout arrangment, until then, these pages can be hidden on the live site until we put content in them.
+				position: relative;
+				top: 200px;
+			}
+
+			.blog-box__link {
+				//NOTE: design variant: As more get added switch to flex direction row / CSS GRID, for better layout arrangment, until then, these pages can be hidden on the live site until we put content in them.
+
+				.blog-box {
+					//NOTE: design variant
+					position: relative;
+					width: 272px;
+					height: 233px;
+					background-image: url("/img/img-tablet-p/↳\ 🖼\ Image.png");
+
+					.blog-box__title {
+						//NOTE: design variant
+						font-size: $text1x-37; //22px;
+					} //end blog-box__title
+
+					.blog-box__subtitle {
+						//NOTE: design variant
+
+						font-size: $text1X-25; //20px;
+					} // end blog-box__subtitle
+
+					.blog-box__text {
+						//NOTE: design variant
+
+						font-size: $text1x-12; //18px;
+					} // end blog-box__text
+				} // end blog-box
+			} // end blog-box__link
+		} // end main-container
+	} //end body
+} //end of media query
+
+/*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - PORTRAIT -   >800px */

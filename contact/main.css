@@ -231,6 +231,11 @@ body .main-container .contact-form .contact-form__elements .mobile-cta-footer__b
     width: 150px;
     height: 80px;
   }
+  body .main-container .contact-form .contact-form__elements .mobile-cta-footer__button {
+    width: 173px;
+    height: 34px;
+    font-size: 0.93rem;
+  }
 }
 /*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - PORTRAIT -   >800px */
 /*!SECTION: END - [RESPONSIVE DESIGN] *//*# sourceMappingURL=main.css.map */

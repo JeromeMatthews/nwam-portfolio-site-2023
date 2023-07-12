@@ -31,6 +31,25 @@
 					height: 80px;
 				}
 			} //end of contact-container
+
+			.contact-form{
+				.contact-form__elements {
+					.mobile-cta-footer__button{
+						//NOTE: design variant
+						width: 173px;
+						height: 34px;
+					   font-size: $textSmall-93; //15px;
+
+
+
+					}//end mobile-cta-footer__button
+				}// end contact-form__elements
+			}//end contact-form
+
+
+
+
+
 		} // end main-container
 	} //end of body-container
 } // end of media query

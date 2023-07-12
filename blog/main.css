@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import "..//partials/_base.css";
 .sitenav--container {
   position: relative;
@@ -175,4 +176,33 @@ body .main-container .blog-box__link .blog-box .blog-box__text {
   font-style: normal;
   font-size: 0.93rem;
   line-height: 85%;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*SECTION ABOVE MOBILE PHONES - TABLET RANGE  - PORTRAIT -   >800px */
+@media (min-width: 768px) {
+  body {
+    background-image: url("/img/img-tablet-p/tablet-blog-bg.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+  }
+  body .main-container .blog-box-group {
+    position: relative;
+    top: 200px;
+  }
+  body .main-container .blog-box__link .blog-box {
+    position: relative;
+    width: 272px;
+    height: 233px;
+    background-image: url("/img/img-tablet-p/↳ 🖼 Image.png");
+  }
+  body .main-container .blog-box__link .blog-box .blog-box__title {
+    font-size: 1.37rem;
+  }
+  body .main-container .blog-box__link .blog-box .blog-box__subtitle {
+    font-size: 1.25rem;
+  }
+  body .main-container .blog-box__link .blog-box .blog-box__text {
+    font-size: 1.12rem;
+  }
+}
+/*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - PORTRAIT -   >800px *//*# sourceMappingURL=main.css.map */
