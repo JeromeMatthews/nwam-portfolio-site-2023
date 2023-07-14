@@ -236,4 +236,44 @@ body .main-container .article-container .article-sm-bottom {
 body .main-container .article-container .article-sm-bottom .article-sm-bottom-link {
   list-style: none;
   padding: 0px 5px;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*SECTION ABOVE MOBILE PHONES - TABLET RANGE  - PORTRAIT -   >800px*/
+@media (min-width: 768px) {
+  body .main-container .article-container .article__title {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: flex-end;
+    position: relative;
+    right: 137px;
+    font-size: 2.5rem;
+  }
+  body .main-container .article-container .article__sub_title {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: flex-end;
+    position: relative;
+    right: 137px;
+    font-size: 1.25rem;
+  }
+  body .main-container .article-container .article-sm-top {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: flex-end;
+    position: relative;
+    right: 137px;
+  }
+  body .main-container .article-container .article__content {
+    margin: 0px 79px;
+  }
+  body .main-container .article-container .article__content .support-topic .support-topic__body {
+    font-size: 1.25rem;
+  }
+}
+/*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - PORTRAIT -   >800px*//*# sourceMappingURL=main.css.map */
