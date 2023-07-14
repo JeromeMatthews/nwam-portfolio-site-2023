@@ -1,3 +1,4 @@
+/*SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1000px */
 @media (min-width: 768px) {
 	body {
 		background-image: url("/img/img-tablet-p/tablet-about-bg.png");
@@ -33,6 +34,14 @@
 					font-size: $text2X-81; //45px;
 					color: #e1a700;
 				}
+
+				.chevron-down{
+					position: relative;
+					top: -320px;
+
+				}//end chevron-down
+
+
 			} //end of about-hero
 
 			
@@ -121,3 +130,4 @@
 		} // end of main-container
 	} //end of body
 } // end of Media Query
+/*SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1000px */

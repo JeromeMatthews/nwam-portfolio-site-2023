@@ -3,26 +3,22 @@
 	.main-container {
 		//NOTE: design variant: As more get added switch to flex direction row / CSS GRID, for better layout arrangment, until then, these pages can be hidden on the live site until we put content in them.
 
-        @include flexMix-col;
+		@include flexMix-col;
 		margin: 0px auto;
 		position: relative;
-		top: 230px;
+		top: 120px;
 	}
 
 	body {
 		//NOTE: Design variant
 		background-image: url("/img/img-tablet-p/tablet-ps-bg.png");
 
-
-            .show-box__title,
-            .show-box__subtitle,
-            .show-box__text {
-                //NOTE: Design variant 
-                margin: auto 7px ; // Top & bottom, left & right 
-
-
-                
-            }
+		.show-box__title,
+		.show-box__subtitle,
+		.show-box__text {
+			//NOTE: Design variant
+			margin: auto 7px; // Top & bottom, left & right
+		}
 
 		.show-box {
 			.show-box__title {
@@ -42,58 +38,50 @@
 		#show-box-1,
 		#show-box-2,
 		#show-box-3 {
-            //NOTE: design variant
+			//NOTE: design variant
 
-            width: 230px;
-            height: 230px;
-        
-            margin: 0px 128px 14px; // top, left & right, bottom.
-            border-radius: 3px;
-			
-		}//end show-box-group styles
+			width: 230px;
+			height: 230px;
 
-        #show-box-1{
-            //NOTE: design variant
-            background-image: url("/img/img-tablet-p/tablet-landscape-Natours-image.png");
+			margin: 0px 128px 14px; // top, left & right, bottom.
+			border-radius: 3px;
+		} //end show-box-group styles
 
+		#show-box-1 {
+			//NOTE: design variant
+			background-image: url("/img/img-tablet-p/tablet-landscape-Natours-image.png");
 
-            //NOTE: Added the overlay to help strengthen the contrast of the text against the background image
-            .show-box__overlay {
-                @include showBoxOverlay;
-                //NOTE: design variant
-                width: 230px;
-                height: 230px;
+			//NOTE: Added the overlay to help strengthen the contrast of the text against the background image
+			.show-box__overlay {
+				@include showBoxOverlay;
+				//NOTE: design variant
+				width: 230px;
+				height: 230px;
+			} //end show-box__overlay
+		} //end show-box-1
 
-            }//end show-box__overlay
+		#show-box-2 {
+			//NOTE: design variant
+			// Scales since its an svg image.
+			.show-box__overlay {
+				@include showBoxOverlay;
+				//NOTE: design variant
+				width: 230px;
+				height: 230px;
+			} //end show-box__overlay
+		} //end show-box-2
 
-        }//end show-box-1
+		#show-box-3 {
+			//NOTE: design variant
+			background-image: url("/img/img-tablet-p/tablet-landscape-BEAM-imag.png");
 
-        #show-box-2{
-            //NOTE: design variant
-            // Scales since its an svg image.
-            .show-box__overlay {
-                @include showBoxOverlay;
-                //NOTE: design variant
-                width: 230px;
-                height: 230px;
-
-            }//end show-box__overlay
-
-        }//end show-box-2
-
-        #show-box-3{
-            //NOTE: design variant
-            background-image: url("/img/img-tablet-p/tablet-landscape-BEAM-imag.png");
-
-            .show-box__overlay {
-                @include showBoxOverlay;
-                //NOTE: design variant
-                width: 230px;
-                height: 230px;
-
-            }//end show-box__overlay
-
-        }//end show-box-3
+			.show-box__overlay {
+				@include showBoxOverlay;
+				//NOTE: design variant
+				width: 230px;
+				height: 230px;
+			} //end show-box__overlay
+		} //end show-box-3
 	} //end body
 } //end media query
 /*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - PORTRAIT -   >800px */

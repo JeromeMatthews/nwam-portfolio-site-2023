@@ -119,6 +119,63 @@
   display: none;
 }
 
+/*SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1000px */
+@media (min-width: 768px) {
+  .sitenav__links {
+    z-index: 11;
+    position: fixed;
+    left: 35%;
+    margin-top: 60px;
+    font-family: futura-pt, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.87rem;
+  }
+  .sitenav__links #projects {
+    text-align: center;
+    width: 140px;
+    height: 67px;
+    background-color: rgba(109, 109, 109, 0.2);
+    position: relative;
+    margin-top: 67px;
+  }
+  .sitenav__links #about,
+  .sitenav__links #contact {
+    text-align: center;
+    width: 140px;
+    height: 67px;
+    background-color: rgba(109, 109, 109, 0.2);
+    position: relative;
+    margin-top: 130px;
+    margin-bottom: 130px;
+  }
+  .sitenav__links #blog {
+    text-align: center;
+    width: 140px;
+    height: 67px;
+    background-color: rgba(109, 109, 109, 0.2);
+    position: relative;
+    margin-bottom: 66px;
+  }
+  .sitenav__links #projects-text,
+  .sitenav__links #about-text,
+  .sitenav__links #contact-text,
+  .sitenav__links #blog-text {
+    position: relative;
+    top: 15px;
+  }
+  .sitenav__links a {
+    text-decoration: none;
+  }
+  .sitenav__links li {
+    list-style: none;
+  }
+  .sitenav__links a > li {
+    text-decoration: none;
+    color: #ffffff;
+  }
+}
+/*SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1000px */
 body {
   background-image: url("/img/img-mobile-p/mobile-blog-bg.png");
   background-repeat: no-repeat;

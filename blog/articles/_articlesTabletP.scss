@@ -8,10 +8,11 @@
 
 @media (min-width: 768px) {
 	body {
-        background-image: url("/img/img-tablet-p/FullScreen-Image.png");
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-attachment: fixed;
+		//NOTE: design variant: Rest the position of the background image to default. left 0px and top 0px.
+		background-image: url("/img/img-tablet-p/FullScreen-Image.png");
+		background-repeat: no-repeat;
+		background-position: left 0px top 0px;
+		background-attachment: fixed;
 
 		.main-container {
 			.article-container {
@@ -37,14 +38,12 @@
 				.article__content {
 					//NOTE: design variant
 					margin: 0px 79px;
-                    .support-topic {
-
-					.support-topic__body {
-						//NOTE: design variant
-						font-size: $text1X-25; //20px;
-					}//end support-topic-body
-
-                }//end support-topic
+					.support-topic {
+						.support-topic__body {
+							//NOTE: design variant
+							font-size: $text1X-25; //20px;
+						} //end support-topic-body
+					} //end support-topic
 				}
 			} // end article-container
 		} //end main-container

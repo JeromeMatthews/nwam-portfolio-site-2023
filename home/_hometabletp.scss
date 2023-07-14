@@ -104,10 +104,13 @@
 	}
 
 	.nav-chevrons {
+		
 		@include flexMix;
 		.left-chev {
 			margin-right: 50px;
 		}
+
+		display: none; // overiding theFDisplay: flex assignment. Decided to remove the chevrons since portiat didn't have it in the inital design and look better anyway. 
 	}
 }
 /*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - PORTRAIT -   >800px */
