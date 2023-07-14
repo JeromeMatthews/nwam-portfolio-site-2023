@@ -119,7 +119,7 @@
 }
 
 body {
-  background-image: url("/img/img-mobile-p/pexels-marcelo-jaboo-Chair-spotlight.jpg");
+  background-image: url("/img/img-mobile-p/book-stack-p-a-bg.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -240,6 +240,12 @@ body .main-container .article-container .article-sm-bottom .article-sm-bottom-li
 
 /*SECTION ABOVE MOBILE PHONES - TABLET RANGE  - PORTRAIT -   >800px*/
 @media (min-width: 768px) {
+  body {
+    background-image: url("/img/img-tablet-p/FullScreen-Image.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+  }
   body .main-container .article-container .article__title {
     display: flex;
     flex-direction: row;

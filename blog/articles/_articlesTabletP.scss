@@ -8,6 +8,11 @@
 
 @media (min-width: 768px) {
 	body {
+        background-image: url("/img/img-tablet-p/FullScreen-Image.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+
 		.main-container {
 			.article-container {
 				//NOTE: design variant
