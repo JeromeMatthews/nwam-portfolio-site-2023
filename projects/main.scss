@@ -3,6 +3,16 @@
 @import "..//partials/mixins";
 @import "..//partials/nav-base-mobile";
 //SECTION: UNIVERSAL VARIABLES, LISTS & MIXINS
+
+@mixin showBoxOverlay{
+	position: absolute;
+	z-index:2;
+	background-color: rgba(31, 31, 31, 0.562);
+	width: 197px;
+	height: 197px;
+}// NOTE: overlays for the showboxes/ projects images in case the text doesn't have enough constrast when overlayed. 
+
+
 //!SECTION UNIVERSAL VARIABLES, LISTS & MIXINS - END
 
 /*SECTION: [RESPONSIVE DESIGN] */
@@ -91,11 +101,8 @@ body {
 	background-repeat: no-repeat;
 
 	.show-box__overlay {
-		position: absolute;
-		z-index:2;
-		background-color: rgba(0, 0, 0, 0.699);
-		width: 197px;
-		height: 197px;
+		@include showBoxOverlay;
+	
 	}
 	.show-box__title,
 	.show-box__subtitle,
@@ -108,11 +115,7 @@ body {
 	background-image: url("/img/img-mobile-p/beam.png");
 
     .show-box__overlay {
-		position: absolute;
-		z-index:2;
-		background-color: rgba(31, 31, 31, 0.562);
-		width: 197px;
-		height: 197px;
+		@include showBoxOverlay;
 	}
 	.show-box__title,
 	.show-box__subtitle,
