@@ -1,0 +1,33 @@
+/*SECTION ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >800px */
+@media (min-width: 1024px) {
+	.main-container {
+		//NOTE: design variant: As more get added switch to flex direction row / CSS GRID, for better layout arrangment, until then, these pages can be hidden on the live site until we put content in them.
+        width: 100vw;
+        height: 100vh;
+		margin: auto;
+		@include flexMix; //NOTE: Now switched over to horizontal layout for larger screens starting from the tablet landscape mode.
+		
+		position: relative;
+		top: 0px; //NOTE: Reseting top px setting since not needed for centering since flexbox with align-items and justify-content: center achive the centering of the content more elegantly. 
+		align-items: center;
+		justify-content: center;
+	} //end main-container
+
+	body {
+		//NOTE: Design variant
+		background-image: url("/img/img-tablet-l/tablet-landscape-ps-bg.png");
+
+		#show-box-1,
+		#show-box-2,
+		#show-box-3 {
+			//NOTE: design variant
+
+			width: 230px;
+			height: 230px;
+			//NOTE: design variant - Reduced the  left and right margins as the layout is now row not column - Horizontal. Later iterate to CSS GRID as more projects are added.
+			margin: 0px 18px 14px; // top, left & right, bottom.
+			border-radius: 3px;
+		} //end show-box-group styles
+	} //end body
+} //end media query
+/*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >800px */

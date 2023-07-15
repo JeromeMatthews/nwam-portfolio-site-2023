@@ -490,6 +490,7 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
   padding: 0px;
 }
 
+/*SECTION ABOVE MOBILE PHONES - TABLET RANGE  - PORTRAIT -   >800px */
 @media (min-width: 768px) {
   .main-container {
     justify-content: center;
@@ -783,4 +784,15 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
     position: relative;
     padding: 0px;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+/*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - PORTRAIT -   >800px */
+/*SECTION ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >800px */
+@media (min-width: 1024px) {
+  body .atf-1 {
+    background-image: url("/img/img-tablet-l/tablet-landscape-ps-ng-bg.png");
+    background-repeat: no-repeat;
+    background-position: left 0px top 0px;
+    background-attachment: scroll;
+  }
+}
+/*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >800px *//*# sourceMappingURL=main.css.map */

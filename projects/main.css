@@ -357,4 +357,32 @@ body .show-box .show-box__text {
     height: 230px;
   }
 }
-/*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - PORTRAIT -   >800px *//*# sourceMappingURL=main.css.map */
+/*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - PORTRAIT -   >800px */
+/*SECTION ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >800px */
+@media (min-width: 1024px) {
+  .main-container {
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    top: 0px;
+    align-items: center;
+    justify-content: center;
+  }
+  body {
+    background-image: url("/img/img-tablet-l/tablet-landscape-ps-bg.png");
+  }
+  body #show-box-1,
+  body #show-box-2,
+  body #show-box-3 {
+    width: 230px;
+    height: 230px;
+    margin: 0px 18px 14px;
+    border-radius: 3px;
+  }
+}
+/*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >800px *//*# sourceMappingURL=main.css.map */

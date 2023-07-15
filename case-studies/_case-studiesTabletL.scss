@@ -1,0 +1,15 @@
+/*SECTION ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >800px */
+@media (min-width: 1024px) {
+    body{
+
+        .atf-1{
+            background-image: url("/img/img-tablet-l/tablet-landscape-ps-ng-bg.png");
+            background-repeat: no-repeat;
+                background-position: left 0px top 0px; // first value left and right, second - top and bottom.
+                background-attachment: scroll;
+    
+        }//end atf-1
+    }//end body
+   
+}// end media query
+/*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >800px */
