@@ -41,6 +41,25 @@
 					} //body-sect-1__text
 				} //end body-sect-1-art
 			} //end of body-sect-1
+
+
+            .body-sect-2 {
+                .body-sect-2-art {
+                .body-sect-2__head {
+                font-size: $text3x-59; //57.5px;
+                text-align: left;
+                margin: 0px;//reseting margins. 
+                }//end body-sect-2__head
+
+                .body-sect-2__text {
+                    //NOTE: variant change
+                   text-align: left;
+                }
+
+
+            }//end body-sect-2-art
+
+            }// end of body-sect-2
 		} //end main-container
 	} //end of body
 } // end of media query
