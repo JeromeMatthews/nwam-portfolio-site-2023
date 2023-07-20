@@ -299,7 +299,7 @@ body .main-container .mobile-cta-footer .mobile-cta-footer__sm-links {
   padding: 0px;
 }
 
-/*SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1000px */
+/*SECTION ABOVE MOBILE PHONES - TABLET  - PORTRAIT -  >1000px */
 @media (min-width: 768px) {
   body {
     background-image: url("/img/img-tablet-p/tablet-about-bg.png");
@@ -408,4 +408,35 @@ body .main-container .mobile-cta-footer .mobile-cta-footer__sm-links {
     font-size: 1.87rem;
   }
 }
-/*SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1000px *//*# sourceMappingURL=main.css.map */
+/*!SECTION ABOVE MOBILE PHONES - TABLET  - PORTRAIT  -  >1000px */
+/*SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1000px */
+@media (min-width: 1024px) {
+  body {
+    background-image: url("/img/img-tablet-l/tablet-landscape-about-bg.png");
+  }
+  body .main-container .about-hero .about-hero__copy {
+    position: relative;
+    margin: 190px 155px 360px 135px;
+    left: -150px;
+  }
+  body .main-container .about-hero .about-hero__text {
+    font-size: 3.59rem;
+    text-align: left;
+    line-height: 99%;
+  }
+  body .main-container .about-hero .chevron-down {
+    position: relative;
+    top: -260px;
+  }
+  body .main-container .body-sect-1 .body-sect-1-art .body-sect-1__head {
+    margin: auto 167px;
+    font-size: 3.59rem;
+    text-align: right;
+    position: relative;
+    right: -150px;
+  }
+  body .main-container .body-sect-1 .body-sect-1-art .body-sect-1__text {
+    text-align: right;
+  }
+}
+/*!SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1000px *//*# sourceMappingURL=main.css.map */

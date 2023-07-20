@@ -1,15 +1,97 @@
 /*SECTION ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >800px */
 @media (min-width: 1024px) {
-    body{
+	body {
+		.atf-1 {
+			background-image: url("/img/img-tablet-l/tablet-landscape-ps-ng-bg.png");
+			background-repeat: no-repeat;
+			background-position: left 0px top 0px; // first value left and right, second - top and bottom.
+			background-attachment: scroll;
 
-        .atf-1{
-            background-image: url("/img/img-tablet-l/tablet-landscape-ps-ng-bg.png");
-            background-repeat: no-repeat;
-                background-position: left 0px top 0px; // first value left and right, second - top and bottom.
-                background-attachment: scroll;
-    
-        }//end atf-1
-    }//end body
-   
-}// end media query
+            //NOTE: height reset
+            height: 800px;
+		} //end atf-1
+
+		.btl {
+		
+
+			.btl__title-container {
+                position: relative;
+                top: 40px;
+				//NOTE: Made an extra container to hold all the titles and more easily move them around.
+		
+				
+
+				.btl__title {
+					//NOTE: Design variant - Expanded the area of the text heading by widening the margins to make use of the wider screen space as in the design for this viewport. Moveds the "THE LINES" title section up, so it can be aligned with the first title. "BETWEEN" and "THE LINES"ewere separated to make it easier to stack them in the mobile viewport design variation (smaller screen to work with)
+
+					margin-left: 200px;
+					margin-right: 200px;
+
+					.btl__title-1 {
+						//NOTE: Design variant
+						position: relative;
+						left: -190px;
+					} //end of btl__title-1
+
+					.btl__title-2 {
+						//NOTE: Design variant
+						font-size: $text3x-43; //55px;
+						position: relative;
+						top: -45px;
+						right: -99px;
+					} //end of btl__title-2
+				} //end of btl-title
+
+				.btl__text {
+					//NOTE Design variant
+
+					margin-left: 200px;
+					margin-right: 200px;
+
+					//NOTE: moving the container for the milestones and deliverables up to match the design for landscape.
+					position: relative;
+					top: -60px;
+
+					.btl__text-1 {
+						position: relative;
+						left: -125px;
+						font-size: $text1x-37; //22px;
+					} //end of btl__text-1
+
+					.btl__text-2 {
+						position: relative;
+						top: -26px;
+						right: -99px;
+						font-size: $text1x-37; //22px;
+					} //end of btl__text-2
+				} //end btl__text
+			} //end btl__title-container
+		} //end of btl
+
+        .btl-content-block-1{
+            //NOTE: Design variant: Height reset so content only takes as much space as is needed as the template expands and shrinks based on the content of the project being described. removed the fixed widths of mobile design variant.
+            height:800px; // reseting height of container.
+
+
+        }//end btl-content-block-1
+
+        .btl-content-block-2{
+
+               //NOTE: Design variant: Height reset so content only takes as much space as is needed as the template expands and shrinks based on the content of the project being described. removed the fixed widths of mobile design variant.
+               height:0px; // reseting height of container.
+
+        }//end btl-content-block-2
+
+        .mobile-cta-footer {
+                //NOTE: Design variant: Height reset so content only takes as much space as is needed as the template expands and shrinks based on the content of the project being described. removed the fixed widths of mobile design variant.
+                height:0px; // reseting height of container.
+
+
+        }// mobile-cta-footer
+
+		//NOTE: WORK SPACE NOTE: - left off on reseting the positioning oan gheights of each content section. Was working on making the template more scalable, not using only fixed height content block dimensions. 
+
+
+	} //end body
+} // end media query
 /*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >800px */

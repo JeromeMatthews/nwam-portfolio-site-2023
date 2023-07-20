@@ -1,0 +1,48 @@
+/*SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1000px */
+@media (min-width: 1024px) {
+	body {
+		//NOTE: variant change
+		background-image: url("/img/img-tablet-l/tablet-landscape-about-bg.png");
+
+		.main-container {
+			.about-hero {
+				.about-hero__copy {
+					position: relative;
+					//NOTE: variant change
+					margin: 190px 155px 360px 135px; // reminder: /\ > V <
+					left: -150px;
+				} //end about-hero-copy
+				.about-hero__text {
+					//NOTE: variant change
+					font-size: $text3x-59; //57.5px;
+					text-align: left;
+					line-height: 99%;
+				}
+
+				.chevron-down {
+					position: relative;
+					top: -260px;
+				} //end chevron-down
+			} //end of about-hero
+
+			.body-sect-1 {
+				.body-sect-1-art {
+					.body-sect-1__head {
+						//NOTE: variant change
+						margin: auto 167px; //reminder: ?| & V , < & >
+						font-size: $text3x-59; //57.5px;
+						text-align: right;
+						position: relative;
+						right: -150px;
+					} //end body-sect-1__head
+					.body-sect-1__text {
+						//NOTE: variant change
+						text-align: right;
+					} //body-sect-1__text
+				} //end body-sect-1-art
+			} //end of body-sect-1
+		} //end main-container
+	} //end of body
+} // end of media query
+
+/*!SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1000px */

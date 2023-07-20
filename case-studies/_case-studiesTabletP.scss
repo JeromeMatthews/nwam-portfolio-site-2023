@@ -186,7 +186,7 @@
 					font-family: $font-list-h;
 					font-weight: nth($f-weights, 1);
 					font-style: normal;
-					font-size: $text2X-81; //55px;
+					font-size: $text2X-81; //45px;
 				}
 			}
 			.btl__text {
@@ -213,6 +213,7 @@
 			flex-direction: column;
 			flex-wrap: nowrap;
 			text-align: center;
+			//NOTE: Design variant
 			height: 800px; // reseting height of container.
 			padding: 0 30px;
 
@@ -302,6 +303,7 @@
 				list-style: none;
 				align-content: center;
 				position: relative;
+				//NOTE: Design variant
 				padding: 0px; //reseting the padding to default of zero.
 			} //end mobile-cta-footer__sm-links
 		} // end mobile-cta-footer

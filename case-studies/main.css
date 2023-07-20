@@ -793,6 +793,51 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
     background-repeat: no-repeat;
     background-position: left 0px top 0px;
     background-attachment: scroll;
+    height: 800px;
+  }
+  body .btl .btl__title-container {
+    position: relative;
+    top: 40px;
+  }
+  body .btl .btl__title-container .btl__title {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+  body .btl .btl__title-container .btl__title .btl__title-1 {
+    position: relative;
+    left: -190px;
+  }
+  body .btl .btl__title-container .btl__title .btl__title-2 {
+    font-size: 3.43rem;
+    position: relative;
+    top: -45px;
+    right: -99px;
+  }
+  body .btl .btl__title-container .btl__text {
+    margin-left: 200px;
+    margin-right: 200px;
+    position: relative;
+    top: -60px;
+  }
+  body .btl .btl__title-container .btl__text .btl__text-1 {
+    position: relative;
+    left: -125px;
+    font-size: 1.37rem;
+  }
+  body .btl .btl__title-container .btl__text .btl__text-2 {
+    position: relative;
+    top: -26px;
+    right: -99px;
+    font-size: 1.37rem;
+  }
+  body .btl-content-block-1 {
+    height: 800px;
+  }
+  body .btl-content-block-2 {
+    height: 0px;
+  }
+  body .mobile-cta-footer {
+    height: 0px;
   }
 }
 /*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >800px *//*# sourceMappingURL=main.css.map */
