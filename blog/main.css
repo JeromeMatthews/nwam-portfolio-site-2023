@@ -199,7 +199,9 @@ body .main-container .blog-box__link {
   flex-direction: column;
   text-align: center;
 }
-body .main-container .blog-box__link #blog-box-1, body .main-container .blog-box__link #blog-box-2, body .main-container .blog-box__link #blog-box-3 {
+body .main-container .blog-box__link #blog-box-1,
+body .main-container .blog-box__link #blog-box-2,
+body .main-container .blog-box__link #blog-box-3 {
   margin: 10px auto;
 }
 body .main-container .blog-box__link .blog-box {
@@ -209,7 +211,9 @@ body .main-container .blog-box__link .blog-box {
   background-image: url("/img/img-mobile-p/book-stack.png");
   color: #000;
 }
-body .main-container .blog-box__link .blog-box .blog-box__title, body .main-container .blog-box__link .blog-box .blog-box__subtitle, body .main-container .blog-box__link .blog-box .blog-box__text {
+body .main-container .blog-box__link .blog-box .blog-box__title,
+body .main-container .blog-box__link .blog-box .blog-box__subtitle,
+body .main-container .blog-box__link .blog-box .blog-box__text {
   margin: 0px;
   padding: 0px;
 }
@@ -269,6 +273,23 @@ body .main-container .blog-box__link .blog-box .blog-box__text {
     background-image: url("/img/img-tablet-l/tablet-landscape-blog-bg.png");
     background-repeat: no-repeat;
     background-attachment: scroll;
+  }
+  body .main-container .blog-collection {
+    display: block !important;
+    position: relative;
+    top: 165px;
+  }
+  body .main-container .blog-collection .blog-collection__title {
+    position: relative;
+    font-family: proxima-nova, Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 2.5rem;
+    color: #fff;
+    text-align: right;
+    right: 170px;
+  }
+  body .main-container .blog-collection .blog-collection__divide {
+    display: block !important;
   }
   body .main-container .blog-box-group {
     display: flex;

@@ -5,73 +5,73 @@
 //SECTION: UNIVERSAL VARIABLES, LISTS & MIXINS
 
 //!SECTION UNIVERSAL VARIABLES, LISTS & MIXINS - END
-
 body {
 	background-image: url("/img/img-mobile-p/mobile-blog-bg.png");
 	background-repeat: no-repeat;
 	background-attachment: scroll;
 
 	.main-container {
-		.blog-box-group{
+	
+
+		.blog-box-group {
 			position: relative;
 			top: 40px;
 			@include flexMix-col;
-		
-		}
-		
+		} //end blog-box-group
+
 		.blog-box__link {
 			text-decoration: none;
 			@include flexMix-col;
 			text-align: center;
-			
 
-			#blog-box-1, #blog-box-2, #blog-box-3{
+			#blog-box-1,
+			#blog-box-2,
+			#blog-box-3 {
 				margin: 10px auto;
 			}
 
 			.blog-box {
-					position: relative;
-					width: 197px;
-					height: 197px;
-					background-image: url("/img/img-mobile-p/book-stack.png");
+				position: relative;
+				width: 197px;
+				height: 197px;
+				background-image: url("/img/img-mobile-p/book-stack.png");
 
-					color: #000;
+				color: #000;
 
-					.blog-box__title, .blog-box__subtitle, .blog-box__text{
-						//NOTE: Internal reset of box content spacing. 
-						margin: 0px;
-						padding: 0px;
-					}
+				.blog-box__title,
+				.blog-box__subtitle,
+				.blog-box__text {
+					//NOTE: Internal reset of box content spacing.
+					margin: 0px;
+					padding: 0px;
+				} //end contents
 
-					.blog-box__title {
-						font-family: $font-list-b;
-						font-weight: nth($f-weights, 1);
-						font-style: normal;
-						font-size:$text1x-31;//21px;
-						margin-top: 87px;
-					}
+				.blog-box__title {
+					font-family: $font-list-b;
+					font-weight: nth($f-weights, 1);
+					font-style: normal;
+					font-size: $text1x-31; //21px;
+					margin-top: 87px;
+				} //end blog-box__title
 
-					.blog-box__subtitle {
-						font-family: $font-list-b;
-						font-weight: nth($f-weights, 1);
-						font-style: normal;
-						font-size:$TextSmall-62;//10px;
-						margin: 0px 5px;
-					}
+				.blog-box__subtitle {
+					font-family: $font-list-b;
+					font-weight: nth($f-weights, 1);
+					font-style: normal;
+					font-size: $TextSmall-62; //10px;
+					margin: 0px 5px;
+				} //end blog-box__subtitle
 
-					.blog-box__text {
-						font-family: $font-list-b;
-						font-weight: nth($f-weights, 3);
-						font-style: normal;
-						font-size:$textSmall-93;//10px;
-						line-height: 85%;// spacing between the lines of text.
-					}
-				}
-			}
-		}
-
-	}
+				.blog-box__text {
+					font-family: $font-list-b;
+					font-weight: nth($f-weights, 3);
+					font-style: normal;
+					font-size: $textSmall-93; //10px;
+					line-height: 85%; // spacing between the lines of text.
+				} //end blog-box__text
+			} //end blog-box
+		} //end blog-box__link
+	} //end main-container
+} //end body
 @import "..//blog/_blogTabletP";
 @import "../blog/blogTabletL";
-	
-

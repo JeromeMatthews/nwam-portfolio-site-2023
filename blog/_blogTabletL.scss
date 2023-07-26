@@ -6,23 +6,41 @@
 		background-attachment: scroll;
 
 		.main-container {
+			//NOTE: design variant: show the page title: BLOG ARTICLES on all devices 1024px and wider. We use the !important rule to overide the title inline-style decalaration: display: none.
+			.blog-collection {
+				display: block !important;
+				position: relative;
+				top: 165px;
+
+				.blog-collection__title {
+					position: relative;
+					font-family: $font-list-h;
+					font-weight: nth($f-weights, 1);
+					font-size: $text2x-5; //40px;
+					color: #fff;
+					text-align: right;
+					right: 170px;
+				} //end blog-collection__title
+				.blog-collection__divide {
+					display: block !important;
+				} //end blog-collection__divide
+			} //end blog-collection
+
 			.blog-box-group {
 				//NOTE: design variant: As more get added switch to flex direction row / CSS GRID, for better layout arrangment, until then, these pages can be hidden on the live site until we put content in them. Same as Projects colection page.
 
 				@include flexMix;
 			} //end blog-box group
-		
 
-		.blog-box__link {
-			#blog-box-1,
-			#blog-box-2,
-			#blog-box-3 {
-				//NOTE: design variant:
-				margin:  auto 8px; //added spacing on the left and right margins total 16px - 8px each side.
-			} //end all blog-boxes | blog article previews.
-		} //end blog-box__link
-
-    } //end main-container
+			.blog-box__link {
+				#blog-box-1,
+				#blog-box-2,
+				#blog-box-3 {
+					//NOTE: design variant:
+					margin: auto 8px; //added spacing on the left and right margins total 16px - 8px each side.
+				} //end all blog-boxes | blog article previews.
+			} //end blog-box__link
+		} //end main-container
 	} //end body
 } //end of media query
 
