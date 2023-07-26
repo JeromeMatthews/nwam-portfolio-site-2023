@@ -363,8 +363,6 @@ body .hero-button {
     margin-top: 15px;
     margin-bottom: 30px;
   }
-}
-@media (min-width: 768px) {
   body .main-footer__social-icons {
     margin: 0px;
     padding: 0px;
@@ -379,8 +377,6 @@ body .hero-button {
   body .main-footer__social-icons li {
     margin-right: 10px;
   }
-}
-@media (min-width: 768px) {
   .nav-chevrons {
     display: flex;
     flex-direction: row;
@@ -418,8 +414,6 @@ body .hero-button {
     flex-wrap: wrap;
     justify-content: center;
   }
-}
-@media (min-width: 1024px) {
   body {
     background: url("/img/img-tablet-l/tablet-landscape-home-bg.png");
     /*Using the  !important flag to overide the assignment of the background images for the diffrent veiwport variants of the design.*/
@@ -503,15 +497,11 @@ body .hero-button {
   body .nav-chevrons .left-chev {
     margin-right: 50px;
   }
-}
-@media (min-width: 1024px) {
   body .main-footer {
     margin: 0px;
     position: relative;
     top: -40px;
   }
-}
-@media (min-width: 1024px) {
   body .main-footer__social-icons {
     margin: 0px;
     padding: 0px;
@@ -640,16 +630,12 @@ body .hero-button {
   body .nav-chevrons .left-chev {
     margin-right: 50px;
   }
-}
-@media (min-width: 1920px) {
   body .main-footer {
     margin: 0px;
     position: relative;
     top: 140px;
     padding-bottom: 20px;
   }
-}
-@media (min-width: 1920px) {
   body .main-footer__social-icons {
     margin: 0px;
     padding: 0px;

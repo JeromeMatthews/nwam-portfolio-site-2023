@@ -60,6 +60,24 @@
             }//end body-sect-2-art
 
             }// end of body-sect-2
+
+
+			.body-sect-3 {
+				.body-sect-3-art {
+					.body-sect-3__head {
+						//NOTE: variant change
+						font-size: $text3x-59; //57.5px;
+						text-align: right;
+						margin: 0px;//reseting margins. 
+						
+					}
+					.body-sect-3__text {
+						//NOTE: variant change
+						text-align: right;
+						
+					}
+				}
+			} //end of body-sect-3
 		} //end main-container
 	} //end of body
 } // end of media query

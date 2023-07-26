@@ -262,4 +262,24 @@ body .main-container .blog-box__link .blog-box .blog-box__text {
     font-size: 1.12rem;
   }
 }
-/*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - PORTRAIT -   >800px *//*# sourceMappingURL=main.css.map */
+/*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - PORTRAIT -   >800px */
+/*SECTION ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >800px */
+@media (min-width: 1024px) {
+  body {
+    background-image: url("/img/img-tablet-l/tablet-landscape-blog-bg.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+  }
+  body .main-container .blog-box-group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  body .main-container .blog-box__link #blog-box-1,
+  body .main-container .blog-box__link #blog-box-2,
+  body .main-container .blog-box__link #blog-box-3 {
+    margin: auto 8px;
+  }
+}
+/*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >800px *//*# sourceMappingURL=main.css.map */

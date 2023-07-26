@@ -446,5 +446,13 @@ body .main-container .mobile-cta-footer .mobile-cta-footer__sm-links {
   body .main-container .body-sect-2 .body-sect-2-art .body-sect-2__text {
     text-align: left;
   }
+  body .main-container .body-sect-3 .body-sect-3-art .body-sect-3__head {
+    font-size: 3.59rem;
+    text-align: right;
+    margin: 0px;
+  }
+  body .main-container .body-sect-3 .body-sect-3-art .body-sect-3__text {
+    text-align: right;
+  }
 }
 /*!SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1000px *//*# sourceMappingURL=main.css.map */
