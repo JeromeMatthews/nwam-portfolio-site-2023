@@ -1,0 +1,42 @@
+/*SECTION ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >1024px*/
+
+@media (min-width: 1024px) {
+	body {
+		background-image: url("/img/img-tablet-l/tablet-landscape-blog-article-bg.png");
+
+		.main-container {
+			.article-container {
+				//NOTE: design variant
+				text-align: right;
+
+				.article__title {
+					//NOTE: design variant
+				} //end article__title
+
+				.article__sub_title {
+					//NOTE: design variant
+				} // end article__sub_title
+
+				.article-sm-top {
+					//NOTE: design variant
+				} //end article-sm-top
+
+				.article__content {
+					//NOTE: design variant
+					margin: 0px 140px;
+
+					.support-topic {
+						.support-topic__body {
+							//NOTE: design variant
+						} //end support-topic-body
+					} //end support-topic
+				} //end article__content
+
+				.mobile-cta-footer {
+					text-align: center;
+				} //end mobile-cta-footer
+			} // end article-container
+		} //end main-container
+	} //end body
+} //end of media query
+/*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >1024px*/
