@@ -289,7 +289,10 @@ body .main-container .blog-box__link .blog-box .blog-box__text {
     right: 170px;
   }
   body .main-container .blog-collection .blog-collection__divide {
+    position: relative;
+    top: -20px;
     display: block !important;
+    color: #fff;
   }
   body .main-container .blog-box-group {
     display: flex;

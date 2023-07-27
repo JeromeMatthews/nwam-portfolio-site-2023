@@ -22,7 +22,10 @@
 					right: 170px;
 				} //end blog-collection__title
 				.blog-collection__divide {
+					position: relative;
+					top: -20px;
 					display: block !important;
+					color: #fff;
 				} //end blog-collection__divide
 			} //end blog-collection
 
