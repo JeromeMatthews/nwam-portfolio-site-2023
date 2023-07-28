@@ -1,5 +1,29 @@
-/*SECTION ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >800px */
+/*SECTION ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >1024px */
 @media (min-width: 1024px) {
+	@mixin csContentBox-TL {
+		position: relative;
+		width: 400px;
+		height: 300px;
+		top: 0px;
+		left: 0px;
+		background: none;
+		border-radius: 0;
+		margin: 0px;
+	}
+
+
+	//NOTE: design variant: Creating the content box specifically for the wider veiwport variants replacing the boxes used in portrait versions. 
+	@mixin csContentBox-Projectdetails-TL {
+		position: relative;
+		width: 400px;
+		height: 650px;
+		top: -440px;
+		left: 180px;
+		background-color: rgba(255, 255, 255, 0.11);
+		border-radius: 4%;
+		margin: 0px;
+		z-index: 1;
+	}
 	body {
 		.atf-1 {
 			background-image: url("/img/img-tablet-l/tablet-landscape-ps-ng-bg.png");
@@ -7,22 +31,125 @@
 			background-position: left 0px top 0px; // first value left and right, second - top and bottom.
 			background-attachment: scroll;
 
-            //NOTE: height reset
-            height: 800px;
+			//NOTE: design variant: height reset
+			height: 800px;
+
+			.cs-project {
+				@include csContentBox-TL;
+
+				.cs-project__title {
+					//NOTE: design variant:
+				} //end cs-project__title
+
+				.cs-project__services {
+					//NOTE: design variant:
+
+					.cs-project__service {
+						//NOTE: design variant:
+					} //endccs-project__service
+				} //end cs-project__services
+
+				top: -243px;
+				left: 40px;
+			} //end cs-project
+
+			.cs-client-details {
+				//NOTE: design variant:
+				@include csContentBox-TL;
+
+				.cs-client-details__title {
+					//NOTE: design variant:
+				} //end cs-client-details__title
+
+				.cs-client-details__status {
+					//NOTE: design variant:
+				} //end cs-client-details__status
+
+				.status-flag {
+					//NOTE: design variant:
+				} //end status-flag
+
+				.cs-client-details__text {
+					//NOTE: design variant:
+				} //end cs-client-details__text
+
+				position: relative;
+				top: 90px;
+				left: -430px;
+			} //end cs-client-details
 		} //end atf-1
 
-		.btl {
-		
+		.btf-2 {
+			.btf-2__project-container-box{
 
+				@include csContentBox-Projectdetails-TL;
+
+				.cs-project-desc__title,
+			.cs-project-sum__title {
+				//NOTE: design variant:
+
+				font-size: $text1x-37; //22px;
+			} // end cs-project-desc & sun title
+
+			.cs-project-desc {
+				//NOTE: design variant:
+
+				@include csContentBox-TL;
+				top: 0px;
+
+				.cs-project-desc__text {
+					//NOTE: design variant:
+				} //end cs-project__text
+
+				left: 0px;
+			} //end cs-project-desc
+
+			//divider
+			.project-info-divider {
+				//NOTE: hidden on all devices below 1024px width
+				display: inline !important;
+				// transform: rotate(0deg);
+				position: relative;
+				top: 0px;
+				left: 0px;
+				border-width: 1px;
+				background-color: #fff;
+			} //end project-info-divider
+
+			//divider
+
+			.cs-project-sum {
+				//NOTE: design variant:
+				@include csContentBox-TL;
+
+				top: 0px;
+
+				.cs-project-sum__text-1 {
+					//NOTE: design variant:
+
+					.cs-project-sum__text__head {
+						//NOTE: design variant:
+					} //end cs-project-sum__text__head
+
+					.cs-project-sum__text__body {
+						//NOTE: design variant:
+					} //end cs-project-sum__text__body
+				} //end cs-project-sum__text-1
+				left: 0px;
+			} //end cs-project-sum
+
+
+			}//end btf-2__project-container-box	
+		} //end btf-2
+
+		.btl {
 			.btl__title-container {
-                position: relative;
-                top: 40px;
+				position: relative;
+				top: 40px;
 				//NOTE: Made an extra container to hold all the titles and more easily move them around.
-		
-				
 
 				.btl__title {
-					//NOTE: Design variant - Expanded the area of the text heading by widening the margins to make use of the wider screen space as in the design for this viewport. Moveds the "THE LINES" title section up, so it can be aligned with the first title. "BETWEEN" and "THE LINES"ewere separated to make it easier to stack them in the mobile viewport design variation (smaller screen to work with)
+					//NOTE: Design variant - Expanded the area of the text heading by widening the margins to make use of the wider screen space as in the design for this viewport. Moved the "THE LINES" title section up, so it can be aligned with the first title. "BETWEEN" and "THE LINES" were separated to make it easier to stack them in the mobile viewport design variation (smaller screen to work with)
 
 					margin-left: 200px;
 					margin-right: 200px;
@@ -68,30 +195,22 @@
 			} //end btl__title-container
 		} //end of btl
 
-        .btl-content-block-1{
-            //NOTE: Design variant: Height reset so content only takes as much space as is needed as the template expands and shrinks based on the content of the project being described. removed the fixed widths of mobile design variant.
-            height:800px; // reseting height of container.
+		.btl-content-block-1 {
+			//NOTE: Design variant: Height reset so content only takes as much space as is needed as the template expands and shrinks based on the content of the project being described. removed the fixed widths of mobile design variant.
+			height: 800px; // reseting height of container.
+		} //end btl-content-block-1
 
+		.btl-content-block-2 {
+			//NOTE: Design variant: Height reset so content only takes as much space as is needed as the template expands and shrinks based on the content of the project being described. removed the fixed widths of mobile design variant.
+			height: 800px; // reseting height of container.
+		} //end btl-content-block-2
 
-        }//end btl-content-block-1
+		.mobile-cta-footer {
+			//NOTE: Design variant: Height reset so content only takes as much space as is needed as the template expands and shrinks based on the content of the project being described. removed the fixed widths of mobile design variant.
+			height: 800px; // reseting height of container.
+		} // mobile-cta-footer
 
-        .btl-content-block-2{
-
-               //NOTE: Design variant: Height reset so content only takes as much space as is needed as the template expands and shrinks based on the content of the project being described. removed the fixed widths of mobile design variant.
-               height:0px; // reseting height of container.
-
-        }//end btl-content-block-2
-
-        .mobile-cta-footer {
-                //NOTE: Design variant: Height reset so content only takes as much space as is needed as the template expands and shrinks based on the content of the project being described. removed the fixed widths of mobile design variant.
-                height:0px; // reseting height of container.
-
-
-        }// mobile-cta-footer
-
-		//NOTE: WORK SPACE NOTE: - left off on reseting the positioning oan gheights of each content section. Was working on making the template more scalable, not using only fixed height content block dimensions. 
-
-
+		//TODO: WORK SPACE NOTE: - left off on reseting the positioning on heights of each content section. Was working on making the template more scalable, not using only fixed height content block dimensions.
 	} //end body
 } // end media query
-/*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >800px */
+/*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >1024px */

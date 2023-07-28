@@ -786,7 +786,7 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
   }
 }
 /*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - PORTRAIT -   >800px */
-/*SECTION ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >800px */
+/*SECTION ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >1024px */
 @media (min-width: 1024px) {
   body .atf-1 {
     background-image: url("/img/img-tablet-l/tablet-landscape-ps-ng-bg.png");
@@ -794,6 +794,78 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
     background-position: left 0px top 0px;
     background-attachment: scroll;
     height: 800px;
+  }
+  body .atf-1 .cs-project {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    top: 0px;
+    left: 0px;
+    background: none;
+    border-radius: 0;
+    margin: 0px;
+    top: -243px;
+    left: 40px;
+  }
+  body .atf-1 .cs-client-details {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    top: 0px;
+    left: 0px;
+    background: none;
+    border-radius: 0;
+    margin: 0px;
+    position: relative;
+    top: 90px;
+    left: -430px;
+  }
+  body .btf-2 .btf-2__project-container-box {
+    position: relative;
+    width: 400px;
+    height: 650px;
+    top: -440px;
+    left: 180px;
+    background-color: rgba(255, 255, 255, 0.11);
+    border-radius: 4%;
+    margin: 0px;
+    z-index: 1;
+  }
+  body .btf-2 .btf-2__project-container-box .cs-project-desc__title,
+  body .btf-2 .btf-2__project-container-box .cs-project-sum__title {
+    font-size: 1.37rem;
+  }
+  body .btf-2 .btf-2__project-container-box .cs-project-desc {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    top: 0px;
+    left: 0px;
+    background: none;
+    border-radius: 0;
+    margin: 0px;
+    top: 0px;
+    left: 0px;
+  }
+  body .btf-2 .btf-2__project-container-box .project-info-divider {
+    display: inline !important;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    border-width: 1px;
+    background-color: #fff;
+  }
+  body .btf-2 .btf-2__project-container-box .cs-project-sum {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    top: 0px;
+    left: 0px;
+    background: none;
+    border-radius: 0;
+    margin: 0px;
+    top: 0px;
+    left: 0px;
   }
   body .btl .btl__title-container {
     position: relative;
@@ -834,10 +906,10 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
     height: 800px;
   }
   body .btl-content-block-2 {
-    height: 0px;
+    height: 800px;
   }
   body .mobile-cta-footer {
-    height: 0px;
+    height: 800px;
   }
 }
-/*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >800px *//*# sourceMappingURL=main.css.map */
+/*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >1024px *//*# sourceMappingURL=main.css.map */
