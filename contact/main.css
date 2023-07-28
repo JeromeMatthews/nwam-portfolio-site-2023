@@ -295,4 +295,36 @@ body .main-container .contact-form .contact-form__elements .mobile-cta-footer__b
   }
 }
 /*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - PORTRAIT -   >800px */
-/*!SECTION: END - [RESPONSIVE DESIGN] *//*# sourceMappingURL=main.css.map */
+/*!SECTION: END - [RESPONSIVE DESIGN] */
+/*SECTION ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >1024px */
+@media (min-width: 1024px) {
+  body {
+    background-image: url("/img/img-tablet-l/tablet-landscape-contact-bg.png");
+  }
+  body .main-container .contact-container {
+    position: absolute;
+    top: -145px;
+    right: 245px;
+  }
+  body .main-container .contact-container .contact-heroCopy {
+    font-size: 1.56rem;
+    text-align: left;
+  }
+  body .main-container .contact-container .contactheroimg {
+    margin: 25px auto;
+    padding: 0px;
+    position: relative;
+    top: 60px;
+    left: 94px;
+    width: 110px;
+    height: 57px;
+  }
+  body .main-container .contact-form {
+    top: 40px;
+  }
+  body .main-container .contact-form .contact-form__elements .mobile-cta-footer__button {
+    position: relative;
+    right: -60px;
+  }
+}
+/*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >1024px *//*# sourceMappingURL=main.css.map */

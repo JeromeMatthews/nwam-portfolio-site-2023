@@ -1,0 +1,49 @@
+/*SECTION ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >1024px */
+@media (min-width: 1024px) {
+	body {
+		//NOTE design varitant
+		background-image: url("/img/img-tablet-l/tablet-landscape-contact-bg.png");
+
+		.main-container {
+			
+			.contact-container {
+				//NOTE design varitant
+				//NOTE design varitant
+			position:absolute;// better fit for the arrangement as relative is shifting the width of the container.
+			top: -145px;
+			right: 245px;
+
+				.contact-heroCopy {
+					//NOTE design varitant
+					font-size: $text1x-56; //25px;
+					text-align: left;
+				} // end of contact-heroCopy
+
+				.contactheroimg {
+					//NOTE design varitant
+					margin: 25px auto;
+					padding: 0px;
+					position: relative;
+					top: 60px;
+					left: 94px; //reseting left positioning from mobile settings.
+					width: 110px;
+					height: 57px;
+				}
+			} //end of contact-container
+
+			.contact-form {
+				//NOTE: design variant: using the previous position relative declaration in the base scss cile on mobile, then just adjusting the position for subsequent device viewports.
+				top: 40px;
+
+				.contact-form__elements {
+					.mobile-cta-footer__button {
+						//NOTE: design variant:
+						position: relative;
+						right: -60px;
+					} //end mobile-cta-footer__button
+				} // end contact-form__elements
+			} //end contact-form
+		} // end main-container
+	} //end of body container
+} //end of media query
+/*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >1024px */
