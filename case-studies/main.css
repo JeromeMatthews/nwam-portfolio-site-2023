@@ -797,32 +797,51 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
   }
   body .atf-1 .cs-project {
     position: relative;
-    width: 400px;
-    height: 300px;
+    width: 228px;
+    height: 0px;
     top: 0px;
     left: 0px;
-    background: none;
-    border-radius: 0;
+    background-color: rgba(255, 255, 255, 0.11);
+    border-radius: 4%;
     margin: 0px;
-    top: -243px;
-    left: 40px;
+    margin-bottom: 80px;
+    height: 287px;
+    top: -180px;
+    left: -60px;
+  }
+  body .atf-1 .cs-project .cs-project__title {
+    margin-top: 40px;
+    font-size: 1.25rem;
+  }
+  body .atf-1 .cs-project .cs-project__services .cs-project__service {
+    font-size: 1.12rem;
   }
   body .atf-1 .cs-client-details {
     position: relative;
-    width: 400px;
-    height: 300px;
+    width: 228px;
+    height: 0px;
     top: 0px;
     left: 0px;
-    background: none;
-    border-radius: 0;
+    background-color: rgba(255, 255, 255, 0.11);
+    border-radius: 4%;
     margin: 0px;
+    height: 300px;
     position: relative;
-    top: 90px;
-    left: -430px;
+    top: 125px;
+    left: -290px;
+  }
+  body .atf-1 .cs-client-details .cs-client-details__title {
+    font-size: 1.25rem;
+  }
+  body .atf-1 .cs-client-details .cs-client-details__status {
+    font-size: 1.12rem;
+  }
+  body .atf-1 .cs-client-details .cs-client-details__text {
+    font-size: 1.12rem;
   }
   body .btf-2 .btf-2__project-container-box {
     position: relative;
-    width: 400px;
+    width: 450px;
     height: 650px;
     top: -440px;
     left: 180px;
@@ -844,14 +863,19 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
     background: none;
     border-radius: 0;
     margin: 0px;
-    top: 0px;
-    left: 0px;
+    top: 31px;
+    left: 25px;
+  }
+  body .btf-2 .btf-2__project-container-box .cs-project-desc .cs-project-desc__text {
+    font-size: 1.12rem;
   }
   body .btf-2 .btf-2__project-container-box .project-info-divider {
-    display: inline !important;
+    display: inline-block !important;
+    transform: rotate(0deg);
     position: relative;
-    top: 0px;
+    top: -50px;
     left: 0px;
+    width: 350px;
     border-width: 1px;
     background-color: #fff;
   }
@@ -865,7 +889,15 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
     border-radius: 0;
     margin: 0px;
     top: 0px;
-    left: 0px;
+    top: -45px;
+    left: 25px;
+  }
+  body .btf-2 .btf-2__project-container-box .cs-project-sum .cs-project-sum__text-1 .cs-project-sum__text__head {
+    font-weight: 700;
+    font-size: 1.12rem;
+  }
+  body .btf-2 .btf-2__project-container-box .cs-project-sum .cs-project-sum__text-1 .cs-project-sum__text__body {
+    font-size: 1.12rem;
   }
   body .btl .btl__title-container {
     position: relative;
@@ -905,8 +937,35 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
   body .btl-content-block-1 {
     height: 800px;
   }
+  body .btl-content-block-1 .btl-content-block__time {
+    font-size: 2.81rem;
+    color: #FFBF00;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  body .btl-content-block-1 .btl-content-block__time-text_2 {
+    font-size: 1.56rem;
+    color: #FFBF00;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    top: 0px;
+  }
+  body .btl-content-block-1 .btl-content-block__sub {
+    margin-left: 130px;
+    margin-right: 130px;
+    text-align: left;
+  }
+  body .btl-content-block-1 .btl-content-block__text {
+    margin-left: 130px;
+    margin-right: 130px;
+    text-align: left;
+  }
   body .btl-content-block-2 {
     height: 800px;
+  }
+  body .btl-content-block-2 .btl-content-block__text {
+    margin-left: 130px;
+    margin-right: 130px;
   }
   body .mobile-cta-footer {
     height: 800px;

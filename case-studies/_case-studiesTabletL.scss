@@ -11,11 +11,21 @@
 		margin: 0px;
 	}
 
+	@mixin csContentBox-ClientDetails-TL {
+		position: relative;
+		width: 228px;
+		height: 0px;
+		top: 0px;
+		left: 0px;
+		background-color: rgba(255, 255, 255, 0.11);
+		border-radius: 4%;
+		margin: 0px;
+	}
 
-	//NOTE: design variant: Creating the content box specifically for the wider veiwport variants replacing the boxes used in portrait versions. 
+	//NOTE: design variant: Creating the content box specifically for the wider veiwport variants replacing the boxes used in portrait versions.
 	@mixin csContentBox-Projectdetails-TL {
 		position: relative;
-		width: 400px;
+		width: 450px;
 		height: 650px;
 		top: -440px;
 		left: 180px;
@@ -35,10 +45,14 @@
 			height: 800px;
 
 			.cs-project {
-				@include csContentBox-TL;
+				@include csContentBox-ClientDetails-TL;
+				margin-bottom: 80px;
+				height: 287px;
 
 				.cs-project__title {
 					//NOTE: design variant:
+					margin-top: 40px; // aligning the title with project description title.
+					font-size: $text1X-25; //20px;
 				} //end cs-project__title
 
 				.cs-project__services {
@@ -46,23 +60,27 @@
 
 					.cs-project__service {
 						//NOTE: design variant:
+						font-size: $text1x-12; //18px;
 					} //endccs-project__service
 				} //end cs-project__services
 
-				top: -243px;
-				left: 40px;
+				top: -180px;
+				left: -60px;
 			} //end cs-project
 
 			.cs-client-details {
+				@include csContentBox-ClientDetails-TL;
+				height: 300px;
 				//NOTE: design variant:
-				@include csContentBox-TL;
 
 				.cs-client-details__title {
 					//NOTE: design variant:
+					font-size: $text1X-25; //20px;
 				} //end cs-client-details__title
 
 				.cs-client-details__status {
 					//NOTE: design variant:
+					font-size: $text1x-12; //18px;
 				} //end cs-client-details__status
 
 				.status-flag {
@@ -71,75 +89,79 @@
 
 				.cs-client-details__text {
 					//NOTE: design variant:
+					font-size: $text1x-12; //18px;
 				} //end cs-client-details__text
 
 				position: relative;
-				top: 90px;
-				left: -430px;
+				top: 125px;
+				left: -290px;
 			} //end cs-client-details
 		} //end atf-1
 
 		.btf-2 {
-			.btf-2__project-container-box{
-
+			.btf-2__project-container-box {
 				@include csContentBox-Projectdetails-TL;
 
 				.cs-project-desc__title,
-			.cs-project-sum__title {
-				//NOTE: design variant:
-
-				font-size: $text1x-37; //22px;
-			} // end cs-project-desc & sun title
-
-			.cs-project-desc {
-				//NOTE: design variant:
-
-				@include csContentBox-TL;
-				top: 0px;
-
-				.cs-project-desc__text {
-					//NOTE: design variant:
-				} //end cs-project__text
-
-				left: 0px;
-			} //end cs-project-desc
-
-			//divider
-			.project-info-divider {
-				//NOTE: hidden on all devices below 1024px width
-				display: inline !important;
-				// transform: rotate(0deg);
-				position: relative;
-				top: 0px;
-				left: 0px;
-				border-width: 1px;
-				background-color: #fff;
-			} //end project-info-divider
-
-			//divider
-
-			.cs-project-sum {
-				//NOTE: design variant:
-				@include csContentBox-TL;
-
-				top: 0px;
-
-				.cs-project-sum__text-1 {
+				.cs-project-sum__title {
 					//NOTE: design variant:
 
-					.cs-project-sum__text__head {
+					font-size: $text1x-37; //22px;
+				} // end cs-project-desc & sun title
+
+				.cs-project-desc {
+					//NOTE: design variant:
+
+					@include csContentBox-TL;
+					top: 31px;
+
+					.cs-project-desc__text {
 						//NOTE: design variant:
-					} //end cs-project-sum__text__head
+						font-size: $text1x-12; //18px;
+					} //end cs-project__text
 
-					.cs-project-sum__text__body {
+					left: 25px;
+				} //end cs-project-desc
+
+				//divider
+				.project-info-divider {
+					//NOTE: hidden on all devices below 1024px width
+					display: inline-block !important;
+					transform: rotate(0deg);
+					position: relative;
+					top: -50px;
+					left: 0px;
+					width: 350px;
+					border-width: 1px;
+					background-color: #fff;
+				} //end project-info-divider
+
+				//divider
+
+				.cs-project-sum {
+					//NOTE: design variant:
+					@include csContentBox-TL;
+
+					top: 0px;
+
+					.cs-project-sum__text-1 {
 						//NOTE: design variant:
-					} //end cs-project-sum__text__body
-				} //end cs-project-sum__text-1
-				left: 0px;
-			} //end cs-project-sum
 
+						.cs-project-sum__text__head {
+							//NOTE: design variant:
+							font-weight: nth($f-weights, 2);
+							font-size: $text1x-12; //18px;
+						} //end cs-project-sum__text__head
 
-			}//end btf-2__project-container-box	
+						.cs-project-sum__text__body {
+							//NOTE: design variant:
+							font-size: $text1x-12; //18px;
+						} //end cs-project-sum__text__body
+					} //end cs-project-sum__text-1
+					top: -45px;
+					left: 25px;
+				} //end cs-project-sum
+			} //end btf-2__project-container-box
 		} //end btf-2
 
 		.btl {
@@ -198,11 +220,47 @@
 		.btl-content-block-1 {
 			//NOTE: Design variant: Height reset so content only takes as much space as is needed as the template expands and shrinks based on the content of the project being described. removed the fixed widths of mobile design variant.
 			height: 800px; // reseting height of container.
+
+			.btl-content-block__time {
+				font-size: $text2X-81; //45px;
+				color: $brandColor;
+				//NOTE: design variant: //reseting position witihin parent.
+				margin-top: 0px; //reseting position witihin parent.
+				margin-bottom: 0px; //reseting position witihin parent.
+			} //end btl-content-block__time
+
+			.btl-content-block__time-text_2 {
+				//NOTE: design variant:
+				font-size: $text1x-56; //25px;
+				color: $brandColor;
+				//NOTE: design variant: //reseting position witihin parent.
+				margin-top: 0px; //reseting position witihin parent.
+				margin-bottom: 0px; //reseting position witihin parent.
+				top: 0px; //reseting position witihin parent.
+			} //end btl-content-block__time-text_2
+
+			.btl-content-block__sub {
+				margin-left: 130px;
+				margin-right: 130px;
+				text-align: left;
+			} //end btl-content-block__sub
+			.btl-content-block__text {
+				margin-left: 130px;
+				margin-right: 130px;
+				text-align: left;
+			} //end btl-content-block__text
 		} //end btl-content-block-1
 
 		.btl-content-block-2 {
 			//NOTE: Design variant: Height reset so content only takes as much space as is needed as the template expands and shrinks based on the content of the project being described. removed the fixed widths of mobile design variant.
 			height: 800px; // reseting height of container.
+
+			.btl-content-block__sub {
+			} //end btl-content-block__sub
+			.btl-content-block__text {
+				margin-left: 130px;
+				margin-right: 130px;
+			} //end btl-content-block__text
 		} //end btl-content-block-2
 
 		.mobile-cta-footer {
