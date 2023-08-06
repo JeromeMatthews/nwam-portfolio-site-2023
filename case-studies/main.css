@@ -899,29 +899,17 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
   body .btf-2 .btf-2__project-container-box .cs-project-sum .cs-project-sum__text-1 .cs-project-sum__text__body {
     font-size: 1.12rem;
   }
+  body .btl {
+    text-align: center;
+  }
   body .btl .btl__title-container {
     position: relative;
-    top: 40px;
-  }
-  body .btl .btl__title-container .btl__title {
-    margin-left: 200px;
-    margin-right: 200px;
-  }
-  body .btl .btl__title-container .btl__title .btl__title-1 {
-    position: relative;
-    left: -190px;
   }
   body .btl .btl__title-container .btl__title .btl__title-2 {
     font-size: 3.43rem;
-    position: relative;
-    top: -45px;
-    right: -99px;
   }
   body .btl .btl__title-container .btl__text {
-    margin-left: 200px;
-    margin-right: 200px;
     position: relative;
-    top: -60px;
   }
   body .btl .btl__title-container .btl__text .btl__text-1 {
     position: relative;
@@ -972,7 +960,31 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
     width: 96px;
     height: 96px;
     border-radius: 50px;
-    border: 1px solid #FFBF00;
+    border: 1px solid #ffd866;
+  }
+  body .btl-content-block-1 .legend .legend__circle .legend__circle-2 {
+    position: absolute;
+    overflow: hidden;
+    top: 23px;
+    left: 10%;
+    right: 10%;
+    display: block;
+    margin: 0 auto;
+    background-color: #ffd866;
+    width: 48px;
+    height: 48px;
+    border-radius: 50px;
+    border: 1px solid #ffd866;
+  }
+  body .btl-content-block-1 .legend .legend__line {
+    position: absolute;
+    overflow: hidden;
+    top: 107px;
+    left: 73px;
+    display: block;
+    background-color: #ffd866;
+    width: 8px;
+    height: 100%;
   }
   body .btl-content-block-2 {
     height: 800px;
@@ -1003,6 +1015,44 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
     text-align: left;
     position: relative;
     top: 40px;
+  }
+  body .btl-content-block-2 .legend-alt {
+    display: block !important;
+  }
+  body .btl-content-block-2 .legend-alt .legend-alt__circle {
+    position: absolute;
+    overflow: hidden;
+    top: 13px;
+    display: block;
+    background-color: #fff;
+    width: 96px;
+    height: 96px;
+    border-radius: 50px;
+    border: 1px solid #ffd866;
+  }
+  body .btl-content-block-2 .legend-alt .legend-alt__circle .legend-alt__circle-2 {
+    position: absolute;
+    overflow: hidden;
+    top: 23px;
+    left: 10%;
+    right: 10%;
+    display: block;
+    margin: 0 auto;
+    background-color: #ffd866;
+    width: 48px;
+    height: 48px;
+    border-radius: 50px;
+    border: 1px solid #ffd866;
+  }
+  body .btl-content-block-2 .legend-alt .legend-alt__line {
+    position: absolute;
+    overflow: hidden;
+    top: 107px;
+    left: 73px;
+    display: block;
+    background-color: #ffffff;
+    width: 8px;
+    height: 100%;
   }
   body .mobile-cta-footer {
     height: 800px;
