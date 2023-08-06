@@ -249,6 +249,31 @@
 				margin-right: 130px;
 				text-align: left;
 			} //end btl-content-block__text
+
+			//NOTE: Key/legend illustration
+			.legend {
+				//NOTE: using the important flag to overide the insline sytle's specificity.
+
+				display: block !important;
+				.legend__circle {
+					//NOTE: Design variant: position absolutely so to remove the legend from the documentflow as to not affect the cascade of the text in teh copy, and also afixes the legend elements where they were initally created, within their parent container (btl-content-block-1)
+					position: absolute;
+					overflow: hidden;
+					top: 13px;
+					display: block;
+					background-color: #fff;
+					width: 96px;
+					height: 96px;
+					border-radius: 50px;
+					border: 1px solid $brandColor;
+				} //end legend__Circle
+
+				.legend__circle-2 {
+				} //end legend__Circle-2
+
+				.legend__line {
+				} //end legend__line
+			} //end legend
 		} //end btl-content-block-1
 
 		.btl-content-block-2 {

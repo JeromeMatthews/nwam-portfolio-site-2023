@@ -960,6 +960,20 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
     margin-right: 130px;
     text-align: left;
   }
+  body .btl-content-block-1 .legend {
+    display: block !important;
+  }
+  body .btl-content-block-1 .legend .legend__circle {
+    position: absolute;
+    overflow: hidden;
+    top: 13px;
+    display: block;
+    background-color: #fff;
+    width: 96px;
+    height: 96px;
+    border-radius: 50px;
+    border: 1px solid #FFBF00;
+  }
   body .btl-content-block-2 {
     height: 800px;
     justify-content: start;
