@@ -8,8 +8,6 @@
 /*SECTION: [RESPONSIVE DESIGN] */
 /*NOTE : Query breakpoints*/
 
-
-
 //SECTION MOBILE - PORTRAIT - BODY
 
 .main-container {
@@ -62,7 +60,7 @@ body {
 		background: #ffbf00 0% 0% no-repeat padding-box;
 		box-shadow: 0px 2px 0px #000000;
 		border: 1px solid #707070;
-		border-radius: 8px;
+		border-radius: 4px;
 		opacity: 1;
 		position: relative;
 		// left: 94px;
@@ -70,6 +68,14 @@ body {
 		height: 34px;
 		margin-bottom: 51px;
 		@include CTAbuttonMobile-p;
+		text-decoration: none;
+
+		.hero-text {
+			position: relative;
+			top: 5px;
+			margin: auto 10%;
+			text-align: center;
+		} //end hero-text
 
 		@media (max-width: 359px) {
 			margin-bottom: 50px;
@@ -81,9 +87,8 @@ body {
 
 //SECTION MOBILE - PORTRAIT - NAVIGATION - FOOTER
 
-
 .nav-chevrons {
-	display: none; //remove the background slideshow navigation handles on mobile. 
+	display: none; //remove the background slideshow navigation handles on mobile.
 }
 
 .main-footer {
