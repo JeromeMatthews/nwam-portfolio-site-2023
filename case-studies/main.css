@@ -548,7 +548,7 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
     font-family: proxima-nova, Arial, Helvetica, sans-serif;
     font-weight: 900;
     font-style: normal;
-    font-size: 2.5rem;
+    font-size: 1.25rem;
     line-height: 95%;
   }
   body .atf-1 .cs-project .cs-project__services {
@@ -577,7 +577,7 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
     font-family: proxima-nova, Arial, Helvetica, sans-serif;
     font-weight: 900;
     font-style: normal;
-    font-size: 2.5rem;
+    font-size: 1.25rem;
     line-height: 95%;
   }
   body .atf-1 .cs-client-details .cs-client-details__status {
@@ -598,59 +598,55 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
   body .btf-2 {
     height: 0px;
     background-image: none;
+  }
+  body .btf-2 .btf-2__project-container-box {
+    position: relative;
+    width: 350px;
+    height: 650px;
+    top: -580px;
+    left: 140px;
+    background-color: rgba(255, 255, 255, 0.11);
+    border-radius: 4%;
+    margin: 0px;
+    z-index: 1;
     color: #fff;
     text-align: center;
   }
-  body .btf-2 .cs-project-desc__title,
-  body .btf-2 .cs-project-sum__title {
+  body .btf-2 .btf-2__project-container-box .cs-project-desc__title,
+  body .btf-2 .btf-2__project-container-box .cs-project-sum__title {
     font-family: proxima-nova, Arial, Helvetica, sans-serif;
     font-weight: 900;
     font-style: normal;
-    font-size: 2.5rem;
+    font-size: 1.25rem;
     line-height: 95%;
   }
-  body .btf-2 .cs-project-desc {
-    position: relative;
-    width: 287px;
-    height: 325px;
-    top: 0px;
-    left: 0px;
-    background-color: rgba(255, 255, 255, 0.11);
-    border-radius: 4%;
-    margin: 0 36px;
-    top: -9px;
-    position: relative;
-    top: -695px;
-    left: 335px;
-  }
-  body .btf-2 .cs-project-desc .cs-project-desc__text {
+  body .btf-2 .btf-2__project-container-box .cs-project-desc .cs-project-desc__text {
     font-family: futura-pt, Helvetica, Arial, sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 0.93rem;
   }
-  body .btf-2 .cs-project-sum {
+  body .btf-2 .btf-2__project-container-box .project-info-divider {
+    display: inline-block !important;
+    transform: rotate(0deg);
     position: relative;
-    width: 287px;
-    height: 325px;
-    top: 0px;
-    left: 0px;
-    background-color: rgba(255, 255, 255, 0.11);
-    border-radius: 4%;
-    margin: 0 36px;
+    top: -530px;
+    left: 145px;
+    width: 270px;
+    border-width: 1px;
+    color: #fff;
+  }
+  body .btf-2 .btf-2__project-container-box .cs-project-sum {
     height: 420px;
     top: -1px;
-    position: relative;
-    top: -364px;
-    left: -25px;
   }
-  body .btf-2 .cs-project-sum .cs-project-sum__text-1 .cs-project-sum__text__head {
+  body .btf-2 .btf-2__project-container-box .cs-project-sum .cs-project-sum__text-1 .cs-project-sum__text__head {
     font-family: futura-pt, Helvetica, Arial, sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 0.93rem;
   }
-  body .btf-2 .cs-project-sum .cs-project-sum__text-1 .cs-project-sum__text__body {
+  body .btf-2 .btf-2__project-container-box .cs-project-sum .cs-project-sum__text-1 .cs-project-sum__text__body {
     font-family: futura-pt, Helvetica, Arial, sans-serif;
     font-weight: 400;
     font-style: normal;

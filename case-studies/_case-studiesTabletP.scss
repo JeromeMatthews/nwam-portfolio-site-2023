@@ -13,6 +13,19 @@
 		margin: 0 36px;
 	}
 
+	//NOTE: design variant: Creating the content box specifically for the wider veiwport variants replacing the boxes used in portrait versions.
+	@mixin csContentBox-Projectdetails-TL {
+		position: relative;
+		width: 350px;
+		height: 650px;
+		top: -580px;
+		left: 140px;
+		background-color: rgba(255, 255, 255, 0.11);
+		border-radius: 4%;
+		margin: 0px;
+		z-index: 1;
+	}
+
 	//SECTION MOBILE - PORTRAIT - BODY
 
 	.main-container {
@@ -54,7 +67,8 @@
 					font-family: $font-list-h;
 					font-weight: nth($f-weights, 1);
 					font-style: normal;
-					font-size: $text2x-5; //40px;
+					//NOTE: design variant:
+					font-size: $text1X-25; //20px;
 					line-height: 95%;
 				}
 
@@ -78,7 +92,8 @@
 					font-family: $font-list-h;
 					font-weight: nth($f-weights, 1);
 					font-style: normal;
-					font-size: $text2x-5; //40px;
+					//NOTE: design variant:
+					font-size: $text1X-25; //20px;
 					line-height: 95%;
 				}
 
@@ -107,9 +122,12 @@
 		//BTF --------
 
 		.btf-2 {
+			//NOTE: design variant:
 			//Resting the BTF block section to not take any real estate on the document flow soa all the project summary information fits in the ATF section of the page.
 			height: 0px; //
 			background-image: none;
+			.btf-2__project-container-box {
+				@include csContentBox-Projectdetails-TL;
 
 			color: #fff;
 			text-align: center;
@@ -119,13 +137,14 @@
 				font-family: $font-list-h;
 				font-weight: nth($f-weights, 1);
 				font-style: normal;
-				font-size: $text2x-5; //40px;
+				//NOTE: design variant:
+				font-size: $text1X-25; //20px;
 				line-height: 95%;
 			}
 
 			.cs-project-desc {
-				@include csContentBox;
-				top: -9px;
+				// @include csContentBox;
+				// top: -9px;
 
 				.cs-project-desc__text {
 					font-family: $font-list-b;
@@ -133,13 +152,34 @@
 					font-style: normal;
 					font-size: $textSmall-93; //15px;
 				}
-				position: relative;
-				top: -695px;
-				left: 335px;
+				// position: relative;
+				// top: -530px;
+				// left: 150px;
 			}
 
+			//TODO: compare layouts to see why project description and project details summary aren't keeping the layout. examine the csContentBox Mixin.
+
+				//divider
+				.project-info-divider {
+					//NOTE: hidden on all devices below 1024px width
+					display: inline-block !important;
+					transform: rotate(0deg);
+					position: relative;
+					top: -530px;
+					left: 145px;
+					width: 270px;
+					border-width: 1px;
+					color: #fff;
+				} //end project-info-divider
+
+				//divider
+
+
+
+
+
 			.cs-project-sum {
-				@include csContentBox;
+				// @include csContentBox;
 				height: 420px;
 				top: -1px;
 
@@ -157,10 +197,11 @@
 						font-size: $textSmall-93; //15px;
 					}
 				} // End of project-sum__text-1
-				position: relative;
-				top: -364px;
-				left: -25px;
+				// position: relative;
+				// top: -557px;
+				// left: 150px;
 			} // END of Project-sum
+		  }//end btf-2__project-container-box
 		} // END of BTF--
 
 		//BETWEEN THE LINES
@@ -295,12 +336,11 @@
 				font-size: $text1x-87; //30px;
 				position: relative;
 
-				.hero-text{
-					//NOTE: Design variant - slight adjustment for the text in the link styled like a button, to center it. 
-					//Already has position relative inherited from parent stylesheet - main.scss. 
+				.hero-text {
+					//NOTE: Design variant - slight adjustment for the text in the link styled like a button, to center it.
+					//Already has position relative inherited from parent stylesheet - main.scss.
 					top: 13px;
-				}//end hero-text
-				
+				} //end hero-text
 			}
 
 			.mobile-cta-footer__sm-links {
