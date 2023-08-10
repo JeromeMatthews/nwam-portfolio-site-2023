@@ -382,9 +382,16 @@
 		.mobile-cta-footer {
 			//NOTE: Design variant: Height reset so content only takes as much space as is needed as the template expands and shrinks based on the content of the project being described. removed the fixed widths of mobile design variant.
 			height: 800px; // reseting height of container.
+			.mobile-cta-footer__button{
+				.hero-text{
+					//NOTE: Design variant - slight adjustment for the text in the link styled like a button, to center it. 
+					//Already has position relative inherited from parent stylesheet - main.scss. 
+					top: 13px;
+
+				}//end hero-text
+			}//end mobile-cta-footer__button
 		} // mobile-cta-footer
 
-		//TODO: WORK SPACE NOTE: - left off on reseting the positioning on heights of each content section. Was working on making the template more scalable, not using only fixed height content block dimensions.
 	} //end body
 } // end media query
 /*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >1024px */

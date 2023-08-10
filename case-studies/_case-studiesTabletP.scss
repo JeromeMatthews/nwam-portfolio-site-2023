@@ -294,8 +294,13 @@
 				font-style: normal;
 				font-size: $text1x-87; //30px;
 				position: relative;
-				margin: auto 0px;
-				text-align: center;
+
+				.hero-text{
+					//NOTE: Design variant - slight adjustment for the text in the link styled like a button, to center it. 
+					//Already has position relative inherited from parent stylesheet - main.scss. 
+					top: 13px;
+				}//end hero-text
+				
 			}
 
 			.mobile-cta-footer__sm-links {

@@ -478,6 +478,14 @@ body .mobile-cta-footer .mobile-cta-footer__button {
   font-style: normal;
   font-size: 1.25rem;
   position: relative;
+  text-decoration: none;
+  text-align: center;
+}
+body .mobile-cta-footer .mobile-cta-footer__button .hero-text {
+  position: relative;
+  top: 9px;
+  margin: auto 10%;
+  color: #000000;
 }
 body .mobile-cta-footer .mobile-cta-footer__sm-links {
   display: flex;
@@ -771,8 +779,9 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
     font-style: normal;
     font-size: 1.87rem;
     position: relative;
-    margin: auto 0px;
-    text-align: center;
+  }
+  body .mobile-cta-footer .mobile-cta-footer__button .hero-text {
+    top: 13px;
   }
   body .mobile-cta-footer .mobile-cta-footer__sm-links {
     display: flex;
@@ -1056,6 +1065,9 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
   }
   body .mobile-cta-footer {
     height: 800px;
+  }
+  body .mobile-cta-footer .mobile-cta-footer__button .hero-text {
+    top: 13px;
   }
 }
 /*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >1024px *//*# sourceMappingURL=main.css.map */
