@@ -209,7 +209,9 @@ body .main-container .about-hero .about-hero__text {
   font-size: 2.5rem;
   color: #e1a700;
 }
-body .main-container .body-sect-1__text, body .main-container .body-sect-2__text, body .main-container .body-sect-3__text {
+body .main-container .body-sect-1__text,
+body .main-container .body-sect-2__text,
+body .main-container .body-sect-3__text {
   padding: 10px;
 }
 body .main-container .body-sect-1 .body-sect-1-art .body-sect-1__head {
@@ -287,6 +289,14 @@ body .main-container .mobile-cta-footer .mobile-cta-footer__button {
   font-style: normal;
   font-size: 1.25rem;
   position: relative;
+  text-decoration: none;
+}
+body .main-container .mobile-cta-footer .mobile-cta-footer__button .hero-text {
+  position: relative;
+  margin: auto 10%;
+  top: 9px;
+  text-align: center;
+  color: #000;
 }
 body .main-container .mobile-cta-footer .mobile-cta-footer__sm-links {
   display: flex;
@@ -406,6 +416,10 @@ body .main-container .mobile-cta-footer .mobile-cta-footer__sm-links {
     width: 397px;
     height: 73px;
     font-size: 1.87rem;
+    align-self: center;
+  }
+  body .main-container .mobile-cta-footer .mobile-cta-footer__button .hero-text {
+    top: 13px;
   }
 }
 /*!SECTION ABOVE MOBILE PHONES - TABLET  - PORTRAIT  -  >1000px */

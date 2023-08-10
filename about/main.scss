@@ -47,7 +47,9 @@ body {
 		}
 
 		//BTF =======================
-		.body-sect-1__text,.body-sect-2__text,.body-sect-3__text{
+		.body-sect-1__text,
+		.body-sect-2__text,
+		.body-sect-3__text {
 			padding: 10px;
 		}
 
@@ -57,9 +59,8 @@ body {
 					@include aboutTitleCopy;
 				}
 				.body-sect-1__text {
-					
 					@include aboutBodyCopy;
-					i{
+					i {
 						font-style: italic;
 					}
 				}
@@ -70,11 +71,9 @@ body {
 			.body-sect-2-art {
 				.body-sect-2__head {
 					@include aboutTitleCopy;
-
 				}
 				.body-sect-2__text {
 					@include aboutBodyCopy;
-
 				}
 			}
 		}
@@ -120,7 +119,7 @@ body {
 					top: -32px;
 					left: 85px;
 				}
-			}//end of mobile-cta-footer-branding
+			} //end of mobile-cta-footer-branding
 
 			.mobile-cta-footer__button {
 				width: 258px;
@@ -134,6 +133,16 @@ body {
 				font-style: normal;
 				font-size: $text1X-25; //20px;
 				position: relative;
+
+				text-decoration: none;
+
+				.hero-text {
+					position: relative;
+					margin: auto 10%;
+					top: 9px;
+					text-align: center;
+					color: #000;
+				} //end hero-text
 			}
 
 			.mobile-cta-footer__sm-links {
@@ -147,7 +156,5 @@ body {
 	} //end main-container
 } //end body
 
-
 @import "../about/_aboutTabletP";
 @import "../about/_aboutTabletL";
-

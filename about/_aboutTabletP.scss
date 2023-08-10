@@ -125,7 +125,11 @@
 					width: 397px;
 					height: 73px;
 					font-size: $text1x-87; //30px;
-				}
+					align-self: center;//adjusted slight offset of position to the left. 
+					.hero-text{
+						top:13px;
+					}//end hero-text
+				}//end of mobile-cta-footer__button 
 			} // end of mobile-cta-footer
 		} // end of main-container
 	} //end of body
