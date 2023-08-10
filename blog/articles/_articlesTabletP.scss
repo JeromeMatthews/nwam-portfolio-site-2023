@@ -46,6 +46,17 @@
 					} //end support-topic
 				}
 			} // end article-container
+
+			.mobile-cta-footer{
+				.mobile-cta-footer__button {
+					.hero-text {
+					//NOTE: design variant
+						margin: auto 5%; //reduce the button width by reducing the assigned amount of spacing on each side for the margins.
+					} //end hero-text
+				} //end mobile-cta-footer__button
+
+			}//end mobile-cta-footer
+			
 		} //end main-container
 	} //end body
 } //end media query

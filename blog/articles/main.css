@@ -275,10 +275,18 @@ body .main-container .article-container .mobile-cta-footer__button {
   font-size: 1.25rem;
   position: relative;
   top: -50px;
+  text-decoration: none;
+}
+body .main-container .article-container .mobile-cta-footer__button .hero-text {
+  position: relative;
+  margin: auto 10%;
+  text-align: center;
+  color: #000;
 }
 body .main-container .article-container .footer-divide {
   position: relative;
   top: -40px;
+  color: #fff;
 }
 body .main-container .article-container .article-sm-bottom {
   padding: 0px;
@@ -337,6 +345,9 @@ body .main-container .article-container .article-sm-bottom .article-sm-bottom-li
   }
   body .main-container .article-container .article__content .support-topic .support-topic__body {
     font-size: 1.25rem;
+  }
+  body .main-container .mobile-cta-footer .mobile-cta-footer__button .hero-text {
+    margin: auto 5%;
   }
 }
 /*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - PORTRAIT -   >800px*/
