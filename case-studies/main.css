@@ -542,7 +542,8 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
     margin: 0 36px;
     position: relative;
     top: -243px;
-    left: 40px;
+    width: 200px;
+    left: 0px;
   }
   body .atf-1 .cs-project .cs-project__title {
     font-family: proxima-nova, Arial, Helvetica, sans-serif;
@@ -569,9 +570,10 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
     background-color: rgba(255, 255, 255, 0.11);
     border-radius: 4%;
     margin: 0 36px;
+    width: 200px;
     position: relative;
     top: 90px;
-    left: -320px;
+    left: -275px;
   }
   body .atf-1 .cs-client-details .cs-client-details__title {
     font-family: proxima-nova, Arial, Helvetica, sans-serif;
@@ -583,11 +585,14 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
   body .atf-1 .cs-client-details .cs-client-details__status {
     font-family: proxima-nova, Arial, Helvetica, sans-serif;
     font-weight: 400;
+    position: relative;
+    top: -15px;
   }
   body .atf-1 .cs-client-details .status-flag {
     font-family: proxima-nova, Arial, Helvetica, sans-serif;
     font-weight: 900;
     font-size: 1.25rem;
+    top: -15px;
   }
   body .atf-1 .cs-client-details .cs-client-details__text {
     font-family: futura-pt, Helvetica, Arial, sans-serif;
@@ -601,9 +606,9 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
   }
   body .btf-2 .btf-2__project-container-box {
     position: relative;
-    width: 350px;
-    height: 650px;
-    top: -580px;
+    width: 310px;
+    height: 750px;
+    top: -530px;
     left: 140px;
     background-color: rgba(255, 255, 255, 0.11);
     border-radius: 4%;
@@ -620,6 +625,13 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
     font-size: 1.25rem;
     line-height: 95%;
   }
+  body .btf-2 .btf-2__project-container-box .cs-project-desc {
+    height: 300px;
+    width: 250px;
+    top: 0px;
+    background: none;
+    margin: 0 36px;
+  }
   body .btf-2 .btf-2__project-container-box .cs-project-desc .cs-project-desc__text {
     font-family: futura-pt, Helvetica, Arial, sans-serif;
     font-weight: 400;
@@ -630,15 +642,18 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
     display: inline-block !important;
     transform: rotate(0deg);
     position: relative;
-    top: -530px;
-    left: 145px;
+    top: 0px;
+    left: 5px;
     width: 270px;
     border-width: 1px;
     color: #fff;
   }
   body .btf-2 .btf-2__project-container-box .cs-project-sum {
-    height: 420px;
-    top: -1px;
+    height: 0px;
+    width: 250px;
+    top: 0px;
+    background: none;
+    margin: 0 36px;
   }
   body .btf-2 .btf-2__project-container-box .cs-project-sum .cs-project-sum__text-1 .cs-project-sum__text__head {
     font-family: futura-pt, Helvetica, Arial, sans-serif;

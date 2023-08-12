@@ -16,9 +16,9 @@
 	//NOTE: design variant: Creating the content box specifically for the wider veiwport variants replacing the boxes used in portrait versions.
 	@mixin csContentBox-Projectdetails-TL {
 		position: relative;
-		width: 350px;
-		height: 650px;
-		top: -580px;
+		width: 310px;
+		height: 750px;
+		top: -530px;
 		left: 140px;
 		background-color: rgba(255, 255, 255, 0.11);
 		border-radius: 4%;
@@ -62,6 +62,7 @@
 
 			.cs-project {
 				@include csContentBox;
+				
 
 				.cs-project__title {
 					font-family: $font-list-h;
@@ -83,11 +84,17 @@
 				}
 				position: relative;
 				top: -243px;
-				left: 40px;
+
+				//NOTE: Design variant: csContentBox overrides: -width overide. -positioning overide. -
+				width: 200px;
+				left: 0px;
 			}
 
 			.cs-client-details {
 				@include csContentBox;
+				//NOTE: Design variant: width overide.
+				width: 200px;
+
 				.cs-client-details__title {
 					font-family: $font-list-h;
 					font-weight: nth($f-weights, 1);
@@ -95,16 +102,24 @@
 					//NOTE: design variant:
 					font-size: $text1X-25; //20px;
 					line-height: 95%;
+					
+				
+				
 				}
 
 				.cs-client-details__status {
 					font-family: $font-list-h;
 					font-weight: nth($f-weights, 3);
+					//NOTE: Design variant moving status and flag closer to heading to better match style in the design draft. positioning assignment cascades for both status__details & status__flag.
+					position: relative;
+					top: -15px;
 				}
 				.status-flag {
 					font-family: $font-list-h;
 					font-weight: nth($f-weights, 1);
 					font-size: $text1X-25; //20px;
+					//NOTE: Design variant moving status and flag closer to heading to better match style in the design draft. 					
+					top: -15px;
 				}
 				.cs-client-details__text {
 					font-family: $font-list-b;
@@ -114,8 +129,9 @@
 				}
 
 				position: relative;
+				//NOTE: Design variant: csContentBox overrides: -width overide. -positioning overide. -
 				top: 90px;
-				left: -320px;
+				left: -275px;
 			}
 		} // END of ATF--
 
@@ -123,41 +139,46 @@
 
 		.btf-2 {
 			//NOTE: design variant:
-			//Resting the BTF block section to not take any real estate on the document flow soa all the project summary information fits in the ATF section of the page.
+			//Rsetting the BTF block section to not take any real estate on the document flow soa all the project summary information fits in the ATF section of the page.
 			height: 0px; //
 			background-image: none;
 			.btf-2__project-container-box {
 				@include csContentBox-Projectdetails-TL;
 
-			color: #fff;
-			text-align: center;
+				color: #fff;
+				text-align: center;
 
-			.cs-project-desc__title,
-			.cs-project-sum__title {
-				font-family: $font-list-h;
-				font-weight: nth($f-weights, 1);
-				font-style: normal;
-				//NOTE: design variant:
-				font-size: $text1X-25; //20px;
-				line-height: 95%;
-			}
-
-			.cs-project-desc {
-				// @include csContentBox;
-				// top: -9px;
-
-				.cs-project-desc__text {
-					font-family: $font-list-b;
-					font-weight: nth($f-weights, 3);
+				.cs-project-desc__title,
+				.cs-project-sum__title {
+					font-family: $font-list-h;
+					font-weight: nth($f-weights, 1);
 					font-style: normal;
-					font-size: $textSmall-93; //15px;
+					//NOTE: design variant:
+					font-size: $text1X-25; //20px;
+					line-height: 95%;
 				}
-				// position: relative;
-				// top: -530px;
-				// left: 150px;
-			}
 
-			//TODO: compare layouts to see why project description and project details summary aren't keeping the layout. examine the csContentBox Mixin.
+				.cs-project-desc {
+					//NOTE: Design variant continued adjustments for tablet variant of design. One context box for both Project description and Project Details. Need to finish resetting the values for content box's parameters used in the mixin. Removing backgound color assignment, adjusting width, removing border-radius. Keeping margin assignment.
+					// @include csContentBox;
+					height: 300px;
+					width: 250px;
+					top: 0px;
+					background: none;
+					margin: 0 36px;
+
+					.cs-project-desc__text {
+						font-family: $font-list-b;
+						font-weight: nth($f-weights, 3);
+						font-style: normal;
+						font-size: $textSmall-93; //15px;
+					}
+					// position: relative;
+					// top: -530px;
+					// left: 150px;
+				}
+
+				//TODO: compare layouts to see why project description and project details summary aren't keeping the layout. examine the csContentBox Mixin.
 
 				//divider
 				.project-info-divider {
@@ -165,8 +186,8 @@
 					display: inline-block !important;
 					transform: rotate(0deg);
 					position: relative;
-					top: -530px;
-					left: 145px;
+					top: 0px;
+					left: 5px;
 					width: 270px;
 					border-width: 1px;
 					color: #fff;
@@ -174,34 +195,34 @@
 
 				//divider
 
+				.cs-project-sum {
+					//NOTE: Design variant continued adjustments for tablet variant of design. One context box for both Project description and Project Details. Need to finish resetting the values for content box's parameters used in the mixin. Removing backgound color assignment, adjusting width, removing border-radius. Keeping margin assignment.
+					// @include csContentBox;
+					height: 0px;
+					width: 250px;
+					top: 0px;
+					background: none;
+					margin: 0 36px;
 
-
-
-
-			.cs-project-sum {
-				// @include csContentBox;
-				height: 420px;
-				top: -1px;
-
-				.cs-project-sum__text-1 {
-					.cs-project-sum__text__head {
-						font-family: $font-list-b;
-						font-weight: nth($f-weights, 3);
-						font-style: normal;
-						font-size: $textSmall-93; //15px;
-					}
-					.cs-project-sum__text__body {
-						font-family: $font-list-b;
-						font-weight: nth($f-weights, 3);
-						font-style: normal;
-						font-size: $textSmall-93; //15px;
-					}
-				} // End of project-sum__text-1
-				// position: relative;
-				// top: -557px;
-				// left: 150px;
-			} // END of Project-sum
-		  }//end btf-2__project-container-box
+					.cs-project-sum__text-1 {
+						.cs-project-sum__text__head {
+							font-family: $font-list-b;
+							font-weight: nth($f-weights, 3);
+							font-style: normal;
+							font-size: $textSmall-93; //15px;
+						}
+						.cs-project-sum__text__body {
+							font-family: $font-list-b;
+							font-weight: nth($f-weights, 3);
+							font-style: normal;
+							font-size: $textSmall-93; //15px;
+						}
+					} // End of project-sum__text-1
+					// position: relative;
+					// top: -557px;
+					// left: 150px;
+				} // END of Project-sum
+			} //end btf-2__project-container-box
 		} // END of BTF--
 
 		//BETWEEN THE LINES
