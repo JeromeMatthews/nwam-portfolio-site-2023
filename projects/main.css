@@ -430,6 +430,9 @@ body .show-box .show-box__text {
 }
 /*SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1920px */
 @media (min-width: 1920px) {
+  .main-container {
+    top: 0px;
+  }
   body {
     background-image: url("/img/img-desktop-l/desktop-ps-bg.png");
   }
@@ -438,10 +441,11 @@ body .show-box .show-box__text {
   }
   body .show-box .show-box__subtitle {
     display: block !important;
-    font-size: 1.56rem;
+    font-size: 2.18rem;
   }
   body .show-box .show-box__text {
-    font-size: 1.12rem;
+    top: -80px;
+    font-size: 1.25rem;
   }
   body #show-box-1,
   body #show-box-2,

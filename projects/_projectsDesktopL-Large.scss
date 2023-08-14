@@ -5,6 +5,8 @@
 	} //end projects-overlay
 
 	.main-container {
+		//NOTE: design variant: resetting the main container height to the default. 
+		top: 0px;
 
 	} //end main-container
 
@@ -20,11 +22,12 @@
 			.show-box__subtitle {
 				//NOTE: Design variant: instansiated on large viewports.
                 display:block !important;
-				font-size: $text1x-56;//25px;
+				font-size: $text2x-18;//35px;
 			}
 			.show-box__text {
 				//NOTE: Design variant
-				font-size: $text1x-12; //18px;
+				top: -80px;
+				font-size: $text1X-25; //20px;
 			} //end show-box__text
 		} //end show-box
 
@@ -43,6 +46,7 @@
 			//NOTE: Added the overlay to help strengthen the contrast of the text against the background image
 			.show-box__overlay {
 				@include showBoxOverlay;
+				
 				//NOTE: design variant
 				width: 488px;
 				height: 490px;
