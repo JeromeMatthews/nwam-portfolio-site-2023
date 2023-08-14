@@ -40,13 +40,12 @@ body {
 		position: relative;
 		width: 100%;
 		@include flexMix;
-		justify-content: center;
 		align-content: center;
 		justify-content: center;
 	}
 
 	.atf-1 {
-		height: 800px;
+		// height: 800px;
 		background-image: url("/img/img-mobile-p/nishida-sensei-hi5-overlayedit.jpg");
 		background-repeat: no-repeat;
 		background-position: -150px center; // first value left and right, second - top and bottom.
@@ -223,7 +222,7 @@ body {
 		color: black;
 		flex-direction: column;
 		text-align: center;
-		height: 1200px;
+		// height: 1200px;
 		padding: 0 30px;
 
 		.btl-content-block__time {
@@ -258,7 +257,7 @@ body {
 	.btl-content-block-2 {
 		background-color: #ffd866;
 		color: black;
-		height: 800px;
+		// height: 800px;
 		flex-direction: column;
 		text-align: center;
 		padding: 0 30px;

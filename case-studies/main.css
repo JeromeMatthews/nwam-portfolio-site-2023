@@ -199,12 +199,10 @@ body .mobile-cta-footer {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  justify-content: center;
   align-content: center;
   justify-content: center;
 }
 body .atf-1 {
-  height: 800px;
   background-image: url("/img/img-mobile-p/nishida-sensei-hi5-overlayedit.jpg");
   background-repeat: no-repeat;
   background-position: -150px center;
@@ -381,7 +379,6 @@ body .btl-content-block-1 {
   color: black;
   flex-direction: column;
   text-align: center;
-  height: 1200px;
   padding: 0 30px;
 }
 body .btl-content-block-1 .btl-content-block__time {
@@ -414,7 +411,6 @@ body .btl-content-block-1 .btl-content-block__text {
 body .btl-content-block-2 {
   background-color: #ffd866;
   color: black;
-  height: 800px;
   flex-direction: column;
   text-align: center;
   padding: 0 30px;
@@ -715,7 +711,6 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
     flex-direction: column;
     flex-wrap: nowrap;
     text-align: center;
-    height: 800px;
     padding: 0 30px;
   }
   body .btl-content-block-1 .btl-content-block__time {
@@ -748,7 +743,6 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
   body .btl-content-block-2 {
     background-color: #ffd866;
     color: black;
-    height: 800px;
     flex-direction: column;
     text-align: center;
     padding: 0 30px;
@@ -942,9 +936,6 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
     right: -99px;
     font-size: 1.37rem;
   }
-  body .btl-content-block-1 {
-    height: 800px;
-  }
   body .btl-content-block-1 .btl-content-block__time {
     font-size: 2.81rem;
     color: #FFBF00;
@@ -1007,7 +998,6 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
     height: 100%;
   }
   body .btl-content-block-2 {
-    height: 800px;
     justify-content: start;
   }
   body .btl-content-block-2 .btl-content-block__time {
@@ -1027,14 +1017,12 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
     margin-right: 130px;
     text-align: left;
     position: relative;
-    top: 40px;
   }
   body .btl-content-block-2 .btl-content-block__text {
     margin-left: 130px;
     margin-right: 130px;
     text-align: left;
     position: relative;
-    top: 40px;
   }
   body .btl-content-block-2 .legend-alt {
     display: block !important;

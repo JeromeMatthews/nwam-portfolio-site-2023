@@ -62,7 +62,6 @@
 
 			.cs-project {
 				@include csContentBox;
-				
 
 				.cs-project__title {
 					font-family: $font-list-h;
@@ -102,9 +101,6 @@
 					//NOTE: design variant:
 					font-size: $text1X-25; //20px;
 					line-height: 95%;
-					
-				
-				
 				}
 
 				.cs-client-details__status {
@@ -118,7 +114,7 @@
 					font-family: $font-list-h;
 					font-weight: nth($f-weights, 1);
 					font-size: $text1X-25; //20px;
-					//NOTE: Design variant moving status and flag closer to heading to better match style in the design draft. 					
+					//NOTE: Design variant moving status and flag closer to heading to better match style in the design draft.
 					top: -15px;
 				}
 				.cs-client-details__text {
@@ -276,7 +272,7 @@
 			flex-wrap: nowrap;
 			text-align: center;
 			//NOTE: Design variant
-			height: 800px; // reseting height of container.
+			// height: 800px; // reseting height of container.
 			padding: 0 30px;
 
 			.btl-content-block__time {
@@ -311,10 +307,23 @@
 		.btl-content-block-2 {
 			background-color: #ffd866;
 			color: black;
-			height: 800px;
+			// height: 800px;
 			flex-direction: column;
 			text-align: center;
 			padding: 0 30px;
+
+			.btl-content-block__time {
+				//NOTE: design variant:
+				// top: -190px;
+				// left: 0px;
+			}
+
+			.btl-content-block__time__sub {
+				//NOTE: design variant:
+
+				// top: -240px;
+				// left: 0px;
+			}
 		}
 
 		.mobile-cta-footer {
