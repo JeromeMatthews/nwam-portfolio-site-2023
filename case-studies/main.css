@@ -537,7 +537,7 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
     border-radius: 4%;
     margin: 0 36px;
     position: relative;
-    top: -243px;
+    top: -260px;
     width: 200px;
     left: 0px;
   }
@@ -555,7 +555,7 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
     font-family: futura-pt, Helvetica, Arial, sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 0.93rem;
+    font-size: 1rem;
   }
   body .atf-1 .cs-client-details {
     position: relative;
@@ -568,8 +568,8 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
     margin: 0 36px;
     width: 200px;
     position: relative;
-    top: 90px;
-    left: -275px;
+    top: 70px;
+    left: -270px;
   }
   body .atf-1 .cs-client-details .cs-client-details__title {
     font-family: proxima-nova, Arial, Helvetica, sans-serif;
@@ -594,7 +594,9 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
     font-family: futura-pt, Helvetica, Arial, sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 0.93rem;
+    font-size: 1rem;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   body .btf-2 {
     height: 0px;
@@ -602,8 +604,8 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
   }
   body .btf-2 .btf-2__project-container-box {
     position: relative;
-    width: 310px;
-    height: 750px;
+    width: 340px;
+    height: 790px;
     top: -530px;
     left: 140px;
     background-color: rgba(255, 255, 255, 0.11);
@@ -632,7 +634,7 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
     font-family: futura-pt, Helvetica, Arial, sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 0.93rem;
+    font-size: 1rem;
   }
   body .btf-2 .btf-2__project-container-box .project-info-divider {
     display: inline-block !important;
@@ -653,7 +655,7 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
   }
   body .btf-2 .btf-2__project-container-box .cs-project-sum .cs-project-sum__text-1 .cs-project-sum__text__head {
     font-family: futura-pt, Helvetica, Arial, sans-serif;
-    font-weight: 400;
+    font-weight: 700;
     font-style: normal;
     font-size: 0.93rem;
   }
@@ -661,7 +663,7 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
     font-family: futura-pt, Helvetica, Arial, sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 0.93rem;
+    font-size: 1rem;
   }
   body .btl {
     display: flex;
@@ -739,6 +741,8 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
     font-weight: 400;
     font-style: normal;
     font-size: 0.93rem;
+    margin-left: 40px;
+    margin-right: 40px;
   }
   body .btl-content-block-2 {
     background-color: #ffd866;
@@ -746,6 +750,14 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
     flex-direction: column;
     text-align: center;
     padding: 0 30px;
+  }
+  body .btl-content-block-2 .btl-content-block__sub {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  body .btl-content-block-2 .btl-content-block__text {
+    margin-left: 40px;
+    margin-right: 40px;
   }
   body .mobile-cta-footer {
     display: flex;

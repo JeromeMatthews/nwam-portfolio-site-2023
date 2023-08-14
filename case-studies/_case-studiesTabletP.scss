@@ -16,8 +16,8 @@
 	//NOTE: design variant: Creating the content box specifically for the wider veiwport variants replacing the boxes used in portrait versions.
 	@mixin csContentBox-Projectdetails-TL {
 		position: relative;
-		width: 310px;
-		height: 750px;
+		width: 340px;
+		height: 790px;
 		top: -530px;
 		left: 140px;
 		background-color: rgba(255, 255, 255, 0.11);
@@ -78,11 +78,11 @@
 						font-family: $font-list-b;
 						font-weight: nth($f-weights, 3);
 						font-style: normal;
-						font-size: $textSmall-93; //15px;
+						font-size: $textBase; //15px;
 					}
 				}
 				position: relative;
-				top: -243px;
+				top: -260px;
 
 				//NOTE: Design variant: csContentBox overrides: -width overide. -positioning overide. -
 				width: 200px;
@@ -121,13 +121,16 @@
 					font-family: $font-list-b;
 					font-weight: nth($f-weights, 3);
 					font-style: normal;
-					font-size: $textSmall-93; //15px;
+					font-size: $textBase; //15px;
+					//NOTE: design variant:
+					margin-left: 10px;
+					margin-right: 10px;
 				}
 
 				position: relative;
 				//NOTE: Design variant: csContentBox overrides: -width overide. -positioning overide. -
-				top: 90px;
-				left: -275px;
+				top: 70px;
+				left: -270px;
 			}
 		} // END of ATF--
 
@@ -167,7 +170,7 @@
 						font-family: $font-list-b;
 						font-weight: nth($f-weights, 3);
 						font-style: normal;
-						font-size: $textSmall-93; //15px;
+						font-size: $textBase; //16px;
 					}
 					// position: relative;
 					// top: -530px;
@@ -203,20 +206,18 @@
 					.cs-project-sum__text-1 {
 						.cs-project-sum__text__head {
 							font-family: $font-list-b;
-							font-weight: nth($f-weights, 3);
+							font-weight: nth($f-weights, 2);
 							font-style: normal;
-							font-size: $textSmall-93; //15px;
+							font-size: $textSmall-93 //15px;
 						}
 						.cs-project-sum__text__body {
 							font-family: $font-list-b;
 							font-weight: nth($f-weights, 3);
 							font-style: normal;
-							font-size: $textSmall-93; //15px;
+							font-size: $textBase; //16px;
 						}
 					} // End of project-sum__text-1
 					// position: relative;
-					// top: -557px;
-					// left: 150px;
 				} // END of Project-sum
 			} //end btf-2__project-container-box
 		} // END of BTF--
@@ -301,6 +302,8 @@
 				font-weight: nth($f-weights, 3);
 				font-style: normal;
 				font-size: $textSmall-93; //15px;
+				margin-left: 40px;
+				margin-right: 40px;
 			}
 		}
 
@@ -324,6 +327,18 @@
 				// top: -240px;
 				// left: 0px;
 			}
+
+			.btl-content-block__sub {
+				//NOTE: design variant:
+				margin-left: 40px;
+				margin-right: 40px;
+			} //end btl-content-block__sub
+
+			.btl-content-block__text {
+				//NOTE: design variant:
+				margin-left: 40px;
+				margin-right: 40px;
+			} //end btl-content-block__text
 		}
 
 		.mobile-cta-footer {
