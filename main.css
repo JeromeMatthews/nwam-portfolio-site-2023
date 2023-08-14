@@ -512,31 +512,55 @@ body .hero-button .hero-text {
     margin-right: 10px;
   }
 }
-/*SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1000px */
+.sitenav__hamburger {
+  display: none;
+}
+
+.sitenav {
+  display: none;
+}
+
+.sitenav__logo {
+  width: 144px;
+  height: 77px;
+  top: 0px;
+  left: 166px;
+}
+
+.sitenav__contactNum {
+  top: 75px;
+  left: 180px;
+  font-size: 1rem;
+}
+
+.mainnav__links {
+  display: flex;
+  list-style: none;
+  position: relative;
+  top: 20px;
+  left: 620px;
+}
+
+.mainnav__links a {
+  font-family: proxima-nova, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  border: rgba(255, 255, 255, 0.368627451) 1px solid;
+  background-color: rgba(22, 22, 22, 0.1294117647);
+  padding: 5px 25px;
+  margin: 0px 5px;
+  font-size: 1.56rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-container {
+  justify-content: center;
+  position: relative;
+  top: 220px;
+}
+
+/*SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1920px */
 @media (min-width: 1920px) {
-  .sitenav__logo {
-    width: 144px;
-    height: 77px;
-    top: 0px;
-    left: 166px;
-  }
-  .sitenav__contactNum {
-    top: 75px;
-    left: 180px;
-    font-size: 1rem;
-  }
-  .mainnav__links a {
-    border: rgba(255, 255, 255, 0.368627451) 1px solid;
-    background-color: rgba(22, 22, 22, 0.1294117647);
-    padding: 5px 25px;
-    margin: 0px 5px;
-    font-size: 1.25rem;
-  }
-  .main-container {
-    justify-content: center;
-    position: relative;
-    top: 220px;
-  }
   .hero-section-1,
   .hero-section-2,
   .hero-section-3 {
@@ -653,6 +677,6 @@ body .hero-button .hero-text {
     margin-right: 10px;
   }
 }
-/*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >1000px */
+/*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >1920px */
 /*!SECTION: END - [RESPONSIVE DESIGN] */
 /*!SECTION: END - [RESPONSIVE DESIGN] *//*# sourceMappingURL=main.css.map */
