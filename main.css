@@ -512,53 +512,48 @@ body .hero-button .hero-text {
     margin-right: 10px;
   }
 }
-.sitenav__hamburger {
-  display: none;
+@media (min-width: 1920px) {
+  .sitenav__hamburger {
+    display: none;
+  }
+  .sitenav {
+    display: none;
+  }
+  .sitenav__logo {
+    width: 144px;
+    height: 77px;
+    top: 0px;
+    left: 166px;
+  }
+  .sitenav__contactNum {
+    top: 75px;
+    left: 180px;
+    font-size: 1rem;
+  }
+  .mainnav__links {
+    display: flex;
+    list-style: none;
+    position: absolute;
+    top: 10px;
+    left: 620px;
+  }
+  .mainnav__links a {
+    font-family: proxima-nova, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    border: rgba(255, 255, 255, 0.368627451) 1px solid;
+    background-color: rgba(22, 22, 22, 0.1294117647);
+    padding: 5px 25px;
+    margin: 0px 5px;
+    font-size: 1.56rem;
+    color: #fff;
+    text-decoration: none;
+  }
+  .main-container {
+    justify-content: center;
+    position: relative;
+    top: 220px;
+  }
 }
-
-.sitenav {
-  display: none;
-}
-
-.sitenav__logo {
-  width: 144px;
-  height: 77px;
-  top: 0px;
-  left: 166px;
-}
-
-.sitenav__contactNum {
-  top: 75px;
-  left: 180px;
-  font-size: 1rem;
-}
-
-.mainnav__links {
-  display: flex;
-  list-style: none;
-  position: relative;
-  top: 20px;
-  left: 620px;
-}
-
-.mainnav__links a {
-  font-family: proxima-nova, Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  border: rgba(255, 255, 255, 0.368627451) 1px solid;
-  background-color: rgba(22, 22, 22, 0.1294117647);
-  padding: 5px 25px;
-  margin: 0px 5px;
-  font-size: 1.56rem;
-  color: #fff;
-  text-decoration: none;
-}
-
-.main-container {
-  justify-content: center;
-  position: relative;
-  top: 220px;
-}
-
 /*SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1920px */
 @media (min-width: 1920px) {
   .hero-section-1,

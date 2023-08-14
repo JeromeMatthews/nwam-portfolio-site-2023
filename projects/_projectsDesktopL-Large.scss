@@ -1,8 +1,75 @@
 @import "..//partials/_nav-base-desktops";
 /*SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1920px */
 @media (min-width: 1920px) {
+	.projects-overlay {
+	} //end projects-overlay
 
+	.main-container {
 
-    
-}//end media query
+	} //end main-container
+
+	body {
+		//NOTE: Design variant
+		background-image: url("/img/img-desktop-l/desktop-ps-bg.png");
+
+		.show-box {
+			.show-box__title {
+				//NOTE: Design variant
+				font-size: $text2X-81; //45px;
+			}
+			.show-box__subtitle {
+				//NOTE: Design variant: instansiated on large viewports.
+                display:block !important;
+				font-size: $text1x-56;//25px;
+			}
+			.show-box__text {
+				//NOTE: Design variant
+				font-size: $text1x-12; //18px;
+			} //end show-box__text
+		} //end show-box
+
+		#show-box-1,
+		#show-box-2,
+		#show-box-3 {
+			//NOTE: design variant
+			width: 488px;
+			height: 490px;
+		} //end show-box-group styles
+
+		#show-box-1 {
+			//NOTE: design variant
+			background-image: url("/img/img-desktop-l/desktop-ps-natours-bg.png");
+
+			//NOTE: Added the overlay to help strengthen the contrast of the text against the background image
+			.show-box__overlay {
+				@include showBoxOverlay;
+				//NOTE: design variant
+				width: 488px;
+				height: 490px;
+			} //end show-box__overlay
+		} //end show-box-1
+
+		#show-box-2 {
+			//NOTE: design variant
+			// Scales since its an svg image.
+			.show-box__overlay {
+				@include showBoxOverlay;
+				//NOTE: design variant
+				width: 488px;
+				height: 490px;
+			}//end show-box__overlay
+		} //end show-box-2
+
+		#show-box-3 {
+			//NOTE: design variant
+			background-image: url("/img/img-desktop-l/desktop-ps-beam-bg.png");
+			.show-box__overlay {
+				@include showBoxOverlay;
+				//NOTE: design variant
+				width: 488px;
+				height: 490px;
+			} //end show-box__overlay
+		} //end show-box-3
+	} //end body
+} //end media query
 /*!SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1920px */
