@@ -372,4 +372,71 @@ body .main-container .contact-form .contact-form__elements .mobile-cta-footer__b
   }
 }
 /*SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1920px */
+@media (min-width: 1920px) {
+  body {
+    background-image: url("/img/img-desktop-l/desktop-contact-bg.png");
+    background-attachment: fixed;
+  }
+  body .main-container .contact-container {
+    position: absolute;
+    top: -135px;
+    right: 290px;
+  }
+  body .main-container .contact-container .contact-heroCopy {
+    font-size: 4.06rem;
+    text-align: left;
+  }
+  body .main-container .contact-container .contactheroimg {
+    margin: 25px auto;
+    padding: 0px;
+    position: relative;
+    top: -19px;
+    left: 254px;
+    width: 310px;
+    height: 157px;
+  }
+  body .main-container .contact-form {
+    top: -70px;
+    left: 45px;
+  }
+  body .main-container .contact-form .contact-form__elements .contact-form__element {
+    margin: 0px auto;
+  }
+  body .main-container .contact-form .contact-form__elements .contact-form__element input {
+    width: 530px;
+    height: 65px !important;
+  }
+  body .main-container .contact-form .contact-form__elements .contact-form__element .contact-form__label {
+    display: inline-block;
+    top: -12px;
+    width: 110px;
+    height: 64px;
+    border-radius: 8px 0px 0px 8px;
+  }
+  body .main-container .contact-form .contact-form__elements .contact-form__element .contact-form__label .label-text {
+    font-size: 1.25rem;
+    position: relative;
+    top: 25%;
+    bottom: 25%;
+  }
+  body .main-container .contact-form .contact-form__elements .contact-form__element .contact-form__input {
+    top: 3px;
+    font-size: 1.25rem;
+    border-radius: 0px 8px 8px 0px;
+  }
+  body .main-container .contact-form .contact-form__elements .contact-form__element .mobile-cta-footer__button {
+    width: 396px;
+    height: 74px;
+    position: relative;
+    top: 15px;
+    right: -124px;
+    font-size: 1.87rem;
+  }
+  body .main-container .contact-form textarea {
+    height: 290px;
+    border-radius: 8px;
+    font-family: futura-pt, Helvetica, Arial, sans-serif;
+    font-size: 1.56rem;
+  }
+}
 /*!SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1920px *//*# sourceMappingURL=main.css.map */

@@ -71,8 +71,7 @@ body {
 						height: 30px;
 						padding: 5px 15px 6px 15px;
 
-						#project-name {
-						}
+						
 
 						.contact-form__input {
 							background-color: #ffbf00;
@@ -97,7 +96,7 @@ body {
 					font-style: normal;
 					font-size: $text1X-25; //20px;
 					position: relative;
-				}
+				}//end mobile-cta-footer__button
 			} //end contact-form__element
 		} //end contact-form
 	} //end main-container
