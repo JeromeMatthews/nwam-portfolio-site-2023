@@ -410,6 +410,7 @@ body .show-box .show-box__text {
     position: absolute;
     top: 10px;
     left: 620px;
+    z-index: 15;
   }
   .mainnav__links a {
     font-family: proxima-nova, Arial, Helvetica, sans-serif;

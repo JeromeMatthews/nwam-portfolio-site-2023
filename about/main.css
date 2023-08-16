@@ -494,6 +494,7 @@ body .main-container .mobile-cta-footer .mobile-cta-footer__sm-links {
     position: absolute;
     top: 10px;
     left: 620px;
+    z-index: 15;
   }
   .mainnav__links a {
     font-family: proxima-nova, Arial, Helvetica, sans-serif;
@@ -513,4 +514,55 @@ body .main-container .mobile-cta-footer .mobile-cta-footer__sm-links {
   }
 }
 /*SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1920px */
+@media (min-width: 1920px) {
+  body {
+    background-image: url("/img/img-desktop-l/desktop-about-bg.png");
+  }
+  body .main-container .about-hero .about-hero__copy {
+    position: relative;
+    margin: 100px 60px 390px 155px;
+    left: -150px;
+  }
+  body .main-container .about-hero .about-hero__text {
+    font-size: 5.62rem;
+    text-align: left;
+    line-height: 99%;
+  }
+  body .main-container .about-hero .chevron-down {
+    position: relative;
+    top: -260px;
+  }
+  body .main-container .body-sect-1 .body-sect-1-art {
+    margin-bottom: 290px;
+  }
+  body .main-container .body-sect-1 .body-sect-1-art .body-sect-1__head {
+    margin: 50px 167px 10px 450px;
+    font-size: 7.18rem;
+    text-align: right;
+    position: relative;
+    right: -150px;
+  }
+  body .main-container .body-sect-1 .body-sect-1-art .body-sect-1__text {
+    font-size: 1.87rem;
+  }
+  body .main-container .body-sect-2 .body-sect-2-art {
+    margin-bottom: 290px;
+  }
+  body .main-container .body-sect-2 .body-sect-2-art .body-sect-2__head {
+    font-size: 7.18rem;
+    text-align: left;
+    margin: 0px;
+  }
+  body .main-container .body-sect-2 .body-sect-2-art .body-sect-2__text {
+    font-size: 1.87rem;
+  }
+  body .main-container .body-sect-3 .body-sect-3-art .body-sect-3__head {
+    font-size: 7.18rem;
+    text-align: right;
+    margin: 0px;
+  }
+  body .main-container .body-sect-3 .body-sect-3-art .body-sect-3__text {
+    font-size: 1.87rem;
+  }
+}
 /*!SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1920px *//*# sourceMappingURL=main.css.map */

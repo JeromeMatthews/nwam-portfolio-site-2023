@@ -1,8 +1,89 @@
 @import "..//partials/_nav-base-desktops";
 /*SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1920px */
 @media (min-width: 1920px) {
+	body {
+		background-image: url("/img/img-desktop-l/desktop-about-bg.png");
+
+		.main-container {
+			.about-hero {
+				.about-hero__copy {
+					position: relative;
+					//NOTE: variant change
+					margin: 100px 60px 390px 155px; // reminder: /\ > V <
+					left: -150px;
+				} //end about-hero-copy
+				.about-hero__text {
+					//NOTE: variant change
+					font-size: $text5x-62; //90px;
+					text-align: left;
+					line-height: 99%;
+				}
+
+				.chevron-down {
+					position: relative;
+					top: -260px;
+				} //end chevron-down
+			} //end of about-hero
+
+			.body-sect-1 {
+				.body-sect-1-art {
+					.body-sect-1__head {
+						//NOTE: variant change
+						margin: 50px 167px 10px 450px; //reminder: /\ & V , < & >
+						font-size: $text7x-18; //110px;
+						text-align: right;
+						position: relative;
+						right: -150px;
+					} //end body-sect-1__head
+					.body-sect-1__text {
+						//NOTE: variant change
+						font-size: $text1x-87; //30px;
+					} //body-sect-1__text
+					margin-bottom: 290px;
+				} //end body-sect-1-art
+			} //end of body-sect-1
 
 
-    
-}//end media query
+			    .body-sect-2 {
+                .body-sect-2-art {
+                .body-sect-2__head {
+					//NOTE: variant change
+                font-size: $text7x-18; //110px;
+                text-align: left;
+                margin: 0px;//reseting margins. 
+                }//end body-sect-2__head
+
+                .body-sect-2__text {
+                    //NOTE: variant change
+       				 font-size: $text1x-87; //30px;
+                }
+				//NOTE: variant change
+				margin-bottom: 290px;
+            }//end body-sect-2-art
+
+            }// end of body-sect-2
+
+
+			.body-sect-3 {
+				.body-sect-3-art {
+					.body-sect-3__head {
+						//NOTE: variant change
+						 font-size: $text7x-18; //110px;
+						text-align: right;
+						margin: 0px;//reseting margins. 
+						
+					}//end body-sect-3__head
+					.body-sect-3__text {
+						//NOTE: variant change
+						 font-size: $text1x-87; //30px;
+						
+					}//end body-sect-3__text
+				}//end body-sect-3__head
+			} //end of body-sect-3
+
+
+
+		} //end main-container
+	} //endo body
+} //end media query
 /*!SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1920px */
