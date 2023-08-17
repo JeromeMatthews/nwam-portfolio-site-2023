@@ -20,7 +20,7 @@
 					color: #fff;
 					text-align: right;
 					right: 170px;
-					
+
 					margin: 0px;// Resetting the defaults for the margin to zero - 0. The overlay for the mobile navigation will be shifted down otherwise. As the universal resets of margins, padding, and borders were done prior to this element being created in the 1024 design variant. The original base style sheets would not have accounted for it.  
 
 				} //end blog-collection__title
@@ -45,6 +45,11 @@
 					//NOTE: design variant:
 					margin: auto 8px; //added spacing on the left and right margins total 16px - 8px each side.
 				} //end all blog-boxes | blog article previews.
+
+				
+
+
+
 			} //end blog-box__link
 		} //end main-container
 	} //end body

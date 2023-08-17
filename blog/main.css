@@ -352,4 +352,37 @@ body .main-container .blog-box__link .blog-box .blog-box__text {
   }
 }
 /*SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1920px */
+@media (min-width: 1920px) {
+  body {
+    background-image: url("/img/img-desktop-l/desktop-blog-bg.png");
+  }
+  body .main-container .blog-collection {
+    top: 0px;
+  }
+  body .main-container .blog-collection .blog-collection__title {
+    font-size: 5rem;
+  }
+  body .main-container .blog-box-group {
+    top: 0px;
+  }
+  body .main-container .blog-box__link .blog-box {
+    width: 484px;
+    height: 484px;
+    background-image: url("/img/img-desktop-l/desktop-blog-article-preview-bg.png");
+  }
+  body .main-container .blog-box__link .blog-box .blog-box__text-container {
+    display: block !important;
+    position: relative;
+    top: 240px;
+  }
+  body .main-container .blog-box__link .blog-box .blog-box__text-container .blog-box__title {
+    font-size: 2.81rem;
+  }
+  body .main-container .blog-box__link .blog-box .blog-box__text-container .blog-box__subtitle {
+    font-size: 1.25rem;
+  }
+  body .main-container .blog-box__link .blog-box .blog-box__text-container .blog-box__text {
+    font-size: 1.12rem;
+  }
+}
 /*!SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1920px *//*# sourceMappingURL=main.css.map */
