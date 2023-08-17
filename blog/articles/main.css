@@ -411,4 +411,69 @@ body .main-container .article-container .article-sm-bottom .article-sm-bottom-li
   }
 }
 /*SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1920px */
+@media (min-width: 1920px) {
+  body {
+    background-image: url("/img/img-desktop-l/desktop-blog-article-bg.png");
+  }
+  body .main-container {
+    top: 0px;
+  }
+  body .main-container .article-container {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  body .main-container .article-container .article__title {
+    font-size: 5rem;
+  }
+  body .main-container .article-container .article__sub_title {
+    font-size: 2.5rem;
+  }
+  body .main-container .article-container .article__content {
+    margin: 0px 140px;
+  }
+  body .main-container .article-container .article__content .support-topic .support-topic__head {
+    font-size: 3.43rem;
+  }
+  body .main-container .article-container .article__content .support-topic .support-topic__body {
+    font-size: 1.56rem;
+  }
+  body .main-container .article-container .mobile-cta-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  body .main-container .article-container .mobile-cta-footer-branding .mobile-cta-footer-branding__text-1,
+  body .main-container .article-container .mobile-cta-footer-branding .mobile-cta-footer-branding__text-2 {
+    font-size: 4.375rem;
+  }
+  body .main-container .article-container .mobile-cta-footer-branding .mobile-cta-footer-branding__text-2 {
+    left: -128px;
+  }
+  body .main-container .article-container .mobile-cta-footer-branding .mobile-cta-footer__logo {
+    width: 310px;
+    height: 157px;
+    top: -126px;
+    left: 245px;
+  }
+  body .main-container .article-container .mobile-cta-footer__button {
+    display: inline-block;
+    width: 396px;
+    height: 74px;
+    top: -150px;
+  }
+  body .main-container .article-container .mobile-cta-footer__button .hero-text {
+    font-size: 2.06rem;
+    top: 15%;
+  }
+  body .main-container .article-container .footer-divide {
+    width: 900px;
+    top: -140px;
+  }
+  body .main-container .article-container .article-sm-bottom {
+    top: -140px;
+  }
+}
 /*!SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1920px *//*# sourceMappingURL=main.css.map */
