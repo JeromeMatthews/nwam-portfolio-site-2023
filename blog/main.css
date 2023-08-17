@@ -287,6 +287,7 @@ body .main-container .blog-box__link .blog-box .blog-box__text {
     color: #fff;
     text-align: right;
     right: 170px;
+    margin: 0px;
   }
   body .main-container .blog-collection .blog-collection__divide {
     position: relative;
