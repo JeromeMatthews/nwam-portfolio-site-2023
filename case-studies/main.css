@@ -1126,4 +1126,113 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
   }
 }
 /*SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1920px */
+@media (min-width: 1920px) {
+  .main-container {
+    top: 0px;
+  }
+  body .atf-1 {
+    height: 1000px;
+    background-image: url("/img/img-desktop-l/desktop-ps-ng-bg.png");
+    background-repeat: no-repeat;
+    background-position: left 0px top 0px;
+    background-attachment: scroll;
+  }
+  body .atf-1 .cs-project {
+    position: relative;
+    width: 674px;
+    height: 388px;
+    top: -170px;
+    left: -6px;
+    background-color: rgba(255, 255, 255, 0.11);
+    border-radius: 1%;
+    margin: 0px;
+  }
+  body .atf-1 .cs-project .cs-project__title {
+    font-size: 2.81rem;
+  }
+  body .atf-1 .cs-project .cs-project__services .cs-project__service {
+    font-size: 1.56rem;
+  }
+  body .atf-1 .cs-client-details {
+    position: relative;
+    width: 674px;
+    height: 388px;
+    top: 250px;
+    left: -680px;
+    background-color: rgba(255, 255, 255, 0.11);
+    border-radius: 1%;
+    margin: 0px;
+  }
+  body .atf-1 .cs-client-details .cs-client-details__title {
+    font-size: 2.81rem;
+  }
+  body .atf-1 .cs-client-details .cs-client-details__status {
+    font-size: 2.18rem;
+  }
+  body .atf-1 .cs-client-details .status-flag {
+    font-size: 2.18rem;
+  }
+  body .atf-1 .cs-client-details .cs-client-details__text {
+    font-size: 1.56rem;
+  }
+  body .btf-2 .btf-2__project-container-box {
+    position: relative;
+    width: 674px;
+    height: 810px;
+    top: -460px;
+    left: 350px;
+    background-color: rgba(255, 255, 255, 0.11);
+    border-radius: 1%;
+    margin: 0px;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body .btf-2 .btf-2__project-container-box .cs-project-desc__title {
+    font-size: 2.81rem;
+  }
+  body .btf-2 .btf-2__project-container-box .cs-project-sum__title {
+    font-size: 2.81rem;
+  }
+  body .btf-2 .btf-2__project-container-box .cs-project-desc {
+    top: -10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body .btf-2 .btf-2__project-container-box .cs-project-desc .cs-project-desc__text {
+    font-size: 1.31rem;
+  }
+  body .btf-2 .btf-2__project-container-box .project-info-divider {
+    width: 90%;
+    top: 5px;
+  }
+  body .btf-2 .btf-2__project-container-box .cs-project-sum {
+    top: -15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body .btl {
+    text-align: center;
+  }
+  body .btl .btl__title-container {
+    position: relative;
+  }
+  body .btl .btl__title-container .btl__title .btl__title-2 {
+    font-size: 3.43rem;
+  }
+  body .btl .btl__title-container .btl__text {
+    position: relative;
+  }
+  body .btl .btl__title-container .btl__text .btl__text-1 {
+    position: relative;
+    left: -125px;
+    font-size: 1.37rem;
+  }
+  body .btl .btl__title-container .btl__text .btl__text-2 {
+    position: relative;
+    top: -26px;
+    right: -99px;
+    font-size: 1.37rem;
+  }
+}
 /*!SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1920px *//*# sourceMappingURL=main.css.map */
