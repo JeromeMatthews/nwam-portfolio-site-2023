@@ -161,6 +161,7 @@
 
 
 		.btl {
+			height: 400px;
 			text-align: center;
 			.btl__title-container {
 				position: relative;
@@ -172,16 +173,22 @@
 
 					// margin-left: 200px;
 					// margin-right: 200px;
+					//Makes "BETWEEN THE LINES " TEXT one line again.
+					@include flexMix;
+					
+
 
 					.btl__title-1 {
 						//NOTE: Design variant
 						// position: relative;
 						// left: -190px;
+						font-size: $text6X-56;//105px;
 					} //end of btl__title-1
 
 					.btl__title-2 {
 						//NOTE: Design variant
-						font-size: $text3x-43; //55px;
+						font-size: $text6X-56;//105px;
+
 						// position: relative;
 						// top: -45px;
 						// right: -99px;
@@ -197,22 +204,31 @@
 					//NOTE: moving the container for the milestones and deliverables up to match the design for landscape.
 					position: relative;
 					// top: -60px;
+					@include flexMix;
+					line-height: normal;
+
 
 					.btl__text-1 {
+						//NOTE Design variant
 						position: relative;
-						left: -125px;
-						font-size: $text1x-37; //22px;
+						left: 0px;//resetting values 
+						font-size: $text3x-12;//50px;
 					} //end of btl__text-1
 
 					.btl__text-2 {
+						//NOTE Design variant
 						position: relative;
-						top: -26px;
-						right: -99px;
-						font-size: $text1x-37; //22px;
+						top: 0px;//resetting values 
+						right: 0px;//resetting values 
+						font-size: $text3x-12; //50px;
 					} //end of btl__text-2
 				} //end btl__text
 			} //end btl__title-container
 		} //end of btl
+
+
+
+		
 	} //end body
 } //end media query
 /*!SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1920px */

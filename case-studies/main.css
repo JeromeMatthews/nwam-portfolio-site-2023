@@ -1212,27 +1212,42 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
     margin-right: auto;
   }
   body .btl {
+    height: 400px;
     text-align: center;
   }
   body .btl .btl__title-container {
     position: relative;
   }
+  body .btl .btl__title-container .btl__title {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  body .btl .btl__title-container .btl__title .btl__title-1 {
+    font-size: 6.56rem;
+  }
   body .btl .btl__title-container .btl__title .btl__title-2 {
-    font-size: 3.43rem;
+    font-size: 6.56rem;
   }
   body .btl .btl__title-container .btl__text {
     position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    line-height: normal;
   }
   body .btl .btl__title-container .btl__text .btl__text-1 {
     position: relative;
-    left: -125px;
-    font-size: 1.37rem;
+    left: 0px;
+    font-size: 3.12rem;
   }
   body .btl .btl__title-container .btl__text .btl__text-2 {
     position: relative;
-    top: -26px;
-    right: -99px;
-    font-size: 1.37rem;
+    top: 0px;
+    right: 0px;
+    font-size: 3.12rem;
   }
 }
 /*!SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1920px *//*# sourceMappingURL=main.css.map */
