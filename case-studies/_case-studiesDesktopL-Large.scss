@@ -59,10 +59,10 @@
 				}
 
 				.cs-project__services {
-					.cs-project__service{
-							//NOTE: design variant:
-							font-size: $text1x-56 ; //25px;
-					}//end .cs-project__service
+					.cs-project__service {
+						//NOTE: design variant:
+						font-size: $text1x-56; //25px;
+					} //end .cs-project__service
 				}
 			}
 
@@ -75,18 +75,16 @@
 				}
 
 				.cs-client-details__status {
-						//NOTE: design variant:
-						font-size: $text2x-18 ; //35px;
-
+					//NOTE: design variant:
+					font-size: $text2x-18; //35px;
 				}
 				.status-flag {
-							//NOTE: design variant:
-							font-size: $text2x-18 ; //35px;
-
+					//NOTE: design variant:
+					font-size: $text2x-18; //35px;
 				}
 				.cs-client-details__text {
-							//NOTE: design variant:
-							font-size: $text1x-56 ; //25px;
+					//NOTE: design variant:
+					font-size: $text1x-56; //25px;
 				}
 
 				// top: 0px;
@@ -113,7 +111,7 @@
 
 					.cs-project-desc__text {
 						//NOTE: design variant:
-						font-size: $text1x-31 ; //21px;
+						font-size: $text1x-31; //21px;
 					} //end cs-project__text
 					top: -10px;
 					margin-left: auto;
@@ -138,15 +136,10 @@
 
 						.cs-project-sum__text__head {
 							//NOTE: design variant:
-							
-
-
 						} //end cs-project-sum__text__head
 
 						.cs-project-sum__text__body {
 							//NOTE: design variant:
-
-
 						} //end cs-project-sum__text__body
 					} //end cs-project-sum__text-1
 					//NOTE: Design variant: Relative positioning already declared so just giving adjustments in arrangment oftesxt here.
@@ -158,7 +151,6 @@
 				margin-right: auto;
 			} //end btf-2__project-container-box
 		} //end btf-2
-
 
 		.btl {
 			height: 400px;
@@ -175,19 +167,17 @@
 					// margin-right: 200px;
 					//Makes "BETWEEN THE LINES " TEXT one line again.
 					@include flexMix;
-					
-
 
 					.btl__title-1 {
 						//NOTE: Design variant
 						// position: relative;
 						// left: -190px;
-						font-size: $text6X-56;//105px;
+						font-size: $text6X-56; //105px;
 					} //end of btl__title-1
 
 					.btl__title-2 {
 						//NOTE: Design variant
-						font-size: $text6X-56;//105px;
+						font-size: $text6X-56; //105px;
 
 						// position: relative;
 						// top: -45px;
@@ -207,28 +197,216 @@
 					@include flexMix;
 					line-height: normal;
 
-
 					.btl__text-1 {
 						//NOTE Design variant
 						position: relative;
-						left: 0px;//resetting values 
-						font-size: $text3x-12;//50px;
+						left: 0px; //resetting values
+						font-size: $text3x-12; //50px;
 					} //end of btl__text-1
 
 					.btl__text-2 {
 						//NOTE Design variant
 						position: relative;
-						top: 0px;//resetting values 
-						right: 0px;//resetting values 
+						top: 0px; //resetting values
+						right: 0px; //resetting values
 						font-size: $text3x-12; //50px;
 					} //end of btl__text-2
 				} //end btl__text
 			} //end btl__title-container
 		} //end of btl
 
+		.btl-content-block-1 {
+			//NOTE: Design variant:
 
+			.btl-content-block__time {
+				//NOTE: design variant: //reseting position witihin parent.
+				font-size: $text4x-37; //70px;
+				align-self: start;
+				left: 120px;
+				top: 5px;
+				text-decoration: underline;
+			} //end btl-content-block__time
 
-		
+			.btl-content-block__time-text_2 {
+				//NOTE: design variant: //reseting position witihin parent.
+				font-size: $text4x-37; //70px;
+				left: 110px;
+				top: -100px; //reseting position witihin parent - aligning with timeline text.
+				text-decoration: underline;
+			} //end btl-content-block__time-text_2
+
+			.btl-content-block__sub {
+				//NOTE: design variant
+				font-size: $text1x-56; //25px;
+			} //end btl-content-block__sub
+			.btl-content-block__text {
+				//NOTE: design variant
+				font-size: $text1x-56; //25px;
+			} //end btl-content-block__text
+
+			//NOTE: Key/legend illustration
+			.legend {
+				//NOTE: using the important flag to overide the insline sytle's specificity.
+
+				display: block !important;
+				.legend__circle {
+					//NOTE: Design variant: position absolutely so to remove the legend from the documentflow as to not affect the cascade of the text in teh copy, and also afixes the legend elements where they were initally created, within their parent container (btl-content-block-1)
+					position: absolute;
+					overflow: hidden;
+					top: 13px;
+					display: block;
+					background-color: #fff;
+					width: 96px;
+					height: 96px;
+					border-radius: 50px;
+					border: 1px solid #ffd866;
+
+					.legend__circle-2 {
+						position: absolute;
+						overflow: hidden;
+						top: 23px;
+						left: 10%;
+						right: 10%;
+						display: block;
+						margin: 0 auto;
+						background-color: #ffd866;
+						width: 48px;
+						height: 48px;
+						border-radius: 50px;
+						border: 1px solid #ffd866;
+					} //end legend__Circle-2
+				} //end legend__Circle
+
+				.legend__line {
+					position: absolute;
+					overflow: hidden;
+					top: 107px;
+					left: 73px;
+					display: block;
+					background-color: #ffd866;
+					width: 8px;
+					height: 100%;
+				} //end legend__line
+			} //end legend
+		} //end btl-content-block-1
+
+		.btl-content-block-2 {
+			//NOTE: Design variant: Height reset so content only takes as much space as is needed as the template expands and shrinks based on the content of the project being described. removed the fixed widths of mobile design variant.
+			// height: 800px; // reseting height of container.
+			justify-content: start;
+
+			.btl-content-block__time {
+				//NOTE: design variant:
+				font-size: $text4x-37; //70px;
+				align-self: start;
+				left: 120px;
+				top: 5px;
+				text-decoration: underline;
+			} //end btl-content-block__time
+
+			.btl-content-block__time__sub {
+				//NOTE: design variant: //reseting position witihin parent.
+				font-size: $text4x-37; //70px;
+				left: 290px;
+				top: -100px; //reseting position witihin parent - aligning with timeline text.
+				text-decoration: underline;
+			} //end btl-content-block__time
+
+			.btl-content-block__sub {
+				//NOTE: design variant
+				font-size: $text1x-56; //25px;
+			} //end btl-content-block__sub
+			.btl-content-block__text {
+				//NOTE: design variant
+				font-size: $text1x-56; //25px;
+			} //end btl-content-block__text
+
+			.legend-alt {
+				//NOTE: using the important flag to overide the insline sytle's specificity.
+
+				display: block !important;
+				.legend-alt__circle {
+					//NOTE: Design variant: position absolutely so to remove the legend from the documentflow as to not affect the cascade of the text in teh copy, and also afixes the legend elements where they were initally created, within their parent container (btl-content-block-1)
+					position: absolute;
+					overflow: hidden;
+					top: 13px;
+					display: block;
+					background-color: #fff;
+					width: 96px;
+					height: 96px;
+					border-radius: 50px;
+					border: 1px solid #ffd866;
+					right: 1795px; // to algin the circle graphic for the legend, trying left doesn't work.
+
+					.legend-alt__circle-2 {
+						position: absolute;
+						overflow: hidden;
+						top: 23px;
+						left: 10%;
+						right: 10%;
+						display: block;
+						margin: 0 auto;
+						background-color: #ffd866;
+						width: 48px;
+						height: 48px;
+						border-radius: 50px;
+						border: 1px solid #ffd866;
+					} //end legend__Circle-2
+				} //end legend__Circle
+
+				.legend-alt__line {
+					position: absolute;
+					overflow: hidden;
+					top: 107px;
+					left: 73px;
+					display: block;
+					background-color: #ffffff;
+					width: 8px;
+					height: 100%;
+				} //end legend__line
+			} //end legend
+		} //end btl-content-block-2
+
+		.mobile-cta-footer {
+			.mobile-cta-footer-branding {
+				.mobile-cta-footer-branding__text-1,
+				.mobile-cta-footer-branding__text-2 {
+					//NOTE: Design variant
+					font-size: $text4x-37; //70px;
+				}
+
+				.mobile-cta-footer__logo {
+					display: none; //replace the smaller logo with the bigger one.
+				} //end mobile-cta-footer__logo
+
+				.mobile-cta-footer__logo-l {
+					//NOTE: Design variant: adjustments with increase in brandingtext size: same size as logo image on contact page
+					//sing large image for logo.
+					display: block !important;
+					height: 137px;
+					position: relative;
+					top: -117px;
+					left: 485px;
+				}
+			}
+
+			.mobile-cta-footer__button {
+				//NOTE: Design variant
+				position: relative;
+				top: -110px;
+
+				.hero-text {
+					//NOTE: Design variant - slight adjustment for the text in the link styled like a button, to center it.
+					//Already has position relative inherited from parent stylesheet - main.scss.
+					top: 13px;
+				} //end hero-text
+			}
+
+			.mobile-cta-footer__sm-links {
+				//NOTE: Design variant
+				top: -100px;
+			} //end mobile-cta-footer__sm-links
+		} // end mobile-cta-footer
 	} //end body
 } //end media query
 /*!SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1920px */

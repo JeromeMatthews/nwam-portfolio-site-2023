@@ -1249,5 +1249,147 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
     right: 0px;
     font-size: 3.12rem;
   }
+  body .btl-content-block-1 .btl-content-block__time {
+    font-size: 4.375rem;
+    align-self: start;
+    left: 120px;
+    top: 5px;
+    text-decoration: underline;
+  }
+  body .btl-content-block-1 .btl-content-block__time-text_2 {
+    font-size: 4.375rem;
+    left: 110px;
+    top: -100px;
+    text-decoration: underline;
+  }
+  body .btl-content-block-1 .btl-content-block__sub {
+    font-size: 1.56rem;
+  }
+  body .btl-content-block-1 .btl-content-block__text {
+    font-size: 1.56rem;
+  }
+  body .btl-content-block-1 .legend {
+    display: block !important;
+  }
+  body .btl-content-block-1 .legend .legend__circle {
+    position: absolute;
+    overflow: hidden;
+    top: 13px;
+    display: block;
+    background-color: #fff;
+    width: 96px;
+    height: 96px;
+    border-radius: 50px;
+    border: 1px solid #ffd866;
+  }
+  body .btl-content-block-1 .legend .legend__circle .legend__circle-2 {
+    position: absolute;
+    overflow: hidden;
+    top: 23px;
+    left: 10%;
+    right: 10%;
+    display: block;
+    margin: 0 auto;
+    background-color: #ffd866;
+    width: 48px;
+    height: 48px;
+    border-radius: 50px;
+    border: 1px solid #ffd866;
+  }
+  body .btl-content-block-1 .legend .legend__line {
+    position: absolute;
+    overflow: hidden;
+    top: 107px;
+    left: 73px;
+    display: block;
+    background-color: #ffd866;
+    width: 8px;
+    height: 100%;
+  }
+  body .btl-content-block-2 {
+    justify-content: start;
+  }
+  body .btl-content-block-2 .btl-content-block__time {
+    font-size: 4.375rem;
+    align-self: start;
+    left: 120px;
+    top: 5px;
+    text-decoration: underline;
+  }
+  body .btl-content-block-2 .btl-content-block__time__sub {
+    font-size: 4.375rem;
+    left: 290px;
+    top: -100px;
+    text-decoration: underline;
+  }
+  body .btl-content-block-2 .btl-content-block__sub {
+    font-size: 1.56rem;
+  }
+  body .btl-content-block-2 .btl-content-block__text {
+    font-size: 1.56rem;
+  }
+  body .btl-content-block-2 .legend-alt {
+    display: block !important;
+  }
+  body .btl-content-block-2 .legend-alt .legend-alt__circle {
+    position: absolute;
+    overflow: hidden;
+    top: 13px;
+    display: block;
+    background-color: #fff;
+    width: 96px;
+    height: 96px;
+    border-radius: 50px;
+    border: 1px solid #ffd866;
+    right: 1795px;
+  }
+  body .btl-content-block-2 .legend-alt .legend-alt__circle .legend-alt__circle-2 {
+    position: absolute;
+    overflow: hidden;
+    top: 23px;
+    left: 10%;
+    right: 10%;
+    display: block;
+    margin: 0 auto;
+    background-color: #ffd866;
+    width: 48px;
+    height: 48px;
+    border-radius: 50px;
+    border: 1px solid #ffd866;
+  }
+  body .btl-content-block-2 .legend-alt .legend-alt__line {
+    position: absolute;
+    overflow: hidden;
+    top: 107px;
+    left: 73px;
+    display: block;
+    background-color: #ffffff;
+    width: 8px;
+    height: 100%;
+  }
+  body .mobile-cta-footer .mobile-cta-footer-branding .mobile-cta-footer-branding__text-1,
+  body .mobile-cta-footer .mobile-cta-footer-branding .mobile-cta-footer-branding__text-2 {
+    font-size: 4.375rem;
+  }
+  body .mobile-cta-footer .mobile-cta-footer-branding .mobile-cta-footer__logo {
+    display: none;
+  }
+  body .mobile-cta-footer .mobile-cta-footer-branding .mobile-cta-footer__logo-l {
+    display: block !important;
+    height: 137px;
+    position: relative;
+    top: -117px;
+    left: 485px;
+  }
+  body .mobile-cta-footer .mobile-cta-footer__button {
+    position: relative;
+    top: -110px;
+  }
+  body .mobile-cta-footer .mobile-cta-footer__button .hero-text {
+    top: 13px;
+  }
+  body .mobile-cta-footer .mobile-cta-footer__sm-links {
+    top: -100px;
+  }
 }
 /*!SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1920px *//*# sourceMappingURL=main.css.map */
