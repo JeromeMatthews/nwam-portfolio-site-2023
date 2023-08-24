@@ -230,8 +230,9 @@
 			.btl-content-block__time-text_2 {
 				//NOTE: design variant: //reseting position witihin parent.
 				font-size: $text4x-37; //70px;
-				left: 110px;
-				top: -100px; //reseting position witihin parent - aligning with timeline text.
+				position: absolute;
+				left: 910px;
+				top: 4px; //reseting position witihin parent - aligning with timeline text.
 				text-decoration: underline;
 			} //end btl-content-block__time-text_2
 
@@ -243,51 +244,6 @@
 				//NOTE: design variant
 				font-size: $text1x-56; //25px;
 			} //end btl-content-block__text
-
-			//NOTE: Key/legend illustration
-			.legend {
-				//NOTE: using the important flag to overide the insline sytle's specificity.
-
-				display: block !important;
-				.legend__circle {
-					//NOTE: Design variant: position absolutely so to remove the legend from the documentflow as to not affect the cascade of the text in teh copy, and also afixes the legend elements where they were initally created, within their parent container (btl-content-block-1)
-					position: absolute;
-					overflow: hidden;
-					top: 13px;
-					display: block;
-					background-color: #fff;
-					width: 96px;
-					height: 96px;
-					border-radius: 50px;
-					border: 1px solid #ffd866;
-
-					.legend__circle-2 {
-						position: absolute;
-						overflow: hidden;
-						top: 23px;
-						left: 10%;
-						right: 10%;
-						display: block;
-						margin: 0 auto;
-						background-color: #ffd866;
-						width: 48px;
-						height: 48px;
-						border-radius: 50px;
-						border: 1px solid #ffd866;
-					} //end legend__Circle-2
-				} //end legend__Circle
-
-				.legend__line {
-					position: absolute;
-					overflow: hidden;
-					top: 107px;
-					left: 73px;
-					display: block;
-					background-color: #ffd866;
-					width: 8px;
-					height: 100%;
-				} //end legend__line
-			} //end legend
 		} //end btl-content-block-1
 
 		.btl-content-block-2 {
@@ -307,8 +263,9 @@
 			.btl-content-block__time__sub {
 				//NOTE: design variant: //reseting position witihin parent.
 				font-size: $text4x-37; //70px;
-				left: 290px;
-				top: -100px; //reseting position witihin parent - aligning with timeline text.
+				position: absolute;
+				left: 930px;
+				top: 4px; //reseting position witihin parent - aligning with timeline text.
 				text-decoration: underline;
 			} //end btl-content-block__time
 
@@ -387,6 +344,7 @@
 					position: relative;
 					top: -117px;
 					left: 485px;
+					overflow: hidden;
 				}
 			}
 

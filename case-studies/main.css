@@ -1258,8 +1258,9 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
   }
   body .btl-content-block-1 .btl-content-block__time-text_2 {
     font-size: 4.375rem;
-    left: 110px;
-    top: -100px;
+    position: absolute;
+    left: 910px;
+    top: 4px;
     text-decoration: underline;
   }
   body .btl-content-block-1 .btl-content-block__sub {
@@ -1267,44 +1268,6 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
   }
   body .btl-content-block-1 .btl-content-block__text {
     font-size: 1.56rem;
-  }
-  body .btl-content-block-1 .legend {
-    display: block !important;
-  }
-  body .btl-content-block-1 .legend .legend__circle {
-    position: absolute;
-    overflow: hidden;
-    top: 13px;
-    display: block;
-    background-color: #fff;
-    width: 96px;
-    height: 96px;
-    border-radius: 50px;
-    border: 1px solid #ffd866;
-  }
-  body .btl-content-block-1 .legend .legend__circle .legend__circle-2 {
-    position: absolute;
-    overflow: hidden;
-    top: 23px;
-    left: 10%;
-    right: 10%;
-    display: block;
-    margin: 0 auto;
-    background-color: #ffd866;
-    width: 48px;
-    height: 48px;
-    border-radius: 50px;
-    border: 1px solid #ffd866;
-  }
-  body .btl-content-block-1 .legend .legend__line {
-    position: absolute;
-    overflow: hidden;
-    top: 107px;
-    left: 73px;
-    display: block;
-    background-color: #ffd866;
-    width: 8px;
-    height: 100%;
   }
   body .btl-content-block-2 {
     justify-content: start;
@@ -1318,8 +1281,9 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
   }
   body .btl-content-block-2 .btl-content-block__time__sub {
     font-size: 4.375rem;
-    left: 290px;
-    top: -100px;
+    position: absolute;
+    left: 930px;
+    top: 4px;
     text-decoration: underline;
   }
   body .btl-content-block-2 .btl-content-block__sub {
@@ -1380,6 +1344,7 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
     position: relative;
     top: -117px;
     left: 485px;
+    overflow: hidden;
   }
   body .mobile-cta-footer .mobile-cta-footer__button {
     position: relative;
