@@ -1,0 +1,37 @@
+/*SECTION ABOVE MOBILE PHONES - DESKTOP - LANDSCAPE -LOWER NAV - >1920px */
+	.lower-nav-container{
+			
+			display: flex !important;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content:center;
+			width: 100%;
+			position: absolute;
+			bottom: -207px;
+
+        .nav-chevrons {
+			//NOTE: design variant
+            top:-15px;//reseting to default values for desktop viewports.
+			.left-chev {
+				margin-right: 50px;
+			}
+		}
+
+		.main-footer {
+			margin: 0px;
+			padding-bottom: 20px;
+		}
+		.main-footer__social-icons {
+			margin: 0px;
+			padding: 0px;
+			list-style: none;
+			text-decoration: none;
+			justify-content: center;
+
+			li {
+				margin-right: 10px;
+			}
+		} // end main-footer__social-icons
+	}//end-lower-nav-container
+
+/*!SECTION ABOVE MOBILE PHONES - DESKTOP - LANDSCAPE -LOWER NAV - >1920px */

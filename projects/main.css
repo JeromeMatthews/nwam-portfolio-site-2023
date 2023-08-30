@@ -434,30 +434,30 @@ body .show-box .show-box__text {
   .main-container {
     top: 0px;
   }
-  body {
+  body .main-container {
     background-image: url("/img/img-desktop-l/desktop-ps-bg.png");
   }
-  body .show-box .show-box__title {
+  body .main-container .show-box .show-box__title {
     font-size: 2.81rem;
   }
-  body .show-box .show-box__subtitle {
+  body .main-container .show-box .show-box__subtitle {
     display: block !important;
     font-size: 2.18rem;
   }
-  body .show-box .show-box__text {
+  body .main-container .show-box .show-box__text {
     top: -80px;
     font-size: 1.25rem;
   }
-  body #show-box-1,
-  body #show-box-2,
-  body #show-box-3 {
+  body .main-container #show-box-1,
+  body .main-container #show-box-2,
+  body .main-container #show-box-3 {
     width: 488px;
     height: 490px;
   }
-  body #show-box-1 {
+  body .main-container #show-box-1 {
     background-image: url("/img/img-desktop-l/desktop-ps-natours-bg.png");
   }
-  body #show-box-1 .show-box__overlay {
+  body .main-container #show-box-1 .show-box__overlay {
     position: absolute;
     z-index: 2;
     background-color: rgba(31, 31, 31, 0.562);
@@ -466,7 +466,7 @@ body .show-box .show-box__text {
     width: 488px;
     height: 490px;
   }
-  body #show-box-2 .show-box__overlay {
+  body .main-container #show-box-2 .show-box__overlay {
     position: absolute;
     z-index: 2;
     background-color: rgba(31, 31, 31, 0.562);
@@ -475,10 +475,10 @@ body .show-box .show-box__text {
     width: 488px;
     height: 490px;
   }
-  body #show-box-3 {
+  body .main-container #show-box-3 {
     background-image: url("/img/img-desktop-l/desktop-ps-beam-bg.png");
   }
-  body #show-box-3 .show-box__overlay {
+  body .main-container #show-box-3 .show-box__overlay {
     position: absolute;
     z-index: 2;
     background-color: rgba(31, 31, 31, 0.562);
@@ -486,6 +486,34 @@ body .show-box .show-box__text {
     height: 197px;
     width: 488px;
     height: 490px;
+  }
+  body .main-container .lower-nav-container {
+    display: block !important;
+    bottom: 40px;
+    width: 100%;
+    position: absolute;
+  }
+  body .main-container .lower-nav-container .nav-chevrons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    top: -18px;
+  }
+  body .main-container .lower-nav-container .nav-chevrons .left-chev {
+    margin-right: 50px;
+  }
+  body .main-container .lower-nav-container .main-footer .main-footer__social-icons {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    justify-content: center;
+  }
+  body .main-container .lower-nav-container .main-footer .main-footer__social-icons li {
+    margin-right: 10px;
   }
 }
 /*!SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1920px *//*# sourceMappingURL=main.css.map */

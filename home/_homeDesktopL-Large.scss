@@ -1,4 +1,5 @@
 @import "..//partials/_nav-base-desktops";
+
 /*SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1920px */
 @media (min-width: 1920px) {
 
@@ -78,34 +79,20 @@
 			}
 		} // end hero-button
 
-		.nav-chevrons {
-			@include flexMix;
-			margin: 0px;
-			position: relative;
-			top: 127px;
-			.left-chev {
-				margin-right: 50px;
-			}
+		@import "../partials/lower-h-nav-desktop";
+		
+        .nav-chevrons {
+        
+			position: absolute;
+			bottom: 67px;
 		}
 
 		.main-footer {
+      
 			margin: 0px;
-			position: relative;
-			top: 140px;
-			padding-bottom: 20px;
+			position: absolute;
+		
 		}
-		.main-footer__social-icons {
-			margin: 0px;
-			padding: 0px;
-			@include flexMix;
-			list-style: none;
-			text-decoration: none;
-			justify-content: center;
-
-			li {
-				margin-right: 10px;
-			}
-		} // end main-footer__social-icons
 	}// end body
 }//end media query 
 /*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >1920px */

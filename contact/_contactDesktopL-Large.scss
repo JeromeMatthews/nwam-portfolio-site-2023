@@ -94,6 +94,41 @@
                     font-size: $text1x-56;//25px
 				}
 			} //end contact-form
+			//specific placement for lower nav elements:
+			.lower-nav-container {
+				display: block !important;
+				
+				bottom: -929px;//NOTE: placement to match the home, projects, and about positioning of the nav.
+				width: 100%;
+				position: absolute;
+				//NOTE: Design variant: Used the container for positioning the elements of the lower nav. With it being absolutely placed, we can use relative positioning for the child elements (chevrons and the social icons) 
+
+				.nav-chevrons {
+					@include flexMix;
+					position: relative;// NOTE: Relative to the parent lower-nav-container div.
+					top: -18px;
+					.left-chev{
+						margin-right: 50px;
+					}//end left-chev
+				} //end nav-chevrons
+
+				.main-footer {
+					
+
+					.main-footer__social-icons {
+						display: flex;
+						margin: 0px;
+						padding: 0px;
+						list-style: none;
+						text-decoration: none;
+						justify-content: center;
+
+						li{
+							margin-right: 10px;
+						}//end li
+					} //end social-icons
+				} //end main-footer
+			} // end lower-nav-elements
 		} // end main-container
 	} //end of body container
 } //end media query

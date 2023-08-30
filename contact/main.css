@@ -438,5 +438,33 @@ body .main-container .contact-form .contact-form__elements .mobile-cta-footer__b
     font-family: futura-pt, Helvetica, Arial, sans-serif;
     font-size: 1.56rem;
   }
+  body .main-container .lower-nav-container {
+    display: block !important;
+    bottom: -929px;
+    width: 100%;
+    position: absolute;
+  }
+  body .main-container .lower-nav-container .nav-chevrons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    top: -18px;
+  }
+  body .main-container .lower-nav-container .nav-chevrons .left-chev {
+    margin-right: 50px;
+  }
+  body .main-container .lower-nav-container .main-footer .main-footer__social-icons {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    justify-content: center;
+  }
+  body .main-container .lower-nav-container .main-footer .main-footer__social-icons li {
+    margin-right: 10px;
+  }
 }
 /*!SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1920px *//*# sourceMappingURL=main.css.map */
