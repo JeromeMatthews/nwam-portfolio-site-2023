@@ -528,9 +528,27 @@ body .main-container .mobile-cta-footer .mobile-cta-footer__sm-links {
     text-align: left;
     line-height: 99%;
   }
-  body .main-container .about-hero .chevron-down {
+  body .main-container .about-hero .lower-nav-container {
+    display: block !important;
     position: relative;
-    top: -260px;
+    bottom: 166px;
+    width: 100%;
+  }
+  body .main-container .about-hero .lower-nav-container .nav-chevrons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    top: -18px;
+  }
+  body .main-container .about-hero .lower-nav-container .nav-chevrons .left-chev {
+    margin-right: 50px;
+  }
+  body .main-container .about-hero .lower-nav-container .chevron-down {
+    position: relative;
+    top: 0px;
+    left: 10px;
   }
   body .main-container .body-sect-1 .body-sect-1-art {
     margin-bottom: 290px;

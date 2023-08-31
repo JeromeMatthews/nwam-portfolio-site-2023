@@ -19,15 +19,38 @@
 					line-height: 99%;
 				}
 
+				.lower-nav-container {
+					display: block !important;
+					position: relative;
+					//NOTE: Design variant: Used the container for positioning the elements of the lower nav. With it being absolutely placed, we can use relative positioning for the child elements (chevrons and the social icons) 
+					bottom: 166px;//NOTE: placement to match the home, projects, and about positioning of the nav.
+					width: 100%;
+					
+	
+					.nav-chevrons {
+						@include flexMix;
+						position: relative;// NOTE: Relative to the parent lower-nav-container div.
+						top: -18px;
+						.left-chev{
+							margin-right: 50px;
+						}//end left-chev
+					} //end nav-chevrons
+
+					.chevron-down {
+						position: relative;
+						top: 0px;
+						left: 10px;
+					} //end chevron-down
+	
+					
+				} // end lower-nav-elements
+
 			
 
 
 
 
-				.chevron-down {
-					position: relative;
-					top: -260px;
-				} //end chevron-down
+		
 			} //end of about-hero
 
 			.body-sect-1 {
