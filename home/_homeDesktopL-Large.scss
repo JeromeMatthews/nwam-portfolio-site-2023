@@ -15,7 +15,7 @@
 		/*Using the  !important flag to overide the assignment of the background images for the diffrent veiwport variants of the design.*/
 
 		.hero__copy {
-			top: -156px;
+			top: -72px;
 			right: -405px;
 			@include heroCopy;
 			font-size: $text4x-6; //65px;
@@ -35,7 +35,7 @@
 				font-size: $text1X-25; //20px; // initial design was 15... but bettter readability at 20px - for minimum in body copy.
 				color: #ffffff;
 				position: relative;
-				top: -210px;
+				top: -109px;
 				right: -460px;
 				margin: 0px 50px 0px 200px;
 				letter-spacing: 0px;
@@ -57,7 +57,7 @@
 			border-radius: 8px;
 			opacity: 1;
 			position: relative;
-			top: -195px;
+			top: -55px;
 			left: 627px;
 			width: 379px;
 			height: 74px;

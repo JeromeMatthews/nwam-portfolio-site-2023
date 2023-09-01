@@ -572,7 +572,7 @@ body .hero-button .hero-text {
     /*!SECTION ABOVE MOBILE PHONES - DESKTOP - LANDSCAPE -LOWER NAV - >1920px */
   }
   body .hero__copy {
-    top: -156px;
+    top: -72px;
     right: -405px;
     font-family: proxima-nova, Arial, Helvetica, sans-serif;
     font-weight: 900;
@@ -595,7 +595,7 @@ body .hero-button .hero-text {
     font-size: 1.25rem;
     color: #ffffff;
     position: relative;
-    top: -210px;
+    top: -109px;
     right: -460px;
     margin: 0px 50px 0px 200px;
     letter-spacing: 0px;
@@ -618,7 +618,7 @@ body .hero-button .hero-text {
     border-radius: 8px;
     opacity: 1;
     position: relative;
-    top: -195px;
+    top: -55px;
     left: 627px;
     width: 379px;
     height: 74px;
