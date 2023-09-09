@@ -379,24 +379,24 @@ body .main-container .contact-form .contact-form__elements .mobile-cta-footer__b
   }
   body .main-container .contact-container {
     position: absolute;
-    top: -135px;
+    top: -165px;
     right: 290px;
   }
   body .main-container .contact-container .contact-heroCopy {
-    font-size: 4.06rem;
+    font-size: 3.59rem;
     text-align: left;
   }
   body .main-container .contact-container .contactheroimg {
     margin: 25px auto;
     padding: 0px;
     position: relative;
-    top: -19px;
-    left: 254px;
-    width: 310px;
-    height: 157px;
+    top: -3px;
+    left: 244px;
+    width: 290px;
+    height: 137px;
   }
   body .main-container .contact-form {
-    top: -70px;
+    top: -50px;
     left: 45px;
   }
   body .main-container .contact-form .contact-form__elements .contact-form__element {
@@ -428,7 +428,7 @@ body .main-container .contact-form .contact-form__elements .mobile-cta-footer__b
     width: 396px;
     height: 74px;
     position: relative;
-    top: 15px;
+    top: 10px;
     right: -124px;
     font-size: 1.87rem;
   }
@@ -440,20 +440,22 @@ body .main-container .contact-form .contact-form__elements .mobile-cta-footer__b
   }
   body .main-container .lower-nav-container {
     display: block !important;
-    bottom: -929px;
-    width: 100%;
-    position: absolute;
+    position: fixed;
+    bottom: 40px;
+    left: 50vw;
   }
   body .main-container .lower-nav-container .nav-chevrons {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
     position: relative;
-    top: -17px;
+    top: -18px;
+    right: 16px;
   }
   body .main-container .lower-nav-container .nav-chevrons .left-chev {
-    margin-right: 50px;
+    position: inherit;
+    left: -21px;
+  }
+  body .main-container .lower-nav-container .nav-chevrons .right-chev {
+    position: inherit;
+    right: -21px;
   }
   body .main-container .lower-nav-container .main-footer .main-footer__social-icons {
     display: flex;
@@ -462,6 +464,8 @@ body .main-container .contact-form .contact-form__elements .mobile-cta-footer__b
     list-style: none;
     text-decoration: none;
     justify-content: center;
+    position: relative;
+    right: 3.5vw;
   }
   body .main-container .lower-nav-container .main-footer .main-footer__social-icons li {
     margin-right: 10px;

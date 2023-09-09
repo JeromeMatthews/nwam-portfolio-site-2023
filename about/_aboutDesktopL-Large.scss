@@ -18,40 +18,36 @@
 					text-align: left;
 					line-height: 99%;
 				}
-
-				.lower-nav-container {
-					display: block !important;
-					position: relative;
-					//NOTE: Design variant: Used the container for positioning the elements of the lower nav. With it being absolutely placed, we can use relative positioning for the child elements (chevrons and the social icons) 
-					bottom: 166px;//NOTE: placement to match the home, projects, and about positioning of the nav.
-					width: 100%;
-					
-	
-					.nav-chevrons {
-						@include flexMix;
-						position: relative;// NOTE: Relative to the parent lower-nav-container div.
-						top: -18px;
-						.left-chev{
-							margin-right: 50px;
-						}//end left-chev
-					} //end nav-chevrons
-
-					.chevron-down {
-						position: relative;
-						top: 0px;
-						left: 10px;
-					} //end chevron-down
-	
-					
-				} // end lower-nav-elements
-
-			
-
-
-
-
-		
 			} //end of about-hero
+
+			.lower-nav-container {
+				display: block !important;
+				position: absolute;
+				//NOTE: Design variant: Used the container for positioning the elements of the lower nav. With it being absolutely placed, we can use relative positioning for the child elements (chevrons and the social icons)
+				top: 608px; //NOTE: placement to match the home, projects, and about positioning of the nav.
+				left: 50vw;
+
+				.nav-chevrons {
+					position: relative; // NOTE: Relative to the parent lower-nav-container div.
+					top: -18px;
+					right: 16px;
+					.left-chev {
+						position: inherit;
+						left: -21px; //pull chevron to the left a little
+					} //end left-chev
+
+					.right-chev {
+						position: inherit;
+						right: -21px; //pull chevron to the right a little
+					} //end right-chev
+				} //end nav-chevrons
+
+				.chevron-down {
+					position: relative;
+					top: 0px;
+					right: 5px;
+				} //end chevron-down
+			} // end lower-nav-elements
 
 			.body-sect-1 {
 				.body-sect-1-art {
@@ -71,46 +67,38 @@
 				} //end body-sect-1-art
 			} //end of body-sect-1
 
+			.body-sect-2 {
+				.body-sect-2-art {
+					.body-sect-2__head {
+						//NOTE: variant change
+						font-size: $text7x-18; //110px;
+						text-align: left;
+						margin: 0px; //reseting margins.
+					} //end body-sect-2__head
 
-			    .body-sect-2 {
-                .body-sect-2-art {
-                .body-sect-2__head {
+					.body-sect-2__text {
+						//NOTE: variant change
+						font-size: $text1x-87; //30px;
+					}
 					//NOTE: variant change
-                font-size: $text7x-18; //110px;
-                text-align: left;
-                margin: 0px;//reseting margins. 
-                }//end body-sect-2__head
-
-                .body-sect-2__text {
-                    //NOTE: variant change
-       				 font-size: $text1x-87; //30px;
-                }
-				//NOTE: variant change
-				margin-bottom: 290px;
-            }//end body-sect-2-art
-
-            }// end of body-sect-2
-
+					margin-bottom: 290px;
+				} //end body-sect-2-art
+			} // end of body-sect-2
 
 			.body-sect-3 {
 				.body-sect-3-art {
 					.body-sect-3__head {
 						//NOTE: variant change
-						 font-size: $text7x-18; //110px;
+						font-size: $text7x-18; //110px;
 						text-align: right;
-						margin: 0px;//reseting margins. 
-						
-					}//end body-sect-3__head
+						margin: 0px; //reseting margins.
+					} //end body-sect-3__head
 					.body-sect-3__text {
 						//NOTE: variant change
-						 font-size: $text1x-87; //30px;
-						
-					}//end body-sect-3__text
-				}//end body-sect-3__head
+						font-size: $text1x-87; //30px;
+					} //end body-sect-3__text
+				} //end body-sect-3__head
 			} //end of body-sect-3
-
-
-
 		} //end main-container
 	} //endo body
 } //end media query

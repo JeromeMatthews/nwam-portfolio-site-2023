@@ -568,8 +568,6 @@ body .hero-button .hero-text {
   body {
     background: url("/img/img-desktop-l/desktop-home-bg.png");
     /*Using the  !important flag to overide the assignment of the background images for the diffrent veiwport variants of the design.*/
-    /*SECTION ABOVE MOBILE PHONES - DESKTOP - LANDSCAPE -LOWER NAV - >1920px */
-    /*!SECTION ABOVE MOBILE PHONES - DESKTOP - LANDSCAPE -LOWER NAV - >1920px */
   }
   body .hero__copy {
     top: -72px;
@@ -643,41 +641,36 @@ body .hero-button .hero-text {
 }
 @media (min-width: 1920px) {
   body .lower-nav-container {
-    display: flex !important;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-    position: absolute;
-    bottom: -207px;
+    display: block !important;
+    position: fixed;
+    bottom: 70px;
+    left: 50vw;
   }
   body .lower-nav-container .nav-chevrons {
-    top: -15px;
+    position: relative;
+    top: 12px;
+    right: 81px;
   }
   body .lower-nav-container .nav-chevrons .left-chev {
-    margin-right: 50px;
+    position: inherit;
+    left: 11px;
   }
-  body .lower-nav-container .main-footer {
-    margin: 0px;
-    padding-bottom: 20px;
+  body .lower-nav-container .nav-chevrons .right-chev {
+    position: inherit;
+    right: -6px;
   }
-  body .lower-nav-container .main-footer__social-icons {
+  body .lower-nav-container .main-footer .main-footer__social-icons {
+    display: flex;
     margin: 0px;
     padding: 0px;
     list-style: none;
     text-decoration: none;
     justify-content: center;
+    position: relative;
+    right: 3.5vw;
   }
-  body .lower-nav-container .main-footer__social-icons li {
+  body .lower-nav-container .main-footer .main-footer__social-icons li {
     margin-right: 10px;
-  }
-  body .nav-chevrons {
-    position: absolute;
-    bottom: 67px;
-  }
-  body .main-footer {
-    margin: 0px;
-    position: absolute;
   }
 }
 /*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >1920px */

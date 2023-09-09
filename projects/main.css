@@ -491,18 +491,21 @@ body .show-box .show-box__text {
     display: block !important;
     bottom: 40px;
     width: 100%;
-    position: absolute;
+    position: fixed;
+    left: 50vw;
   }
   body .main-container .lower-nav-container .nav-chevrons {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
     position: relative;
     top: -18px;
+    right: 16px;
   }
   body .main-container .lower-nav-container .nav-chevrons .left-chev {
-    margin-right: 50px;
+    position: inherit;
+    left: -21px;
+  }
+  body .main-container .lower-nav-container .nav-chevrons .right-chev {
+    position: inherit;
+    right: -21px;
   }
   body .main-container .lower-nav-container .main-footer .main-footer__social-icons {
     display: flex;
@@ -511,6 +514,8 @@ body .show-box .show-box__text {
     list-style: none;
     text-decoration: none;
     justify-content: center;
+    position: relative;
+    right: 49.8vw;
   }
   body .main-container .lower-nav-container .main-footer .main-footer__social-icons li {
     margin-right: 10px;

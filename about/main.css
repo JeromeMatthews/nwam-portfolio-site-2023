@@ -528,27 +528,29 @@ body .main-container .mobile-cta-footer .mobile-cta-footer__sm-links {
     text-align: left;
     line-height: 99%;
   }
-  body .main-container .about-hero .lower-nav-container {
+  body .main-container .lower-nav-container {
     display: block !important;
-    position: relative;
-    bottom: 166px;
-    width: 100%;
+    position: absolute;
+    top: 608px;
+    left: 50vw;
   }
-  body .main-container .about-hero .lower-nav-container .nav-chevrons {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+  body .main-container .lower-nav-container .nav-chevrons {
     position: relative;
     top: -18px;
+    right: 16px;
   }
-  body .main-container .about-hero .lower-nav-container .nav-chevrons .left-chev {
-    margin-right: 50px;
+  body .main-container .lower-nav-container .nav-chevrons .left-chev {
+    position: inherit;
+    left: -21px;
   }
-  body .main-container .about-hero .lower-nav-container .chevron-down {
+  body .main-container .lower-nav-container .nav-chevrons .right-chev {
+    position: inherit;
+    right: -21px;
+  }
+  body .main-container .lower-nav-container .chevron-down {
     position: relative;
     top: 0px;
-    left: 10px;
+    right: 5px;
   }
   body .main-container .body-sect-1 .body-sect-1-art {
     margin-bottom: 290px;

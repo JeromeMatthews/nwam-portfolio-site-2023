@@ -21,7 +21,7 @@
 
 		<!-- project page main Stylesheet file. Complied from the main SCSS-->
 
-		<title>nomad | projects </title>
+		<title>nomad | projects</title>
 	</head>
 	<body>
 		<div class="projects-overlay"></div>
@@ -31,15 +31,14 @@
 		<header class="header">
 			<nav class="sitenav-container">
 				<div class="sitenav-logo-contact-container">
-
 					<a href="/index.html">
-					<img
-						class="sitenav__logo"
-						src="/img/img-mobile-p/Nomad-orange.png"
-						alt=" nomadWebAndMedia company logo"
-					/>
-				</a>
-					
+						<img
+							class="sitenav__logo"
+							src="/img/img-mobile-p/Nomad-orange.png"
+							alt=" nomadWebAndMedia company logo"
+						/>
+					</a>
+
 					<!-- end Logo-->
 					<span class="sitenav__contactNum">(1876)-369-9341</span>
 
@@ -52,41 +51,30 @@
 				<!-- end Site Navigation Logo, Contact number, and Mobile Nav Contatiner-->
 
 				<ul class="sitenav__links sitenav__links--hide">
-					
 					<div id="projects">
-						
-							<a href="/projects/projects.html">
-								<li>
-									<span id="projects-text">Projects</span>
-								</li>
-							</a>
-						
+						<a href="/projects/projects.html">
+							<li>
+								<span id="projects-text">Projects</span>
+							</li>
+						</a>
 					</div>
 
 					<div id="about">
-						
-							<a href="/about/about.html">
-								<li><span id="about-text">About</span></li>
-							</a>
-						
+						<a href="/about/about.html">
+							<li><span id="about-text">About</span></li>
+						</a>
 					</div>
 					<div id="contact">
-						
-							<a href="/contact/contact.html">
-
-								<li><span id="contact-text">Contact</span></li>
-							</a>
-						
+						<a href="/contact/contact.html">
+							<li><span id="contact-text">Contact</span></li>
+						</a>
 					</div>
 					<div id="blog">
-
-					<a href="/blog/blog.html">
-						<li>
-							
+						<a href="/blog/blog.html">
+							<li>
 								<span id="blog-text">Blog</span>
-							
-						</li>
-					</a>
+							</li>
+						</a>
 					</div>
 				</ul>
 				<!-- end Ul-->
@@ -134,7 +122,7 @@
 				<div class="show-box" id="show-box-1">
 					<h4 class="show-box__title">Natours - APP & API</h4>
 					<!-- Decided to remove the label for project descriptions seemed unecessary on smaller viewports.-->
-					<h3 class="show-box__subtitle"  style="display:none;">Project description</h3>
+					<h3 class="show-box__subtitle" style="display: none">Project description</h3>
 					<p class="show-box__text">
 						Natours - A fictional nature tours web application and API project built
 						with Node.js using the Express.js framework and MongoDB Database. read more
@@ -144,10 +132,15 @@
 				<!-- end show-box --> </a
 			><!-- end showbox-link -->
 
-			<a class="show-box__link" href="/case-studies/nishida.html" target="_blank" rel="noopener noreferrer">
+			<a
+				class="show-box__link"
+				href="/case-studies/nishida.html"
+				target="_blank"
+				rel="noopener noreferrer"
+			>
 				<div class="show-box" id="show-box-2">
 					<h4 class="show-box__title">Nishida's Gymnastics</h4>
-					<h3 class="show-box__subtitle"  style="display:none;">Project description</h3>
+					<h3 class="show-box__subtitle" style="display: none">Project description</h3>
 					<p class="show-box__text">
 						Website redesign and maintenance of the original Nishida's Gymnastics group
 						of clubs. read more >>
@@ -160,7 +153,7 @@
 			<a class="show-box__link" href="http://" target="_blank" rel="noopener noreferrer">
 				<div class="show-box" id="show-box-3">
 					<h4 class="show-box__title">B.E.A.M</h4>
-					<h3 class="show-box__subtitle"  style="display:none;">Project description</h3>
+					<h3 class="show-box__subtitle" style="display: none">Project description</h3>
 					<p class="show-box__text">
 						The first iteration of the B.E.A.M performing arts company website. <br />
 						read more >>
@@ -170,9 +163,7 @@
 				<!-- end show-box --> </a
 			><!-- end showbox-link -->
 
-
-			
-			<div class="lower-nav-container" style="display:none;">
+			<div class="lower-nav-container" style="display: none">
 				<!-- Lower navigation for wider viewports. Bascially tablet and above.Only visible for wider viewports, will not display on mobile devices. Screen real estate better used for most important content. -->
 
 				<div class="nav-chevrons">
@@ -181,7 +172,7 @@
 							src="/img/img-tablet-p/icon-navigation-chevron_left_24px.svg"
 							alt="left navigation "
 					/></span>
-	
+
 					<span class="right-chev"
 						><img
 							src="/img/img-tablet-p/icon-navigation-chevron_right_24px.svg"
@@ -189,10 +180,10 @@
 					/></span>
 				</div>
 				<!-- end Nav chevrons -->
-	
+
 				<footer class="main-footer">
 					<!-- social-media-icons-->
-					<ul class="main-footer__social-icons" >
+					<ul class="main-footer__social-icons">
 						<li href="#">
 							<img src="/img/m-p-sm-icons/icons8-youtube.svg" alt="youtube" />
 						</li>
@@ -212,12 +203,21 @@
 					<!-- end Social-media-icons-->
 				</footer>
 				<!-- end Main Footer-->
-
-			</div><!-- lower-nav-container-->
+			</div>
+			<!-- lower-nav-container-->
+			<p id="demo" style="position: fixed; top: 950px"></p>
 		</main>
 		<!-- end Main Content -->
 
 		<script src="/main.js" type="text/javascript" defer></script>
+
+		<script>
+			var w = window.innerWidth;
+			var h = window.innerHeight;
+
+			var x = document.getElementById("demo");
+			x.innerHTML = "Browser width: " + w + ", height: " + h + ".";
+		</script>
 		<!-- end script -->
 	</body>
 </html>

@@ -11,12 +11,12 @@
 				//NOTE design varitant
 				//NOTE design varitant
 				position: absolute; // better fit for the arrangement as relative is shifting the width of the container.
-				top: -135px;
+				top: -165px;
 				right: 290px;
 
 				.contact-heroCopy {
 					//NOTE design varitant
-					font-size: $text4x-6; //65px;
+					font-size: $text3x-59; //57.5px;
 					text-align: left;
 				} // end of contact-heroCopy
 
@@ -25,16 +25,16 @@
 					margin: 25px auto;
 					padding: 0px;
 					position: relative;
-					top: -19px;
-					left: 254px; //reseting left positioning from mobile settings.
-					width: 310px;
-					height: 157px;
+					top: -3px;
+					left: 244px; //reseting left positioning from mobile settings.
+					width: 290px;
+					height: 137px;
 				}
 			} //end of contact-container
 
 			.contact-form {
 				//NOTE: design variant: using the previous position relative declaration in the base scss cile on mobile, then just adjusting the position for subsequent device viewports.
-				top: -70px;
+				top: -50px;
 				left: 45px;
 
 				.contact-form__elements {
@@ -51,70 +51,70 @@
 							top: -12px;
 							width: 110px;
 							height: 64px;
-                            border-radius: 8px 0px 0px 8px;
+							border-radius: 8px 0px 0px 8px;
 
 							.label-text {
-                                font-size: $text1X-25;//20px
+								font-size: $text1X-25; //20px
 								position: relative;
 								top: 25%;
 								bottom: 25%;
 							} //end label-text
 						} //end contact-form-label
 						.contact-form__input {
-                            top:3px; //slight realignment given the increase in font size to 21 px moved the input fields.
-                            font-size: $text1X-25;//20px
-                            border-radius: 0px 8px 8px 0px;
+							top: 3px; //slight realignment given the increase in font size to 21 px moved the input fields.
+							font-size: $text1X-25; //20px
+							border-radius: 0px 8px 8px 0px;
 						} //end contact-form__input\
-						
 					} //end contact-form-element
 
 					.contact-form__element {
 					} //end contact-form-element
 
 					.contact-form__element {
-					
-
-					.mobile-cta-footer__button {
-						//NOTE: design variant:
-                        width: 396px;
-                        height: 74px;
-						position: relative;
-                        top: 15px;
-						right: -124px;
-                        font-size: $text1x-87; //30px;
-
-					} //end mobile-cta-footer__button
-                } //end contact-form-element
+						.mobile-cta-footer__button {
+							//NOTE: design variant:
+							width: 396px;
+							height: 74px;
+							position: relative;
+							top: 10px;
+							right: -124px;
+							font-size: $text1x-87; //30px;
+						} //end mobile-cta-footer__button
+					} //end contact-form-element
 				} // end contact-form__elements
 
 				textarea {
 					height: 290px;
 					border-radius: 8px;
-                    font-family: $font-list-b;
-                    font-size: $text1x-56;//25px
+					font-family: $font-list-b;
+					font-size: $text1x-56; //25px
 				}
 			} //end contact-form
 			//specific placement for lower nav elements:
 			.lower-nav-container {
 				display: block !important;
-				
-				bottom: -929px;//NOTE: placement to match the home, projects, and about positioning of the nav.
-				width: 100%;
-				position: absolute;
-				//NOTE: Design variant: Used the container for positioning the elements of the lower nav. With it being absolutely placed, we can use relative positioning for the child elements (chevrons and the social icons) 
+				position: fixed;
+				bottom: 40px; //NOTE: placement to match the home, projects, and about positioning of the nav.
+				left: 50vw;
+
+				//NOTE: Design variant: Used the container for positioning the elements of the lower nav. With it being absolutely placed, we can use relative positioning for the child elements (chevrons and the social icons)
 
 				.nav-chevrons {
-					@include flexMix;
-					position: relative;// NOTE: Relative to the parent lower-nav-container div.
-					top: -17px;
-					.left-chev{
-						margin-right: 50px;
-					}//end left-chev
+					position: relative; // NOTE: Relative to the parent lower-nav-container div.
+					top: -18px;
+					right: 16px;
+					.left-chev {
+						position: inherit;
+						left: -21px; //pull chevron to the left a little
+					} //end left-chev
+
+					.right-chev {
+						position: inherit;
+						right: -21px; //pull chevron to the right a little
+					} //end right-chev
 				} //end nav-chevrons
 
 				.main-footer {
-					
-
 					.main-footer__social-icons {
 						display: flex;
 						margin: 0px;
@@ -122,10 +122,13 @@
 						list-style: none;
 						text-decoration: none;
 						justify-content: center;
+						//NOTE: Design vaieant: The outer container creates an offset, so this corrects for it. Centering the social media icons.
+						position: relative;
+						right: 3.5vw;
 
-						li{
+						li {
 							margin-right: 10px;
-						}//end li
+						} //end li
 					} //end social-icons
 				} //end main-footer
 			} // end lower-nav-elements
