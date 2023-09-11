@@ -113,7 +113,8 @@ body {
 //SECTION: HOME/LANDING PAGE: mobile -> Desktop
 @import "home/_hometabletP";
 @import "home/_homeTabletL";
-@import "home/_homeDesktopL";
+@import "home/homeDesktop-S";
+@import "home/homeDesktop-CM";
 @import "home/_homeDesktopL-Large";
 
 //!SECTION: END - HOME/LANDING PAGE: mobile -> Desktop

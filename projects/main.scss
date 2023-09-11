@@ -132,6 +132,8 @@ body {
 //SECTION: HOME/LANDING PAGE: mobile -> Desktop
 @import "_projectsTabletP";
 @import "_projectsTabletL";
-@import "_projectsDesktopL";
-@import "_projectsDesktopL-Large"; //!SECTION: END - HOME/LANDING PAGE: mobile -> Desktop
+@import "_projectsDesktop-S";
+@import "_projectsDesktop-CM";
+@import "_projectsDesktopL-Large"; 
+//!SECTION: END - HOME/LANDING PAGE: mobile -> Desktop
 // /*!SECTION: END - [RESPONSIVE DESIGN] */
