@@ -470,7 +470,66 @@ body .main-container .mobile-cta-footer .mobile-cta-footer__sm-links {
   }
 }
 /*!SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1000px */
-@media (min-width: 1920px) {
+/*SECTION ABOVE MOBILE PHONES - TABLET RANGE  - DESKTOP-SMALL -   >1280px */
+@media (min-width: 1280px) {
+  body {
+    background-image: url("/img/img-desktop-sm-1280/desktop-sm-about-bg.png");
+  }
+}
+/*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - DESKTOP-SMALL -   >1280px */
+/*!SECTION: END - [RESPONSIVE DESIGN] */
+@media (min-width: 1920px), (min-width: 1440px) {
+  .sitenav__hamburger {
+    display: none;
+  }
+  .sitenav {
+    display: none;
+  }
+  .sitenav__logo {
+    width: 144px;
+    height: 77px;
+    top: 0px;
+    left: 166px;
+  }
+  .sitenav__contactNum {
+    top: 75px;
+    left: 180px;
+    font-size: 1rem;
+  }
+  .mainnav__links {
+    display: flex;
+    list-style: none;
+    position: absolute;
+    top: 10px;
+    left: 620px;
+    z-index: 15;
+  }
+  .mainnav__links a {
+    font-family: proxima-nova, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    border: rgba(255, 255, 255, 0.368627451) 1px solid;
+    background-color: rgba(22, 22, 22, 0.1294117647);
+    padding: 5px 25px;
+    margin: 0px 5px;
+    font-size: 1.56rem;
+    color: #fff;
+    text-decoration: none;
+  }
+  .main-container {
+    justify-content: center;
+    position: relative;
+    top: 220px;
+  }
+}
+/*SECTION ABOVE MOBILE PHONES - TABLET RANGE  - COMMON MACBOOK -   >1440px */
+@media (min-width: 1440px) {
+  body {
+    background-image: url("/img/img-desktop-cm-1440/desktop-cm-about-bg.png");
+  }
+}
+/*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - COMMON MACBOOK -   >1440px */
+/*!SECTION: END - [RESPONSIVE DESIGN] */
+@media (min-width: 1920px), (min-width: 1440px) {
   .sitenav__hamburger {
     display: none;
   }

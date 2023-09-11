@@ -1,6 +1,19 @@
 /*SECTION ABOVE MOBILE PHONES - TABLET RANGE  - DESKTOP-SMALL -   >1280px */
-@media(min-width: 1280){
+@media(min-width: 1280px){
 
+    .main-container {
+		top: 0px !important; //resetting main-continer nav as in nav-bass it has an adjustment.
+	}
+
+    body{
+        .atf-1{
+            height: 720px; // height of the containing box
+			background-image: url("/img/img-desktop-sm-1280/desktop-sm-ps-ng-bg.PNG");
+			background-repeat: no-repeat;
+			background-position: left 0px top 0px; // first value left and right, second - top and bottom.
+			background-attachment: scroll;
+        }//end atf
+    }//end body
 }//end media query
 /*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - DESKTOP-SMALL -   >1280px */
 /*!SECTION: END - [RESPONSIVE DESIGN] */

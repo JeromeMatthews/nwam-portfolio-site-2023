@@ -1,5 +1,11 @@
 /*SECTION ABOVE MOBILE PHONES - TABLET RANGE  - DESKTOP-SMALL -   >1280px */
-@media(min-width: 1280){
+@import "..//partials/_nav-base-desktops";
+@media(min-width: 1280px){
+
+    body{
+        background: url("/img/img-desktop-sm-1280/desktop-sm-home-bg.PNG");
+
+    }//end body
 
 }//end media query
 /*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - DESKTOP-SMALL -   >1280px */

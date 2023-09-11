@@ -1,5 +1,8 @@
 /*SECTION ABOVE MOBILE PHONES - TABLET RANGE  - DESKTOP-SMALL -   >1280px */
-@media(min-width: 1280){
+@media(min-width: 1280px){
+    body{
+        background-image: url("/img/img-desktop-sm-1280/desktop-sm-blog-bg.png");
+    }//end body
 
 }//end media query
 /*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - DESKTOP-SMALL -   >1280px */

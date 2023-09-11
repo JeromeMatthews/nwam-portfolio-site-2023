@@ -1,5 +1,13 @@
+@import "..//partials/_nav-base-desktops";
 /*SECTION ABOVE MOBILE PHONES - TABLET RANGE  - COMMON MACBOOK -   >1440px */
-@media(min-width: 1440){
+@media(min-width: 1440px){
+    body{
+        //NOTE design varitant
+		background-image: url("/img/img-desktop-cm-1440/desktop-cm-contact-bg.png");
+		background-attachment: fixed;
+
+
+    }//end body
 
 }//end media query
 /*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - COMMON MACBOOK -   >1440px */

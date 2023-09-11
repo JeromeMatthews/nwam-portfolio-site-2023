@@ -1,5 +1,15 @@
 /*SECTION ABOVE MOBILE PHONES - TABLET RANGE  - DESKTOP-SMALL -   >1280px */
-@media(min-width: 1280){
+@media(min-width: 1280px){
+
+    body{
+        .main-container{
+            //NOTE: Design variant
+			background-image: url("/img/img-desktop-sm-1280/desktop-sm-ps-bg.PNG");
+
+            top: 0px;
+
+        }//end main-container
+    }//end body
 
 }//end media query
 /*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - DESKTOP-SMALL -   >1280px */

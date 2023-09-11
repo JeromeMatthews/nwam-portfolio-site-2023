@@ -1,5 +1,11 @@
 /*SECTION ABOVE MOBILE PHONES - TABLET RANGE  - COMMON MACBOOK -   >1440px */
-@media(min-width: 1440){
+@import "..//partials/_nav-base-desktops";
+@media(min-width: 1440px){
+
+    body{
+        background: url("/img/img-desktop-cm-1440/desktop-cm-home-bg.PNG");
+
+    }//end body
 
 }//end media query
 /*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - COMMON MACBOOK -   >1440px */

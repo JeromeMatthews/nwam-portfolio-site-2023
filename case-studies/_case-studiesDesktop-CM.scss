@@ -1,5 +1,21 @@
+@import "..//partials/_nav-base-desktops";
 /*SECTION ABOVE MOBILE PHONES - TABLET RANGE  - COMMON MACBOOK -   >1440px */
-@media(min-width: 1440){
+@media(min-width: 1440px){
+
+    .main-container {
+		top: 0px !important; //resetting main-continer nav as in nav-bass it has an adjustment.
+	}
+
+    body{
+        .atf-1{
+            height: 900px; // height of the containing box
+			background-image: url("/img/img-desktop-cm-1440/desktop-cm-ps-ng-bg.PNG");
+			background-repeat: no-repeat;
+			background-position: left 0px top 0px; // first value left and right, second - top and bottom.
+			background-attachment: scroll;
+        }//end atf
+    }//end body
+
 
 }//end media query
 /*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - COMMON MACBOOK -   >1440px */
