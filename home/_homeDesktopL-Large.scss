@@ -11,7 +11,7 @@
 	body {
 		//NOTE: Moved this code from the nav base css. Correcting the separation of concerns in the scss files. Ensures the Hero Copy is placed in the right area for Desktop screens. 
 		.main-container {
-            
+           
             position: relative;
             top: 220px;
         } // end main container
@@ -49,9 +49,7 @@
 				text-align: right;
 				line-height: 100%; //NOTE: The property for brining text vertically closer together.
 				// margin-bottom: 49px;// turn off the botttom margin for design at this variant.
-				@media (max-width: 359px) {
-					margin: 0px 57px 9px;
-				} //end hero__copy-body
+				
 			} // end hero__article-2
 		} // end hero__article-2
 

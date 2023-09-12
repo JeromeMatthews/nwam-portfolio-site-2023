@@ -1,25 +1,96 @@
 /*SECTION ABOVE MOBILE PHONES - TABLET RANGE  - COMMON MACBOOK -   >1440px */
 @import "..//partials/_nav-base-desktops-cm.scss";
-@media(min-width: 1440px){
-
-    body{
-        	//NOTE: Moved this code from the nav base css. Correcting the separation of concerns in the scss files. Ensures the Hero Copy is placed in the right area for Desktop screens. 
+@media (min-width: 1440px) {
+	.hero-section-1,
+	.hero-section-2,
+	.hero-section-3 {
+		@include flexMix;
+	}
+	body {
+		//NOTE: Moved this code from the nav base css. Correcting the separation of concerns in the scss files. Ensures the Hero Copy is placed in the right area for Desktop screens.
 		.main-container {
-            
-            position: relative;
-            top: 220px;
-        } // end main container
+			position: relative;
+			top: 220px;
+		} // end main container
 
+		background: url("/img/img-desktop-cm-1440/desktop-cm-home-bg.PNG");
 
-        background: url("/img/img-desktop-cm-1440/desktop-cm-home-bg.PNG");
+		.hero__copy {
+			//NOTE: Design Variant:
+			top: -72px;
+			right: -284px;
+			@include heroCopy;
+			font-size: $text3x-04; //48.75px;
+			margin: 0px 26px 61px 234px;
+			letter-spacing: 0px;
+			text-shadow: 0px 1px 1px #000000;
+			line-height: 110%; //NOTE: The property for brining text vertically closer together.
+			text-align: right;
+		} //end hero__copy
 
-        .hero__copy{
-            font-size:$text3x-04;//48.75px;
+		.hero__article-2 {
+			width: 50vw; //give the boxed look from the design.
+			.hero__copy-body {
+				position: relative;
+				top: -109px;
+				right: -307px;
+				margin: 0px 50px 0px 200px;
+				letter-spacing: 0px;
+				text-shadow: 1px 1px 0px #00000059;
+				opacity: 1;
+				text-align: right;
+				line-height: 100%; //NOTE: The property for brining text vertically closer together.
+				// margin-bottom: 49px;// turn off the botttom margin for design at this variant.
+			} //end hero__copy-body
+		} //end hero__article-2
 
-        }//end hero__copy
+		.hero-button {
+			background: #ffbf00 0% 0% no-repeat padding-box;
+			box-shadow: 0px 2px 0px #000000;
+			border: 1px solid #707070;
+			border-radius: 8px;
+			opacity: 1;
+			position: relative;
+			//NOTE: Design Variant:
+			top: -93px;
+			left: 477px;
 
-    }//end body
+			width: 284px; //25% less of the dimensions used in 1920px variant.
+			height: 56px; //25% less of the dimensions used in 1920px variant.
+			margin-bottom: 51px;
+			@include CTAButton;
+			//NOTE: Design Variant:
+			font-size: $text1x-37; //22px - //25% less of the font-size used in 1920px variant.
 
-}//end media query
+			text-decoration: none;
+
+			.hero-text {
+				//Font-size inherited from hero button declarations.
+				position: relative;
+				top: 10px;
+				margin: auto 10%;
+				text-align: center;
+			} //end hero-text
+		} // end hero-button
+
+		.main-footer {
+			.main-footer__social-icons {
+				display: flex;
+				margin: 0px;
+				padding: 0px;
+				list-style: none;
+				text-decoration: none;
+				justify-content: center;
+				//NOTE: Design vaieant: The outer container creates an offset, so this corrects for it. Centering the social media icons.
+				position: relative;
+				right: 3.5vw;
+
+				li {
+					margin-right: 10px;
+				} //end li
+			} //end social-icons
+		} //end main-footer
+	} //end body
+} //end media query
 /*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - COMMON MACBOOK -   >1440px */
 /*!SECTION: END - [RESPONSIVE DESIGN] */

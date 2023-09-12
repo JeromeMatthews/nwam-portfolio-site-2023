@@ -555,12 +555,71 @@ body .hero-button .hero-text {
 }
 
 @media (min-width: 1280px) {
+  .hero-section-1,
+  .hero-section-2,
+  .hero-section-3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
   body {
     background: url("/img/img-desktop-sm-1280/desktop-sm-home-bg.PNG");
   }
   body .main-container {
     position: relative;
     top: 220px;
+  }
+  body .hero__copy {
+    top: -72px;
+    right: -260px;
+    font-family: proxima-nova, Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 2.28rem;
+    margin: 0px 26px 61px 234px;
+    letter-spacing: 0px;
+    text-shadow: 0px 1px 1px #000000;
+    line-height: 110%;
+    text-align: right;
+  }
+  body .hero__article-2 {
+    width: 50vw;
+  }
+  body .hero__article-2 .hero__copy-body {
+    position: relative;
+    top: -109px;
+    right: -264px;
+    margin: 0px 50px 0px 200px;
+    letter-spacing: 0px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3490196078);
+    opacity: 1;
+    text-align: right;
+    line-height: 100%;
+  }
+  body .hero-button {
+    background: #ffbf00 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 0px #000000;
+    border: 1px solid #707070;
+    border-radius: 8px;
+    opacity: 1;
+    position: relative;
+    top: -93px;
+    left: 430px;
+    width: 213px;
+    height: 42px;
+    margin-bottom: 51px;
+    font-family: proxima-nova, Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 1rem;
+    text-decoration: none;
+  }
+  body .hero-button .hero-text {
+    position: relative;
+    top: 8px;
+    margin: auto 10%;
+    text-align: center;
   }
 }
 /*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - DESKTOP-SMALL -   >1280px */
@@ -605,6 +664,14 @@ body .hero-button .hero-text {
   }
 }
 @media (min-width: 1440px) {
+  .hero-section-1,
+  .hero-section-2,
+  .hero-section-3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
   body {
     background: url("/img/img-desktop-cm-1440/desktop-cm-home-bg.PNG");
   }
@@ -613,7 +680,68 @@ body .hero-button .hero-text {
     top: 220px;
   }
   body .hero__copy {
+    top: -72px;
+    right: -284px;
+    font-family: proxima-nova, Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-style: normal;
     font-size: 3.04rem;
+    margin: 0px 26px 61px 234px;
+    letter-spacing: 0px;
+    text-shadow: 0px 1px 1px #000000;
+    line-height: 110%;
+    text-align: right;
+  }
+  body .hero__article-2 {
+    width: 50vw;
+  }
+  body .hero__article-2 .hero__copy-body {
+    position: relative;
+    top: -109px;
+    right: -307px;
+    margin: 0px 50px 0px 200px;
+    letter-spacing: 0px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3490196078);
+    opacity: 1;
+    text-align: right;
+    line-height: 100%;
+  }
+  body .hero-button {
+    background: #ffbf00 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 0px #000000;
+    border: 1px solid #707070;
+    border-radius: 8px;
+    opacity: 1;
+    position: relative;
+    top: -93px;
+    left: 477px;
+    width: 284px;
+    height: 56px;
+    margin-bottom: 51px;
+    font-family: proxima-nova, Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 1.37rem;
+    text-decoration: none;
+  }
+  body .hero-button .hero-text {
+    position: relative;
+    top: 10px;
+    margin: auto 10%;
+    text-align: center;
+  }
+  body .main-footer .main-footer__social-icons {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    justify-content: center;
+    position: relative;
+    right: 3.5vw;
+  }
+  body .main-footer .main-footer__social-icons li {
+    margin-right: 10px;
   }
 }
 /*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - COMMON MACBOOK -   >1440px */
@@ -707,13 +835,6 @@ body .hero-button .hero-text {
     text-align: right;
     line-height: 100%;
   }
-}
-@media (min-width: 1920px) and (max-width: 359px) {
-  body .hero__article-2 .hero__copy-body {
-    margin: 0px 57px 9px;
-  }
-}
-@media (min-width: 1920px) {
   body .hero-button {
     background: #ffbf00 0% 0% no-repeat padding-box;
     box-shadow: 0px 2px 0px #000000;
