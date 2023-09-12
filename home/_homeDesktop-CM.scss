@@ -1,9 +1,22 @@
 /*SECTION ABOVE MOBILE PHONES - TABLET RANGE  - COMMON MACBOOK -   >1440px */
-@import "..//partials/_nav-base-desktops";
+@import "..//partials/_nav-base-desktops-cm.scss";
 @media(min-width: 1440px){
 
     body{
+        	//NOTE: Moved this code from the nav base css. Correcting the separation of concerns in the scss files. Ensures the Hero Copy is placed in the right area for Desktop screens. 
+		.main-container {
+            
+            position: relative;
+            top: 220px;
+        } // end main container
+
+
         background: url("/img/img-desktop-cm-1440/desktop-cm-home-bg.PNG");
+
+        .hero__copy{
+            font-size:$text3x-04;//48.75px;
+
+        }//end hero__copy
 
     }//end body
 

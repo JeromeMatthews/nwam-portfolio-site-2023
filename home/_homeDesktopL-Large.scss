@@ -9,6 +9,13 @@
 	}
 
 	body {
+		//NOTE: Moved this code from the nav base css. Correcting the separation of concerns in the scss files. Ensures the Hero Copy is placed in the right area for Desktop screens. 
+		.main-container {
+            
+            position: relative;
+            top: 220px;
+        } // end main container
+
 		background: url("/img/img-desktop-l/desktop-home-bg.png");
 		/*Using the  !important flag to overide the assignment of the background images for the diffrent veiwport variants of the design.*/
 

@@ -1,4 +1,4 @@
-@media (min-width: 1920px), (min-width: 1440px)  {
+@media (min-width: 1920px) {
         .sitenav__hamburger {
             display: none;
         } //end sitenav__hamburger
@@ -11,7 +11,7 @@
         .sitenav__logo {
             width: 144px;
             height: 77px;
-            top: 0px;
+            top: 10px;
             left: 166px;
         }
 
@@ -45,9 +45,5 @@
             }//end of a
         }//end of mainnav__links
 
-        .main-container {
-            justify-content: center;
-            position: relative;
-            top: 220px;
-        } // end main container
+      
 }//end media query
