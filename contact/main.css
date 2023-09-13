@@ -375,6 +375,65 @@ body .main-container .contact-form .contact-form__elements .mobile-cta-footer__b
     background-image: url("/img/img-desktop-sm-1280/desktop-sm-contact-bg.png");
     background-attachment: fixed;
   }
+  body .main-container .contact-container {
+    position: absolute;
+    top: -165px;
+    right: 99px;
+  }
+  body .main-container .contact-container .contact-heroCopy {
+    font-size: 2.28rem;
+    text-align: left;
+    position: relative;
+    left: -2px;
+  }
+  body .main-container .contact-container .contactheroimg {
+    margin: 25px auto;
+    padding: 0px;
+    position: relative;
+    top: 41px;
+    left: 107px;
+    width: 163px;
+    height: 77px;
+  }
+  body .main-container .contact-form .contact-form__elements .contact-form__element {
+    margin: 0px auto;
+  }
+  body .main-container .contact-form .contact-form__elements .contact-form__element input {
+    width: 398px;
+    height: 49px !important;
+  }
+  body .main-container .contact-form .contact-form__elements .contact-form__element .contact-form__label {
+    display: inline-block;
+    top: -12px;
+    width: 83px;
+    height: 49px;
+    border-radius: 8px 0px 0px 8px;
+  }
+  body .main-container .contact-form .contact-form__elements .contact-form__element .contact-form__label .label-text {
+    font-size: 1.12rem;
+    position: relative;
+    top: 25%;
+    bottom: 25%;
+  }
+  body .main-container .contact-form .contact-form__elements .contact-form__element .contact-form__input {
+    top: -4.5px;
+    font-size: 1.12rem;
+    border-radius: 0px 8px 8px 0px;
+  }
+  body .main-container .contact-form .contact-form__elements .contact-form__element .mobile-cta-footer__button {
+    width: 223px;
+    height: 42px;
+    position: relative;
+    top: 10px;
+    right: -130px;
+    font-size: 1.12rem;
+  }
+  body .main-container .contact-form textarea {
+    height: 163px;
+    border-radius: 8px;
+    font-family: futura-pt, Helvetica, Arial, sans-serif;
+    font-size: 1.56rem;
+  }
 }
 /*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - DESKTOP-SMALL -   >1280px */
 /*!SECTION: END - [RESPONSIVE DESIGN] */
@@ -425,7 +484,7 @@ body .main-container .contact-form .contact-form__elements .mobile-cta-footer__b
   body .main-container .contact-container {
     position: absolute;
     top: -165px;
-    right: 126px;
+    right: 89px;
   }
   body .main-container .contact-container .contact-heroCopy {
     font-size: 3.04rem;

@@ -8,14 +8,28 @@
 
         .main-container {
 			.contact-container {
-		
+				//NOTE design varitant
+				position: absolute; // better fit for the arrangement as relative is shifting the width of the container.
+				top: -165px;
+				right: 99px;
 
-				.contact-heroCopy {
-			
+				.contact-heroCopy { 
+					//NOTE design varitant
+					font-size: $text2x-28; //36.57px
+					text-align: left;
+                    position: relative;
+                    left: -2px;
 				} // end of contact-heroCopy
 
 				.contactheroimg {
-		
+					//NOTE design varitant
+					margin: 25px auto;
+					padding: 0px;
+					position: relative;
+					top: 41px;
+					left: 107px; //reseting left positioning from mobile settings.
+					width: 163px; //163.125.5px - //25% of dimensions in 1920px vaiant.
+					height: 77px; //77.25 - //25% of dimensions in 1920px vaiant.
 				}
 			} //end of contact-container
 
@@ -23,19 +37,36 @@
 				
 				.contact-form__elements {
 					.contact-form__element {
+						//NOTE: design variant for desktop screens.
+						margin: 0px auto;
 				
 						input {
+							//NOTE: design variant: 25% of dimensions in 1440px variant. Width: 397.5px and Height: 48.75px
+							width: 398px;
+							height: 49px !important; //using important to overide the inline styles made on the preious design variants. || 48.75 - 25% of dimensions in 1440px variant.
 				
 						} //end input
 
 						.contact-form__label {
+							//NOTE: design variant: 25% of dimensions in 1440px variant. Width: 82.5px and Height: 48.75px
+							display: inline-block;
+							top: -12px;
+							width: 83px;
+							height: 49px;
+							border-radius: 8px 0px 0px 8px;
 			
 
 							.label-text {
-				
+								font-size: $text1x-12; //18px
+								position: relative;
+								top: 25%;
+								bottom: 25%;
 							} //end label-text
 						} //end contact-form-label
 						.contact-form__input {
+							top: -4.5px; //slight realignment given the increase in font size to 21 px moved the input fields.
+							font-size: $text1x-12; //18px
+							border-radius: 0px 8px 8px 0px;
 			
 						} //end contact-form__input\
 					} //end contact-form-element
@@ -45,13 +76,24 @@
 
 					.contact-form__element {
 						.mobile-cta-footer__button {
+							//NOTE: design variant:
+							width: 223px; //222.75 //25% of dimensions in 1440px
+							height: 42px;//42px - //25% of dimensions in 1440px
+							position: relative;
+							top: 10px;
+							right: -130px;
+							font-size: $text1x-12; //18px
 
 						} //end mobile-cta-footer__button
 					} //end contact-form-element
 				} // end contact-form__elements
 
 				textarea {
-	
+					height: 163px; //163.125px - //25% of dimensions in 1440px 
+					border-radius: 8px;
+					font-family: $font-list-b;
+					font-size: $text1x-56; //25px
+
 				}
 			} //end contact-form
 		} // end main-container
