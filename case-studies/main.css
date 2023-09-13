@@ -1135,6 +1135,138 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
     background-position: left 0px top 0px;
     background-attachment: scroll;
   }
+  body .atf-1 .cs-project {
+    position: relative;
+    width: 379.125px;
+    height: 280.33px;
+    top: -132px;
+    left: 0px;
+    background-color: rgba(255, 255, 255, 0.11);
+    border-radius: 1%;
+    margin: 0px;
+  }
+  body .atf-1 .cs-project .cs-project__title {
+    font-size: 1.56rem;
+  }
+  body .atf-1 .cs-project .cs-project__services .cs-project__service {
+    font-size: 1.187rem;
+  }
+  body .atf-1 .cs-client-details {
+    position: relative;
+    width: 379.125px;
+    height: 280.33px;
+    top: 174px;
+    left: -379px;
+    background-color: rgba(255, 255, 255, 0.11);
+    border-radius: 1%;
+    margin: 0px;
+  }
+  body .atf-1 .cs-client-details .cs-client-details__title {
+    font-size: 1.56rem;
+  }
+  body .atf-1 .cs-client-details .cs-client-details__status {
+    font-size: 1.25rem;
+  }
+  body .atf-1 .cs-client-details .status-flag {
+    font-size: 1.25rem;
+  }
+  body .atf-1 .cs-client-details .cs-client-details__text {
+    font-size: 1.12rem;
+  }
+  body .btf-2 .btf-2__project-container-box {
+    position: relative;
+    width: 454.95px;
+    height: 585.225px;
+    top: -339px;
+    left: 239px;
+    background-color: rgba(255, 255, 255, 0.11);
+    border-radius: 1%;
+    margin: 0px;
+    z-index: 1;
+    padding-right: 45px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body .btf-2 .btf-2__project-container-box .cs-project-desc__title {
+    font-size: 1.56rem;
+  }
+  body .btf-2 .btf-2__project-container-box .cs-project-sum__title {
+    font-size: 1.56rem;
+  }
+  body .btf-2 .btf-2__project-container-box .cs-project-desc {
+    top: -10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body .btf-2 .btf-2__project-container-box .cs-project-desc .cs-project-desc__text {
+    font-size: 1.12rem;
+  }
+  body .btf-2 .btf-2__project-container-box .project-info-divider {
+    width: 90%;
+    top: -94px;
+  }
+  body .btf-2 .btf-2__project-container-box .cs-project-sum {
+    top: -109px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body .btf-2 .btf-2__project-container-box .cs-project-sum .cs-project-sum__text-1 .cs-project-sum__text__head {
+    font-size: 1.12rem;
+  }
+  body .btf-2 .btf-2__project-container-box .cs-project-sum .cs-project-sum__text-1 .cs-project-sum__text__body {
+    font-size: 1.12rem;
+  }
+  body .mobile-cta-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 800px;
+    background-color: #fff;
+    color: black;
+  }
+  body .mobile-cta-footer .mobile-cta-footer-branding .mobile-cta-footer-branding__text-1,
+  body .mobile-cta-footer .mobile-cta-footer-branding .mobile-cta-footer-branding__text-2 {
+    font-family: proxima-nova, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.81rem;
+    margin: 0px 12px;
+  }
+  body .mobile-cta-footer .mobile-cta-footer-branding .mobile-cta-footer__logo {
+    width: 155px;
+    height: 55px;
+    position: relative;
+    top: -59px;
+    left: 315px;
+  }
+  body .mobile-cta-footer .mobile-cta-footer__button {
+    width: 379px;
+    height: 74px;
+    background: #f5b600 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 0px #000000;
+    border-radius: 5px;
+    font-family: proxima-nova, Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 1.87rem;
+    position: relative;
+  }
+  body .mobile-cta-footer .mobile-cta-footer__button .hero-text {
+    top: 13px;
+  }
+  body .mobile-cta-footer .mobile-cta-footer__sm-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    align-content: center;
+    position: relative;
+    padding: 0px;
+  }
 }
 /*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - DESKTOP-SMALL -   >1280px */
 /*!SECTION: END - [RESPONSIVE DESIGN] */
@@ -1225,6 +1357,192 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
     background-repeat: no-repeat;
     background-position: left 0px top 0px;
     background-attachment: scroll;
+  }
+  body .atf-1 .cs-project {
+    position: relative;
+    width: 505.5px;
+    height: 329.8px;
+    top: -178px;
+    left: -6px;
+    background-color: rgba(255, 255, 255, 0.11);
+    border-radius: 1%;
+    margin: 0px;
+  }
+  body .atf-1 .cs-project .cs-project__title {
+    font-size: 2.125rem;
+  }
+  body .atf-1 .cs-project .cs-project__services .cs-project__service {
+    font-size: 1.187rem;
+  }
+  body .atf-1 .cs-client-details {
+    position: relative;
+    width: 505.5px;
+    height: 329.8px;
+    top: 160px;
+    left: -512px;
+    background-color: rgba(255, 255, 255, 0.11);
+    border-radius: 1%;
+    margin: 0px;
+  }
+  body .atf-1 .cs-client-details .cs-client-details__title {
+    font-size: 2.125rem;
+  }
+  body .atf-1 .cs-client-details .cs-client-details__status {
+    font-size: 1.64rem;
+  }
+  body .atf-1 .cs-client-details .status-flag {
+    font-size: 1.64rem;
+  }
+  body .atf-1 .cs-client-details .cs-client-details__text {
+    font-size: 1.12rem;
+  }
+  body .btf-2 .btf-2__project-container-box {
+    position: relative;
+    width: 505.5px;
+    height: 668.5px;
+    top: -460px;
+    left: 259px;
+    background-color: rgba(255, 255, 255, 0.11);
+    border-radius: 1%;
+    margin: 0px;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body .btf-2 .btf-2__project-container-box .cs-project-desc__title {
+    font-size: 2.125rem;
+  }
+  body .btf-2 .btf-2__project-container-box .cs-project-sum__title {
+    font-size: 2.125rem;
+  }
+  body .btf-2 .btf-2__project-container-box .cs-project-desc {
+    top: -10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body .btf-2 .btf-2__project-container-box .cs-project-desc .cs-project-desc__text {
+    font-size: 1.12rem;
+  }
+  body .btf-2 .btf-2__project-container-box .project-info-divider {
+    width: 90%;
+    top: -94px;
+  }
+  body .btf-2 .btf-2__project-container-box .cs-project-sum {
+    top: -109px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body .btf-2 .btf-2__project-container-box .cs-project-sum .cs-project-sum__text-1 .cs-project-sum__text__head {
+    font-size: 1.12rem;
+  }
+  body .btf-2 .btf-2__project-container-box .cs-project-sum .cs-project-sum__text-1 .cs-project-sum__text__body {
+    font-size: 1.12rem;
+  }
+  body .btl {
+    height: 300px;
+    text-align: center;
+  }
+  body .btl .btl__title-container {
+    position: relative;
+  }
+  body .btl .btl__title-container .btl__title {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  body .btl .btl__title-container .btl__title .btl__title-1 {
+    font-size: 4.921rem;
+  }
+  body .btl .btl__title-container .btl__title .btl__title-2 {
+    font-size: 4.921rem;
+  }
+  body .btl .btl__title-container .btl__text {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    line-height: normal;
+  }
+  body .btl .btl__title-container .btl__text .btl__text-1 {
+    position: relative;
+    left: 0px;
+    font-size: 2.343rem;
+  }
+  body .btl .btl__title-container .btl__text .btl__text-2 {
+    position: relative;
+    top: 0px;
+    right: 0px;
+    font-size: 2.343rem;
+  }
+  body .btl-content-block-1 .btl-content-block__time {
+    font-size: 3.281rem;
+    align-self: start;
+    left: 120px;
+    top: 5px;
+    text-decoration: underline;
+  }
+  body .btl-content-block-1 .btl-content-block__time-text_2 {
+    font-size: 3.281rem;
+    position: absolute;
+    left: 737px;
+    top: 4px;
+    text-decoration: underline;
+  }
+  body .btl-content-block-1 .btl-content-block__sub {
+    font-size: 1.187rem;
+  }
+  body .btl-content-block-1 .btl-content-block__text {
+    font-size: 1.187rem;
+  }
+  body .btl-content-block-2 {
+    justify-content: start;
+  }
+  body .btl-content-block-2 .btl-content-block__time {
+    font-size: 3.281rem;
+    align-self: start;
+    left: 120px;
+    top: 5px;
+    text-decoration: underline;
+  }
+  body .btl-content-block-2 .btl-content-block__time__sub {
+    font-size: 3.281rem;
+    position: absolute;
+    left: 737px;
+    top: 4px;
+    text-decoration: underline;
+  }
+  body .btl-content-block-2 .btl-content-block__sub {
+    font-size: 1.187rem;
+  }
+  body .btl-content-block-2 .btl-content-block__text {
+    font-size: 1.187rem;
+  }
+  body .mobile-cta-footer .mobile-cta-footer-branding .mobile-cta-footer-branding__text-1,
+  body .mobile-cta-footer .mobile-cta-footer-branding .mobile-cta-footer-branding__text-2 {
+    font-size: 4.375rem;
+  }
+  body .mobile-cta-footer .mobile-cta-footer-branding .mobile-cta-footer__logo {
+    display: none;
+  }
+  body .mobile-cta-footer .mobile-cta-footer-branding .mobile-cta-footer__logo-l {
+    display: block !important;
+    height: 137px;
+    position: relative;
+    top: -117px;
+    left: 485px;
+    overflow: hidden;
+  }
+  body .mobile-cta-footer .mobile-cta-footer__button {
+    position: relative;
+    top: -110px;
+  }
+  body .mobile-cta-footer .mobile-cta-footer__button .hero-text {
+    top: 13px;
+  }
+  body .mobile-cta-footer .mobile-cta-footer__sm-links {
+    top: -100px;
   }
 }
 /*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - COMMON MACBOOK -   >1440px */
