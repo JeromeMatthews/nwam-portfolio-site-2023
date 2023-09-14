@@ -9,6 +9,113 @@
 
             top: 0px;
 
+
+            .show-box {
+                .show-box__title {
+                    //NOTE: Design variant
+                    font-size: $text1x-64; //25.5px = 26px - 25% of the dimensions of the 1440px variant.
+                }
+                .show-box__subtitle {
+                    //NOTE: Design variant: instansiated on large viewports.
+                    display: block !important;
+                    font-size: $text1X-25; //19.5px = 20px - 25% of the dimensions of the 1440px variant.
+                }
+                .show-box__text {
+                    //NOTE: Design variant
+                    top: -24px;
+                    font-size: $text1x-12; //18px - used. Base text size for all Desktop viewports. 
+                } //end show-box__text
+            } //end show-box
+
+            #show-box-1,
+            #show-box-2,
+            #show-box-3 {
+                //NOTE: design variant
+                width: 276px; //275.625 = 276px - 25% of the dimensions of the 1440px variant.
+                height: 275px;//274.5 = 275px - 25% of the dimensions of the 1440px variant.
+            } //end show-box-group styles
+
+            #show-box-1 {
+                //NOTE: design variant
+                background-image: url("/img/img-desktop-l/desktop-ps-natours-bg.png");
+
+                //NOTE: Added the overlay to help strengthen the contrast of the text against the background image
+                .show-box__overlay {
+                    @include showBoxOverlay;
+
+                    //NOTE: design variant
+                    width: 276px; //275.625 = 276px - 25% of the dimensions of the 1440px variant.
+                    height: 275px;//274.5 = 275px - 25% of the dimensions of the 1440px variant.
+                } //end show-box__overlay
+            } //end show-box-1
+
+            #show-box-2 {
+                //NOTE: design variant
+                // Scales since its an svg image.
+                .show-box__overlay {
+                    @include showBoxOverlay;
+                    //NOTE: design variant
+                    width: 276px; //275.625 = 276px - 25% of the dimensions of the 1440px variant.
+                    height: 275px;//274.5 = 275px - 25% of the dimensions of the 1440px variant.
+                } //end show-box__overlay
+            } //end show-box-2
+
+            #show-box-3 {
+                //NOTE: design variant
+                background-image: url("/img/img-desktop-l/desktop-ps-beam-bg.png");
+                .show-box__overlay {
+                    @include showBoxOverlay;
+                    //NOTE: design variant
+                    width: 276px; //275.625 = 276px - 25% of the dimensions of the 1440px variant.
+                    height: 275px;//274.5 = 275px - 25% of the dimensions of the 1440px variant.
+                } //end show-box__overlay
+            } //end show-box-3
+
+            //specific placement for lower nav elements:
+            .lower-nav-container {
+                display: block !important;
+
+                bottom: 40px;
+                width: 100%;
+                position: fixed;
+                //NOTE: Design variant: Used the container for positioning the elements of the lower nav. With it being absolutely placed, we can use relative positioning for the child elements (chevrons and the social icons)
+                left: 50vw;
+
+                .nav-chevrons {
+                    position: relative; // NOTE: Relative to the parent lower-nav-container div.
+                    top: -18px;
+                    right: 16px;
+                    .left-chev {
+                        position: inherit;
+                        left: -21px; //pull chevron to the left a little
+                    } //end left-chev
+
+                    .right-chev {
+                        position: inherit;
+                        right: -21px; //pull chevron to the right a little
+                    } //end right-chev
+                } //end nav-chevrons
+
+                .main-footer {
+                    .main-footer__social-icons {
+                        display: flex;
+                        margin: 0px;
+                        padding: 0px;
+                        list-style: none;
+                        text-decoration: none;
+                        justify-content: center;
+                        //NOTE: Design vaieant: The outer container creates an offset, so this corrects for it. Centering the social media icons.
+                        position: relative;
+                        right: 49.8vw;
+
+                        li {
+                            margin-right: 10px;
+                        } //end li
+                    } //end social-icons
+                } //end main-footer
+            } // end lower-nav-elements
+
+
         }//end main-container
     }//end body
 

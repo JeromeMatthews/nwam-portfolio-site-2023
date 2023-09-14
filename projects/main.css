@@ -433,6 +433,89 @@ body .show-box .show-box__text {
     background-image: url("/img/img-desktop-sm-1280/desktop-sm-ps-bg.PNG");
     top: 0px;
   }
+  body .main-container .show-box .show-box__title {
+    font-size: 1.64rem;
+  }
+  body .main-container .show-box .show-box__subtitle {
+    display: block !important;
+    font-size: 1.25rem;
+  }
+  body .main-container .show-box .show-box__text {
+    top: -24px;
+    font-size: 1.12rem;
+  }
+  body .main-container #show-box-1,
+  body .main-container #show-box-2,
+  body .main-container #show-box-3 {
+    width: 276px;
+    height: 275px;
+  }
+  body .main-container #show-box-1 {
+    background-image: url("/img/img-desktop-l/desktop-ps-natours-bg.png");
+  }
+  body .main-container #show-box-1 .show-box__overlay {
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(31, 31, 31, 0.562);
+    width: 197px;
+    height: 197px;
+    width: 276px;
+    height: 275px;
+  }
+  body .main-container #show-box-2 .show-box__overlay {
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(31, 31, 31, 0.562);
+    width: 197px;
+    height: 197px;
+    width: 276px;
+    height: 275px;
+  }
+  body .main-container #show-box-3 {
+    background-image: url("/img/img-desktop-l/desktop-ps-beam-bg.png");
+  }
+  body .main-container #show-box-3 .show-box__overlay {
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(31, 31, 31, 0.562);
+    width: 197px;
+    height: 197px;
+    width: 276px;
+    height: 275px;
+  }
+  body .main-container .lower-nav-container {
+    display: block !important;
+    bottom: 40px;
+    width: 100%;
+    position: fixed;
+    left: 50vw;
+  }
+  body .main-container .lower-nav-container .nav-chevrons {
+    position: relative;
+    top: -18px;
+    right: 16px;
+  }
+  body .main-container .lower-nav-container .nav-chevrons .left-chev {
+    position: inherit;
+    left: -21px;
+  }
+  body .main-container .lower-nav-container .nav-chevrons .right-chev {
+    position: inherit;
+    right: -21px;
+  }
+  body .main-container .lower-nav-container .main-footer .main-footer__social-icons {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    justify-content: center;
+    position: relative;
+    right: 49.8vw;
+  }
+  body .main-container .lower-nav-container .main-footer .main-footer__social-icons li {
+    margin-right: 10px;
+  }
 }
 /*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - DESKTOP-SMALL -   >1280px */
 /*!SECTION: END - [RESPONSIVE DESIGN] */
@@ -479,6 +562,89 @@ body .show-box .show-box__text {
   body .main-container {
     background-image: url("/img/img-desktop-cm-1440/desktop-cm-ps-bg.PNG");
     top: 0px;
+  }
+  body .main-container .show-box .show-box__title {
+    font-size: 2.125rem;
+  }
+  body .main-container .show-box .show-box__subtitle {
+    display: block !important;
+    font-size: 1.64rem;
+  }
+  body .main-container .show-box .show-box__text {
+    top: -35px;
+    font-size: 1.12rem;
+  }
+  body .main-container #show-box-1,
+  body .main-container #show-box-2,
+  body .main-container #show-box-3 {
+    width: 367.5px;
+    height: 366px;
+  }
+  body .main-container #show-box-1 {
+    background-image: url("/img/img-desktop-l/desktop-ps-natours-bg.png");
+  }
+  body .main-container #show-box-1 .show-box__overlay {
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(31, 31, 31, 0.562);
+    width: 197px;
+    height: 197px;
+    width: 367.5px;
+    height: 366px;
+  }
+  body .main-container #show-box-2 .show-box__overlay {
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(31, 31, 31, 0.562);
+    width: 197px;
+    height: 197px;
+    width: 367.5px;
+    height: 366px;
+  }
+  body .main-container #show-box-3 {
+    background-image: url("/img/img-desktop-l/desktop-ps-beam-bg.png");
+  }
+  body .main-container #show-box-3 .show-box__overlay {
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(31, 31, 31, 0.562);
+    width: 197px;
+    height: 197px;
+    width: 367.5px;
+    height: 366px;
+  }
+  body .main-container .lower-nav-container {
+    display: block !important;
+    bottom: 40px;
+    width: 100%;
+    position: fixed;
+    left: 50vw;
+  }
+  body .main-container .lower-nav-container .nav-chevrons {
+    position: relative;
+    top: -18px;
+    right: 16px;
+  }
+  body .main-container .lower-nav-container .nav-chevrons .left-chev {
+    position: inherit;
+    left: -21px;
+  }
+  body .main-container .lower-nav-container .nav-chevrons .right-chev {
+    position: inherit;
+    right: -21px;
+  }
+  body .main-container .lower-nav-container .main-footer .main-footer__social-icons {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    justify-content: center;
+    position: relative;
+    right: 49.8vw;
+  }
+  body .main-container .lower-nav-container .main-footer .main-footer__social-icons li {
+    margin-right: 10px;
   }
 }
 /*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - COMMON MACBOOK -   >1440px */
