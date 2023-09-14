@@ -516,6 +516,55 @@ body .main-container .mobile-cta-footer .mobile-cta-footer__sm-links {
   body {
     background-image: url("/img/img-desktop-sm-1280/desktop-sm-about-bg.png");
   }
+  body .main-container .about-hero .about-hero__copy {
+    position: relative;
+    margin: 100px 60px 350px 155px;
+    left: -150px;
+    margin-top: 220px;
+  }
+  body .main-container .about-hero .about-hero__text {
+    font-size: 3.12rem;
+    text-align: left;
+    line-height: 99%;
+    position: relative;
+    top: 26px;
+  }
+  body .main-container .body-sect-1 .body-sect-1-art {
+    margin-bottom: 290px;
+  }
+  body .main-container .body-sect-1 .body-sect-1-art .body-sect-1__head {
+    margin: 50px 167px 10px 450px;
+    font-size: 3.875rem;
+    text-align: right;
+    position: relative;
+    right: -150px;
+    margin-top: 290px;
+    margin-left: 400px;
+  }
+  body .main-container .body-sect-1 .body-sect-1-art .body-sect-1__text {
+    font-size: 1.12rem;
+  }
+  body .main-container .body-sect-2 .body-sect-2-art {
+    margin-bottom: 290px;
+  }
+  body .main-container .body-sect-2 .body-sect-2-art .body-sect-2__head {
+    font-size: 3.875rem;
+    text-align: left;
+    margin: 0px;
+    margin-top: 290px;
+  }
+  body .main-container .body-sect-2 .body-sect-2-art .body-sect-2__text {
+    font-size: 1.12rem;
+  }
+  body .main-container .body-sect-3 .body-sect-3-art .body-sect-3__head {
+    font-size: 3.875rem;
+    text-align: right;
+    margin: 0px;
+    margin-top: 290px;
+  }
+  body .main-container .body-sect-3 .body-sect-3-art .body-sect-3__text {
+    font-size: 1.12rem;
+  }
 }
 /*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - DESKTOP-SMALL -   >1280px */
 /*!SECTION: END - [RESPONSIVE DESIGN] */
@@ -561,6 +610,54 @@ body .main-container .mobile-cta-footer .mobile-cta-footer__sm-links {
 @media (min-width: 1440px) {
   body {
     background-image: url("/img/img-desktop-cm-1440/desktop-cm-about-bg.png");
+  }
+  body .main-container .about-hero .about-hero__copy {
+    position: relative;
+    margin: 100px 60px 350px 155px;
+    left: -150px;
+    margin-top: 220px;
+  }
+  body .main-container .about-hero .about-hero__text {
+    font-size: 4.187rem;
+    text-align: left;
+    line-height: 99%;
+    position: relative;
+    top: 66px;
+  }
+  body .main-container .body-sect-1 .body-sect-1-art {
+    margin-bottom: 290px;
+  }
+  body .main-container .body-sect-1 .body-sect-1-art .body-sect-1__head {
+    margin: 50px 167px 10px 450px;
+    font-size: 5.187rem;
+    text-align: right;
+    position: relative;
+    right: -150px;
+    margin-top: 290px;
+  }
+  body .main-container .body-sect-1 .body-sect-1-art .body-sect-1__text {
+    font-size: 1.437rem;
+  }
+  body .main-container .body-sect-2 .body-sect-2-art {
+    margin-bottom: 290px;
+  }
+  body .main-container .body-sect-2 .body-sect-2-art .body-sect-2__head {
+    font-size: 5.187rem;
+    text-align: left;
+    margin: 0px;
+    margin-top: 290px;
+  }
+  body .main-container .body-sect-2 .body-sect-2-art .body-sect-2__text {
+    font-size: 1.437rem;
+  }
+  body .main-container .body-sect-3 .body-sect-3-art .body-sect-3__head {
+    font-size: 5.187rem;
+    text-align: right;
+    margin: 0px;
+    margin-top: 290px;
+  }
+  body .main-container .body-sect-3 .body-sect-3-art .body-sect-3__text {
+    font-size: 1.437rem;
   }
 }
 /*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - COMMON MACBOOK -   >1440px */
@@ -617,11 +714,13 @@ body .main-container .mobile-cta-footer .mobile-cta-footer__sm-links {
     font-size: 5.62rem;
     text-align: left;
     line-height: 99%;
+    position: relative;
+    top: 151px;
   }
   body .main-container .lower-nav-container {
     display: block !important;
     position: absolute;
-    top: 608px;
+    top: 828px;
     left: 50vw;
   }
   body .main-container .lower-nav-container .nav-chevrons {

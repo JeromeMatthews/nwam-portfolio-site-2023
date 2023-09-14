@@ -17,6 +17,9 @@
 					font-size: $text5x-62; //90px;
 					text-align: left;
 					line-height: 99%;
+					//NOTE: Design variant: adjustmnet to Hero copy positioning. 
+					position: relative;
+    				top: 151px;
 				}
 			} //end of about-hero
 
@@ -24,7 +27,7 @@
 				display: block !important;
 				position: absolute;
 				//NOTE: Design variant: Used the container for positioning the elements of the lower nav. With it being absolutely placed, we can use relative positioning for the child elements (chevrons and the social icons)
-				top: 608px; //NOTE: placement to match the home, projects, and about positioning of the nav.
+				top: 828px; //NOTE: placement to match the home, projects, and about positioning of the nav.
 				left: 50vw;
 
 				.nav-chevrons {
