@@ -5,7 +5,7 @@
 		position: relative;
 		width: 674px;
 		height: 388px;
-		top: -170px;
+		top: -214px;
 		left: -6px;
 		background-color: rgba(255, 255, 255, 0.11);
 		border-radius: 1%;
@@ -16,7 +16,7 @@
 		position: relative;
 		width: 674px;
 		height: 388px;
-		top: 250px;
+		top: 209px;
 		left: -680px;
 		background-color: rgba(255, 255, 255, 0.11);
 		border-radius: 1%;
@@ -28,7 +28,7 @@
 		position: relative;
 		width: 674px;
 		height: 810px;
-		top: -460px;
+		top: -502px;
 		left: 350px;
 		background-color: rgba(255, 255, 255, 0.11);
 		border-radius: 1%;
@@ -154,6 +154,13 @@
 
 		.btl {
 			height: 400px;
+			
+			//NOTE: Design variant: The BTL sections was moved up to cover the gap made after adjusting the ATF image for the page to better reflect the inner viewport dimensions (height specifically) on 1920px width devices. The actual amount of viewable pixels is 919px not 1080px as is stated, generally.
+			//919px height is the full amount of viewble pixels when working with browsers for the web.  -See also: .btl-content-block-1: margin-top:-81px assignment, -> Main_footer: 100vh assignment. 
+			position: relative;
+    		top: -81px;
+
+
 			text-align: center;
 			.btl__title-container {
 				position: relative;
@@ -217,6 +224,7 @@
 
 		.btl-content-block-1 {
 			//NOTE: Design variant:
+			margin-top: -82px;
 
 			.btl-content-block__time {
 				//NOTE: design variant: //reseting position witihin parent.
@@ -325,6 +333,9 @@
 		} //end btl-content-block-2
 
 		.mobile-cta-footer {
+			//NOTE: Design Variant: Added 100% viewport height assignment to the footer section to even out the adjustments made to the BETWEEN THE LINES section of the case studies page. The BTL sections was moved up to cover the gap made after adjusting the ATF image for the page to better reflect the inner viewport dimensions (height specifically) on 1920px width devices. The actual amount of viewable pixels is 919px not 1080px as is stated, generally.
+			//919px height is the full amount of viewble pixels when working with browsers for the web.  
+			height: 100vh;
 			.mobile-cta-footer-branding {
 				.mobile-cta-footer-branding__text-1,
 				.mobile-cta-footer-branding__text-2 {

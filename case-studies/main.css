@@ -1216,6 +1216,87 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
   body .btf-2 .btf-2__project-container-box .cs-project-sum .cs-project-sum__text-1 .cs-project-sum__text__body {
     font-size: 1.12rem;
   }
+  body .btl {
+    height: 225px;
+    text-align: center;
+  }
+  body .btl .btl__title-container {
+    position: relative;
+  }
+  body .btl .btl__title-container .btl__title {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  body .btl .btl__title-container .btl__title .btl__title-1 {
+    font-size: 3.68rem;
+  }
+  body .btl .btl__title-container .btl__title .btl__title-2 {
+    font-size: 3.68rem;
+  }
+  body .btl .btl__title-container .btl__text {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    line-height: normal;
+  }
+  body .btl .btl__title-container .btl__text .btl__text-1 {
+    position: relative;
+    left: 0px;
+    font-size: 1.75rem;
+  }
+  body .btl .btl__title-container .btl__text .btl__text-2 {
+    position: relative;
+    top: 0px;
+    right: 0px;
+    font-size: 1.75rem;
+  }
+  body .btl-content-block-1 .btl-content-block__time {
+    font-size: 2.43rem;
+    align-self: start;
+    left: 120px;
+    top: 5px;
+    text-decoration: underline;
+  }
+  body .btl-content-block-1 .btl-content-block__time-text_2 {
+    font-size: 2.43rem;
+    position: absolute;
+    left: 592px;
+    top: 4px;
+    text-decoration: underline;
+  }
+  body .btl-content-block-1 .btl-content-block__sub {
+    font-size: 1.187rem;
+  }
+  body .btl-content-block-1 .btl-content-block__text {
+    font-size: 1.187rem;
+  }
+  body .btl-content-block-2 {
+    justify-content: start;
+  }
+  body .btl-content-block-2 .btl-content-block__time {
+    font-size: 2.43rem;
+    align-self: start;
+    left: 120px;
+    top: 5px;
+    text-decoration: underline;
+  }
+  body .btl-content-block-2 .btl-content-block__time__sub {
+    font-size: 2.43rem;
+    position: absolute;
+    left: 592px;
+    top: 4px;
+    text-decoration: underline;
+  }
+  body .btl-content-block-2 .btl-content-block__sub {
+    font-size: 1.187rem;
+  }
+  body .btl-content-block-2 .btl-content-block__text {
+    font-size: 1.187rem;
+  }
   body .mobile-cta-footer {
     display: flex;
     flex-direction: row;
@@ -1601,7 +1682,7 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
     position: relative;
     width: 674px;
     height: 388px;
-    top: -170px;
+    top: -214px;
     left: -6px;
     background-color: rgba(255, 255, 255, 0.11);
     border-radius: 1%;
@@ -1617,7 +1698,7 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
     position: relative;
     width: 674px;
     height: 388px;
-    top: 250px;
+    top: 209px;
     left: -680px;
     background-color: rgba(255, 255, 255, 0.11);
     border-radius: 1%;
@@ -1639,7 +1720,7 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
     position: relative;
     width: 674px;
     height: 810px;
-    top: -460px;
+    top: -502px;
     left: 350px;
     background-color: rgba(255, 255, 255, 0.11);
     border-radius: 1%;
@@ -1673,6 +1754,8 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
   }
   body .btl {
     height: 400px;
+    position: relative;
+    top: -81px;
     text-align: center;
   }
   body .btl .btl__title-container {
@@ -1708,6 +1791,9 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
     top: 0px;
     right: 0px;
     font-size: 3.12rem;
+  }
+  body .btl-content-block-1 {
+    margin-top: -82px;
   }
   body .btl-content-block-1 .btl-content-block__time {
     font-size: 4.375rem;
@@ -1790,6 +1876,9 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
     background-color: #ffffff;
     width: 8px;
     height: 100%;
+  }
+  body .mobile-cta-footer {
+    height: 100vh;
   }
   body .mobile-cta-footer .mobile-cta-footer-branding .mobile-cta-footer-branding__text-1,
   body .mobile-cta-footer .mobile-cta-footer-branding .mobile-cta-footer-branding__text-2 {

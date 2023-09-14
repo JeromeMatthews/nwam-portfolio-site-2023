@@ -161,175 +161,147 @@
 			} //end btf-2__project-container-box
 		} //end btf-2
 
-		// .btl {
-		// 	height: 300px; // 25% of the dimenions of 1920px variant.
-		// 	text-align: center;
-		// 	.btl__title-container {
-		// 		position: relative;
-		// 		// top: 40px;
-		// 		//NOTE: Made an extra container to hold all the titles and more easily move them around.
+		.btl {
+			height: 225px; // 25% of the dimenions of 1440px variant.
+			text-align: center;
+			.btl__title-container {
+				position: relative;
+				// top: 40px;
+				//NOTE: Made an extra container to hold all the titles and more easily move them around.
 
-		// 		.btl__title {
-		// 			//NOTE: Design variant - Expanded the area of the text heading by widening the margins to make use of the wider screen space as in the design for this viewport. Moved the "THE LINES" title section up, so it can be aligned with the first title. "BETWEEN" and "THE LINES" were separated to make it easier to stack them in the mobile viewport design variation (smaller screen to work with)
+				.btl__title {
+					//NOTE: Design variant - Expanded the area of the text heading by widening the margins to make use of the wider screen space as in the design for this viewport. Moved the "THE LINES" title section up, so it can be aligned with the first title. "BETWEEN" and "THE LINES" were separated to make it easier to stack them in the mobile viewport design variation (smaller screen to work with)
 
-		// 			// margin-left: 200px;
-		// 			// margin-right: 200px;
-		// 			//Makes "BETWEEN THE LINES " TEXT one line again.
-		// 			@include flexMix;
+					// margin-left: 200px;
+					// margin-right: 200px;
+					//Makes "BETWEEN THE LINES " TEXT one line again.
+					@include flexMix;
 
-		// 			.btl__title-1 {
-		// 				//NOTE: Design variant
-		// 				font-size:$text4x-92; //78.5px // 25% of the dimenions of 1920px variant.
-		// 			} //end of btl__title-1
+					.btl__title-1 {
+						//NOTE: Design variant
+						font-size:$text3x-68; //58.875px  = 59px // 25% of the dimensions of 1440px variant.
+					} //end of btl__title-1
 
-		// 			.btl__title-2 {
-		// 				//NOTE: Design variant
-		//                 font-size:$text4x-92; //78.5px // 25% of the dimenions of 1920px variant.
+					.btl__title-2 {
+						//NOTE: Design variant
+		                font-size:$text3x-68; //58.875px  = 59px // 25% of the dimensions of 1440px variant.
+					
+					} //end of btl__title-2
+				} //end of btl-title
 
-		// 				// position: relative;
-		// 				// top: -45px;
-		// 				// right: -99px;
-		// 			} //end of btl__title-2
-		// 		} //end of btl-title
+				.btl__text {
+					//NOTE Design variant
 
-		// 		.btl__text {
-		// 			//NOTE Design variant
+					// margin-left: 200px;
+					// margin-right: 200px;
 
-		// 			// margin-left: 200px;
-		// 			// margin-right: 200px;
+					//NOTE: moving the container for the milestones and deliverables up to match the design for landscape.
+					position: relative;
+					// top: -60px;
+					@include flexMix;
+					line-height: normal;
 
-		// 			//NOTE: moving the container for the milestones and deliverables up to match the design for landscape.
-		// 			position: relative;
-		// 			// top: -60px;
-		// 			@include flexMix;
-		// 			line-height: normal;
+					.btl__text-1 {
+						//NOTE Design variant
+						position: relative;
+						left: 0px; //resetting values
+						font-size: $text1x-75; //28.125px = 28px //25% of the dimensions of 1440px variant.
+					} //end of btl__text-1
 
-		// 			.btl__text-1 {
-		// 				//NOTE Design variant
-		// 				position: relative;
-		// 				left: 0px; //resetting values
-		// 				font-size: $text2x-34; //37.5px; //25% of the dimenions of 1920px variant.
-		// 			} //end of btl__text-1
+					.btl__text-2 {
+						//NOTE Design variant
+						position: relative;
+						top: 0px; //resetting values
+						right: 0px; //resetting values
+						font-size: $text1x-75; //28.125px = 28px //25% of the dimensions of 1440px variant.
+					} //end of btl__text-2
+				} //end btl__text
+			} //end btl__title-container
+		} //end of btl
 
-		// 			.btl__text-2 {
-		// 				//NOTE Design variant
-		// 				position: relative;
-		// 				top: 0px; //resetting values
-		// 				right: 0px; //resetting values
-		// 				font-size: $text2x-34; //37.5px; //25% of the dimenions of 1920px variant.
-		// 			} //end of btl__text-2
-		// 		} //end btl__text
-		// 	} //end btl__title-container
-		// } //end of btl
+		.btl-content-block-1 {
+			//NOTE: Design variant:
 
-		// .btl-content-block-1 {
-		// 	//NOTE: Design variant:
+			.btl-content-block__time {
 
-		// 	.btl-content-block__time {
-		// 		//NOTE: design variant: //reseting position witihin parent.
-		// 		font-size: $text3x-28; //52.5px - 25% of the dimensions of the variant in 1920px;
-		// 		align-self: start;
-		// 		left: 120px;
-		// 		top: 5px;
-		// 		text-decoration: underline;
-		// 	} //end btl-content-block__time
+				//NOTE: design variant: //reseting position witihin parent.
+				font-size: $text2x-43; //39.375px = - 25% of the dimensions of the variant in 1440px;
+				align-self: start;
+				left: 120px;
+				top: 5px;
+				text-decoration: underline;
 
-		// 	.btl-content-block__time-text_2 {
-		// 		//NOTE: design variant: //reseting position witihin parent.
-		// 		font-size: $text3x-28; //52.5px - 25% of the dimensions of the variant in 1920px;
-		// 		position: absolute;
-		// 		left: 737px;
-		// 		top: 4px; //reseting position witihin parent - aligning with timeline text.
-		// 		text-decoration: underline;
-		// 	} //end btl-content-block__time-text_2
+			} //end btl-content-block__time
 
-		// 	.btl-content-block__sub {
-		// 		//NOTE: design variant
-		// 		font-size: $text1x-18; //18.75px; = 19px 18px used //25% of dimensions in 1920px variant.
-		// 	} //end btl-content-block__sub
-		// 	.btl-content-block__text {
-		//         //NOTE: design variant
-		//         font-size: $text1x-18; //18.75px; = 19px 18px used //25% of dimensions in 1920px variant.
-		// 	} //end btl-content-block__text
-		// } //end btl-content-block-1
+			.btl-content-block__time-text_2 {
 
-		// .btl-content-block-2 {
-		// 	//NOTE: Design variant: Height reset so content only takes as much space as is needed as the template expands and shrinks based on the content of the project being described. removed the fixed widths of mobile design variant.
-		// 	// height: 800px; // reseting height of container.
-		// 	justify-content: start;
+				//NOTE: design variant: //reseting position witihin parent.
+				font-size: $text2x-43; //39.375px = - 25% of the dimensions of the variant in 1440px;
+				position: absolute;
+				left: 592px;
+				top: 4px; //reseting position witihin parent - aligning with timeline text.
+				text-decoration: underline;
 
-		// 	.btl-content-block__time {
-		// 		//NOTE: design variant:
-		// 		font-size: $text3x-28; //52.5px - 25% of the dimensions of the variant in 1920px
-		// 		align-self: start;
-		// 		left: 120px;
-		// 		top: 5px;
-		// 		text-decoration: underline;
-		// 	} //end btl-content-block__time
+			} //end btl-content-block__time-text_2
 
-		// 	.btl-content-block__time__sub {
-		// 		//NOTE: design variant: //reseting position witihin parent.
-		// 		font-size: $text3x-28; //52.5px - 25% of the dimensions of the variant in 1920px
-		// 		position: absolute;
-		// 		left: 737px;
-		// 		top: 4px; //reseting position witihin parent - aligning with timeline text.
-		// 		text-decoration: underline;
-		// 	} //end btl-content-block__time
+			.btl-content-block__sub {
 
-		// 	.btl-content-block__sub {
-		// 		//NOTE: design variant
-		//         font-size: $text1x-18; //18.75px; = 19px 18px used //25% of dimensions in 1920px variant.
-		// 	} //end btl-content-block__sub
-		// 	.btl-content-block__text {
-		// 		//NOTE: design variant
-		// 		font-size: $text1x-18; //18.75px; = 19px 18px used //25% of dimensions in 1920px variant.
-		// 	} //end btl-content-block__text
+				//NOTE: design variant
+				font-size: $text1x-18; //18.75px; = 19px 18px used //25% of dimensions in 1920px variant.
 
-		// 	// .legend-alt {
-		// 	// 	//NOTE: using the important flag to overide the insline sytle's specificity.
+			} //end btl-content-block__sub
+			.btl-content-block__text {
 
-		// 	// 	display: block !important;
-		// 	// 	.legend-alt__circle {
-		// 	// 		//NOTE: Design variant: position absolutely so to remove the legend from the documentflow as to not affect the cascade of the text in teh copy, and also afixes the legend elements where they were initally created, within their parent container (btl-content-block-1)
-		// 	// 		position: absolute;
-		// 	// 		overflow: hidden;
-		// 	// 		top: 13px;
-		// 	// 		display: block;
-		// 	// 		background-color: #fff;
-		// 	// 		width: 96px;
-		// 	// 		height: 96px;
-		// 	// 		border-radius: 50px;
-		// 	// 		border: 1px solid #ffd866;
-		// 	// 		right: 1795px; // to algin the circle graphic for the legend, trying left doesn't work.
+		        //NOTE: design variant
+		        font-size: $text1x-18; //18.75px; = 19px 18px used //25% of dimensions in 1920px variant.
 
-		// 	// 		.legend-alt__circle-2 {
-		// 	// 			position: absolute;
-		// 	// 			overflow: hidden;
-		// 	// 			top: 23px;
-		// 	// 			left: 10%;
-		// 	// 			right: 10%;
-		// 	// 			display: block;
-		// 	// 			margin: 0 auto;
-		// 	// 			background-color: #ffd866;
-		// 	// 			width: 48px;
-		// 	// 			height: 48px;
-		// 	// 			border-radius: 50px;
-		// 	// 			border: 1px solid #ffd866;
-		// 	// 		} //end legend__Circle-2
-		// 	// 	} //end legend__Circle
+			} //end btl-content-block__text
+		} //end btl-content-block-1
 
-		// 	// 	.legend-alt__line {
-		// 	// 		position: absolute;
-		// 	// 		overflow: hidden;
-		// 	// 		top: 107px;
-		// 	// 		left: 73px;
-		// 	// 		display: block;
-		// 	// 		background-color: #ffffff;
-		// 	// 		width: 8px;
-		// 	// 		height: 100%;
-		// 	// 	} //end legend__line
-		// 	// } //end legend
-		// } //end btl-content-block-2
+		.btl-content-block-2 {
+			//NOTE: Design variant: Height reset so content only takes as much space as is needed as the template expands and shrinks based on the content of the project being described. removed the fixed widths of mobile design variant.
+			// height: 800px; // reseting height of container.
+			justify-content: start;
+
+			.btl-content-block__time {
+
+				//NOTE: design variant:
+				font-size: $text2x-43; //39.375px = - 25% of the dimensions of the variant in 1440px;
+				align-self: start;
+				left: 120px;
+				top: 5px;
+				text-decoration: underline;
+
+			} //end btl-content-block__time
+
+			.btl-content-block__time__sub {
+
+				//NOTE: design variant: //reseting position witihin parent.
+				font-size: $text2x-43; //39.375px = - 25% of the dimensions of the variant in 1440px;
+				position: absolute;
+				left: 592px;
+				top: 4px; //reseting position witihin parent - aligning with timeline text.
+				text-decoration: underline;
+
+			} //end btl-content-block__time
+
+			.btl-content-block__sub {
+
+				//NOTE: design variant: Text for body copy will remain the same. Any smaller may cuase readibility issues. 
+		        font-size: $text1x-18; //18.75px; = 19px 18px used //25% of dimensions in 1920px variant.
+			
+			} //end btl-content-block__sub
+			.btl-content-block__text {
+
+				//NOTE: design variant: Text for body copy will remain the same. Any smaller may cuase readibility issues. 
+				font-size: $text1x-18; //18.75px; = 19px 18px used //25% of dimensions in 1920px variant.
+			
+			} //end btl-content-block__text
+
+		} //end btl-content-block-2
+
+
+
 
 		//NOTE: Design variant: Opted to keep the same styles as in the 768px variant since the width dimensions effects are negliable to the design.
 		.mobile-cta-footer {
