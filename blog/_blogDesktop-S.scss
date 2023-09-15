@@ -1,10 +1,64 @@
 /*SECTION ABOVE MOBILE PHONES - TABLET RANGE  - DESKTOP-SMALL -   >1280px */
 @import "..//partials/_nav-base-desktops-sm";
-@media(min-width: 1280px){
-    body{
-        background-image: url("/img/img-desktop-sm-1280/desktop-sm-blog-bg.png");
-    }//end body
+@media (min-width: 1280px) {
+	body {
+		background-image: url("/img/img-desktop-sm-1280/desktop-sm-blog-bg.png");
 
-}//end media query
+		.main-container {
+			position: relative;
+			top: 200px;
+			.blog-collection {
+				top: 0px; //resetting the position of the
+				.blog-collection__title {
+					//NOTE: design variant
+					font-size: $text3x-75; //60px - 25% of the dimensions of the 1920px variant. ;
+				} //end blog-collection__title
+			} //end blog-collection
+
+			//     .blog-collection__divide{
+
+			//     }//end blog-collection-divide
+
+			.blog-box-group {
+				//NOTE: design variant: Using the relative position declaration from the 768px design variant as base.
+				top: 0px;
+			} //end blog-box-group
+
+			.blog-box__link {
+				.blog-box {
+					//NOTE: design variant
+					width: 276px; //275.625 = 276px - 25% of the dimensions of the 1440px variant.
+					height: 275px; //274.5 = 275px - 25% of the dimensions of the 1440px variant.
+					background-image: url("/img/img-desktop-l/desktop-blog-article-preview-bg.png");
+
+					.blog-box__text-container {
+						//NOTE: design variant:
+						//creation of container for colllectively moving the text within the article previews around. Off by default for viewports smaller than 1024px;
+						display: block !important;
+						position: relative;
+						top: 60px;
+
+						.blog-box__title {
+							//NOTE: design variant
+							font-size: $text1x-64; //25.5px = 26px - 25% of the dimensions of the 1440px variant.
+						} //end blog-box__title
+
+						.blog-box__subtitle {
+							//NOTE: design variant
+
+							font-size: $text1X-25; //20px; same as the dimensions of the 1440px variant. NO CHANGE
+						} // end blog-box__subtitle
+
+						.blog-box__text {
+							//NOTE: design variant
+
+							font-size: $text1x-12; //18px; //18px - used. Base text size for all Desktop viewports.
+						} // end blog-box__text
+					} //end blog-box__text-container
+				} //end blog-box
+			} //end blog-box__link
+		} //end main-container
+	} //end body
+} //end media query
 /*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - DESKTOP-SMALL -   >1280px */
 /*!SECTION: END - [RESPONSIVE DESIGN] */

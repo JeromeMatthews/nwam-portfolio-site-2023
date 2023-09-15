@@ -5,6 +5,8 @@
         background-image: url("/img/img-desktop-l/desktop-blog-bg.png");
 
         .main-container{
+            position: relative;
+            top: 200px;
             .blog-collection{
                 top: 0px; //resetting the position of the 
                 .blog-collection__title{
