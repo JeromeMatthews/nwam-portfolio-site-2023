@@ -343,6 +343,7 @@
 				font-style: normal;
 				font-size: $text1x-87; //30px;
 				position: relative;
+				top:-27px;
 
 				.hero-text {
 					//NOTE: Design variant - slight adjustment for the text in the link styled like a button, to center it.
@@ -358,6 +359,8 @@
 				position: relative;
 				//NOTE: Design variant
 				padding: 0px; //reseting the padding to default of zero.
+				position: relative;
+    			top: -20px;
 			} //end mobile-cta-footer__sm-links
 		} // end mobile-cta-footer
 	} //end body

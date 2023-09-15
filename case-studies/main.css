@@ -1334,6 +1334,7 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
     font-style: normal;
     font-size: 1.87rem;
     position: relative;
+    top: -27px;
   }
   body .mobile-cta-footer .mobile-cta-footer__button .hero-text {
     top: 13px;
@@ -1347,6 +1348,8 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
     align-content: center;
     position: relative;
     padding: 0px;
+    position: relative;
+    top: -20px;
   }
 }
 /*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - DESKTOP-SMALL -   >1280px */

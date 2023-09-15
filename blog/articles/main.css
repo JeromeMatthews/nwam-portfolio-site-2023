@@ -413,6 +413,66 @@ body .main-container .article-container .article-sm-bottom .article-sm-bottom-li
   body {
     background-image: url("/img/img-desktop-sm-1280/desktop-sm-blog-article-bg.png");
   }
+  body .main-container {
+    top: 0px;
+  }
+  body .main-container .article-container {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  body .main-container .article-container .article__title {
+    font-size: 2.81rem;
+  }
+  body .main-container .article-container .article__sub_title {
+    font-size: 1.437rem;
+  }
+  body .main-container .article-container .article__content {
+    margin: 0px 140px;
+  }
+  body .main-container .article-container .article__content .support-topic .support-topic__head {
+    font-size: 1.937rem;
+  }
+  body .main-container .article-container .article__content .support-topic .support-topic__body {
+    font-size: 1.187rem;
+  }
+  body .main-container .article-container .mobile-cta-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  body .main-container .article-container .mobile-cta-footer-branding .mobile-cta-footer-branding__text-1,
+  body .main-container .article-container .mobile-cta-footer-branding .mobile-cta-footer-branding__text-2 {
+    font-size: 3.281rem;
+  }
+  body .main-container .article-container .mobile-cta-footer-branding .mobile-cta-footer-branding__text-2 {
+    left: -128px;
+  }
+  body .main-container .article-container .mobile-cta-footer-branding .mobile-cta-footer__logo {
+    width: 233px;
+    height: 118px;
+    top: -94px;
+    left: 160px;
+  }
+  body .main-container .article-container .mobile-cta-footer__button {
+    display: inline-block;
+    width: 297px;
+    height: 56px;
+    top: -115px;
+  }
+  body .main-container .article-container .mobile-cta-footer__button .hero-text {
+    font-size: 1.64rem;
+    top: 15%;
+  }
+  body .main-container .article-container .footer-divide {
+    width: 900px;
+    top: -105px;
+  }
+  body .main-container .article-container .article-sm-bottom {
+    top: -110px;
+  }
 }
 /*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - DESKTOP-SMALL -   >1280px */
 /*!SECTION: END - [RESPONSIVE DESIGN] */
@@ -458,6 +518,66 @@ body .main-container .article-container .article-sm-bottom .article-sm-bottom-li
 @media (min-width: 1440px) {
   body {
     background-image: url("/img/img-desktop-cm-1440/desktop-cm-blog-article-bg.png");
+  }
+  body .main-container {
+    top: 0px;
+  }
+  body .main-container .article-container {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  body .main-container .article-container .article__title {
+    font-size: 3.75rem;
+  }
+  body .main-container .article-container .article__sub_title {
+    font-size: 1.87rem;
+  }
+  body .main-container .article-container .article__content {
+    margin: 0px 140px;
+  }
+  body .main-container .article-container .article__content .support-topic .support-topic__head {
+    font-size: 2.562rem;
+  }
+  body .main-container .article-container .article__content .support-topic .support-topic__body {
+    font-size: 1.187rem;
+  }
+  body .main-container .article-container .mobile-cta-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  body .main-container .article-container .mobile-cta-footer-branding .mobile-cta-footer-branding__text-1,
+  body .main-container .article-container .mobile-cta-footer-branding .mobile-cta-footer-branding__text-2 {
+    font-size: 3.281rem;
+  }
+  body .main-container .article-container .mobile-cta-footer-branding .mobile-cta-footer-branding__text-2 {
+    left: -128px;
+  }
+  body .main-container .article-container .mobile-cta-footer-branding .mobile-cta-footer__logo {
+    width: 233px;
+    height: 118px;
+    top: -94px;
+    left: 160px;
+  }
+  body .main-container .article-container .mobile-cta-footer__button {
+    display: inline-block;
+    width: 297px;
+    height: 56px;
+    top: -115px;
+  }
+  body .main-container .article-container .mobile-cta-footer__button .hero-text {
+    font-size: 1.64rem;
+    top: 15%;
+  }
+  body .main-container .article-container .footer-divide {
+    width: 900px;
+    top: -105px;
+  }
+  body .main-container .article-container .article-sm-bottom {
+    top: -110px;
   }
 }
 /*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - COMMON MACBOOK -   >1440px */

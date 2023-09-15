@@ -3,6 +3,109 @@
 @media(min-width: 1440px){
     body {
 		background-image: url("/img/img-desktop-cm-1440/desktop-cm-blog-article-bg.png");
+
+    .main-container {
+      top:0px;//resetting the distance from the top back to default for this variant. Already has position set to relative in previous stylesheet.
+      
+.article-container {
+  //NOTE: design variant
+           margin-left: 100px;
+          margin-right: 100px; 
+
+  .article__title {
+    //NOTE: design variant
+    font-size: $text3x-75; //60px - 25% of the dimensions of the 1920px variant. ;
+  } //end article__title
+
+  .article__sub_title {
+    //NOTE: design variant
+              font-size: $text1x-87;//30px - 25% of the dimensions of the 1920px variant. 
+  } // end article__sub_title
+
+  .article-sm-top {
+    //NOTE: design variant
+  } //end article-sm-top
+
+  .article__content {
+    //NOTE: design variant
+    margin: 0px 140px;
+
+    .support-topic {
+                  //NOTE: design variant
+                  .support-topic__head{
+                      font-size:$text2x-56;//41.25 - 41px - 25% of the dimensions of the 1920px variant.;
+
+                  }//end .support-topic__head
+      .support-topic__body {
+        //NOTE: design variant
+                      font-size: $text1x-18;//18.75px - 19px - 18px used textbase for desktop viewports;
+
+      } //end support-topic-body
+    } //end support-topic
+  } //end article__content
+
+  .mobile-cta-footer {
+              @include flexMix-col;
+    align-items: center;
+  } //end mobile-cta-footer
+
+          .mobile-cta-footer-branding{
+              //NOTE: design variant
+              .mobile-cta-footer-branding__text-1,
+              .mobile-cta-footer-branding__text-2 {
+
+                  font-size: $text3x-28; //52.5 = 53px - 25% of the dimensions in the 1920px variant. 
+
+              }//.mobile-cta-footer-branding__text-1, __text-2
+          
+              .mobile-cta-footer-branding__text-2 {
+                  //NOTE: design variant
+                  left: -128px;
+  
+              }//end  .mobile-cta-footer-branding__text-2
+
+              .mobile-cta-footer__logo {
+                  //NOTE: design variant
+                  width: 233px; //232.5 - 233
+                  height: 118px; //117.25 - 118
+                  top: -94px;
+                  left:160px;
+              }//end .mobile-cta-footer__logo 
+          
+          
+          }//end mobile-cta-footer-branding
+        
+          .mobile-cta-footer__button {
+              display: inline-block;
+              width: 297px; //297px
+              height:56px; //55.5 - 56px
+              .hero-text {
+                
+                 font-size:$text1x-64;//25.5 = 26px - 25% of 1920px variant.
+                 top:15%; //centering the text in the CTA hero button.
+              }//end hero-text
+              top: -115px;
+          }//end .mobile-cta-footer__button
+
+          .footer-divide {
+              width:900px;
+              top: -105px;
+
+
+          }//end footer-divide
+
+          .article-sm-bottom{
+              top: -110px;
+
+              .article-sm-bottom-link{
+              
+
+              }//end article-sm-bottom-link
+          }//end article-sm-bottom
+
+} // end article-container
+} //end main-container
+
         }//end body
 }//end media query
 /*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - COMMON MACBOOK -   >1440px */
