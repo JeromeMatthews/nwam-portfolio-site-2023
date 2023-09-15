@@ -621,6 +621,38 @@ body .hero-button .hero-text {
     margin: auto 10%;
     text-align: center;
   }
+  body .lower-nav-container {
+    display: block !important;
+    position: fixed;
+    bottom: 70px;
+    left: 50vw;
+  }
+  body .lower-nav-container .nav-chevrons {
+    position: relative;
+    top: 12px;
+    right: 81px;
+  }
+  body .lower-nav-container .nav-chevrons .left-chev {
+    position: inherit;
+    left: 11px;
+  }
+  body .lower-nav-container .nav-chevrons .right-chev {
+    position: inherit;
+    right: -6px;
+  }
+  body .lower-nav-container .main-footer .main-footer__social-icons {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    justify-content: center;
+    position: relative;
+    right: 5.2vw;
+  }
+  body .lower-nav-container .main-footer .main-footer__social-icons li {
+    margin-right: 10px;
+  }
 }
 /*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - DESKTOP-SMALL -   >1280px */
 /*!SECTION: END - [RESPONSIVE DESIGN] */

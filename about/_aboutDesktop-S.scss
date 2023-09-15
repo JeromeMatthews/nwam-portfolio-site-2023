@@ -1,71 +1,70 @@
 /*SECTION ABOVE MOBILE PHONES - TABLET RANGE  - DESKTOP-SMALL -   >1280px */
 @import "..//partials/_nav-base-desktops-sm";
-@media(min-width: 1280px){
-    body{
-        background-image: url("/img/img-desktop-sm-1280/desktop-sm-about-bg.png");
+@media (min-width: 1280px) {
+	body {
+		background-image: url("/img/img-desktop-sm-1280/desktop-sm-about-bg.png");
 
-
-        .main-container {
+		.main-container {
 			.about-hero {
 				.about-hero__copy {
 					position: relative;
 					//NOTE: variant change
 					margin: 100px 60px 350px 155px; // reminder: /\ > V <
 					left: -150px;
-                    margin-top: 220px;
+					margin-top: 220px;
 				} //end about-hero-copy
 				.about-hero__text {
 					//NOTE: variant change
-					font-size: $text3x-12; //50.25px = 50px- 25% of dimensions of 1440px vrariant.   
+					font-size: $text3x-12; //50.25px = 50px- 25% of dimensions of 1440px vrariant.
 					text-align: left;
 					line-height: 99%;
-					//NOTE: Design variant: adjustmnet to Hero copy positioning. 
+					//NOTE: Design variant: adjustmnet to Hero copy positioning.
 					position: relative;
-    				top: 26px;
+					top: 26px;
 				}
 			} //end of about-hero
 
-		// 	.lower-nav-container {
-		// 		display: block !important;
-		// 		position: absolute;
-		// 		//NOTE: Design variant: Used the container for positioning the elements of the lower nav. With it being absolutely placed, we can use relative positioning for the child elements (chevrons and the social icons)
-		// 		top: 828px; //NOTE: placement to match the home, projects, and about positioning of the nav.
-		// 		left: 50vw;
+			.lower-nav-container {
+				display: block !important;
+				position: absolute;
+				//NOTE: Design variant: Used the container for positioning the elements of the lower nav. With it being absolutely placed, we can use relative positioning for the child elements (chevrons and the social icons)
+				top: 629px; //NOTE: placement to match the home, projects, and about positioning of the nav.
+				left: 50vw;
 
-		// 		.nav-chevrons {
-		// 			position: relative; // NOTE: Relative to the parent lower-nav-container div.
-		// 			top: -18px;
-		// 			right: 16px;
-		// 			.left-chev {
-		// 				position: inherit;
-		// 				left: -21px; //pull chevron to the left a little
-		// 			} //end left-chev
+				.nav-chevrons {
+					position: relative; // NOTE: Relative to the parent lower-nav-container div.
+					top: -18px;
+					right: 16px;
+					.left-chev {
+						position: inherit;
+						left: -21px; //pull chevron to the left a little
+					} //end left-chev
 
-		// 			.right-chev {
-		// 				position: inherit;
-		// 				right: -21px; //pull chevron to the right a little
-		// 			} //end right-chev
-		// 		} //end nav-chevrons
+					.right-chev {
+						position: inherit;
+						right: -21px; //pull chevron to the right a little
+					} //end right-chev
+				} //end nav-chevrons
 
-		// 		.chevron-down {
-		// 			position: relative;
-		// 			top: 0px;
-		// 			right: 5px;
-		// 		} //end chevron-down
-		// 	} // end lower-nav-elements
+				.chevron-down {
+					position: relative;
+					top: 0px;
+					right: 5px;
+				} //end chevron-down
+			} // end lower-nav-elements
 
 			.body-sect-1 {
 				.body-sect-1-art {
 					.body-sect-1__head {
 						//NOTE: variant change
-                        
+
 						margin: 50px 167px 10px 450px; //reminder: /\ & V , < & >
-						font-size: $text3x-87; //62.25 = 62px - 25% of themdimensions in the 1440px variant. 
+						font-size: $text3x-87; //62.25 = 62px - 25% of themdimensions in the 1440px variant.
 						text-align: right;
 						position: relative;
 						right: -150px;
-                        margin-top: 290px;
-                        margin-left: 400px;
+						margin-top: 290px;
+						margin-left: 400px;
 					} //end body-sect-1__head
 					.body-sect-1__text {
 						//NOTE: variant change
@@ -79,10 +78,10 @@
 				.body-sect-2-art {
 					.body-sect-2__head {
 						//NOTE: variant change
-                        font-size: $text3x-87; //62.25 = 62px - 25% of themdimensions in the 1440px variant.
+						font-size: $text3x-87; //62.25 = 62px - 25% of themdimensions in the 1440px variant.
 						text-align: left;
 						margin: 0px; //reseting margins.
-                        margin-top: 290px;
+						margin-top: 290px;
 					} //end body-sect-2__head
 
 					.body-sect-2__text {
@@ -98,10 +97,10 @@
 				.body-sect-3-art {
 					.body-sect-3__head {
 						//NOTE: variant change
-                        font-size: $text3x-87; //62.25 = 62px - 25% of themdimensions in the 1440px variant.
+						font-size: $text3x-87; //62.25 = 62px - 25% of themdimensions in the 1440px variant.
 						text-align: right;
 						margin: 0px; //reseting margins.
-                        margin-top: 290px;
+						margin-top: 290px;
 					} //end body-sect-3__head
 					.body-sect-3__text {
 						//NOTE: variant change
@@ -110,8 +109,7 @@
 				} //end body-sect-3__head
 			} //end of body-sect-3
 		} //end main-container
-
-    }//end body
-}//end media query
+	} //end body
+} //end media query
 /*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - DESKTOP-SMALL -   >1280px */
 /*!SECTION: END - [RESPONSIVE DESIGN] */

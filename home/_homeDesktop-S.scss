@@ -1,26 +1,22 @@
 /*SECTION ABOVE MOBILE PHONES - TABLET RANGE  - DESKTOP-SMALL -   >1280px */
 @import "..//partials/_nav-base-desktops-sm";
-@media(min-width: 1280px){
-    .hero-section-1,
+@media (min-width: 1280px) {
+	.hero-section-1,
 	.hero-section-2,
 	.hero-section-3 {
 		@include flexMix;
 	}
-    
 
-    body{
-        	//NOTE: Moved this code from the nav base css. Correcting the separation of concerns in the scss files. Ensures the Hero Copy is placed in the right area for Desktop screens. 
+	body {
+		//NOTE: Moved this code from the nav base css. Correcting the separation of concerns in the scss files. Ensures the Hero Copy is placed in the right area for Desktop screens.
 		.main-container {
-            
-            position: relative;
-            top: 220px;
-        } // end main container
+			position: relative;
+			top: 220px;
+		} // end main container
 
-        
-        background: url("/img/img-desktop-sm-1280/desktop-sm-home-bg.PNG");
+		background: url("/img/img-desktop-sm-1280/desktop-sm-home-bg.PNG");
 
-
-        .hero__copy {
+		.hero__copy {
 			//NOTE: Design Variant:
 			top: -72px;
 			right: -260px;
@@ -33,7 +29,7 @@
 			text-align: right;
 		} //end hero__copy
 
-        .hero__article-2 {
+		.hero__article-2 {
 			width: 50vw; //give the boxed look from the design.
 			.hero__copy-body {
 				position: relative;
@@ -48,7 +44,6 @@
 				// margin-bottom: 49px;// turn off the botttom margin for design at this variant.
 			} //end hero__copy-body
 		} //end hero__article-2
-
 
 		.hero-button {
 			background: #ffbf00 0% 0% no-repeat padding-box;
@@ -78,9 +73,49 @@
 				text-align: center;
 			} //end hero-text
 		} // end hero-button
+		
+		.lower-nav-container {
+			display: block !important;
+			position: fixed;
+			bottom: 70px; //NOTE: placement to match the home, projects, and about positioning of the nav.
+			left: 50vw;
 
-    }//end body
+			//NOTE: Design variant: Used the container for positioning the elements of the lower nav. With it being absolutely placed, we can use relative positioning for the child elements (chevrons and the social icons)
 
-}//end media query
+			.nav-chevrons {
+				position: relative; // NOTE: Relative to the parent lower-nav-container div.
+				top: 12px;
+				right: 81px;
+				.left-chev {
+					position: inherit;
+					left: 11px; //pull chevron to the left a little
+				} //end left-chev
+
+				.right-chev {
+					position: inherit;
+					right: -6px; //pull chevron to the right a little
+				} //end right-chev
+			} //end nav-chevrons
+
+			.main-footer {
+				.main-footer__social-icons {
+					display: flex;
+					margin: 0px;
+					padding: 0px;
+					list-style: none;
+					text-decoration: none;
+					justify-content: center;
+					//NOTE: Design vaieant: The outer container creates an offset, so this corrects for it. Centering the social media icons.
+					position: relative;
+					right: 5.2vw;
+
+					li {
+						margin-right: 10px;
+					} //end li
+				} //end social-icons
+			} //end main-footer
+		} // end lower-nav-elements
+	} //end body
+} //end media query
 /*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - DESKTOP-SMALL -   >1280px */
 /*!SECTION: END - [RESPONSIVE DESIGN] */
