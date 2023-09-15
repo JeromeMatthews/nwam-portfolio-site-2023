@@ -18,8 +18,8 @@
 					//NOTE design varitant
 					font-size: $text3x-04; //48.7.55px;
 					text-align: left;
-                    position: relative;
-                    left: -53px;
+					position: relative;
+					left: -53px;
 				} // end of contact-heroCopy
 
 				.contactheroimg {
@@ -45,7 +45,7 @@
 						//NOTE: design variant for desktop screens.
 						margin: 0px auto;
 						input {
-							width: 398px;//397.5px //25% of dimensions in 1920px
+							width: 398px; //397.5px //25% of dimensions in 1920px
 							height: 65px !important; //using important to overide the inline styles made on the preious design variants.
 						} //end input
 
@@ -77,7 +77,7 @@
 						.mobile-cta-footer__button {
 							//NOTE: design variant:
 							width: 297px; //25% of dimensions in 1920px
-							height: 56px;//55.5px - //25% of dimensions in 1920px
+							height: 56px; //55.5px - //25% of dimensions in 1920px
 							position: relative;
 							top: 10px;
 							right: -107px;
@@ -87,54 +87,54 @@
 				} // end contact-form__elements
 
 				textarea {
-					height: 218px;//217.5p //25% of dimensions in 1920px
+					height: 218px; //217.5p //25% of dimensions in 1920px
 					border-radius: 8px;
 					font-family: $font-list-b;
 					font-size: $text1x-56; //25px
 				}
 			} //end contact-form
 			//specific placement for lower nav elements:
-			// 	.lower-nav-container {
-			// 		display: block !important;
-			// 		position: fixed;
-			// 		bottom: 40px; //NOTE: placement to match the home, projects, and about positioning of the nav.
-			// 		left: 50vw;
+			.lower-nav-container {
+				display: block !important;
+				position: fixed;
+				bottom: 39px; //NOTE: placement to match the home, projects, and about positioning of the nav.
+				left: 50vw;
 
-			// 		//NOTE: Design variant: Used the container for positioning the elements of the lower nav. With it being absolutely placed, we can use relative positioning for the child elements (chevrons and the social icons)
+				//NOTE: Design variant: Used the container for positioning the elements of the lower nav. With it being absolutely placed, we can use relative positioning for the child elements (chevrons and the social icons)
 
-			// 		.nav-chevrons {
-			// 			position: relative; // NOTE: Relative to the parent lower-nav-container div.
-			// 			top: -18px;
-			// 			right: 16px;
-			// 			.left-chev {
-			// 				position: inherit;
-			// 				left: -21px; //pull chevron to the left a little
-			// 			} //end left-chev
+				.nav-chevrons {
+					position: relative; // NOTE: Relative to the parent lower-nav-container div.
+					top: -18px;
+					right: 16px;
+					.left-chev {
+						position: inherit;
+						left: -21px; //pull chevron to the left a little
+					} //end left-chev
 
-			// 			.right-chev {
-			// 				position: inherit;
-			// 				right: -21px; //pull chevron to the right a little
-			// 			} //end right-chev
-			// 		} //end nav-chevrons
+					.right-chev {
+						position: inherit;
+						right: -21px; //pull chevron to the right a little
+					} //end right-chev
+				} //end nav-chevrons
 
-			// 		.main-footer {
-			// 			.main-footer__social-icons {
-			// 				display: flex;
-			// 				margin: 0px;
-			// 				padding: 0px;
-			// 				list-style: none;
-			// 				text-decoration: none;
-			// 				justify-content: center;
-			// 				//NOTE: Design vaieant: The outer container creates an offset, so this corrects for it. Centering the social media icons.
-			// 				position: relative;
-			// 				right: 3.5vw;
+				.main-footer {
+					.main-footer__social-icons {
+						display: flex;
+						margin: 0px;
+						padding: 0px;
+						list-style: none;
+						text-decoration: none;
+						justify-content: center;
+						//NOTE: Design vaieant: The outer container creates an offset, so this corrects for it. Centering the social media icons.
+						position: relative;
+						right: 4.7vw;
 
-			// 				li {
-			// 					margin-right: 10px;
-			// 				} //end li
-			// 			} //end social-icons
-			// 		} //end main-footer
-			// 	} // end lower-nav-elements
+						li {
+							margin-right: 10px;
+						} //end li
+					} //end social-icons
+				} //end main-footer
+			} // end lower-nav-elements
 		} // end main-container
 	} //end body
 } //end media query

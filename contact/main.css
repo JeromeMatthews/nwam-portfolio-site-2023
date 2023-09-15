@@ -545,6 +545,38 @@ body .main-container .contact-form .contact-form__elements .mobile-cta-footer__b
     font-family: futura-pt, Helvetica, Arial, sans-serif;
     font-size: 1.56rem;
   }
+  body .main-container .lower-nav-container {
+    display: block !important;
+    position: fixed;
+    bottom: 39px;
+    left: 50vw;
+  }
+  body .main-container .lower-nav-container .nav-chevrons {
+    position: relative;
+    top: -18px;
+    right: 16px;
+  }
+  body .main-container .lower-nav-container .nav-chevrons .left-chev {
+    position: inherit;
+    left: -21px;
+  }
+  body .main-container .lower-nav-container .nav-chevrons .right-chev {
+    position: inherit;
+    right: -21px;
+  }
+  body .main-container .lower-nav-container .main-footer .main-footer__social-icons {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    justify-content: center;
+    position: relative;
+    right: 4.7vw;
+  }
+  body .main-container .lower-nav-container .main-footer .main-footer__social-icons li {
+    margin-right: 10px;
+  }
 }
 /*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - COMMON MACBOOK -   >1440px */
 /*!SECTION: END - [RESPONSIVE DESIGN] */
