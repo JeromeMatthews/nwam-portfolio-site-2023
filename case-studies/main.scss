@@ -6,8 +6,8 @@
 @mixin csContentBox {
 	position: relative;
 	width: 287px;
-	height: 325px;
-	top: 0px;
+	height: 274px;
+	top: 29px;
 	left: 0px;
 	background-color: rgba(255, 255, 255, 0.11);
 	border-radius: 4%;
@@ -18,17 +18,15 @@
 /*SECTION: [RESPONSIVE DESIGN] */
 /*NOTE : Query breakpoints*/
 
-
-
 //SECTION MOBILE - PORTRAIT - BODY
 
-.main-container {
-	justify-content: center;
-	position: relative;
-	@media (max-width: 359px) {
-		top: 102px;
-	}
-}
+// .main-container {
+// 	justify-content: center;
+// 	position: relative;
+// 	@media (max-width: 359px) {
+// 		top: 102px;
+// 	}
+// }
 
 body {
 	.atf-1,
@@ -92,6 +90,7 @@ body {
 
 		.cs-client-details {
 			@include csContentBox;
+			top:0px; //NOTE: Design variant: adjusting for change to client box top property to lower the container below the logo. 
 			.cs-client-details__title {
 				font-family: $font-list-h;
 				font-weight: nth($f-weights, 1);
@@ -332,16 +331,12 @@ body {
 
 			text-decoration: none;
 			text-align: center;
-			.hero-text{
+			.hero-text {
 				position: relative;
 				top: 9px;
 				margin: auto 10%;
-				color:#000000;
-			}//end hero-text
-
-			
-			
-
+				color: #000000;
+			} //end hero-text
 		}
 
 		.mobile-cta-footer__sm-links {

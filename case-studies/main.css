@@ -120,16 +120,6 @@
 
 /*SECTION: [RESPONSIVE DESIGN] */
 /*NOTE : Query breakpoints*/
-.main-container {
-  justify-content: center;
-  position: relative;
-}
-@media (max-width: 359px) {
-  .main-container {
-    top: 102px;
-  }
-}
-
 body .atf-1,
 body .btf-2,
 body .btl,
@@ -167,8 +157,8 @@ body .atf-1 .status-flag {
 body .atf-1 .cs-project {
   position: relative;
   width: 287px;
-  height: 325px;
-  top: 0px;
+  height: 274px;
+  top: 29px;
   left: 0px;
   background-color: rgba(255, 255, 255, 0.11);
   border-radius: 4%;
@@ -194,12 +184,13 @@ body .atf-1 .cs-project .cs-project__services .cs-project__service {
 body .atf-1 .cs-client-details {
   position: relative;
   width: 287px;
-  height: 325px;
-  top: 0px;
+  height: 274px;
+  top: 29px;
   left: 0px;
   background-color: rgba(255, 255, 255, 0.11);
   border-radius: 4%;
   margin: 0 36px;
+  top: 0px;
 }
 body .atf-1 .cs-client-details .cs-client-details__title {
   font-family: proxima-nova, Arial, Helvetica, sans-serif;
@@ -242,8 +233,8 @@ body .btf-2 .cs-project-sum__title {
 body .btf-2 .cs-project-desc {
   position: relative;
   width: 287px;
-  height: 325px;
-  top: 0px;
+  height: 274px;
+  top: 29px;
   left: 0px;
   background-color: rgba(255, 255, 255, 0.11);
   border-radius: 4%;
@@ -259,8 +250,8 @@ body .btf-2 .cs-project-desc .cs-project-desc__text {
 body .btf-2 .cs-project-sum {
   position: relative;
   width: 287px;
-  height: 325px;
-  top: 0px;
+  height: 274px;
+  top: 29px;
   left: 0px;
   background-color: rgba(255, 255, 255, 0.11);
   border-radius: 4%;
