@@ -1,13 +1,5 @@
 /*SECTION ABOVE MOBILE PHONES - TABLET  - PORTRAIT -  >800px */
-// @import "..//partials/nav-base-tablet";
-@media (min-width: 440px) {
-	body {
-		background-position: top 0% center;
-		//Once we get to this width, just allow the background to display normally.
-		background-repeat: no-repeat;
-		background-attachment: scroll;
-	}
-}
+
 
 @media (min-width: 768px) {
 	.main-container {
@@ -113,15 +105,7 @@
 		//!SECTION  END - MOBILE - PORTRAIT - NAVIGATION - FOOTER
 	}
 
-	.nav-chevrons {
-		
-		@include flexMix;
-		.left-chev {
-			margin-right: 50px;
-		}
 
-		display: none; // overiding theFDisplay: flex assignment. Decided to remove the chevrons since portiat didn't have it in the inital design and look better anyway. 
-	}
-}
+}//end media query
 /*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - PORTRAIT -   >800px */
 /*!SECTION: END - [RESPONSIVE DESIGN] */

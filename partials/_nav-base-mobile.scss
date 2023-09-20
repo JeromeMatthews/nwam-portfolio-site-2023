@@ -115,57 +115,57 @@
 }
 
 //!SECTION END - MOBILE - PORTRAIT - NAVIGATION
-/*SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1000px */
+// /*SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1000px */
 
-@media (min-width: 768px) {
-	.sitenav__links {
-		//NOTE: design variant
-		z-index: 11;
-		position: fixed;
-		left: 35%; //NOTE: shifting the manual positioning of the navigation over so its vertically aligned with the center of the veiwport. for tablet portiat devices.
-		margin-top:60px;//NOTE: brining down the top of the nav a bit, better fit in the viewport, asthestics. 
+// @media (min-width: 768px) {
+// 	.sitenav__links {
+// 		//NOTE: design variant
+// 		z-index: 11;
+// 		position: fixed;
+// 		left: 35%; //NOTE: shifting the manual positioning of the navigation over so its vertically aligned with the center of the veiwport. for tablet portiat devices.
+// 		margin-top:60px;//NOTE: brining down the top of the nav a bit, better fit in the viewport, asthestics. 
 		
 
-		@include mobileNavOverlayMenu;
+// 		@include mobileNavOverlayMenu;
 
-		#projects {
-			@include navOverlayMenuStyles;
-			margin-top: 67px;
-		}
+// 		#projects {
+// 			@include navOverlayMenuStyles;
+// 			margin-top: 67px;
+// 		}
 
-		#about,
-		#contact {
-			@include navOverlayMenuStyles;
-			margin-top: 130px;
-			margin-bottom: 130px;
-		}
+// 		#about,
+// 		#contact {
+// 			@include navOverlayMenuStyles;
+// 			margin-top: 130px;
+// 			margin-bottom: 130px;
+// 		}
 
-		#blog {
-			@include navOverlayMenuStyles;
-			margin-bottom: 66px;
-		}
+// 		#blog {
+// 			@include navOverlayMenuStyles;
+// 			margin-bottom: 66px;
+// 		}
 
-		#projects-text,
-		#about-text,
-		#contact-text,
-		#blog-text {
-			position: relative;
-			top: 15px;
-		}
+// 		#projects-text,
+// 		#about-text,
+// 		#contact-text,
+// 		#blog-text {
+// 			position: relative;
+// 			top: 15px;
+// 		}
 
-		a {
-			text-decoration: none;
-		}
+// 		a {
+// 			text-decoration: none;
+// 		}
 
-		li {
-			list-style: none;
-		}
+// 		li {
+// 			list-style: none;
+// 		}
 
-		a > li {
-			text-decoration: none;
-			color: #ffffff;
-		}
-	}
-} // end media query - tablet-Portrait
+// 		a > li {
+// 			text-decoration: none;
+// 			color: #ffffff;
+// 		}
+// 	}
+// } // end media query - tablet-Portrait
 
-/*SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1000px */
+// /*SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1000px */
