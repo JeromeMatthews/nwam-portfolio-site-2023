@@ -11,11 +11,11 @@
 				//NOTE design varitant
 			position:absolute;// better fit for the arrangement as relative is shifting the width of the container.
 			top: -145px;
-			right: 245px;
+			right: 136px;
 
 				.contact-heroCopy {
 					//NOTE design varitant
-					font-size: $text1x-56; //25px;
+					font-size: $text1x-74; //27px;
 					text-align: left;
 				} // end of contact-heroCopy
 
@@ -24,10 +24,10 @@
 					margin: 25px auto;
 					padding: 0px;
 					position: relative;
-					top: 60px;
-					left: 94px; //reseting left positioning from mobile settings.
-					width: 110px;
-					height: 57px;
+					top: 51px;
+					left: 86px; //reseting left positioning from mobile settings.
+					width: 137px;//137.5px
+					height: 70px;//71.25px
 				}
 			} //end of contact-container
 
@@ -36,10 +36,39 @@
 				top: 40px;
 
 				.contact-form__elements {
+					.contact-form__element {
+
+						input{
+							//NOTE: design variant: 25% of dimensions in 1280px variant. Width: 298.5px and Height: 36.563px
+							width: 299px ;
+							height: 37px ;
+
+						}//end input
+					}//contact-form__element
+
+					.contact-form__label {
+						//NOTE: design variant: 25% of dimensions in 1440px variant. Width: 82.5px and Height: 48.75px
+						display: inline-block;
+						top: 3px;
+						left: 4px;
+						width: 83px;
+						height: 49px;
+						border-radius: 4px 0px 0px 4px;
+		
+
+						.label-text {
+							font-size: $text1x-12; //18px
+							position: relative;
+							top: -8%;
+							bottom: 25%;
+						} //end label-text
+					} //end contact-form-label
+
+
 					.mobile-cta-footer__button {
 						//NOTE: design variant:
 						position: relative;
-						right: -60px;
+						right: -100px;
 					} //end mobile-cta-footer__button
 				} // end contact-form__elements
 			} //end contact-form

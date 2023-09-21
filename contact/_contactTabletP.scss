@@ -34,12 +34,43 @@
 
 			.contact-form{
 				.contact-form__elements {
+
+					.contact-form__element {
+
+						input{
+							//NOTE: design variant: 25% of dimensions in 1280px variant. Width: 298.5px and Height: 36.563px
+							width: 299px ;
+							height: 37px ;
+
+						}//end input
+					}//contact-form__element
+
+					.contact-form__label {
+						//NOTE: design variant: 25% of dimensions in 1440px variant. Width: 82.5px and Height: 48.75px
+						display: inline-block;
+						top: 3px;
+						left: 4px;
+						width: 83px;
+						height: 49px;
+						border-radius: 4px 0px 0px 4px;
+		
+
+						.label-text {
+							font-size: $text1x-12; //18px
+							position: relative;
+							top: -8%;
+							bottom: 25%;
+						} //end label-text
+					} //end contact-form-label
+
+
+
 					.mobile-cta-footer__button{
 						//NOTE: design variant
 						width: 173px;
 						height: 34px;
 					   font-size: $textSmall-93; //15px;
-
+					   right: -100px;
 
 
 					}//end mobile-cta-footer__button

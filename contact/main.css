@@ -231,10 +231,29 @@ body .main-container .contact-form .contact-form__elements .mobile-cta-footer__b
     width: 150px;
     height: 80px;
   }
+  body .main-container .contact-form .contact-form__elements .contact-form__element input {
+    width: 299px;
+    height: 37px;
+  }
+  body .main-container .contact-form .contact-form__elements .contact-form__label {
+    display: inline-block;
+    top: 3px;
+    left: 4px;
+    width: 83px;
+    height: 49px;
+    border-radius: 4px 0px 0px 4px;
+  }
+  body .main-container .contact-form .contact-form__elements .contact-form__label .label-text {
+    font-size: 1.12rem;
+    position: relative;
+    top: -8%;
+    bottom: 25%;
+  }
   body .main-container .contact-form .contact-form__elements .mobile-cta-footer__button {
     width: 173px;
     height: 34px;
     font-size: 0.93rem;
+    right: -100px;
   }
 }
 /*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - PORTRAIT -   >800px */
@@ -247,27 +266,45 @@ body .main-container .contact-form .contact-form__elements .mobile-cta-footer__b
   body .main-container .contact-container {
     position: absolute;
     top: -145px;
-    right: 245px;
+    right: 136px;
   }
   body .main-container .contact-container .contact-heroCopy {
-    font-size: 1.56rem;
+    font-size: 1.74rem;
     text-align: left;
   }
   body .main-container .contact-container .contactheroimg {
     margin: 25px auto;
     padding: 0px;
     position: relative;
-    top: 60px;
-    left: 94px;
-    width: 110px;
-    height: 57px;
+    top: 51px;
+    left: 86px;
+    width: 137px;
+    height: 70px;
   }
   body .main-container .contact-form {
     top: 40px;
   }
+  body .main-container .contact-form .contact-form__elements .contact-form__element input {
+    width: 299px;
+    height: 37px;
+  }
+  body .main-container .contact-form .contact-form__elements .contact-form__label {
+    display: inline-block;
+    top: 3px;
+    left: 4px;
+    width: 83px;
+    height: 49px;
+    border-radius: 4px 0px 0px 4px;
+  }
+  body .main-container .contact-form .contact-form__elements .contact-form__label .label-text {
+    font-size: 1.12rem;
+    position: relative;
+    top: -8%;
+    bottom: 25%;
+  }
   body .main-container .contact-form .contact-form__elements .mobile-cta-footer__button {
     position: relative;
-    right: -60px;
+    right: -100px;
   }
 }
 /*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >1024px */
