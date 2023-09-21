@@ -556,11 +556,11 @@ body .hero-button .hero-text {
   }
   body .lower-nav-container .nav-chevrons .left-chev {
     position: inherit;
-    left: 11px;
+    left: -14px;
   }
   body .lower-nav-container .nav-chevrons .right-chev {
     position: inherit;
-    right: -6px;
+    right: -32px;
   }
   body .lower-nav-container .main-footer .main-footer__social-icons {
     display: flex;
@@ -710,11 +710,11 @@ body .hero-button .hero-text {
   }
   body .lower-nav-container .nav-chevrons .left-chev {
     position: inherit;
-    left: 11px;
+    left: -14px;
   }
   body .lower-nav-container .nav-chevrons .right-chev {
     position: inherit;
-    right: -6px;
+    right: -32px;
   }
   body .lower-nav-container .main-footer .main-footer__social-icons {
     display: flex;
@@ -865,11 +865,11 @@ body .hero-button .hero-text {
   }
   body .lower-nav-container .nav-chevrons .left-chev {
     position: inherit;
-    left: 11px;
+    left: -14px;
   }
   body .lower-nav-container .nav-chevrons .right-chev {
     position: inherit;
-    right: -6px;
+    right: -32px;
   }
   body .lower-nav-container .main-footer .main-footer__social-icons {
     display: flex;
