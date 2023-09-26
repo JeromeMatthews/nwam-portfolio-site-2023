@@ -63,3 +63,7 @@ $f-weights: 900 700 400;
 //NOTE: Font lists for portfolio website. Applicable on all pages and their Viewport Variants.
 $font-list-h: proxima-nova, Arial, Helvetica, sans-serif;
 $font-list-b: futura-pt, Helvetica, Arial, sans-serif;
+
+
+//NOTE: Fixed amount of offset to assign to the navigation for the mobile variant main navigation. 
+$navOffset: 0.55px;
