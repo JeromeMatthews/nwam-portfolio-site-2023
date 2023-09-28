@@ -23,6 +23,12 @@
 					height: 233px;
 					background-image: url("/img/img-tablet-p/↳\ 🖼\ Image.png");
 
+					.blog-box__text-container{
+						//NOTE: design variant:
+							//creation of container for colllectively moving the text within the article previews around. Off by default for viewports smaller than 1024px & 768px (tablets);
+						display: block !important;
+					}//end blog-box__text-container
+
 					.blog-box__title {
 						//NOTE: design variant
 						font-size: $text1x-37; //22px;

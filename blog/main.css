@@ -199,6 +199,9 @@ body .main-container .blog-box__link .blog-box .blog-box__text {
     height: 233px;
     background-image: url("/img/img-tablet-p/↳ 🖼 Image.png");
   }
+  body .main-container .blog-box__link .blog-box .blog-box__text-container {
+    display: block !important;
+  }
   body .main-container .blog-box__link .blog-box .blog-box__title {
     font-size: 1.37rem;
   }
@@ -248,6 +251,9 @@ body .main-container .blog-box__link .blog-box .blog-box__text {
   body .main-container .blog-box__link #blog-box-2,
   body .main-container .blog-box__link #blog-box-3 {
     margin: auto 8px;
+  }
+  body .main-container .blog-box__link .blog-box__text-container {
+    display: block !important;
   }
 }
 /*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >800px */

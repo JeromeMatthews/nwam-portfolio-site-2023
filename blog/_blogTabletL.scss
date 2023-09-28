@@ -46,7 +46,12 @@
 					margin: auto 8px; //added spacing on the left and right margins total 16px - 8px each side.
 				} //end all blog-boxes | blog article previews.
 
-				
+				.blog-box__text-container{
+					//NOTE: design variant:
+						//creation of container for colllectively moving the text within the article previews around. Off by default for viewports smaller than 1024px & 768px (tablets);
+					display: block !important;
+				}//end blog-box__text-container
+
 
 
 

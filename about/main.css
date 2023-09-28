@@ -293,8 +293,11 @@ body .main-container .mobile-cta-footer .mobile-cta-footer__sm-links {
     position: relative;
     top: -320px;
   }
+  body .main-container .body-sect-1 {
+    margin-bottom: 187px;
+  }
   body .main-container .body-sect-1 .body-sect-1-art .body-sect-1__head {
-    margin: auto 67px;
+    margin: 97px;
     font-family: proxima-nova, Arial, Helvetica, sans-serif;
     font-weight: 900;
     font-style: normal;
@@ -311,6 +314,9 @@ body .main-container .mobile-cta-footer .mobile-cta-footer__sm-links {
   body .main-container .body-sect-1 .body-sect-1-art .body-sect-1__text i {
     font-style: italic;
   }
+  body .main-container .body-sect-2 {
+    margin-bottom: 187px;
+  }
   body .main-container .body-sect-2 .body-sect-2-art .body-sect-2__head {
     margin: 97px;
     font-family: proxima-nova, Arial, Helvetica, sans-serif;
@@ -325,6 +331,9 @@ body .main-container .mobile-cta-footer .mobile-cta-footer__sm-links {
     font-style: normal;
     font-size: 0.93rem;
     font-size: 1.25rem;
+  }
+  body .main-container .body-sect-3 {
+    margin-bottom: 187px;
   }
   body .main-container .body-sect-3 .body-sect-3-art .body-sect-3__head {
     margin: 97px;
@@ -385,6 +394,9 @@ body .main-container .mobile-cta-footer .mobile-cta-footer__sm-links {
     position: relative;
     top: -260px;
   }
+  body .main-container .body-sect-1 {
+    margin-bottom: 163px;
+  }
   body .main-container .body-sect-1 .body-sect-1-art .body-sect-1__head {
     margin: auto 167px;
     font-size: 3.59rem;
@@ -395,6 +407,9 @@ body .main-container .mobile-cta-footer .mobile-cta-footer__sm-links {
   body .main-container .body-sect-1 .body-sect-1-art .body-sect-1__text {
     text-align: right;
   }
+  body .main-container .body-sect-2 {
+    margin-bottom: 163px;
+  }
   body .main-container .body-sect-2 .body-sect-2-art .body-sect-2__head {
     font-size: 3.59rem;
     text-align: left;
@@ -402,6 +417,9 @@ body .main-container .mobile-cta-footer .mobile-cta-footer__sm-links {
   }
   body .main-container .body-sect-2 .body-sect-2-art .body-sect-2__text {
     text-align: left;
+  }
+  body .main-container .body-sect-3 {
+    margin-bottom: 163px;
   }
   body .main-container .body-sect-3 .body-sect-3-art .body-sect-3__head {
     font-size: 3.59rem;
@@ -751,6 +769,9 @@ body .main-container .mobile-cta-footer .mobile-cta-footer__sm-links {
   }
   body .main-container .body-sect-2 .body-sect-2-art .body-sect-2__text {
     font-size: 1.87rem;
+  }
+  body .main-container .body-sect-3 {
+    margin-bottom: 290px;
   }
   body .main-container .body-sect-3 .body-sect-3-art .body-sect-3__head {
     font-size: 7.18rem;

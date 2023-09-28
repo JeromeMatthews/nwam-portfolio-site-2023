@@ -50,7 +50,7 @@
 				.body-sect-1-art {
 					.body-sect-1__head {
 						//NOTE: variant change
-						margin: auto 67px;
+						margin: 97px;
 
 						@include aboutTitleCopy;
 						font-size: $text2X-81; //45px;
@@ -62,7 +62,9 @@
 							font-style: italic;
 						}
 					} //body-sect-1__text
-				}
+				}//end body-sect-1-art 
+				//NOTE: Design variant: spacing between body copy.
+				margin-bottom: 187px;
 			} //end of body-sect-1
 
 			.body-sect-2 {
@@ -76,8 +78,10 @@
 						//NOTE: variant change
 						@include aboutBodyCopy;
 						font-size: $text1X-25; //20px;
-					}
-				}
+					}//end body-sect-2__text
+				}//end body-sect-2-art
+				//NOTE: Design variant: spacing between body copy.
+				margin-bottom: 187px;
 			} //end of body-sect-2
 
 			.body-sect-3 {
@@ -93,8 +97,10 @@
 						//NOTE: variant change
 						@include aboutBodyCopy;
 						font-size: $text1X-25; //20px;
-					}
-				}
+					}//end body-sect-3__text
+				}//end body-sect-3-art
+				//NOTE: Design variant: spacing between body copy.
+				margin-bottom: 187px;
 			} //end of body-sect-3
 
 			.mobile-cta-footer {
