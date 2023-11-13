@@ -30,3 +30,4 @@ mobileOverlay.addEventListener("click", () => {
 });
 
 
+//ANIMATION AND UI/ UX CHANGES:
