@@ -2,6 +2,24 @@
 /*SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1920px */
 @media (min-width: 1920px) {
     body{
+
+        .page-container {
+			@include pageContainer;
+
+			.page__surface{
+			
+				@include pageSurface;
+
+			}//end page__surface
+
+		}//end page-continer 
+
+
+		.page-flipped{
+			transform: translateX(0.5%) rotateY(90deg);
+		}
+
+
         background-image: url("/img/img-desktop-l/desktop-blog-bg.png");
 
         .main-container{

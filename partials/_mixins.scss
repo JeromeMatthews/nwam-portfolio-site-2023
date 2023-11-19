@@ -103,6 +103,39 @@
 
 //!SECTION END - PROJECTS PAGE MIXINS:
 
+
+
+//SECTION: UI & UX ELEMENTS
+//SECTION: ANIMATIONS
+
+	@mixin pageContainer{
+		width: 100vw;
+	height: 100vh;
+	
+	transform-origin: left center;
+	perspective: 1000px;
+	transform-style: preserve-3d;
+	transition: transform 0.5s ease-in;
+	}
+
+	
+	@mixin pageSurface{
+			position: absolute;
+		width: 100vw;
+		height: 100vh;
+		
+		transform: translateX(0deg) rotateY(0deg);
+		backface-visibility: hidden;
+	}
+
+	
+
+
+
+
+//!SECTION END - ANIMATIONS
+//!SECTION END - UI & UX ELEMENTS
+
 //!SECTION END - MIXINS 
 
 //!SECTION UNIVERSAL VARIABLES, LISTS & MIXINS - END

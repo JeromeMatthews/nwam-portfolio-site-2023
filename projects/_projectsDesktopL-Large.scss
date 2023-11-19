@@ -10,6 +10,22 @@
 	} //end main-container
 
 	body {
+		.page-container {
+			@include pageContainer;
+
+			.page__surface{
+			
+				@include pageSurface;
+
+			}//end page__surface
+
+		}//end page-continer 
+
+
+		.page-flipped{
+			transform: translateX(0.5%) rotateY(90deg);
+		}
+
 		.main-container {
 			//NOTE: Design variant
 			background-image: url("/img/img-desktop-l/desktop-ps-bg.png");

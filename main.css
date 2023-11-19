@@ -784,6 +784,24 @@ body .hero-button .hero-text {
     background: url("/img/img-desktop-l/desktop-home-bg.png");
     /*Using the  !important flag to overide the assignment of the background images for the diffrent veiwport variants of the design.*/
   }
+  body .page-container {
+    width: 100vw;
+    height: 100vh;
+    transform-origin: left center;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease-in;
+  }
+  body .page-container .page__surface {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    transform: translateX(0deg) rotateY(0deg);
+    backface-visibility: hidden;
+  }
+  body .page-flipped {
+    transform: translateX(0.5%) rotateY(90deg);
+  }
   body .main-container {
     position: relative;
     top: 220px;

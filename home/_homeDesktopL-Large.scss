@@ -9,6 +9,24 @@
 	}
 
 	body {
+//TODO: Make a partial for this  block port across all top level Desktop versions where the  page flip animation should happen.  
+
+		.page-container {
+			@include pageContainer;
+
+			.page__surface{
+			
+				@include pageSurface;
+
+			}//end page__surface
+
+		}//end page-continer 
+
+
+		.page-flipped{
+			transform: translateX(0.5%) rotateY(90deg);
+		}
+
 		//NOTE: Moved this code from the nav base css. Correcting the separation of concerns in the scss files. Ensures the Hero Copy is placed in the right area for Desktop screens. 
 		.main-container {
            

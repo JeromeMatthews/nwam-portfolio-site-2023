@@ -710,6 +710,24 @@ body .main-container .mobile-cta-footer .mobile-cta-footer__sm-links {
   body {
     background-image: url("/img/img-desktop-l/desktop-about-bg.png");
   }
+  body .page-container {
+    width: 100vw;
+    height: 100vh;
+    transform-origin: left center;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease-in;
+  }
+  body .page-container .page__surface {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    transform: translateX(0deg) rotateY(0deg);
+    backface-visibility: hidden;
+  }
+  body .page-flipped {
+    transform: translateX(0.5%) rotateY(90deg);
+  }
   body .main-container .about-hero .about-hero__copy {
     position: relative;
     margin: 100px 60px 390px 155px;

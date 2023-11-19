@@ -455,6 +455,24 @@ body .main-container .blog-box__link .blog-box .blog-box__text {
   body {
     background-image: url("/img/img-desktop-l/desktop-blog-bg.png");
   }
+  body .page-container {
+    width: 100vw;
+    height: 100vh;
+    transform-origin: left center;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease-in;
+  }
+  body .page-container .page__surface {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    transform: translateX(0deg) rotateY(0deg);
+    backface-visibility: hidden;
+  }
+  body .page-flipped {
+    transform: translateX(0.5%) rotateY(90deg);
+  }
   body .main-container {
     position: relative;
     top: 200px;
