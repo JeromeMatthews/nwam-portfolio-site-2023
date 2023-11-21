@@ -8,8 +8,8 @@ let heroButton = document.querySelector(".hero-button");
 
 //NOTE: DOM Elements for UI/UX Page turn animations:
 let page_container = document.querySelector(".page-container");
-let navAnchors = document.querySelectorAll("a");
-
+let navAnchors = document.querySelectorAll(".dtlink");
+let CTAB = document.querySelector(".hero-button");
 
 
 //NOTE: Explanation for the code to help determine the actual size of the viewport available to design with. 
@@ -63,4 +63,23 @@ for (let i = 0; i < navAnchors.length; i++){
 
 
 };
+
+
+
+//NOTE: Trigger specific for CTAB on landing page & Contact page
+
+CTAB.addEventListener("click", e => {
+	e.preventDefault();
+
+	let target = e.target.href;
+
+	page_container.classList.add("page-flipped");
+
+	setTimeout(() =>{
+		window.location.href = target;
+	}, 500);
+
+});
+
+
 };//end window onload

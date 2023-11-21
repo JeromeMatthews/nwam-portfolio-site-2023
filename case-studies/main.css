@@ -1291,11 +1291,21 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
   .sitenav {
     display: none;
   }
+  #logo.dtlink {
+    display: block;
+    position: absolute;
+    width: 144px;
+    height: 94px;
+    top: 10px;
+    left: 166px;
+  }
   .sitenav__logo {
     width: 144px;
     height: 77px;
-    top: 10px;
-    left: 166px;
+    top: 3px;
+    left: -1px;
+    pointer-events: none;
+    z-index: 7;
   }
   .sitenav__contactNum {
     top: 75px;
@@ -1330,11 +1340,19 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
   .sitenav {
     display: none;
   }
+  #logo.dtlink {
+    display: block;
+    position: absolute;
+    width: 144px;
+    height: 94px;
+    top: 10px;
+    left: 166px;
+  }
   .sitenav__logo {
     width: 144px;
     height: 77px;
-    top: 10px;
-    left: 166px;
+    top: 3px;
+    left: -1px;
   }
   .sitenav__contactNum {
     top: 75px;
@@ -1568,11 +1586,21 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
   .sitenav {
     display: none;
   }
+  #logo.dtlink {
+    display: block;
+    position: absolute;
+    width: 144px;
+    height: 94px;
+    top: 10px;
+    left: 166px;
+  }
   .sitenav__logo {
     width: 144px;
     height: 77px;
-    top: 10px;
-    left: 166px;
+    top: 3px;
+    left: -1px;
+    pointer-events: none;
+    z-index: 7;
   }
   .sitenav__contactNum {
     top: 75px;
@@ -1601,6 +1629,15 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
 }
 /*SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1920px */
 @media (min-width: 1920px) {
+  #logo.logolink {
+    display: block;
+    position: absolute;
+    width: 144px;
+    height: 94px;
+    top: 10px;
+    left: 166px;
+    z-index: 9;
+  }
   .main-container {
     top: 0px;
   }

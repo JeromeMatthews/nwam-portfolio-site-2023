@@ -4,6 +4,12 @@
 	.projects-overlay {
 	} //end projects-overlay
 
+	//NOTE: Design variant: For Projects page. Needed to bring the logo link more forward so it could be clicked on to trigger the page transition animation and hyper linking.
+	#logo.dtlink {
+		//NOTE: Already has a position property set from the nav-base-desktops partial file import. So just adjusting the z-index here building on top of that.
+		z-index: 9;
+	}
+
 	.main-container {
 		//NOTE: design variant: resetting the main container height to the default.
 		top: 0px;

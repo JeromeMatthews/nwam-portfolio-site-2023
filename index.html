@@ -11,7 +11,7 @@
 			name="keywords"
 			content="web design, web development, design blog,personal portfolio website, freelancer, web application development"
 		/>
-		<!-- look into generating keywords from a keyword pattern finder online near to site launch to refine SEO efforts. Use site's content for data mining.-->
+		<!--NOTE: look into generating keywords from a keyword pattern finder online near to site launch to refine SEO efforts. Use site's content for data mining.-->
 		<meta name="author" content="Jerome Derryl Matthews" />
 
 		<link rel="stylesheet" href="https://use.typekit.net/llu1gif.css" />
@@ -35,7 +35,7 @@
 		<header class="header">
 			<nav class="sitenav-container">
 				<div class="sitenav-logo-contact-container">
-					<a href="/index.html">
+					<a id="logo" class="dtlink" href="/index.html">
 						<img
 							class="sitenav__logo"
 							src="/img/img-mobile-p/Nomad-orange.png"
@@ -83,10 +83,11 @@
 				</ul>
 				<!-- end Ul-->
 				<!-- NAVIGATION: TABLET - > DESKTOP RANGE -->
+				<!--NOTE: Added the class dtl to flag all the links that should trigger the animation omitting the tablet and mobile level links-->
 				<ul class="mainnav__links">
 					<div id="mn-projects">
 						<li>
-							<a href="/projects/projects.html">Projects
+							<a class="dtlink" href="/projects/projects.html">Projects
 								<!-- <span id="mn-projects-text"></span> -->
 							</a>
 						</li>
@@ -94,21 +95,21 @@
 
 					<div id="mn-about">
 						<li>
-							<a href="/about/about.html">About
+							<a class="dtlink" href="/about/about.html">About
 								<!-- <span id="mn-about-text">About</span> -->
 							</a>
 						</li>
 					</div>
 					<div id="mn-contact">
 						<li>
-							<a href="/contact/contact.html">Contact
+							<a class="dtlink" href="/contact/contact.html">Contact
 								<!-- <span id="mn-contact-text">Contact</span> -->
 							</a>
 						</li>
 					</div>
 					<div id="mn-blog">
 						<li>
-							<a href="/blog/blog.html">Blog
+							<a class="dtlink" href="/blog/blog.html">Blog
 								<!-- <span id="mn-blog-text">Blog</span> -->
 							</a>
 						</li>
@@ -164,7 +165,7 @@
 
 
 			<div class="lower-nav-container" style="display:none;">
-				<!-- Lower navigation for wider viewports. Bascially tablet and above.Only visible for wider viewports, will not display on mobile devices. Screen real estate better used for most important content. -->
+				<!-- NOTE: Lower navigation for wider viewports. Bascially tablet and above.Only visible for wider viewports, will not display on mobile devices. Screen real estate better used for most important content. -->
 
 				<div class="nav-chevrons">
 					<span class="left-chev"

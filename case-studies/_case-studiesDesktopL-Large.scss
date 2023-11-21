@@ -1,6 +1,20 @@
 @import "..//partials/_nav-base-desktops";
 /*SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1920px */
 @media (min-width: 1920px) {
+
+		//NOTE: Design variant: For Case Studies Template page. Needed to bring the logo link more forward so it could be clicked on to trigger the page transition animation and hyper linking.
+	#logo.logolink {
+		//NOTE: Design variant: The logo link back to the site index/home page on the case studies templates do not need to have a page transition effect. So diffierent trigger is set. Also tied to a different action on its event in the JS file. 
+		display: block;
+		position: absolute;
+		width: 144px;
+		height: 94px;
+		top: 10px;
+		left: 166px;
+		z-index: 9;
+	}//end logolink
+	
+
 	@mixin csContentBox-Project-DL {
 		position: relative;
 		width: 674px;

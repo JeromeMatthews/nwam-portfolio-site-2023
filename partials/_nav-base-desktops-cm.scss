@@ -8,11 +8,24 @@
         display: none;
     } //end sitenav
 
+
+
+    //NOTE: Design variant :Added dimension to the link s ithere is a clickable space for the user to actually interact with. 
+    #logo.dtlink {
+            display: block;
+            position: absolute;
+            width: 144px;
+            height: 94px;
+            top: 10px;
+            left: 166px;
+            
+        }//end dtlink
+
     .sitenav__logo {
         width: 144px;
         height: 77px;
-        top: 10px;
-        left: 166px;
+        top: 3px;
+        left: -1px;
     }
 
     .sitenav__contactNum {
