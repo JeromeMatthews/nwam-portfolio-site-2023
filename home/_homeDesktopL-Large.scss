@@ -9,33 +9,81 @@
 	}
 
 	body {
-//TODO: Make a partial for this  block port across all top level Desktop versions where the  page flip animation should happen.  
+		//NOTE: UI/UX: ANIMATION & TRANSITIONS: 1 - Page Background Image - Reveal effect
+		background-image: none;// set the inital state of the property 	
+		opacity: 0;// set the inital state of the property 
+		background-color: #000000;
+		animation: bg-reveal 3s ease-in forwards;
 
 		.page-container {
+			background: url("/img/img-desktop-l/desktop-home-bg.png");
+			/*Using the  !important flag to overide the assignment of the background images for the diffrent veiwport variants of the design.*/
 			@include pageContainer;
 
-			.page__surface{
-			
+			.page__surface {
 				@include pageSurface;
+			} //end page__surface
+		} //end page-continer
 
-			}//end page__surface
-
-		}//end page-continer 
-
-
-		.page-flipped{
+		.page-flipped {
 			transform: translateX(0.5%) rotateY(90deg);
 		}
 
-		//NOTE: Moved this code from the nav base css. Correcting the separation of concerns in the scss files. Ensures the Hero Copy is placed in the right area for Desktop screens. 
-		.main-container {
-           
-            position: relative;
-            top: 220px;
-        } // end main container
 
-		background: url("/img/img-desktop-l/desktop-home-bg.png");
-		/*Using the  !important flag to overide the assignment of the background images for the diffrent veiwport variants of the design.*/
+		.sitenav-logo-contact-container{
+			a#logo{
+				.sitenav__logo{
+					opacity: 0;// set the inital state of the property 
+					pointer-events: none; // set the inital state of the property
+					animation: logo-animate 0.9s ease-in 15.5s forwards; 
+					animation: logo-blink 0.1s 3 linear 16.5s forwards;
+
+				}//end sitenav__logo
+			}//end a#logo
+
+
+			.sitenav__contactNum{
+
+				opacity: 0;// set the inital state of the property 
+				pointer-events: none; // set the inital state of the property
+				animation: logo-animate 0.9s ease-in 16s forwards;
+			}// end sitenav__contactNum
+		}//end sitenav-logo-contact-container
+
+		//NOTE: UI/UX: ANIMATION & TRANSITIONS: 4 - Top navigation elements - Reveal effect
+
+		.mainnav__links{
+			#mn-projects{
+		opacity: 0;// set the inital state of the property 
+		pointer-events: none; // set the inital state of the property
+		animation: top-nav-reveal 0.7s ease-in 11.5s forwards;
+			}//end mn-projects
+
+			#mn-about{
+			opacity: 0;// set the inital state of the property 
+			pointer-events: none; // set the inital state of the property
+			animation: top-nav-reveal 0.7s ease-in 12.5s forwards;	
+			}//end mn-abouts
+
+			#mn-contact{
+			opacity: 0;// set the inital state of the property 
+			pointer-events: none;// set the inital state of the property 
+			animation: top-nav-reveal 0.7s ease-in 13.5s forwards;	
+			}//end mn-contact
+
+			#mn-blog{
+			opacity: 0; // set the inital state of the property
+			pointer-events: none; // set the inital state of the property
+			animation: top-nav-reveal 0.7s ease-in 14.5s forwards;	
+			}//end mn-blog
+		}//end mainnav__links
+
+
+		//NOTE: Moved this code from the nav base css. Correcting the separation of concerns in the scss files. Ensures the Hero Copy is placed in the right area for Desktop screens.
+		.main-container {
+			position: relative;
+			top: 220px;
+		} // end main container
 
 		.hero__copy {
 			top: -72px;
@@ -47,7 +95,42 @@
 			letter-spacing: 0px;
 			text-shadow: 0px 1px 1px #000000;
 			line-height: 110%; //NOTE: The property for brining text vertically closer together.
-			text-align: right;
+			text-align: left;
+
+			//NOTE: UI/UX: ANIMATION & TRANSITIONS: 2 - Hero Copy -Typewriter effect
+			.tw-fx-1 {
+				display: inline-block;
+				overflow: hidden;
+				
+				white-space: nowrap;
+				font-size: 4.06rem;
+				width: 0;
+				animation: typing 1s steps(20, end) 3.5s forwards,
+					cursor-off 0.5s ease-out 4.5s forwards;
+			} //end tw-fx-1
+
+			.tw-fx-2 {
+				display: inline-block;
+				overflow: hidden;
+				
+				white-space: nowrap;
+				font-size: 4.06rem;
+				width: 0;
+
+				animation: short-type 0.9s steps(16, end) forwards, cursor-off 1.4s ease-out forwards;
+				animation-delay: 5s;
+			} //end tw-fx-2
+
+			.tw-fx-3 {
+				display: inline-block;
+				overflow: hidden;
+				
+				white-space: nowrap;
+				font-size: 4.06rem;
+				width: 0;
+				animation: typing 1s steps(20, end) forwards, blink 0.8s infinite;
+				animation-delay: 6.5s;
+			} //end tw-fx-3
 		} //end hero__copy
 
 		.hero__article-2 {
@@ -67,13 +150,15 @@
 				text-align: right;
 				line-height: 100%; //NOTE: The property for brining text vertically closer together.
 				// margin-bottom: 49px;// turn off the botttom margin for design at this variant.
-				
+
+
+				//NOTE: UI/UX: ANIMATION & TRANSITIONS: 3 - Hero supporting text -reveal
+				opacity: 0; // set the inital state of the text visibility
+				animation: support-reveal 2s ease-in 8.5s forwards;
 			} // end hero__article-2
 		} // end hero__article-2
-	
 
-
-		 .hero-button {
+		.hero-button {
 			background: #ffbf00 0% 0% no-repeat padding-box;
 			box-shadow: 0px 2px 0px #000000;
 			border: 1px solid #707070;
@@ -96,12 +181,15 @@
 				margin: auto 10%;
 				text-align: center;
 				//NOTE: added to simplify needing to add any unecessary code just to try to beter atarget the button to trigger page turn animation.
-				pointer-events: none; 
+				pointer-events: none;
 			} //end hero-text
 
 			@media (max-width: 359px) {
 				margin-bottom: 50px;
 			}
+			opacity: 0;// set the inital state of the property 
+			pointer-events: none; // set the inital state of the property
+			animation: CTAB-reveal 0.9s ease-in 17.5s forwards;
 		} // end hero-button
 
 		.lower-nav-container {
@@ -119,11 +207,17 @@
 				.left-chev {
 					position: inherit;
 					left: -14px; //pull chevron to the left a little
+					opacity: 0;// set the inital state of the property 
+					pointer-events: none; // set the inital state of the property
+					animation: lower-nav-reveal 0.8s ease-in 18s forwards;
 				} //end left-chev
 
 				.right-chev {
 					position: inherit;
 					right: -32px; //pull chevron to the right a little
+					opacity: 0;// set the inital state of the property 
+					pointer-events: none; // set the inital state of the property
+					animation: lower-nav-reveal 0.8s ease-in 18.5s forwards;
 				} //end right-chev
 			} //end nav-chevrons
 
@@ -145,6 +239,190 @@
 				} //end social-icons
 			} //end main-footer
 		} // end lower-nav-elements
+		/*SECTION  ANIMATIONS & TRANSITIONS 
+		ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >1920px */
+		/*ANIMATIONS: */
+		//==========================
+		//Playback Master sequence:
+		//1 - page bg-image:
+		//2 - Hero Copy:
+		//3 - hero supporting text:
+		//4 - top nav elements- in order - h, p, a, c, b:
+		//5 - logo & contact number:
+		//6 - CTAB:
+		//7 - lower nav:
+		//==========================
+		
+		//1 - page bg-image:
+
+		@keyframes bg-reveal{
+			@include basicReveal;
+		}//end bg-reveal
+
+		//--------------------------
+
+		//2 - Hero Copy:
+		@keyframes typing {
+			//TODO: working on the inital state of the typehead. Needs to come on oly when the animation is about to start.
+			0% {
+				width: 0;
+				border-right: 0em;
+			}
+
+			15%{
+				width: 15%;
+				border-right: 0.15em solid $brandColor;
+			}
+			100% {
+				width: 100%;
+				border-right: 0.15em solid $brandColor;
+			}
+		}
+
+		@keyframes short-type {
+			0% {
+				width: 0;
+				border-right: 0em;
+			}
+
+			15%{
+				width: 15%;
+				border-right: 0.15em solid $brandColor;
+			}
+			100% {
+				width: 85%;
+				border-right: 0.15em solid $brandColor;
+			}
+		}
+
+		@keyframes blink {
+			from {
+				border-color: transparent;
+			}
+			to {
+				border-color: $brandColor;
+			}
+		}
+
+		@keyframes cursor-off {
+			from {
+				border-color: $brandColor;
+			}
+			to {
+				border-color: transparent;
+			}
+		}
+
+		//--------------------------
+
+		//3 - hero supporting text:
+		@keyframes support-reveal{
+			@include basicReveal;
+		}//end 
+		//--------------------------
+
+		//4 - top nav elements- in order - h, p, a, c, b:
+		@keyframes top-nav-reveal{
+			@include basicReveal;
+			from {
+				opacity: 0;
+				pointer-events: none;
+			}
+			to {
+				opacity: 1;
+				pointer-events: all;
+			}
+		}//end 	top-nav-reveal
+		//--------------------------
+
+		//TODO: Continue here
+		//5 - logo & contact number:
+		@keyframes logo-animate{
+			@include basicReveal;
+			from {
+				opacity: 0;
+				pointer-events: none;
+			}
+			to {
+				opacity: 1;
+				pointer-events: all;
+			}
+
+		}//end logo-reveal
+
+
+		@keyframes logo-blink {
+			@include basicReveal;
+			from {
+				opacity: 0;
+				pointer-events: none;
+			}
+			to {
+				opacity: 1;
+				pointer-events: all;
+			}
+		}// end logo-blink
+		//--------------------------
+
+
+		//6 - CTAB:
+		@keyframes CTAB-reveal {
+			@include basicReveal;
+			from {
+				opacity: 0;
+				pointer-events: none;
+			}
+			to {
+				opacity: 1;
+				pointer-events: all;
+			}
+		}//end CTAB-reveal
+		
+
+		@keyframes gleam {
+			0% {
+				left: 0;
+				opacity: 0;
+			}
+		
+			50% {
+				left: 50%;
+				opacity: 50%;
+			}
+		
+			100% {
+				left: 100%;
+				opacity: 0%;
+			}
+		}
+
+		// //6 - CTAB:
+		//--------------------------
+
+
+
+		//7 - lower nav:
+		@keyframes lower-nav-reveal{
+			@include basicReveal;
+			from {
+				opacity: 0;
+				pointer-events: none;
+			}
+			to {
+				opacity: 1;
+				pointer-events: all;
+			}
+		}//end lower nav
+		//--------------------------
+
+
+
+
+
+
+		/*END ANIMATIONS*/
+		/*!SECTION END ANIMATIONS & TRANSITIONS 
+		ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >1920px */
 	} // end body
 } //end media query
 /*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >1920px */

@@ -654,7 +654,7 @@ body .main-container .contact-form .contact-form__elements .mobile-cta-footer__b
     width: 100vw;
     height: 100vh;
     transform-origin: left center;
-    perspective: 1000px;
+    perspective: 2500px;
     transform-style: preserve-3d;
     transition: transform 0.5s ease-in;
   }
