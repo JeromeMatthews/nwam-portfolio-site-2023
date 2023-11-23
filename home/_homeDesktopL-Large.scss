@@ -34,7 +34,7 @@
 			a#logo{
 				.sitenav__logo{
 					opacity: 0;// set the inital state of the property 
-					pointer-events: none; // set the inital state of the property
+					// pointer-events: none; // set the inital state of the property
 					animation: logo-animate 0.9s ease-in 15.5s forwards; 
 					animation: logo-blink 0.1s 3 linear 16.5s forwards;
 
@@ -210,6 +210,7 @@
 					opacity: 0;// set the inital state of the property 
 					pointer-events: none; // set the inital state of the property
 					animation: lower-nav-reveal 0.8s ease-in 18s forwards;
+					cursor: pointer;
 				} //end left-chev
 
 				.right-chev {
@@ -218,6 +219,7 @@
 					opacity: 0;// set the inital state of the property 
 					pointer-events: none; // set the inital state of the property
 					animation: lower-nav-reveal 0.8s ease-in 18.5s forwards;
+					cursor: pointer;
 				} //end right-chev
 			} //end nav-chevrons
 
@@ -232,9 +234,42 @@
 					//NOTE: Design vaieant: The outer container creates an offset, so this corrects for it. Centering the social media icons.
 					position: relative;
 					right: 3.5vw;
-
+					//NOTE: UI/UX: ANIMATION & TRANSITIONS: 8 - Lower Social Media Icons - Appear and bounce effect
 					li {
+						#smi-yt, #smi-b, #smi-fb, #smi-ig, #smi-lk{
+							
+							position: relative;
+						
+						}//end img
+
+						#smi-yt{
+							opacity: 0;//initial state of property for animation
+							animation: social-icons-animate 0.5s ease 19.5s forwards;
+						}//end smi-yt
+
+						#smi-b{
+							opacity: 0;//initial state of property for animation
+							animation: social-icons-animate 0.5s ease 19.9s forwards;
+						}//end smi-b
+
+						#smi-fb{
+							opacity: 0;//initial state of property for animation
+							animation: social-icons-animate 0.5s ease 20s forwards;
+						}// end smi-fb
+
+						#smi-ig{
+							opacity: 0;//initial state of property for animation
+							animation: social-icons-animate 0.5s ease 20.9s forwards;
+						}//end smi-ig
+
+						#smi-lk{
+							opacity: 0;//initial state of property for animation
+							animation: social-icons-animate 0.5s ease 21.0s forwards;
+						}//end smi-lk
+
+						position: relative;
 						margin-right: 10px;
+						 cursor: pointer;
 					} //end li
 				} //end social-icons
 			} //end main-footer
@@ -251,6 +286,7 @@
 		//5 - logo & contact number:
 		//6 - CTAB:
 		//7 - lower nav:
+		//8: - social icons:  
 		//==========================
 		
 		//1 - page bg-image:
@@ -341,11 +377,11 @@
 			@include basicReveal;
 			from {
 				opacity: 0;
-				pointer-events: none;
+				
 			}
 			to {
 				opacity: 1;
-				pointer-events: all;
+				
 			}
 
 		}//end logo-reveal
@@ -355,11 +391,11 @@
 			@include basicReveal;
 			from {
 				opacity: 0;
-				pointer-events: none;
+				
 			}
 			to {
 				opacity: 1;
-				pointer-events: all;
+				
 			}
 		}// end logo-blink
 		//--------------------------
@@ -415,6 +451,26 @@
 		}//end lower nav
 		//--------------------------
 
+		//8: - social icons:  
+
+		@keyframes social-icons-animate{
+			@include basicReveal;
+			0%{
+				
+				top: 0px;
+			} 
+	
+		50%{
+			
+				top: -4px;
+			} 
+	
+			100%{
+				
+				top: 0px;
+			}
+		}//end social-icons-reveal
+		//--------------------------
 
 
 
