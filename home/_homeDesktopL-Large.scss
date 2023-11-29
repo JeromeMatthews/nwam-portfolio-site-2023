@@ -10,8 +10,8 @@
 
 	body {
 		//NOTE: UI/UX: ANIMATION & TRANSITIONS: 1 - Page Background Image - Reveal effect
-		background-image: none;// set the inital state of the property 	
-		opacity: 0;// set the inital state of the property 
+		background-image: none;// set the inital state of the property 	- for animation
+		opacity: 0;// set the inital state of the property - for animation
 		background-color: #000000;
 		animation: bg-reveal 3s ease-in forwards;
 
@@ -33,19 +33,25 @@
 		.sitenav-logo-contact-container{
 			a#logo{
 				.sitenav__logo{
-					opacity: 0;// set the inital state of the property 
-					// pointer-events: none; // set the inital state of the property
+					opacity: 0;// set the inital state of the property - for animation
+					// pointer-events: none; // set the inital state of the property - for animation
 					animation: logo-animate 0.9s ease-in 15.5s forwards; 
 					animation: logo-blink 0.1s 3 linear 16.5s forwards;
 
 				}//end sitenav__logo
 			}//end a#logo
 
+			a#logo:hover{
+				.sitenav__logo{
+					top:-0.5px;
+					// transform:  translate scaleZ(10px);
+				}//end .sitenav__logo
+			}//end a#logo:hover
 
 			.sitenav__contactNum{
 
-				opacity: 0;// set the inital state of the property 
-				pointer-events: none; // set the inital state of the property
+				opacity: 0;// set the inital state of the property - for animation
+				pointer-events: none; // set the inital state of the property - for animation
 				animation: logo-animate 0.9s ease-in 16s forwards;
 			}// end sitenav__contactNum
 		}//end sitenav-logo-contact-container
@@ -53,29 +59,348 @@
 		//NOTE: UI/UX: ANIMATION & TRANSITIONS: 4 - Top navigation elements - Reveal effect
 
 		.mainnav__links{
+			top: 26px;
+			left:698px;
+
+			a{
+
+				margin-top: 0px;
+				margin-bottom: 0px;
+				padding: 0px;
+
+			}//end mainnav__links a
+			
+			
+		//NOTE: MN-PROJECTS-NAV-LINK - UI/UX:
+		//===================================
+		
+			
 			#mn-projects{
-		opacity: 0;// set the inital state of the property 
-		pointer-events: none; // set the inital state of the property
-		animation: top-nav-reveal 0.7s ease-in 11.5s forwards;
+				//NOTE: Design variant: Moved the overall position of the container up to realign it with the design draft.
+
+				overflow:hidden; //Acts as the mask for all the design elements to make the hover effect of each link.
+				position: relative;
+				top:-26px;
+				height: 50px;
+				border: 0.5px solid #fff;
+				//NOTE: mn-projects anchor tag  link and text UI/UX additions: 
+				/*Hover state changes */ 
+				#mn-projects-link{
+					//NOTE: Design variant: Removed the left and right margins to have the puesdo element (The rectangular streak) better fit over the nav items.
+					
+					/*Some asthetic adjustments to have the link fill the same area as in the original desgin draft. */
+					
+					/*Using the padding section of the content box and not margin. This is so the puesdo element doesn't take that into account for the overall distance to travel across the link and ends up looking werid.*/
+
+					margin-left: 0px;
+  					margin-right: 0px;
+  					padding: 25px 25px;// space added to anchor so they look nicer and have larger surface area to click on by users. 
+					
+				}//end mn-projects-link
+
+				#mn-projects-link:hover{
+					background-color: #ffbf00;
+					text-shadow: 0px 0.9px 0px #000000 ;/* offset-x | offset-y | blur-radius | color */
+				}//end mn-projects-link:hover
+
+			
+				
+				#mn-projects-link:after{
+					content: " ";
+					background: rgba(255, 255, 255, 0.596);
+					height: 99px;
+					width: 37px;
+					position: absolute;
+					top: -27px;
+					left: -56px;
+					transform: rotate(35deg);
+					z-index: 10;
+					transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+
+
+				}//end mn-projects-link:after
+		
+				#mn-projects-link:hover:after{
+					left: 120%;
+					-webkit-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+							transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+				}//end mn-projects-link
+				
+
+				#mn-projects-text{
+					vertical-align: middle;
+  					top: 3px;
+  					position: relative;
+
+					
+					pointer-events: none;//NOTE: Stops the text from interfearing with the click event propragating up to the anchor tag querySelector in the JS to capture the Target page link. 
+				}//end mn-projects-text
+
+			
+
+				
+			
+			opacity: 0;// set the inital state of the property - for animation 
+			pointer-events: none; // set the inital state of the property - for animation
+			animation: top-nav-reveal 0.7s ease-in 11.5s forwards;
 			}//end mn-projects
 
+			#mn-projects:hover{
+				
+				position: relative;
+				top:-28px; // 2px offset upwards to give a look of the link being raised once hovered over. the adjustment on the link is -26px so adding 2px more when hovered. 
+
+				
+				filter: drop-shadow(0px 2.5px rgba(0, 0, 0, 0.221));
+				/* Two length values and a color */
+				/* drop-shadow( <length> <length> <color> ) */
+			}//end mn-projects-li:hover
+
+
+			//NOTE: MN-ABOUT-NAV-LINK - UI/UX:
+			//===================================
+
+
 			#mn-about{
-			opacity: 0;// set the inital state of the property 
-			pointer-events: none; // set the inital state of the property
+			//NOTE: Design variant: Moved the overall position of the container up to realign it with the design draft.
+
+				overflow:hidden; //Acts as the mask for all the design elements to make the hover effect of each link.
+				position: relative;
+				top:-26px;
+				height: 50px;
+				border: 0.5px solid #fff;
+				//NOTE: mn-about anchor tag  link and text UI/UX additions: 
+				/*Hover state changes */ 
+				#mn-about-link{
+					//NOTE: Design variant: Removed the left and right margins to have the puesdo element (The rectangular streak) better fit over the nav items.
+					
+					/*Some asthetic adjustments to have the link fill the same area as in the original desgin draft. */
+					
+					/*Using the padding section of the content box and not margin. This is so the puesdo element doesn't take that into account for the overall distance to travel across the link and ends up looking werid.*/
+
+					margin-left: 0px;
+  					margin-right: 0px;
+  					padding: 25px 25px;// space added to anchor so they look nicer and have larger surface area to click on by users. 
+					
+				}//end mn-about-link
+
+				#mn-about-link:hover{
+					background-color: #ffbf00;
+					text-shadow: 0px 0.9px 0px #000000 ;/* offset-x | offset-y | blur-radius | color */
+				}//end mn-about-link:hover
+
+			
+				
+				#mn-about-link:after{
+					content: " ";
+					background: rgba(255, 255, 255, 0.596);
+					height: 99px;
+					width: 37px;
+					position: absolute;
+					top: -27px;
+					left: -56px;
+					transform: rotate(35deg);
+					z-index: 10;
+					transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+
+
+				}//end mn-about-link:after
+		
+				#mn-about-link:hover:after{
+					left: 120%;
+					-webkit-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+							transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+				}//end mn-about-link
+				
+
+				#mn-about-text{
+					vertical-align: middle;
+  					top: 3px;
+  					position: relative;
+
+					
+					pointer-events: none;//NOTE: Stops the text from interfearing with the click event propragating up to the anchor tag querySelector in the JS to capture the Target page link. 
+				}//end mn-about-text
+			opacity: 0;// set the inital state of the property - for animation
+			pointer-events: none; // set the inital state of the property - for animation
 			animation: top-nav-reveal 0.7s ease-in 12.5s forwards;	
-			}//end mn-abouts
+
+			}//end mn-about
+
+			#mn-about:hover{
+					
+				position: relative;
+				top:-28px; // 2px offset upwards to give a look of the link being raised once hovered over. the adjustment on the link is -26px so adding 2px more when hovered. 
+
+				
+				filter: drop-shadow(0px 2.5px rgba(0, 0, 0, 0.221));
+				/* Two length values and a color */
+				/* drop-shadow( <length> <length> <color> ) */
+			}//end mn-about:hover
+
+
+			//NOTE: MN-CONTACT-NAV-LINK - UI/UX:
+			//===================================
+
 
 			#mn-contact{
-			opacity: 0;// set the inital state of the property 
-			pointer-events: none;// set the inital state of the property 
+				//NOTE: Design variant: Moved the overall position of the container up to realign it with the design draft.
+
+				overflow:hidden; //Acts as the mask for all the design elements to make the hover effect of each link.
+				position: relative;
+				top:-26px;
+				height: 50px;
+				border: 0.5px solid #fff;
+				//NOTE: mn-contact anchor tag  link and text UI/UX additions: 
+				/*Hover state changes */ 
+				#mn-contact-link{
+					//NOTE: Design variant: Removed the left and right margins to have the puesdo element (The rectangular streak) better fit over the nav items.
+					
+					/*Some asthetic adjustments to have the link fill the same area as in the original desgin draft. */
+					
+					/*Using the padding section of the content box and not margin. This is so the puesdo element doesn't take that into account for the overall distance to travel across the link and ends up looking werid.*/
+
+					margin-left: 0px;
+  					margin-right: 0px;
+  					padding: 25px 25px;// space added to anchor so they look nicer and have larger surface area to click on by users. 
+					
+				}//end mn-contact-link
+
+				#mn-contact-link:hover{
+					background-color: #ffbf00;
+					text-shadow: 0px 0.9px 0px #000000 ;/* offset-x | offset-y | blur-radius | color */
+				}//end mn-contact-link:hover
+
+			
+				
+				#mn-contact-link:after{
+					content: " ";
+					background: rgba(255, 255, 255, 0.596);
+					height: 99px;
+					width: 37px;
+					position: absolute;
+					top: -27px;
+					left: -56px;
+					transform: rotate(35deg);
+					z-index: 10;
+					transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+
+
+				}//end mn-contact-link:after
+		
+				#mn-contact-link:hover:after{
+					left: 120%;
+					-webkit-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+							transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+				}//end mn-contact-link
+				
+
+				#mn-contact-text{
+					vertical-align: middle;
+  					top: 3px;
+  					position: relative;
+
+					
+					pointer-events: none;//NOTE: Stops the text from interfearing with the click event propragating up to the anchor tag querySelector in the JS to capture the Target page link. 
+				}//end mn-contact-text
+			opacity: 0;// set the inital state of the property - for animation 
+			pointer-events: none;// set the inital state of the property - for animation 
 			animation: top-nav-reveal 0.7s ease-in 13.5s forwards;	
 			}//end mn-contact
 
+			#mn-contact:hover{
+					
+				position: relative;
+				top:-28px; // 2px offset upwards to give a look of the link being raised once hovered over. the adjustment on the link is -26px so adding 2px more when hovered. 
+
+				
+				filter: drop-shadow(0px 2.5px rgba(0, 0, 0, 0.221));
+				/* Two length values and a color */
+				/* drop-shadow( <length> <length> <color> ) */
+			}//end mn-contact:hover
+
+
+			//NOTE: MN-BLOG-NAV-LINK - UI/UX:
+			//===================================
+
+
 			#mn-blog{
-			opacity: 0; // set the inital state of the property
-			pointer-events: none; // set the inital state of the property
+				//NOTE: Design variant: Moved the overall position of the container up to realign it with the design draft.
+
+				overflow:hidden; //Acts as the mask for all the design elements to make the hover effect of each link.
+				position: relative;
+				top:-26px;
+				height: 50px;
+				border: 0.5px solid #fff;
+				//NOTE: mn-blog anchor tag  link and text UI/UX additions: 
+				/*Hover state changes */ 
+				#mn-blog-link{
+					//NOTE: Design variant: Removed the left and right margins to have the puesdo element (The rectangular streak) better fit over the nav items.
+					
+					/*Some asthetic adjustments to have the link fill the same area as in the original desgin draft. */
+					
+					/*Using the padding section of the content box and not margin. This is so the puesdo element doesn't take that into account for the overall distance to travel across the link and ends up looking werid.*/
+
+					margin-left: 0px;
+  					margin-right: 0px;
+  					padding: 25px 25px;// space added to anchor so they look nicer and have larger surface area to click on by users. 
+					
+				}//end mn-contact-link
+
+				#mn-blog-link:hover{
+					background-color: #ffbf00;
+					text-shadow: 0px 0.9px 0px #000000 ;/* offset-x | offset-y | blur-radius | color */
+				}//end mn-blog-link:hover
+		
+				
+				#mn-blog-link:after{
+					content: " ";
+					background: rgba(255, 255, 255, 0.596);
+					height: 99px;
+					width: 37px;
+					position: absolute;
+					top: -27px;
+					left: -56px;
+					transform: rotate(35deg);
+					z-index: 10;
+					transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+
+
+				}//end mn-blog-link:after
+		
+				#mn-blog-link:hover:after{
+					left: 120%;
+					-webkit-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+							transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+				}//end mn-blog-link
+				
+
+				#mn-blog-text{
+					vertical-align: middle;
+  					top: 3px;
+  					position: relative;
+
+					
+					pointer-events: none;//NOTE: Stops the text from interfearing with the click event propragating up to the anchor tag querySelector in the JS to capture the Target page link. 
+				}//end mn-blog-text
+
+			opacity: 0; // set the inital state of the property - for animation
+			pointer-events: none; // set the inital state of the property - for animation
 			animation: top-nav-reveal 0.7s ease-in 14.5s forwards;	
 			}//end mn-blog
+
+			#mn-blog:hover{
+					
+				position: relative;
+				top:-28px; // 2px offset upwards to give a look of the link being raised once hovered over. the adjustment on the link is -26px so adding 2px more when hovered. 
+
+				
+				filter: drop-shadow(0px 2.5px rgba(0, 0, 0, 0.221));
+				/* Two length values and a color */
+				/* drop-shadow( <length> <length> <color> ) */
+			}//end mn-blog:hover
+
+
 		}//end mainnav__links
 
 
@@ -153,13 +478,35 @@
 
 
 				//NOTE: UI/UX: ANIMATION & TRANSITIONS: 3 - Hero supporting text -reveal
-				opacity: 0; // set the inital state of the text visibility
+				opacity: 0; // set the inital state of the text visibility - for animation
 				animation: support-reveal 2s ease-in 8.5s forwards;
 			} // end hero__article-2
 		} // end hero__article-2
 
+
+
+			a.hero-button::before {
+				content: " ";
+	
+				width: 45px;
+				height: 95px;
+				transform: rotateZ(15deg);
+				background-color: rgba(255, 255, 255, 0.37);
+				position: relative;
+				z-index: 10;
+				float: left;
+				top: -13px;
+				opacity: 0;
+				animation: gleam 2.1s  1 linear 24.5s forwards;
+			}
+			//TODO: work on pusedo states across page and tool-tip
+			.hero-button:hover {
+				background: rgb(255, 230, 0)no-repeat padding-box;
+	
+			}//end hero-button:hover state
+
 		.hero-button {
-			background: #ffbf00 0% 0% no-repeat padding-box;
+			background: #ffbf00  no-repeat padding-box;
 			box-shadow: 0px 2px 0px #000000;
 			border: 1px solid #707070;
 			border-radius: 8px;
@@ -174,21 +521,21 @@
 			font-size: $text1x-87; //30px;
 
 			text-decoration: none;
-
+			overflow: hidden;//NOTE: Desgin variant: Added to constrain the animation of the gleam/light streak running across the button to stay within the dimensions of the hero button.
 			.hero-text {
 				position: relative;
 				top: 13px;
 				margin: auto 10%;
 				text-align: center;
-				//NOTE: added to simplify needing to add any unecessary code just to try to beter atarget the button to trigger page turn animation.
-				pointer-events: none;
+				//NOTE: added to simplify needing to add any unecessary code just to try to better target the button to trigger page turn animation.
+				pointer-events: none;//NOTE: Design variant, removing the event propagation from the text element in the button so the JS file picks up only the click event of the button itself and passes the href target to the next page.
 			} //end hero-text
 
 			@media (max-width: 359px) {
 				margin-bottom: 50px;
 			}
-			opacity: 0;// set the inital state of the property 
-			pointer-events: none; // set the inital state of the property
+			opacity: 0;// set the inital state of the property - for animation
+			pointer-events: none; // set the inital state of the property - for animation
 			animation: CTAB-reveal 0.9s ease-in 17.5s forwards;
 		} // end hero-button
 
@@ -207,8 +554,8 @@
 				.left-chev {
 					position: inherit;
 					left: -14px; //pull chevron to the left a little
-					opacity: 0;// set the inital state of the property 
-					pointer-events: none; // set the inital state of the property
+					opacity: 0;// set the inital state of the property - for animation
+					pointer-events: none; // set the inital state of the property - for animation
 					animation: lower-nav-reveal 0.8s ease-in 18s forwards;
 					cursor: pointer;
 				} //end left-chev
@@ -216,8 +563,8 @@
 				.right-chev {
 					position: inherit;
 					right: -32px; //pull chevron to the right a little
-					opacity: 0;// set the inital state of the property 
-					pointer-events: none; // set the inital state of the property
+					opacity: 0;// set the inital state of the property - for animation
+					pointer-events: none; // set the inital state of the property - for animation
 					animation: lower-nav-reveal 0.8s ease-in 18.5s forwards;
 					cursor: pointer;
 				} //end right-chev
@@ -243,27 +590,27 @@
 						}//end img
 
 						#smi-yt{
-							opacity: 0;//initial state of property for animation
+							opacity: 0;//initial state of property for animation - for animation
 							animation: social-icons-animate 0.5s ease 19.5s forwards;
 						}//end smi-yt
 
 						#smi-b{
-							opacity: 0;//initial state of property for animation
+							opacity: 0;//initial state of property for animation - for animation
 							animation: social-icons-animate 0.5s ease 19.9s forwards;
 						}//end smi-b
 
 						#smi-fb{
-							opacity: 0;//initial state of property for animation
+							opacity: 0;//initial state of property for animation - for animation
 							animation: social-icons-animate 0.5s ease 20s forwards;
 						}// end smi-fb
 
 						#smi-ig{
-							opacity: 0;//initial state of property for animation
+							opacity: 0;//initial state of property for animation - for animation
 							animation: social-icons-animate 0.5s ease 20.9s forwards;
 						}//end smi-ig
 
 						#smi-lk{
-							opacity: 0;//initial state of property for animation
+							opacity: 0;//initial state of property for animation - for animation
 							animation: social-icons-animate 0.5s ease 21.0s forwards;
 						}//end smi-lk
 
@@ -473,6 +820,22 @@
 		//--------------------------
 
 
+		@keyframes top-nav-gleam {
+			0% {
+				left: 0;
+				opacity: 0;
+			}
+		
+			50% {
+				left: 50%;
+				opacity: 50%;
+			}
+		
+			100% {
+				left: 100%;
+				opacity: 0%;
+			}
+		}
 
 
 
