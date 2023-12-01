@@ -141,8 +141,133 @@
 
 
 //!SECTION END - ANIMATIONS
-//!SECTION END - UI & UX ELEMENTS
+//SECTION PSEUDO ELEMENTS & CLASSES
 
+//UIUXI: TOP NAV SOCIAL ICONS: 
+//===============================
+//NOTE: Here defines all the top navigation link pseudo classes for the navigation and any associated pseudo elements:
+/*
+	UX design layout is as follows: 
+		div. link-container element > 
+			(::before|| ::after )
+			a #id for link >
+				(::before|| ::after)
+				span #id for link text
+					(::before || ::after) 
+
+				this translates to a general template structure:
+
+				mainnav__links-link-container{
+
+						.mainnav__links-link__href{
+
+						}
+
+						.mainnav__links-link__href:after{
+
+						}
+
+						.mainnav__links-link__href:hover{
+
+						}
+
+						.mainnav__links-link__href:hover:after{
+
+						}
+
+						.mainnav__links-link__text{
+
+						}
+				}
+
+				.mainnav__links-link-container:hover {
+
+				}
+*/
+
+//ANCHOR: Hover state :
+//====================
+
+ @mixin mainnav__links-link-container{
+	//NOTE: Design variant: Moved the overall position of the container up to realign it with the design draft.
+
+	overflow: hidden; //Acts as the mask for all the design elements to make the hover effect of each link.
+	position: relative;
+	top: -26px;
+	height: 50px;
+	border: 0.5px solid #fff;
+}//end mainnav__links-link-container 
+
+
+@mixin mainnav__links-link__href{
+//NOTE: Design variant: Removed the left and right margins to have the puesdo element (The rectangular streak) better fit over the nav items.
+
+					/*Some asthetic adjustments to have the link fill the same area as in the original desgin draft. */
+
+					/*Using the padding section of the content box and not margin. This is so the puesdo element doesn't take that into account for the overall distance to travel across the link and ends up looking werid.*/
+
+					margin-left: 0px;
+					margin-right: 0px;
+					padding: 25px 25px; // space added to anchor so they look nicer and have larger surface area to click on by users.
+}//end mainnav__links-link__href
+
+
+
+@mixin mainnav__links-link__href-after {
+		content: " ";
+		background: rgba(255, 255, 255, 0.596);
+		height: 99px;
+		width: 37px;
+		position: absolute;
+		top: -27px;
+		left: -56px;
+		transform: rotate(35deg);
+		z-index: 10;
+		transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+}//end mainnav__links-link__href-after
+
+
+@mixin mainnav__links-link__href-hover {
+	background-color: #ffbf00;
+	text-shadow: 0px 0.9px 0px #000000; /* offset-x | offset-y | blur-radius | color */
+}//end mainnav__links-link__href-hover
+
+
+@mixin mainnav__links-link__href-hover-after {
+	left: 120%;
+	-webkit-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+	transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+}//end mainnav__links-link__href-hover-after
+
+
+@mixin mainnav__links-link__text {
+	vertical-align: middle;
+	top: 3px;
+	position: relative;
+
+	pointer-events: none; //NOTE: Stops the text from interfearing with the click event propragating up to the anchor tag querySelector in the JS to capture the Target page link.
+}//end mainnav__links-link__text
+
+
+
+
+
+
+
+
+
+
+//UIUXI: LOWER NAV SOCIAL ICONS: 
+//===============================
+@mixin lowerNav-hoverstate{
+	transform: translateY(-2px);
+	filter: drop-shadow(0px 4px rgb(0, 0, 0));
+}
+
+
+//!SECTION PSEUDO ELEMENTS & CLASSES
+
+//!SECTION END - UI & UX ELEMENTS
 //!SECTION END - MIXINS 
 
 //!SECTION UNIVERSAL VARIABLES, LISTS & MIXINS - END

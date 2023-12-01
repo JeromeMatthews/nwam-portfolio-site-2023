@@ -1,4 +1,42 @@
 @import "partials/_base.css";
+/*
+	UX design layout is as follows: 
+		div. link-container element > 
+			(::before|| ::after )
+			a #id for link >
+				(::before|| ::after)
+				span #id for link text
+					(::before || ::after) 
+
+				this translates to a general template structure:
+
+				mainnav__links-link-container{
+
+						.mainnav__links-link__href{
+
+						}
+
+						.mainnav__links-link__href:after{
+
+						}
+
+						.mainnav__links-link__href:hover{
+
+						}
+
+						.mainnav__links-link__href:hover:after{
+
+						}
+
+						.mainnav__links-link__text{
+
+						}
+				}
+
+				.mainnav__links-link-container:hover {
+
+				}
+*/
 .sitenav--container {
   position: relative;
   z-index: 1;
@@ -852,7 +890,7 @@ body .hero-button .hero-text {
     margin-bottom: 0px;
     padding: 0px;
   }
-  body .mainnav__links #mn-projects {
+  body .mainnav__links .mainnav__links-link-container {
     overflow: hidden;
     position: relative;
     top: -26px;
@@ -863,18 +901,14 @@ body .hero-button .hero-text {
     pointer-events: none;
     animation: top-nav-reveal 0.7s ease-in 11.5s forwards;
   }
-  body .mainnav__links #mn-projects #mn-projects-link {
+  body .mainnav__links .mainnav__links-link-container .mainnav__links-link__href {
     /*Some asthetic adjustments to have the link fill the same area as in the original desgin draft. */
     /*Using the padding section of the content box and not margin. This is so the puesdo element doesn't take that into account for the overall distance to travel across the link and ends up looking werid.*/
     margin-left: 0px;
     margin-right: 0px;
     padding: 25px 25px;
   }
-  body .mainnav__links #mn-projects #mn-projects-link:hover {
-    background-color: #ffbf00;
-    text-shadow: 0px 0.9px 0px #000000; /* offset-x | offset-y | blur-radius | color */
-  }
-  body .mainnav__links #mn-projects #mn-projects-link:after {
+  body .mainnav__links .mainnav__links-link-container .mainnav__links-link__href:after {
     content: " ";
     background: rgba(255, 255, 255, 0.596);
     height: 99px;
@@ -886,170 +920,21 @@ body .hero-button .hero-text {
     z-index: 10;
     transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
   }
-  body .mainnav__links #mn-projects #mn-projects-link:hover:after {
-    left: 120%;
-    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
-  }
-  body .mainnav__links #mn-projects #mn-projects-text {
-    vertical-align: middle;
-    top: 3px;
-    position: relative;
-    pointer-events: none;
-  }
-  body .mainnav__links #mn-projects:hover {
-    position: relative;
-    top: -28px;
-    filter: drop-shadow(0px 2.5px rgba(0, 0, 0, 0.221));
-    /* Two length values and a color */
-    /* drop-shadow( <length> <length> <color> ) */
-  }
-  body .mainnav__links #mn-about {
-    overflow: hidden;
-    position: relative;
-    top: -26px;
-    height: 50px;
-    border: 0.5px solid #fff;
-    /*Hover state changes */
-    opacity: 0;
-    pointer-events: none;
-    animation: top-nav-reveal 0.7s ease-in 12.5s forwards;
-  }
-  body .mainnav__links #mn-about #mn-about-link {
-    /*Some asthetic adjustments to have the link fill the same area as in the original desgin draft. */
-    /*Using the padding section of the content box and not margin. This is so the puesdo element doesn't take that into account for the overall distance to travel across the link and ends up looking werid.*/
-    margin-left: 0px;
-    margin-right: 0px;
-    padding: 25px 25px;
-  }
-  body .mainnav__links #mn-about #mn-about-link:hover {
+  body .mainnav__links .mainnav__links-link-container .mainnav__links-link__href:hover {
     background-color: #ffbf00;
     text-shadow: 0px 0.9px 0px #000000; /* offset-x | offset-y | blur-radius | color */
   }
-  body .mainnav__links #mn-about #mn-about-link:after {
-    content: " ";
-    background: rgba(255, 255, 255, 0.596);
-    height: 99px;
-    width: 37px;
-    position: absolute;
-    top: -27px;
-    left: -56px;
-    transform: rotate(35deg);
-    z-index: 10;
-    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
-  }
-  body .mainnav__links #mn-about #mn-about-link:hover:after {
+  body .mainnav__links .mainnav__links-link-container .mainnav__links-link__href:hover:after {
     left: 120%;
     transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
   }
-  body .mainnav__links #mn-about #mn-about-text {
+  body .mainnav__links .mainnav__links-link-container .mainnav__links-link__text {
     vertical-align: middle;
     top: 3px;
     position: relative;
     pointer-events: none;
   }
-  body .mainnav__links #mn-about:hover {
-    position: relative;
-    top: -28px;
-    filter: drop-shadow(0px 2.5px rgba(0, 0, 0, 0.221));
-    /* Two length values and a color */
-    /* drop-shadow( <length> <length> <color> ) */
-  }
-  body .mainnav__links #mn-contact {
-    overflow: hidden;
-    position: relative;
-    top: -26px;
-    height: 50px;
-    border: 0.5px solid #fff;
-    /*Hover state changes */
-    opacity: 0;
-    pointer-events: none;
-    animation: top-nav-reveal 0.7s ease-in 13.5s forwards;
-  }
-  body .mainnav__links #mn-contact #mn-contact-link {
-    /*Some asthetic adjustments to have the link fill the same area as in the original desgin draft. */
-    /*Using the padding section of the content box and not margin. This is so the puesdo element doesn't take that into account for the overall distance to travel across the link and ends up looking werid.*/
-    margin-left: 0px;
-    margin-right: 0px;
-    padding: 25px 25px;
-  }
-  body .mainnav__links #mn-contact #mn-contact-link:hover {
-    background-color: #ffbf00;
-    text-shadow: 0px 0.9px 0px #000000; /* offset-x | offset-y | blur-radius | color */
-  }
-  body .mainnav__links #mn-contact #mn-contact-link:after {
-    content: " ";
-    background: rgba(255, 255, 255, 0.596);
-    height: 99px;
-    width: 37px;
-    position: absolute;
-    top: -27px;
-    left: -56px;
-    transform: rotate(35deg);
-    z-index: 10;
-    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
-  }
-  body .mainnav__links #mn-contact #mn-contact-link:hover:after {
-    left: 120%;
-    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
-  }
-  body .mainnav__links #mn-contact #mn-contact-text {
-    vertical-align: middle;
-    top: 3px;
-    position: relative;
-    pointer-events: none;
-  }
-  body .mainnav__links #mn-contact:hover {
-    position: relative;
-    top: -28px;
-    filter: drop-shadow(0px 2.5px rgba(0, 0, 0, 0.221));
-    /* Two length values and a color */
-    /* drop-shadow( <length> <length> <color> ) */
-  }
-  body .mainnav__links #mn-blog {
-    overflow: hidden;
-    position: relative;
-    top: -26px;
-    height: 50px;
-    border: 0.5px solid #fff;
-    /*Hover state changes */
-    opacity: 0;
-    pointer-events: none;
-    animation: top-nav-reveal 0.7s ease-in 14.5s forwards;
-  }
-  body .mainnav__links #mn-blog #mn-blog-link {
-    /*Some asthetic adjustments to have the link fill the same area as in the original desgin draft. */
-    /*Using the padding section of the content box and not margin. This is so the puesdo element doesn't take that into account for the overall distance to travel across the link and ends up looking werid.*/
-    margin-left: 0px;
-    margin-right: 0px;
-    padding: 25px 25px;
-  }
-  body .mainnav__links #mn-blog #mn-blog-link:hover {
-    background-color: #ffbf00;
-    text-shadow: 0px 0.9px 0px #000000; /* offset-x | offset-y | blur-radius | color */
-  }
-  body .mainnav__links #mn-blog #mn-blog-link:after {
-    content: " ";
-    background: rgba(255, 255, 255, 0.596);
-    height: 99px;
-    width: 37px;
-    position: absolute;
-    top: -27px;
-    left: -56px;
-    transform: rotate(35deg);
-    z-index: 10;
-    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
-  }
-  body .mainnav__links #mn-blog #mn-blog-link:hover:after {
-    left: 120%;
-    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
-  }
-  body .mainnav__links #mn-blog #mn-blog-text {
-    vertical-align: middle;
-    top: 3px;
-    position: relative;
-    pointer-events: none;
-  }
-  body .mainnav__links #mn-blog:hover {
+  body .mainnav__links .mainnav__links-link-container:hover {
     position: relative;
     top: -28px;
     filter: drop-shadow(0px 2.5px rgba(0, 0, 0, 0.221));
@@ -1215,28 +1100,52 @@ body .hero-button .hero-text {
     margin-right: 10px;
     cursor: pointer;
   }
-  body .lower-nav-container .main-footer .main-footer__social-icons li #smi-yt, body .lower-nav-container .main-footer .main-footer__social-icons li #smi-b, body .lower-nav-container .main-footer .main-footer__social-icons li #smi-fb, body .lower-nav-container .main-footer .main-footer__social-icons li #smi-ig, body .lower-nav-container .main-footer .main-footer__social-icons li #smi-lk {
+  body .lower-nav-container .main-footer .main-footer__social-icons li #smi-yt,
+  body .lower-nav-container .main-footer .main-footer__social-icons li #smi-b,
+  body .lower-nav-container .main-footer .main-footer__social-icons li #smi-fb,
+  body .lower-nav-container .main-footer .main-footer__social-icons li #smi-ig,
+  body .lower-nav-container .main-footer .main-footer__social-icons li #smi-lk {
     position: relative;
   }
   body .lower-nav-container .main-footer .main-footer__social-icons li #smi-yt {
     opacity: 0;
     animation: social-icons-animate 0.5s ease 19.5s forwards;
   }
+  body .lower-nav-container .main-footer .main-footer__social-icons li #smi-yt:hover {
+    transform: translateY(-2px);
+    filter: drop-shadow(0px 4px rgb(0, 0, 0));
+  }
   body .lower-nav-container .main-footer .main-footer__social-icons li #smi-b {
     opacity: 0;
     animation: social-icons-animate 0.5s ease 19.9s forwards;
+  }
+  body .lower-nav-container .main-footer .main-footer__social-icons li #smi-b:hover {
+    transform: translateY(-2px);
+    filter: drop-shadow(0px 4px rgb(0, 0, 0));
   }
   body .lower-nav-container .main-footer .main-footer__social-icons li #smi-fb {
     opacity: 0;
     animation: social-icons-animate 0.5s ease 20s forwards;
   }
+  body .lower-nav-container .main-footer .main-footer__social-icons li #smi-fb:hover {
+    transform: translateY(-2px);
+    filter: drop-shadow(0px 4px rgb(0, 0, 0));
+  }
   body .lower-nav-container .main-footer .main-footer__social-icons li #smi-ig {
     opacity: 0;
     animation: social-icons-animate 0.5s ease 20.9s forwards;
   }
+  body .lower-nav-container .main-footer .main-footer__social-icons li #smi-ig:hover {
+    transform: translateY(-2px);
+    filter: drop-shadow(0px 4px rgb(0, 0, 0));
+  }
   body .lower-nav-container .main-footer .main-footer__social-icons li #smi-lk {
     opacity: 0;
     animation: social-icons-animate 0.5s ease 21s forwards;
+  }
+  body .lower-nav-container .main-footer .main-footer__social-icons li #smi-lk:hover {
+    transform: translateY(-2px);
+    filter: drop-shadow(0px 4px rgb(0, 0, 0));
   }
   @keyframes bg-reveal {
     0% {

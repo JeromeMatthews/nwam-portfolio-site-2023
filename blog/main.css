@@ -1,5 +1,43 @@
 @charset "UTF-8";
 @import "..//partials/_base.css";
+/*
+	UX design layout is as follows: 
+		div. link-container element > 
+			(::before|| ::after )
+			a #id for link >
+				(::before|| ::after)
+				span #id for link text
+					(::before || ::after) 
+
+				this translates to a general template structure:
+
+				mainnav__links-link-container{
+
+						.mainnav__links-link__href{
+
+						}
+
+						.mainnav__links-link__href:after{
+
+						}
+
+						.mainnav__links-link__href:hover{
+
+						}
+
+						.mainnav__links-link__href:hover:after{
+
+						}
+
+						.mainnav__links-link__text{
+
+						}
+				}
+
+				.mainnav__links-link-container:hover {
+
+				}
+*/
 .sitenav--container {
   position: relative;
   z-index: 1;
