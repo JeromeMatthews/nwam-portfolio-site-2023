@@ -53,7 +53,7 @@
 			} // end sitenav__contactNum
 		} //end sitenav-logo-contact-container
 
-		//NOTE: UI/UX: ANIMATION & TRANSITIONS: 4 - Top navigation elements - Reveal effect
+		
 
 		.mainnav__links {
 			top: 26px;
@@ -64,6 +64,44 @@
 				margin-bottom: 0px;
 				padding: 0px;
 			} //end mainnav__links a
+
+		
+		//NOTE: UI/UX: ANIMATION & TRANSITIONS: 4 - Top navigation elements - Reveal effect
+
+			#mainnav__links-animate-c-1 {
+				opacity: 0; // set the inital state of the property - for animation
+				pointer-events: none; // set the inital state of the property - for animation
+				
+					animation: top-nav-reveal 0.7s ease-in 11.5s forwards;
+				
+			}//end mainnav__links-link-container
+	
+
+			#mainnav__links-animate-c-2{
+				opacity: 0; // set the inital state of the property - for animation
+				pointer-events: none; // set the inital state of the property - for animation
+				
+					animation: top-nav-reveal 0.7s ease-in 12.5s forwards;
+			}
+
+
+			#mainnav__links-animate-c-3{
+				opacity: 0; // set the inital state of the property - for animation
+				pointer-events: none; // set the inital state of the property - for animation
+				
+					animation: top-nav-reveal 0.7s ease-in 13.5s forwards;
+
+			}//end mainnav__links-animate-c-3
+
+			#mainnav__links-animate-c-4{
+
+				opacity: 0; // set the inital state of the property - for animation
+				pointer-events: none; // set the inital state of the property - for animation
+				
+					animation: top-nav-reveal 0.7s ease-in 14.0s forwards;
+			}//end mainnav__links-animate-c-4
+
+		
 
 			//NOTE: MN-TOP-NAV-LINK - UI/UX: HOVER STATE
 			//===================================
@@ -95,9 +133,7 @@
 					@include mainnav__links-link__text;
 				} //end mainnav__links-link__text
 
-				opacity: 0; // set the inital state of the property - for animation
-				pointer-events: none; // set the inital state of the property - for animation
-				animation: top-nav-reveal 0.7s ease-in 11.5s forwards;
+				
 			} //end mainnav__links-link-container
 
 			.mainnav__links-link-container:hover {
@@ -110,6 +146,8 @@
 			} //end mainnav__links-link-container:hover
 
 
+			
+				
 		} //end mainnav__links
 
 		//NOTE: Moved this code from the nav base css. Correcting the separation of concerns in the scss files. Ensures the Hero Copy is placed in the right area for Desktop screens.

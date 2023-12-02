@@ -37,6 +37,11 @@
 
 				}
 */
+/*work on mixins for lower nav.
+Readd the top nav animation timing seqeunce on landing /home page. 
+Port top nav and lower nav to all pages in 1920px 
+design variant. 
+*/
 .sitenav--container {
   position: relative;
   z-index: 1;
@@ -890,6 +895,26 @@ body .hero-button .hero-text {
     margin-bottom: 0px;
     padding: 0px;
   }
+  body .mainnav__links #mainnav__links-animate-c-1 {
+    opacity: 0;
+    pointer-events: none;
+    animation: top-nav-reveal 0.7s ease-in 11.5s forwards;
+  }
+  body .mainnav__links #mainnav__links-animate-c-2 {
+    opacity: 0;
+    pointer-events: none;
+    animation: top-nav-reveal 0.7s ease-in 12.5s forwards;
+  }
+  body .mainnav__links #mainnav__links-animate-c-3 {
+    opacity: 0;
+    pointer-events: none;
+    animation: top-nav-reveal 0.7s ease-in 13.5s forwards;
+  }
+  body .mainnav__links #mainnav__links-animate-c-4 {
+    opacity: 0;
+    pointer-events: none;
+    animation: top-nav-reveal 0.7s ease-in 14s forwards;
+  }
   body .mainnav__links .mainnav__links-link-container {
     overflow: hidden;
     position: relative;
@@ -897,9 +922,6 @@ body .hero-button .hero-text {
     height: 50px;
     border: 0.5px solid #fff;
     /*Hover state changes */
-    opacity: 0;
-    pointer-events: none;
-    animation: top-nav-reveal 0.7s ease-in 11.5s forwards;
   }
   body .mainnav__links .mainnav__links-link-container .mainnav__links-link__href {
     /*Some asthetic adjustments to have the link fill the same area as in the original desgin draft. */
