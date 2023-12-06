@@ -16,23 +16,93 @@
 	} //end main-container
 
 	body {
+		//NOTE: UI/UX: ANIMATION & TRANSITIONS: 1 - Page Background Image - Reveal effect
+		background-image: none; // set the inital state of the property 	- for animation
+		opacity: 0; // set the inital state of the property - for animation
+		background-color: #000000;
+		animation: bg-reveal 3s ease-in forwards;
+
 		.page-container {
+			background: url("/img/img-desktop-l/desktop-ps-bg.png");
+			/*Using the  !important flag to overide the assignment of the background images for the diffrent veiwport variants of the design.*/
 			@include pageContainer;
 
-			.page__surface{
-			
+			.page__surface {
 				@include pageSurface;
+			} //end page__surface
+		} //end page-continer
 
-			}//end page__surface
-
-		}//end page-continer 
-
-
-		.page-flipped{
+		.page-flipped {
 			transform: translateX(0.5%) rotateY(90deg);
 		}
 
+
+		.mainnav__links {
+			top: 26px;
+			left: 698px;
+
+			a {
+				margin-top: 0px;
+				margin-bottom: 0px;
+				padding: 0px;
+			} //end mainnav__links a
+
+		
+	
+
+		
+
+			//NOTE: MN-TOP-NAV-LINK - UI/UX: HOVER STATE
+			//===================================
+
+			.mainnav__links-link-container {
+				@include mainnav__links-link-container;
+				//NOTE: Top Nav links  UI/UX additions:
+				/*Hover state changes */
+				.mainnav__links-link__href {
+					@include mainnav__links-link__href;
+				} //end mainnav__links-link__href
+
+
+				.mainnav__links-link__href:after {
+					@include mainnav__links-link__href-after;
+				} //end mainnav__links-link__href:after
+
+				.mainnav__links-link__href:hover {
+					@include mainnav__links-link__href-hover;
+				} //end mainnav__links-link__href:hover
+
+				
+
+				.mainnav__links-link__href:hover:after {
+					@include mainnav__links-link__href-hover-after;
+				} //end mainnav__links-link__href
+
+				.mainnav__links-link__text {
+					@include mainnav__links-link__text;
+				} //end mainnav__links-link__text
+
+				
+			} //end mainnav__links-link-container
+
+			.mainnav__links-link-container:hover {
+				position: relative;
+				top: -28px; // 2px offset upwards to give a look of the link being raised once hovered over. the adjustment on the link is -26px so adding 2px more when hovered.
+
+				filter: drop-shadow(0px 2.5px rgba(0, 0, 0, 0.221));
+				/* Two length values and a color */
+				/* drop-shadow( <length> <length> <color> ) */
+			} //end mainnav__links-link-container:hover
+
+
+			
+				
+		} //end mainnav__links
+
+
+
 		.main-container {
+
 			//NOTE: Design variant
 			background-image: url("/img/img-desktop-l/desktop-ps-bg.png");
 
@@ -98,49 +168,334 @@
 			} //end show-box-3
 
 			//specific placement for lower nav elements:
-			.lower-nav-container {
-				display: block !important;
-
+			.lower-nav-container{
+				display: flex !important;
+				right: 806px;
 				bottom: 40px;
-				width: 100%;
+				width: 300px; //NOTE: prevents the horizontal scroll bars issue from before. Define an area which the conatiner should occupy on the page. 
+			
 				position: fixed;
-				//NOTE: Design variant: Used the container for positioning the elements of the lower nav. With it being absolutely placed, we can use relative positioning for the child elements (chevrons and the social icons)
-				left: 50vw;
+				flex-direction: column;
+				align-items: center;
+				z-index: 13;
 
 				.nav-chevrons {
-					position: relative; // NOTE: Relative to the parent lower-nav-container div.
-					top: -18px;
-					right: 16px;
-					.left-chev {
-						position: inherit;
-						left: -21px; //pull chevron to the left a little
-					} //end left-chev
+                    position: relative; // NOTE: Relative to the parent lower-nav-container div.
+                    top: -18px;
+                    right: 5px;
+                    .left-chev {
+                        position: inherit;
+                        left: -21px; //pull chevron to the left a little
+                    } //end left-chev
 
-					.right-chev {
-						position: inherit;
-						right: -21px; //pull chevron to the right a little
-					} //end right-chev
-				} //end nav-chevrons
-
-				.main-footer {
-					.main-footer__social-icons {
-						display: flex;
-						margin: 0px;
-						padding: 0px;
-						list-style: none;
-						text-decoration: none;
-						justify-content: center;
-						//NOTE: Design vaieant: The outer container creates an offset, so this corrects for it. Centering the social media icons.
+                    .right-chev {
+                        position: inherit;
+                        right: -21px; //pull chevron to the right a little
+                    } //end right-chev
+                } //end nav-chevrons
+	
+			.main-footer {
+				//TODO: correct nav-chevrons in alginment with rest of lower nav corrections
+				.main-footer__social-icons {
+					display: flex;
+					align-items: center;
+					flex-wrap: nowrap;			  
+					margin: 0px;
+					padding: 0px;
+					list-style: none;
+					text-decoration: none;
+					
+					//NOTE: Design variant: The outer container creates an offset, so this corrects for it. Centering the social media icons.
+					position: relative;
+				
+					//NOTE: UI/UX: ANIMATION & TRANSITIONS: 8 - Lower Social Media Icons - Appear and bounce effect
+					li {
+						#smi-yt,
+						#smi-b,
+						#smi-fb,
+						#smi-ig,
+						#smi-lk {
+							position: relative;
+						} //end img
+	
+						#smi-yt {
+							
+							
+						} //end smi-yt
+						
+						#smi-yt:hover {
+							@include lowerNav-hoverstate;
+						} //end #smi-yt:hover
+	
+						//======================================================
+	
+						#smi-b {
+							
+							
+						} //end smi-b
+	
+						#smi-b:hover {
+							@include lowerNav-hoverstate;
+						} //end #smi-b:hover
+	
+						//======================================================
+	
+	
+	
+						#smi-fb {
+						
+						} // end smi-fb
+	
+						#smi-fb:hover {
+							@include lowerNav-hoverstate;
+						} //end #smi-fb:hover
+	
+	
+	
+						//======================================================
+	
+						#smi-ig {
+							
+						} //end smi-ig
+	
+	
+						#smi-ig:hover {
+							@include lowerNav-hoverstate;
+						} //end #smi-ig:hover
+						//======================================================
+	
+						#smi-lk {
+							
+						} //end smi-lk
+	
+	
+						#smi-lk:hover {
+							@include lowerNav-hoverstate;
+						} //end #smi-lk:hover
+						//======================================================
+	
 						position: relative;
-						right: 49.8vw;
-
-						li {
-							margin-right: 10px;
-						} //end li
-					} //end social-icons
-				} //end main-footer
-			} // end lower-nav-elements
+						margin-right: 10px;
+						cursor: pointer;
+					} //end li
+				} //end social-icons
+			} //end main-footer
+		}//end lower-nav-container
 		} //end main-container
+
+
+
+
+
+
+
+
+
+
+			/*SECTION  ANIMATIONS & TRANSITIONS 
+		ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >1920px */
+		/*ANIMATIONS: */
+		//==========================
+		//Playback Master sequence:
+		//1 - page bg-image:
+		//2 - Hero Copy:
+		//3 - hero supporting text:
+		//4 - top nav elements- in order - h, p, a, c, b:
+		//5 - logo & contact number:
+		//6 - CTAB:
+		//7 - lower nav:
+		//8: - social icons:
+		//==========================
+
+		//1 - page bg-image:
+
+		@keyframes bg-reveal {
+			@include basicReveal;
+		} //end bg-reveal
+
+		//--------------------------
+
+		//2 - Hero Copy:
+		@keyframes typing {
+			//TODO: working on the inital state of the typehead. Needs to come on oly when the animation is about to start.
+			0% {
+				width: 0;
+				border-right: 0em;
+			}
+
+			15% {
+				width: 15%;
+				border-right: 0.15em solid $brandColor;
+			}
+			100% {
+				width: 100%;
+				border-right: 0.15em solid $brandColor;
+			}
+		}
+
+		@keyframes short-type {
+			0% {
+				width: 0;
+				border-right: 0em;
+			}
+
+			15% {
+				width: 15%;
+				border-right: 0.15em solid $brandColor;
+			}
+			100% {
+				width: 85%;
+				border-right: 0.15em solid $brandColor;
+			}
+		}
+
+		@keyframes blink {
+			from {
+				border-color: transparent;
+			}
+			to {
+				border-color: $brandColor;
+			}
+		}
+
+		@keyframes cursor-off {
+			from {
+				border-color: $brandColor;
+			}
+			to {
+				border-color: transparent;
+			}
+		}
+
+		//--------------------------
+
+		//3 - hero supporting text:
+		@keyframes support-reveal {
+			@include basicReveal;
+		} //end
+		//--------------------------
+
+		//4 - top nav elements- in order - h, p, a, c, b:
+		@keyframes top-nav-reveal {
+			@include basicReveal;
+			from {
+				opacity: 0;
+				pointer-events: none;
+			}
+			to {
+				opacity: 1;
+				pointer-events: all;
+			}
+		} //end 	top-nav-reveal
+		//--------------------------
+
+		//5 - logo & contact number:
+		@keyframes logo-animate {
+			@include basicReveal;
+			from {
+				opacity: 0;
+			}
+			to {
+				opacity: 1;
+			}
+		} //end logo-reveal
+
+		@keyframes logo-blink {
+			@include basicReveal;
+			from {
+				opacity: 0;
+			}
+			to {
+				opacity: 1;
+			}
+		} // end logo-blink
+		//--------------------------
+
+		//6 - CTAB:
+		@keyframes CTAB-reveal {
+			@include basicReveal;
+			from {
+				opacity: 0;
+				pointer-events: none;
+			}
+			to {
+				opacity: 1;
+				pointer-events: all;
+			}
+		} //end CTAB-reveal
+
+		@keyframes gleam {
+			0% {
+				left: 0;
+				opacity: 0;
+			}
+
+			50% {
+				left: 50%;
+				opacity: 50%;
+			}
+
+			100% {
+				left: 100%;
+				opacity: 0%;
+			}
+		}
+
+		// //6 - CTAB:
+		//--------------------------
+
+		//7 - lower nav:
+		@keyframes lower-nav-reveal {
+			@include basicReveal;
+			from {
+				opacity: 0;
+				pointer-events: none;
+			}
+			to {
+				opacity: 1;
+				pointer-events: all;
+			}
+		} //end lower nav
+		//--------------------------
+
+		//8: - social icons:
+
+		@keyframes social-icons-animate {
+			@include basicReveal;
+			0% {
+				top: 0px;
+			}
+
+			50% {
+				top: -4px;
+			}
+
+			100% {
+				top: 0px;
+			}
+		} //end social-icons-reveal
+		//--------------------------
+
+		@keyframes top-nav-gleam {
+			0% {
+				left: 0;
+				opacity: 0;
+			}
+
+			50% {
+				left: 50%;
+				opacity: 50%;
+			}
+
+			100% {
+				left: 100%;
+				opacity: 0%;
+			}
+		}
+
+		/*END ANIMATIONS*/
+		/*!SECTION END ANIMATIONS & TRANSITIONS */
+
 	} //end body
 } //end media query
 /*!SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1920px */
