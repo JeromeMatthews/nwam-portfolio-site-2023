@@ -191,7 +191,7 @@ background-image: none; // set the inital state of the property 	- for animation
 
 
 		//TODO: fixe hover of main footer social icons
-		/*Adjust page reveal animation, make the transition specific to the ATF area of the overall. Or different approach */
+		/*Adjust page reveal animation, make the transition specific to the ATF area of the overall page. Or different approach */
 		/* Continue porting the top nav and lower nav to rest of pages in 1920px design variant. */
 		.mobile-cta-footer{
 			.mobile-cta-footer__sm-links {
@@ -203,7 +203,7 @@ background-image: none; // set the inital state of the property 	- for animation
 				justify-content: center;
 				//NOTE: Design vaieant: The outer container creates an offset, so this corrects for it. Centering the social media icons.
 				position: relative;
-				right: 3.5vw;
+				top: 8px;
 				//NOTE: UI/UX: ANIMATION & TRANSITIONS: 8 - Lower Social Media Icons - Appear and bounce effect
 				li {
 					#smi-yt,
@@ -220,7 +220,7 @@ background-image: none; // set the inital state of the property 	- for animation
 					} //end smi-yt
 					
 					#smi-yt:hover {
-						@include lowerNav-hoverstate;
+						@include about-lowerNav-hoverstate;
 					} //end #smi-yt:hover
 
 					//======================================================
@@ -231,7 +231,7 @@ background-image: none; // set the inital state of the property 	- for animation
 					} //end smi-b
 
 					#smi-b:hover {
-						@include lowerNav-hoverstate;
+						@include about-lowerNav-hoverstate;
 					} //end #smi-b:hover
 
 					//======================================================
@@ -243,7 +243,7 @@ background-image: none; // set the inital state of the property 	- for animation
 					} // end smi-fb
 
 					#smi-fb:hover {
-						@include lowerNav-hoverstate;
+						@include about-lowerNav-hoverstate;
 					} //end #smi-fb:hover
 
 
@@ -256,7 +256,7 @@ background-image: none; // set the inital state of the property 	- for animation
 
 
 					#smi-ig:hover {
-						@include lowerNav-hoverstate;
+						@include about-lowerNav-hoverstate;
 					} //end #smi-ig:hover
 					//======================================================
 
@@ -266,7 +266,7 @@ background-image: none; // set the inital state of the property 	- for animation
 
 
 					#smi-lk:hover {
-						@include lowerNav-hoverstate;
+						@include about-lowerNav-hoverstate;
 					} //end #smi-lk:hover
 					//======================================================
 
@@ -303,7 +303,7 @@ background-image: none; // set the inital state of the property 	- for animation
 
 		//2 - Hero Copy:
 		@keyframes typing {
-			//TODO: working on the inital state of the typehead. Needs to come on oly when the animation is about to start.
+		
 			0% {
 				width: 0;
 				border-right: 0em;

@@ -195,7 +195,7 @@
                 } //end nav-chevrons
 	
 			.main-footer {
-				//TODO: correct nav-chevrons in alginment with rest of lower nav corrections
+			
 				.main-footer__social-icons {
 					display: flex;
 					align-items: center;
@@ -204,7 +204,7 @@
 					padding: 0px;
 					list-style: none;
 					text-decoration: none;
-					
+					right: 0px;
 					//NOTE: Design variant: The outer container creates an offset, so this corrects for it. Centering the social media icons.
 					position: relative;
 				

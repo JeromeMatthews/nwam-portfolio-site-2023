@@ -23,6 +23,69 @@
 		background-image: url("/img/img-desktop-l/desktop-contact-bg.png");
 		background-attachment: fixed;
 
+		.mainnav__links {
+			top: 26px;
+			left: 698px;
+		
+			a {
+				margin-top: 0px;
+				margin-bottom: 0px;
+				padding: 0px;
+			} //end mainnav__links a
+		
+		
+		
+		
+		
+		
+			//NOTE: MN-TOP-NAV-LINK - UI/UX: HOVER STATE
+			//===================================
+		
+			.mainnav__links-link-container {
+				@include mainnav__links-link-container;
+				//NOTE: Top Nav links  UI/UX additions:
+				/*Hover state changes */
+				.mainnav__links-link__href {
+					@include mainnav__links-link__href;
+				} //end mainnav__links-link__href
+		
+		
+				.mainnav__links-link__href:after {
+					@include mainnav__links-link__href-after;
+				} //end mainnav__links-link__href:after
+		
+				.mainnav__links-link__href:hover {
+					@include mainnav__links-link__href-hover;
+				} //end mainnav__links-link__href:hover
+		
+				
+		
+				.mainnav__links-link__href:hover:after {
+					@include mainnav__links-link__href-hover-after;
+				} //end mainnav__links-link__href
+		
+				.mainnav__links-link__text {
+					@include mainnav__links-link__text;
+				} //end mainnav__links-link__text
+		
+				
+			} //end mainnav__links-link-container
+		
+			.mainnav__links-link-container:hover {
+				position: relative;
+				top: -28px; // 2px offset upwards to give a look of the link being raised once hovered over. the adjustment on the link is -26px so adding 2px more when hovered.
+		
+				filter: drop-shadow(0px 2.5px rgba(0, 0, 0, 0.221));
+				/* Two length values and a color */
+				/* drop-shadow( <length> <length> <color> ) */
+			} //end mainnav__links-link-container:hover
+		
+		
+			
+				
+		} //end mainnav__links
+
+
 		.main-container {
 			.contact-container {
 				//NOTE design varitant
@@ -108,6 +171,8 @@
 				}
 			} //end contact-form
 			//specific placement for lower nav elements:
+
+			
 			.lower-nav-container {
 				display: block !important;
 				position: fixed;
@@ -143,13 +208,135 @@
 						position: relative;
 						right: 3.5vw;
 
-						li {
-							margin-right: 10px;
-						} //end li
-					} //end social-icons
-				} //end main-footer
+						//NOTE: UI/UX: ANIMATION & TRANSITIONS: 8 - Lower Social Media Icons - Appear and bounce effect
+				li {
+					#smi-yt,
+					#smi-b,
+					#smi-fb,
+					#smi-ig,
+					#smi-lk {
+						position: relative;
+					} //end img
+
+					#smi-yt {
+						
+						
+					} //end smi-yt
+					
+					#smi-yt:hover {
+						@include lowerNav-hoverstate;
+					} //end #smi-yt:hover
+
+					//======================================================
+
+					#smi-b {
+						
+						
+					} //end smi-b
+
+					#smi-b:hover {
+						@include lowerNav-hoverstate;
+					} //end #smi-b:hover
+
+					//======================================================
+
+
+
+					#smi-fb {
+					
+					} // end smi-fb
+
+					#smi-fb:hover {
+						@include lowerNav-hoverstate;
+					} //end #smi-fb:hover
+
+
+
+					//======================================================
+
+					#smi-ig {
+						
+					} //end smi-ig
+
+
+					#smi-ig:hover {
+						@include lowerNav-hoverstate;
+					} //end #smi-ig:hover
+					//======================================================
+
+					#smi-lk {
+						
+					} //end smi-lk
+
+
+					#smi-lk:hover {
+						@include lowerNav-hoverstate;
+					} //end #smi-lk:hover
+					//======================================================
+
+					position: relative;
+					margin-right: 10px;
+					cursor: pointer;
+				} //end li
+			  } //end social-icons
+			} //end main-footer
 			} // end lower-nav-elements
 		} // end main-container
+
+		/*SECTION  ANIMATIONS & TRANSITIONS 
+		ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >1920px */
+		/*ANIMATIONS: */
+		//==========================
+		//Playback Master sequence:
+		//1 - page bg-image:
+		//2 - Hero Copy:
+		//3 - hero supporting text:
+		//4 - top nav elements- in order - h, p, a, c, b:
+		//5 - logo & contact number:
+		//6 - CTAB:
+		//7 - lower nav:
+		//8: - social icons:
+		//==========================
+
+		//1 - page bg-image:
+
+		@keyframes bg-reveal {
+			@include basicReveal;
+		} //end bg-reveal
+
+		//--------------------------
+	
+
+		//--------------------------
+
+		//3 - hero supporting text:
+		@keyframes support-reveal {
+			@include basicReveal;
+		} //end
+		//--------------------------
+
+		//8: - social icons:
+
+		@keyframes social-icons-animate {
+			@include basicReveal;
+			0% {
+				top: 0px;
+			}
+
+			50% {
+				top: -4px;
+			}
+
+			100% {
+				top: 0px;
+			}
+		} //end social-icons-reveal
+		//--------------------------
+
+
+
+		/*END ANIMATIONS*/
+		/*!SECTION END ANIMATIONS & TRANSITIONS */
 	} //end of body container
 } //end media query
 /*!SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1920px */

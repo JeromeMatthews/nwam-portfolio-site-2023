@@ -38,7 +38,7 @@
 				}
 */
 /*work on mixins for lower nav.
-Readd the top nav animation timing seqeunce on landing /home page. 
+
 Port top nav and lower nav to all pages in 1920px 
 design variant. 
 */
@@ -372,6 +372,273 @@ body .show-box .show-box__text {
   }
 }
 /*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >800px */
+/*SECTION ABOVE MOBILE PHONES - TABLET RANGE  - DESKTOP-SMALL -   >1280px */
+@media (min-width: 1280px) {
+  .sitenav__hamburger {
+    display: none;
+  }
+  .sitenav {
+    display: none;
+  }
+  .sitenav__logo {
+    width: 94px;
+    height: 53px;
+    top: 10px;
+    left: 166px;
+  }
+  .sitenav__contactNum {
+    top: 53px;
+    left: 180px;
+  }
+  .mainnav__links {
+    display: flex;
+    list-style: none;
+    position: absolute;
+    top: 10px;
+    left: 410px;
+    z-index: 15;
+  }
+  .mainnav__links a {
+    font-family: proxima-nova, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    border: rgba(255, 255, 255, 0.368627451) 1px solid;
+    background-color: rgba(22, 22, 22, 0.1294117647);
+    padding: 5px 15px;
+    margin: 0px 5px;
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+  }
+}
+@media (min-width: 1280px) {
+  body .main-container {
+    background-image: url("/img/img-desktop-sm-1280/desktop-sm-ps-bg.PNG");
+    top: 0px;
+  }
+  body .main-container .show-box .show-box__title {
+    font-size: 1.64rem;
+  }
+  body .main-container .show-box .show-box__subtitle {
+    display: block !important;
+    font-size: 1.25rem;
+  }
+  body .main-container .show-box .show-box__text {
+    top: -24px;
+    font-size: 1.12rem;
+  }
+  body .main-container #show-box-1,
+  body .main-container #show-box-2,
+  body .main-container #show-box-3 {
+    width: 276px;
+    height: 275px;
+  }
+  body .main-container #show-box-1 {
+    background-image: url("/img/img-desktop-l/desktop-ps-natours-bg.png");
+  }
+  body .main-container #show-box-1 .show-box__overlay {
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(31, 31, 31, 0.562);
+    width: 197px;
+    height: 197px;
+    width: 276px;
+    height: 275px;
+  }
+  body .main-container #show-box-2 .show-box__overlay {
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(31, 31, 31, 0.562);
+    width: 197px;
+    height: 197px;
+    width: 276px;
+    height: 275px;
+  }
+  body .main-container #show-box-3 {
+    background-image: url("/img/img-desktop-l/desktop-ps-beam-bg.png");
+  }
+  body .main-container #show-box-3 .show-box__overlay {
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(31, 31, 31, 0.562);
+    width: 197px;
+    height: 197px;
+    width: 276px;
+    height: 275px;
+  }
+  body .main-container .lower-nav-container {
+    display: block !important;
+    bottom: 40px;
+    width: 100%;
+    position: fixed;
+    left: 50vw;
+  }
+  body .main-container .lower-nav-container .nav-chevrons {
+    position: relative;
+    top: -18px;
+    right: 16px;
+  }
+  body .main-container .lower-nav-container .nav-chevrons .left-chev {
+    position: inherit;
+    left: -21px;
+  }
+  body .main-container .lower-nav-container .nav-chevrons .right-chev {
+    position: inherit;
+    right: -21px;
+  }
+  body .main-container .lower-nav-container .main-footer .main-footer__social-icons {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    justify-content: center;
+    position: relative;
+    right: 49.8vw;
+  }
+  body .main-container .lower-nav-container .main-footer .main-footer__social-icons li {
+    margin-right: 10px;
+  }
+}
+/*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - DESKTOP-SMALL -   >1280px */
+/*!SECTION: END - [RESPONSIVE DESIGN] */
+@media (min-width: 1440px) {
+  .sitenav__hamburger {
+    display: none;
+  }
+  .sitenav {
+    display: none;
+  }
+  #logo.dtlink {
+    display: block;
+    position: absolute;
+    width: 144px;
+    height: 94px;
+    top: 10px;
+    left: 166px;
+  }
+  .sitenav__logo {
+    width: 144px;
+    height: 77px;
+    top: 3px;
+    left: -1px;
+  }
+  .sitenav__contactNum {
+    top: 75px;
+    left: 180px;
+    font-size: 1rem;
+  }
+  .mainnav__links {
+    display: flex;
+    list-style: none;
+    position: absolute;
+    top: 10px;
+    left: 460px;
+    z-index: 15;
+  }
+  .mainnav__links a {
+    font-family: proxima-nova, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    border: rgba(255, 255, 255, 0.368627451) 1px solid;
+    background-color: rgba(22, 22, 22, 0.1294117647);
+    padding: 5px 15px;
+    margin: 0px 5px;
+    font-size: 1.25rem;
+    color: #ffffff;
+    text-decoration: none;
+  }
+}
+/*SECTION ABOVE MOBILE PHONES - TABLET RANGE  - COMMON MACBOOK -   >1440px */
+@media (min-width: 1440px) {
+  body .main-container {
+    background-image: url("/img/img-desktop-cm-1440/desktop-cm-ps-bg.PNG");
+    top: 0px;
+  }
+  body .main-container .show-box .show-box__title {
+    font-size: 2.125rem;
+  }
+  body .main-container .show-box .show-box__subtitle {
+    display: block !important;
+    font-size: 1.64rem;
+  }
+  body .main-container .show-box .show-box__text {
+    top: -35px;
+    font-size: 1.12rem;
+  }
+  body .main-container #show-box-1,
+  body .main-container #show-box-2,
+  body .main-container #show-box-3 {
+    width: 367.5px;
+    height: 366px;
+  }
+  body .main-container #show-box-1 {
+    background-image: url("/img/img-desktop-l/desktop-ps-natours-bg.png");
+  }
+  body .main-container #show-box-1 .show-box__overlay {
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(31, 31, 31, 0.562);
+    width: 197px;
+    height: 197px;
+    width: 367.5px;
+    height: 366px;
+  }
+  body .main-container #show-box-2 .show-box__overlay {
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(31, 31, 31, 0.562);
+    width: 197px;
+    height: 197px;
+    width: 367.5px;
+    height: 366px;
+  }
+  body .main-container #show-box-3 {
+    background-image: url("/img/img-desktop-l/desktop-ps-beam-bg.png");
+  }
+  body .main-container #show-box-3 .show-box__overlay {
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(31, 31, 31, 0.562);
+    width: 197px;
+    height: 197px;
+    width: 367.5px;
+    height: 366px;
+  }
+  body .main-container .lower-nav-container {
+    display: block !important;
+    bottom: 40px;
+    width: 100%;
+    position: fixed;
+    left: 50vw;
+  }
+  body .main-container .lower-nav-container .nav-chevrons {
+    position: relative;
+    top: -18px;
+    right: 16px;
+  }
+  body .main-container .lower-nav-container .nav-chevrons .left-chev {
+    position: inherit;
+    left: -21px;
+  }
+  body .main-container .lower-nav-container .nav-chevrons .right-chev {
+    position: inherit;
+    right: -21px;
+  }
+  body .main-container .lower-nav-container .main-footer .main-footer__social-icons {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    justify-content: center;
+    position: relative;
+    right: 49.8vw;
+  }
+  body .main-container .lower-nav-container .main-footer .main-footer__social-icons li {
+    margin-right: 10px;
+  }
+}
+/*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - COMMON MACBOOK -   >1440px */
+/*!SECTION: END - [RESPONSIVE DESIGN] */
 @media (min-width: 1920px) {
   .sitenav__hamburger {
     display: none;
@@ -600,6 +867,7 @@ body .show-box .show-box__text {
     padding: 0px;
     list-style: none;
     text-decoration: none;
+    right: 0px;
     position: relative;
   }
   body .main-container .lower-nav-container .main-footer .main-footer__social-icons li {

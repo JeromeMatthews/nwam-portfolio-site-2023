@@ -258,7 +258,7 @@
 
 //TODO: 
 /*work on mixins for lower nav.
-Readd the top nav animation timing seqeunce on landing /home page. 
+
 Port top nav and lower nav to all pages in 1920px 
 design variant. 
 */
@@ -269,6 +269,10 @@ design variant.
 	filter: drop-shadow(0px 4px rgb(0, 0, 0));
 }
 
+@mixin about-lowerNav-hoverstate{
+	transform: translateY(-2px);
+	filter: drop-shadow(0px 4px $brandColor);
+}
 
 //!SECTION PSEUDO ELEMENTS & CLASSES
 

@@ -19,8 +19,71 @@
 			transform: translateX(0.5%) rotateY(90deg);
 		}
 
-
         background-image: url("/img/img-desktop-l/desktop-blog-bg.png");
+
+
+		.mainnav__links {
+			top: 26px;
+			left: 698px;
+		
+			a {
+				margin-top: 0px;
+				margin-bottom: 0px;
+				padding: 0px;
+			} //end mainnav__links a
+		
+		
+		
+		
+		
+		
+			//NOTE: MN-TOP-NAV-LINK - UI/UX: HOVER STATE
+			//===================================
+		
+			.mainnav__links-link-container {
+				@include mainnav__links-link-container;
+				//NOTE: Top Nav links  UI/UX additions:
+				/*Hover state changes */
+				.mainnav__links-link__href {
+					@include mainnav__links-link__href;
+				} //end mainnav__links-link__href
+		
+		
+				.mainnav__links-link__href:after {
+					@include mainnav__links-link__href-after;
+				} //end mainnav__links-link__href:after
+		
+				.mainnav__links-link__href:hover {
+					@include mainnav__links-link__href-hover;
+				} //end mainnav__links-link__href:hover
+		
+				
+		
+				.mainnav__links-link__href:hover:after {
+					@include mainnav__links-link__href-hover-after;
+				} //end mainnav__links-link__href
+		
+				.mainnav__links-link__text {
+					@include mainnav__links-link__text;
+				} //end mainnav__links-link__text
+		
+				
+			} //end mainnav__links-link-container
+		
+			.mainnav__links-link-container:hover {
+				position: relative;
+				top: -28px; // 2px offset upwards to give a look of the link being raised once hovered over. the adjustment on the link is -26px so adding 2px more when hovered.
+		
+				filter: drop-shadow(0px 2.5px rgba(0, 0, 0, 0.221));
+				/* Two length values and a color */
+				/* drop-shadow( <length> <length> <color> ) */
+			} //end mainnav__links-link-container:hover
+		
+		
+			
+				
+		} //end mainnav__links
+
 
         .main-container{
             position: relative;
