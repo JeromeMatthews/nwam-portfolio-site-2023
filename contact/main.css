@@ -37,11 +37,6 @@
 
 				}
 */
-/*work on mixins for lower nav.
-
-Port top nav and lower nav to all pages in 1920px 
-design variant. 
-*/
 .sitenav--container {
   position: relative;
   z-index: 1;
@@ -690,8 +685,10 @@ body .main-container .contact-form .contact-form__elements .mobile-cta-footer__b
 /*SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1920px */
 @media (min-width: 1920px) {
   body {
-    background-image: url("/img/img-desktop-l/desktop-contact-bg.png");
-    background-attachment: fixed;
+    background-image: none;
+    opacity: 0;
+    background-color: #000000;
+    animation: bg-reveal 0.5s ease-in forwards;
     /*SECTION  ANIMATIONS & TRANSITIONS 
     ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >1920px */
     /*ANIMATIONS: */
@@ -699,6 +696,7 @@ body .main-container .contact-form .contact-form__elements .mobile-cta-footer__b
     /*!SECTION END ANIMATIONS & TRANSITIONS */
   }
   body .page-container {
+    background-image: url("/img/img-desktop-l/desktop-contact-bg.png");
     width: 100vw;
     height: 100vh;
     transform-origin: left center;
@@ -764,7 +762,6 @@ body .main-container .contact-form .contact-form__elements .mobile-cta-footer__b
     vertical-align: middle;
     top: 3px;
     position: relative;
-    pointer-events: none;
   }
   body .mainnav__links .mainnav__links-link-container:hover {
     position: relative;
@@ -775,24 +772,57 @@ body .main-container .contact-form .contact-form__elements .mobile-cta-footer__b
   }
   body .main-container .contact-container {
     position: absolute;
-    top: -165px;
+    top: -185px;
     right: 290px;
   }
   body .main-container .contact-container .contact-heroCopy {
     font-size: 3.59rem;
     text-align: left;
+    left: 0px;
+  }
+  body .main-container .contact-container .contact-heroCopy .tw-fx-1 {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: inherit;
+    width: 0;
+    animation: type1 1.6s steps(21, end) 0.8s forwards, cursor-off 1 linear 0.2s 2.4s forwards;
+    /*name -> 
+     iteration-count-> 
+     timing-function->
+     duration->
+     delay->
+     fill-mode*/
+  }
+  body .main-container .contact-container .contact-heroCopy .tw-fx-2 {
+    position: relative;
+    top: -30px;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: inherit;
+    width: 0;
+    animation: type2 1.5s steps(20, end) 3s forwards, cursor-off 1 linear 0.2s 4.4s forwards;
+    /*name -> 
+    iteration-count-> 
+    timing-function->
+    duration->
+    delay->
+    fill-mode*/
   }
   body .main-container .contact-container .contactheroimg {
     margin: 25px auto;
     padding: 0px;
     position: relative;
-    top: -3px;
-    left: 196px;
+    top: -56px;
+    left: 237px;
     width: 290px;
     height: 137px;
+    opacity: 0;
+    animation: logo-reveal 1 ease-in 1s 5s forwards;
   }
   body .main-container .contact-form {
-    top: -50px;
+    top: -105px;
     left: 45px;
   }
   body .main-container .contact-form .contact-form__elements .contact-form__element {
@@ -829,7 +859,7 @@ body .main-container .contact-form .contact-form__elements .mobile-cta-footer__b
     font-size: 1.87rem;
   }
   body .main-container .contact-form textarea {
-    height: 290px;
+    height: 230px;
     border-radius: 8px;
     font-family: futura-pt, Helvetica, Arial, sans-serif;
     font-size: 1.56rem;
@@ -903,6 +933,50 @@ body .main-container .contact-form .contact-form__elements .mobile-cta-footer__b
       opacity: 100%;
     }
   }
+  @keyframes type1 {
+    0% {
+      width: 0;
+      border-right: 0em;
+    }
+    15% {
+      width: 15%;
+      border-right: 0.15em solid #fff;
+    }
+    100% {
+      width: 100%;
+      border-right: 0.15em solid #fff;
+    }
+  }
+  @keyframes type2 {
+    0% {
+      width: 0;
+      border-right: 0em;
+    }
+    15% {
+      width: 15%;
+      border-right: 0.15em solid #fff;
+    }
+    100% {
+      width: 73%;
+      border-right: 0.15em solid #fff;
+    }
+  }
+  @keyframes blink {
+    from {
+      border-color: transparent;
+    }
+    to {
+      border-color: #fff;
+    }
+  }
+  @keyframes cursor-off {
+    from {
+      border-color: #fff;
+    }
+    to {
+      border-color: transparent;
+    }
+  }
   @keyframes support-reveal {
     0% {
       opacity: 0%;
@@ -926,6 +1000,14 @@ body .main-container .contact-form .contact-form__elements .mobile-cta-footer__b
     }
     100% {
       top: 0px;
+    }
+  }
+  @keyframes logo-reveal {
+    0% {
+      opacity: 0%;
+    }
+    100% {
+      opacity: 100%;
     }
   }
 }

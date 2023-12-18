@@ -3,25 +3,26 @@
 @media (min-width: 1920px) {
 	body {
 
-//NOTE: UI/UX: ANIMATION & TRANSITIONS: 1 - Page Background Image - Reveal effect
-background-image: none; // set the inital state of the property 	- for animation
-// opacity: 0; // set the inital state of the property - for animation
-// background-color: #000000;
-// animation: bg-reveal 3s ease-in forwards;
+			//NOTE: UI/UX: ANIMATION & TRANSITIONS: 1 - Page Background Image - Reveal effect
+			background-image: none; // set the inital state of the property 	- for animation
+			opacity: 0; // set the inital state of the property - for animation
+			background-color: black;
+			animation: about-bg-reveal 0.5s ease-in forwards;
+			//TODO: Work on About page reveal. One day... No more. 
+			
+			.page-container {
+				background: url("/img/img-desktop-l/desktop-about-bg.png");
+				/*Using the  !important flag to overide the assignment of the background images for the diffrent veiwport variants of the design.*/
+				@include pageContainer;
 
-.page-container {
-	background: url("/img/img-desktop-l/desktop-about-bg.png");
-	/*Using the  !important flag to overide the assignment of the background images for the diffrent veiwport variants of the design.*/
-	@include pageContainer;
+				.page__surface {
+					@include pageSurface;
+				} //end page__surface
+			} //end page-continer
 
-	.page__surface {
-		@include pageSurface;
-	} //end page__surface
-} //end page-continer
-
-.page-flipped {
-	transform: translateX(0.5%) rotateY(90deg);
-}
+			.page-flipped {
+				transform: translateX(0.5%) rotateY(90deg);
+			}
 
 
 .mainnav__links {
@@ -89,6 +90,7 @@ background-image: none; // set the inital state of the property 	- for animation
 
 
 		.main-container {
+			
 			.about-hero {
 				.about-hero__copy {
 					position: relative;
@@ -104,7 +106,64 @@ background-image: none; // set the inital state of the property 	- for animation
 					//NOTE: Design variant: adjustmnet to Hero copy positioning. 
 					position: relative;
     				top: 151px;
-				}
+
+
+					//NOTE: UI/UX: ANIMATION & TRANSITIONS: 2 - About Hero - Typewriter effect
+					.tw-fx-1 {
+						display: inline-block;
+						overflow: hidden;
+
+						white-space: nowrap;
+						font-size: inherit; //take it from the original font-size, easier to scale.
+						width: 0;
+						animation: type1 1.6s steps(21, end) 0.8s forwards,
+						 cursor-off 1 linear 0.2s 2.4s forwards; 
+						 /*name -> 
+						 iteration-count-> 
+						 timing-function->
+						 duration->
+						 delay->
+						 fill-mode*/
+					} //end tw-fx-1
+
+
+
+					.tw-fx-2 {
+						display: inline-block;
+						overflow: hidden;
+		
+						white-space: nowrap;
+						font-size: inherit; //take it from the original font-size, easier to scale.
+						width: 0;
+		
+						animation: type2 1.5s steps(20, end) 3s forwards,
+						cursor-off 1 linear 0.2s 4.4s forwards; 
+						/*name -> 
+						iteration-count-> 
+						timing-function->
+						duration->
+						delay->
+						fill-mode*/
+
+					
+
+					} //end tw-fx-2
+
+				
+
+
+						//TODO: Finish work on timing of the type writting effect on about page, port to contact, add remainin animations and tootl tip additions.
+					.tw-fx-3 {
+						display: inline-block;
+						overflow: hidden;
+		
+						white-space: nowrap;
+						font-size: inherit; //take it from the original font-size, easier to scale.
+						width: 0;
+						animation: short-type 1s steps(20, end) 5.2s forwards, blink 0.8s infinite;
+					
+					} //end tw-fx-3
+				}//end about-hero-text
 			} //end of about-hero
 
 			.lower-nav-container {
@@ -137,6 +196,7 @@ background-image: none; // set the inital state of the property 	- for animation
 			} // end lower-nav-elements
 
 			.body-sect-1 {
+				
 				.body-sect-1-art {
 					.body-sect-1__head {
 						//NOTE: variant change
@@ -190,9 +250,7 @@ background-image: none; // set the inital state of the property 	- for animation
 		} //end main-container
 
 
-		//TODO: fixe hover of main footer social icons
-		/*Adjust page reveal animation, make the transition specific to the ATF area of the overall page. Or different approach */
-		/* Continue porting the top nav and lower nav to rest of pages in 1920px design variant. */
+		
 		.mobile-cta-footer{
 			.mobile-cta-footer__sm-links {
 				display: flex;
@@ -295,14 +353,23 @@ background-image: none; // set the inital state of the property 	- for animation
 
 		//1 - page bg-image:
 
-		@keyframes bg-reveal {
-			@include basicReveal;
+		@keyframes about-bg-reveal {
+			0%{
+				opacity: 0%;
+				background-color: black;
+				
+			}
+		
+			100%{
+				opacity: 100%;
+				background-color: transparent;			
+			}
 		} //end bg-reveal
 
 		//--------------------------
 
 		//2 - Hero Copy:
-		@keyframes typing {
+		@keyframes type1 {
 		
 			0% {
 				width: 0;
@@ -319,6 +386,25 @@ background-image: none; // set the inital state of the property 	- for animation
 			}
 		}
 
+
+		@keyframes type2 {
+			0% {
+				width: 0;
+				border-right: 0em;
+			}
+
+			15% {
+				width: 15%;
+				border-right: 0.15em solid $brandColor;
+			}
+			100% {
+				width: 95.5%;
+				border-right: 0.15em solid $brandColor;
+			}
+		}
+
+
+
 		@keyframes short-type {
 			0% {
 				width: 0;
@@ -330,7 +416,7 @@ background-image: none; // set the inital state of the property 	- for animation
 				border-right: 0.15em solid $brandColor;
 			}
 			100% {
-				width: 85%;
+				width: 53%;
 				border-right: 0.15em solid $brandColor;
 			}
 		}

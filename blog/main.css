@@ -38,11 +38,6 @@
 
 				}
 */
-/*work on mixins for lower nav.
-
-Port top nav and lower nav to all pages in 1920px 
-design variant. 
-*/
 .sitenav--container {
   position: relative;
   z-index: 1;
@@ -514,9 +509,18 @@ body .main-container .blog-box__link .blog-box .blog-box__text {
 /*SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1920px */
 @media (min-width: 1920px) {
   body {
-    background-image: url("/img/img-desktop-l/desktop-blog-bg.png");
+    background-image: none;
+    opacity: 0;
+    background-color: #000000;
+    animation: bg-reveal 0.5s ease-in forwards;
+    /*SECTION  ANIMATIONS & TRANSITIONS 
+    ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >1920px */
+    /*ANIMATIONS: */
+    /*END ANIMATIONS*/
+    /*!SECTION END ANIMATIONS & TRANSITIONS */
   }
   body .page-container {
+    background-image: url("/img/img-desktop-l/desktop-blog-bg.png");
     width: 100vw;
     height: 100vh;
     transform-origin: left center;
@@ -582,7 +586,6 @@ body .main-container .blog-box__link .blog-box .blog-box__text {
     vertical-align: middle;
     top: 3px;
     position: relative;
-    pointer-events: none;
   }
   body .mainnav__links .mainnav__links-link-container:hover {
     position: relative;
@@ -622,6 +625,39 @@ body .main-container .blog-box__link .blog-box .blog-box__text {
   }
   body .main-container .blog-box__link .blog-box .blog-box__text-container .blog-box__text {
     font-size: 1.12rem;
+  }
+  @keyframes bg-reveal {
+    0% {
+      opacity: 0%;
+    }
+    100% {
+      opacity: 100%;
+    }
+  }
+  @keyframes support-reveal {
+    0% {
+      opacity: 0%;
+    }
+    100% {
+      opacity: 100%;
+    }
+  }
+  @keyframes social-icons-animate {
+    0% {
+      opacity: 0%;
+    }
+    100% {
+      opacity: 100%;
+    }
+    0% {
+      top: 0px;
+    }
+    50% {
+      top: -4px;
+    }
+    100% {
+      top: 0px;
+    }
   }
 }
 /*!SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1920px *//*# sourceMappingURL=main.css.map */

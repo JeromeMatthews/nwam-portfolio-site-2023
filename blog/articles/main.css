@@ -37,11 +37,6 @@
 
 				}
 */
-/*work on mixins for lower nav.
-
-Port top nav and lower nav to all pages in 1920px 
-design variant. 
-*/
 .sitenav--container {
   position: relative;
   z-index: 1;

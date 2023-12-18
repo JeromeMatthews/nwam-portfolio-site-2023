@@ -37,11 +37,6 @@
 
 				}
 */
-/*work on mixins for lower nav.
-
-Port top nav and lower nav to all pages in 1920px 
-design variant. 
-*/
 .sitenav--container {
   position: relative;
   z-index: 1;
@@ -770,8 +765,9 @@ body .main-container .mobile-cta-footer .mobile-cta-footer__sm-links {
 @media (min-width: 1920px) {
   body {
     background-image: none;
-    /*Adjust page reveal animation, make the transition specific to the ATF area of the overall page. Or different approach */
-    /* Continue porting the top nav and lower nav to rest of pages in 1920px design variant. */
+    opacity: 0;
+    background-color: black;
+    animation: about-bg-reveal 0.5s ease-in forwards;
     /*SECTION  ANIMATIONS & TRANSITIONS 
     	ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >1920px */
     /*ANIMATIONS: */
@@ -846,7 +842,6 @@ body .main-container .mobile-cta-footer .mobile-cta-footer__sm-links {
     vertical-align: middle;
     top: 3px;
     position: relative;
-    pointer-events: none;
   }
   body .mainnav__links .mainnav__links-link-container:hover {
     position: relative;
@@ -866,6 +861,42 @@ body .main-container .mobile-cta-footer .mobile-cta-footer__sm-links {
     line-height: 99%;
     position: relative;
     top: 151px;
+  }
+  body .main-container .about-hero .about-hero__text .tw-fx-1 {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: inherit;
+    width: 0;
+    animation: type1 1.6s steps(21, end) 0.8s forwards, cursor-off 1 linear 0.2s 2.4s forwards;
+    /*name -> 
+    iteration-count-> 
+    timing-function->
+    duration->
+    delay->
+    fill-mode*/
+  }
+  body .main-container .about-hero .about-hero__text .tw-fx-2 {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: inherit;
+    width: 0;
+    animation: type2 1.5s steps(20, end) 3s forwards, cursor-off 1 linear 0.2s 4.4s forwards;
+    /*name -> 
+    iteration-count-> 
+    timing-function->
+    duration->
+    delay->
+    fill-mode*/
+  }
+  body .main-container .about-hero .about-hero__text .tw-fx-3 {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: inherit;
+    width: 0;
+    animation: short-type 1s steps(20, end) 5.2s forwards, blink 0.8s infinite;
   }
   body .main-container .lower-nav-container {
     display: block !important;
@@ -968,15 +999,17 @@ body .main-container .mobile-cta-footer .mobile-cta-footer__sm-links {
     transform: translateY(-2px);
     filter: drop-shadow(0px 4px #FFBF00);
   }
-  @keyframes bg-reveal {
+  @keyframes about-bg-reveal {
     0% {
       opacity: 0%;
+      background-color: black;
     }
     100% {
       opacity: 100%;
+      background-color: transparent;
     }
   }
-  @keyframes typing {
+  @keyframes type1 {
     0% {
       width: 0;
       border-right: 0em;
@@ -990,6 +1023,20 @@ body .main-container .mobile-cta-footer .mobile-cta-footer__sm-links {
       border-right: 0.15em solid #FFBF00;
     }
   }
+  @keyframes type2 {
+    0% {
+      width: 0;
+      border-right: 0em;
+    }
+    15% {
+      width: 15%;
+      border-right: 0.15em solid #FFBF00;
+    }
+    100% {
+      width: 95.5%;
+      border-right: 0.15em solid #FFBF00;
+    }
+  }
   @keyframes short-type {
     0% {
       width: 0;
@@ -1000,7 +1047,7 @@ body .main-container .mobile-cta-footer .mobile-cta-footer__sm-links {
       border-right: 0.15em solid #FFBF00;
     }
     100% {
-      width: 85%;
+      width: 53%;
       border-right: 0.15em solid #FFBF00;
     }
   }

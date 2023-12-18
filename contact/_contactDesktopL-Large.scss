@@ -2,45 +2,40 @@
 /*SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1920px */
 @media (min-width: 1920px) {
 	body {
+		//NOTE: UI/UX: ANIMATION & TRANSITIONS: 1 - Page Background Image - Reveal effect
+		background-image: none; // set the inital state of the property 	- for animation
+		opacity: 0; // set the inital state of the property - for animation
+		background-color: #000000;
+
+		animation: bg-reveal 0.5s ease-in forwards;
 
 		.page-container {
+			background-image: url("/img/img-desktop-l/desktop-contact-bg.png");
+
 			@include pageContainer;
 
-			.page__surface{
-			
+			.page__surface {
 				@include pageSurface;
+			} //end page__surface
+		} //end page-continer
 
-			}//end page__surface
-
-		}//end page-continer 
-
-
-		.page-flipped{
+		.page-flipped {
 			transform: translateX(0.5%) rotateY(90deg);
 		}
-
-		//NOTE design varitant
-		background-image: url("/img/img-desktop-l/desktop-contact-bg.png");
-		background-attachment: fixed;
 
 		.mainnav__links {
 			top: 26px;
 			left: 698px;
-		
+
 			a {
 				margin-top: 0px;
 				margin-bottom: 0px;
 				padding: 0px;
 			} //end mainnav__links a
-		
-		
-		
-		
-		
-		
+
 			//NOTE: MN-TOP-NAV-LINK - UI/UX: HOVER STATE
 			//===================================
-		
+
 			.mainnav__links-link-container {
 				@include mainnav__links-link-container;
 				//NOTE: Top Nav links  UI/UX additions:
@@ -48,56 +43,85 @@
 				.mainnav__links-link__href {
 					@include mainnav__links-link__href;
 				} //end mainnav__links-link__href
-		
-		
+
 				.mainnav__links-link__href:after {
 					@include mainnav__links-link__href-after;
 				} //end mainnav__links-link__href:after
-		
+
 				.mainnav__links-link__href:hover {
 					@include mainnav__links-link__href-hover;
 				} //end mainnav__links-link__href:hover
-		
-				
-		
+
 				.mainnav__links-link__href:hover:after {
 					@include mainnav__links-link__href-hover-after;
 				} //end mainnav__links-link__href
-		
+
 				.mainnav__links-link__text {
 					@include mainnav__links-link__text;
 				} //end mainnav__links-link__text
-		
-				
 			} //end mainnav__links-link-container
-		
+
 			.mainnav__links-link-container:hover {
 				position: relative;
 				top: -28px; // 2px offset upwards to give a look of the link being raised once hovered over. the adjustment on the link is -26px so adding 2px more when hovered.
-		
+
 				filter: drop-shadow(0px 2.5px rgba(0, 0, 0, 0.221));
 				/* Two length values and a color */
 				/* drop-shadow( <length> <length> <color> ) */
 			} //end mainnav__links-link-container:hover
-		
-		
-			
-				
 		} //end mainnav__links
-
 
 		.main-container {
 			.contact-container {
 				//NOTE design varitant
 				//NOTE design varitant
 				position: absolute; // better fit for the arrangement as relative is shifting the width of the container.
-				top: -165px;
+				top: -185px;
 				right: 290px;
 
 				.contact-heroCopy {
 					//NOTE design varitant
 					font-size: $text3x-59; //57.5px;
 					text-align: left;
+					left: 0px; //reset on 1920px design variant.
+
+					//NOTE: UI/UX: ANIMATION & TRANSITIONS: 2 - About Hero - Typewriter effect
+					.tw-fx-1 {
+						display: inline-block;
+						overflow: hidden;
+
+						white-space: nowrap;
+						font-size: inherit; //take it from the original font-size, easier to scale.
+						width: 0;
+						animation: type1 1.6s steps(21, end) 0.8s forwards,
+							cursor-off 1 linear 0.2s 2.4s forwards;
+						/*name -> 
+						 iteration-count-> 
+						 timing-function->
+						 duration->
+						 delay->
+						 fill-mode*/
+					} //end tw-fx-1
+
+					.tw-fx-2 {
+						position: relative;
+						top: -30px;
+						display: inline-block;
+						overflow: hidden;
+
+						white-space: nowrap;
+						font-size: inherit; //take it from the original font-size, easier to scale.
+						width: 0;
+
+						animation: type2 1.5s steps(20, end) 3s forwards,
+							cursor-off 1 linear 0.2s 4.4s forwards;
+						/*name -> 
+						iteration-count-> 
+						timing-function->
+						duration->
+						delay->
+						fill-mode*/
+					} //end tw-fx-2
 				} // end of contact-heroCopy
 
 				.contactheroimg {
@@ -105,17 +129,22 @@
 					margin: 25px auto;
 					padding: 0px;
 					position: relative;
-					top: -3px;
-					left: 196px; //reseting left positioning from mobile settings.
+					top: -56px;
+					left: 237px; //reseting left positioning from mobile settings.
 					width: 290px;
 					height: 137px;
+					opacity: 0; //set inital state for animation
+					animation: logo-reveal 1 ease-in 1s 5s forwards;
 				}
 			} //end of contact-container
 
 			.contact-form {
-				//NOTE: design variant: using the previous position relative declaration in the base scss cile on mobile, then just adjusting the position for subsequent device viewports.
-				top: -50px;
+				//NOTE: design variant: using the previous position relative declaration in the base scss file on mobile, then just adjusting the position for subsequent device viewports.
+				top: -105px;
 				left: 45px;
+
+
+			//TODO: add some reveal to the contact page form elements, possibly in form ux styling. 
 
 				.contact-form__elements {
 					.contact-form__element {
@@ -164,7 +193,7 @@
 				} // end contact-form__elements
 
 				textarea {
-					height: 290px;
+					height: 230px;
 					border-radius: 8px;
 					font-family: $font-list-b;
 					font-size: $text1x-56; //25px
@@ -172,7 +201,6 @@
 			} //end contact-form
 			//specific placement for lower nav elements:
 
-			
 			.lower-nav-container {
 				display: block !important;
 				position: fixed;
@@ -209,77 +237,64 @@
 						right: 3.5vw;
 
 						//NOTE: UI/UX: ANIMATION & TRANSITIONS: 8 - Lower Social Media Icons - Appear and bounce effect
-				li {
-					#smi-yt,
-					#smi-b,
-					#smi-fb,
-					#smi-ig,
-					#smi-lk {
-						position: relative;
-					} //end img
+						li {
+							#smi-yt,
+							#smi-b,
+							#smi-fb,
+							#smi-ig,
+							#smi-lk {
+								position: relative;
+							} //end img
 
-					#smi-yt {
-						
-						
-					} //end smi-yt
-					
-					#smi-yt:hover {
-						@include lowerNav-hoverstate;
-					} //end #smi-yt:hover
+							#smi-yt {
+							} //end smi-yt
 
-					//======================================================
+							#smi-yt:hover {
+								@include lowerNav-hoverstate;
+							} //end #smi-yt:hover
 
-					#smi-b {
-						
-						
-					} //end smi-b
+							//======================================================
 
-					#smi-b:hover {
-						@include lowerNav-hoverstate;
-					} //end #smi-b:hover
+							#smi-b {
+							} //end smi-b
 
-					//======================================================
+							#smi-b:hover {
+								@include lowerNav-hoverstate;
+							} //end #smi-b:hover
 
+							//======================================================
 
+							#smi-fb {
+							} // end smi-fb
 
-					#smi-fb {
-					
-					} // end smi-fb
+							#smi-fb:hover {
+								@include lowerNav-hoverstate;
+							} //end #smi-fb:hover
 
-					#smi-fb:hover {
-						@include lowerNav-hoverstate;
-					} //end #smi-fb:hover
+							//======================================================
 
+							#smi-ig {
+							} //end smi-ig
 
+							#smi-ig:hover {
+								@include lowerNav-hoverstate;
+							} //end #smi-ig:hover
+							//======================================================
 
-					//======================================================
+							#smi-lk {
+							} //end smi-lk
 
-					#smi-ig {
-						
-					} //end smi-ig
+							#smi-lk:hover {
+								@include lowerNav-hoverstate;
+							} //end #smi-lk:hover
+							//======================================================
 
-
-					#smi-ig:hover {
-						@include lowerNav-hoverstate;
-					} //end #smi-ig:hover
-					//======================================================
-
-					#smi-lk {
-						
-					} //end smi-lk
-
-
-					#smi-lk:hover {
-						@include lowerNav-hoverstate;
-					} //end #smi-lk:hover
-					//======================================================
-
-					position: relative;
-					margin-right: 10px;
-					cursor: pointer;
-				} //end li
-			  } //end social-icons
-			} //end main-footer
+							position: relative;
+							margin-right: 10px;
+							cursor: pointer;
+						} //end li
+					} //end social-icons
+				} //end main-footer
 			} // end lower-nav-elements
 		} // end main-container
 
@@ -305,7 +320,57 @@
 		} //end bg-reveal
 
 		//--------------------------
-	
+
+		//2 - Hero Copy:
+		@keyframes type1 {
+			0% {
+				width: 0;
+				border-right: 0em;
+			}
+
+			15% {
+				width: 15%;
+				border-right: 0.15em solid #fff;
+			}
+			100% {
+				width: 100%;
+				border-right: 0.15em solid #fff;
+			}
+		}
+
+		@keyframes type2 {
+			0% {
+				width: 0;
+				border-right: 0em;
+			}
+
+			15% {
+				width: 15%;
+				border-right: 0.15em solid #fff;
+			}
+			100% {
+				width: 73%;
+				border-right: 0.15em solid #fff;
+			}
+		}
+
+		@keyframes blink {
+			from {
+				border-color: transparent;
+			}
+			to {
+				border-color: #fff;
+			}
+		}
+
+		@keyframes cursor-off {
+			from {
+				border-color: #fff;
+			}
+			to {
+				border-color: transparent;
+			}
+		}
 
 		//--------------------------
 
@@ -333,7 +398,9 @@
 		} //end social-icons-reveal
 		//--------------------------
 
-
+		@keyframes logo-reveal {
+			@include basicReveal;
+		}
 
 		/*END ANIMATIONS*/
 		/*!SECTION END ANIMATIONS & TRANSITIONS */

@@ -4,7 +4,7 @@ window.onload = () => {
 let mobileNavHamburger = document.querySelector(".sitenav__hamburger");
 let mobileOverlay = document.querySelector(".sitenav__overlay");
 let siteLinks = document.querySelector(".sitenav__links");
-let heroButton = document.querySelector(".hero-button");
+
 
 //NOTE: DOM Elements for UI/UX Page turn animations:
 let page_container = document.querySelector(".page-container");

@@ -20,7 +20,7 @@
 		background-image: none; // set the inital state of the property 	- for animation
 		opacity: 0; // set the inital state of the property - for animation
 		background-color: #000000;
-		animation: bg-reveal 3s ease-in forwards;
+		animation: bg-reveal 0.5s ease-in forwards;
 
 		.page-container {
 			background: url("/img/img-desktop-l/desktop-ps-bg.png");
@@ -317,7 +317,6 @@
 
 		//2 - Hero Copy:
 		@keyframes typing {
-			//TODO: working on the inital state of the typehead. Needs to come on oly when the animation is about to start.
 			0% {
 				width: 0;
 				border-right: 0em;

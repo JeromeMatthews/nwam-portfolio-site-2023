@@ -37,11 +37,6 @@
 
 				}
 */
-/*work on mixins for lower nav.
-
-Port top nav and lower nav to all pages in 1920px 
-design variant. 
-*/
 .sitenav--container {
   position: relative;
   z-index: 1;
@@ -954,7 +949,6 @@ body .hero-button .hero-text {
     vertical-align: middle;
     top: 3px;
     position: relative;
-    pointer-events: none;
   }
   body .mainnav__links .mainnav__links-link-container:hover {
     position: relative;
