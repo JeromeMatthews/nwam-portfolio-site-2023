@@ -586,6 +586,7 @@ body .main-container .blog-box__link .blog-box .blog-box__text {
     vertical-align: middle;
     top: 3px;
     position: relative;
+    pointer-events: none;
   }
   body .mainnav__links .mainnav__links-link-container:hover {
     position: relative;

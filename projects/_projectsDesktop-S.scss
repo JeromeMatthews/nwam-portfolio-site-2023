@@ -79,7 +79,7 @@
                 width: 100%;
                 position: fixed;
                 //NOTE: Design variant: Used the container for positioning the elements of the lower nav. With it being absolutely placed, we can use relative positioning for the child elements (chevrons and the social icons)
-                left: 50vw;
+                // left: 50vw;
 
                 .nav-chevrons {
                     position: relative; // NOTE: Relative to the parent lower-nav-container div.

@@ -842,6 +842,7 @@ body .main-container .mobile-cta-footer .mobile-cta-footer__sm-links {
     vertical-align: middle;
     top: 3px;
     position: relative;
+    pointer-events: none;
   }
   body .mainnav__links .mainnav__links-link-container:hover {
     position: relative;

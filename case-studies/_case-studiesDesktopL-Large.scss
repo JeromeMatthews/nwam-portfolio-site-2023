@@ -56,6 +56,50 @@
 	}
 
 	body {
+		.mainnav__links{
+			top: 26px;
+			left: 698px;
+
+
+
+			//NOTE: MN-TOP-NAV-LINK - UI/UX: HOVER STATE
+			//===================================
+
+			.mainnav__links-link-container {
+			
+				@include mainnav__links-link-container;
+				//NOTE: Top Nav links  UI/UX additions:
+				/*Hover state changes */
+				.mainnav__links-link__href {
+					@include mainnav__links-link__href;
+				} //end mainnav__links-link__href
+
+
+				.mainnav__links-link__href:after {
+					@include mainnav__links-link__href-after;
+				} //end mainnav__links-link__href:after
+
+				.mainnav__links-link__href:hover {
+					@include mainnav__links-link__href-hover;
+				} //end mainnav__links-link__href:hover
+
+				
+
+				.mainnav__links-link__href:hover:after {
+					@include mainnav__links-link__href-hover-after;
+				} //end mainnav__links-link__href
+
+				.mainnav__links-link__text {
+					@include mainnav__links-link__text;
+				} //end mainnav__links-link__text
+
+				
+			} //end mainnav__links-link-container
+
+		}//end mainnav__links
+
+		
+
 		.atf-1 {
 			height: 1000px; // height of the containing box
 			background-image: url("/img/img-desktop-l/desktop-ps-ng-bg.png");

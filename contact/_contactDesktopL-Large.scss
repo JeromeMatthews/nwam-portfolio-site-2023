@@ -142,9 +142,10 @@
 				//NOTE: design variant: using the previous position relative declaration in the base scss file on mobile, then just adjusting the position for subsequent device viewports.
 				top: -105px;
 				left: 45px;
+				opacity: 0; //
+				animation: contact-form-animate 1 ease-out 1s 6.5s forwards;
 
-
-			//TODO: add some reveal to the contact page form elements, possibly in form ux styling. 
+		
 
 				.contact-form__elements {
 					.contact-form__element {
@@ -400,6 +401,25 @@
 
 		@keyframes logo-reveal {
 			@include basicReveal;
+		}
+
+
+		//9: contact form animation:
+		@keyframes contact-form-animate {
+			@include basicReveal;
+
+			//NOTE: the top position values based on the top-position value given on contact form. top: -105px
+			0% {
+				top: -125px;
+			}
+
+			50% {
+				top: -110px;
+			}
+
+			100% {
+				top: -105px;
+			}
 		}
 
 		/*END ANIMATIONS*/

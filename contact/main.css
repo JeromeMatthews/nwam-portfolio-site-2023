@@ -762,6 +762,7 @@ body .main-container .contact-form .contact-form__elements .mobile-cta-footer__b
     vertical-align: middle;
     top: 3px;
     position: relative;
+    pointer-events: none;
   }
   body .mainnav__links .mainnav__links-link-container:hover {
     position: relative;
@@ -824,6 +825,8 @@ body .main-container .contact-form .contact-form__elements .mobile-cta-footer__b
   body .main-container .contact-form {
     top: -105px;
     left: 45px;
+    opacity: 0;
+    animation: contact-form-animate 1 ease-out 1s 6.5s forwards;
   }
   body .main-container .contact-form .contact-form__elements .contact-form__element {
     margin: 0px auto;
@@ -1008,6 +1011,23 @@ body .main-container .contact-form .contact-form__elements .mobile-cta-footer__b
     }
     100% {
       opacity: 100%;
+    }
+  }
+  @keyframes contact-form-animate {
+    0% {
+      opacity: 0%;
+    }
+    100% {
+      opacity: 100%;
+    }
+    0% {
+      top: -125px;
+    }
+    50% {
+      top: -110px;
+    }
+    100% {
+      top: -105px;
     }
   }
 }

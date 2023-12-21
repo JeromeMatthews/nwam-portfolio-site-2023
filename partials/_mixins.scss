@@ -248,7 +248,7 @@
 	top: 3px;
 	position: relative;
 
-	// pointer-events: none; //NOTE: Stops the text from interfearing with the click event propragating up to the anchor tag querySelector in the JS to capture the Target page link.
+	pointer-events: none; //NOTE: Stops the text from interfearing with the click event propragating up to the anchor tag querySelector in the JS to capture the Target page link.
 }//end mainnav__links-link__text
 
 

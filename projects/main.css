@@ -465,7 +465,6 @@ body .show-box .show-box__text {
     bottom: 40px;
     width: 100%;
     position: fixed;
-    left: 50vw;
   }
   body .main-container .lower-nav-container .nav-chevrons {
     position: relative;
@@ -603,7 +602,6 @@ body .show-box .show-box__text {
     bottom: 40px;
     width: 100%;
     position: fixed;
-    left: 50vw;
   }
   body .main-container .lower-nav-container .nav-chevrons {
     position: relative;
@@ -769,6 +767,7 @@ body .show-box .show-box__text {
     vertical-align: middle;
     top: 3px;
     position: relative;
+    pointer-events: none;
   }
   body .mainnav__links .mainnav__links-link-container:hover {
     position: relative;
