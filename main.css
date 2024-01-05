@@ -849,7 +849,7 @@ body .hero-button .hero-text {
     ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >1920px */
   }
   body .page-container {
-    background: url("/img/img-desktop-l/desktop-home-bg.png");
+    background: url("/img/img-desktop-l/desktop-home-bg-grad-alt.png");
     /*Using the  !important flag to overide the assignment of the background images for the diffrent veiwport variants of the design.*/
     width: 100vw;
     height: 100vh;
@@ -1088,7 +1088,7 @@ body .hero-button .hero-text {
     opacity: 0;
     pointer-events: none;
     cursor: pointer;
-    animation: info-tool-tip 1s ease-in 22.5s forwards;
+    animation: info-tool-tip 1s ease-in 28.5s forwards;
   }
   body .tt-circle .tt-circle__icon {
     margin: 0 auto;
@@ -1112,23 +1112,11 @@ body .hero-button .hero-text {
     font-size: 1rem;
     animation: tooltip-animate 0.3s ease forwards;
   }
-  body .tt-circle-pulse {
-    position: relative;
-    z-index: -10;
-    top: 32px;
-    left: 7px;
-    width: 20px;
-    height: 20px;
-    background-color: transparent;
-    border: 1px solid white;
-    border-radius: 55%;
-    opacity: 0;
-    animation: info-tt-pulse 1.5s ease-in 24.5s 25;
-  }
   body .author-info {
-    display: block !important;
+    opacity: 0;
     font: 0.75rem futura-pt, Helvetica, Arial, sans-serif;
     color: #ffffff;
+    animation: info-tool-tip 1s ease-in 28.5s forwards;
   }
   body .author-info p .author-info__name {
     text-decoration: none;

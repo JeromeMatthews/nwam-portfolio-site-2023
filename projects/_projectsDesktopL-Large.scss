@@ -167,6 +167,17 @@
 				} //end show-box__overlay
 			} //end show-box-3
 
+
+
+
+
+
+
+
+
+
+
+
 			//specific placement for lower nav elements:
 			.lower-nav-container{
 				display: flex !important;
@@ -281,6 +292,183 @@
 				} //end social-icons
 			} //end main-footer
 		}//end lower-nav-container
+
+
+		
+		.tt-circle {
+			position: absolute;
+			top: 840px;
+			left: 40px;
+			width: 20px;
+			height: 20px;
+			background-color: #8a8a8a98;
+			border: 1px solid #ffff;
+			border-radius: 55%;
+			box-shadow: 0.1px 0.7px #000;
+			.tt-circle__icon {
+				margin: 0 auto;
+				position: absolute;
+				left: 7px;
+				top: -8px;
+				text-align: center;
+				font: $text1x-43 $font-list-b;
+				color: #fff;
+				cursor: pointer;
+			} //end tt-circle__icon
+
+			opacity: 1; //initializing the opacity of the tooltip.
+			// pointer-events: none;
+			cursor: pointer;
+			// animation: info-tool-tip 1s ease-in 28.5s forwards;
+		} //end tt-circle
+
+		// .tt-circle:hover  ::before{
+		// 	content: "click and hold for info:";
+		// 	position:absolute;
+		// 	width: 210px;
+		// 	left: -225px;
+
+		// }//end tt-circle::before
+
+		.tt-circle:hover ::after {
+			content: " Title: black-and-white-photo-of-a-brick-wall";
+			// white-space: pre-wrap; // to allow for inserting line breaks into the content propety
+			position: absolute;
+			transition: 1s all ease;
+			top: 7px;
+			left: -22px;
+			width: 430px;
+			height: 20px;
+			// background-color: #77767255;
+			// border: 1px solid #ffffff;
+			// border-radius: 3px;
+			// box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+			color: #fff;
+			font-size: $textBase;
+
+			//NOTE: Tooltip animation:
+			animation: tooltip-animate 0.3s ease forwards;
+		} //end tt-circle:hover
+
+		// .tt-circle-pulse {
+		// 	position: relative;
+		// 	z-index: -10; //brings the pulse effect forwards to make it look like its coming from the info button.
+		// 	top: 32px; // adjustment po vertical placement so the pulse effect fits correctly over the info button.
+		// 	left: 7px;
+		// 	width: 20px;
+		// 	height: 20px;
+		// 	background-color: transparent;
+		// 	border: 1px solid #ffff;
+		// 	border-radius: 55%;
+		// 	opacity: 0; //initializing the opacity for the animation.
+		// 	animation: info-tt-pulse 1.5s ease-in 26.5s 25;
+		// } //end tt-circle-pulse
+
+	
+		.author-info {
+			opacity: 1;
+			// display: block !important; //NOTE: overiding the defualt setting in the HTML so the code block won't show in the mobile and tablet variants.
+			font: $textSmall-75 $font-list-b;
+			color: #ffffff;
+			p {
+				.author-info__name {
+					text-decoration: none;
+					color: $brandColor;
+				} //end author-info__name
+
+				.author-info__name:hover {
+					color: #fdd14c;
+				} //end author-info-hover
+
+				.author-info__url {
+					text-decoration: none;
+					color: $brandColor;
+				} //end author-info__name
+
+				.author-info__url:hover {
+					text-decoration: none;
+					color: #fdd14c;
+				} //end author-info__name
+			} //end p
+
+			position: absolute;
+			right: 1555px;
+			bottom: 33px;
+
+			// animation: info-tool-tip 1s ease-in 28.5s forwards;
+		} //end-author-info
+
+		// //NOTE: BACKGROOUND IMAGE TOOLTIP
+		// //----------------------------------------------------------------
+
+		.tt-bgimg-circle {
+			position: fixed;
+			top: 96px;
+			left: 936px;
+			width: 20px;
+			height: 20px;
+			background-color: $brandColor;
+			border: 1px solid #ffff;
+			border-radius: 55%;
+			box-shadow: 0.1px 0.7px #000;
+			z-index: 19;//NOTE: needed to add z-index to bring the element forward to be interactable. In front of the show-box
+			.tt-bgimg-circle__icon {
+				margin: 0 auto;
+				position: absolute;
+				left: 5px;
+				top: -0px;
+				text-align: center;
+				font: $textBase arial;
+				color: #fff;
+				cursor: pointer;
+			} //end tt-circle__icon
+
+			opacity: 1; //initializing the opacity of the tooltip.
+			// pointer-events: none;
+			cursor: pointer;
+			// animation: info-tool-tip 1s linear 22.5s forwards;
+		} //end tt-circle
+
+	
+
+		.tt-bgimg-circle:hover ::after {
+			content: "The main event – “Thar be Treasure!” \a Where we make it happen. \a Here’s an offering of our pride and joy. \a Your projects.";
+			white-space: pre-line; // to allow for inserting line breaks into the content propety
+			position: absolute;
+			transition: 1s all ease;
+			top: 22px;
+			left: -198px;
+			width: 430px;
+			height: 80px;
+			background-color: #00000057;
+			border: 1px solid #ffffff54;
+			border-radius: 3px;
+			box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+			text-shadow: 1px 1.5px 0px #00000059;
+			font: $textBase 700 $font-list-b;
+			color: #fff;
+
+			//NOTE: Tooltip animation:
+			opacity: 1;
+			animation: tooltip-animate 0.3s ease forwards;
+		} //end tt-circle:hover
+
+		// .tt-bgimg-circle-pulse {
+		// 	position: absolute;
+		// 	z-index: -10; //brings the pulse effect forwards to make it look like its coming from the info button.
+
+		// 	top: 333px;
+		// 	left: 671px;
+		// 	width: 20px;
+		// 	height: 20px;
+		// 	background-color: transparent;
+		// 	border: 1px solid #ffff;
+		// 	border-radius: 55%;
+		// 	opacity: 0; //initializing the opacity for the animation.
+		// 	// animation: info-tt-pulse 1.5s ease-in 24.5s 25;
+		// } //end tt-circle-pulse
+
+
 		} //end main-container
 
 
@@ -491,6 +679,70 @@
 				opacity: 0%;
 			}
 		}
+
+
+		//9: info tooltip:
+		@keyframes info-tool-tip {
+			0% {
+				opacity: 0;
+				pointer-events: none;
+				transform: scale(0);
+			}
+
+			50% {
+				opacity: 0.5;
+				pointer-events: none;
+				transform: scale(0.5);
+			}
+
+			100% {
+				opacity: 1;
+				pointer-events: all;
+				transform: scale(1);
+			}
+		} //end info-tool-tip
+		//--------------------------
+
+		//10: info tooltip-pulse:
+		@keyframes info-tt-pulse {
+			0% {
+				opacity: 1;
+				pointer-events: none;
+				transform: scale(1);
+			}
+
+			50% {
+				opacity: 0.5;
+				pointer-events: none;
+				transform: scale(1.5);
+			}
+
+			100% {
+				opacity: 0;
+				pointer-events: all;
+				transform: scale(2);
+			}
+		} //end info-tool-tip
+		//--------------------------
+
+		//11: info tool-tip-animate:
+		@keyframes tooltip-animate {
+			0% {
+				opacity: 0;
+				transform: scale(0);
+			}
+
+			50% {
+				opacity: 0.5;
+				transform: scale(0.5);
+			}
+
+			100% {
+				opacity: 1;
+				transform: scale(1);
+			}
+		} //end info tool-tip-animate
+		//--------------------------
 
 		/*END ANIMATIONS*/
 		/*!SECTION END ANIMATIONS & TRANSITIONS */
