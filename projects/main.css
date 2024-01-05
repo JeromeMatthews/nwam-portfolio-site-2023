@@ -910,11 +910,11 @@ body .show-box .show-box__text {
     }
     15% {
       width: 15%;
-      border-right: 0.15em solid #FFBF00;
+      border-right: 0.15em solid #ffbf00;
     }
     100% {
       width: 100%;
-      border-right: 0.15em solid #FFBF00;
+      border-right: 0.15em solid #ffbf00;
     }
   }
   @keyframes short-type {
@@ -924,11 +924,11 @@ body .show-box .show-box__text {
     }
     15% {
       width: 15%;
-      border-right: 0.15em solid #FFBF00;
+      border-right: 0.15em solid #ffbf00;
     }
     100% {
       width: 85%;
-      border-right: 0.15em solid #FFBF00;
+      border-right: 0.15em solid #ffbf00;
     }
   }
   @keyframes blink {
@@ -936,12 +936,12 @@ body .show-box .show-box__text {
       border-color: transparent;
     }
     to {
-      border-color: #FFBF00;
+      border-color: #ffbf00;
     }
   }
   @keyframes cursor-off {
     from {
-      border-color: #FFBF00;
+      border-color: #ffbf00;
     }
     to {
       border-color: transparent;

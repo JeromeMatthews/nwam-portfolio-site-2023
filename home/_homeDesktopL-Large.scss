@@ -53,8 +53,6 @@
 			} // end sitenav__contactNum
 		} //end sitenav-logo-contact-container
 
-		
-
 		.mainnav__links {
 			top: 26px;
 			left: 698px;
@@ -65,43 +63,35 @@
 				padding: 0px;
 			} //end mainnav__links a
 
-		
-		//NOTE: UI/UX: ANIMATION & TRANSITIONS: 4 - Top navigation elements - Reveal effect
+			//NOTE: UI/UX: ANIMATION & TRANSITIONS: 4 - Top navigation elements - Reveal effect
 
 			#mainnav__links-animate-c-1 {
 				opacity: 0; // set the inital state of the property - for animation
 				pointer-events: none; // set the inital state of the property - for animation
-				
-					animation: top-nav-reveal 0.7s ease-in 11.5s forwards;
-				
-			}//end mainnav__links-link-container
-	
 
-			#mainnav__links-animate-c-2{
+				animation: top-nav-reveal 0.7s ease-in 11.5s forwards;
+			} //end mainnav__links-link-container
+
+			#mainnav__links-animate-c-2 {
 				opacity: 0; // set the inital state of the property - for animation
 				pointer-events: none; // set the inital state of the property - for animation
-				
-					animation: top-nav-reveal 0.7s ease-in 12.5s forwards;
+
+				animation: top-nav-reveal 0.7s ease-in 12.5s forwards;
 			}
 
-
-			#mainnav__links-animate-c-3{
+			#mainnav__links-animate-c-3 {
 				opacity: 0; // set the inital state of the property - for animation
 				pointer-events: none; // set the inital state of the property - for animation
-				
-					animation: top-nav-reveal 0.7s ease-in 13.5s forwards;
 
-			}//end mainnav__links-animate-c-3
+				animation: top-nav-reveal 0.7s ease-in 13.5s forwards;
+			} //end mainnav__links-animate-c-3
 
-			#mainnav__links-animate-c-4{
-
+			#mainnav__links-animate-c-4 {
 				opacity: 0; // set the inital state of the property - for animation
 				pointer-events: none; // set the inital state of the property - for animation
-				
-					animation: top-nav-reveal 0.7s ease-in 14.0s forwards;
-			}//end mainnav__links-animate-c-4
 
-		
+				animation: top-nav-reveal 0.7s ease-in 14s forwards;
+			} //end mainnav__links-animate-c-4
 
 			//NOTE: MN-TOP-NAV-LINK - UI/UX: HOVER STATE
 			//===================================
@@ -114,7 +104,6 @@
 					@include mainnav__links-link__href;
 				} //end mainnav__links-link__href
 
-
 				.mainnav__links-link__href:after {
 					@include mainnav__links-link__href-after;
 				} //end mainnav__links-link__href:after
@@ -123,8 +112,6 @@
 					@include mainnav__links-link__href-hover;
 				} //end mainnav__links-link__href:hover
 
-				
-
 				.mainnav__links-link__href:hover:after {
 					@include mainnav__links-link__href-hover-after;
 				} //end mainnav__links-link__href
@@ -132,8 +119,6 @@
 				.mainnav__links-link__text {
 					@include mainnav__links-link__text;
 				} //end mainnav__links-link__text
-
-				
 			} //end mainnav__links-link-container
 
 			.mainnav__links-link-container:hover {
@@ -144,10 +129,6 @@
 				/* Two length values and a color */
 				/* drop-shadow( <length> <length> <color> ) */
 			} //end mainnav__links-link-container:hover
-
-
-			
-				
 		} //end mainnav__links
 
 		//NOTE: Moved this code from the nav base css. Correcting the separation of concerns in the scss files. Ensures the Hero Copy is placed in the right area for Desktop screens.
@@ -243,7 +224,7 @@
 			opacity: 0;
 			animation: gleam 2.1s 1 linear 24.5s forwards;
 		}
-		
+
 		.hero-button:hover {
 			background: rgb(255, 230, 0) no-repeat padding-box;
 		} //end hero-button:hover state
@@ -281,6 +262,176 @@
 			pointer-events: none; // set the inital state of the property - for animation
 			animation: CTAB-reveal 0.9s ease-in 17.5s forwards;
 		} // end hero-button
+
+		//TODO: Work on the informational tooltip -> Work on the tool tip for bgimage information, text-formatting within content property of pusedo-elements
+
+		.tt-circle {
+			position: relative;
+			top: 12px;
+			left: 7px;
+			width: 20px;
+			height: 20px;
+			background-color: #8a8a8a98;
+			border: 1px solid #ffff;
+			border-radius: 55%;
+			box-shadow: 0.1px 0.7px #000;
+			.tt-circle__icon {
+				margin: 0 auto;
+				position: absolute;
+				left: 7px;
+				top: -8px;
+				text-align: center;
+				font: $text1x-43 $font-list-b;
+				color: #fff;
+				cursor: pointer;
+			} //end tt-circle__icon
+
+			opacity: 0; //initializing the opacity of the tooltip.
+			pointer-events: none;
+			cursor: pointer;
+			animation: info-tool-tip 1s ease-in 22.5s forwards;
+		} //end tt-circle
+
+		// .tt-circle:hover  ::before{
+		// 	content: "click and hold for info:";
+		// 	position:absolute;
+		// 	width: 210px;
+		// 	left: -225px;
+
+		// }//end tt-circle::before
+
+		.tt-circle:hover ::after {
+			content: " Title: adventure-storytelling-image-dariusz-sankowski";
+			// white-space: pre-wrap; // to allow for inserting line breaks into the content propety
+			position: absolute;
+			transition: 1s all ease;
+			top: 7px;
+			left: -22px;
+			width: 430px;
+			height: 20px;
+			// background-color: #77767255;
+			// border: 1px solid #ffffff;
+			// border-radius: 3px;
+			// box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+			color: #fff;
+			font-size: $textBase;
+
+			//NOTE: Tooltip animation:
+			animation: tooltip-animate 0.3s ease forwards;
+		} //end tt-circle:hover
+
+		.tt-circle-pulse {
+			position: relative;
+			z-index: -10; //brings the pulse effect forwards to make it look like its coming from the info button.
+			top: 32px; // adjustment po vertical placement so the pulse effect fits correctly over the info button.
+			left: 7px;
+			width: 20px;
+			height: 20px;
+			background-color: transparent;
+			border: 1px solid #ffff;
+			border-radius: 55%;
+			opacity: 0; //initializing the opacity for the animation.
+			animation: info-tt-pulse 1.5s ease-in 24.5s 25;
+		} //end tt-circle-pulse
+
+		//NOTE: continue work on structuring the display of photo author citations.
+		.author-info {
+			display: block !important; //NOTE: overiding the defualt setting in the HTML so the code block won't show in the mobile and tablet variants.
+			font: $textSmall-75 $font-list-b;
+			color: #ffffff;
+			p {
+				.author-info__name {
+					text-decoration: none;
+					color: $brandColor;
+				} //end author-info__name
+
+				.author-info__name:hover {
+					color: #fdd14c;
+				} //end author-info-hover
+
+				.author-info__url {
+					text-decoration: none;
+					color: $brandColor;
+				} //end author-info__name
+
+				.author-info__url:hover {
+					text-decoration: none;
+					color: #fdd14c;
+				} //end author-info__name
+			} //end p
+		} //end-author-info
+
+		//NOTE: BACKGROOUND IMAGE TOOLTIP
+		//----------------------------------------------------------------
+
+		.tt-bgimg-circle {
+			position: absolute;
+			top: 333px;
+			left: 671px;
+			width: 20px;
+			height: 20px;
+			background-color: $brandColor;
+			border: 1px solid #ffff;
+			border-radius: 55%;
+			box-shadow: 0.1px 0.7px #000;
+			.tt-bgimg-circle__icon {
+				margin: 0 auto;
+				position: absolute;
+				left: 5px;
+				top: -0px;
+				text-align: center;
+				font: $textBase arial;
+				color: #fff;
+				cursor: pointer;
+			} //end tt-circle__icon
+
+			opacity: 0; //initializing the opacity of the tooltip.
+			pointer-events: none;
+			cursor: pointer;
+			animation: info-tool-tip 1s linear 22.5s forwards;
+		} //end tt-circle
+
+		.tt-circle:hover ::before {
+			content: "click and hold for info:";
+			position: absolute;
+			width: 210px;
+			left: -225px;
+		} //end tt-circle::before
+
+		.tt-bgimg-circle:hover ::after {
+			content: "An open book. The Journey, begins. \a Your story begins here (obviously enough). \a We chart a course of action and set out on our path. ";
+			white-space: pre-line; // to allow for inserting line breaks into the content propety
+			position: absolute;
+			transition: 1s all ease;
+			top: -3px;
+			left: -54px;
+			width: 430px;
+			height: 70px;
+			// background-color: #86774855;
+			// border: 1px solid #ffffff;
+			// border-radius: 3px;
+			// box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+			font: $textBase $font-list-b;
+			color: #fff;
+
+			//NOTE: Tooltip animation:
+			animation: tooltip-animate 0.3s ease forwards;
+		} //end tt-circle:hover
+
+		.tt-bgimg-circle-pulse {
+			position: absolute;
+			z-index: -10; //brings the pulse effect forwards to make it look like its coming from the info button.
+
+			top: 333px;
+			left: 671px;
+			width: 20px;
+			height: 20px;
+			background-color: transparent;
+			border: 1px solid #ffff;
+			border-radius: 55%;
+			opacity: 0; //initializing the opacity for the animation.
+			animation: info-tt-pulse 1.5s ease-in 24.5s 25;
+		} //end tt-circle-pulse
 
 		.lower-nav-container {
 			display: block !important;
@@ -338,7 +489,7 @@
 							opacity: 0; //initial state of property for animation - for animation
 							animation: social-icons-animate 0.5s ease 19.5s forwards;
 						} //end smi-yt
-						
+
 						#smi-yt:hover {
 							@include lowerNav-hoverstate;
 						} //end #smi-yt:hover
@@ -356,8 +507,6 @@
 
 						//======================================================
 
-
-
 						#smi-fb {
 							opacity: 0; //initial state of property for animation - for animation
 							animation: social-icons-animate 0.5s ease 20s forwards;
@@ -367,15 +516,12 @@
 							@include lowerNav-hoverstate;
 						} //end #smi-fb:hover
 
-
-
 						//======================================================
 
 						#smi-ig {
 							opacity: 0; //initial state of property for animation - for animation
 							animation: social-icons-animate 0.5s ease 20.9s forwards;
 						} //end smi-ig
-
 
 						#smi-ig:hover {
 							@include lowerNav-hoverstate;
@@ -386,7 +532,6 @@
 							opacity: 0; //initial state of property for animation - for animation
 							animation: social-icons-animate 0.5s ease 21s forwards;
 						} //end smi-lk
-
 
 						#smi-lk:hover {
 							@include lowerNav-hoverstate;
@@ -425,7 +570,6 @@
 
 		//2 - Hero Copy:
 		@keyframes typing {
-		
 			0% {
 				width: 0;
 				border-right: 0em;
@@ -584,6 +728,8 @@
 		} //end social-icons-reveal
 		//--------------------------
 
+		//9: - top-nav-gleam:
+
 		@keyframes top-nav-gleam {
 			0% {
 				left: 0;
@@ -599,7 +745,71 @@
 				left: 100%;
 				opacity: 0%;
 			}
-		}
+		} //end top-nav-gleam:
+		//--------------------------
+
+		//10: info tooltip:
+		@keyframes info-tool-tip {
+			0% {
+				opacity: 0;
+				pointer-events: none;
+				transform: scale(0);
+			}
+
+			50% {
+				opacity: 0.5;
+				pointer-events: none;
+				transform: scale(0.5);
+			}
+
+			100% {
+				opacity: 1;
+				pointer-events: all;
+				transform: scale(1);
+			}
+		} //end info-tool-tip
+		//--------------------------
+
+		//10: info tooltip-pulse:
+		@keyframes info-tt-pulse {
+			0% {
+				opacity: 1;
+				pointer-events: none;
+				transform: scale(1);
+			}
+
+			50% {
+				opacity: 0.5;
+				pointer-events: none;
+				transform: scale(1.5);
+			}
+
+			100% {
+				opacity: 0;
+				pointer-events: all;
+				transform: scale(2);
+			}
+		} //end info-tool-tip
+		//--------------------------
+
+		//11: info tool-tip-animate:
+		@keyframes tooltip-animate {
+			0% {
+				opacity: 0;
+				transform: scale(0);
+			}
+
+			50% {
+				opacity: 0.5;
+				transform: scale(0.5);
+			}
+
+			100% {
+				opacity: 1;
+				transform: scale(1);
+			}
+		} //end info tool-tip-animate
+		//--------------------------
 
 		/*END ANIMATIONS*/
 		/*!SECTION END ANIMATIONS & TRANSITIONS 

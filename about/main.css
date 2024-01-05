@@ -982,23 +982,23 @@ body .main-container .mobile-cta-footer .mobile-cta-footer__sm-links {
   }
   body .mobile-cta-footer .mobile-cta-footer__sm-links li #smi-yt:hover {
     transform: translateY(-2px);
-    filter: drop-shadow(0px 4px #FFBF00);
+    filter: drop-shadow(0px 4px #ffbf00);
   }
   body .mobile-cta-footer .mobile-cta-footer__sm-links li #smi-b:hover {
     transform: translateY(-2px);
-    filter: drop-shadow(0px 4px #FFBF00);
+    filter: drop-shadow(0px 4px #ffbf00);
   }
   body .mobile-cta-footer .mobile-cta-footer__sm-links li #smi-fb:hover {
     transform: translateY(-2px);
-    filter: drop-shadow(0px 4px #FFBF00);
+    filter: drop-shadow(0px 4px #ffbf00);
   }
   body .mobile-cta-footer .mobile-cta-footer__sm-links li #smi-ig:hover {
     transform: translateY(-2px);
-    filter: drop-shadow(0px 4px #FFBF00);
+    filter: drop-shadow(0px 4px #ffbf00);
   }
   body .mobile-cta-footer .mobile-cta-footer__sm-links li #smi-lk:hover {
     transform: translateY(-2px);
-    filter: drop-shadow(0px 4px #FFBF00);
+    filter: drop-shadow(0px 4px #ffbf00);
   }
   @keyframes about-bg-reveal {
     0% {
@@ -1017,11 +1017,11 @@ body .main-container .mobile-cta-footer .mobile-cta-footer__sm-links {
     }
     15% {
       width: 15%;
-      border-right: 0.15em solid #FFBF00;
+      border-right: 0.15em solid #ffbf00;
     }
     100% {
       width: 100%;
-      border-right: 0.15em solid #FFBF00;
+      border-right: 0.15em solid #ffbf00;
     }
   }
   @keyframes type2 {
@@ -1031,11 +1031,11 @@ body .main-container .mobile-cta-footer .mobile-cta-footer__sm-links {
     }
     15% {
       width: 15%;
-      border-right: 0.15em solid #FFBF00;
+      border-right: 0.15em solid #ffbf00;
     }
     100% {
       width: 95.5%;
-      border-right: 0.15em solid #FFBF00;
+      border-right: 0.15em solid #ffbf00;
     }
   }
   @keyframes short-type {
@@ -1045,11 +1045,11 @@ body .main-container .mobile-cta-footer .mobile-cta-footer__sm-links {
     }
     15% {
       width: 15%;
-      border-right: 0.15em solid #FFBF00;
+      border-right: 0.15em solid #ffbf00;
     }
     100% {
       width: 53%;
-      border-right: 0.15em solid #FFBF00;
+      border-right: 0.15em solid #ffbf00;
     }
   }
   @keyframes blink {
@@ -1057,12 +1057,12 @@ body .main-container .mobile-cta-footer .mobile-cta-footer__sm-links {
       border-color: transparent;
     }
     to {
-      border-color: #FFBF00;
+      border-color: #ffbf00;
     }
   }
   @keyframes cursor-off {
     from {
-      border-color: #FFBF00;
+      border-color: #ffbf00;
     }
     to {
       border-color: transparent;

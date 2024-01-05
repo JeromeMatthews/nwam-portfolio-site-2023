@@ -1075,6 +1075,133 @@ body .hero-button .hero-text {
   }
 }
 @media (min-width: 1920px) {
+  body .tt-circle {
+    position: relative;
+    top: 12px;
+    left: 7px;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(138, 138, 138, 0.5960784314);
+    border: 1px solid white;
+    border-radius: 55%;
+    box-shadow: 0.1px 0.7px #000;
+    opacity: 0;
+    pointer-events: none;
+    cursor: pointer;
+    animation: info-tool-tip 1s ease-in 22.5s forwards;
+  }
+  body .tt-circle .tt-circle__icon {
+    margin: 0 auto;
+    position: absolute;
+    left: 7px;
+    top: -8px;
+    text-align: center;
+    font: 1.437rem futura-pt, Helvetica, Arial, sans-serif;
+    color: #fff;
+    cursor: pointer;
+  }
+  body .tt-circle:hover ::after {
+    content: " Title: adventure-storytelling-image-dariusz-sankowski";
+    position: absolute;
+    transition: 1s all ease;
+    top: 7px;
+    left: -22px;
+    width: 430px;
+    height: 20px;
+    color: #fff;
+    font-size: 1rem;
+    animation: tooltip-animate 0.3s ease forwards;
+  }
+  body .tt-circle-pulse {
+    position: relative;
+    z-index: -10;
+    top: 32px;
+    left: 7px;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 55%;
+    opacity: 0;
+    animation: info-tt-pulse 1.5s ease-in 24.5s 25;
+  }
+  body .author-info {
+    display: block !important;
+    font: 0.75rem futura-pt, Helvetica, Arial, sans-serif;
+    color: #ffffff;
+  }
+  body .author-info p .author-info__name {
+    text-decoration: none;
+    color: #ffbf00;
+  }
+  body .author-info p .author-info__name:hover {
+    color: #fdd14c;
+  }
+  body .author-info p .author-info__url {
+    text-decoration: none;
+    color: #ffbf00;
+  }
+  body .author-info p .author-info__url:hover {
+    text-decoration: none;
+    color: #fdd14c;
+  }
+  body .tt-bgimg-circle {
+    position: absolute;
+    top: 333px;
+    left: 671px;
+    width: 20px;
+    height: 20px;
+    background-color: #ffbf00;
+    border: 1px solid white;
+    border-radius: 55%;
+    box-shadow: 0.1px 0.7px #000;
+    opacity: 0;
+    pointer-events: none;
+    cursor: pointer;
+    animation: info-tool-tip 1s linear 22.5s forwards;
+  }
+  body .tt-bgimg-circle .tt-bgimg-circle__icon {
+    margin: 0 auto;
+    position: absolute;
+    left: 5px;
+    top: 0px;
+    text-align: center;
+    font: 1rem arial;
+    color: #fff;
+    cursor: pointer;
+  }
+  body .tt-circle:hover ::before {
+    content: "click and hold for info:";
+    position: absolute;
+    width: 210px;
+    left: -225px;
+  }
+  body .tt-bgimg-circle:hover ::after {
+    content: "An open book. The Journey, begins. \aYour story begins here (obviously enough). \aWe chart a course of action and set out on our path. ";
+    white-space: pre-line;
+    position: absolute;
+    transition: 1s all ease;
+    top: -3px;
+    left: -54px;
+    width: 430px;
+    height: 70px;
+    font: 1rem futura-pt, Helvetica, Arial, sans-serif;
+    color: #fff;
+    animation: tooltip-animate 0.3s ease forwards;
+  }
+  body .tt-bgimg-circle-pulse {
+    position: absolute;
+    z-index: -10;
+    top: 333px;
+    left: 671px;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 55%;
+    opacity: 0;
+    animation: info-tt-pulse 1.5s ease-in 24.5s 25;
+  }
   body .lower-nav-container {
     display: block !important;
     position: fixed;
@@ -1179,11 +1306,11 @@ body .hero-button .hero-text {
     }
     15% {
       width: 15%;
-      border-right: 0.15em solid #FFBF00;
+      border-right: 0.15em solid #ffbf00;
     }
     100% {
       width: 100%;
-      border-right: 0.15em solid #FFBF00;
+      border-right: 0.15em solid #ffbf00;
     }
   }
   @keyframes short-type {
@@ -1193,11 +1320,11 @@ body .hero-button .hero-text {
     }
     15% {
       width: 15%;
-      border-right: 0.15em solid #FFBF00;
+      border-right: 0.15em solid #ffbf00;
     }
     100% {
       width: 85%;
-      border-right: 0.15em solid #FFBF00;
+      border-right: 0.15em solid #ffbf00;
     }
   }
   @keyframes blink {
@@ -1205,12 +1332,12 @@ body .hero-button .hero-text {
       border-color: transparent;
     }
     to {
-      border-color: #FFBF00;
+      border-color: #ffbf00;
     }
   }
   @keyframes cursor-off {
     from {
-      border-color: #FFBF00;
+      border-color: #ffbf00;
     }
     to {
       border-color: transparent;
@@ -1343,6 +1470,54 @@ body .hero-button .hero-text {
     100% {
       left: 100%;
       opacity: 0%;
+    }
+  }
+  @keyframes info-tool-tip {
+    0% {
+      opacity: 0;
+      pointer-events: none;
+      transform: scale(0);
+    }
+    50% {
+      opacity: 0.5;
+      pointer-events: none;
+      transform: scale(0.5);
+    }
+    100% {
+      opacity: 1;
+      pointer-events: all;
+      transform: scale(1);
+    }
+  }
+  @keyframes info-tt-pulse {
+    0% {
+      opacity: 1;
+      pointer-events: none;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.5;
+      pointer-events: none;
+      transform: scale(1.5);
+    }
+    100% {
+      opacity: 0;
+      pointer-events: all;
+      transform: scale(2);
+    }
+  }
+  @keyframes tooltip-animate {
+    0% {
+      opacity: 0;
+      transform: scale(0);
+    }
+    50% {
+      opacity: 0.5;
+      transform: scale(0.5);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
     }
   }
 }

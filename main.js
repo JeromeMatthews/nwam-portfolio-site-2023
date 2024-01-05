@@ -10,7 +10,7 @@ let siteLinks = document.querySelector(".sitenav__links");
 let page_container = document.querySelector(".page-container");
 let navAnchors = document.querySelectorAll(".dtlink");
 let CTAB = document.querySelector(".hero-button");
-
+let toolTip = document.querySelector(".tt-click");
 
 //NOTE: Explanation for the code to help determine the actual size of the viewport available to design with. 
 
@@ -21,7 +21,7 @@ let CTAB = document.querySelector(".hero-button");
 
 
 
-//NOTE: Interactivity
+//NOTE: INTERACTIVITY
 mobileNavHamburger.addEventListener("click", () => {
 	mobileOverlay.classList.add("--mobile-overlay");
 	siteLinks.classList.remove("sitenav__links--hide");
@@ -80,6 +80,15 @@ CTAB.addEventListener("click", e => {
 	}, 500);
 
 });
+
+
+
+// //NOTE: Click event for addinig tooltip
+// toolTip.addEventListener("mouseout", function(){
+
+// 	console.log("user has left the tooltip");
+	
+// });
 
 
 };//end window onload
