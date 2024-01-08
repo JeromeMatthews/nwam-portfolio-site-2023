@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import "..//partials/_base.css";
 /*
 	UX design layout is as follows: 
@@ -775,7 +776,7 @@ body .main-container .mobile-cta-footer .mobile-cta-footer__sm-links {
     /*!SECTION END ANIMATIONS & TRANSITIONS */
   }
   body .page-container {
-    background: url("/img/img-desktop-l/desktop-about-bg.png");
+    background: url("/img/img-desktop-l/desktop-about-bg-alt1.png");
     /*Using the  !important flag to overide the assignment of the background images for the diffrent veiwport variants of the design.*/
     width: 100vw;
     height: 100vh;
@@ -855,6 +856,7 @@ body .main-container .mobile-cta-footer .mobile-cta-footer__sm-links {
     position: relative;
     margin: 100px 60px 390px 155px;
     left: -150px;
+    text-shadow: 0px 1px 2.5px #000000;
   }
   body .main-container .about-hero .about-hero__text {
     font-size: 5.62rem;
@@ -898,6 +900,103 @@ body .main-container .mobile-cta-footer .mobile-cta-footer__sm-links {
     font-size: inherit;
     width: 0;
     animation: short-type 1s steps(20, end) 5.2s forwards, blink 0.8s infinite;
+  }
+  body .main-container .about-hero .tt-circle {
+    position: absolute;
+    top: 840px;
+    left: 40px;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(138, 138, 138, 0.5960784314);
+    border: 1px solid white;
+    border-radius: 55%;
+    box-shadow: 0.1px 0.7px #000;
+    opacity: 1;
+    cursor: pointer;
+  }
+  body .main-container .about-hero .tt-circle .tt-circle__icon {
+    margin: 0 auto;
+    position: absolute;
+    left: 7px;
+    top: -8px;
+    text-align: center;
+    font: 1.437rem futura-pt, Helvetica, Arial, sans-serif;
+    color: #fff;
+    cursor: pointer;
+  }
+  body .main-container .about-hero .tt-circle:hover ::after {
+    content: " Title: person-with-their-hand-on-a-rock";
+    position: absolute;
+    transition: 1s all ease;
+    top: 7px;
+    left: -22px;
+    width: 430px;
+    height: 20px;
+    color: #fff;
+    font-size: 1rem;
+    animation: tooltip-animate 0.3s ease forwards;
+  }
+  body .main-container .about-hero .author-info {
+    opacity: 1;
+    font: 0.75rem futura-pt, Helvetica, Arial, sans-serif;
+    color: #ffffff;
+    position: absolute;
+    right: 1555px;
+    bottom: 33px;
+  }
+  body .main-container .about-hero .author-info p .author-info__name {
+    text-decoration: none;
+    color: #ffbf00;
+  }
+  body .main-container .about-hero .author-info p .author-info__name:hover {
+    color: #fdd14c;
+  }
+  body .main-container .about-hero .author-info p .author-info__url {
+    text-decoration: none;
+    color: #ffbf00;
+  }
+  body .main-container .about-hero .author-info p .author-info__url:hover {
+    text-decoration: none;
+    color: #fdd14c;
+  }
+  body .main-container .about-hero .tt-bgimg-circle {
+    position: fixed;
+    top: 194px;
+    left: 1337px;
+    width: 20px;
+    height: 20px;
+    background-color: #ffbf00;
+    border: 1px solid white;
+    border-radius: 55%;
+    box-shadow: 0.1px 0.7px #000;
+    z-index: 19;
+    opacity: 1;
+    cursor: pointer;
+  }
+  body .main-container .about-hero .tt-bgimg-circle .tt-bgimg-circle__icon {
+    margin: 0 auto;
+    position: absolute;
+    left: 5px;
+    top: 0px;
+    text-align: center;
+    font: 1rem arial;
+    color: #fff;
+    cursor: pointer;
+  }
+  body .main-container .about-hero .tt-bgimg-circle:hover ::after {
+    content: "The writing’s on the wall. \a A method of conveying information as old as human society itself. \aLike the cave paintings we employ the use of a narrative to communicate. \aNot just our clients’ stories, but also our own.";
+    white-space: pre-line;
+    position: absolute;
+    transition: 1s all ease;
+    top: -34px;
+    left: -581px;
+    width: 580px;
+    height: 80px;
+    text-shadow: 1px 1.5px 0px rgba(0, 0, 0, 0.3490196078);
+    font: 1rem 700 futura-pt, Helvetica, Arial, sans-serif;
+    color: #fff;
+    opacity: 1;
+    animation: tooltip-animate 0.3s ease forwards;
   }
   body .main-container .lower-nav-container {
     display: block !important;
