@@ -23,7 +23,7 @@
 		animation: bg-reveal 0.5s ease-in forwards;
 
 		.page-container {
-			background: url("/img/img-desktop-l/desktop-ps-bg.png");
+			background: url("/img/img-desktop-l/desktop-ps-bg-alt1.png");
 			/*Using the  !important flag to overide the assignment of the background images for the diffrent veiwport variants of the design.*/
 			@include pageContainer;
 
@@ -104,7 +104,7 @@
 		.main-container {
 
 			//NOTE: Design variant
-			background-image: url("/img/img-desktop-l/desktop-ps-bg.png");
+			// background-image: url("/img/img-desktop-l/desktop-ps-bg.png");
 
 			.show-box {
 				.show-box__title {
@@ -129,6 +129,7 @@
 				//NOTE: design variant
 				width: 488px;
 				height: 490px;
+				opacity: 0.95;
 			} //end show-box-group styles
 
 			#show-box-1 {
@@ -316,10 +317,10 @@
 				cursor: pointer;
 			} //end tt-circle__icon
 
-			opacity: 1; //initializing the opacity of the tooltip.
-			// pointer-events: none;
+			opacity: 0; //initializing the opacity of the tooltip.
+			pointer-events: none;
 			cursor: pointer;
-			// animation: info-tool-tip 1s ease-in 28.5s forwards;
+			animation: info-tool-tip 1s ease-in 2.5s forwards;
 		} //end tt-circle
 
 		// .tt-circle:hover  ::before{
@@ -331,12 +332,12 @@
 		// }//end tt-circle::before
 
 		.tt-circle:hover ::after {
-			content: " Title: black-and-white-photo-of-a-brick-wall";
+			content: " Title: gold-and-red-crown-on-brown-wooden-table";
 			// white-space: pre-wrap; // to allow for inserting line breaks into the content propety
 			position: absolute;
 			transition: 1s all ease;
 			top: 7px;
-			left: -22px;
+			left: -35px;
 			width: 430px;
 			height: 20px;
 			// background-color: #77767255;
@@ -366,7 +367,7 @@
 
 	
 		.author-info {
-			opacity: 1;
+			opacity: 0;
 			// display: block !important; //NOTE: overiding the defualt setting in the HTML so the code block won't show in the mobile and tablet variants.
 			font: $textSmall-75 $font-list-b;
 			color: #ffffff;
@@ -392,10 +393,10 @@
 			} //end p
 
 			position: absolute;
-			right: 1555px;
+			right: 1588px;
 			bottom: 33px;
 
-			// animation: info-tool-tip 1s ease-in 28.5s forwards;
+			animation: info-tool-tip 1s ease-in 2.5s forwards;
 		} //end-author-info
 
 		// //NOTE: BACKGROOUND IMAGE TOOLTIP
@@ -423,16 +424,16 @@
 				cursor: pointer;
 			} //end tt-circle__icon
 
-			opacity: 1; //initializing the opacity of the tooltip.
-			// pointer-events: none;
+			opacity: 0; //initializing the opacity of the tooltip.
+			pointer-events: none;
 			cursor: pointer;
-			// animation: info-tool-tip 1s linear 22.5s forwards;
+			animation: info-tool-tip 1s linear 1.5s forwards;
 		} //end tt-circle
 
 	
 
 		.tt-bgimg-circle:hover ::after {
-			content: "The main event – “Thar be Treasure!” \a Where we make it happen. \a Here’s an offering of our pride and joy. \a Your projects.";
+			content: "“Thar be Treasure!” -The main event. \a Where we make it happen. \a Here’s an offering of our pride and joy. \a Your projects.";
 			white-space: pre-line; // to allow for inserting line breaks into the content propety
 			position: absolute;
 			transition: 1s all ease;
@@ -440,10 +441,10 @@
 			left: -198px;
 			width: 430px;
 			height: 80px;
-			background-color: #00000057;
-			border: 1px solid #ffffff54;
-			border-radius: 3px;
-			box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+			// background-color: #00000057;
+			// border: 1px solid #ffffff54;
+			// border-radius: 3px;
+			// box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 			text-shadow: 1px 1.5px 0px #00000059;
 			font: $textBase 700 $font-list-b;
 			color: #fff;
@@ -453,20 +454,20 @@
 			animation: tooltip-animate 0.3s ease forwards;
 		} //end tt-circle:hover
 
-		// .tt-bgimg-circle-pulse {
-		// 	position: absolute;
-		// 	z-index: -10; //brings the pulse effect forwards to make it look like its coming from the info button.
+		.tt-bgimg-circle-pulse {
+			position: absolute;
+			z-index: -10; //brings the pulse effect forwards to make it look like its coming from the info button.
 
-		// 	top: 333px;
-		// 	left: 671px;
-		// 	width: 20px;
-		// 	height: 20px;
-		// 	background-color: transparent;
-		// 	border: 1px solid #ffff;
-		// 	border-radius: 55%;
-		// 	opacity: 0; //initializing the opacity for the animation.
-		// 	// animation: info-tt-pulse 1.5s ease-in 24.5s 25;
-		// } //end tt-circle-pulse
+			top: 96px;
+			left: 936px;
+			width: 20px;
+			height: 20px;
+			background-color: transparent;
+			border: 1px solid #ffff;
+			border-radius: 55%;
+			opacity: 0; //initializing the opacity for the animation.
+			animation: info-tt-pulse 1.5s linear 2.5s 25;
+		} //end tt-circle-pulse
 
 
 		} //end main-container

@@ -408,7 +408,6 @@ body .show-box .show-box__text {
 }
 @media (min-width: 1280px) {
   body .main-container {
-    background-image: url("/img/img-desktop-sm-1280/desktop-sm-ps-bg.PNG");
     top: 0px;
   }
   body .main-container .show-box .show-box__title {
@@ -545,7 +544,6 @@ body .show-box .show-box__text {
 /*SECTION ABOVE MOBILE PHONES - TABLET RANGE  - COMMON MACBOOK -   >1440px */
 @media (min-width: 1440px) {
   body .main-container {
-    background-image: url("/img/img-desktop-cm-1440/desktop-cm-ps-bg.PNG");
     top: 0px;
   }
   body .main-container .show-box .show-box__title {
@@ -701,7 +699,7 @@ body .show-box .show-box__text {
     /*!SECTION END ANIMATIONS & TRANSITIONS */
   }
   body .page-container {
-    background: url("/img/img-desktop-l/desktop-ps-bg.png");
+    background: url("/img/img-desktop-l/desktop-ps-bg-alt1.png");
     /*Using the  !important flag to overide the assignment of the background images for the diffrent veiwport variants of the design.*/
     width: 100vw;
     height: 100vh;
@@ -777,9 +775,6 @@ body .show-box .show-box__text {
     /* Two length values and a color */
     /* drop-shadow( <length> <length> <color> ) */
   }
-  body .main-container {
-    background-image: url("/img/img-desktop-l/desktop-ps-bg.png");
-  }
   body .main-container .show-box .show-box__title {
     font-size: 2.81rem;
   }
@@ -796,6 +791,7 @@ body .show-box .show-box__text {
   body .main-container #show-box-3 {
     width: 488px;
     height: 490px;
+    opacity: 0.95;
   }
   body .main-container #show-box-1 {
     background-image: url("/img/img-desktop-l/desktop-ps-natours-bg.png");
@@ -906,8 +902,10 @@ body .show-box .show-box__text {
     border: 1px solid white;
     border-radius: 55%;
     box-shadow: 0.1px 0.7px #000;
-    opacity: 1;
+    opacity: 0;
+    pointer-events: none;
     cursor: pointer;
+    animation: info-tool-tip 1s ease-in 2.5s forwards;
   }
   body .main-container .tt-circle .tt-circle__icon {
     margin: 0 auto;
@@ -920,11 +918,11 @@ body .show-box .show-box__text {
     cursor: pointer;
   }
   body .main-container .tt-circle:hover ::after {
-    content: " Title: black-and-white-photo-of-a-brick-wall";
+    content: " Title: gold-and-red-crown-on-brown-wooden-table";
     position: absolute;
     transition: 1s all ease;
     top: 7px;
-    left: -22px;
+    left: -35px;
     width: 430px;
     height: 20px;
     color: #fff;
@@ -932,12 +930,13 @@ body .show-box .show-box__text {
     animation: tooltip-animate 0.3s ease forwards;
   }
   body .main-container .author-info {
-    opacity: 1;
+    opacity: 0;
     font: 0.75rem futura-pt, Helvetica, Arial, sans-serif;
     color: #ffffff;
     position: absolute;
-    right: 1555px;
+    right: 1588px;
     bottom: 33px;
+    animation: info-tool-tip 1s ease-in 2.5s forwards;
   }
   body .main-container .author-info p .author-info__name {
     text-decoration: none;
@@ -965,8 +964,10 @@ body .show-box .show-box__text {
     border-radius: 55%;
     box-shadow: 0.1px 0.7px #000;
     z-index: 19;
-    opacity: 1;
+    opacity: 0;
+    pointer-events: none;
     cursor: pointer;
+    animation: info-tool-tip 1s linear 1.5s forwards;
   }
   body .main-container .tt-bgimg-circle .tt-bgimg-circle__icon {
     margin: 0 auto;
@@ -979,7 +980,7 @@ body .show-box .show-box__text {
     cursor: pointer;
   }
   body .main-container .tt-bgimg-circle:hover ::after {
-    content: "The main event – “Thar be Treasure!” \aWhere we make it happen. \aHere’s an offering of our pride and joy. \aYour projects.";
+    content: "“Thar be Treasure!” -The main event. \aWhere we make it happen. \aHere’s an offering of our pride and joy. \aYour projects.";
     white-space: pre-line;
     position: absolute;
     transition: 1s all ease;
@@ -987,15 +988,24 @@ body .show-box .show-box__text {
     left: -198px;
     width: 430px;
     height: 80px;
-    background-color: rgba(0, 0, 0, 0.3411764706);
-    border: 1px solid rgba(255, 255, 255, 0.3294117647);
-    border-radius: 3px;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
     text-shadow: 1px 1.5px 0px rgba(0, 0, 0, 0.3490196078);
     font: 1rem 700 futura-pt, Helvetica, Arial, sans-serif;
     color: #fff;
     opacity: 1;
     animation: tooltip-animate 0.3s ease forwards;
+  }
+  body .main-container .tt-bgimg-circle-pulse {
+    position: absolute;
+    z-index: -10;
+    top: 96px;
+    left: 936px;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 55%;
+    opacity: 0;
+    animation: info-tt-pulse 1.5s linear 2.5s 25;
   }
   @keyframes bg-reveal {
     0% {

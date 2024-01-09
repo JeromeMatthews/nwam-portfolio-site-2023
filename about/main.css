@@ -911,8 +911,10 @@ body .main-container .mobile-cta-footer .mobile-cta-footer__sm-links {
     border: 1px solid white;
     border-radius: 55%;
     box-shadow: 0.1px 0.7px #000;
-    opacity: 1;
+    opacity: 0;
+    pointer-events: none;
     cursor: pointer;
+    animation: info-tool-tip 1s ease-in 8.5s forwards;
   }
   body .main-container .about-hero .tt-circle .tt-circle__icon {
     margin: 0 auto;
@@ -925,11 +927,11 @@ body .main-container .mobile-cta-footer .mobile-cta-footer__sm-links {
     cursor: pointer;
   }
   body .main-container .about-hero .tt-circle:hover ::after {
-    content: " Title: person-with-their-hand-on-a-rock";
+    content: " Title: a-person-with-their-hand-on-a-rock";
     position: absolute;
     transition: 1s all ease;
     top: 7px;
-    left: -22px;
+    left: -66px;
     width: 430px;
     height: 20px;
     color: #fff;
@@ -937,12 +939,13 @@ body .main-container .mobile-cta-footer .mobile-cta-footer__sm-links {
     animation: tooltip-animate 0.3s ease forwards;
   }
   body .main-container .about-hero .author-info {
-    opacity: 1;
+    opacity: 0;
     font: 0.75rem futura-pt, Helvetica, Arial, sans-serif;
     color: #ffffff;
     position: absolute;
-    right: 1555px;
+    right: 1618px;
     bottom: 33px;
+    animation: info-tool-tip 1s ease-in 8.5s forwards;
   }
   body .main-container .about-hero .author-info p .author-info__name {
     text-decoration: none;
@@ -970,8 +973,10 @@ body .main-container .mobile-cta-footer .mobile-cta-footer__sm-links {
     border-radius: 55%;
     box-shadow: 0.1px 0.7px #000;
     z-index: 19;
-    opacity: 1;
+    opacity: 0;
+    pointer-events: none;
     cursor: pointer;
+    animation: info-tool-tip 1s linear 7s forwards;
   }
   body .main-container .about-hero .tt-bgimg-circle .tt-bgimg-circle__icon {
     margin: 0 auto;
@@ -998,6 +1003,19 @@ body .main-container .mobile-cta-footer .mobile-cta-footer__sm-links {
     opacity: 1;
     animation: tooltip-animate 0.3s ease forwards;
   }
+  body .main-container .about-hero .tt-bgimg-circle-pulse {
+    position: absolute;
+    z-index: -10;
+    top: 194px;
+    left: 1337px;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 55%;
+    opacity: 0;
+    animation: info-tt-pulse 1.5s linear 7.5s 25;
+  }
   body .main-container .lower-nav-container {
     display: block !important;
     position: absolute;
@@ -1021,6 +1039,7 @@ body .main-container .mobile-cta-footer .mobile-cta-footer__sm-links {
     position: relative;
     top: 0px;
     right: 5px;
+    animation: chevron-down-animate 2s linear infinite;
   }
   body .main-container .body-sect-1 .body-sect-1-art {
     margin-bottom: 290px;
@@ -1294,6 +1313,65 @@ body .main-container .mobile-cta-footer .mobile-cta-footer__sm-links {
     100% {
       left: 100%;
       opacity: 0%;
+    }
+  }
+  @keyframes info-tool-tip {
+    0% {
+      opacity: 0;
+      pointer-events: none;
+      transform: scale(0);
+    }
+    50% {
+      opacity: 0.5;
+      pointer-events: none;
+      transform: scale(0.5);
+    }
+    100% {
+      opacity: 1;
+      pointer-events: all;
+      transform: scale(1);
+    }
+  }
+  @keyframes info-tt-pulse {
+    0% {
+      opacity: 1;
+      pointer-events: none;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.5;
+      pointer-events: none;
+      transform: scale(1.5);
+    }
+    100% {
+      opacity: 0;
+      pointer-events: all;
+      transform: scale(2);
+    }
+  }
+  @keyframes tooltip-animate {
+    0% {
+      opacity: 0;
+      transform: scale(0);
+    }
+    50% {
+      opacity: 0.5;
+      transform: scale(0.5);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  @keyframes chevron-down-animate {
+    0% {
+      top: 0px;
+    }
+    50% {
+      top: 2.5px;
+    }
+    100% {
+      top: 0px;
     }
   }
 }

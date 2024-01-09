@@ -189,10 +189,10 @@
 						cursor: pointer;
 					} //end tt-circle__icon
 		
-					opacity: 1; //initializing the opacity of the tooltip.
-					// pointer-events: none;
+					opacity: 0; //initializing the opacity of the tooltip.
+					pointer-events: none;
 					cursor: pointer;
-					// animation: info-tool-tip 1s ease-in 28.5s forwards;
+					animation: info-tool-tip 1s ease-in 8.5s forwards;
 				} //end tt-circle
 		
 				// .tt-circle:hover  ::before{
@@ -204,12 +204,12 @@
 				// }//end tt-circle::before
 		
 				.tt-circle:hover ::after {
-					content: " Title: person-with-their-hand-on-a-rock";
+					content: " Title: a-person-with-their-hand-on-a-rock";
 					// white-space: pre-wrap; // to allow for inserting line breaks into the content propety
 					position: absolute;
 					transition: 1s all ease;
 					top: 7px;
-					left: -22px;
+					left: -66px;
 					width: 430px;
 					height: 20px;
 					// background-color: #77767255;
@@ -238,7 +238,7 @@
 				// } //end tt-circle-pulse
 
 				.author-info {
-					opacity: 1;
+					opacity: 0;
 					// display: block !important; //NOTE: overiding the defualt setting in the HTML so the code block won't show in the mobile and tablet variants.
 					font: $textSmall-75 $font-list-b;
 					color: #ffffff;
@@ -264,10 +264,10 @@
 					} //end p
 		
 					position: absolute;
-					right: 1555px;
+					right: 1618px;
 					bottom: 33px;
 		
-					// animation: info-tool-tip 1s ease-in 28.5s forwards;
+					animation: info-tool-tip 1s ease-in 8.5s forwards;
 				} //end-author-info
 
 
@@ -298,10 +298,10 @@
 				cursor: pointer;
 			} //end tt-circle__icon
 
-			opacity: 1; //initializing the opacity of the tooltip.
-			// pointer-events: none;
+			opacity: 0; //initializing the opacity of the tooltip.
+			pointer-events: none;
 			cursor: pointer;
-			// animation: info-tool-tip 1s linear 22.5s forwards;
+			animation: info-tool-tip 1s linear 7s forwards;
 		} //end tt-circle
 
 	
@@ -328,20 +328,20 @@
 			animation: tooltip-animate 0.3s ease forwards;
 		} //end tt-circle:hover
 
-		// .tt-bgimg-circle-pulse {
-		// 	position: absolute;
-		// 	z-index: -10; //brings the pulse effect forwards to make it look like its coming from the info button.
+		.tt-bgimg-circle-pulse {
+			position: absolute;
+			z-index: -10; //brings the pulse effect forwards to make it look like its coming from the info button.
 
-		// 	top: 333px;
-		// 	left: 671px;
-		// 	width: 20px;
-		// 	height: 20px;
-		// 	background-color: transparent;
-		// 	border: 1px solid #ffff;
-		// 	border-radius: 55%;
-		// 	opacity: 0; //initializing the opacity for the animation.
-		// 	// animation: info-tt-pulse 1.5s ease-in 24.5s 25;
-		// } //end tt-circle-pulse
+			top: 194px;
+			left: 1337px;
+			width: 20px;
+			height: 20px;
+			background-color: transparent;
+			border: 1px solid #ffff;
+			border-radius: 55%;
+			opacity: 0; //initializing the opacity for the animation.
+			animation: info-tt-pulse 1.5s linear 7.5s 25;
+		} //end tt-circle-pulse
 
 
 
@@ -376,6 +376,8 @@
 					position: relative;
 					top: 0px;
 					right: 5px;
+
+					animation: chevron-down-animate 2s linear infinite;
 				} //end chevron-down
 			} // end lower-nav-elements
 
@@ -747,7 +749,88 @@
 				left: 100%;
 				opacity: 0%;
 			}
-		}
+		}//end top-nav-gleam
+		//-------------------------
+
+
+		//9: info tooltip:
+		@keyframes info-tool-tip {
+			0% {
+				opacity: 0;
+				pointer-events: none;
+				transform: scale(0);
+			}
+
+			50% {
+				opacity: 0.5;
+				pointer-events: none;
+				transform: scale(0.5);
+			}
+
+			100% {
+				opacity: 1;
+				pointer-events: all;
+				transform: scale(1);
+			}
+		} //end info-tool-tip
+		//--------------------------
+
+		//10: info tooltip-pulse:
+		@keyframes info-tt-pulse {
+			0% {
+				opacity: 1;
+				pointer-events: none;
+				transform: scale(1);
+			}
+
+			50% {
+				opacity: 0.5;
+				pointer-events: none;
+				transform: scale(1.5);
+			}
+
+			100% {
+				opacity: 0;
+				pointer-events: all;
+				transform: scale(2);
+			}
+		} //end info-tool-tip
+		//--------------------------
+
+		//11: info tool-tip-animate:
+		@keyframes tooltip-animate {
+			0% {
+				opacity: 0;
+				transform: scale(0);
+			}
+
+			50% {
+				opacity: 0.5;
+				transform: scale(0.5);
+			}
+
+			100% {
+				opacity: 1;
+				transform: scale(1);
+			}
+		} //end info tool-tip-animate
+		//--------------------------
+
+		@keyframes chevron-down-animate {
+			0%{
+				top: 0px;
+			} 
+			
+			50%{
+				top: 2.5px;
+			} 
+			
+			100%{
+				top: 0px;
+			}
+		}//end chevron-down-animate
+ 
+
 
 		/*END ANIMATIONS*/
 		/*!SECTION END ANIMATIONS & TRANSITIONS */
