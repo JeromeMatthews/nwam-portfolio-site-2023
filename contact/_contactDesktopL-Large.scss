@@ -189,8 +189,19 @@
 							top: 10px;
 							right: -124px;
 							font-size: $text1x-87; //30px;
+
+							
+							cursor: pointer;
+
+							color: #644e0a;
 						} //end mobile-cta-footer__button
 					} //end contact-form-element
+
+					.mobile-cta-footer__button:hover {
+						background: #ffcf15 no-repeat padding-box;
+						color: #f8f2f2;
+						text-shadow: 0px 2px .5px #4a45459e;
+					} //end .mobile-cta-footer__button:hover state
 				} // end contact-form__elements
 
 				textarea {
@@ -227,7 +238,7 @@
 				opacity: 0; //initializing the opacity of the tooltip.
 				pointer-events: none;
 				cursor: pointer;
-				animation: info-tool-tip 1s ease-in 2.5s forwards;
+				animation: info-tool-tip 1s ease-in 10.5s forwards;
 			} //end tt-circle
 	
 			// .tt-circle:hover  ::before{
@@ -302,7 +313,7 @@
 				right: 1574px;
 				top: 736px;
 	
-				animation: info-tool-tip 1s ease-in 2.5s forwards;
+				animation: info-tool-tip 1s ease-in 11.5s forwards;
 			} //end-author-info
 
 
@@ -334,7 +345,7 @@
 			opacity: 0; //initializing the opacity of the tooltip.
 			pointer-events: none;
 			cursor: pointer;
-			animation: info-tool-tip 1s linear 1.5s forwards;
+			animation: info-tool-tip 1s linear 8.5s forwards;
 		} //end tt-circle
 
 	
@@ -373,7 +384,7 @@
 			border: 1px solid #ffff;
 			border-radius: 55%;
 			opacity: 0; //initializing the opacity for the animation.
-			animation: info-tt-pulse 1.5s linear 2.5s 25;
+			animation: info-tt-pulse 1.5s linear 9.5s 25;
 		} //end tt-circle-pulse
 
 
@@ -390,13 +401,33 @@
 					top: -18px;
 					right: 16px;
 					.left-chev {
+
+						.dtlink.low-nav-a-left{
+					
+							img{
+								//NOTE: same issues as when adding the anchor links in the top menu. The inner most elment's event propagation was blocking the wrapping anchor link tag. Therefore needed to turn it's default event propagation behavior off with pointer events: none.
+								pointer-events: none;
+							} //end img  
+						} //end dtlink.low-nav-a-left
+
 						position: inherit;
 						left: -21px; //pull chevron to the left a little
+						cursor: pointer;
 					} //end left-chev
 
 					.right-chev {
+
+						.dtlink.low-nav-a-right{
+					
+							img{
+								//NOTE: same issues as when adding the anchor links in the top menu. The inner most elment's event propagation was blocking the wrapping anchor link tag. Therefore needed to turn it's default event propagation behavior off with pointer events: none.
+								pointer-events: none;
+							} //end img  
+						} //end dtlink.low-nav-a-right
+
 						position: inherit;
 						right: -21px; //pull chevron to the right a little
+						cursor: pointer;
 					} //end right-chev
 				} //end nav-chevrons
 
@@ -647,6 +678,8 @@
 				0% {
 					opacity: 0;
 					transform: scale(0);
+					pointer-events: none;
+				
 				}
 	
 				50% {
@@ -657,9 +690,13 @@
 				100% {
 					opacity: 1;
 					transform: scale(1);
+					pointer-events: all;
 				}
 			} //end info tool-tip-animate
 			//--------------------------
+
+			
+		
 
 
 		/*END ANIMATIONS*/

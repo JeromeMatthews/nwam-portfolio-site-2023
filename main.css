@@ -1028,7 +1028,7 @@ body .hero-button .hero-text {
     width: 45px;
     height: 95px;
     transform: rotateZ(15deg);
-    background-color: rgba(255, 255, 255, 0.37);
+    background-color: rgba(255, 255, 255, 0.752);
     position: relative;
     z-index: 10;
     float: left;
@@ -1037,7 +1037,9 @@ body .hero-button .hero-text {
     animation: gleam 2.1s 1 linear 24.5s forwards;
   }
   body .hero-button:hover {
-    background: rgb(255, 230, 0) no-repeat padding-box;
+    background: #ffcf15 no-repeat padding-box;
+    color: #f8f2f2;
+    text-shadow: 0px 2px 0.5px rgba(74, 69, 69, 0.6196078431);
   }
   body .hero-button {
     background: #ffbf00 no-repeat padding-box;
@@ -1060,6 +1062,7 @@ body .hero-button .hero-text {
     opacity: 0;
     pointer-events: none;
     animation: CTAB-reveal 0.9s ease-in 17.5s forwards;
+    color: #644e0a;
   }
   body .hero-button .hero-text {
     position: relative;
@@ -1188,7 +1191,7 @@ body .hero-button .hero-text {
     border: 1px solid white;
     border-radius: 55%;
     opacity: 0;
-    animation: info-tt-pulse 1.5s ease-in 24.5s 25;
+    animation: info-tt-pulse 1.5s linear 24.5s 25;
   }
   body .lower-nav-container {
     display: block !important;
@@ -1202,20 +1205,26 @@ body .hero-button .hero-text {
     right: 81px;
   }
   body .lower-nav-container .nav-chevrons .left-chev {
-    position: inherit;
+    position: relative;
     left: -14px;
     opacity: 0;
     pointer-events: none;
     animation: lower-nav-reveal 0.8s ease-in 18s forwards;
     cursor: pointer;
   }
+  body .lower-nav-container .nav-chevrons .left-chev .dtlink.low-nav-a-left img {
+    pointer-events: none;
+  }
   body .lower-nav-container .nav-chevrons .right-chev {
-    position: inherit;
+    position: relative;
     right: -32px;
     opacity: 0;
     pointer-events: none;
     animation: lower-nav-reveal 0.8s ease-in 18.5s forwards;
     cursor: pointer;
+  }
+  body .lower-nav-container .nav-chevrons .right-chev .dtlink.low-nav-a-right img {
+    pointer-events: none;
   }
   body .lower-nav-container .main-footer .main-footer__social-icons {
     display: flex;

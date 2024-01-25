@@ -216,7 +216,7 @@
 			width: 45px;
 			height: 95px;
 			transform: rotateZ(15deg);
-			background-color: rgba(255, 255, 255, 0.37);
+			background-color: rgba(255, 255, 255, 0.752);
 			position: relative;
 			z-index: 10;
 			float: left;
@@ -226,7 +226,9 @@
 		}
 
 		.hero-button:hover {
-			background: rgb(255, 230, 0) no-repeat padding-box;
+			background: #ffcf15 no-repeat padding-box;
+			color: #f8f2f2;
+			text-shadow: 0px 2px .5px #4a45459e;
 		} //end hero-button:hover state
 
 		.hero-button {
@@ -253,6 +255,8 @@
 				text-align: center;
 				//NOTE: added to simplify needing to add any unecessary code just to try to better target the button to trigger page turn animation.
 				pointer-events: none; //NOTE: Design variant, removing the event propagation from the text element in the button so the JS file picks up only the click event of the button itself and passes the href target to the next page.
+
+				
 			} //end hero-text
 
 			@media (max-width: 359px) {
@@ -261,6 +265,7 @@
 			opacity: 0; // set the inital state of the property - for animation
 			pointer-events: none; // set the inital state of the property - for animation
 			animation: CTAB-reveal 0.9s ease-in 17.5s forwards;
+			color: #644e0a;
 		} // end hero-button
 
 	
@@ -433,7 +438,7 @@
 			border: 1px solid #ffff;
 			border-radius: 55%;
 			opacity: 0; //initializing the opacity for the animation.
-			animation: info-tt-pulse 1.5s ease-in 24.5s 25;
+			animation: info-tt-pulse 1.5s linear 24.5s 25;
 		} //end tt-circle-pulse
 
 		.lower-nav-container {
@@ -448,23 +453,54 @@
 				position: relative; // NOTE: Relative to the parent lower-nav-container div.
 				top: 12px;
 				right: 81px;
-				.left-chev {
-					position: inherit;
-					left: -14px; //pull chevron to the left a little
-					opacity: 0; // set the inital state of the property - for animation
-					pointer-events: none; // set the inital state of the property - for animation
-					animation: lower-nav-reveal 0.8s ease-in 18s forwards;
-					cursor: pointer;
-				} //end left-chev
+				
+					
 
-				.right-chev {
-					position: inherit;
-					right: -32px; //pull chevron to the right a little
-					opacity: 0; // set the inital state of the property - for animation
-					pointer-events: none; // set the inital state of the property - for animation
-					animation: lower-nav-reveal 0.8s ease-in 18.5s forwards;
-					cursor: pointer;
-				} //end right-chev
+					.left-chev {
+						
+
+						.dtlink.low-nav-a-left{
+					
+							img{
+								//NOTE: same issues as when adding the anchor links in the top menu. The inner most elment's event propagation was blocking the wrapping anchor link tag. Therefore needed to turn it's default event propagation behavior off with pointer events: none.
+								pointer-events: none;
+							} //end img  
+						} //end dtlink.low-nav-a-left
+						position:  relative;						
+						left: -14px; //pull chevron to the left a little
+						opacity: 0; // set the inital state of the property - for animation
+						pointer-events: none; // set the inital state of the property - for animation
+						animation: lower-nav-reveal 0.8s ease-in 18s forwards;
+						cursor: pointer;
+					} //end left-chev
+
+
+				
+			
+
+				
+	
+						.right-chev {
+
+							.dtlink.low-nav-a-right{
+					
+								img{
+									//NOTE: same issues as when adding the anchor links in the top menu. The inner most elment's event propagation was blocking the wrapping anchor link tag. Therefore needed to turn it's default event propagation behavior off with pointer events: none.
+									pointer-events: none;
+								} //end img  
+							} //end dtlink.low-nav-a-right
+						
+							position: relative;
+							right: -32px; //pull chevron to the right a little
+							opacity: 0; // set the inital state of the property - for animation
+							pointer-events: none; // set the inital state of the property - for animation
+							animation: lower-nav-reveal 0.8s ease-in 18.5s forwards;
+							cursor: pointer;
+						
+					
+
+				}//end right-chev
+			
 			} //end nav-chevrons
 
 			.main-footer {

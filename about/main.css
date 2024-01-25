@@ -278,7 +278,6 @@ body .main-container .mobile-cta-footer .mobile-cta-footer__button .hero-text {
   margin: auto 10%;
   top: 9px;
   text-align: center;
-  color: #000;
 }
 body .main-container .mobile-cta-footer .mobile-cta-footer__sm-links {
   display: flex;
@@ -769,8 +768,8 @@ body .main-container .mobile-cta-footer .mobile-cta-footer__sm-links {
     opacity: 0;
     background-color: black;
     animation: about-bg-reveal 0.5s ease-in forwards;
-    /*SECTION  ANIMATIONS & TRANSITIONS 
-    	ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >1920px */
+    /*SECTION  ANIMATIONS & TRANSITIOS 
+    ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >1920px */
     /*ANIMATIONS: */
     /*END ANIMATIONS*/
     /*!SECTION END ANIMATIONS & TRANSITIONS */
@@ -873,11 +872,11 @@ body .main-container .mobile-cta-footer .mobile-cta-footer__sm-links {
     width: 0;
     animation: type1 1.6s steps(21, end) 0.8s forwards, cursor-off 1 linear 0.2s 2.4s forwards;
     /*name -> 
-    iteration-count-> 
-    timing-function->
-    duration->
-    delay->
-    fill-mode*/
+     iteration-count-> 
+     timing-function->
+     duration->
+     delay->
+     fill-mode*/
   }
   body .main-container .about-hero .about-hero__text .tw-fx-2 {
     display: inline-block;
@@ -1026,20 +1025,31 @@ body .main-container .mobile-cta-footer .mobile-cta-footer__sm-links {
     position: relative;
     top: -18px;
     right: 16px;
+    opacity: 0;
+    animation: lower-nav-reveal 1s ease 10s forwards;
   }
   body .main-container .lower-nav-container .nav-chevrons .left-chev {
     position: inherit;
     left: -21px;
+    cursor: pointer;
+  }
+  body .main-container .lower-nav-container .nav-chevrons .left-chev .dtlink.low-nav-a-left img {
+    pointer-events: none;
   }
   body .main-container .lower-nav-container .nav-chevrons .right-chev {
     position: inherit;
     right: -21px;
+    cursor: pointer;
+  }
+  body .main-container .lower-nav-container .nav-chevrons .right-chev .dtlink.low-nav-a-right img {
+    pointer-events: none;
   }
   body .main-container .lower-nav-container .chevron-down {
     position: relative;
     top: 0px;
     right: 5px;
-    animation: chevron-down-animate 2s linear infinite;
+    opacity: 0;
+    animation: chevron-down-reveal 2s linear 11s forwards, chevron-down-animate 1s ease 12s infinite;
   }
   body .main-container .body-sect-1 .body-sect-1-art {
     margin-bottom: 290px;
@@ -1075,6 +1085,19 @@ body .main-container .mobile-cta-footer .mobile-cta-footer__sm-links {
   }
   body .main-container .body-sect-3 .body-sect-3-art .body-sect-3__text {
     font-size: 1.87rem;
+  }
+  body .mobile-cta-footer .mobile-cta-footer__button {
+    cursor: pointer;
+  }
+  body .mobile-cta-footer .mobile-cta-footer__button .hero-text {
+    color: #644e0a;
+  }
+  body .mobile-cta-footer .mobile-cta-footer__button:hover {
+    background: #ffcf15 no-repeat padding-box;
+    text-shadow: 0px 2px 0.5px rgba(74, 69, 69, 0.6196078431);
+  }
+  body .mobile-cta-footer .mobile-cta-footer__button:hover .hero-text {
+    color: #f8f2f2 !important;
   }
   body .mobile-cta-footer .mobile-cta-footer__sm-links {
     display: flex;
@@ -1372,6 +1395,20 @@ body .main-container .mobile-cta-footer .mobile-cta-footer__sm-links {
     }
     100% {
       top: 0px;
+    }
+  }
+  @keyframes chevron-down-reveal {
+    0% {
+      opacity: 0%;
+    }
+    100% {
+      opacity: 100%;
+    }
+    0% {
+      pointer-events: none;
+    }
+    100% {
+      pointer-events: all;
     }
   }
 }

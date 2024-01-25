@@ -1679,6 +1679,13 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
   .main-container {
     top: 0px;
   }
+  body {
+    /*SECTION  ANIMATIONS & TRANSITIONS 
+    ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >1920px */
+    /*ANIMATIONS: */
+    /*END ANIMATIONS*/
+    /*!SECTION END ANIMATIONS & TRANSITIONS */
+  }
   body .mainnav__links {
     top: 26px;
     left: 698px;
@@ -1804,6 +1811,17 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
     top: -15px;
     margin-left: auto;
     margin-right: auto;
+  }
+  body .nav-chevrons {
+    position: absolute;
+    z-index: 13;
+    right: 110px;
+    top: 750px;
+  }
+  body .nav-chevrons .chevron-down {
+    position: relative;
+    opacity: 0;
+    animation: chevron-down-reveal 2s linear 3s forwards, chevron-down-animate 1s ease 4s infinite;
   }
   body .btl {
     height: 400px;
@@ -1954,9 +1972,91 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
   }
   body .mobile-cta-footer .mobile-cta-footer__button .hero-text {
     top: 13px;
+    color: #644e0a;
+  }
+  body .mobile-cta-footer .mobile-cta-footer__button:hover {
+    background: #ffcf15 no-repeat padding-box;
+    text-shadow: 0px 2px 0.5px rgba(74, 69, 69, 0.6196078431);
+  }
+  body .mobile-cta-footer .mobile-cta-footer__button:hover .hero-text {
+    color: #f8f2f2 !important;
   }
   body .mobile-cta-footer .mobile-cta-footer__sm-links {
     top: -100px;
+  }
+  body .mobile-cta-footer .mobile-cta-footer__sm-links li {
+    position: relative;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  body .mobile-cta-footer .mobile-cta-footer__sm-links li #smi-yt,
+  body .mobile-cta-footer .mobile-cta-footer__sm-links li #smi-b,
+  body .mobile-cta-footer .mobile-cta-footer__sm-links li #smi-fb,
+  body .mobile-cta-footer .mobile-cta-footer__sm-links li #smi-ig,
+  body .mobile-cta-footer .mobile-cta-footer__sm-links li #smi-lk {
+    position: relative;
+  }
+  body .mobile-cta-footer .mobile-cta-footer__sm-links li #smi-yt:hover {
+    transform: translateY(-2px);
+    filter: drop-shadow(0px 4px #ffbf00);
+  }
+  body .mobile-cta-footer .mobile-cta-footer__sm-links li #smi-b:hover {
+    transform: translateY(-2px);
+    filter: drop-shadow(0px 4px #ffbf00);
+  }
+  body .mobile-cta-footer .mobile-cta-footer__sm-links li #smi-fb:hover {
+    transform: translateY(-2px);
+    filter: drop-shadow(0px 4px #ffbf00);
+  }
+  body .mobile-cta-footer .mobile-cta-footer__sm-links li #smi-ig:hover {
+    transform: translateY(-2px);
+    filter: drop-shadow(0px 4px #ffbf00);
+  }
+  body .mobile-cta-footer .mobile-cta-footer__sm-links li #smi-lk:hover {
+    transform: translateY(-2px);
+    filter: drop-shadow(0px 4px #ffbf00);
+  }
+  @keyframes social-icons-animate {
+    0% {
+      opacity: 0%;
+    }
+    100% {
+      opacity: 100%;
+    }
+    0% {
+      top: 0px;
+    }
+    50% {
+      top: -4px;
+    }
+    100% {
+      top: 0px;
+    }
+  }
+  @keyframes chevron-down-animate {
+    0% {
+      top: 0px;
+    }
+    50% {
+      top: 2.5px;
+    }
+    100% {
+      top: 0px;
+    }
+  }
+  @keyframes chevron-down-reveal {
+    0% {
+      opacity: 0%;
+    }
+    100% {
+      opacity: 100%;
+    }
+    0% {
+      pointer-events: none;
+    }
+    100% {
+      pointer-events: all;
+    }
   }
 }
 /*!SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1920px *//*# sourceMappingURL=main.css.map */

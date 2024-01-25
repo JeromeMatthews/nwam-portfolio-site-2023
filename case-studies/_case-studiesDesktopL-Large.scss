@@ -210,6 +210,19 @@
 			} //end btf-2__project-container-box
 		} //end btf-2
 
+		.nav-chevrons{
+			position: absolute;
+			z-index: 13;
+			right: 110.0px;
+    		top: 750px;
+
+			.chevron-down{
+				position: relative;
+				opacity: 0; //NOTE: initializing the starting state for the reveal of chevron.
+					animation: chevron-down-reveal 2s linear 3s forwards,chevron-down-animate 1s ease 4s infinite;
+			}//end chevron-down
+		}//end nav-chevrons
+
 		.btl {
 			height: 400px;
 			
@@ -426,14 +439,143 @@
 					//NOTE: Design variant - slight adjustment for the text in the link styled like a button, to center it.
 					//Already has position relative inherited from parent stylesheet - main.scss.
 					top: 13px;
+					color: #644e0a;
+
+
+
 				} //end hero-text
-			}
+			}//end mobile-cta-footer__button
+
+			.mobile-cta-footer__button:hover {
+				background: #ffcf15 no-repeat padding-box;
+				
+				text-shadow: 0px 2px .5px #4a45459e;
+
+				.hero-text{
+					//NOTE: Design variant overiding the span tag color assignment from the tablet and mobile variants.
+					color: #f8f2f2 !important;
+				}//end hero-text
+			} //end .mobile-cta-footer__button:hover state
 
 			.mobile-cta-footer__sm-links {
 				//NOTE: Design variant
 				top: -100px;
+
+
+				li {
+					#smi-yt,
+					#smi-b,
+					#smi-fb,
+					#smi-ig,
+					#smi-lk {
+						position: relative;
+					} //end img
+
+					#smi-yt {
+					} //end smi-yt
+
+					#smi-yt:hover {
+						@include about-lowerNav-hoverstate;
+					} //end #smi-yt:hover
+
+					//======================================================
+
+					#smi-b {
+					} //end smi-b
+
+					#smi-b:hover {
+						@include about-lowerNav-hoverstate;
+					} //end #smi-b:hover
+
+					//======================================================
+
+					#smi-fb {
+					} // end smi-fb
+
+					#smi-fb:hover {
+						@include about-lowerNav-hoverstate;
+					} //end #smi-fb:hover
+
+					//======================================================
+
+					#smi-ig {
+					} //end smi-ig
+
+					#smi-ig:hover {
+						@include about-lowerNav-hoverstate;
+					} //end #smi-ig:hover
+					//======================================================
+
+					#smi-lk {
+					} //end smi-lk
+
+					#smi-lk:hover {
+						@include about-lowerNav-hoverstate;
+					} //end #smi-lk:hover
+					//======================================================
+
+					position: relative;
+					margin-right: 10px;
+					cursor: pointer;
+				} //end li
 			} //end mobile-cta-footer__sm-links
 		} // end mobile-cta-footer
+
+		/*SECTION  ANIMATIONS & TRANSITIONS 
+		ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >1920px */
+		/*ANIMATIONS: */
+		//==========================
+
+
+
+		//8: - social icons:
+
+		@keyframes social-icons-animate {
+			@include basicReveal;
+			0% {
+				top: 0px;
+			}
+
+			50% {
+				top: -4px;
+			}
+
+			100% {
+				top: 0px;
+			}
+		} //end social-icons-reveal
+		//--------------------------
+
+		//12: chevron-down-animate
+		@keyframes chevron-down-animate {
+			0% {
+				top: 0px;
+			}
+
+			50% {
+				top: 2.5px;
+			}
+
+			100% {
+				top: 0px;
+			}
+		} //end chevron-down-animate
+
+		//13:  chevron-down-reveal
+		@keyframes chevron-down-reveal {
+			@include basicReveal;
+
+			0%{
+				pointer-events: none;
+			}
+			100%{
+				pointer-events: all;
+
+			}
+		} //end chevron-down-reveal
+
+		/*END ANIMATIONS*/
+		/*!SECTION END ANIMATIONS & TRANSITIONS */
 	} //end body
 } //end media query
 /*!SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1920px */

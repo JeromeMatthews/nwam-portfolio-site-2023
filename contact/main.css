@@ -861,6 +861,13 @@ body .main-container .contact-form .contact-form__elements .mobile-cta-footer__b
     top: 10px;
     right: -124px;
     font-size: 1.87rem;
+    cursor: pointer;
+    color: #644e0a;
+  }
+  body .main-container .contact-form .contact-form__elements .mobile-cta-footer__button:hover {
+    background: #ffcf15 no-repeat padding-box;
+    color: #f8f2f2;
+    text-shadow: 0px 2px 0.5px rgba(74, 69, 69, 0.6196078431);
   }
   body .main-container .contact-form textarea {
     height: 230px;
@@ -881,7 +888,7 @@ body .main-container .contact-form .contact-form__elements .mobile-cta-footer__b
     opacity: 0;
     pointer-events: none;
     cursor: pointer;
-    animation: info-tool-tip 1s ease-in 2.5s forwards;
+    animation: info-tool-tip 1s ease-in 10.5s forwards;
   }
   body .main-container .tt-circle .tt-circle__icon {
     margin: 0 auto;
@@ -912,7 +919,7 @@ body .main-container .contact-form .contact-form__elements .mobile-cta-footer__b
     position: absolute;
     right: 1574px;
     top: 736px;
-    animation: info-tool-tip 1s ease-in 2.5s forwards;
+    animation: info-tool-tip 1s ease-in 11.5s forwards;
   }
   body .main-container .author-info p .author-info__name {
     text-decoration: none;
@@ -943,7 +950,7 @@ body .main-container .contact-form .contact-form__elements .mobile-cta-footer__b
     opacity: 0;
     pointer-events: none;
     cursor: pointer;
-    animation: info-tool-tip 1s linear 1.5s forwards;
+    animation: info-tool-tip 1s linear 8.5s forwards;
   }
   body .main-container .tt-bgimg-circle .tt-bgimg-circle__icon {
     margin: 0 auto;
@@ -985,7 +992,7 @@ body .main-container .contact-form .contact-form__elements .mobile-cta-footer__b
     border: 1px solid white;
     border-radius: 55%;
     opacity: 0;
-    animation: info-tt-pulse 1.5s linear 2.5s 25;
+    animation: info-tt-pulse 1.5s linear 9.5s 25;
   }
   body .main-container .lower-nav-container {
     display: block !important;
@@ -1001,10 +1008,18 @@ body .main-container .contact-form .contact-form__elements .mobile-cta-footer__b
   body .main-container .lower-nav-container .nav-chevrons .left-chev {
     position: inherit;
     left: -21px;
+    cursor: pointer;
+  }
+  body .main-container .lower-nav-container .nav-chevrons .left-chev .dtlink.low-nav-a-left img {
+    pointer-events: none;
   }
   body .main-container .lower-nav-container .nav-chevrons .right-chev {
     position: inherit;
     right: -21px;
+    cursor: pointer;
+  }
+  body .main-container .lower-nav-container .nav-chevrons .right-chev .dtlink.low-nav-a-right img {
+    pointer-events: none;
   }
   body .main-container .lower-nav-container .main-footer .main-footer__social-icons {
     display: flex;
@@ -1188,6 +1203,7 @@ body .main-container .contact-form .contact-form__elements .mobile-cta-footer__b
     0% {
       opacity: 0;
       transform: scale(0);
+      pointer-events: none;
     }
     50% {
       opacity: 0.5;
@@ -1196,6 +1212,7 @@ body .main-container .contact-form .contact-form__elements .mobile-cta-footer__b
     100% {
       opacity: 1;
       transform: scale(1);
+      pointer-events: all;
     }
   }
 }

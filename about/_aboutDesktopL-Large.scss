@@ -2,95 +2,75 @@
 /*SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1920px */
 @media (min-width: 1920px) {
 	body {
+		//NOTE: UI/UX: ANIMATION & TRANSITIONS: 1 - Page Background Image - Reveal effect
+		background-image: none; // set the inital state of the property 	- for animation
+		opacity: 0; // set the inital state of the property - for animation
+		background-color: black;
+		animation: about-bg-reveal 0.5s ease-in forwards;
 
-			//NOTE: UI/UX: ANIMATION & TRANSITIONS: 1 - Page Background Image - Reveal effect
-			background-image: none; // set the inital state of the property 	- for animation
-			opacity: 0; // set the inital state of the property - for animation
-			background-color: black;
-			animation: about-bg-reveal 0.5s ease-in forwards;
-	
-			
-			.page-container {
-				background: url("/img/img-desktop-l/desktop-about-bg-alt1.png");
-				/*Using the  !important flag to overide the assignment of the background images for the diffrent veiwport variants of the design.*/
-				@include pageContainer;
+		.page-container {
+			background: url("/img/img-desktop-l/desktop-about-bg-alt1.png");
+			/*Using the  !important flag to overide the assignment of the background images for the diffrent veiwport variants of the design.*/
+			@include pageContainer;
 
-				.page__surface {
-					@include pageSurface;
-				} //end page__surface
-			} //end page-continer
+			.page__surface {
+				@include pageSurface;
+			} //end page__surface
+		} //end page-continer
 
-			.page-flipped {
-				transform: translateX(0.5%) rotateY(90deg);
-			}
+		.page-flipped {
+			transform: translateX(0.5%) rotateY(90deg);
+		}
 
+		.mainnav__links {
+			top: 26px;
+			left: 698px;
 
-.mainnav__links {
-	top: 26px;
-	left: 698px;
+			a {
+				margin-top: 0px;
+				margin-bottom: 0px;
+				padding: 0px;
+			} //end mainnav__links a
 
-	a {
-		margin-top: 0px;
-		margin-bottom: 0px;
-		padding: 0px;
-	} //end mainnav__links a
+			//NOTE: MN-TOP-NAV-LINK - UI/UX: HOVER STATE
+			//===================================
 
+			.mainnav__links-link-container {
+				@include mainnav__links-link-container;
+				//NOTE: Top Nav links  UI/UX additions:
+				/*Hover state changes */
+				.mainnav__links-link__href {
+					@include mainnav__links-link__href;
+				} //end mainnav__links-link__href
 
+				.mainnav__links-link__href:after {
+					@include mainnav__links-link__href-after;
+				} //end mainnav__links-link__href:after
 
+				.mainnav__links-link__href:hover {
+					@include mainnav__links-link__href-hover;
+				} //end mainnav__links-link__href:hover
 
+				.mainnav__links-link__href:hover:after {
+					@include mainnav__links-link__href-hover-after;
+				} //end mainnav__links-link__href
 
+				.mainnav__links-link__text {
+					@include mainnav__links-link__text;
+				} //end mainnav__links-link__text
+			} //end mainnav__links-link-container
 
-	//NOTE: MN-TOP-NAV-LINK - UI/UX: HOVER STATE
-	//===================================
+			.mainnav__links-link-container:hover {
+				position: relative;
+				top: -28px; // 2px offset upwards to give a look of the link being raised once hovered over. the adjustment on the link is -26px so adding 2px more when hovered.
 
-	.mainnav__links-link-container {
-		@include mainnav__links-link-container;
-		//NOTE: Top Nav links  UI/UX additions:
-		/*Hover state changes */
-		.mainnav__links-link__href {
-			@include mainnav__links-link__href;
-		} //end mainnav__links-link__href
-
-
-		.mainnav__links-link__href:after {
-			@include mainnav__links-link__href-after;
-		} //end mainnav__links-link__href:after
-
-		.mainnav__links-link__href:hover {
-			@include mainnav__links-link__href-hover;
-		} //end mainnav__links-link__href:hover
-
-		
-
-		.mainnav__links-link__href:hover:after {
-			@include mainnav__links-link__href-hover-after;
-		} //end mainnav__links-link__href
-
-		.mainnav__links-link__text {
-			@include mainnav__links-link__text;
-		} //end mainnav__links-link__text
-
-		
-	} //end mainnav__links-link-container
-
-	.mainnav__links-link-container:hover {
-		position: relative;
-		top: -28px; // 2px offset upwards to give a look of the link being raised once hovered over. the adjustment on the link is -26px so adding 2px more when hovered.
-
-		filter: drop-shadow(0px 2.5px rgba(0, 0, 0, 0.221));
-		/* Two length values and a color */
-		/* drop-shadow( <length> <length> <color> ) */
-	} //end mainnav__links-link-container:hover
-
-
-	
-		
-} //end mainnav__links
-
-
+				filter: drop-shadow(0px 2.5px rgba(0, 0, 0, 0.221));
+				/* Two length values and a color */
+				/* drop-shadow( <length> <length> <color> ) */
+			} //end mainnav__links-link-container:hover
+		} //end mainnav__links
 
 		.main-container {
-			
 			.about-hero {
 				.about-hero__copy {
 					position: relative;
@@ -104,10 +84,9 @@
 					font-size: $text5x-62; //90px;
 					text-align: left;
 					line-height: 99%;
-					//NOTE: Design variant: adjustmnet to Hero copy positioning. 
+					//NOTE: Design variant: adjustmnet to Hero copy positioning.
 					position: relative;
-    				top: 151px;
-
+					top: 151px;
 
 					//NOTE: UI/UX: ANIMATION & TRANSITIONS: 2 - About Hero - Typewriter effect
 					.tw-fx-1 {
@@ -118,8 +97,8 @@
 						font-size: inherit; //take it from the original font-size, easier to scale.
 						width: 0;
 						animation: type1 1.6s steps(21, end) 0.8s forwards,
-						 cursor-off 1 linear 0.2s 2.4s forwards; 
-						 /*name -> 
+							cursor-off 1 linear 0.2s 2.4s forwards;
+						/*name -> 
 						 iteration-count-> 
 						 timing-function->
 						 duration->
@@ -127,46 +106,35 @@
 						 fill-mode*/
 					} //end tw-fx-1
 
-
-
 					.tw-fx-2 {
 						display: inline-block;
 						overflow: hidden;
-		
+
 						white-space: nowrap;
 						font-size: inherit; //take it from the original font-size, easier to scale.
 						width: 0;
-		
+
 						animation: type2 1.5s steps(20, end) 3s forwards,
-						cursor-off 1 linear 0.2s 4.4s forwards; 
+							cursor-off 1 linear 0.2s 4.4s forwards;
 						/*name -> 
 						iteration-count-> 
 						timing-function->
 						duration->
 						delay->
 						fill-mode*/
-
-					
-
 					} //end tw-fx-2
 
-				
-
-
-						//TODO: Finish work on timing of the type writting effect on about page, port to contact, add remainin animations and tootl tip additions.
+					
 					.tw-fx-3 {
 						display: inline-block;
 						overflow: hidden;
-		
+
 						white-space: nowrap;
 						font-size: inherit; //take it from the original font-size, easier to scale.
 						width: 0;
 						animation: short-type 1s steps(20, end) 5.2s forwards, blink 0.8s infinite;
-					
 					} //end tw-fx-3
-				}//end about-hero-text
-
-
+				} //end about-hero-text
 
 				.tt-circle {
 					position: absolute;
@@ -188,21 +156,21 @@
 						color: #fff;
 						cursor: pointer;
 					} //end tt-circle__icon
-		
+
 					opacity: 0; //initializing the opacity of the tooltip.
 					pointer-events: none;
 					cursor: pointer;
 					animation: info-tool-tip 1s ease-in 8.5s forwards;
 				} //end tt-circle
-		
+
 				// .tt-circle:hover  ::before{
 				// 	content: "click and hold for info:";
 				// 	position:absolute;
 				// 	width: 210px;
 				// 	left: -225px;
-		
+
 				// }//end tt-circle::before
-		
+
 				.tt-circle:hover ::after {
 					content: " Title: a-person-with-their-hand-on-a-rock";
 					// white-space: pre-wrap; // to allow for inserting line breaks into the content propety
@@ -218,11 +186,11 @@
 					// box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 					color: #fff;
 					font-size: $textBase;
-		
+
 					//NOTE: Tooltip animation:
 					animation: tooltip-animate 0.3s ease forwards;
 				} //end tt-circle:hover
-		
+
 				// .tt-circle-pulse {
 				// 	position: relative;
 				// 	z-index: -10; //brings the pulse effect forwards to make it look like its coming from the info button.
@@ -247,108 +215,97 @@
 							text-decoration: none;
 							color: $brandColor;
 						} //end author-info__name
-		
+
 						.author-info__name:hover {
 							color: #fdd14c;
 						} //end author-info-hover
-		
+
 						.author-info__url {
 							text-decoration: none;
 							color: $brandColor;
 						} //end author-info__name
-		
+
 						.author-info__url:hover {
 							text-decoration: none;
 							color: #fdd14c;
 						} //end author-info__name
 					} //end p
-		
+
 					position: absolute;
 					right: 1618px;
 					bottom: 33px;
-		
+
 					animation: info-tool-tip 1s ease-in 8.5s forwards;
 				} //end-author-info
 
+				// //NOTE: BACKGROOUND IMAGE TOOLTIP
+				// //----------------------------------------------------------------
 
+				.tt-bgimg-circle {
+					position: fixed;
+					top: 194px;
+					left: 1337px;
+					width: 20px;
+					height: 20px;
+					background-color: $brandColor;
+					border: 1px solid #ffff;
+					border-radius: 55%;
+					box-shadow: 0.1px 0.7px #000;
+					z-index: 19; //NOTE: needed to add z-index to bring the element forward to be interactable. In front of the show-box
+					.tt-bgimg-circle__icon {
+						margin: 0 auto;
+						position: absolute;
+						left: 5px;
+						top: -0px;
+						text-align: center;
+						font: $textBase arial;
+						color: #fff;
+						cursor: pointer;
+					} //end tt-circle__icon
 
+					opacity: 0; //initializing the opacity of the tooltip.
+					pointer-events: none;
+					cursor: pointer;
+					animation: info-tool-tip 1s linear 7s forwards;
+				} //end tt-circle
 
-// //NOTE: BACKGROOUND IMAGE TOOLTIP
-		// //----------------------------------------------------------------
+				.tt-bgimg-circle:hover ::after {
+					content: "The writing’s on the wall. \a A method of conveying information as old as human society itself. \a Like the cave paintings we employ the use of a narrative to communicate. \a Not just our clients’ stories, but also our own.";
+					white-space: pre-line; // to allow for inserting line breaks into the content propety
+					position: absolute;
+					transition: 1s all ease;
+					top: -34px;
+					left: -581px;
+					width: 580px;
+					height: 80px;
+					// background-color: #00000057;
+					// border: 1px solid #ffffff54;
+					// border-radius: 3px;
+					// box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+					text-shadow: 1px 1.5px 0px #00000059;
+					font: $textBase 700 $font-list-b;
+					color: #fff;
 
-		.tt-bgimg-circle {
-			position: fixed;
-			top: 194px;
-			left: 1337px;
-			width: 20px;
-			height: 20px;
-			background-color: $brandColor;
-			border: 1px solid #ffff;
-			border-radius: 55%;
-			box-shadow: 0.1px 0.7px #000;
-			z-index: 19;//NOTE: needed to add z-index to bring the element forward to be interactable. In front of the show-box
-			.tt-bgimg-circle__icon {
-				margin: 0 auto;
-				position: absolute;
-				left: 5px;
-				top: -0px;
-				text-align: center;
-				font: $textBase arial;
-				color: #fff;
-				cursor: pointer;
-			} //end tt-circle__icon
+					//NOTE: Tooltip animation:
+					opacity: 1;
+					animation: tooltip-animate 0.3s ease forwards;
+				} //end tt-circle:hover
 
-			opacity: 0; //initializing the opacity of the tooltip.
-			pointer-events: none;
-			cursor: pointer;
-			animation: info-tool-tip 1s linear 7s forwards;
-		} //end tt-circle
+				.tt-bgimg-circle-pulse {
+					position: absolute;
+					z-index: -10; //brings the pulse effect forwards to make it look like its coming from the info button.
 
-	
-
-		.tt-bgimg-circle:hover ::after {
-			content: "The writing’s on the wall. \a A method of conveying information as old as human society itself. \a Like the cave paintings we employ the use of a narrative to communicate. \a Not just our clients’ stories, but also our own.";
-			white-space: pre-line; // to allow for inserting line breaks into the content propety
-			position: absolute;
-			transition: 1s all ease;
-			top: -34px;
-			left: -581px;
-			width: 580px;
-			height: 80px;
-			// background-color: #00000057;
-			// border: 1px solid #ffffff54;
-			// border-radius: 3px;
-			// box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-			text-shadow: 1px 1.5px 0px #00000059;
-			font: $textBase 700 $font-list-b;
-			color: #fff;
-
-			//NOTE: Tooltip animation:
-			opacity: 1;
-			animation: tooltip-animate 0.3s ease forwards;
-		} //end tt-circle:hover
-
-		.tt-bgimg-circle-pulse {
-			position: absolute;
-			z-index: -10; //brings the pulse effect forwards to make it look like its coming from the info button.
-
-			top: 194px;
-			left: 1337px;
-			width: 20px;
-			height: 20px;
-			background-color: transparent;
-			border: 1px solid #ffff;
-			border-radius: 55%;
-			opacity: 0; //initializing the opacity for the animation.
-			animation: info-tt-pulse 1.5s linear 7.5s 25;
-		} //end tt-circle-pulse
-
-
-
-
+					top: 194px;
+					left: 1337px;
+					width: 20px;
+					height: 20px;
+					background-color: transparent;
+					border: 1px solid #ffff;
+					border-radius: 55%;
+					opacity: 0; //initializing the opacity for the animation.
+					animation: info-tt-pulse 1.5s linear 7.5s 25;
+				} //end tt-circle-pulse
 			} //end of about-hero
-
-
 
 			.lower-nav-container {
 				display: block !important;
@@ -362,27 +319,49 @@
 					top: -18px;
 					right: 16px;
 					.left-chev {
+
+						.dtlink.low-nav-a-left{
+					
+							img{
+								//NOTE: same issues as when adding the anchor links in the top menu. The inner most elment's event propagation was blocking the wrapping anchor link tag. Therefore needed to turn it's default event propagation behavior off with pointer events: none.
+								pointer-events: none;
+							} //end img  
+						} //end dtlink.low-nav-a-left
+
 						position: inherit;
 						left: -21px; //pull chevron to the left a little
+						cursor: pointer;
 					} //end left-chev
 
 					.right-chev {
+
+						.dtlink.low-nav-a-right{
+					
+							img{
+								//NOTE: same issues as when adding the anchor links in the top menu. The inner most elment's event propagation was blocking the wrapping anchor link tag. Therefore needed to turn it's default event propagation behavior off with pointer events: none.
+								pointer-events: none;
+							} //end img  
+						} //end dtlink.low-nav-a-right
+						
 						position: inherit;
 						right: -21px; //pull chevron to the right a little
+						cursor: pointer;
 					} //end right-chev
+					opacity: 0; //NOTE: initializing starting point of opaciy for ainimation on lower-nav element.
+					animation: lower-nav-reveal 1s ease 10s forwards;
 				} //end nav-chevrons
 
 				.chevron-down {
 					position: relative;
 					top: 0px;
 					right: 5px;
-
-					animation: chevron-down-animate 2s linear infinite;
+					opacity: 0; //NOTE: initializing the starting state for the reveal of chevron.
+					animation: chevron-down-reveal 2s linear 11s forwards,
+						chevron-down-animate 1s ease 12s infinite;
 				} //end chevron-down
 			} // end lower-nav-elements
 
 			.body-sect-1 {
-				
 				.body-sect-1-art {
 					.body-sect-1__head {
 						//NOTE: variant change
@@ -435,9 +414,31 @@
 			} //end of body-sect-3
 		} //end main-container
 
+		.mobile-cta-footer {
 
-		
-		.mobile-cta-footer{
+			.mobile-cta-footer__button {
+				//NOTE: design variant:
+				cursor: pointer;
+				.hero-text{
+					//NOTE: Design variant overiding the span tag color assignment from the tablet and mobile variants.
+					color: #644e0a;
+				}//end hero-text
+				
+
+			} //end mobile-cta-footer__button
+
+			
+			.mobile-cta-footer__button:hover {
+				background: #ffcf15 no-repeat padding-box;
+				
+				text-shadow: 0px 2px .5px #4a45459e;
+
+				.hero-text{
+					//NOTE: Design variant overiding the span tag color assignment from the tablet and mobile variants.
+					color: #f8f2f2 !important;
+				}//end hero-text
+			} //end .mobile-cta-footer__button:hover state
+
 			.mobile-cta-footer__sm-links {
 				display: flex;
 				margin: 0px;
@@ -459,10 +460,8 @@
 					} //end img
 
 					#smi-yt {
-						
-						
 					} //end smi-yt
-					
+
 					#smi-yt:hover {
 						@include about-lowerNav-hoverstate;
 					} //end #smi-yt:hover
@@ -470,8 +469,6 @@
 					//======================================================
 
 					#smi-b {
-						
-						
 					} //end smi-b
 
 					#smi-b:hover {
@@ -480,24 +477,17 @@
 
 					//======================================================
 
-
-
 					#smi-fb {
-					
 					} // end smi-fb
 
 					#smi-fb:hover {
 						@include about-lowerNav-hoverstate;
 					} //end #smi-fb:hover
 
-
-
 					//======================================================
 
 					#smi-ig {
-						
 					} //end smi-ig
-
 
 					#smi-ig:hover {
 						@include about-lowerNav-hoverstate;
@@ -505,9 +495,7 @@
 					//======================================================
 
 					#smi-lk {
-						
 					} //end smi-lk
-
 
 					#smi-lk:hover {
 						@include about-lowerNav-hoverstate;
@@ -521,8 +509,7 @@
 			} //end social-icons
 		} //end main-footer
 
-
-	/*SECTION  ANIMATIONS & TRANSITIONS 
+		/*SECTION  ANIMATIONS & TRANSITIOS 
 		ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >1920px */
 		/*ANIMATIONS: */
 		//==========================
@@ -540,15 +527,14 @@
 		//1 - page bg-image:
 
 		@keyframes about-bg-reveal {
-			0%{
+			0% {
 				opacity: 0%;
 				background-color: black;
-				
 			}
-		
-			100%{
+
+			100% {
 				opacity: 100%;
-				background-color: transparent;			
+				background-color: transparent;
 			}
 		} //end bg-reveal
 
@@ -556,7 +542,6 @@
 
 		//2 - Hero Copy:
 		@keyframes type1 {
-		
 			0% {
 				width: 0;
 				border-right: 0em;
@@ -571,7 +556,6 @@
 				border-right: 0.15em solid $brandColor;
 			}
 		}
-
 
 		@keyframes type2 {
 			0% {
@@ -588,8 +572,6 @@
 				border-right: 0.15em solid $brandColor;
 			}
 		}
-
-
 
 		@keyframes short-type {
 			0% {
@@ -749,9 +731,8 @@
 				left: 100%;
 				opacity: 0%;
 			}
-		}//end top-nav-gleam
+		} //end top-nav-gleam
 		//-------------------------
-
 
 		//9: info tooltip:
 		@keyframes info-tool-tip {
@@ -816,27 +797,36 @@
 		} //end info tool-tip-animate
 		//--------------------------
 
+		//12: chevron-down-animate
 		@keyframes chevron-down-animate {
-			0%{
-				top: 0px;
-			} 
-			
-			50%{
-				top: 2.5px;
-			} 
-			
-			100%{
+			0% {
 				top: 0px;
 			}
-		}//end chevron-down-animate
- 
 
+			50% {
+				top: 2.5px;
+			}
+
+			100% {
+				top: 0px;
+			}
+		} //end chevron-down-animate
+
+		//13:  chevron-down-reveal
+		@keyframes chevron-down-reveal {
+			@include basicReveal;
+
+			0%{
+				pointer-events: none;
+			}
+			100%{
+				pointer-events: all;
+
+			}
+		} //end chevron-down-reveal
 
 		/*END ANIMATIONS*/
 		/*!SECTION END ANIMATIONS & TRANSITIONS */
-
-
-
 	} //end body
 } //end media query
 /*!SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1920px */

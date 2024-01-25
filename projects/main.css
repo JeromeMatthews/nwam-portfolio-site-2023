@@ -844,10 +844,18 @@ body .show-box .show-box__text {
   body .main-container .lower-nav-container .nav-chevrons .left-chev {
     position: inherit;
     left: -21px;
+    cursor: pointer;
+  }
+  body .main-container .lower-nav-container .nav-chevrons .left-chev .dtlink.low-nav-a-left img {
+    pointer-events: none;
   }
   body .main-container .lower-nav-container .nav-chevrons .right-chev {
     position: inherit;
     right: -21px;
+    cursor: pointer;
+  }
+  body .main-container .lower-nav-container .nav-chevrons .right-chev .dtlink.low-nav-a-right img {
+    pointer-events: none;
   }
   body .main-container .lower-nav-container .main-footer .main-footer__social-icons {
     display: flex;

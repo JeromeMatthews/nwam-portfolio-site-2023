@@ -98,7 +98,7 @@
 				</ul>
 				<!-- end Ul-->			
 		<!-- NAVIGATION: TABLET - > DESKTOP RANGE -->
-					<!--NOTE: Added the class dtl to flag all the links that should trigger the animation omitting the tablet and mobile level links-->
+					<!--NOTE: Added the class dtlink to flag all the links that should trigger the animation omitting the tablet and mobile level links-->
 					<ul class="mainnav__links">
 						
 							
@@ -210,8 +210,8 @@
                          text-align: center;" id="project-name" name="project-name"
                             placeholder="your project name">
                         </li>
-                        <textarea  name="textarea" id="project-desc" cols="30" rows="10" placeholder="Your story..." spellcheck="true">
-                        </textarea>
+						<!--NOTE: For using placeholder in textarea it needs to be in one line without any indentations. otherwise the placeholdr attribute will not pick up -->
+                        <textarea  name="textarea" id="project-desc" cols="30" rows="10" placeholder="Your story..." spellcheck="true"></textarea>
                         <li class="contact-form__element">
                             <a href="/contact/contact.html">
                                 <button class="mobile-cta-footer__button" >share your story</button>
@@ -256,17 +256,27 @@
 				<!-- Lower navigation for wider viewports. Bascially tablet and above.Only visible for wider viewports, will not display on mobile devices. Screen real estate better used for most important content. -->
 
 				<div class="nav-chevrons">
-					<span class="left-chev"
-						><img
-							src="/img/img-tablet-p/icon-navigation-chevron_left_24px.svg"
-							alt="left navigation "
-					/></span>
-	
-					<span class="right-chev"
-						><img
+					<span class="left-chev">
+						<a class="dtlink low-nav-a-left" href="/about/about.html">
+							
+								<img
+									src="/img/img-tablet-p/icon-navigation-chevron_left_24px.svg"
+									alt="left navigation "
+							/>
+						</a>
+					</span>
+				
+			
+
+				
+					<span class="right-chev">
+						<a  class="dtlink low-nav-a-right" href="/index.html ">
+						<img
 							src="/img/img-tablet-p/icon-navigation-chevron_right_24px.svg"
-							alt="right navigation "
-					/></span>
+							alt="right navigation "/>
+						</a>
+						
+					</span>
 				</div>
 				<!-- end Nav chevrons -->
 	

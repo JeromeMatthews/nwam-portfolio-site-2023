@@ -195,15 +195,39 @@
                     position: relative; // NOTE: Relative to the parent lower-nav-container div.
                     top: -18px;
                     right: 5px;
+
+
                     .left-chev {
+
+						.dtlink.low-nav-a-left{
+					
+							img{
+								//NOTE: same issues as when adding the anchor links in the top menu. The inner most elment's event propagation was blocking the wrapping anchor link tag. Therefore needed to turn it's default event propagation behavior off with pointer events: none.
+								pointer-events: none;
+							} //end img  
+						} //end dtlink.low-nav-a-left
+						
                         position: inherit;
                         left: -21px; //pull chevron to the left a little
+						cursor: pointer;
                     } //end left-chev
 
                     .right-chev {
+
+						.dtlink.low-nav-a-right{
+					
+							img{
+								//NOTE: same issues as when adding the anchor links in the top menu. The inner most elment's event propagation was blocking the wrapping anchor link tag. Therefore needed to turn it's default event propagation behavior off with pointer events: none.
+								pointer-events: none;
+							} //end img  
+						} //end dtlink.low-nav-a-right
+
                         position: inherit;
                         right: -21px; //pull chevron to the right a little
+						cursor: pointer;
                     } //end right-chev
+
+					
                 } //end nav-chevrons
 	
 			.main-footer {
