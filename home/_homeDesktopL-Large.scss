@@ -271,9 +271,9 @@
 	
 
 		.tt-circle {
-			position: relative;
-			top: 12px;
-			left: 7px;
+			position: absolute;
+			top: 620px;
+			left: 40px;
 			width: 20px;
 			height: 20px;
 			background-color: #8a8a8a98;
@@ -366,6 +366,10 @@
 				} //end author-info__name
 			} //end p
 
+			position: absolute;
+			right: 1569px;
+			top: 626px;
+
 			animation: info-tool-tip 1s ease-in 28.5s forwards;
 		} //end-author-info
 
@@ -399,12 +403,7 @@
 			animation: info-tool-tip 1s linear 22.5s forwards;
 		} //end tt-circle
 
-		.tt-circle:hover ::before {
-			content: "click and hold for info:";
-			position: absolute;
-			width: 210px;
-			left: -225px;
-		} //end tt-circle::before
+	
 
 		.tt-bgimg-circle:hover ::after {
 			content: "An open book. The Journey, begins. \a Your story begins here (obviously enough). \a We chart a course of action and set out on our path. ";
@@ -435,7 +434,7 @@
 			width: 20px;
 			height: 20px;
 			background-color: transparent;
-			border: 1px solid #ffff;
+			border: 1px solid  #000000;
 			border-radius: 55%;
 			opacity: 0; //initializing the opacity for the animation.
 			animation: info-tt-pulse 1.5s linear 24.5s 25;

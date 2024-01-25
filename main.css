@@ -1079,9 +1079,9 @@ body .hero-button .hero-text {
 }
 @media (min-width: 1920px) {
   body .tt-circle {
-    position: relative;
-    top: 12px;
-    left: 7px;
+    position: absolute;
+    top: 620px;
+    left: 40px;
     width: 20px;
     height: 20px;
     background-color: rgba(138, 138, 138, 0.5960784314);
@@ -1119,6 +1119,9 @@ body .hero-button .hero-text {
     opacity: 0;
     font: 0.75rem futura-pt, Helvetica, Arial, sans-serif;
     color: #ffffff;
+    position: absolute;
+    right: 1569px;
+    top: 626px;
     animation: info-tool-tip 1s ease-in 28.5s forwards;
   }
   body .author-info p .author-info__name {
@@ -1161,12 +1164,6 @@ body .hero-button .hero-text {
     color: #fff;
     cursor: pointer;
   }
-  body .tt-circle:hover ::before {
-    content: "click and hold for info:";
-    position: absolute;
-    width: 210px;
-    left: -225px;
-  }
   body .tt-bgimg-circle:hover ::after {
     content: "An open book. The Journey, begins. \aYour story begins here (obviously enough). \aWe chart a course of action and set out on our path. ";
     white-space: pre-line;
@@ -1188,7 +1185,7 @@ body .hero-button .hero-text {
     width: 20px;
     height: 20px;
     background-color: transparent;
-    border: 1px solid white;
+    border: 1px solid #000000;
     border-radius: 55%;
     opacity: 0;
     animation: info-tt-pulse 1.5s linear 24.5s 25;
