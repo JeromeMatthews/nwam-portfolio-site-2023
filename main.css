@@ -840,7 +840,7 @@ body .hero-button .hero-text {
     background-image: none;
     opacity: 0;
     background-color: #000000;
-    animation: bg-reveal 3s ease-in forwards;
+    animation: bg-reveal 4.5s ease-in forwards;
     /*SECTION  ANIMATIONS & TRANSITIONS 
     ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >1920px */
     /*ANIMATIONS: */

@@ -56,6 +56,13 @@
 	}
 
 	body {
+
+		//NOTE: UI/UX: ANIMATION & TRANSITIONS: 1 - Page Background Image - Reveal effect
+		background-image: none; // set the inital state of the property 	- for animation
+		opacity: 0; // set the inital state of the property - for animation
+		background-color: #000000;
+		animation: bg-reveal 0.5s ease-in forwards;
+
 		.mainnav__links{
 			top: 26px;
 			left: 698px;
@@ -122,7 +129,12 @@
 						font-size: $text1x-56; //25px;
 					} //end .cs-project__service
 				}
-			}
+				
+				
+				//NOTE: UI/UX: ANIMATION & TRANSITIONS: Case Studies project section
+				opacity: 0;
+				animation: atf-cs-project-reveal 0.5s linear 1.5s forwards;
+			}//end cs-project
 
 			.cs-client-details {
 				@include csContentBox-ClientDetails-DL;
@@ -145,8 +157,10 @@
 					font-size: $text1x-56; //25px;
 				}
 
-				// top: 0px;
-				// left: 0px;
+				//NOTE: UI/UX: ANIMATION & TRANSITIONS: Case Studies Client details section
+				opacity: 0;
+				animation: atf-cs-client-reveal 0.5s linear 2.0s forwards
+				
 			} //end of .cs-client-details
 		} // END of ATF--
 
@@ -174,6 +188,10 @@
 					top: -10px;
 					margin-left: auto;
 					margin-right: auto;
+
+					//NOTE: UI/UX: ANIMATION & TRANSITIONS: Case Studies project description section
+					opacity: 0;
+					animation: btf-cs-project-desc-reveal 0.5s linear 2.5s forwards;
 				} //end cs-project-desc
 
 				//divider
@@ -181,6 +199,10 @@
 					//NOTE: hidden on all devices below 1024px width
 					width: 90%;
 					top: 5px;
+
+						//NOTE: UI/UX: ANIMATION & TRANSITIONS: Case Studies project information divider
+						opacity: 0;
+						animation: btf-cs-project-info-divider-reveal 0.5s linear 3.0s forwards;
 				} //end project-info-divider
 
 				//divider
@@ -204,9 +226,20 @@
 					top: -15px;
 					margin-left: auto;
 					margin-right: auto;
+
+					//NOTE: UI/UX: ANIMATION & TRANSITIONS: Case Studies project summary section
+					opacity: 0;
+					animation: btf-cs-project-sum-reveal 0.5s linear 3.7s forwards;
+
+
 				} //end cs-project-sum
 				margin-left: auto;
 				margin-right: auto;
+
+
+				//NOTE: UI/UX: ANIMATION & TRANSITIONS: Case Studies Below The Flod Container box 
+				opacity: 0;
+				animation: btf-project-container-box-reveal 0.5s linear 2.0s forwards;
 			} //end btf-2__project-container-box
 		} //end btf-2
 
@@ -527,8 +560,16 @@
 		//==========================
 
 
+	//1 - page bg-image:
 
-		//8: - social icons:
+	@keyframes bg-reveal {
+	@include basicReveal;
+	} //end bg-reveal
+
+//--------------------------
+
+
+		//2: - social icons:
 
 		@keyframes social-icons-animate {
 			@include basicReveal;
@@ -546,7 +587,7 @@
 		} //end social-icons-reveal
 		//--------------------------
 
-		//12: chevron-down-animate
+		//3: chevron-down-animate
 		@keyframes chevron-down-animate {
 			0% {
 				top: 0px;
@@ -560,8 +601,9 @@
 				top: 0px;
 			}
 		} //end chevron-down-animate
+		//--------------------------
 
-		//13:  chevron-down-reveal
+		//4:  chevron-down-reveal
 		@keyframes chevron-down-reveal {
 			@include basicReveal;
 
@@ -573,6 +615,99 @@
 
 			}
 		} //end chevron-down-reveal
+		//--------------------------
+
+
+		//5: atf-cs-project-reveal
+		@keyframes atf-cs-project-reveal {
+			@include basicReveal;
+			0%{
+				
+				transform:  translateY(-10px) 
+			} 
+
+			100%{
+				transform:  translateY(1px) 
+			}
+			
+		}//end atf-cs-project-reveal
+		//--------------------------
+
+
+		//6: atf-cs-client-reveal 
+		@keyframes atf-cs-client-reveal {
+			@include basicReveal;
+			0%{
+				
+				transform:  translateY(-10px) 
+			} 
+
+			100%{
+				transform:  translateY(1px) 
+			}
+		}// end atf-cs-client-reveal
+		//--------------------------
+
+		//7: btf-cs-project-desc-reveal
+		@keyframes btf-cs-project-desc-reveal{
+			@include basicReveal;
+			0%{
+				
+				transform:  translateY(-10px) 
+			} 
+
+			100%{
+				transform:  translateY(1px) 
+			}
+		}//end btf-cs-project-desc-reveal
+
+		//--------------------------
+
+		//8: btf-cs-project-info-divider-reveal
+		@keyframes btf-cs-project-info-divider-reveal{
+		
+			@include basicReveal;
+			0%{
+				
+				transform:  translateY(-10px) 
+			} 
+
+			100%{
+				transform:  translateY(1px) 
+			}
+		}//end btf-cs-project-info-divider-reveal
+		//--------------------------
+
+		//9: btf-cs-project-sum-reveal
+		@keyframes btf-cs-project-sum-reveal{
+			
+			@include basicReveal;
+			0%{
+				
+				transform:  translateY(-10px) 
+			} 
+
+			100%{
+				transform:  translateY(1px) 
+			}
+		}//end btf-cs-project-sum-reveal
+		//--------------------------
+
+		//10: btf-project-container-box-reveal
+		@keyframes btf-project-container-box-reveal {
+
+			@include basicReveal;
+			0%{
+				
+				transform:  translateY(-10px) 
+			} 
+
+			100%{
+				transform:  translateY(1px) 
+			}
+		}//end btf-project-container-box-reveal
+
+
 
 		/*END ANIMATIONS*/
 		/*!SECTION END ANIMATIONS & TRANSITIONS */
