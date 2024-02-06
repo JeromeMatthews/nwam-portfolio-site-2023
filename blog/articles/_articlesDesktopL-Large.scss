@@ -87,18 +87,88 @@
 				.article__title {
 					//NOTE: design variant
                     font-size: $text5x;//80px;
+
+
+					//NOTE: UI/UX: ANIMATION & TRANSITIONS: 2 - Article title reveal
+					opacity: 0;// set the inital state of the text visibility - for animation
+					animation: article-title-reveal 1s linear 1s forwards;
+
 				} //end article__title
 
 				.article__sub_title {
 					//NOTE: design variant
-                    font-size: $text2x-5;//40px
+                    font-size: $text2x-5;//40px;
+
+					//NOTE: UI/UX: ANIMATION & TRANSITIONS: 3 - Article subtitle reveal
+
+					opacity: 0;// set the inital state of the text visibility - for animation
+					animation: article-sub-reveal 1s linear 2s forwards;
+
 				} // end article__sub_title
 
 				.article-sm-top {
 					//NOTE: design variant
+					.article-sm-top-link{
+
+						#smi-m,
+						#smi-t,
+						#smi-lk {
+
+							position: relative;
+						}// end img
+
+						#smi-m:hover {
+							@include alt-lowerNav-hoverstate-gray;
+						}//end smi-m:hover
+
+						#smi-t:hover {
+							@include alt-lowerNav-hoverstate-gray;
+						}//end smi-m:hover
+
+						#smi-lk:hover {
+							@include alt-lowerNav-hoverstate-gray;
+						}//end smi-m:hover
+
+						
+						#smi-m{
+							//NOTE: UI/UX: ANIMATION & TRANSITIONS: 3 - Top nav social icons reveal
+
+					opacity: 0;// set the inital state of the text visibility - for animation
+					animation: top-nav-social-reveal 1s linear 3s forwards;
+
+						}
+						#smi-t{
+							//NOTE: UI/UX: ANIMATION & TRANSITIONS: 3 - Top nav social icons reveal
+
+					opacity: 0;// set the inital state of the text visibility - for animation
+					animation: top-nav-social-reveal 1s linear 3.4s forwards;	
+
+						}
+						#smi-lk{
+							//NOTE: UI/UX: ANIMATION & TRANSITIONS: 3 - Top nav social icons reveal
+
+					opacity: 0;// set the inital state of the text visibility - for animation
+					animation: top-nav-social-reveal 1s linear 3.5s forwards;		
+
+						}
+
+
+					}//end article-sm-top-link
 
 					
 				} //end article-sm-top
+							
+				#top-divider{
+
+						//NOTE: UI/UX: ANIMATION & TRANSITIONS: 4 - Header section divider reveal
+
+						opacity: 0;// set the inital state of the text visibility - for animation
+						animation: title-divider 0.3s linear 4s forwards;
+
+				}//end top-divider
+
+
+
 
 				.article__content {
 					//NOTE: design variant
@@ -116,6 +186,12 @@
 
 						} //end support-topic-body
 					} //end support-topic
+
+					//NOTE: UI/UX: ANIMATION & TRANSITIONS: 4 - Body section  reveal
+
+					opacity: 0;// set the inital state of the text visibility - for animation
+					animation: body-content 1s linear 4.5s forwards;
+
 				} //end article__content
 
 				.mobile-cta-footer {
@@ -186,6 +262,25 @@
 
                     .article-sm-bottom-link{
                     
+						
+						#smi-m,
+						#smi-t,
+						#smi-lk {
+
+							position: relative;
+						}// end img
+
+						#smi-m:hover {
+							@include alt-lowerNav-hoverstate-gray;
+						}//end smi-m:hover
+
+						#smi-t:hover {
+							@include alt-lowerNav-hoverstate-gray;
+						}//end smi-m:hover
+
+						#smi-lk:hover {
+							@include alt-lowerNav-hoverstate-gray;
+						}//end smi-m:hover
 
                     }//end article-sm-bottom-link
                 }//end article-sm-bottom
@@ -195,6 +290,16 @@
 		/*SECTION  ANIMATIONS & TRANSITIONS 
 		ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >1920px */
 		/*ANIMATIONS: */
+		//==========================
+			//Playback Master sequence:
+			//1 - article-bg-reveal
+			//2 - Atricle title
+			//3 - Atricle subtitle
+			//4 - top-nav social icons
+			//5 - title-divier
+			//6 - body content 
+
+
 		//==========================
 
 		//1: article-bg-reveal
@@ -210,6 +315,39 @@
 			}
 		
 		}//end article-bg-reveal
+
+		//2 - Atricle title
+			@keyframes article-title-reveal {
+				@include basicReveal;
+				from{opacity: 0} to{opacity: 1;}
+			}//end article-title-reveal 
+
+
+		//3 - Atricle subtitle
+		@keyframes article-sub-reveal {
+			@include basicReveal;
+			from{opacity: 0} to{opacity: 1;}
+		}//end  article-sub-reveal
+
+		//4 - top-nav social icons
+		@keyframes top-nav-social-reveal {
+			@include basicReveal;
+			from{opacity: 0} to{opacity: 1;}
+		}//end top-nav-social-reveal 
+
+
+		//5 - title-divier
+		@keyframes title-divider {
+			@include basicReveal;
+			from{opacity: 0; width:0%} to{opacity: 1;  width:100%}
+		}//end title-divider 
+
+
+		//6 - body content 
+		@keyframes  body-content{
+			@include basicReveal;
+			from{opacity: 0} to{opacity: 1;}
+		}//end body-content 
 			
 		
 

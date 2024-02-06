@@ -701,12 +701,51 @@ body .main-container .article-container .article-sm-bottom .article-sm-bottom-li
   }
   body .main-container .article-container .article__title {
     font-size: 5rem;
+    opacity: 0;
+    animation: article-title-reveal 1s linear 1s forwards;
   }
   body .main-container .article-container .article__sub_title {
     font-size: 2.5rem;
+    opacity: 0;
+    animation: article-sub-reveal 1s linear 2s forwards;
+  }
+  body .main-container .article-container .article-sm-top .article-sm-top-link #smi-m,
+  body .main-container .article-container .article-sm-top .article-sm-top-link #smi-t,
+  body .main-container .article-container .article-sm-top .article-sm-top-link #smi-lk {
+    position: relative;
+  }
+  body .main-container .article-container .article-sm-top .article-sm-top-link #smi-m:hover {
+    transform: translateY(-2px);
+    filter: drop-shadow(0px 4px rgb(140, 140, 140));
+  }
+  body .main-container .article-container .article-sm-top .article-sm-top-link #smi-t:hover {
+    transform: translateY(-2px);
+    filter: drop-shadow(0px 4px rgb(140, 140, 140));
+  }
+  body .main-container .article-container .article-sm-top .article-sm-top-link #smi-lk:hover {
+    transform: translateY(-2px);
+    filter: drop-shadow(0px 4px rgb(140, 140, 140));
+  }
+  body .main-container .article-container .article-sm-top .article-sm-top-link #smi-m {
+    opacity: 0;
+    animation: top-nav-social-reveal 1s linear 3s forwards;
+  }
+  body .main-container .article-container .article-sm-top .article-sm-top-link #smi-t {
+    opacity: 0;
+    animation: top-nav-social-reveal 1s linear 3.4s forwards;
+  }
+  body .main-container .article-container .article-sm-top .article-sm-top-link #smi-lk {
+    opacity: 0;
+    animation: top-nav-social-reveal 1s linear 3.5s forwards;
+  }
+  body .main-container .article-container #top-divider {
+    opacity: 0;
+    animation: title-divider 0.3s linear 4s forwards;
   }
   body .main-container .article-container .article__content {
     margin: 0px 140px;
+    opacity: 0;
+    animation: body-content 1s linear 4.5s forwards;
   }
   body .main-container .article-container .article__content .support-topic .support-topic__head {
     font-size: 3.43rem;
@@ -759,6 +798,23 @@ body .main-container .article-container .article-sm-bottom .article-sm-bottom-li
   body .main-container .article-container .article-sm-bottom {
     top: -140px;
   }
+  body .main-container .article-container .article-sm-bottom .article-sm-bottom-link #smi-m,
+  body .main-container .article-container .article-sm-bottom .article-sm-bottom-link #smi-t,
+  body .main-container .article-container .article-sm-bottom .article-sm-bottom-link #smi-lk {
+    position: relative;
+  }
+  body .main-container .article-container .article-sm-bottom .article-sm-bottom-link #smi-m:hover {
+    transform: translateY(-2px);
+    filter: drop-shadow(0px 4px rgb(140, 140, 140));
+  }
+  body .main-container .article-container .article-sm-bottom .article-sm-bottom-link #smi-t:hover {
+    transform: translateY(-2px);
+    filter: drop-shadow(0px 4px rgb(140, 140, 140));
+  }
+  body .main-container .article-container .article-sm-bottom .article-sm-bottom-link #smi-lk:hover {
+    transform: translateY(-2px);
+    filter: drop-shadow(0px 4px rgb(140, 140, 140));
+  }
   @keyframes article-bg-reveal {
     0% {
       opacity: 0%;
@@ -771,6 +827,78 @@ body .main-container .article-container .article-sm-bottom .article-sm-bottom-li
     }
     100% {
       background-image: url("/img/img-desktop-l/desktop-blog-article-bg.png");
+    }
+  }
+  @keyframes article-title-reveal {
+    0% {
+      opacity: 0%;
+    }
+    100% {
+      opacity: 100%;
+    }
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes article-sub-reveal {
+    0% {
+      opacity: 0%;
+    }
+    100% {
+      opacity: 100%;
+    }
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes top-nav-social-reveal {
+    0% {
+      opacity: 0%;
+    }
+    100% {
+      opacity: 100%;
+    }
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes title-divider {
+    0% {
+      opacity: 0%;
+    }
+    100% {
+      opacity: 100%;
+    }
+    from {
+      opacity: 0;
+      width: 0%;
+    }
+    to {
+      opacity: 1;
+      width: 100%;
+    }
+  }
+  @keyframes body-content {
+    0% {
+      opacity: 0%;
+    }
+    100% {
+      opacity: 100%;
+    }
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
     }
   }
 }
