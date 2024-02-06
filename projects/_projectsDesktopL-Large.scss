@@ -260,7 +260,7 @@
 						} //end smi-yt
 						
 						#smi-yt:hover {
-							@include lowerNav-hoverstate;
+							@include alt-lowerNav-hoverstate-gray;
 						} //end #smi-yt:hover
 	
 						//======================================================
@@ -271,7 +271,7 @@
 						} //end smi-b
 	
 						#smi-b:hover {
-							@include lowerNav-hoverstate;
+							@include alt-lowerNav-hoverstate-gray;
 						} //end #smi-b:hover
 	
 						//======================================================
@@ -283,7 +283,7 @@
 						} // end smi-fb
 	
 						#smi-fb:hover {
-							@include lowerNav-hoverstate;
+							@include alt-lowerNav-hoverstate-gray;
 						} //end #smi-fb:hover
 	
 	
@@ -296,7 +296,7 @@
 	
 	
 						#smi-ig:hover {
-							@include lowerNav-hoverstate;
+							@include alt-lowerNav-hoverstate-gray;
 						} //end #smi-ig:hover
 						//======================================================
 	
@@ -306,7 +306,7 @@
 	
 	
 						#smi-lk:hover {
-							@include lowerNav-hoverstate;
+							@include alt-lowerNav-hoverstate-gray;
 						} //end #smi-lk:hover
 						//======================================================
 	

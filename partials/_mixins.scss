@@ -268,6 +268,11 @@
 	filter: drop-shadow(0px 4px rgb(0, 0, 0));
 }
 
+@mixin alt-lowerNav-hoverstate-gray{
+	transform: translateY(-2px);
+	filter: drop-shadow(0px 4px rgb(140, 140, 140));
+}
+
 @mixin about-lowerNav-hoverstate{
 	transform: translateY(-2px);
 	filter: drop-shadow(0px 4px $brandColor);

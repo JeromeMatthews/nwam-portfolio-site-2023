@@ -882,23 +882,23 @@ body .show-box .show-box__text {
   }
   body .main-container .lower-nav-container .main-footer .main-footer__social-icons li #smi-yt:hover {
     transform: translateY(-2px);
-    filter: drop-shadow(0px 4px rgb(0, 0, 0));
+    filter: drop-shadow(0px 4px rgb(140, 140, 140));
   }
   body .main-container .lower-nav-container .main-footer .main-footer__social-icons li #smi-b:hover {
     transform: translateY(-2px);
-    filter: drop-shadow(0px 4px rgb(0, 0, 0));
+    filter: drop-shadow(0px 4px rgb(140, 140, 140));
   }
   body .main-container .lower-nav-container .main-footer .main-footer__social-icons li #smi-fb:hover {
     transform: translateY(-2px);
-    filter: drop-shadow(0px 4px rgb(0, 0, 0));
+    filter: drop-shadow(0px 4px rgb(140, 140, 140));
   }
   body .main-container .lower-nav-container .main-footer .main-footer__social-icons li #smi-ig:hover {
     transform: translateY(-2px);
-    filter: drop-shadow(0px 4px rgb(0, 0, 0));
+    filter: drop-shadow(0px 4px rgb(140, 140, 140));
   }
   body .main-container .lower-nav-container .main-footer .main-footer__social-icons li #smi-lk:hover {
     transform: translateY(-2px);
-    filter: drop-shadow(0px 4px rgb(0, 0, 0));
+    filter: drop-shadow(0px 4px rgb(140, 140, 140));
   }
   body .main-container .tt-circle {
     position: absolute;
