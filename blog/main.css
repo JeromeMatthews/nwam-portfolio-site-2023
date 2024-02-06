@@ -608,23 +608,35 @@ body .main-container .blog-box__link .blog-box .blog-box__text {
   body .main-container .blog-box-group {
     top: 0px;
   }
-  body .main-container .blog-box__link .blog-box {
+  body .main-container .blog-box-group .blog-box__link #blog-box-1 {
+    opacity: 0;
+    animation: blog-card-reveal 0.3s linear 2.5s forwards;
+  }
+  body .main-container .blog-box-group .blog-box__link #blog-box-2 {
+    opacity: 0;
+    animation: blog-card-reveal 0.3s linear 2.8s forwards;
+  }
+  body .main-container .blog-box-group .blog-box__link #blog-box-3 {
+    opacity: 0;
+    animation: blog-card-reveal 0.3s linear 3s forwards;
+  }
+  body .main-container .blog-box-group .blog-box__link .blog-box {
     width: 484px;
     height: 484px;
     background-image: url("/img/img-desktop-l/desktop-blog-article-preview-bg.png");
   }
-  body .main-container .blog-box__link .blog-box .blog-box__text-container {
+  body .main-container .blog-box-group .blog-box__link .blog-box .blog-box__text-container {
     display: block !important;
     position: relative;
     top: 240px;
   }
-  body .main-container .blog-box__link .blog-box .blog-box__text-container .blog-box__title {
+  body .main-container .blog-box-group .blog-box__link .blog-box .blog-box__text-container .blog-box__title {
     font-size: 2.81rem;
   }
-  body .main-container .blog-box__link .blog-box .blog-box__text-container .blog-box__subtitle {
+  body .main-container .blog-box-group .blog-box__link .blog-box .blog-box__text-container .blog-box__subtitle {
     font-size: 1.25rem;
   }
-  body .main-container .blog-box__link .blog-box .blog-box__text-container .blog-box__text {
+  body .main-container .blog-box-group .blog-box__link .blog-box .blog-box__text-container .blog-box__text {
     font-size: 1.12rem;
   }
   @keyframes bg-reveal {
@@ -635,7 +647,7 @@ body .main-container .blog-box__link .blog-box .blog-box__text {
       opacity: 100%;
     }
   }
-  @keyframes support-reveal {
+  @keyframes blog-title-reveal {
     0% {
       opacity: 0%;
     }
@@ -643,21 +655,26 @@ body .main-container .blog-box__link .blog-box .blog-box__text {
       opacity: 100%;
     }
   }
-  @keyframes social-icons-animate {
+  @keyframes top-divider-reveal {
     0% {
       opacity: 0%;
     }
     100% {
       opacity: 100%;
     }
+  }
+  @keyframes blog-card-reveal {
     0% {
-      top: 0px;
-    }
-    50% {
-      top: -4px;
+      opacity: 0%;
     }
     100% {
-      top: 0px;
+      opacity: 100%;
+    }
+    from {
+      transform: translateY(-10px);
+    }
+    to {
+      transform: translateY(inital);
     }
   }
 }

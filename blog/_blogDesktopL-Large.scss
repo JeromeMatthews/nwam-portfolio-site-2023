@@ -113,15 +113,38 @@
                 top: 0px;
 
 
-            }//end blog-box-group
+           
 
             .blog-box__link{
+
+				//NOTE: UI/UX ANIMATION & TRANSITIONS: 4 - Blog box reveals 
+
+				#blog-box-1{
+					opacity: 0;// set the inital state of the text visibility - for animation
+					animation: blog-card-reveal 0.3s linear 2.5s forwards;
+				}
+
+				#blog-box-2{
+					opacity: 0;// set the inital state of the text visibility - for animation
+					animation: blog-card-reveal 0.3s linear 2.8s forwards;
+				}
+
+				#blog-box-3{
+					opacity: 0;// set the inital state of the text visibility - for animation
+					animation: blog-card-reveal 0.3s linear 3s forwards;
+				}
 
                 .blog-box {
                     //NOTE: design variant
                     width: 484px;
                     height: 484px;
                     background-image: url("/img/img-desktop-l/desktop-blog-article-preview-bg.png");
+
+
+						
+
+						
+
 
                     .blog-box__text-container{
                         //NOTE: design variant:
@@ -148,10 +171,23 @@
                         } // end blog-box__text
 
                     }//end blog-box__text-container
+
+
+					//NOTE: UI/UX ANIMATION & TRANSITIONS: 4 - Blog box reveals 
+
+					
+						
+
+						
+					
+
+					
                 
                 }//end blog-box
 
             }//end blog-box__link
+ 			}//end blog-box-group
+
         }//end main-container
 
         		/*SECTION  ANIMATIONS & TRANSITIONS 
@@ -160,13 +196,9 @@
 		//==========================
 		//Playback Master sequence:
 		//1 - page bg-image:
-		//2 - Hero Copy:
-		//3 - hero supporting text:
-		//4 - top nav elements- in order - h, p, a, c, b:
-		//5 - logo & contact number:
-		//6 - CTAB:
-		//7 - lower nav:
-		//8: - social icons:
+		//2 - Blog-title-reveal:
+		//3 - top-section-divider-reveal:
+		//4 - blog-card-reveal:
 		//==========================
 
 		//1 - page bg-image:
@@ -176,33 +208,36 @@
 		} //end bg-reveal
 
 		//--------------------------
+
+		//2 - blog-title-reveal:
+
+		@keyframes blog-title-reveal {
+			@include basicReveal;
+		} //end blog-title-reveal
+
+
+		//--------------------------
+
+		//3 - top-section-divider-reveal:
+
+		@keyframes top-divider-reveal {
+			@include basicReveal;
+		} //end top-divider-reveal
+
+
+		//--------------------------
 	
+		//4 - blog-card-reveal:
 
-		//--------------------------
-
-		//3 - hero supporting text:
-		@keyframes support-reveal {
+		@keyframes blog-card-reveal{
 			@include basicReveal;
-		} //end
+			from{transform: translateY(-10px)} to{transform: translateY(inital)}
+		}//end blog-card-reveal
+
+
 		//--------------------------
+		
 
-		//8: - social icons:
-
-		@keyframes social-icons-animate {
-			@include basicReveal;
-			0% {
-				top: 0px;
-			}
-
-			50% {
-				top: -4px;
-			}
-
-			100% {
-				top: 0px;
-			}
-		} //end social-icons-reveal
-		//--------------------------
 
 
 

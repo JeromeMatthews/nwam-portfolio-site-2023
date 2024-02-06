@@ -795,6 +795,8 @@ body .show-box .show-box__text {
   }
   body .main-container #show-box-1 {
     background-image: url("/img/img-desktop-l/desktop-ps-natours-bg.png");
+    opacity: 0;
+    animation: project-card-reveal 1s linear 3s forwards;
   }
   body .main-container #show-box-1 .show-box__overlay {
     position: absolute;
@@ -804,6 +806,10 @@ body .show-box .show-box__text {
     height: 197px;
     width: 488px;
     height: 490px;
+  }
+  body .main-container #show-box-2 {
+    opacity: 0;
+    animation: project-card-reveal 0.7s linear 3.3s forwards;
   }
   body .main-container #show-box-2 .show-box__overlay {
     position: absolute;
@@ -816,6 +822,8 @@ body .show-box .show-box__text {
   }
   body .main-container #show-box-3 {
     background-image: url("/img/img-desktop-l/desktop-ps-beam-bg.png");
+    opacity: 0;
+    animation: project-card-reveal 0.5s linear 3.5s forwards;
   }
   body .main-container #show-box-3 .show-box__overlay {
     position: absolute;
@@ -1242,6 +1250,20 @@ body .show-box .show-box__text {
     100% {
       opacity: 1;
       transform: scale(1);
+    }
+  }
+  @keyframes project-card-reveal {
+    0% {
+      opacity: 0%;
+    }
+    100% {
+      opacity: 100%;
+    }
+    from {
+      transform: translateY(-10px);
+    }
+    to {
+      transform: translateY(inital);
     }
   }
 }

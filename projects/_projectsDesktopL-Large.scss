@@ -144,6 +144,11 @@
 					width: 488px;
 					height: 490px;
 				} //end show-box__overlay
+
+
+				//NOTE: UI/UX ANIMATION & TRANSITIONS: 12 - Project Card Basic Reveal
+				opacity: 0;// set the inintal state of the project show boxes visbility for animation
+				animation: project-card-reveal 1s linear 3s forwards;
 			} //end show-box-1
 
 			#show-box-2 {
@@ -155,6 +160,11 @@
 					width: 488px;
 					height: 490px;
 				} //end show-box__overlay
+
+
+				//NOTE: UI/UX ANIMATION & TRANSITIONS: 12 - Project Card Basic Reveal
+				opacity: 0;// set the inintal state of the project show boxes visbility for animation
+				animation: project-card-reveal 0.7s linear 3.3s forwards;
 			} //end show-box-2
 
 			#show-box-3 {
@@ -166,6 +176,11 @@
 					width: 488px;
 					height: 490px;
 				} //end show-box__overlay
+
+
+				//NOTE: UI/UX ANIMATION & TRANSITIONS: 12 - Project Card Basic Reveal
+				opacity: 0;// set the inintal state of the project show boxes visbility for animation
+				animation: project-card-reveal 0.5s linear 3.5s forwards;
 			} //end show-box-3
 
 
@@ -518,6 +533,10 @@
 		//6 - CTAB:
 		//7 - lower nav:
 		//8: - social icons:
+		//9: info tooltip:
+		//10: info tooltip-pulse:
+		//11: info tool-tip-animate:
+		//12:  project-card-reveal
 		//==========================
 
 		//1 - page bg-image:
@@ -768,6 +787,16 @@
 			}
 		} //end info tool-tip-animate
 		//--------------------------
+
+
+
+		//12:  project-card-reveal
+		@keyframes project-card-reveal {
+			@include basicReveal;
+			from{transform: translateY(-10px)} to{transform: translateY(inital)}
+		}//end project-card-reveal
+		//--------------------------
+
 
 		/*END ANIMATIONS*/
 		/*!SECTION END ANIMATIONS & TRANSITIONS */
