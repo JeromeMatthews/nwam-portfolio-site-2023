@@ -159,8 +159,60 @@
 
 				//NOTE: UI/UX: ANIMATION & TRANSITIONS: Case Studies Client details section
 				opacity: 0;
-				animation: atf-cs-client-reveal 0.5s linear 2.0s forwards
+				animation: atf-cs-client-reveal 0.5s linear 2.0s forwards;
+
+
+				//===================================================
+
+					//NOTE: ADDITIONAL INFORMATION TOOL TIP SECTION
+					.tt-circle {
+						position: absolute;
+						top: 12px;
+						left: 636px;
+						width: 20px;
+						height: 20px;
+						background-color: #8a8a8a98;
+						border: 1px solid #ffff;
+						border-radius: 55%;
+						box-shadow: 0.1px 0.7px #000;
+						.tt-circle__icon {
+							margin: 0 auto;
+							position: absolute;
+							left: 7px;
+							top: -8px;
+							text-align: center;
+							font: $text1x-43 $font-list-b;
+							color: #fff;
+							cursor: pointer;
+						} //end tt-circle__icon
+			
+						// opacity: 0; //initializing the opacity of the tooltip.
+						// pointer-events: none;
+						// cursor: pointer;
+						// animation: info-tool-tip 1s ease-in 28.5s forwards;
+					} //end tt-circle
 				
+					.tt-circle:hover ::after {
+						content: "Nishida’s Gymnastics recreational and competitive boys and girls gymnastics clubs. \a\a The group of clubs provides recreational and competitive level gymnastics in both Men’s and Women’s Artistic Gymnastics training.";
+						white-space: pre-wrap; // to allow for inserting line breaks into the content propety
+						position: absolute;
+						transition: 1s all ease;
+						padding: 20px 20px;
+						top: 152px;
+    					left: -586px;
+    					width: 500px;
+    					height: 150px;
+						background-color: #fffff2ed;
+						border: 1px solid #ffffff;
+						border-radius: 3px;
+						box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+						color: #000000;
+						font-size: $textBase;
+			
+						// //NOTE: Tooltip animation:
+						// animation: tooltip-animate 0.3s ease forwards;
+					} //end tt-circle:hover
+
 			} //end of .cs-client-details
 		} // END of ATF--
 
@@ -192,6 +244,60 @@
 					//NOTE: UI/UX: ANIMATION & TRANSITIONS: Case Studies project description section
 					opacity: 0;
 					animation: btf-cs-project-desc-reveal 0.5s linear 2.5s forwards;
+
+					//===================================================
+
+					//NOTE: ADDITIONAL INFORMATION TOOL TIP SECTION
+					.tt-circle {
+						position: absolute;
+						top: -15px;
+    					left: 492px;
+						width: 20px;
+						height: 20px;
+						background-color: #8a8a8a98;
+						border: 1px solid #ffff;
+						border-radius: 55%;
+						box-shadow: 0.1px 0.7px #000;
+						.tt-circle__icon {
+							margin: 0 auto;
+							position: absolute;
+							left: 7px;
+							top: -8px;
+							text-align: center;
+							font: $text1x-43 $font-list-b;
+							color: #fff;
+							cursor: pointer;
+						} //end tt-circle__icon
+			
+						// opacity: 0; //initializing the opacity of the tooltip.
+						// pointer-events: none;
+						cursor: pointer;
+						// animation: info-tool-tip 1s ease-in 28.5s forwards;
+					} //end tt-circle
+
+
+					.tt-circle:hover ::after {
+						content: "We achieved success in an increase of foot traffic to the various gym branches as well as the improvement to brand recognition and marketability from additional work done to improve the company’s branding across social media channels.\a \a Following that result we’ve continued the working relationship with the Nishida’s gymnastics group ever since and regularly check in for content and security updates";
+						white-space: pre-wrap; // to allow for inserting line breaks into the content propety
+						position: absolute;
+						transition: 1s all ease;
+						padding: 20px 20px;
+						top: 152px;
+    					left: -586px;
+    					width: 500px;
+    					height: 150px;
+						background-color: #fffff2ed;
+						border: 1px solid #ffffff;
+						border-radius: 3px;
+						box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+						color: #000000;
+						font-size: $textBase;
+			
+						// //NOTE: Tooltip animation:
+						// animation: tooltip-animate 0.3s ease forwards;
+					} //end tt-circle:hover
+
+
 				} //end cs-project-desc
 
 				//divider
@@ -237,7 +343,7 @@
 				margin-right: auto;
 
 
-				//NOTE: UI/UX: ANIMATION & TRANSITIONS: Case Studies Below The Flod Container box 
+				//NOTE: UI/UX: ANIMATION & TRANSITIONS: Case Studies Below The Fold Container box 
 				opacity: 0;
 				animation: btf-project-container-box-reveal 0.5s linear 2.0s forwards;
 			} //end btf-2__project-container-box

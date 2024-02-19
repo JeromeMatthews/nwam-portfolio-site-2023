@@ -604,6 +604,12 @@ body .main-container .blog-box__link .blog-box .blog-box__text {
   }
   body .main-container .blog-collection .blog-collection__title {
     font-size: 5rem;
+    opacity: 0;
+    animation: blog-title-reveal 1s linear 1s forwards;
+  }
+  body .main-container .blog-collection__divide {
+    opacity: 0;
+    animation: top-divider-reveal 1s linear 2s forwards;
   }
   body .main-container .blog-box-group {
     top: 0px;
