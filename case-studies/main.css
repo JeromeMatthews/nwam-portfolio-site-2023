@@ -1795,6 +1795,10 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
     border: 1px solid white;
     border-radius: 55%;
     box-shadow: 0.1px 0.7px #000;
+    opacity: 0;
+    pointer-events: none;
+    cursor: pointer;
+    animation: info-tool-tip 1s ease-in 5.5s forwards;
   }
   body .atf-1 .cs-client-details .tt-circle .tt-circle__icon {
     margin: 0 auto;
@@ -1822,6 +1826,7 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
     color: #000000;
     font-size: 1rem;
+    animation: tooltip-animate 0.3s ease forwards;
   }
   body .btf-2 .btf-2__project-container-box {
     position: relative;
@@ -1864,7 +1869,10 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
     border: 1px solid white;
     border-radius: 55%;
     box-shadow: 0.1px 0.7px #000;
+    opacity: 0;
+    pointer-events: none;
     cursor: pointer;
+    animation: info-tool-tip 1s ease-in 5.5s forwards;
   }
   body .btf-2 .btf-2__project-container-box .cs-project-desc .tt-circle .tt-circle__icon {
     margin: 0 auto;
@@ -1892,6 +1900,7 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
     color: #000000;
     font-size: 1rem;
+    animation: tooltip-animate 0.3s ease forwards;
   }
   body .btf-2 .btf-2__project-container-box .project-info-divider {
     width: 90%;
@@ -2242,6 +2251,54 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
     }
     100% {
       transform: translateY(1px);
+    }
+  }
+  @keyframes info-tool-tip {
+    0% {
+      opacity: 0;
+      pointer-events: none;
+      transform: scale(0);
+    }
+    50% {
+      opacity: 0.5;
+      pointer-events: none;
+      transform: scale(0.5);
+    }
+    100% {
+      opacity: 1;
+      pointer-events: all;
+      transform: scale(1);
+    }
+  }
+  @keyframes info-tt-pulse {
+    0% {
+      opacity: 1;
+      pointer-events: none;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.5;
+      pointer-events: none;
+      transform: scale(1.5);
+    }
+    100% {
+      opacity: 0;
+      pointer-events: all;
+      transform: scale(2);
+    }
+  }
+  @keyframes tooltip-animate {
+    0% {
+      opacity: 0;
+      transform: scale(0);
+    }
+    50% {
+      opacity: 0.5;
+      transform: scale(0.5);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
     }
   }
 }

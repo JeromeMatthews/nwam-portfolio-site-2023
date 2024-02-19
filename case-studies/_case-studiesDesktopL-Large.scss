@@ -186,10 +186,10 @@
 							cursor: pointer;
 						} //end tt-circle__icon
 			
-						// opacity: 0; //initializing the opacity of the tooltip.
-						// pointer-events: none;
-						// cursor: pointer;
-						// animation: info-tool-tip 1s ease-in 28.5s forwards;
+						opacity: 0; //initializing the opacity of the tooltip.
+						pointer-events: none;
+						cursor: pointer;
+						animation: info-tool-tip 1s ease-in 5.5s forwards;
 					} //end tt-circle
 				
 					.tt-circle:hover ::after {
@@ -210,7 +210,7 @@
 						font-size: $textBase;
 			
 						// //NOTE: Tooltip animation:
-						// animation: tooltip-animate 0.3s ease forwards;
+						animation: tooltip-animate 0.3s ease forwards;
 					} //end tt-circle:hover
 
 			} //end of .cs-client-details
@@ -269,10 +269,10 @@
 							cursor: pointer;
 						} //end tt-circle__icon
 			
-						// opacity: 0; //initializing the opacity of the tooltip.
-						// pointer-events: none;
+						opacity: 0; //initializing the opacity of the tooltip.
+						pointer-events: none;
 						cursor: pointer;
-						// animation: info-tool-tip 1s ease-in 28.5s forwards;
+						animation: info-tool-tip 1s ease-in 5.5s forwards;
 					} //end tt-circle
 
 
@@ -294,7 +294,7 @@
 						font-size: $textBase;
 			
 						// //NOTE: Tooltip animation:
-						// animation: tooltip-animate 0.3s ease forwards;
+						animation: tooltip-animate 0.3s ease forwards;
 					} //end tt-circle:hover
 
 
@@ -664,8 +664,21 @@
 		ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >1920px */
 		/*ANIMATIONS: */
 		//==========================
-
-
+		//Playback Master sequence:
+		//1 - page bg-image:
+		//2: - social icons:
+		//3: chevron-down-animate:
+		//4:  chevron-down-reveal:
+		//5: atf-cs-project-reveal:
+		//6: atf-cs-client-reveal:
+		//7: btf-cs-project-desc-reveal:
+		//8: btf-cs-project-info-divider-reveal:
+		//9: btf-cs-project-sum-reveal:
+		//10: btf-project-container-box-reveal:
+		//11: info tooltip:
+		//12: info tooltip-pulse:
+		//13: info tool-tip-animate:
+		//==========================
 	//1 - page bg-image:
 
 	@keyframes bg-reveal {
@@ -812,6 +825,70 @@
 				transform:  translateY(1px) 
 			}
 		}//end btf-project-container-box-reveal
+
+
+	//11: info tooltip:
+	@keyframes info-tool-tip {
+		0% {
+			opacity: 0;
+			pointer-events: none;
+			transform: scale(0);
+		}
+
+		50% {
+			opacity: 0.5;
+			pointer-events: none;
+			transform: scale(0.5);
+		}
+
+		100% {
+			opacity: 1;
+			pointer-events: all;
+			transform: scale(1);
+		}
+	} //end info-tool-tip
+	//--------------------------
+
+	//12: info tooltip-pulse:
+	@keyframes info-tt-pulse {
+		0% {
+			opacity: 1;
+			pointer-events: none;
+			transform: scale(1);
+		}
+
+		50% {
+			opacity: 0.5;
+			pointer-events: none;
+			transform: scale(1.5);
+		}
+
+		100% {
+			opacity: 0;
+			pointer-events: all;
+			transform: scale(2);
+		}
+	} //end info-tool-tip
+	//--------------------------
+
+	//13: info tool-tip-animate:
+	@keyframes tooltip-animate {
+		0% {
+			opacity: 0;
+			transform: scale(0);
+		}
+
+		50% {
+			opacity: 0.5;
+			transform: scale(0.5);
+		}
+
+		100% {
+			opacity: 1;
+			transform: scale(1);
+		}
+	} //end info tool-tip-animate
+	//--------------------------
 
 
 

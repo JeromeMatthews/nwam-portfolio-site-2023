@@ -461,7 +461,7 @@
 						.dtlink.low-nav-a-left{
 					
 							img{
-								//NOTE: same issues as when adding the anchor links in the top menu. The inner most elment's event propagation was blocking the wrapping anchor link tag. Therefore needed to turn it's default event propagation behavior off with pointer events: none.
+								//NOTE: same issues as when adding the anchor links in the top menu. The inner most element's event propagation was blocking the wrapping anchor link tag. Therefore needed to turn it's default event propagation behavior off with pointer events: none.
 								pointer-events: none;
 							} //end img  
 						} //end dtlink.low-nav-a-left
@@ -808,7 +808,7 @@
 		} //end info-tool-tip
 		//--------------------------
 
-		//10: info tooltip-pulse:
+		//11: info tooltip-pulse:
 		@keyframes info-tt-pulse {
 			0% {
 				opacity: 1;
@@ -830,7 +830,7 @@
 		} //end info-tool-tip
 		//--------------------------
 
-		//11: info tool-tip-animate:
+		//12: info tool-tip-animate:
 		@keyframes tooltip-animate {
 			0% {
 				opacity: 0;
