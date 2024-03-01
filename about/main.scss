@@ -1,7 +1,7 @@
-@import "..//partials/_base.css";
+@import "..//partials/base";
 @import "..//partials/variables";
 @import "..//partials/mixins";
-@import "..//partials/nav-base-mobile";
+@import "..//partials/navs/nav-base-mobile";
 
 @mixin aboutTitleCopy {
 	font-family: $font-list-h;

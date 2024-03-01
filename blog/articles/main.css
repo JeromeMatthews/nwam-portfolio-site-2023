@@ -1,4 +1,19 @@
-@import "../../partials/_base.css";
+/*SECTION: [UNIVERSAL DEFAULTS]*/
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: rgb(139, 139, 139);
+  background-color: antiquewhite;
+}
+
 /*
 	UX design layout is as follows: 
 		div. link-container element > 

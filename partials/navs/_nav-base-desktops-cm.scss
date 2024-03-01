@@ -1,0 +1,61 @@
+@media (min-width: 1440px)  {
+    .sitenav__hamburger {
+        display: none;
+    } //end sitenav__hamburger
+    .sitenav {
+        //NOTE: Design variant:
+        //Removed the mobile navigation menu, replaced with fixed top nativation for larger viewports.
+        display: none;
+    } //end sitenav
+
+
+
+    //NOTE: Design variant :Added dimension to the link s ithere is a clickable space for the user to actually interact with. 
+    #logo.dtlink {
+            display: block;
+            position: absolute;
+            width: 144px;
+            height: 94px;
+            top: 10px;
+            left: 166px;
+            
+        }//end dtlink
+
+    .sitenav__logo {
+        width: 144px;
+        height: 77px;
+        top: 3px;
+        left: -1px;
+    }
+
+    .sitenav__contactNum {
+        top: 75px;
+        left: 180px;
+        font-size: $textBase; // 16px; rem base
+    }
+
+    .mainnav__links {
+        //NOTE: Design variant: Instanciated desktop navigation - fixed top navigation for larger viewports.
+        display: flex;
+        list-style: none;
+        position: absolute;
+        top: 10px;
+        left: 460px;
+        z-index: 15;
+    } //end of mainnav__links
+
+
+.mainnav__links {
+    a {
+        font-family: $font-list-h;
+        font-weight: nth($f-weights, 3);
+        border: #ffffff5e 1px solid;
+        background-color: #16161621;
+        padding: 5px 15px;
+        margin: 0px 5px;
+        font-size: $text1X-25; // 20px;
+        color: #ffffff;
+        text-decoration: none;
+    }//end of a
+    }//end of mainnav__links
+}//end media query
