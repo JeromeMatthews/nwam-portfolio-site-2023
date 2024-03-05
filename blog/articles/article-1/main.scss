@@ -1,7 +1,7 @@
-@import "../../partials/base";
-@import "../../partials/variables";
-@import "../../partials/mixins";
-@import "../../partials/navs/nav-base-mobile";
+@import "../../../partials/base";
+@import "../../../partials/variables";
+@import "../../../partials/mixins";
+@import "../../../partials/navs/nav-base-mobile";
 
 body {
 	background-image: url("/img/img-mobile-p/book-stack-p-a-bg.png");
@@ -139,8 +139,8 @@ body {
 		}//end article-container
 	}//end main-container
 }//end body
-@import "../articles/_articlesTabletP";
-@import "../articles/_articlesTabletL";
-@import "../articles/_articlesDesktop-S";
-@import "../articles/_articlesDesktop-CM";
-@import "../articles/_articlesDesktopL-Large";
+@import "./_articlesTabletP";
+@import "./_articlesTabletL";
+@import "./_articlesDesktop-S";
+@import "./_articlesDesktop-CM";
+@import "./_articlesDesktopL-Large";
