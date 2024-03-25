@@ -1,0 +1,14 @@
+@import "../../partials/case-study-templates/_case-studies-DesktopL-Large-template";
+
+@media (min-width: 1920px) {
+    body{
+    
+
+        //NOTE: Background image generated specfic to case study instance of the base template for design variant: Desktop-Large-1920px. Platforming off of the template pointer to the main refereence in case-studies sub folder in the paritals folder. 
+        .atf-1 {
+         //NOTE: only needs to add the single background image change below.    All other page styles imported from design template in partial folder:
+            background-image: url("/img/img-desktop-l/desktop-ps-ng-bg.png");
+        }//end atf-1
+
+    }//end body
+}//end media-query 1920px 

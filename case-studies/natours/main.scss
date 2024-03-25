@@ -351,9 +351,9 @@ body {
 
 //SECTION: CASE STUDIES PAGE: mobile -> Desktop
 //NOTE: IMPORTANT! The order of the parital stylesheets matters. since the design variants go from mobile up through to desktop, each of the following sheets are built with design variants that mainly only modify the underlying style sheets. Hence removal or rearrangement of the stylesheets in the former part of the overall list will cause errors in latter - subsequent stylesheets.
-@import "../beam/beam-case-studiesTabletP";
-@import "../beam/beam-case-studiesTabletL";
-@import "../beam/beam-case-studiesDesktop-S";
-@import "../beam/beam-case-studiesDesktop-CM";
-@import "../beam/_beam-case-studiesDesktopL-Large";
+@import "../natours/natours-case-studiesTabletP";
+@import "../natours/natours-case-studiesTabletL";
+@import "../natours/natours-case-studiesDesktop-S";
+@import "../natours/natours-case-studiesDesktop-CM";
+@import "../natours/_natours-case-studiesDesktopL-Large";
 //!SECTION: END CASE STUDIES PAGE: mobile -> Desktop

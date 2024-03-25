@@ -1,0 +1,14 @@
+@import "../../partials/case-study-templates/case-studies-Desktop-CM-template"; 
+
+@media (min-width: 1440px) {
+    body{
+    
+
+        //NOTE: Background image generated specfic to case study instance of the base template for design variant: Desktop-CM-1440px. Platforming off of the template pointer to the main refereence in case-studies sub folder in the paritals folder. 
+        .atf-1 {
+         //NOTE: only needs to add the single background image change below.    All other page styles imported from design template in partial folder:
+            background-image: url("/img/img-desktop-cm-1440/desktop-cm-ps-ng-bg.PNG");
+        }//end atf-1
+
+    }//end body
+}//end media-query 1440px 
