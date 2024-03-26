@@ -2334,6 +2334,39 @@ body .mobile-cta-footer .mobile-cta-footer__sm-links {
 /*!SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1920px */
 @media (min-width: 1920px) {
   body .atf-1 {
-    background-image: url("/img/img-desktop-l/desktop-ps-ng-bg.png");
+    background-image: url("/img/img-desktop-l/desktop-ps-natours-page-bg.png");
+  }
+  body .atf-1 .cs-project .cs-project__title {
+    font-size: 2.81rem;
+  }
+  body .atf-1 .cs-project .cs-project__services .cs-project__service {
+    font-size: 1.12rem;
+  }
+  body .atf-1 .cs-client-details .cs-client-details__title {
+    font-size: 2.81rem;
+  }
+  body .atf-1 .cs-client-details .cs-client-details__status {
+    font-size: 2.18rem;
+  }
+  body .atf-1 .cs-client-details .status-flag {
+    font-size: 2.18rem;
+  }
+  body .atf-1 .cs-client-details .cs-client-details__text {
+    font-size: 1.12rem;
+  }
+  body .btf-2 .btf-2__project-container-box {
+    position: relative;
+    width: 774px;
+    height: 810px;
+    top: -502px;
+    left: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body .btf-2 .btf-2__project-container-box .cs-project-sum {
+    width: 550px;
+    top: -15px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }/*# sourceMappingURL=main.css.map */

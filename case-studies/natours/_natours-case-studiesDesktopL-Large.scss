@@ -1,14 +1,93 @@
 @import "../../partials/case-study-templates/_case-studies-DesktopL-Large-template";
 
 @media (min-width: 1920px) {
+//NOTE: design variant: expanded width for Natours Project information project summary copy
+	@mixin csContentBox-Projectdetails-DL {
+		position: relative;
+		width: 774px;
+		height: 810px;
+		top: -502px;
+		left: 400px;
+		
+	}
+
+
+
     body{
     
 
         //NOTE: Background image generated specfic to case study instance of the base template for design variant: Desktop-Large-1920px. Platforming off of the template pointer to the main refereence in case-studies sub folder in the paritals folder. 
         .atf-1 {
          //NOTE: only needs to add the single background image change below.    All other page styles imported from design template in partial folder:
-            background-image: url("/img/img-desktop-l/desktop-ps-ng-bg.png");
+            background-image: url("/img/img-desktop-l/desktop-ps-natours-page-bg.png");
+			// background-color: #000;
+
+            .cs-project {
+			
+				.cs-project__title {
+					//NOTE: Design variant:
+					font-size: $text2X-81; //45px;
+				}
+
+				.cs-project__services {
+					.cs-project__service {
+						//NOTE: design variant:
+						font-size: $text1x-12; //18px;
+					} //end .cs-project__service
+				}
+			}//end cs-project
+				//NOTE: Project Details = Client details
+				.cs-client-details {
+					
+	
+					.cs-client-details__title {
+						//NOTE: Design variant:
+						font-size: $text2X-81; //45px;
+					}
+	
+					.cs-client-details__status {
+						//NOTE: design variant:
+						font-size: $text2x-18; //35px;
+					}
+					.status-flag {
+						//NOTE: design variant:
+						font-size: $text2x-18; //35px;
+					}
+					.cs-client-details__text {
+						//NOTE: design variant:
+						font-size: $text1x-12; //18px;
+					}
+			}//end- Project Details = client details 
         }//end atf-1
+
+		.btf-2 {
+			.btf-2__project-container-box {
+				@include csContentBox-Projectdetails-DL;
+				.cs-project-sum {
+					//NOTE: design variant:
+					width: 550px;
+
+					.cs-project-sum__text-1 {
+						//NOTE: design variant:
+						
+
+						.cs-project-sum__text__head {
+							//NOTE: design variant:
+						} //end cs-project-sum__text__head
+
+						.cs-project-sum__text__body {
+							//NOTE: design variant:
+						} //end cs-project-sum__text__body
+					} //end cs-project-sum__text-1
+					//NOTE: Design variant: Relative positioning already declared so just giving adjustments in arrangment oftesxt here.
+					top: -15px;
+					margin-left: auto;
+					margin-right: auto;
+				} //end cs-project-sum
+				margin-left: auto;
+				margin-right: auto;
+			} //end btf-2__project-container-box
+		} //end btf-2
 
     }//end body
 }//end media-query 1920px 
