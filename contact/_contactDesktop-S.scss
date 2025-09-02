@@ -1,8 +1,8 @@
 /*SECTION ABOVE MOBILE PHONES - TABLET RANGE  - DESKTOP-SMALL -   >1280px */
 @import "..//partials/navs/_nav-base-desktops-sm";
-@media(min-width: 1280px){
-    body{
-        // //NOTE design varitant
+@media (min-width: 1280px) {
+	body {
+		// //NOTE design varitant
 		// background-image: url("/img/img-desktop-sm-1280/desktop-sm-contact-bg.png");
 		// background-attachment: fixed;
 
@@ -26,12 +26,11 @@
 		.page-flipped {
 			transform: translateX(0.5%) rotateY(90deg);
 		}
-		
 
 		.mainnav__links {
 			//NOTE: Design variant
-			top: 32px;
-			left: 472px;
+			// top: 32px;
+			// left: 472px;
 
 			a {
 				margin-top: 0px;
@@ -84,154 +83,223 @@
 			} //end mainnav__links-link-container:hover
 		} //end mainnav__links
 
-        .main-container {
-					.contact-container {
+		.main-container {
+			.contact-container {
+				width: 40vw;
+			    left: 50vw;
+				//NOTE design varitant
+
+				.contact-heroCopy{
+					display: none;
+				}// contact-heroCopy
+
+				.contactheroimg{
+					display: none;
+				}//contact-heroimg
+
+				// .contact-heroCopy {
+				// 	//NOTE design varitant
+				// 	font-size: $text2x-28; //36.57px
+				// 	text-align: left;
+				// 	position: relative;
+				// 	left: -2px;
+
+				// 	//NOTE: UI/UX: ANIMATION & TRANSITIONS: 2 - About Hero - Typewriter effect
+				// 	.tw-fx-1 {
+				// 		display: inline-block;
+				// 		overflow: hidden;
+
+				// 		white-space: nowrap;
+				// 		font-size: inherit; //take it from the original font-size, easier to scale.
+				// 		width: 0;
+				// 		animation: type1 1.6s steps(21, end) 0.8s forwards,
+				// 			cursor-off 1 linear 0.2s 2.4s forwards;
+				// 		/*name -> 
+				// 				iteration-count-> 
+				// 				timing-function->
+				// 				duration->
+				// 				delay->
+				// 				fill-mode*/
+				// 	} //end tw-fx-1
+				// } // end of contact-heroCopy
+
+				// .contact-heroCopy {
+				// 	.tw-fx-2 {
+				// 		position: relative;
+				// 		top: -30px;
+				// 		display: inline-block;
+				// 		overflow: hidden;
+
+				// 		white-space: nowrap;
+				// 		font-size: inherit; //take it from the original font-size, easier to scale.
+				// 		width: 0;
+
+				// 		animation: type2 1.5s steps(20, end) 3s forwards,
+				// 			cursor-off 1 linear 0.2s 4.4s forwards;
+				// 		/*name -> 
+				// 			iteration-count-> 
+				// 			timing-function->
+				// 			duration->
+				// 			delay->
+				// 			fill-mode*/
+				// 	} //end tw-fx-2
+				// } //contact-heroCopy
+
+
+
+				.snd-line-branding-container {
+					display: flex !important;
+					flex-direction: row;
+					flex-wrap: wrap;
+					justify-content: flex-start;
+					.contact-heroCopy2 {
+						margin: 0px;
+						padding: 0px;
 						//NOTE design varitant
-						position: absolute; // better fit for the arrangement as relative is shifting the width of the container.
-						top: -165px;
-						right: 99px;
+						font-family: $font-list-h;
+						font-size: $text2x-28; //36.57px
+						font-weight: nth($f-weights, 1);
+						color: #fff;
+						text-align: left;
+						position: relative;
+						
+						
+						// left: -2px;
 
-						.contact-heroCopy { 
-							//NOTE design varitant
-							font-size: $text2x-28; //36.57px
-							text-align: left;
+	
+						//NOTE: UI/UX: ANIMATION & TRANSITIONS: 2 - About Hero - Typewriter effect
+						.tw-fx-1 {
+							display: inline-block;
+							overflow: hidden;
+	
+							white-space: nowrap;
+							font-size: inherit; //take it from the original font-size, easier to scale.
+							width: 0;
+							animation: type1 1.6s steps(21, end) 0.8s forwards,
+								cursor-off 1 linear 0.2s 2.4s forwards;
+							/*name -> 
+									iteration-count-> 
+									timing-function->
+									duration->
+									delay->
+									fill-mode*/
+						} //end tw-fx-1
+					} // end of contact-heroCopy2
+
+
+					.contact-heroCopy2 {
+						
+						
+						.tw-fx-2 {
 							position: relative;
-							left: -2px;
+							// top: -30px;
+							display: inline-block;
+							overflow: hidden;
 
-							//NOTE: UI/UX: ANIMATION & TRANSITIONS: 2 - About Hero - Typewriter effect
-							.tw-fx-1 {
-								display: inline-block;
-								overflow: hidden;
+							white-space: nowrap;
+							font-size: inherit; //take it from the original font-size, easier to scale.
+							width: 0;
 
-								white-space: nowrap;
-								font-size: inherit; //take it from the original font-size, easier to scale.
-								width: 0;
-								animation: type1 1.6s steps(21, end) 0.8s forwards,
-									cursor-off 1 linear 0.2s 2.4s forwards;
-								/*name -> 
+							animation: type2 1.5s steps(20, end) 3s forwards,
+								cursor-off 1 linear 0.2s 4.4s forwards;
+							/*name -> 
 								iteration-count-> 
 								timing-function->
 								duration->
 								delay->
 								fill-mode*/
-							} //end tw-fx-1
-
-							.tw-fx-2 {
-								position: relative;
-								top: -30px;
-								display: inline-block;
-								overflow: hidden;
-
-								white-space: nowrap;
-								font-size: inherit; //take it from the original font-size, easier to scale.
-								width: 0;
-
-								animation: type2 1.5s steps(20, end) 3s forwards,
-									cursor-off 1 linear 0.2s 4.4s forwards;
-								/*name -> 
-								iteration-count-> 
-								timing-function->
-								duration->
-								delay->
-								fill-mode*/
-							} //end tw-fx-2
-
-
-
-						} // end of contact-heroCopy
-
-						.contactheroimg {
-							//NOTE design varitant
-							margin: 25px auto;
-							padding: 0px;
-							position: relative;
-							top: -2px;
-							left: 107px; //reseting left positioning from mobile settings.
-							width: 163px; //163.125.5px - //25% of dimensions in 1920px vaiant.
-							height: 77px; //77.25 - //25% of dimensions in 1920px vaiant.
-
-							opacity: 0; //set inital state for animation
-							animation: logo-reveal 1 ease-in 1s 5s forwards;
-						}//end contactheroimg
+						} //end tw-fx-2
+					} //contact-heroCopy2
 					
+					.contactheroimg-alt {
+						//NOTE design varitant
+						margin: 0px;
+						padding: 0px;
+						position: relative;
+						top: -1.2vh;
+  						left: -0.7vw;
+						// top: -2px;
+						// left: 107px; //reseting left positioning from mobile settings.
+						width: 163px; //163.125.5px - //25% of dimensions in 1920px vaiant.
+						height: 77px; //77.25 - //25% of dimensions in 1920px vaiant.
 
-					.contact-form {
-						//NOTE: UI/UX: ANIMATION & TRANSITIONS:
 						opacity: 0; //set inital state for animation
-						animation: contact-form-animate 1 ease-out 1s 6.5s forwards;
-						
-						.contact-form__elements {
-							.contact-form__element {
-								//NOTE: design variant for desktop screens.
-								margin: 0px auto;
-						
-								input {
-									//NOTE: design variant: 25% of dimensions in 1440px variant. Width: 397.5px and Height: 48.75px
-									width: 398px;
-									height: 49px !important; //using important to overide the inline styles made on the preious design variants. || 48.75 - 25% of dimensions in 1440px variant.
-						
-								} //end input
+						animation: logo-reveal 1 ease-in 1s 5s forwards;
+					} //end contactheroimg
+				} //snd-line-branding-container
 
-								.contact-form__label {
-									//NOTE: design variant: 25% of dimensions in 1440px variant. Width: 82.5px and Height: 48.75px
-									display: inline-block;
-									top: -12px;
-									width: 83px;
-									height: 49px;
-									border-radius: 8px 0px 0px 8px;
-					
+				.contact-form {
+					align-self:flex-start;
+					//NOTE: UI/UX: ANIMATION & TRANSITIONS:
+					opacity: 0; //set inital state for animation
+					animation: contact-form-animate 1 ease-out 1s 6.5s forwards;
 
-									.label-text {
-										font-size: $text1x-12; //18px
-										position: relative;
-										top: 25%;
-										bottom: 25%;
-									} //end label-text
-								} //end contact-form-label
-								.contact-form__input {
-									top: -4.5px; //slight realignment given the increase in font size to 21 px moved the input fields.
+					.contact-form__elements {
+						.contact-form__element {
+							//NOTE: design variant for desktop screens.
+							margin: 0px auto;
+
+							input {
+								//NOTE: design variant: 25% of dimensions in 1440px variant. Width: 397.5px and Height: 48.75px
+								width: 398px;
+								height: 49px !important; //using important to overide the inline styles made on the preious design variants. || 48.75 - 25% of dimensions in 1440px variant.
+							} //end input
+
+							.contact-form__label {
+								//NOTE: design variant: 25% of dimensions in 1440px variant. Width: 82.5px and Height: 48.75px
+								display: inline-block;
+								top: -12px;
+								width: 83px;
+								height: 49px;
+								border-radius: 8px 0px 0px 8px;
+
+								.label-text {
 									font-size: $text1x-12; //18px
-									border-radius: 0px 8px 8px 0px;
-					
-								} //end contact-form__input\
-							} //end contact-form-element
-
-							.contact-form__element {
-							} //end contact-form-element
-
-							.contact-form__element {
-								.mobile-cta-footer__button {
-									//NOTE: design variant:
-									width: 223px; //222.75 //25% of dimensions in 1440px
-									height: 42px;//42px - //25% of dimensions in 1440px
 									position: relative;
-									top: 10px;
-									right: -130px;
-									font-size: $text1x-12; //18px
+									top: 25%;
+									bottom: 25%;
+								} //end label-text
+							} //end contact-form-label
+							.contact-form__input {
+								top: -4.5px; //slight realignment given the increase in font size to 21 px moved the input fields.
+								font-size: $text1x-12; //18px
+								border-radius: 0px 8px 8px 0px;
+							} //end contact-form__input\
+						} //end contact-form-element
 
-									cursor: pointer;
+						.contact-form__element {
+						} //end contact-form-element
 
-								} //end mobile-cta-footer__button
-							} //end contact-form-element
+						.contact-form__element {
+							.mobile-cta-footer__button {
+								//NOTE: design variant:
+								width: 223px; //222.75 //25% of dimensions in 1440px
+								height: 42px; //42px - //25% of dimensions in 1440px
+								position: relative;
+								top: 10px;
+								right: -130px;
+								font-size: $text1x-12; //18px
 
-							.mobile-cta-footer__button:hover {
-								background: #ffcf15 no-repeat padding-box;
-								color: #f8f2f2;
-								text-shadow: 0px 2px .5px #4a45459e;
-							} //end .mobile-cta-footer__button:hover state
+								cursor: pointer;
+								color: #644e0a;
+							} //end mobile-cta-footer__button
+						} //end contact-form-element
 
+						.mobile-cta-footer__button:hover {
+							background: #ffcf15 no-repeat padding-box;
+							color: #f8f2f2;
+							text-shadow: 0px 2px 0.5px #4a45459e;
+						} //end .mobile-cta-footer__button:hover state
+					} // end contact-form__elements
 
-						} // end contact-form__elements
-
-						textarea {
-							height: 163px; //163.125px - //25% of dimensions in 1440px 
-							border-radius: 8px;
-							font-family: $font-list-b;
-							font-size: $text1x-56; //25px
-
-						}//end textarea
-					} //end contact-form
-				} //end of contact-container
+					textarea {
+						height: 163px; //163.125px - //25% of dimensions in 1440px
+						border-radius: 8px;
+						font-family: $font-list-b;
+						font-size: $text1x-56; //25px
+					} //end textarea
+				} //end contact-form
+			} //end of contact-container
 			.tt-circle {
 				position: absolute;
 				top: 561px;
@@ -252,21 +320,21 @@
 					color: #fff;
 					cursor: pointer;
 				} //end tt-circle__icon
-	
+
 				opacity: 0; //initializing the opacity of the tooltip.
 				pointer-events: none;
 				cursor: pointer;
 				animation: info-tool-tip 1s ease-in 10.5s forwards;
 			} //end tt-circle
-	
+
 			// .tt-circle:hover  ::before{
 			// 	content: "click and hold for info:";
 			// 	position:absolute;
 			// 	width: 210px;
 			// 	left: -225px;
-	
+
 			// }//end tt-circle::before
-	
+
 			.tt-circle:hover ::after {
 				content: " Title: person-standing-beside-tent";
 				// white-space: pre-wrap; // to allow for inserting line breaks into the content propety
@@ -282,11 +350,11 @@
 				// box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 				color: #fff;
 				font-size: $textBase;
-	
+
 				//NOTE: Tooltip animation:
 				animation: tooltip-animate 0.3s ease forwards;
 			} //end tt-circle:hover
-	
+
 			// .tt-circle-pulse {
 			// 	position: relative;
 			// 	z-index: -10; //brings the pulse effect forwards to make it look like its coming from the info button.
@@ -311,123 +379,124 @@
 						text-decoration: none;
 						color: $brandColor;
 					} //end author-info__name
-	
+
 					.author-info__name:hover {
 						color: #fdd14c;
 					} //end author-info-hover
-	
+
 					.author-info__url {
 						text-decoration: none;
 						color: $brandColor;
 					} //end author-info__name
-	
+
 					.author-info__url:hover {
 						text-decoration: none;
 						color: #fdd14c;
 					} //end author-info__name
 				} //end p
-	
+
 				position: absolute;
 				right: 929px;
-    			top: 563px;
+				top: 563px;
 
-	
 				animation: info-tool-tip 1s ease-in 11.5s forwards;
 			} //end-author-info
 
-
 			// //NOTE: BACKGROOUND IMAGE TOOLTIP
-		// //----------------------------------------------------------------
+			// //----------------------------------------------------------------
 
-		.tt-bgimg-circle {
-			position: fixed;
-			top: 518px;
- 			left: 391px;
-			width: 20px;
-			height: 20px;
-			background-color: $brandColor;
-			border: 1px solid #ffff;
-			border-radius: 55%;
-			box-shadow: 0.1px 0.7px #000;
-			z-index: 19;//NOTE: needed to add z-index to bring the element forward to be interactable. In front of the show-box
-			.tt-bgimg-circle__icon {
-				margin: 0 auto;
-				position: absolute;
-				left: 5px;
-				top: -0px;
-				text-align: center;
-				font: $textBase arial;
-				color: #fff;
+			.tt-bgimg-circle {
+				position: fixed;
+				top: 518px;
+				left: 391px;
+				width: 20px;
+				height: 20px;
+				background-color: $brandColor;
+				border: 1px solid #ffff;
+				border-radius: 55%;
+				box-shadow: 0.1px 0.7px #000;
+				z-index: 19; //NOTE: needed to add z-index to bring the element forward to be interactable. In front of the show-box
+				.tt-bgimg-circle__icon {
+					margin: 0 auto;
+					position: absolute;
+					left: 5px;
+					top: -0px;
+					text-align: center;
+					font: $textBase arial;
+					color: #fff;
+					cursor: pointer;
+				} //end tt-circle__icon
+
+				opacity: 0; //initializing the opacity of the tooltip.
+				pointer-events: none;
 				cursor: pointer;
-			} //end tt-circle__icon
+				animation: info-tool-tip 1s linear 8.5s forwards;
+			} //end tt-circle
 
-			opacity: 0; //initializing the opacity of the tooltip.
-			pointer-events: none;
-			cursor: pointer;
-			animation: info-tool-tip 1s linear 8.5s forwards;
-		} //end tt-circle
+			.tt-bgimg-circle:hover ::after {
+				content: "Message in a bottle... \a Just as this Mongolian youth stares into the night sky with intrepidness and wonder, so too do we have an interest in what stories could be told out there. \a We can’t wait. Let’s go, Let’s tell your story…  \a";
+				white-space: pre-line; // to allow for inserting line breaks into the content propety
+				position: absolute;
+				transition: 1s all ease;
+				top: -125px;
+				left: -308px;
+				width: 580px;
+				height: 80px;
+				background-color: #00000057;
+				border: 1px solid #ffffff54;
+				border-radius: 1px;
+				box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+				text-shadow: 1px 1.5px 0px #00000059;
+				font: $textBase 700 $font-list-b;
+				color: #fff;
 
-	
+				//NOTE: Tooltip animation:
+				opacity: 1;
+				animation: tooltip-animate 0.3s ease forwards;
+			} //end tt-circle:hover
 
-		.tt-bgimg-circle:hover ::after {
-			content: "Message in a bottle... \a Just as this Mongolian youth stares into the night sky with intrepidness and wonder, so too do we have an interest in what stories could be told out there. \a We can’t wait. Let’s go, Let’s tell your story…  \a";
-			white-space: pre-line; // to allow for inserting line breaks into the content propety
+			.tt-bgimg-circle-pulse {
+				position: absolute;
+				z-index: -10; //brings the pulse effect forwards to make it look like its coming from the info button.
+
+				top: 408px;
+				left: 391px;
+				width: 20px;
+				height: 20px;
+				background-color: transparent;
+				border: 1px solid #ffff;
+				border-radius: 55%;
+				opacity: 0; //initializing the opacity for the animation.
+				animation: info-tt-pulse 1.5s linear 9.5s 25;
+			} //end tt-circle-pulse
+		} // end main-container
+
+		.lower-nav-wrapper {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
 			position: absolute;
-			transition: 1s all ease;
-			top: -125px;
-			left: -308px;
-			width: 580px;
-			height: 80px;
-			background-color: #00000057;
-			border: 1px solid #ffffff54;
-			border-radius: 1px;
-			box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-			text-shadow: 1px 1.5px 0px #00000059;
-			font: $textBase 700 $font-list-b;
-			color: #fff;
-
-			//NOTE: Tooltip animation:
-			opacity: 1;
-			animation: tooltip-animate 0.3s ease forwards;
-		} //end tt-circle:hover
-
-		.tt-bgimg-circle-pulse {
-			position: absolute;
-			z-index: -10; //brings the pulse effect forwards to make it look like its coming from the info button.
-
-			top: 408px;
- 			left: 391px;
-			width: 20px;
-			height: 20px;
-			background-color: transparent;
-			border: 1px solid #ffff;
-			border-radius: 55%;
-			opacity: 0; //initializing the opacity for the animation.
-			animation: info-tt-pulse 1.5s linear 9.5s 25;
-		} //end tt-circle-pulse
-
+			width: 100vw;
+			top: 86.5vh;
 			.lower-nav-container {
 				display: block !important;
-				position: fixed;
-				bottom: 40px; //NOTE: placement to match the home, projects, and about positioning of the nav.
-				left: 50vw;
 
-				//NOTE: Design variant: Used the container for positioning the elements of the lower nav. With it being absolutely placed, we can use relative positioning for the child elements (chevrons and the social icons)
+				bottom: 40px;
+				// width: 300px;
 
 				.nav-chevrons {
+					display: flex !important; //NOTE: design variant: Turns on the nav chevrons for this variant, turned off by default from mobile.
 					position: relative; // NOTE: Relative to the parent lower-nav-container div.
 					top: -18px;
-					right: 16px;
-
-					display: block !important;
+					right: initial;
+					left: initial;
+					justify-content: center;
 					.left-chev {
-
-						.dtlink.low-nav-a-left{
-					
-							img{
+						.dtlink.low-nav-a-left {
+							img {
 								//NOTE: same issues as when adding the anchor links in the top menu. The inner most elment's event propagation was blocking the wrapping anchor link tag. Therefore needed to turn it's default event propagation behavior off with pointer events: none.
 								pointer-events: none;
-							} //end img  
+							} //end img
 						} //end dtlink.low-nav-a-left
 
 						position: inherit;
@@ -436,13 +505,11 @@
 					} //end left-chev
 
 					.right-chev {
-
-						.dtlink.low-nav-a-right{
-					
-							img{
+						.dtlink.low-nav-a-right {
+							img {
 								//NOTE: same issues as when adding the anchor links in the top menu. The inner most elment's event propagation was blocking the wrapping anchor link tag. Therefore needed to turn it's default event propagation behavior off with pointer events: none.
 								pointer-events: none;
-							} //end img  
+							} //end img
 						} //end dtlink.low-nav-a-right
 
 						position: inherit;
@@ -459,13 +526,8 @@
 						list-style: none;
 						text-decoration: none;
 						justify-content: center;
-						//NOTE: Design vaieant: The outer container creates an offset, so this corrects for it. Centering the social media icons.
 						position: relative;
-						right:  5.2vw;
-
-						li {
-							margin-right: 10px;
-						} //end li
+						right: -4px; //NOTE: Design Variant
 
 						//NOTE: UI/UX: ANIMATION & TRANSITIONS: 8 - Lower Social Media Icons - Appear and bounce effect
 						li {
@@ -481,7 +543,7 @@
 							} //end smi-yt
 
 							#smi-yt:hover {
-								@include lowerNav-hoverstate;
+								@include alt-lowerNav-hoverstate-gray;
 							} //end #smi-yt:hover
 
 							//======================================================
@@ -490,7 +552,7 @@
 							} //end smi-b
 
 							#smi-b:hover {
-								@include lowerNav-hoverstate;
+								@include alt-lowerNav-hoverstate-gray;
 							} //end #smi-b:hover
 
 							//======================================================
@@ -499,7 +561,7 @@
 							} // end smi-fb
 
 							#smi-fb:hover {
-								@include lowerNav-hoverstate;
+								@include alt-lowerNav-hoverstate-gray;
 							} //end #smi-fb:hover
 
 							//======================================================
@@ -508,7 +570,7 @@
 							} //end smi-ig
 
 							#smi-ig:hover {
-								@include lowerNav-hoverstate;
+								@include alt-lowerNav-hoverstate-gray;
 							} //end #smi-ig:hover
 							//======================================================
 
@@ -516,7 +578,7 @@
 							} //end smi-lk
 
 							#smi-lk:hover {
-								@include lowerNav-hoverstate;
+								@include alt-lowerNav-hoverstate-gray;
 							} //end #smi-lk:hover
 							//======================================================
 
@@ -526,10 +588,9 @@
 						} //end li
 					} //end social-icons
 				} //end main-footer
-			} // end lower-nav-elements
-		} // end main-container
+			} // end lower-nav-container
+		} //end lower-nav-wrapper
 
-		
 		/*SECTION  ANIMATIONS & TRANSITIONS 
 		ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >1920px */
 		/*ANIMATIONS: */
@@ -581,7 +642,7 @@
 				border-right: 0.15em solid #fff;
 			}
 			100% {
-				width: 73%;
+				width: 100%;
 				border-right: 0.15em solid #fff;
 			}
 		}
@@ -634,98 +695,89 @@
 			@include basicReveal;
 		}
 
-
 		//9: contact form animation:
 		@keyframes contact-form-animate {
 			@include basicReveal;
 
 			//NOTE: the top position values based on the top-position value given on contact form. top: -105px
 			0% {
-				top: -45px;
+				top: -15px;
 			}
 
 			100% {
-				top: -24px;
+				top: 5px;
 			}
-		}//end contact-form-animate
+		} //end contact-form-animate
 		//--------------------------
 
-			//9: info tooltip:
-			@keyframes info-tool-tip {
-				0% {
-					opacity: 0;
-					pointer-events: none;
-					transform: scale(0);
-				}
-	
-				50% {
-					opacity: 0.5;
-					pointer-events: none;
-					transform: scale(0.5);
-				}
-	
-				100% {
-					opacity: 1;
-					pointer-events: all;
-					transform: scale(1);
-				}
-			} //end info-tool-tip
-			//--------------------------
-	
-			//10: info tooltip-pulse:
-			@keyframes info-tt-pulse {
-				0% {
-					opacity: 1;
-					pointer-events: none;
-					transform: scale(1);
-				}
-	
-				50% {
-					opacity: 0.5;
-					pointer-events: none;
-					transform: scale(1.5);
-				}
-	
-				100% {
-					opacity: 0;
-					pointer-events: all;
-					transform: scale(2);
-				}
-			} //end info-tool-tip
-			//--------------------------
-	
-			//11: info tool-tip-animate:
-			@keyframes tooltip-animate {
-				0% {
-					opacity: 0;
-					transform: scale(0);
-					pointer-events: none;
-				
-				}
-	
-				50% {
-					opacity: 0.5;
-					transform: scale(0.5);
-				}
-	
-				100% {
-					opacity: 1;
-					transform: scale(1);
-					pointer-events: all;
-				}
-			} //end info tool-tip-animate
-			//--------------------------
+		//9: info tooltip:
+		@keyframes info-tool-tip {
+			0% {
+				opacity: 0;
+				pointer-events: none;
+				transform: scale(0);
+			}
 
-			
-		
+			50% {
+				opacity: 0.5;
+				pointer-events: none;
+				transform: scale(0.5);
+			}
 
+			100% {
+				opacity: 1;
+				pointer-events: all;
+				transform: scale(1);
+			}
+		} //end info-tool-tip
+		//--------------------------
+
+		//10: info tooltip-pulse:
+		@keyframes info-tt-pulse {
+			0% {
+				opacity: 1;
+				pointer-events: none;
+				transform: scale(1);
+			}
+
+			50% {
+				opacity: 0.5;
+				pointer-events: none;
+				transform: scale(1.5);
+			}
+
+			100% {
+				opacity: 0;
+				pointer-events: all;
+				transform: scale(2);
+			}
+		} //end info-tool-tip
+		//--------------------------
+
+		//11: info tool-tip-animate:
+		@keyframes tooltip-animate {
+			0% {
+				opacity: 0;
+				transform: scale(0);
+				pointer-events: none;
+			}
+
+			50% {
+				opacity: 0.5;
+				transform: scale(0.5);
+			}
+
+			100% {
+				opacity: 1;
+				transform: scale(1);
+				pointer-events: all;
+			}
+		} //end info tool-tip-animate
+		//--------------------------
 
 		/*END ANIMATIONS*/
 		/*!SECTION END ANIMATIONS & TRANSITIONS */
-
-
-    }//end body
-
-}//end media query
+	} //end body
+} //end media query
 /*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - DESKTOP-SMALL -   >1280px */
 /*!SECTION: END - [RESPONSIVE DESIGN] */

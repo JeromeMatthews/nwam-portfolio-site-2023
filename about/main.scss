@@ -25,8 +25,8 @@ body {
 
 	//NOTE: UI/UX: ANIMATION & TRANSITIONS: 1 - Page Background Image - Reveal effect
 	background-image: none; // set the inital state of the property 	- for animation
-	opacity: 0; // set the inital state of the property - for animation
-	background-color: black;
+	opacity: 1; // set the inital state of the property - for animation
+	background-color: #000 !important; //overiding the _basescsss assignments.
 	animation: about-bg-reveal 0.5s ease-in forwards;
 
 	.page-container {
@@ -46,27 +46,40 @@ body {
 
 
 	.main-container {
-		.about-hero,
+		@include flexMix-col;
+			text-align: center;
+			margin: auto 5vw;
 		.body-sect-1,
 		.body-sect-2,
 		.body-sect-3,
 		.mobile-cta-footer {
-			@include flexMix-col;
-			text-align: center;
-			margin: auto 37px;
+			
 		}// end mobile-cta-footer
 
 
-		color: #000000;
+
 		.about-hero {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			align-items: center;
+			position: relative;
+			
+			height: 100vh;
+			justify-content: center;
 			.about-hero__copy {
 				position: relative;
-				margin: 200px auto;
+				letter-spacing: -2px;
+	  
+				text-shadow: 0px 1px 1px #000000;
+				line-height: 200%; //NOTE: The property for bringing text vertically closer together.
 			}// end of about-hero__copy
 			.about-hero__text {
 				position: relative;
-				@include aboutTitleCopy;
-				color: #e1a700;
+				
+				@include heroCopy;
+				font-size: $text1x-56; //25px;
+				color: $brandColor;
 
 				//NOTE: UI/UX: ANIMATION & TRANSITIONS: 2 - About Hero - Typewriter effect
 				.tw-fx-1 {
@@ -117,6 +130,35 @@ body {
 
 
 			}// end of about-hero__text
+
+		
+
+
+
+				.about-hero__copy{
+					display:flex;
+					flex-direction: column;
+					width: 80vw;
+					height: 80vh;
+					align-items: center;
+					justify-content: center;
+				}//end about-hero__copy
+
+				.about-hero__text{
+					// margin: auto 5vw;
+					.tw-fx-1, .tw-fx-2, .tw-fx-3{
+						opacity: 1;
+						width: 100%;
+						
+						animation: none;
+					}//end tw-fx-1
+				}//end about-hero__text
+
+			}//end about-hero
+
+			.alt-about-hero{
+				display: none;
+			}//end alt-about-hero
 
 			.chevron-down{
 				position: relative;
@@ -294,63 +336,29 @@ body {
 				animation: info-tt-pulse 1.5s linear 7.5s 25;
 			} //end tt-circle-pulse
 
-		}//end of about-hero
+		
+	
 
 
 
 		.lower-nav-container {
-			display: block !important;
+			display: flex!important; 
+			// display: block !important;
 			position: absolute;
 			//NOTE: Design variant: Used the container for positioning the elements of the lower nav. With it being absolutely placed, we can use relative positioning for the child elements (chevrons and the social icons)
-			top: 828px; //NOTE: placement to match the home, projects, and about positioning of the nav.
 			left: 50vw;
+			top: 65vh;
 
-			.nav-chevrons {
-				position: relative; // NOTE: Relative to the parent lower-nav-container div.
-				top: -18px;
-				right: 16px;
-			// 	.left-chev {
+			.nav-chevrons{display:none}//end nav-chevrons
 
-			// 		.dtlink.low-nav-a-left{
-				
-			// 			img{
-			// 				//NOTE: same issues as when adding the anchor links in the top menu. The inner most elment's event propagation was blocking the wrapping anchor link tag. Therefore needed to turn it's default event propagation behavior off with pointer events: none.
-			// 				pointer-events: none;
-			// 			} //end img  
-			// 		} //end dtlink.low-nav-a-left
-
-			// 		position: inherit;
-			// 		left: -21px; //pull chevron to the left a little
-			// 		cursor: pointer;
-			// 	} //end left-chev
-
-			// 	.right-chev {
-
-			// 		.dtlink.low-nav-a-right{
-				
-			// 			img{
-			// 				//NOTE: same issues as when adding the anchor links in the top menu. The inner most elment's event propagation was blocking the wrapping anchor link tag. Therefore needed to turn it's default event propagation behavior off with pointer events: none.
-			// 				pointer-events: none;
-			// 			} //end img  
-			// 		} //end dtlink.low-nav-a-right
-					
-			// 		position: inherit;
-			// 		right: -21px; //pull chevron to the right a little
-			// 		cursor: pointer;
-			// 	} //end right-chev
-			// 	opacity: 0; //NOTE: initializing starting point of opaciy for ainimation on lower-nav element.
-			// 	animation: lower-nav-reveal 1s ease 10s forwards;
-			// } //end nav-chevrons
-
-			.chevron-down {
-				position: relative;
-				top: 0px;
-				right: 5px;
-				opacity: 0; //NOTE: initializing the starting state for the reveal of chevron.
-				animation: chevron-down-reveal 2s linear 5s forwards,
-					chevron-down-animate 1s ease 12s infinite;
-			} //end chevron-down
-		} // end nav-chevrons
+		.chevron-down {
+			position: relative;
+			top: 0px;
+			right: 5px;
+			opacity: 0; //NOTE: initializing the starting state for the reveal of chevron.
+			animation: chevron-down-reveal 2s linear 5s forwards,
+				chevron-down-animate 1s ease 12s infinite;
+		} //end chevron-down
 	} //end lower-nav-container
 
 
@@ -364,15 +372,28 @@ body {
 		.body-sect-2__text,
 		.body-sect-3__text {
 			padding: 10px;
-		}
+			
+		} //end body-sect-text
+
+		.body-sect-1,
+		.body-sect-2,
+		.body-sect-3 {
+			color: #fff;
+		}//end body-sect
 
 		.body-sect-1 {
+			
 			.body-sect-1-art {
+				@media(max-width: 600px){
+					.body-sect-1__head{
+						margin: auto 20vw;
+					}//end body-sect-1__head
+				}//600px width assignments
 				.body-sect-1__head {
 					@include aboutTitleCopy;
 				}
 				.body-sect-1__text {
-					@include aboutBodyCopy;
+					@include bodyCopyMobile-p;
 					i {
 						font-style: italic;
 					}
@@ -386,7 +407,7 @@ body {
 					@include aboutTitleCopy;
 				}
 				.body-sect-2__text {
-					@include aboutBodyCopy;
+					@include bodyCopyMobile-p;
 				}
 			}
 		}
@@ -397,18 +418,18 @@ body {
 					@include aboutTitleCopy;
 				}
 				.body-sect-3__text {
-					@include aboutBodyCopy;
+					@include bodyCopyMobile-p;
 				}
 			}
 		}
 
 		.mobile-cta-footer {
-			height: 800px;
+			
 
 			position: relative;
-			top: 200px;
+			
 
-			color: black;
+			color: rgb(255, 255, 255);
 
 			.mobile-cta-footer-branding {
 				.mobile-cta-footer-branding__text-1,
@@ -435,6 +456,7 @@ body {
 			} //end of mobile-cta-footer-branding
 
 			.mobile-cta-footer__button {
+				display: inline-block;
 				width: 258px;
 				height: 50px;
 				background: #f5b600 0% 0% no-repeat padding-box;
@@ -459,7 +481,20 @@ body {
 				} //end hero-text
 				//NOTE: design variant:
 				cursor: pointer;
+
+
 			}//end of mobile-footer__button 
+
+			.mobile-cta-footer__button:hover {
+				background: #ffcf15 no-repeat padding-box;
+				
+				text-shadow: 0px 2px .5px #4a45459e;
+
+				.hero-text{
+					//NOTE: Design variant overiding the span tag color assignment from the tablet and mobile variants.
+					color: #f8f2f2 !important;
+				}//end hero-text
+			} //end .mobile-cta-footer__button:hover state
 
 			.mobile-cta-footer__sm-links {
 				@include flexMix;
@@ -547,14 +582,14 @@ body {
 		//1 - page bg-image:
 
 		@keyframes about-bg-reveal {
-			0% {
-				opacity: 0%;
+			0%{
+				opacity: 0;
 				background-color: black;
 			}
 
-			100% {
-				opacity: 100%;
-				background-color: transparent;
+			100%{
+				opacity: 1;
+				background-color: none;
 			}
 		} //end bg-reveal
 
@@ -849,6 +884,7 @@ body {
 		/*!SECTION END ANIMATIONS & TRANSITIONS */
 	}//end main-container
 }//end body
+@import"../about/aboutMobileMini";
 @import "../about/_aboutTabletP";
 @import "../about/_aboutTabletL";
 @import "../about/_aboutDesktop-S";

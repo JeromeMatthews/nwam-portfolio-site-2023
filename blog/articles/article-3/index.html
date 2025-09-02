@@ -97,15 +97,14 @@
 				<!-- NAVIGATION: TABLET - > DESKTOP RANGE -->
 					<!--NOTE: Added the class dtl to flag all the links that should trigger the animation omitting the tablet and mobile level links-->
 					<ul class="mainnav__links">
-						
-							
+						<div class="navlinks__wrapper">
 						<li>
 							<div id="mainnav__links-animate-c-1">
 
 							
 							<div class="mainnav__links-link-container">
 		
-								<a id="mainnav__links-projects"  class="mainnav__links-link__href" class="dtlink" href="/projects/projects.html"
+								<a id="mainnav__links-projects"  class="mainnav__links-link__href dtlink" href="/projects/projects.html"
 									>
 									<span class="mainnav__links-link__text">Projects</span>
 								</a>
@@ -123,7 +122,7 @@
 							
 								<div class="mainnav__links-link-container">
 
-									<a id="mainnav__links-about" class="mainnav__links-link__href" class="dtlink" href="/about/about.html"
+									<a id="mainnav__links-about" class="mainnav__links-link__href dtlink" href="/about/about.html"
 										><span class="mainnav__links-link__text">About</span>
 									
 									</a>
@@ -141,7 +140,7 @@
 
 								<div class="mainnav__links-link-container">
 
-									<a id="mainnav__links-contact" class="mainnav__links-link__href" class="dtlink" href="/contact/contact.html"
+									<a id="mainnav__links-contact" class="mainnav__links-link__href dtlink" href="/contact/contact.html"
 										><span class="mainnav__links-link__text">Contact</span>
 									
 									</a>
@@ -154,7 +153,7 @@
 						<li>
 							<div id="mainnav__links-animate-c-4">
 							<div class="mainnav__links-link-container">
-							<a id="mainnav__links-blog" class="mainnav__links-link__href" class="dtlink" href="/blog/blog.html"
+							<a id="mainnav__links-blog" class="mainnav__links-link__href dtlink" href="/blog/blog.html"
 								><span class="mainnav__links-link__text">Blog</span>
 								
 							</a>
@@ -162,17 +161,22 @@
 						</div><!-- mn-blog-->
 					</div><!-- mainnav__links-animate-c-4-->
 						</li>
-				</ul><!-- end Ul-->
+					</div><!-- navlinks__wrapper -->
+					</ul><!-- end Ul-->
 			</nav>
 
 			<!-- end Navigation -->
 		</header>
 		<!-- end Header -->
+
 		<main class="main-container">
-			<div class="article-container">
-				<h1 class="article__title">Article</h1>
-				<h4 class="article__sub_title">Supporting sub title</h4>
-				<ul class="article-sm-top">
+			
+			<div class="title-container">
+				<h1 class="title-container__article-title">Article</h1>
+				<h4 class="title-container__article-sub-title">
+					Supporting sub title
+				</h4>
+				<ul class="title-container-article-sm-top">
 					<li class="article-sm-top-link">
 						<a href="#">
 							<img id="smi-m"
@@ -197,10 +201,17 @@
 							/>
 						</a>
 					</li>
-				</ul>
-				<!-- end article-sm-top -->
+				</ul><!-- end article-sm-top -->
+			</div><!--title-container-->
 
-				<hr id="top-divider" width="100%" style="color: rgb(255, 255, 255, 0.5)"/>
+
+
+
+			<hr id="top-divider" width="100%" style="color: rgb(255, 255, 255, 0.5)"/>
+
+
+
+			<div class="article-container">
 
 				<section class="article__content">
 					<article class="support-topic">
@@ -222,7 +233,10 @@
 					<!--end support-topic-->
 				</section>
 				<!-- end-article__content-->
+			</div><!-- end article-container -->
 
+
+			<div class="article-container">
 				<section class="article__content">
 					<article class="support-topic">
 						<h2 class="support-topic__head">Another Subheadline</h2>
@@ -247,7 +261,9 @@
 					<!--end support-topic-->
 				</section>
 				<!-- end-article__content-->
+			</div><!-- end article-container -->
 
+			<div class="article-container">
 				<section class="article__content">
 					<article class="support-topic">
 						<h2 class="support-topic__head">Supporting Subheadline</h2>
@@ -267,7 +283,9 @@
 					<!--end support-topic-->
 				</section>
 				<!-- end-article__content-->
+			</div><!-- end article-container -->
 
+			<div class="article-container">
 				<section class="article__content">
 					<article class="support-topic">
 						<h2 class="support-topic__head">Another Subheadline</h2>
@@ -292,60 +310,66 @@
 					<!--end support-topic-->
 				</section>
 				<!-- end-article__content-->
+			</div><!-- end article-container -->
 
-				<div class="mobile-cta-footer">
-					<div class="mobile-cta-footer-branding">
-						<p class="mobile-cta-footer-branding__text-1">So, What's your story?...</p>
-						<p class="mobile-cta-footer-branding__text-2">Let's tell it, with</p>
-	
-						<img
-							class="mobile-cta-footer__logo"
-							src="/img/img-mobile-p/Nomad-orange.png"
-							alt="nomad-web- and-media-logo-orange-small"
+			<hr class="footer-divide"/>		
+			
+		</main><!-- end Main Content -->
+		
+		<div class="mobile-cta-footer">
+			<div class="mobile-cta-footer__container">
+				<div class="mobile-cta-footer-branding">
+					<p class="mobile-cta-footer-branding__text-1">So, What's your story?...</p>
+					<p class="mobile-cta-footer-branding__text-2">Let's tell it, with</p>
+
+					<img
+						class="mobile-cta-footer__logo"
+						src="/img/img-mobile-p/Nomad-orange.png"
+						alt="nomad-web- and-media-logo-orange-small"
+					/>
+				</div>
+				<!-- mobile-cta-footer -branding -->
+
+
+
+			<a class="mobile-cta-footer__button" href="/contact/contact.html">
+				<span class="hero-text">share your story </span> 
+			</a>
+			
+
+			
+
+			<ul class="article-sm-bottom">
+				<li class="article-sm-bottom-link">
+					<a href="#">
+						<img id="smi-m"
+							src="/img/sm-icons/article-post-icons8-medium.svg"
+							alt="icons8-medium-50-white-medium"
 						/>
-					</div>
-					<!-- mobile-cta-footer -branding -->
+					</a>
+				</li>
+				<li class="article-sm-bottom-link">
+					<a href="#">
+						<img id="smi-t"
+							src="/img/sm-icons/article-post-icons8-twitter.svg"
+							alt="icons8-white-twitter"
+						/>
+					</a>
+				</li>
+				<li class="article-sm-bottom-link">
+					<a href="#">
+						<img id="smi-lk"
+							src="/img/sm-icons/article-post-icons8-linkedin.svg"
+							alt="icons8-white-linkedin"
+						/>
+					</a>
+				</li>
+			</ul>
+			<!-- end article-sm-bottom -->
 
-
-
-				<a class="mobile-cta-footer__button" href="/contact/contact.html">
-					<span class="hero-text">share your story </span> 
-				</a>
-				
-
-				<hr class="footer-divide"/>
-
-				<ul class="article-sm-bottom">
-					<li class="article-sm-bottom-link">
-						<a href="#">
-							<img id="smi-m"
-								src="/img/sm-icons/article-post-icons8-medium.svg"
-								alt="icons8-medium-50-white-medium"
-							/>
-						</a>
-					</li>
-					<li class="article-sm-bottom-link">
-						<a href="#">
-							<img id="smi-t"
-								src="/img/sm-icons/article-post-icons8-twitter.svg"
-								alt="icons8-white-twitter"
-							/>
-						</a>
-					</li>
-					<li class="article-sm-bottom-link">
-						<a href="#">
-							<img id="smi-lk"
-								src="/img/sm-icons/article-post-icons8-linkedin.svg"
-								alt="icons8-white-linkedin"
-							/>
-						</a>
-					</li>
-				</ul>
-				<!-- end article-sm-bottom -->
-			</div>
-			<!-- end article-container -->
-		</main>
-		<!-- end Main Content -->
+			</div><!-- mobile-cta-footer__container -->	
+		</div><!-- mobile-cta-footer-->
+	
 
 		<script src="/main.js" type="text/javascript" defer></script>
 		<!-- end script -->

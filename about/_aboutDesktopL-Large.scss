@@ -23,8 +23,8 @@
 		}
 
 		.mainnav__links {
-			top: 26px;
-			left: 698px;
+			// top: 26px;
+			// left: 698px;
 
 			a {
 				margin-top: 0px;
@@ -71,6 +71,17 @@
 		} //end mainnav__links
 
 		.main-container {
+			@include flexMix-col;
+			text-align: center;
+			margin: auto 5vw;
+
+		.body-sect-1,
+		.body-sect-2,
+		.body-sect-3, ,
+		.mobile-cta-footer {
+
+			margin: 8vh 3vw;
+		}// end body-sections 
 			.about-hero {
 				.about-hero__copy {
 					position: relative;
@@ -78,15 +89,14 @@
 					margin: 100px 60px 390px 155px; // reminder: /\ > V <
 					left: -150px;
 					text-shadow: 0px 1px 2.5px #000000; //NOTE: added the text shadow to better separate the background from the hero copy.
-				} //end about-hero-copy
-				.about-hero__text {
+					.about-hero__text {
 					//NOTE: variant change
 					font-size: $text5x-62; //90px;
 					text-align: left;
 					line-height: 99%;
 					//NOTE: Design variant: adjustmnet to Hero copy positioning.
 					position: relative;
-					top: 151px;
+					top: 10vh;
 
 					//NOTE: UI/UX: ANIMATION & TRANSITIONS: 2 - About Hero - Typewriter effect
 					.tw-fx-1 {
@@ -135,6 +145,9 @@
 						animation: short-type 1s steps(20, end) 5.2s forwards, blink 0.8s infinite;
 					} //end tw-fx-3
 				} //end about-hero-text
+
+				} //end about-hero-copy
+				
 
 				.tt-circle {
 					position: absolute;
@@ -361,153 +374,236 @@
 				} //end chevron-down
 			} // end lower-nav-elements
 
-			.body-sect-1 {
-				.body-sect-1-art {
-					.body-sect-1__head {
-						//NOTE: variant change
-						margin: 50px 167px 10px 450px; //reminder: /\ & V , < & >
-						font-size: $text7x-18; //110px;
-						text-align: right;
+
+			.article-container{
+				#about-body-sect-1.body-sect-1{
+					article.article__content.body-sect-1-art{
+						.body-sect-1__head {
+							//NOTE: variant change
+							margin: auto 13vw; //reminder: ?| & V <
+							font-size: $text7x-18; //110px;
+							text-align: right;
+							position: relative;
+							right: -150px;
+						} //end body-sect-1__head
+						.body-sect-1__text {
+							//NOTE: variant change
+							font-size: $text1x-87; //30px;
+						} //body-sect-1__text
+					}//end body-sect-1-art
+				}//end body-sect-1
+
+
+				#about-body-sect-2.body-sect-2{
+					article.article__content.body-sect-2-art{
+						.body-sect-2__head {
+							//NOTE: variant change
+
+							font-size: $text7x-18; //110px;
+							text-align: left;
+							margin: 0px -1vw;
+						} //end body-sect-2__head
+	
+						.body-sect-2__text {
+							//NOTE: variant change
+							font-size: $text1x-87; //30px;
+						}
+					}//end body-sect-2-art
+				}//end body-sect-2
+
+
+				#about-body-sect-3.body-sect-3{
+					article.article__content.body-sect-3-art{
+						.body-sect-3__head {
+							//NOTE: variant change
+							font-size: $text7x-18; //110px;
+							text-align: right;
+							margin: 0px -1vw;
+						} //end body-sect-3__head
+						.body-sect-3__text {
+							//NOTE: variant change
+							font-size: $text1x-87; //30px;
+						} //end body-sect-3__text
+					}//end body-sect-3-art
+				}//end body-sect-3
+
+			}//end article-container
+
+			// .body-sect-1 {
+			// 	.body-sect-1-art {
+			// 		.body-sect-1__head {
+			// 			//NOTE: variant change
+			// 			margin: 50px 167px 10px 450px; //reminder: /\ & V , < & >
+			// 			font-size: $text7x-18; //110px;
+			// 			text-align: right;
+			// 			position: relative;
+			// 			right: -150px;
+			// 		} //end body-sect-1__head
+			// 		.body-sect-1__text {
+			// 			//NOTE: variant change
+			// 			font-size: $text1x-87; //30px;
+			// 		} //body-sect-1__text
+					
+			// 	} //end body-sect-1-art
+			// } //end of body-sect-1
+
+			// .body-sect-2 {
+			// 	.body-sect-2-art {
+			// 		.body-sect-2__head {
+			// 			//NOTE: variant change
+			// 			font-size: $text7x-18; //110px;
+			// 			text-align: left;
+			// 			margin: 0px; //reseting margins.
+			// 		} //end body-sect-2__head
+
+			// 		.body-sect-2__text {
+			// 			//NOTE: variant change
+			// 			font-size: $text1x-87; //30px;
+			// 		}
+					
+					
+			// 	} //end body-sect-2-art
+			// } // end of body-sect-2
+
+			// .body-sect-3 {
+			// 	.body-sect-3-art {
+			// 		.body-sect-3__head {
+			// 			//NOTE: variant change
+			// 			font-size: $text7x-18; //110px;
+			// 			text-align: right;
+			// 			margin: 0px; //reseting margins.
+			// 		} //end body-sect-3__head
+			// 		.body-sect-3__text {
+			// 			//NOTE: variant change
+			// 			font-size: $text1x-87; //30px;
+			// 		} //end body-sect-3__text
+			// 	} //end body-sect-3__head
+				
+			// } //end of body-sect-3
+		
+		
+			.mobile-cta-footer {
+				.mobile-footer-container{
+					.mobile-cta-footer-branding {
+						.mobile-cta-footer-branding__text-1,
+						.mobile-cta-footer-branding__text-2 {
+							//NOTE: variant change
+							font-size: $text3x-59; //57.5px
+						}
+		
+						.mobile-cta-footer-branding__text-2 {
+							//NOTE: variant change
+						
+						}
+		
+						.mobile-cta-footer__logo {
+							//NOTE: variant change
+							width: 233px;
+							height: 133px;
+							top: -105px;
+							left: 209px;
+						}//end of mobile-cta-footer__logo
+					} //end of cta-footer-branding
+		
+					.mobile-cta-footer__button {
+						//NOTE: design variant:
+						cursor: pointer;
+						.hero-text{
+							//NOTE: Design variant overiding the span tag color assignment from the tablet and mobile variants.
+							color: #644e0a;
+						}//end hero-text
+						
+		
+					} //end mobile-cta-footer__button
+		
+					
+					.mobile-cta-footer__button:hover {
+						background: #ffcf15 no-repeat padding-box;
+						
+						text-shadow: 0px 2px .5px #4a45459e;
+		
+						.hero-text{
+							//NOTE: Design variant overiding the span tag color assignment from the tablet and mobile variants.
+							color: #f8f2f2 !important;
+						}//end hero-text
+					} //end .mobile-cta-footer__button:hover state
+		
+					.mobile-cta-footer__sm-links {
+						display: flex;
+						margin: 0px;
+						padding: 0px;
+						list-style: none;
+						text-decoration: none;
+						justify-content: center;
+						//NOTE: Design vaieant: The outer container creates an offset, so this corrects for it. Centering the social media icons.
 						position: relative;
-						right: -150px;
-					} //end body-sect-1__head
-					.body-sect-1__text {
-						//NOTE: variant change
-						font-size: $text1x-87; //30px;
-					} //body-sect-1__text
-					margin-bottom: 290px;
-				} //end body-sect-1-art
-			} //end of body-sect-1
+						top: 8px;
+						//NOTE: UI/UX: ANIMATION & TRANSITIONS: 8 - Lower Social Media Icons - Appear and bounce effect
+						li {
+							#smi-yt,
+							#smi-b,
+							#smi-fb,
+							#smi-ig,
+							#smi-lk {
+								position: relative;
+							} //end img
+		
+							#smi-yt {
+							} //end smi-yt
+		
+							#smi-yt:hover {
+								@include about-lowerNav-hoverstate;
+							} //end #smi-yt:hover
+		
+							//======================================================
+		
+							#smi-b {
+							} //end smi-b
+		
+							#smi-b:hover {
+								@include about-lowerNav-hoverstate;
+							} //end #smi-b:hover
+		
+							//======================================================
+		
+							#smi-fb {
+							} // end smi-fb
+		
+							#smi-fb:hover {
+								@include about-lowerNav-hoverstate;
+							} //end #smi-fb:hover
+		
+							//======================================================
+		
+							#smi-ig {
+							} //end smi-ig
+		
+							#smi-ig:hover {
+								@include about-lowerNav-hoverstate;
+							} //end #smi-ig:hover
+							//======================================================
+		
+							#smi-lk {
+							} //end smi-lk
+		
+							#smi-lk:hover {
+								@include about-lowerNav-hoverstate;
+							} //end #smi-lk:hover
+							//======================================================
+		
+							position: relative;
+							margin-right: 10px;
+							cursor: pointer;
+						} //end li
+					} //end social-icons
 
-			.body-sect-2 {
-				.body-sect-2-art {
-					.body-sect-2__head {
-						//NOTE: variant change
-						font-size: $text7x-18; //110px;
-						text-align: left;
-						margin: 0px; //reseting margins.
-					} //end body-sect-2__head
+				}// end mobile-footer-container
 
-					.body-sect-2__text {
-						//NOTE: variant change
-						font-size: $text1x-87; //30px;
-					}
-					//NOTE: variant change
-					margin-bottom: 290px;
-				} //end body-sect-2-art
-			} // end of body-sect-2
-
-			.body-sect-3 {
-				.body-sect-3-art {
-					.body-sect-3__head {
-						//NOTE: variant change
-						font-size: $text7x-18; //110px;
-						text-align: right;
-						margin: 0px; //reseting margins.
-					} //end body-sect-3__head
-					.body-sect-3__text {
-						//NOTE: variant change
-						font-size: $text1x-87; //30px;
-					} //end body-sect-3__text
-				} //end body-sect-3__head
-				margin-bottom: 290px;
-			} //end of body-sect-3
+				
+			} //end main-footer
 		} //end main-container
 
-		.mobile-cta-footer {
-
-			.mobile-cta-footer__button {
-				//NOTE: design variant:
-				cursor: pointer;
-				.hero-text{
-					//NOTE: Design variant overiding the span tag color assignment from the tablet and mobile variants.
-					color: #644e0a;
-				}//end hero-text
-				
-
-			} //end mobile-cta-footer__button
-
-			
-			.mobile-cta-footer__button:hover {
-				background: #ffcf15 no-repeat padding-box;
-				
-				text-shadow: 0px 2px .5px #4a45459e;
-
-				.hero-text{
-					//NOTE: Design variant overiding the span tag color assignment from the tablet and mobile variants.
-					color: #f8f2f2 !important;
-				}//end hero-text
-			} //end .mobile-cta-footer__button:hover state
-
-			.mobile-cta-footer__sm-links {
-				display: flex;
-				margin: 0px;
-				padding: 0px;
-				list-style: none;
-				text-decoration: none;
-				justify-content: center;
-				//NOTE: Design vaieant: The outer container creates an offset, so this corrects for it. Centering the social media icons.
-				position: relative;
-				top: 8px;
-				//NOTE: UI/UX: ANIMATION & TRANSITIONS: 8 - Lower Social Media Icons - Appear and bounce effect
-				li {
-					#smi-yt,
-					#smi-b,
-					#smi-fb,
-					#smi-ig,
-					#smi-lk {
-						position: relative;
-					} //end img
-
-					#smi-yt {
-					} //end smi-yt
-
-					#smi-yt:hover {
-						@include about-lowerNav-hoverstate;
-					} //end #smi-yt:hover
-
-					//======================================================
-
-					#smi-b {
-					} //end smi-b
-
-					#smi-b:hover {
-						@include about-lowerNav-hoverstate;
-					} //end #smi-b:hover
-
-					//======================================================
-
-					#smi-fb {
-					} // end smi-fb
-
-					#smi-fb:hover {
-						@include about-lowerNav-hoverstate;
-					} //end #smi-fb:hover
-
-					//======================================================
-
-					#smi-ig {
-					} //end smi-ig
-
-					#smi-ig:hover {
-						@include about-lowerNav-hoverstate;
-					} //end #smi-ig:hover
-					//======================================================
-
-					#smi-lk {
-					} //end smi-lk
-
-					#smi-lk:hover {
-						@include about-lowerNav-hoverstate;
-					} //end #smi-lk:hover
-					//======================================================
-
-					position: relative;
-					margin-right: 10px;
-					cursor: pointer;
-				} //end li
-			} //end social-icons
-		} //end main-footer
+		
 
 		/*SECTION  ANIMATIONS & TRANSITIOS 
 		ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >1920px */
@@ -527,14 +623,15 @@
 		//1 - page bg-image:
 
 		@keyframes about-bg-reveal {
+			// @include basicReveal;
 			0% {
-				opacity: 0%;
+				opacity: 0;
 				background-color: black;
 			}
 
 			100% {
-				opacity: 100%;
-				background-color: transparent;
+				opacity: 1;
+				background-color: none;
 			}
 		} //end bg-reveal
 

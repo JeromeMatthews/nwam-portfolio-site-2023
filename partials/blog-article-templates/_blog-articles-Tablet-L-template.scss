@@ -28,85 +28,97 @@
 		   }
 
 		.main-container {
+
+			//NOTE: NEW STURCTURE to better work with layout for flex
+			.title-container{
+				@include flexMix-col;
+				align-content:end;//NOTE:design variant
+				width: 80vw;
+				.title-container__article-title{
+					text-align: center;
+					// font-size: $text2x-5; //40px;
+					color: #fff;
+
+					//NOTE: UI/UX: ANIMATION & TRANSITIONS: 2 - Article title reveal
+					opacity: 0;// set the inital state of the text visibility - for animation
+					animation: article-title-reveal 1s linear 1s forwards;
+				}//title-container__article-title
+
+				.title-container__article-sub-title{
+			
+					
+					font-size: $text1X-25; //20px;
+
+					//NOTE: UI/UX: ANIMATION & TRANSITIONS: 3 - Article subtitle reveal
+
+					opacity: 0;// set the inital state of the text visibility - for animation
+					animation: article-sub-reveal 1s linear 2s forwards;
+				}//end title-container__article-sub-title
+
+				.title-container-article-sm-top{
+								.article-sm-top-link{
+
+							#smi-m,
+							#smi-t,
+							#smi-lk {
+				
+							position: relative;
+							}// end img
+				
+							#smi-m:hover {
+							@include alt-lowerNav-hoverstate-gray;
+							}//end smi-m:hover
+				
+							#smi-t:hover {
+							@include alt-lowerNav-hoverstate-gray;
+							}//end smi-m:hover
+				
+							#smi-lk:hover {
+							@include alt-lowerNav-hoverstate-gray;
+							}//end smi-m:hover
+				
+							
+							#smi-m{
+							//NOTE: UI/UX: ANIMATION & TRANSITIONS: 3 - Top nav social icons reveal
+				
+						opacity: 0;// set the inital state of the text visibility - for animation
+						animation: top-nav-social-reveal 1s linear 3s forwards;
+				
+							}//end smi-m
+							#smi-t{
+							//NOTE: UI/UX: ANIMATION & TRANSITIONS: 3 - Top nav social icons reveal
+				
+						opacity: 0;// set the inital state of the text visibility - for animation
+						animation: top-nav-social-reveal 1s linear 3.4s forwards;	
+				
+							}//end smi-t
+							#smi-lk{
+							//NOTE: UI/UX: ANIMATION & TRANSITIONS: 3 - Top nav social icons reveal
+				
+						opacity: 0;// set the inital state of the text visibility - for animation
+						animation: top-nav-social-reveal 1s linear 3.5s forwards;		
+				
+							}//end smi-lk
+				
+				
+						}//end article-sm-top-link 
+				}//end title-container-article-sm-top
+
+			}//end title-container
+
+
+			#top-divider{
+
+				//NOTE: UI/UX: ANIMATION & TRANSITIONS: 4 - Header section divider reveal
+	
+				opacity: 0;// set the inital state of the text visibility - for animation
+				animation: title-divider 0.3s linear 4s forwards;
+	
+			}//end top-divider
+
 			.article-container {
 				//NOTE: design variant
 				text-align: right;
-
-				.article__title {
-					//NOTE: design variant
-
-					 //NOTE: UI/UX: ANIMATION & TRANSITIONS: 2 - Article title reveal
-					 opacity: 0;// set the inital state of the text visibility - for animation
-					 animation: article-title-reveal 1s linear 1s forwards;
-				} //end article__title
-
-				.article__sub_title {
-					//NOTE: design variant
-					 //NOTE: UI/UX: ANIMATION & TRANSITIONS: 3 - Article subtitle reveal
-
-					 opacity: 0;// set the inital state of the text visibility - for animation
-					 animation: article-sub-reveal 1s linear 2s forwards;
-				} // end article__sub_title
-
-				.article-sm-top {
-					//NOTE: design variant
-
-					.article-sm-top-link{
-
-						#smi-m,
-						#smi-t,
-						#smi-lk {
-			
-						  position: relative;
-						}// end img
-			
-						#smi-m:hover {
-						  @include alt-lowerNav-hoverstate-gray;
-						}//end smi-m:hover
-			
-						#smi-t:hover {
-						  @include alt-lowerNav-hoverstate-gray;
-						}//end smi-m:hover
-			
-						#smi-lk:hover {
-						  @include alt-lowerNav-hoverstate-gray;
-						}//end smi-m:hover
-			
-						
-						#smi-m{
-						  //NOTE: UI/UX: ANIMATION & TRANSITIONS: 3 - Top nav social icons reveal
-			
-					  opacity: 0;// set the inital state of the text visibility - for animation
-					  animation: top-nav-social-reveal 1s linear 3s forwards;
-			
-						}//end smi-m
-						#smi-t{
-						  //NOTE: UI/UX: ANIMATION & TRANSITIONS: 3 - Top nav social icons reveal
-			
-					  opacity: 0;// set the inital state of the text visibility - for animation
-					  animation: top-nav-social-reveal 1s linear 3.4s forwards;	
-			
-						}//end smi-t
-						#smi-lk{
-						  //NOTE: UI/UX: ANIMATION & TRANSITIONS: 3 - Top nav social icons reveal
-			
-					  opacity: 0;// set the inital state of the text visibility - for animation
-					  animation: top-nav-social-reveal 1s linear 3.5s forwards;		
-			
-						}//end smi-lk
-			
-			
-					  }//end article-sm-top-link 
-				} //end article-sm-top
-
-				#top-divider{
-
-					//NOTE: UI/UX: ANIMATION & TRANSITIONS: 4 - Header section divider reveal
-		
-					opacity: 0;// set the inital state of the text visibility - for animation
-					animation: title-divider 0.3s linear 4s forwards;
-		
-				}//end top-divider
 
 				.article__content {
 					//NOTE: design variant
@@ -124,9 +136,15 @@
 					 animation: body-content 1s linear 4.5s forwards;
 				} //end article__content
 			} // end article-container
-				.mobile-cta-footer {
-					text-align: center;
-				} //end mobile-cta-footer
+			
+		} //end main-container
+
+
+
+
+		.mobile-cta-footer {
+					
+			.mobile-cta-footer__container{
 
 				.mobile-cta-footer__button:hover {
 					background: #ffcf15 no-repeat padding-box;
@@ -137,7 +155,7 @@
 					  color: #f8f2f2
 					}//end hero-text
 				  } //end .mobile-cta-footer__button:hover state
-
+	
 				  
 					.article-sm-bottom-link{
 				  
@@ -161,9 +179,11 @@
 						}//end smi-m:hover
 					  
 					}//end article-sm-bottom-link
-				
-			
-		} //end main-container
+
+
+			}//end	
+
+			} //end mobile-cta-footer
 
   /*SECTION  ANIMATIONS & TRANSITIONS 
         ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >1920px */

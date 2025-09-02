@@ -37,289 +37,182 @@
         transform: translateX(0.5%) rotateY(90deg);
     }
 
+		
+			.mainnav__links {
+				//NOTE: Design variant
+				// top: 32px;
+				// left: 472px;
+				
+				a {
+					margin-top: 0px;
+					margin-bottom: 0px;
+					padding: 0px;
+				} //end mainnav__links a
 
-    .mainnav__links {
-		//NOTE: Design variant
-		top: 32px;
-		left: 472px;
-
-        a {
-            margin-top: 0px;
-            margin-bottom: 0px;
-            padding: 0px;
-        } //end mainnav__links a
-
-    
-
-
-    
-
-        //NOTE: MN-TOP-NAV-LINK - UI/UX: HOVER STATE
-        //===================================
-
-        .mainnav__links-link-container {
-            @include mainnav__links-link-container;
-			height: 35px; // - reduced by 10% of 1440px variant
-			//NOTE: Top Nav links  UI/UX additions:
-			/*Hover state changes */
-            .mainnav__links-link__href {
-                @include mainnav__links-link__href;
-
-					/*Using the padding section of the content box and not margin. This is so the puesdo element doesn't take that into account for the overall distance to travel across the link and ends up looking werid.*/
-
-					margin-left: 0px;
-					margin-right: 0px;
-					padding: 10px 10px; //-reduced by 30% of 1440px variant space added to anchor so they look nicer and have larger surface area to click on by users.
-            } //end mainnav__links-link__href
+			
 
 
-            .mainnav__links-link__href:after {
-                @include mainnav__links-link__href-after;
-            } //end mainnav__links-link__href:after
+			
 
-            .mainnav__links-link__href:hover {
-                @include mainnav__links-link__href-hover;
-            } //end mainnav__links-link__href:hover
+				//NOTE: MN-TOP-NAV-LINK - UI/UX: HOVER STATE
+				//===================================
 
-            
+				.mainnav__links-link-container {
+					@include mainnav__links-link-container;
+					height: 35px; // - reduced by 10% of 1440px variant
+					//NOTE: Top Nav links  UI/UX additions:
+					/*Hover state changes */
+					.mainnav__links-link__href {
+						@include mainnav__links-link__href;
 
-            .mainnav__links-link__href:hover:after {
-                @include mainnav__links-link__href-hover-after;
-            } //end mainnav__links-link__href
+							/*Using the padding section of the content box and not margin. This is so the puesdo element doesn't take that into account for the overall distance to travel across the link and ends up looking werid.*/
 
-            .mainnav__links-link__text {
-                @include mainnav__links-link__text;
-            } //end mainnav__links-link__text
-
-            
-        } //end mainnav__links-link-container
-
-        .mainnav__links-link-container:hover {
-            position: relative;
-            top: -28px; // 2px offset upwards to give a look of the link being raised once hovered over. the adjustment on the link is -26px so adding 2px more when hovered.
-
-            filter: drop-shadow(0px 2.5px rgba(0, 0, 0, 0.221));
-            /* Two length values and a color */
-            /* drop-shadow( <length> <length> <color> ) */
-        } //end mainnav__links-link-container:hover
+							margin-left: 0px;
+							margin-right: 0px;
+							padding: 10px 10px; //-reduced by 30% of 1440px variant space added to anchor so they look nicer and have larger surface area to click on by users.
+					} //end mainnav__links-link__href
 
 
-        
-            
-    } //end mainnav__links
+					.mainnav__links-link__href:after {
+						@include mainnav__links-link__href-after;
+					} //end mainnav__links-link__href:after
+
+					.mainnav__links-link__href:hover {
+						@include mainnav__links-link__href-hover;
+					} //end mainnav__links-link__href:hover
+
+					
+
+					.mainnav__links-link__href:hover:after {
+						@include mainnav__links-link__href-hover-after;
+					} //end mainnav__links-link__href
+
+					.mainnav__links-link__text {
+						@include mainnav__links-link__text;
+					} //end mainnav__links-link__text
+
+					
+				} //end mainnav__links-link-container
+
+				.mainnav__links-link-container:hover {
+					position: relative;
+					top: -28px; // 2px offset upwards to give a look of the link being raised once hovered over. the adjustment on the link is -26px so adding 2px more when hovered.
+
+					filter: drop-shadow(0px 2.5px rgba(0, 0, 0, 0.221));
+					/* Two length values and a color */
+					/* drop-shadow( <length> <length> <color> ) */
+				} //end mainnav__links-link-container:hover
+
+
+				
+					
+			} //end mainnav__links
+
+		
+		
 
 
 
         .main-container{
-            //NOTE: Design variant
-			// background-image: url("/img/img-desktop-sm-1280/desktop-sm-ps-bg.PNG");
+            //NOTE: design variant:Added a constraint on the overall width of the main container to make use of the wrapping property of flex-wrap on the items: (the content of the page) in the container: (main container) - So that the alignment of the lower nav container and its contents would be placed under the content of the project display boxes. And not have everything inline.  The size contrainst on the width: 80% of the entire viewport instead of 100% creating a more defined area for the content to exsit in. 
+				width: 80vw;
 
-            .show-box {
-                .show-box__title {
-                    //NOTE: Design variant
-                    font-size: $text1x-64; //25.5px = 26px - 25% of the dimensions of the 1440px variant.
-                }
-                .show-box__subtitle {
-                    //NOTE: Design variant: instansiated on large viewports.
-                    display: block !important;
-                    font-size: $text1X-25; //19.5px = 20px - 25% of the dimensions of the 1440px variant.
-                }
-                .show-box__text {
-                    //NOTE: Design variant
-                    top: -24px;
-                    font-size: $text1x-12; //18px - used. Base text size for all Desktop viewports. 
-                } //end show-box__text
-            } //end show-box
+            
 
-            #show-box-1,
-            #show-box-2,
-            #show-box-3 {
-                //NOTE: design variant
-                width: 276px; //275.625 = 276px - 25% of the dimensions of the 1440px variant.
-                height: 275px;//274.5 = 275px - 25% of the dimensions of the 1440px variant.
-            } //end show-box-group styles
-
-            #show-box-1 {
-                //NOTE: design variant
-                background-image: url("/img/img-desktop-sm-1280/desktop-sm-ps-natours.png");
-
-                //NOTE: Added the overlay to help strengthen the contrast of the text against the background image
-                .show-box__overlay {
-                    @include showBoxOverlay;
-
-                    //NOTE: design variant
-                    width: 276px; //275.625 = 276px - 25% of the dimensions of the 1440px variant.
-                    height: 275px;//274.5 = 275px - 25% of the dimensions of the 1440px variant.
-                } //end show-box__overlay
-
-                //NOTE: UI/UX ANIMATION & TRANSITIONS: 12 - Project Card Basic Reveal
-				opacity: 0;// set the inintal state of the project show boxes visbility for animation
-				animation: project-card-reveal 1s linear 3s forwards;
-            } //end show-box-1
-
-            #show-box-2 {
-                //NOTE: design variant
-                // Scales since its an svg image.
-                .show-box__overlay {
-                    @include showBoxOverlay;
-                    //NOTE: design variant
-                    width: 276px; //275.625 = 276px - 25% of the dimensions of the 1440px variant.
-                    height: 275px;//274.5 = 275px - 25% of the dimensions of the 1440px variant.
-                } //end show-box__overlay
-
-                	//NOTE: UI/UX ANIMATION & TRANSITIONS: 12 - Project Card Basic Reveal
-				opacity: 0;// set the inintal state of the project show boxes visbility for animation
-				animation: project-card-reveal 0.7s linear 3.3s forwards;
-            } //end show-box-2
-
-            #show-box-3 {
-                //NOTE: design variant
-                background-image: url("/img/img-desktop-sm-1280/desktop-sm-ps-BEAM.png");
-                .show-box__overlay {
-                    @include showBoxOverlay;
-                    //NOTE: design variant
-                    width: 276px; //275.625 = 276px - 25% of the dimensions of the 1440px variant.
-                    height: 275px;//274.5 = 275px - 25% of the dimensions of the 1440px variant.
-                } //end show-box__overlay
-
-                //NOTE: UI/UX ANIMATION & TRANSITIONS: 12 - Project Card Basic Reveal
-				opacity: 0;// set the inintal state of the project show boxes visbility for animation
-				animation: project-card-reveal 0.5s linear 3.5s forwards;
-            } //end show-box-3
-
-            //specific placement for lower nav elements:
-            .lower-nav-container {
-                display: block !important;
-
-                bottom: 40px;
-                // width: 300px;
-                position: fixed;
-                //NOTE: Design variant: Used the container for positioning the elements of the lower nav. With it being absolutely placed, we can use relative positioning for the child elements (chevrons and the social icons)
-                // left: 50vw;
-
-				right: 490px; 
-				 //NOTE Design variant : Adjustment building up from Tablet Landscape.
-
-                .nav-chevrons {
-					display: flex !important; //NOTE: design variant: Turns on the nav chevrons for this variant, turned off by default from mobile.
-                    position: relative; // NOTE: Relative to the parent lower-nav-container div.
-                    top: -18px;
-                    right: -132px;//NOTE: Design variant
-                    .left-chev {
-
-						.dtlink.low-nav-a-left{
-					
-							img{
-								//NOTE: same issues as when adding the anchor links in the top menu. The inner most elment's event propagation was blocking the wrapping anchor link tag. Therefore needed to turn it's default event propagation behavior off with pointer events: none.
-								pointer-events: none;
-							} //end img  
-						} //end dtlink.low-nav-a-left
-						
-                        position: inherit;
-                        left: -21px; //pull chevron to the left a little
-						cursor: pointer;
-                    } //end left-chev
-
-                    .right-chev {
-
-						.dtlink.low-nav-a-right{
-					
-							img{
-								//NOTE: same issues as when adding the anchor links in the top menu. The inner most elment's event propagation was blocking the wrapping anchor link tag. Therefore needed to turn it's default event propagation behavior off with pointer events: none.
-								pointer-events: none;
-							} //end img  
-						} //end dtlink.low-nav-a-right
-
-                        position: inherit;
-                        right: -21px; //pull chevron to the right a little
-						cursor: pointer;
-                    } //end right-chev
-
-                } //end nav-chevrons
-
-                .main-footer {
-                    .main-footer__social-icons {
-                        display: flex;
-                        margin: 0px;
-                        padding: 0px;
-                        list-style: none;
-                        text-decoration: none;
-                        justify-content: center;
-						right: -4px; //NOTE: Design Variant
-
-                       //NOTE: UI/UX: ANIMATION & TRANSITIONS: 8 - Lower Social Media Icons - Appear and bounce effect
-					li {
-						#smi-yt,
-						#smi-b,
-						#smi-fb,
-						#smi-ig,
-						#smi-lk {
-							position: relative;
-						} //end img
+			.show-box__container{
+				// position: relative;
+				//   top: 4vh;
 	
-						#smi-yt {
-							
-							
-						} //end smi-yt
-						
-						#smi-yt:hover {
-							@include alt-lowerNav-hoverstate-gray;
-						} //end #smi-yt:hover
-	
-						//======================================================
-	
-						#smi-b {
-							
-							
-						} //end smi-b
-	
-						#smi-b:hover {
-							@include alt-lowerNav-hoverstate-gray;
-						} //end #smi-b:hover
-	
-						//======================================================
-	
-	
-	
-						#smi-fb {
-						
-						} // end smi-fb
-	
-						#smi-fb:hover {
-							@include alt-lowerNav-hoverstate-gray;
-						} //end #smi-fb:hover
-	
-	
-	
-						//======================================================
-	
-						#smi-ig {
-							
-						} //end smi-ig
-	
-	
-						#smi-ig:hover {
-							@include alt-lowerNav-hoverstate-gray;
-						} //end #smi-ig:hover
-						//======================================================
-	
-						#smi-lk {
-							
-						} //end smi-lk
-	
-	
-						#smi-lk:hover {
-							@include alt-lowerNav-hoverstate-gray;
-						} //end #smi-lk:hover
-						//======================================================
-	
-						position: relative;
-						margin-right: 10px;
-						cursor: pointer;
-					} //end li
-                    } //end social-icons
-                } //end main-footer
-            } // end lower-nav-container
+				
+		  
+				// text-align: center;
+				// display: flex;
+			   
+				// justify-content: center;
+				// align-items: center;
+				// flex-direction: row;
+				// flex-wrap: nowrap;
+
+				.show-box__link{
+
+					.show-box {
+						.show-box__title {
+							//NOTE: Design variant
+							font-size: $text1x-64; //25.5px = 26px - 25% of the dimensions of the 1440px variant.
+						}
+						.show-box__subtitle {
+							//NOTE: Design variant: instansiated on large viewports.
+							display: block !important;
+							font-size: $text1X-25; //19.5px = 20px - 25% of the dimensions of the 1440px variant.
+						}
+						.show-box__text {
+							//NOTE: Design variant
+							top: 0px;
+							font-size: $text1x-12; //18px - used. Base text size for all Desktop viewports. 
+						} //end show-box__text
+					} //end show-box
+		
+					#show-box-1,
+					#show-box-2,
+					#show-box-3 {
+						//NOTE: design variant
+						width: 276px; //275.625 = 276px - 25% of the dimensions of the 1440px variant.
+						height: 275px;//274.5 = 275px - 25% of the dimensions of the 1440px variant.
+					} //end show-box-group styles
+
+
+					#show-box-1 {
+						//NOTE: design variant
+						background-image: url("/img/img-desktop-sm-1280/desktop-sm-ps-natours.png");
+		
+						//NOTE: Added the overlay to help strengthen the contrast of the text against the background image
+						.show-box__overlay {
+							@include showBoxOverlay;
+		
+							//NOTE: design variant
+							width: 276px; //275.625 = 276px - 25% of the dimensions of the 1440px variant.
+							height: 275px;//274.5 = 275px - 25% of the dimensions of the 1440px variant.
+						} //end show-box__overlay
+		
+						//NOTE: UI/UX ANIMATION & TRANSITIONS: 12 - Project Card Basic Reveal
+						opacity: 0;// set the inintal state of the project show boxes visbility for animation
+						animation: project-card-reveal 1s linear 3s forwards;
+					} //end show-box-1
+		
+					#show-box-2 {
+						//NOTE: design variant
+						// Scales since its an svg image.
+						.show-box__overlay {
+							@include showBoxOverlay;
+							//NOTE: design variant
+							width: 276px; //275.625 = 276px - 25% of the dimensions of the 1440px variant.
+							height: 275px;//274.5 = 275px - 25% of the dimensions of the 1440px variant.
+						} //end show-box__overlay
+		
+							//NOTE: UI/UX ANIMATION & TRANSITIONS: 12 - Project Card Basic Reveal
+						opacity: 0;// set the inintal state of the project show boxes visbility for animation
+						animation: project-card-reveal 0.7s linear 3.3s forwards;
+					} //end show-box-2
+		
+					#show-box-3 {
+						//NOTE: design variant
+						background-image: url("/img/img-desktop-sm-1280/desktop-sm-ps-BEAM.png");
+						.show-box__overlay {
+							@include showBoxOverlay;
+							//NOTE: design variant
+							width: 276px; //275.625 = 276px - 25% of the dimensions of the 1440px variant.
+							height: 275px;//274.5 = 275px - 25% of the dimensions of the 1440px variant.
+						} //end show-box__overlay
+		
+						//NOTE: UI/UX ANIMATION & TRANSITIONS: 12 - Project Card Basic Reveal
+						opacity: 0;// set the inintal state of the project show boxes visbility for animation
+						animation: project-card-reveal 0.5s linear 3.5s forwards;
+					} //end show-box-3
+
+				}//end show-box__link
+         
+            }//end show-box__container
+			//specific placement for lower nav elements:
 
             .tt-circle {
                 position: absolute;
@@ -495,6 +388,150 @@
             } //end tt-circle-pulse
 
         }//end main-container
+
+
+		.lower-nav-wrapper{
+
+			display: flex;
+  			flex-direction: row;
+  			justify-content: center;
+			position: absolute;
+			width: 100vw;
+			top: 86.5vh;
+		.lower-nav-container {
+			display: block !important;
+
+			bottom: 40px;
+			// width: 300px;
+		  
+			
+
+			
+
+			.nav-chevrons {
+				display: flex !important; //NOTE: design variant: Turns on the nav chevrons for this variant, turned off by default from mobile.
+				position: relative; // NOTE: Relative to the parent lower-nav-container div.
+				top: -18px;
+				right: initial;
+   				left: initial;
+    			justify-content: center;
+				.left-chev {
+
+					.dtlink.low-nav-a-left{
+				
+						img{
+							//NOTE: same issues as when adding the anchor links in the top menu. The inner most elment's event propagation was blocking the wrapping anchor link tag. Therefore needed to turn it's default event propagation behavior off with pointer events: none.
+							pointer-events: none;
+						} //end img  
+					} //end dtlink.low-nav-a-left
+					
+					position: inherit;
+					left: -21px; //pull chevron to the left a little
+					cursor: pointer;
+				} //end left-chev
+
+				.right-chev {
+
+					.dtlink.low-nav-a-right{
+				
+						img{
+							//NOTE: same issues as when adding the anchor links in the top menu. The inner most elment's event propagation was blocking the wrapping anchor link tag. Therefore needed to turn it's default event propagation behavior off with pointer events: none.
+							pointer-events: none;
+						} //end img  
+					} //end dtlink.low-nav-a-right
+
+					position: inherit;
+					right: -21px; //pull chevron to the right a little
+					cursor: pointer;
+				} //end right-chev
+
+			} //end nav-chevrons
+			.main-footer {
+				.main-footer__social-icons {
+					display: flex;
+					margin: 0px;
+					padding: 0px;
+					list-style: none;
+					text-decoration: none;
+					justify-content: center;
+					right: -4px; //NOTE: Design Variant
+
+				   //NOTE: UI/UX: ANIMATION & TRANSITIONS: 8 - Lower Social Media Icons - Appear and bounce effect
+				li {
+					#smi-yt,
+					#smi-b,
+					#smi-fb,
+					#smi-ig,
+					#smi-lk {
+						position: relative;
+					} //end img
+
+					#smi-yt {
+						
+						
+					} //end smi-yt
+					
+					#smi-yt:hover {
+						@include alt-lowerNav-hoverstate-gray;
+					} //end #smi-yt:hover
+
+					//======================================================
+
+					#smi-b {
+						
+						
+					} //end smi-b
+
+					#smi-b:hover {
+						@include alt-lowerNav-hoverstate-gray;
+					} //end #smi-b:hover
+
+					//======================================================
+
+
+
+					#smi-fb {
+					
+					} // end smi-fb
+
+					#smi-fb:hover {
+						@include alt-lowerNav-hoverstate-gray;
+					} //end #smi-fb:hover
+
+
+
+					//======================================================
+
+					#smi-ig {
+						
+					} //end smi-ig
+
+
+					#smi-ig:hover {
+						@include alt-lowerNav-hoverstate-gray;
+					} //end #smi-ig:hover
+					//======================================================
+
+					#smi-lk {
+						
+					} //end smi-lk
+
+
+					#smi-lk:hover {
+						@include alt-lowerNav-hoverstate-gray;
+					} //end #smi-lk:hover
+					//======================================================
+
+					position: relative;
+					margin-right: 10px;
+					cursor: pointer;
+				} //end li
+				} //end social-icons
+			} //end main-footer
+		} // end lower-nav-container
+
+		}//end lower-nav-wrapper
+
 
         	/*SECTION  ANIMATIONS & TRANSITIONS 
 		ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >1920px */

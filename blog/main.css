@@ -62,13 +62,21 @@ body {
   position: relative;
 }
 
+#logo.dtlink {
+  width: 94px;
+  height: 60px;
+  position: absolute;
+  left: 27px;
+  z-index: 9;
+}
+
 .sitenav__logo {
   position: absolute;
   width: 94px;
   height: 53px;
   top: 0px;
-  left: 26px;
   z-index: 7;
+  pointer-events: none;
 }
 
 .sitenav__contactNum {
@@ -95,7 +103,7 @@ body {
 }
 
 .sitenav__links {
-  z-index: 11;
+  z-index: 14;
   left: 25vw;
   position: fixed;
   padding: 0px;
@@ -165,7 +173,7 @@ body {
   background-color: rgba(0, 0, 0, 0.9);
   width: 100vw;
   height: 100vh;
-  z-index: 10;
+  z-index: 13;
 }
 
 .mainnav__links {
@@ -201,9 +209,8 @@ body .page-container .page__surface {
 }
 body .main-container .blog-box-group {
   position: relative;
-  top: 40px;
+  top: 15vh;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   align-content: center;
   flex-direction: column;
@@ -223,7 +230,6 @@ body .main-container .blog-box-group #blog-box-3 {
 body .main-container .blog-box__link {
   text-decoration: none;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   align-content: center;
   flex-direction: column;
@@ -550,11 +556,19 @@ body .main-container .blog-box__link .blog-box__text-container {
   .sitenav {
     display: none;
   }
+  #logo.dtlink {
+    display: block;
+    position: absolute;
+    width: 144px;
+    height: 94px;
+    left: 168px;
+    z-index: 9;
+  }
   .sitenav__logo {
     width: 94px;
     height: 53px;
     top: 10px;
-    left: 166px;
+    left: 0px;
     pointer-events: none;
     z-index: 7;
   }
@@ -566,9 +580,14 @@ body .main-container .blog-box__link .blog-box__text-container {
     display: flex;
     list-style: none;
     position: absolute;
-    top: 10px;
-    left: 410px;
     z-index: 15;
+    width: 100vw;
+    justify-content: center;
+    top: 5vh;
+    padding-left: 0px;
+  }
+  .mainnav__links .navlinks__wrapper {
+    display: flex;
   }
   .mainnav__links a {
     font-family: proxima-nova, Arial, Helvetica, sans-serif;
@@ -612,10 +631,6 @@ body .main-container .blog-box__link .blog-box__text-container {
   }
   body .page-flipped {
     transform: translateX(0.5%) rotateY(90deg);
-  }
-  body .mainnav__links {
-    top: 32px;
-    left: 472px;
   }
   body .mainnav__links a {
     margin-top: 0px;
@@ -781,12 +796,13 @@ body .main-container .blog-box__link .blog-box__text-container {
     height: 94px;
     top: 10px;
     left: 166px;
+    z-index: 9;
   }
   .sitenav__logo {
     width: 144px;
     height: 77px;
     top: 3px;
-    left: 166px;
+    left: 0px;
     pointer-events: none;
   }
   .sitenav__contactNum {
@@ -798,8 +814,6 @@ body .main-container .blog-box__link .blog-box__text-container {
     display: flex;
     list-style: none;
     position: absolute;
-    top: 10px;
-    left: 460px;
     z-index: 15;
   }
   .mainnav__links a {
@@ -844,10 +858,6 @@ body .main-container .blog-box__link .blog-box__text-container {
   }
   body .page-flipped {
     transform: translateX(0.5%) rotateY(90deg);
-  }
-  body .mainnav__links {
-    top: 32px;
-    left: 522px;
   }
   body .mainnav__links a {
     margin-top: 0px;
@@ -1013,6 +1023,7 @@ body .main-container .blog-box__link .blog-box__text-container {
     height: 94px;
     top: 10px;
     left: 166px;
+    z-index: 9;
   }
   .sitenav__logo {
     width: 144px;
@@ -1031,8 +1042,6 @@ body .main-container .blog-box__link .blog-box__text-container {
     display: flex;
     list-style: none;
     position: absolute;
-    top: 10px;
-    left: 620px;
     z-index: 15;
   }
   .mainnav__links a {
@@ -1078,10 +1087,6 @@ body .main-container .blog-box__link .blog-box__text-container {
   }
   body .page-flipped {
     transform: translateX(0.5%) rotateY(90deg);
-  }
-  body .mainnav__links {
-    top: 26px;
-    left: 698px;
   }
   body .mainnav__links a {
     margin-top: 0px;

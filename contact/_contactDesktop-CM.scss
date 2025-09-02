@@ -32,8 +32,8 @@
 
 
 		.mainnav__links {
-			top: 32px;
-			left: 522px;
+			// top: 32px;
+			// left: 522px;
 
 			a {
 				margin-top: 0px;
@@ -95,80 +95,170 @@
 					.contact-container {
 						//NOTE design varitant
 						//NOTE design varitant
-						position: absolute; // better fit for the arrangement as relative is shifting the width of the container.
-						top: -165px;
-						right: 89px;
+						// position: absolute; // better fit for the arrangement as relative is shifting the width of the container.
+						// top: -165px;
+						// right: 89px;
+						width: 41vw;
+    					left: 50vw;  //NOTE design varitant widens the width of the container to allow the nomad logo branding to fit within the flexbox row with the second hero copy. Will wrap the logo branding under otherwise. 
 
-						.contact-heroCopy {
-							//NOTE design varitant
-							font-size: $text3x-04; //48.7.55px;
-							text-align: left;
-							position: relative;
-							left: -53px;
+						.contact-heroCopy{
+							display: none;
+						}// contact-heroCopy
+		
+						.contactheroimg{
+							display: none;
+						}//contact-heroimg
 
-							//NOTE: UI/UX: ANIMATION & TRANSITIONS: 2 - About Hero - Typewriter effect
-							.tw-fx-1 {
-								display: inline-block;
-								overflow: hidden;
+						// .contact-heroCopy {
+						// 	//NOTE design varitant
+						// 	font-size: $text3x-04; //48.7.55px;
+						// 	text-align: left;
+						// 	position: relative;
+						// 	left: -53px;
 
-								white-space: nowrap;
-								font-size: inherit; //take it from the original font-size, easier to scale.
-								width: 0;
-								animation: type1 1.6s steps(21, end) 0.8s forwards,
-									cursor-off 1 linear 0.2s 2.4s forwards;
-								/*name -> 
-								iteration-count-> 
-								timing-function->
-								duration->
-								delay->
-								fill-mode*/
-							} //end tw-fx-1
+						// 	//NOTE: UI/UX: ANIMATION & TRANSITIONS: 2 - About Hero - Typewriter effect
+						// 	.tw-fx-1 {
+						// 		display: inline-block;
+						// 		overflow: hidden;
 
-							.tw-fx-2 {
-								position: relative;
-								top: -30px;
-								display: inline-block;
-								overflow: hidden;
+						// 		white-space: nowrap;
+						// 		font-size: inherit; //take it from the original font-size, easier to scale.
+						// 		width: 0;
+						// 		animation: type1 1.6s steps(21, end) 0.8s forwards,
+						// 			cursor-off 1 linear 0.2s 2.4s forwards;
+						// 		/*name -> 
+						// 		iteration-count-> 
+						// 		timing-function->
+						// 		duration->
+						// 		delay->
+						// 		fill-mode*/
+						// 	} //end tw-fx-1
 
-								white-space: nowrap;
-								font-size: inherit; //take it from the original font-size, easier to scale.
-								width: 0;
+						// 	.tw-fx-2 {
+						// 		position: relative;
+						// 		top: -30px;
+						// 		display: inline-block;
+						// 		overflow: hidden;
 
-								animation: type2 1.5s steps(20, end) 3s forwards,
-									cursor-off 1 linear 0.2s 4.4s forwards;
-								/*name -> 
-								iteration-count-> 
-								timing-function->
-								duration->
-								delay->
-								fill-mode*/
-							} //end tw-fx-2
+						// 		white-space: nowrap;
+						// 		font-size: inherit; //take it from the original font-size, easier to scale.
+						// 		width: 0;
+
+						// 		animation: type2 1.5s steps(20, end) 3s forwards,
+						// 			cursor-off 1 linear 0.2s 4.4s forwards;
+						// 		/*name -> 
+						// 		iteration-count-> 
+						// 		timing-function->
+						// 		duration->
+						// 		delay->
+						// 		fill-mode*/
+						// 	} //end tw-fx-2
 
 
 
-						} // end of contact-heroCopy
+						// } // end of contact-heroCopy
 
-						.contactheroimg {
-							//NOTE design varitant
-							margin: 25px auto;
-							padding: 0px;
-							position: relative;
-							top: -26px;
-							left: 145px; //reseting left positioning from mobile settings.
-							width: 218px; //217.5px - //25% of dimensions in 1920px vaiant.
-							height: 103px; //102.75 - //25% of dimensions in 1920px vaiant.
+						// .contactheroimg {
+						// 	//NOTE design varitant
+						// 	margin: 25px auto;
+						// 	padding: 0px;
+						// 	position: relative;
+						// 	top: -26px;
+						// 	left: 145px; //reseting left positioning from mobile settings.
+						// 	width: 218px; //217.5px - //25% of dimensions in 1920px vaiant.
+						// 	height: 103px; //102.75 - //25% of dimensions in 1920px vaiant.
 
-							opacity: 0; //set inital state for animation
-							animation: logo-reveal 1 ease-in 1s 5s forwards;
-						}//end contactheroimg
+						// 	opacity: 0; //set inital state for animation
+						// 	animation: logo-reveal 1 ease-in 1s 5s forwards;
+						// }//end contactheroimg
 					
+						.snd-line-branding-container {
+							display: flex !important;
+							flex-direction: row;
+							flex-wrap: wrap;
+							justify-content: flex-start;
+							.contact-heroCopy2 {
+								margin: 0px;
+								padding: 0px;
+								//NOTE design varitant
+								font-family: $font-list-h;
+								font-size: $text3x-04; //48.7.55px;
+								font-weight: nth($f-weights, 1);
+								color: #fff;
+								text-align: left;
+								position: relative;
+								
+								
+								// left: -2px;
+		
+			
+								//NOTE: UI/UX: ANIMATION & TRANSITIONS: 2 - About Hero - Typewriter effect
+								.tw-fx-1 {
+									display: inline-block;
+									overflow: hidden;
+			
+									white-space: nowrap;
+									font-size: inherit; //take it from the original font-size, easier to scale.
+									width: 0;
+									animation: type1 1.6s steps(21, end) 0.8s forwards,
+										cursor-off 1 linear 0.2s 2.4s forwards;
+									/*name -> 
+											iteration-count-> 
+											timing-function->
+											duration->
+											delay->
+											fill-mode*/
+								} //end tw-fx-1
+							} // end of contact-heroCopy2
+		
+		
+							.contact-heroCopy2 {
+								
+								
+								.tw-fx-2 {
+									position: relative;
+									// top: -30px;
+									display: inline-block;
+									overflow: hidden;
+		
+									white-space: nowrap;
+									font-size: inherit; //take it from the original font-size, easier to scale.
+									width: 0;
+		
+									animation: type2 1.5s steps(20, end) 3s forwards,
+										cursor-off 1 linear 0.2s 4.4s forwards;
+									/*name -> 
+										iteration-count-> 
+										timing-function->
+										duration->
+										delay->
+										fill-mode*/
+								} //end tw-fx-2
+							} //contact-heroCopy2
+							
+							.contactheroimg-alt {
+								//NOTE design varitant
+								margin: 0px;
+								padding: 0px;
+								position: relative;
+								top: -1.2vh;
+								  left: -0.7vw;
+								// top: -2px;
+								// left: 107px; //reseting left positioning from mobile settings.
+								width: 218px; //217.5px - //25% of dimensions in 1920px vaiant.
+								height: 103px; //102.75 - //25% of dimensions in 1920px vaiant.
+		
+								opacity: 0; //set inital state for animation
+								animation: logo-reveal 1 ease-in 1s 5s forwards;
+							} //end contactheroimg
+						} //snd-line-branding-container
 
 					.contact-form {
 
 						//NOTE: design variant:
-						position: relative; // added relative positioning for redundancy for style sheet can stand independently.
-						top: -5px;
-						left: -52px;
+						// position: relative; // added relative positioning for redundancy for style sheet can stand independently.
+						// top: -5px;
+						// left: -52px;
 
 						//NOTE: UI/UX: ANIMATION & TRANSITIONS:
 						opacity: 0; //
@@ -218,6 +308,7 @@
 									font-size: $text1x-37; //22.5px; - //25% of dimensions in 1920px
 
 									cursor: pointer;
+									color: #644e0a;
 								} //end mobile-cta-footer__button						
 							} //end contact-form-element
 
@@ -415,132 +506,160 @@
 			animation: info-tt-pulse 1.5s linear 9.5s 25;
 		} //end tt-circle-pulse
 
-
-
-			.lower-nav-container {
-				display: block !important;
-				position: fixed;
-				bottom: 39px; //NOTE: placement to match the home, projects, and about positioning of the nav.
-				left: 50vw;
-
-				
-				//NOTE: Design variant: Used the container for positioning the elements of the lower nav. With it being absolutely placed, we can use relative positioning for the child elements (chevrons and the social icons)
-
-				.nav-chevrons {
-					position: relative; // NOTE: Relative to the parent lower-nav-container div.
-					top: -18px;
-					right: 16px;
-
-					//NOTE: Design variant:
-					display: block !important;
-					.left-chev {
-
-						.dtlink.low-nav-a-left{
-					
-							img{
-								//NOTE: same issues as when adding the anchor links in the top menu. The inner most elment's event propagation was blocking the wrapping anchor link tag. Therefore needed to turn it's default event propagation behavior off with pointer events: none.
-								pointer-events: none;
-							} //end img  
-						} //end dtlink.low-nav-a-left
-
-						position: inherit;
-						left: -21px; //pull chevron to the left a little
-						cursor: pointer;
-					} //end left-chev
-
-					.right-chev {
-
-						.dtlink.low-nav-a-right{
-					
-							img{
-								//NOTE: same issues as when adding the anchor links in the top menu. The inner most elment's event propagation was blocking the wrapping anchor link tag. Therefore needed to turn it's default event propagation behavior off with pointer events: none.
-								pointer-events: none;
-							} //end img  
-						} //end dtlink.low-nav-a-right
-
-						position: inherit;
-						right: -21px; //pull chevron to the right a little
-						cursor: pointer;
-					} //end right-chev
-				} //end nav-chevrons
-
-				.main-footer {
-					.main-footer__social-icons {
-						display: flex;
-						margin: 0px;
-						padding: 0px;
-						list-style: none;
-						text-decoration: none;
-						justify-content: center;
-						//NOTE: Design vaieant: The outer container creates an offset, so this corrects for it. Centering the social media icons.
-						position: relative;
-						right: 4.7vw;
-
-						li {
-							margin-right: 10px;
-						} //end li
-
-						//NOTE: UI/UX: ANIMATION & TRANSITIONS: 8 - Lower Social Media Icons - Appear and bounce effect
-						li {
-							#smi-yt,
-							#smi-b,
-							#smi-fb,
-							#smi-ig,
-							#smi-lk {
-								position: relative;
-							} //end img
-
-							#smi-yt {
-							} //end smi-yt
-
-							#smi-yt:hover {
-								@include lowerNav-hoverstate;
-							} //end #smi-yt:hover
-
-							//======================================================
-
-							#smi-b {
-							} //end smi-b
-
-							#smi-b:hover {
-								@include lowerNav-hoverstate;
-							} //end #smi-b:hover
-
-							//======================================================
-
-							#smi-fb {
-							} // end smi-fb
-
-							#smi-fb:hover {
-								@include lowerNav-hoverstate;
-							} //end #smi-fb:hover
-
-							//======================================================
-
-							#smi-ig {
-							} //end smi-ig
-
-							#smi-ig:hover {
-								@include lowerNav-hoverstate;
-							} //end #smi-ig:hover
-							//======================================================
-
-							#smi-lk {
-							} //end smi-lk
-
-							#smi-lk:hover {
-								@include lowerNav-hoverstate;
-							} //end #smi-lk:hover
-							//======================================================
-
-							position: relative;
-							margin-right: 10px;
-							cursor: pointer;
-						} //end li
-					} //end social-icons
-				} //end main-footer
-			} // end lower-nav-elements
 		} // end main-container
+		.lower-nav-wrapper{
+
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			position: absolute;
+			width: 100vw;
+			top: 86.5vh;
+  
+	   .lower-nav-container {
+		  display: flex !important;
+			  //NOTE: design variant: positioned rom the right so needed the adjustment. Or will seem like display is still set to none.
+		  bottom: 41px;
+		  
+  
+		  width: 300px; //NOTE: prevents the horizontal scroll bars issue from before. Define an area which the conatiner should occupy on the page. 
+	 
+		  
+		  
+  
+		  //NOTE: Design variant: Used the container for positioning the elements of the lower nav. With it being absolutely placed, we can use relative positioning for the child elements (chevrons and the social icons)
+		 
+  
+		  .nav-chevrons {
+			  display: flex !important; //NOTE: design variant: Turns on the nav chevrons for this variant, turned off by default from mobile.
+			  position: relative; // NOTE: Relative to the parent lower-nav-container div.
+			  top: -18px;
+			  right: 1px; //NOTE: Design variant:
+			  
+			  .left-chev {
+  
+				  .dtlink.low-nav-a-left{
+			  
+					  img{
+						  //NOTE: same issues as when adding the anchor links in the top menu. The inner most elment's event propagation was blocking the wrapping anchor link tag. Therefore needed to turn it's default event propagation behavior off with pointer events: none.
+						  pointer-events: none;
+					  } //end img  
+				  } //end dtlink.low-nav-a-left
+				  
+				  position: inherit;
+				  left: -21px; //pull chevron to the left a little
+				  cursor: pointer;
+			  } //end left-chev
+  
+			  .right-chev {
+  
+				  .dtlink.low-nav-a-right{
+			  
+					  img{
+						  //NOTE: same issues as when adding the anchor links in the top menu. The inner most elment's event propagation was blocking the wrapping anchor link tag. Therefore needed to turn it's default event propagation behavior off with pointer events: none.
+						  pointer-events: none;
+					  } //end img  
+				  } //end dtlink.low-nav-a-right
+  
+				  position: inherit;
+				  right: -21px; //pull chevron to the right a little
+				  cursor: pointer;
+			  } //end right-chev
+  
+  
+		  } //end nav-chevrons
+  
+		  .main-footer {
+			  .main-footer__social-icons {
+				  display: flex;
+				  margin: 0px;
+				  padding: 0px;
+				  list-style: none;
+				  text-decoration: none;
+				  justify-content: center;
+				  left: 3px; //NOTE: design variant
+			   
+  
+				  li {
+					  margin-right: 10px;
+				  } //end li
+  
+					  //NOTE: UI/UX: ANIMATION & TRANSITIONS: 8 - Lower Social Media Icons - Appear and bounce effect
+	  li {
+		  #smi-yt,
+		  #smi-b,
+		  #smi-fb,
+		  #smi-ig,
+		  #smi-lk {
+			  position: relative;
+		  } //end img
+  
+		  #smi-yt {
+			  
+			  
+		  } //end smi-yt
+		  
+		  #smi-yt:hover {
+			  @include alt-lowerNav-hoverstate-gray;
+		  } //end #smi-yt:hover
+  
+		  //======================================================
+  
+		  #smi-b {
+			  
+			  
+		  } //end smi-b
+  
+		  #smi-b:hover {
+			  @include alt-lowerNav-hoverstate-gray;
+		  } //end #smi-b:hover
+  
+		  //======================================================
+  
+  
+  
+		  #smi-fb {
+		  
+		  } // end smi-fb
+  
+		  #smi-fb:hover {
+			  @include alt-lowerNav-hoverstate-gray;
+		  } //end #smi-fb:hover
+  
+  
+  
+		  //======================================================
+  
+		  #smi-ig {
+			  
+		  } //end smi-ig
+  
+  
+		  #smi-ig:hover {
+			  @include alt-lowerNav-hoverstate-gray;
+		  } //end #smi-ig:hover
+		  //======================================================
+  
+		  #smi-lk {
+			  
+		  } //end smi-lk
+  
+  
+		  #smi-lk:hover {
+			  @include alt-lowerNav-hoverstate-gray;
+		  } //end #smi-lk:hover
+		  //======================================================
+  
+		  position: relative;
+		  margin-right: 10px;
+		  cursor: pointer;
+	  } //end li
+			  } //end social-icons
+		  } //end main-footer
+	  } // end lower-nav-elements
+  
+	  }//end lower-nav-wrapper
+
 
 			/*SECTION  ANIMATIONS & TRANSITIONS 
 		ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >1920px */
@@ -593,7 +712,7 @@
 				border-right: 0.15em solid #fff;
 			}
 			100% {
-				width: 73%;
+				width: 100%;
 				border-right: 0.15em solid #fff;
 			}
 		}
@@ -653,12 +772,12 @@
 
 			//NOTE: the top position values based on the top-position value given on contact form. top: -105px
 			0% {
-				top: -84px;
+				top: -24px;
 			}
 
 
 			100% {
-				top: -64px;
+				top: -4px;
 			}
 		}//end contact-form-animate
 		//--------------------------

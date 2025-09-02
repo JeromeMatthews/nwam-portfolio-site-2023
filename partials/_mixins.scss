@@ -20,6 +20,14 @@
 	font-style: normal;
 }
 
+//NOTE: MODIFIED: OCT  30th 2024: ADDED Mini mobile variant
+
+@mixin heroCopyMini{
+	font-family: $font-list-h;
+	font-weight: nth($f-weights, 2);
+	font-style: normal;
+}
+
 @mixin heroCopyMobile-p {
 	@include heroCopy;
 	font-size: $text2x-6; //33px;
@@ -66,7 +74,6 @@
 
 @mixin flexMix-col {
 	display: flex;
-		flex-direction: row;
 		flex-wrap: wrap;
 		align-content: center;
 		flex-direction: column;

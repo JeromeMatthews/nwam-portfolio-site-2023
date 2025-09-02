@@ -27,6 +27,9 @@
 	<body>
 	<!--NOTE: UX/UI PAGE TURN NAVIGATION TRANSITION ELEMENTS -->
 	<div class="page-container">
+
+
+		
 		<div class="page__surface"></div><!-- /page-surface -->
 
 
@@ -36,7 +39,7 @@
 		<header class="header">
 			<nav class="sitenav-container">
 				<div class="sitenav-logo-contact-container">
-					<a id="logo" class="dtlink"href="/index.html">
+					<a id="logo" class="dtlink" href="/index.html">
 						<img
 							class="sitenav__logo"
 							src="/img/img-mobile-p/Nomad-orange.png"
@@ -86,8 +89,7 @@
 <!-- NAVIGATION: TABLET - > DESKTOP RANGE -->
 					<!--NOTE: Added the class dtlink to flag all the links that should trigger the animation omitting the tablet and mobile level links-->
 					<ul class="mainnav__links">
-						
-							
+						<div class="navlinks__wrapper">
 						<li>
 							<div id="mainnav__links-animate-c-1">
 
@@ -151,7 +153,8 @@
 						</div><!-- mn-blog-->
 					</div><!-- mainnav__links-animate-c-4-->
 						</li>
-				</ul><!-- end Ul-->
+					</div><!-- navlinks__wrapper -->
+					</ul><!-- end Ul-->
 				<!-- end Ul-->
 			</nav>
 
@@ -172,35 +175,53 @@
 						 				 
 					</h1>
 				</article>
+			</section><!-- end about-hero-->
 				<!-- end about-hero -->
 
+			<!-- ===========================================================-->
+
+					<!--ATF Landing prompt BELOW 300px Device width: -->
+					<!--Remains unactivated unless device width threshold is found-->
+			<section class="alt-about-hero" style:"display:none;">
+				<article class="alt-about-hero__copy">
+					<h1 class="alt-about-hero__text">
+						With all this<br> 
+						talk about stories <br>
+						you must be curious, <br> 
+						what's nomad's story? 
+						 				 
+					</h1>
+				</article>
+			</section><!--end alt-about-hero -->
+
+
+
 				<!-- Infomation tooltip section -->
-				
 				<!--Tool Tip-->
 				<!-- <div class="tt-circle-pulse"></div> -->
-				<div class="tt-circle tt-click"><!-- end tt-circle-pulse-->
-					<span class="tt-circle__icon">i</span><!-- end tt-circle__icon-->
+				<div class="tt-circle tt-click" style="display:none;"><!-- end tt-circle-pulse-->
+					<span class="tt-circle__icon" style="display:none;">i</span><!-- end tt-circle__icon-->
 				</div><!-- end tt-circle -->
 				<!--Tool Tip-->
 
 				<!--Information: background-image info -->
-				<div class="tt-bgimg-circle-pulse"></div>
-				<div class="tt-bgimg-circle tt-click"><!-- end tt-circle-pulse-->
-					<span class="tt-bgimg-circle__icon">?</span><!-- end tt-circle__icon-->
+				<div class="tt-bgimg-circle-pulse" style="display:none;"></div>
+				<div class="tt-bgimg-circle tt-click" style="display:none;"><!-- end tt-circle-pulse-->
+					<span class="tt-bgimg-circle__icon" style="display:none;">?</span><!-- end tt-circle__icon-->
 				</div><!-- end tt-circle -->
 				<!--Information: background-image info -->
 
 				<!--Background-Image Link Photographer credit: -->
-				<div class="author-info">
+				<div class="author-info" style="display:none;">
 					<p>
 						Source reference: photo by <a class="author-info__name" href="https://unsplash.com/@neom" target="_blank">NEOM</a> on <a class="author-info__url" href="https://unsplash.com/" target="_blank">Unsplash.com</a>
 					</p>
 				</div><!-- end author-info -->
-
 				<!-- end Infomation tooltip section -->
 			
 				
-			</section><!-- end about-hero-->
+
+			
 				
 			<div class="lower-nav-container" style="display:none;">
 				<!-- Lower navigation for wider viewports. Bascially tablet and above.
@@ -245,172 +266,185 @@
 
 			
 			</div><!-- lower-nav-container -->
-		
 			<!--ATF Landing prompt -->
 
+
+
+
+
 			<!--BTF Full backstory -->
-			<section class="body-sect-1" id="about-body-sect-1">
-				<article class="body-sect-1-art">
-					<h1 class="body-sect-1__head">WHY WE DO, WHAT WE DO</h1>
-
-					<p class="body-sect-1__text">
-						We believe that there’s a story to be told in everything done. That in business it’s the story behind the product that drives acceptance and following. Nomad believes in telling those stories, in seeking and developing those narratives with clients.
-					
-						We seek to do this through the use of digital mediums for sharing the story that a client wants to tell, the product they will share with the wider world, or the cause they wish to champion.
-					</p>
-
-					<p class="body-sect-1__text">
-						Nomad believes in telling those stories. Seeking and developing those narratives. The experience of moving a project from concept  from to fruition. A 
-						passion for development in all its aspects, this expands beyond the realm of just business. It’s a predominant thought process we adhere too, a way of
-						life that we subscribe too. For us, it’s all about , the in betweenness of getting from A to B and the magic that takes place on the way. We’re all about improvement and growth here, having a kaizen* thought process to our work and lives..
-					</p>
-
-					<br />
-
-					<p class="body-sect-1__text">
-						<strong>*Kaizen is the practice of continuous improvement.</strong> <br />
-						Kaizen was originally introduced to the West by Masaaki Imai in his book
-						<i>
-							<cite
-								cite="https://www.amazon.com/Kaizen-Key-Japans-Competitive-Success/dp/007554332X"
-								><strong
-									>Kaizen: The Key to Japan's Competitive Success in 1986.</strong
-								>
-							</cite>
-						</i>
-					</p>
-				</article>
-				<!-- end body-sect-1-art -->
-			</section>
-			<!-- end body-sect-1 -->
-
-			<section class="body-sect-2">
-				<article class="body-sect-2-art">
-					<h1 class="body-sect-2__head">Where this came from…</h1>
-
-					<p class="body-sect-2__text">
-						Growing up I had quite a few interests, I was a widely open-minded child who
-						found interests in many topics, I did quite a bit of hobbies that while at
-						the time felt mutually exclusive enough, later started to emerge to me as
-						more and more connected and integrated. My biggest endeavors always involved
-						some discipline, whether purely artistic or physical in nature, there was
-						always a deep interest in the creative and iterative processes that
-						accompanied practiced study of something. I grew to love observing myself
-						rise to creative challenges and developing skill sets in a number of
-						creative practices.
-					</p>
-
-					<p class="body-sect-2__text">
-						I danced, acted, sang, drew, painted, and practiced creative writing along
-						with quite a bit of other creative indulgencies. <br />
-
-						Chief among my interests were <strong>technology and media</strong>. I sat trying to figure out what was the defining thing that made me enjoy the practice of so many interests, why would it be so intriguing to start anew on yet another project, or script, or rehearsal for a performance, or to aim to hit a new
-						training goal or learn a new acrobatic move or trick and what connected this very visceral feeling I always had in pursuit of them. Something stood out
-						to me. It was how in all instances, regardless of the endeavor, a common
-						theme occurred.
-					</p>
-
-					<p class="body-sect-2__text">
-						I loved the process of doing these things as much as I loved to do them
-						themselves… The experiences of being able to take an idea about doing
-						something, putting it into practice, and then witnessing how those ideas
-						grew, morph, and mature always fascinated me. That’s when I knew I
-						understood, <strong>It’s about the journey</strong> , about the in-betweens
-						of experience.
-					</p>
-				</article>
-				<!-- end body-sect-1-art -->
-			</section>
-			<!-- end body-sect-1 -->
-
-			<section class="body-sect-3">
-				<article class="body-sect-3-art">
-					<h1 class="body-sect-3__head">I needed to start with why</h1>
-
-					<p class="body-sect-3__text">
-						I came across a book that also had a major impact on why I chose to use this
-						thought process as the pillar for my company’s statements. “Start with Why”
-						by Simon Sinek.
-					</p>
-
-					<p class="body-sect-3__text">
-						In it he explains how some of the most successful brands of the world came
-						to be the way they are and why companies such as Apple and Microsoft can
-						dominate cross – industry markets and have such huge impacts on the world.
-						These companies know why it is they do what they do, it’s a belief in what
-						they come together to produce that permeates throughout those organizations,
-						into their products and services and into the physic of their customers.
-
+			<div class="article-container">
+				<section id="about-body-sect-1" class="body-sect-1">
+					<article  class="article__content body-sect-1-art">
+						<h1  class="article-title body-sect-1__head">WHY WE DO, WHAT WE DO</h1>
+	
+						<p  class="article-text body-sect-1__text">
+							We believe that there’s a story to be told in everything done. That in business it’s the story behind the product that drives acceptance and following. Nomad believes in telling those stories, in seeking and developing those narratives with clients.
 						
-						It explains why people trust companies such as those with a level of loyalty
-						that could rival religious fervor in some instances. And for companies that
-						do get their Why right, and have it at the fore-front of their business
-						share similar successes in whichever industry they find themselves in.
-					</p>
-					<p class="body-sect-3__text">
-						When I read this and begin to understand the concepts, I knew that nomad
-						needed to communicate its purpose in the same fashion as well, we seek to
-						speak about what moves us to do the things we do. What matters to us and
-						what we want to contribute to the world while we’re here.
-
+							We seek to do this through the use of digital mediums for sharing the story that a client wants to tell, the product they will share with the wider world, or the cause they wish to champion.
+						</p>
+	
+						<p  class="article-text body-sect-1__text">
+							Nomad believes in telling those stories. Seeking and developing those narratives. The experience of moving a project from concept  from to fruition. A 
+							passion for development in all its aspects, this expands beyond the realm of just business. It’s a predominant thought process we adhere too, a way of
+							life that we subscribe too. For us, it’s all about , the in betweenness of getting from A to B and the magic that takes place on the way. We’re all about improvement and growth here, having a kaizen* thought process to our work and lives..
+						</p>
+	
 						<br />
-						<br />
+	
+						<p class="article-text body-sect-1__text">
+							<strong>*Kaizen is the practice of continuous improvement.</strong> <br />
+							Kaizen was originally introduced to the West by Masaaki Imai in his book
+							<i>
+								<cite
+									cite="https://www.amazon.com/Kaizen-Key-Japans-Competitive-Success/dp/007554332X"
+									><strong
+										>Kaizen: The Key to Japan's Competitive Success in 1986.</strong
+									>
+								</cite>
+							</i>
+						</p>
+					</article>
+					<!-- end body-sect-1-art -->
+				</section>
+			</div><!-- article-container -->
 
-						For Apple they want you to “think different”...<br />
-						For Microsoft it’s all about: “You’re potential. Our passion." <br />At
-						Nomad I would love to: “Tell your story”...
-					</p>
-				</article>
-				<!-- end body-sect-1-art -->
-			</section>
-			<!-- end body-sect-1 -->
 
+			<div class="article-container">
+				<section id="about-body-sect-2" class="body-sect-2">
+					<article  class="article__content body-sect-2-art">
+						<h1  class="article-title body-sect-2__head">Where this came from…</h1>
+	
+						<p  class="article-text body-sect-2__text">
+							Growing up I had quite a few interests, I was a widely open-minded child who
+							found interests in many topics, I did quite a bit of hobbies that while at
+							the time felt mutually exclusive enough, later started to emerge to me as
+							more and more connected and integrated. My biggest endeavors always involved
+							some discipline, whether purely artistic or physical in nature, there was
+							always a deep interest in the creative and iterative processes that
+							accompanied practiced study of something. I grew to love observing myself
+							rise to creative challenges and developing skill sets in a number of
+							creative practices.
+						</p>
+	
+						<p class="article-text body-sect-2__text">
+							I danced, acted, sang, drew, painted, and practiced creative writing along
+							with quite a bit of other creative indulgencies. <br />
+	
+							Chief among my interests were <strong>technology and media</strong>. I sat trying to figure out what was the defining thing that made me enjoy the practice of so many interests, why would it be so intriguing to start anew on yet another project, or script, or rehearsal for a performance, or to aim to hit a new
+							training goal or learn a new acrobatic move or trick and what connected this very visceral feeling I always had in pursuit of them. Something stood out
+							to me. It was how in all instances, regardless of the endeavor, a common
+							theme occurred.
+						</p>
+	
+						<p class="article-text body-sect-2__text">
+							I loved the process of doing these things as much as I loved to do them
+							themselves… The experiences of being able to take an idea about doing
+							something, putting it into practice, and then witnessing how those ideas
+							grew, morph, and mature always fascinated me. That’s when I knew I
+							understood, <strong>It’s about the journey</strong> , about the in-betweens
+							of experience.
+						</p>
+					</article>
+					<!-- end body-sect-1-art -->
+				</section>
+			</div><!-- article-container -->
+
+
+			<div class="article-container">
+				<section id="about-body-sect-3"class="body-sect-3">
+					<article  class="article__content body-sect-3-art">
+						<h1  class="article-title body-sect-3__head">I needed to start with why</h1>
+	
+						<p  class="article-text body-sect-3__text">
+							I came across a book that also had a major impact on why I chose to use this
+							thought process as the pillar for my company’s statements. “Start with Why”
+							by Simon Sinek.
+						</p>
+	
+						<p class="article-text body-sect-3__text">
+							In it he explains how some of the most successful brands of the world came
+							to be the way they are and why companies such as Apple and Microsoft can
+							dominate cross – industry markets and have such huge impacts on the world.
+							These companies know why it is they do what they do, it’s a belief in what
+							they come together to produce that permeates throughout those organizations,
+							into their products and services and into the physic of their customers.
+	
+							
+							It explains why people trust companies such as those with a level of loyalty
+							that could rival religious fervor in some instances. And for companies that
+							do get their Why right, and have it at the fore-front of their business
+							share similar successes in whichever industry they find themselves in.
+						</p>
+						<p class="article-text body-sect-3__text">
+							When I read this and begin to understand the concepts, I knew that nomad
+							needed to communicate its purpose in the same fashion as well, we seek to
+							speak about what moves us to do the things we do. What matters to us and
+							what we want to contribute to the world while we’re here.
+	
+							<br />
+							<br />
+	
+							For Apple they want you to “think different”...<br />
+							For Microsoft it’s all about: “You’re potential. Our passion." <br />At
+							Nomad I would love to: “Tell your story”...
+						</p>
+					</article>
+					<!-- end body-sect-1-art -->
+				</section>
+			</div><!-- article-container -->
+			
 			<!--BTF Full backstory -->
 
 			<div class="mobile-cta-footer">
-				<div class="mobile-cta-footer-branding">
-					<p class="mobile-cta-footer-branding__text-1">So, What's your story?...</p>
-					<p class="mobile-cta-footer-branding__text-2">Let's tell it, with</p>
+				<div class="mobile-footer-container">
+					<div class="mobile-cta-footer-branding">
+						<p class="mobile-cta-footer-branding__text-1">So, What's your story?...</p>
+						<p class="mobile-cta-footer-branding__text-2">Let's tell it, with</p>
+	
+						<img
+							class="mobile-cta-footer__logo"
+							src="/img/nomad-white.png"
+							alt="nomad-web- and-media-logo-white"
+							
+						/>
+					</div>
+					<!-- mobile-cta-footer -branding -->
+	
+					<a class="mobile-cta-footer__button" href="/contact/contact.html">
+						<span class="hero-text">share your story</span>
+					</a>
+					<ul class="mobile-cta-footer__sm-links">
+						<li>
+							<a href="#"
+								><img id="smi-yt" src="/img/sm-icons/icons8-youtube-30-white.svg" alt="youtube"
+							/></a>
+						</li>
+						<li>
+							<a href="#"
+								><img id="smi-b" src="/img/sm-icons/icons8-behance-30-white.svg" alt="behance"
+							/></a>
+						</li>
+						<li>
+							<a href="#"
+								><img id="smi-fb" src="/img/sm-icons/icons8-facebook-30-white.svg" alt="facebook"
+							/></a>
+						</li>
+						<li>
+							<a href="#"
+								><img id="smi-ig" src="/img/sm-icons/icons8-instagram-30-white.svg" alt="instagram"
+							/></a>
+						</li>
+						<li>
+							<a href="#"
+								><img id="smi-lk" src="/img/sm-icons/icons8-linkedin-30-white.svg" alt="linkedin"
+							/></a>
+						</li>
+					</ul>
 
-					<img
-						class="mobile-cta-footer__logo"
-						src="/img/img-tablet-p/nomad-black-tablet-p-cs-footer.png"
-						alt="nomad-web- and-media-logo-black-tablet-P"
-					/>
-				</div>
-				<!-- mobile-cta-footer -branding -->
-
-				<a class="mobile-cta-footer__button" href="/contact/contact.html">
-					<span class="hero-text">share your story</span>
-				</a>
-				<ul class="mobile-cta-footer__sm-links">
-					<li>
-						<a href="#"
-							><img id="smi-yt" src="/img/sm-icons/icons8-youtube-black.svg" alt="youtube"
-						/></a>
-					</li>
-					<li>
-						<a href="#"
-							><img id="smi-b" src="/img/sm-icons/icons8-behance-black.svg" alt="behance"
-						/></a>
-					</li>
-					<li>
-						<a href="#"
-							><img id="smi-fb" src="/img/sm-icons/icons8-facebook-black.svg" alt="facebook"
-						/></a>
-					</li>
-					<li>
-						<a href="#"
-							><img id="smi-ig" src="/img/sm-icons/icons8-instagram-black.svg" alt="instagram"
-						/></a>
-					</li>
-					<li>
-						<a href="#"
-							><img id="smi-lk" src="/img/sm-icons/icons8-linkedin-black.svg" alt="linkedin"
-						/></a>
-					</li>
-				</ul>
-			</div>
+				</div><!-- mobile-footer-container-->
+				
+			</div><!-- mobile-cta-footer-->
 		</main>
 		<!-- end main content-->
 

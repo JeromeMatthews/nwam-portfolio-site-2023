@@ -36,6 +36,20 @@
 		}
 	}
 
+	.atf-1,
+			.btf-2,
+			.btl,
+			.btl-content-block-1,
+			.btl-content-block-2,
+			.mobile-cta-footer {
+				position: relative;
+				width: 100%;
+				@include flexMix;
+				align-content: center;
+				
+				
+			}
+
 	body {
 
 		//NOTE: UI/UX: ANIMATION & TRANSITIONS: 1 - Page Background Image - Reveal effect
@@ -83,6 +97,7 @@
 
 				.cs-project__services {
 					padding: 0%;
+					
 					.cs-project__service {
 						font-family: $font-list-b;
 						font-weight: nth($f-weights, 3);
@@ -456,12 +471,22 @@
 
 			.btl-content-block__time {
 				//NOTE: design variant:
+
+				font-family: $font-list-h;
+				font-weight: nth($f-weights, 2);
+				font-style: normal;
+				position: relative;
+				
 				// top: -190px;
 				// left: 0px;
 			}
 
 			.btl-content-block__time__sub {
 				//NOTE: design variant:
+				font-family: $font-list-h;
+				font-weight: nth($f-weights, 2);
+				font-style: normal;
+				
 
 				// top: -240px;
 				// left: 0px;
@@ -469,12 +494,17 @@
 
 			.btl-content-block__sub {
 				//NOTE: design variant:
+				font-family: $font-list-b;
+				font-weight: nth($f-weights, 1);
+				
 				margin-left: 40px;
 				margin-right: 40px;
 			} //end btl-content-block__sub
 
 			.btl-content-block__text {
 				//NOTE: design variant:
+				font-family: $font-list-b;
+				font-weight: nth($f-weights, 3);
 				margin-left: 40px;
 				margin-right: 40px;
 			} //end btl-content-block__text
@@ -508,7 +538,7 @@
 			}
 
 			.mobile-cta-footer__button {
-				width: 379px;
+				//NOTE: width assignment not needed with flexbox
 				height: 74px;
 				background: #f5b600 0% 0% no-repeat padding-box;
 				box-shadow: 0px 2px 0px #000000;
@@ -519,11 +549,18 @@
 				font-style: normal;
 				font-size: $text1x-87; //30px;
 				position: relative;
-
+				text-decoration: none;
+				text-align: center;
+				display:flex;
 				.hero-text {
 					//NOTE: Design variant - slight adjustment for the text in the link styled like a button, to center it.
-					//Already has position relative inherited from parent stylesheet - main.scss.
-					top: 13px;
+					//Already has position relative inherited from parent stylesheet - main.scss. UPDATE: Aug 8th, 2024: given changes to base style sheet needed to re-declare some of the styling at the tablet landscape variant design.
+					
+					
+					position: relative;
+					margin: auto;
+					color: #000000;
+
 				} //end hero-text
 			}//end mobile-cta-footer__button
 

@@ -42,8 +42,8 @@
 
 
 		.mainnav__links {
-			top: 32px;
-			left: 522px;
+			// top: 32px;
+			// left: 522px;
 			// top: 26px;
 			// left: 698px;
 
@@ -115,222 +115,105 @@
 
 
 		.main-container{
+			width:100vw;
         
-                    .show-box {
-                        .show-box__title {
-                            //NOTE: Design variant
-                            font-size: $text2x-12; //33.75px = 34px - 25% of the dimensions of the 1920px variant.
-                        }
-                        .show-box__subtitle {
-                            //NOTE: Design variant: instansiated on large viewports.
-                            display: block !important;
-                            font-size: $text1x-64; //26.25px = 26px - 25% of the dimensions of the 1920px variant.
-                        }
-                        .show-box__text {
-                            //NOTE: Design variant
-                            top: -35px;
-                            font-size: $text1x-12; //18px - used. Base text size for all Desktop viewports. 
-                        } //end show-box__text
-                    } //end show-box
-        
-                    #show-box-1,
-                    #show-box-2,
-                    #show-box-3 {
-                        //NOTE: design variant
-                        width: 367.5px; //367.5 - 25% of the dimensions of the 1920px variant.
-                        height: 366px;//366 - 25% of the dimensions of the 1920px variant.
-                    } //end show-box-group styles
-        
-                    #show-box-1 {
-                        //NOTE: design variant
-                        background-image: url("/img/img-desktop-cm-1440/desktop-cm-ps-Natours.png");
-        
-                        //NOTE: Added the overlay to help strengthen the contrast of the text against the background image
-                        .show-box__overlay {
-                            @include showBoxOverlay;
-        
-                            //NOTE: design variant
-                            width: 367.5px; //367.5 - 25% of the dimensions of the 1920px variant.
-                            height: 366px;//366 - 25% of the dimensions of the 1920px variant.
-                        } //end show-box__overlay
+                   
 
-                        //NOTE: UI/UX ANIMATION & TRANSITIONS: 12 - Project Card Basic Reveal
-				        opacity: 0;// set the inintal state of the project show boxes visbility for animation
-				        animation: project-card-reveal 1s linear 3s forwards;
-                    } //end show-box-1
-        
-                    #show-box-2 {
-                        //NOTE: design variant
-                        // Scales since its an svg image.
-                        .show-box__overlay {
-                            @include showBoxOverlay;
-                            //NOTE: design variant
-                            width: 367.5px;//367.5 - 25% of the dimensions of the 1920px variant.
-                            height: 366px;//366 - 25% of the dimensions of the 1920px variant.
-                        } //end show-box__overlay
-
-                        	//NOTE: UI/UX ANIMATION & TRANSITIONS: 12 - Project Card Basic Reveal
-				            opacity: 0;// set the inintal state of the project show boxes visbility for animation
-				            animation: project-card-reveal 0.7s linear 3.3s forwards;
-                    } //end show-box-2
-        
-                    #show-box-3 {
-                        //NOTE: design variant
-                        background-image: url("/img/img-desktop-cm-1440/desktop-cm-ps-BEAM.png");
-                        .show-box__overlay {
-                            @include showBoxOverlay;
-                            //NOTE: design variant
-                            width: 367.5px;//367.5 - 25% of the dimensions of the 1920px variant.
-                            height: 366px;//366 - 25% of the dimensions of the 1920px variant.
-
-                           
-                        } //end show-box__overlay
-                         //NOTE: UI/UX ANIMATION & TRANSITIONS: 12 - Project Card Basic Reveal
-				            opacity: 0;// set the inintal state of the project show boxes visbility for animation
-				            animation: project-card-reveal 0.5s linear 3.5s forwards;
-                    } //end show-box-3
-        
-                    //specific placement for lower nav elements:
-                    .lower-nav-container {
-                        display: flex !important;
-							//NOTE: design variant: positioned rom the right so needed the adjustment. Or will seem like display is still set to none.
-                        bottom: 41px;
-						right: 569px;  //NOTE Design variant : Adjustment building up from Desktop Small.
-
-						width: 300px; //NOTE: prevents the horizontal scroll bars issue from before. Define an area which the conatiner should occupy on the page. 
-                        position: fixed;
+					.show-box__container{
+						// position: relative;
+						//   top: 4vh;
+			
 						
+				  
+						// text-align: center;
+						// display: flex;
+					   
+						// justify-content: center;
+						// align-items: center;
+						// flex-direction: row;
+						// flex-wrap: nowrap;
 
-                        //NOTE: Design variant: Used the container for positioning the elements of the lower nav. With it being absolutely placed, we can use relative positioning for the child elements (chevrons and the social icons)
-                       
-        
-                        .nav-chevrons {
-							display: flex !important; //NOTE: design variant: Turns on the nav chevrons for this variant, turned off by default from mobile.
-                            position: relative; // NOTE: Relative to the parent lower-nav-container div.
-                            top: -18px;
-                            right: 1px; //NOTE: Design variant:
-							
-                            .left-chev {
-
-                                .dtlink.low-nav-a-left{
-                            
-                                    img{
-                                        //NOTE: same issues as when adding the anchor links in the top menu. The inner most elment's event propagation was blocking the wrapping anchor link tag. Therefore needed to turn it's default event propagation behavior off with pointer events: none.
-                                        pointer-events: none;
-                                    } //end img  
-                                } //end dtlink.low-nav-a-left
-                                
-                                position: inherit;
-                                left: -21px; //pull chevron to the left a little
-                                cursor: pointer;
-                            } //end left-chev
-        
-                            .right-chev {
-        
-                                .dtlink.low-nav-a-right{
-                            
-                                    img{
-                                        //NOTE: same issues as when adding the anchor links in the top menu. The inner most elment's event propagation was blocking the wrapping anchor link tag. Therefore needed to turn it's default event propagation behavior off with pointer events: none.
-                                        pointer-events: none;
-                                    } //end img  
-                                } //end dtlink.low-nav-a-right
-        
-                                position: inherit;
-                                right: -21px; //pull chevron to the right a little
-                                cursor: pointer;
-                            } //end right-chev
+						.show-box__link{
+							.show-box {
+								.show-box__title {
+									//NOTE: Design variant
+									font-size: $text2x-12; //33.75px = 34px - 25% of the dimensions of the 1920px variant.
+								}
+								.show-box__subtitle {
+									//NOTE: Design variant: instansiated on large viewports.
+									display: block !important;
+									font-size: $text1x-64; //26.25px = 26px - 25% of the dimensions of the 1920px variant.
+								}
+								.show-box__text {
+									//NOTE: Design variant
+									top: -5px;
+									font-size: $text1x-12; //18px - used. Base text size for all Desktop viewports. 
+								} //end show-box__text
+							} //end show-box
+				
+							#show-box-1,
+							#show-box-2,
+							#show-box-3 {
+								//NOTE: design variant
+								width: 367.5px; //367.5 - 25% of the dimensions of the 1920px variant.
+								height: 366px;//366 - 25% of the dimensions of the 1920px variant.
+							} //end show-box-group styles
 
 
-                        } //end nav-chevrons
-        
-                        .main-footer {
-                            .main-footer__social-icons {
-                                display: flex;
-                                margin: 0px;
-                                padding: 0px;
-                                list-style: none;
-                                text-decoration: none;
-                                justify-content: center;
-								left: 3px; //NOTE: design variant
-                             
-        
-                                li {
-                                    margin-right: 10px;
-                                } //end li
-
-                                	//NOTE: UI/UX: ANIMATION & TRANSITIONS: 8 - Lower Social Media Icons - Appear and bounce effect
-					li {
-						#smi-yt,
-						#smi-b,
-						#smi-fb,
-						#smi-ig,
-						#smi-lk {
-							position: relative;
-						} //end img
-	
-						#smi-yt {
-							
-							
-						} //end smi-yt
-						
-						#smi-yt:hover {
-							@include alt-lowerNav-hoverstate-gray;
-						} //end #smi-yt:hover
-	
-						//======================================================
-	
-						#smi-b {
-							
-							
-						} //end smi-b
-	
-						#smi-b:hover {
-							@include alt-lowerNav-hoverstate-gray;
-						} //end #smi-b:hover
-	
-						//======================================================
-	
-	
-	
-						#smi-fb {
-						
-						} // end smi-fb
-	
-						#smi-fb:hover {
-							@include alt-lowerNav-hoverstate-gray;
-						} //end #smi-fb:hover
-	
-	
-	
-						//======================================================
-	
-						#smi-ig {
-							
-						} //end smi-ig
-	
-	
-						#smi-ig:hover {
-							@include alt-lowerNav-hoverstate-gray;
-						} //end #smi-ig:hover
-						//======================================================
-	
-						#smi-lk {
-							
-						} //end smi-lk
-	
-	
-						#smi-lk:hover {
-							@include alt-lowerNav-hoverstate-gray;
-						} //end #smi-lk:hover
-						//======================================================
-	
-						position: relative;
-						margin-right: 10px;
-						cursor: pointer;
-					} //end li
-                            } //end social-icons
-                        } //end main-footer
-                    } // end lower-nav-elements
+							#show-box-1 {
+								//NOTE: design variant
+								background-image: url("/img/img-desktop-cm-1440/desktop-cm-ps-Natours.png");
+				
+								//NOTE: Added the overlay to help strengthen the contrast of the text against the background image
+								.show-box__overlay {
+									@include showBoxOverlay;
+				
+									//NOTE: design variant
+									width: 367.5px; //367.5 - 25% of the dimensions of the 1920px variant.
+									height: 366px;//366 - 25% of the dimensions of the 1920px variant.
+								} //end show-box__overlay
+		
+								//NOTE: UI/UX ANIMATION & TRANSITIONS: 12 - Project Card Basic Reveal
+								opacity: 0;// set the inintal state of the project show boxes visbility for animation
+								animation: project-card-reveal 1s linear 3s forwards;
+							} //end show-box-1
+				
+							#show-box-2 {
+								//NOTE: design variant
+								// Scales since its an svg image.
+								.show-box__overlay {
+									@include showBoxOverlay;
+									//NOTE: design variant
+									width: 367.5px;//367.5 - 25% of the dimensions of the 1920px variant.
+									height: 366px;//366 - 25% of the dimensions of the 1920px variant.
+								} //end show-box__overlay
+		
+									//NOTE: UI/UX ANIMATION & TRANSITIONS: 12 - Project Card Basic Reveal
+									opacity: 0;// set the inintal state of the project show boxes visbility for animation
+									animation: project-card-reveal 0.7s linear 3.3s forwards;
+							} //end show-box-2
+				
+							#show-box-3 {
+								//NOTE: design variant
+								background-image: url("/img/img-desktop-cm-1440/desktop-cm-ps-BEAM.png");
+								.show-box__overlay {
+									@include showBoxOverlay;
+									//NOTE: design variant
+									width: 367.5px;//367.5 - 25% of the dimensions of the 1920px variant.
+									height: 366px;//366 - 25% of the dimensions of the 1920px variant.
+		
+								   
+								} //end show-box__overlay
+								 //NOTE: UI/UX ANIMATION & TRANSITIONS: 12 - Project Card Basic Reveal
+									opacity: 0;// set the inintal state of the project show boxes visbility for animation
+									animation: project-card-reveal 0.5s linear 3.5s forwards;
+							} //end show-box-3
+		
+						}//end show-box__link
+				                    
+					}//end show-box__container
+           			 //specific placement for lower nav elements:
+               
 
 					.tt-circle {
 						position: absolute;
@@ -508,6 +391,159 @@
 
        
      }//end main-container
+
+	 .lower-nav-wrapper{
+
+		  display: flex;
+		  flex-direction: row;
+		  justify-content: center;
+		  position: absolute;
+		  width: 100vw;
+		  top: 86.5vh;
+
+	 .lower-nav-container {
+		display: flex !important;
+			//NOTE: design variant: positioned rom the right so needed the adjustment. Or will seem like display is still set to none.
+		bottom: 41px;
+		
+
+		width: 300px; //NOTE: prevents the horizontal scroll bars issue from before. Define an area which the conatiner should occupy on the page. 
+   
+		
+		
+
+		//NOTE: Design variant: Used the container for positioning the elements of the lower nav. With it being absolutely placed, we can use relative positioning for the child elements (chevrons and the social icons)
+	   
+
+		.nav-chevrons {
+			display: flex !important; //NOTE: design variant: Turns on the nav chevrons for this variant, turned off by default from mobile.
+			position: relative; // NOTE: Relative to the parent lower-nav-container div.
+			top: -18px;
+			right: 1px; //NOTE: Design variant:
+			
+			.left-chev {
+
+				.dtlink.low-nav-a-left{
+			
+					img{
+						//NOTE: same issues as when adding the anchor links in the top menu. The inner most elment's event propagation was blocking the wrapping anchor link tag. Therefore needed to turn it's default event propagation behavior off with pointer events: none.
+						pointer-events: none;
+					} //end img  
+				} //end dtlink.low-nav-a-left
+				
+				position: inherit;
+				left: -21px; //pull chevron to the left a little
+				cursor: pointer;
+			} //end left-chev
+
+			.right-chev {
+
+				.dtlink.low-nav-a-right{
+			
+					img{
+						//NOTE: same issues as when adding the anchor links in the top menu. The inner most elment's event propagation was blocking the wrapping anchor link tag. Therefore needed to turn it's default event propagation behavior off with pointer events: none.
+						pointer-events: none;
+					} //end img  
+				} //end dtlink.low-nav-a-right
+
+				position: inherit;
+				right: -21px; //pull chevron to the right a little
+				cursor: pointer;
+			} //end right-chev
+
+
+		} //end nav-chevrons
+
+		.main-footer {
+			.main-footer__social-icons {
+				display: flex;
+				margin: 0px;
+				padding: 0px;
+				list-style: none;
+				text-decoration: none;
+				justify-content: center;
+				left: 3px; //NOTE: design variant
+			 
+
+				li {
+					margin-right: 10px;
+				} //end li
+
+					//NOTE: UI/UX: ANIMATION & TRANSITIONS: 8 - Lower Social Media Icons - Appear and bounce effect
+	li {
+		#smi-yt,
+		#smi-b,
+		#smi-fb,
+		#smi-ig,
+		#smi-lk {
+			position: relative;
+		} //end img
+
+		#smi-yt {
+			
+			
+		} //end smi-yt
+		
+		#smi-yt:hover {
+			@include alt-lowerNav-hoverstate-gray;
+		} //end #smi-yt:hover
+
+		//======================================================
+
+		#smi-b {
+			
+			
+		} //end smi-b
+
+		#smi-b:hover {
+			@include alt-lowerNav-hoverstate-gray;
+		} //end #smi-b:hover
+
+		//======================================================
+
+
+
+		#smi-fb {
+		
+		} // end smi-fb
+
+		#smi-fb:hover {
+			@include alt-lowerNav-hoverstate-gray;
+		} //end #smi-fb:hover
+
+
+
+		//======================================================
+
+		#smi-ig {
+			
+		} //end smi-ig
+
+
+		#smi-ig:hover {
+			@include alt-lowerNav-hoverstate-gray;
+		} //end #smi-ig:hover
+		//======================================================
+
+		#smi-lk {
+			
+		} //end smi-lk
+
+
+		#smi-lk:hover {
+			@include alt-lowerNav-hoverstate-gray;
+		} //end #smi-lk:hover
+		//======================================================
+
+		position: relative;
+		margin-right: 10px;
+		cursor: pointer;
+	} //end li
+			} //end social-icons
+		} //end main-footer
+	} // end lower-nav-elements
+
+	}//end lower-nav-wrapper
 
 
         /*SECTION  ANIMATIONS & TRANSITIONS 

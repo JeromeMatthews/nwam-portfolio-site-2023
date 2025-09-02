@@ -4,7 +4,13 @@
 @media (min-width: 768px) {
 	.main-container {
 		//NOTE: design variant
-		top: 380px;
+		// top: 380px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		top: 37vh;
 	}
 
 	//SECTION MOBILE - PORTRAIT - BODY
@@ -124,7 +130,7 @@
 			color: #ffffff;
 			position: relative;
 			top: -122px;
-			margin: 0px 190px 0px;
+			margin: 0px 25vw 0px;
 			letter-spacing: 0px;
 			text-shadow: 1px 1px 0px #00000059;
 			opacity: 1;
@@ -357,12 +363,28 @@
 		//SECTION MOBILE - PORTRAIT - NAVIGATION - FOOTER
 
 
+		.lower-nav-wrapper{
+
+			display: flex;
+			flex-direction: row;
+			justify-content: center; 
+			position: relative;
+			top: 43.0vh;
+
 		.lower-nav-container {
-			display: block !important;
-			position: fixed;
-			bottom: 18px;
-   			left: 40vw;
-		
+			// display: block !important;
+			// position: fixed;
+			// bottom: 18px;
+   			// left: 40vw;
+			   display: flex !important;
+			   flex-direction: row;
+			   z-index: 13;
+			   justify-content: center;
+			   flex-wrap: wrap;
+			   height: 67px;
+			   width: 162px;
+			   align-items: center;
+			 
 
 			.nav-chevrons {
 				@include flexMix;
@@ -500,6 +522,9 @@
 		}//end main-footer__social-icons
 
 		}//end lower-nav-container
+		
+	
+	}//end lower-nav-wrapper
 
 		//!SECTION  END - MOBILE - PORTRAIT - NAVIGATION - FOOTER
 

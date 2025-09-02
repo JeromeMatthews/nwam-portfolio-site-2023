@@ -42,7 +42,7 @@
 			a#logo:hover {
 				.sitenav__logo {
 					top: -0.5px;
-					// transform:  translate scaleZ(10px);
+					
 				} //end .sitenav__logo
 			} //end a#logo:hover
 
@@ -54,8 +54,8 @@
 		} //end sitenav-logo-contact-container
 
 		.mainnav__links {
-			top: 26px;
-			left: 698px;
+			// top: 26px;
+			// left: 698px;
 
 			a {
 				margin-top: 0px;
@@ -440,149 +440,158 @@
 			animation: info-tt-pulse 1.5s linear 24.5s 25;
 		} //end tt-circle-pulse
 
-		.lower-nav-container {
-			display: block !important;
-			position: fixed;
-			bottom: 70px; //NOTE: placement to match the home, projects, and about positioning of the nav.
-			left: 50vw;
+		.lower-nav-wrapper{
 
-			//NOTE: Design variant: Used the container for positioning the elements of the lower nav. With it being absolutely placed, we can use relative positioning for the child elements (chevrons and the social icons)
+			display: flex;
+			  flex-direction: row;
+			  justify-content: center;
+			  position: absolute;
+			  width: 100vw;
+			  top: 86.5vh;
+
+	.lower-nav-container{
+			display: flex !important;
+		
+			bottom: 40px;
+			width: 300px; //NOTE: prevents the horizontal scroll bars issue from before. Define an area which the conatiner should occupy on the page. 
+		
+			
+			
+			flex-direction: column;
+			align-items: center;
+			z-index: 13;
 
 			.nav-chevrons {
+				display: flex !important; //NOTE: design variant: Turns on the nav chevrons for this variant, turned off by default from mobile.
 				position: relative; // NOTE: Relative to the parent lower-nav-container div.
-				top: 12px;
-				right: 81px;
+				top: -18px;
+				right: 5px;
+
+
+				.left-chev {
+
+					.dtlink.low-nav-a-left{
 				
+						img{
+							//NOTE: same issues as when adding the anchor links in the top menu. The inner most elment's event propagation was blocking the wrapping anchor link tag. Therefore needed to turn it's default event propagation behavior off with pointer events: none.
+							pointer-events: none;
+						} //end img  
+					} //end dtlink.low-nav-a-left
 					
+					position: inherit;
+					left: -21px; //pull chevron to the left a little
+					cursor: pointer;
+				} //end left-chev
 
-					.left-chev {
-						
+				.right-chev {
 
-						.dtlink.low-nav-a-left{
-					
-							img{
-								//NOTE: same issues as when adding the anchor links in the top menu. The inner most element's event propagation was blocking the wrapping anchor link tag. Therefore needed to turn it's default event propagation behavior off with pointer events: none.
-								pointer-events: none;
-							} //end img  
-						} //end dtlink.low-nav-a-left
-						position:  relative;						
-						left: -14px; //pull chevron to the left a little
-						opacity: 0; // set the inital state of the property - for animation
-						pointer-events: none; // set the inital state of the property - for animation
-						animation: lower-nav-reveal 0.8s ease-in 18s forwards;
-						cursor: pointer;
-					} //end left-chev
+					.dtlink.low-nav-a-right{
+				
+						img{
+							//NOTE: same issues as when adding the anchor links in the top menu. The inner most elment's event propagation was blocking the wrapping anchor link tag. Therefore needed to turn it's default event propagation behavior off with pointer events: none.
+							pointer-events: none;
+						} //end img  
+					} //end dtlink.low-nav-a-right
 
+					position: inherit;
+					right: -21px; //pull chevron to the right a little
+					cursor: pointer;
+				} //end right-chev
 
 				
-			
-
-				
-	
-						.right-chev {
-
-							.dtlink.low-nav-a-right{
-					
-								img{
-									//NOTE: same issues as when adding the anchor links in the top menu. The inner most elment's event propagation was blocking the wrapping anchor link tag. Therefore needed to turn it's default event propagation behavior off with pointer events: none.
-									pointer-events: none;
-								} //end img  
-							} //end dtlink.low-nav-a-right
-						
-							position: relative;
-							right: -32px; //pull chevron to the right a little
-							opacity: 0; // set the inital state of the property - for animation
-							pointer-events: none; // set the inital state of the property - for animation
-							animation: lower-nav-reveal 0.8s ease-in 18.5s forwards;
-							cursor: pointer;
-						
-					
-
-				}//end right-chev
-			
 			} //end nav-chevrons
 
-			.main-footer {
-				.main-footer__social-icons {
-					display: flex;
-					margin: 0px;
-					padding: 0px;
-					list-style: none;
-					text-decoration: none;
-					justify-content: center;
-					//NOTE: Design vaieant: The outer container creates an offset, so this corrects for it. Centering the social media icons.
-					position: relative;
-					right: 3.5vw;
-					//NOTE: UI/UX: ANIMATION & TRANSITIONS: 8 - Lower Social Media Icons - Appear and bounce effect
-					li {
-						#smi-yt,
-						#smi-b,
-						#smi-fb,
-						#smi-ig,
-						#smi-lk {
-							position: relative;
-						} //end img
-
-						#smi-yt {
-							opacity: 0; //initial state of property for animation - for animation
-							animation: social-icons-animate 0.5s ease 19.5s forwards;
-						} //end smi-yt
-
-						#smi-yt:hover {
-							@include lowerNav-hoverstate;
-						} //end #smi-yt:hover
-
-						//======================================================
-
-						#smi-b {
-							opacity: 0; //initial state of property for animation - for animation
-							animation: social-icons-animate 0.5s ease 19.9s forwards;
-						} //end smi-b
-
-						#smi-b:hover {
-							@include lowerNav-hoverstate;
-						} //end #smi-b:hover
-
-						//======================================================
-
-						#smi-fb {
-							opacity: 0; //initial state of property for animation - for animation
-							animation: social-icons-animate 0.5s ease 20s forwards;
-						} // end smi-fb
-
-						#smi-fb:hover {
-							@include lowerNav-hoverstate;
-						} //end #smi-fb:hover
-
-						//======================================================
-
-						#smi-ig {
-							opacity: 0; //initial state of property for animation - for animation
-							animation: social-icons-animate 0.5s ease 20.9s forwards;
-						} //end smi-ig
-
-						#smi-ig:hover {
-							@include lowerNav-hoverstate;
-						} //end #smi-ig:hover
-						//======================================================
-
-						#smi-lk {
-							opacity: 0; //initial state of property for animation - for animation
-							animation: social-icons-animate 0.5s ease 21s forwards;
-						} //end smi-lk
-
-						#smi-lk:hover {
-							@include lowerNav-hoverstate;
-						} //end #smi-lk:hover
-						//======================================================
-
+		.main-footer {
+		
+			.main-footer__social-icons {
+				display: flex;
+				align-items: center;
+				flex-wrap: nowrap;			  
+				margin: 0px;
+				padding: 0px;
+				list-style: none;
+				text-decoration: none;
+				right: 0px;
+				//NOTE: Design variant: The outer container creates an offset, so this corrects for it. Centering the social media icons.
+				position: relative;
+			
+				//NOTE: UI/UX: ANIMATION & TRANSITIONS: 8 - Lower Social Media Icons - Appear and bounce effect
+				li {
+					#smi-yt,
+					#smi-b,
+					#smi-fb,
+					#smi-ig,
+					#smi-lk {
 						position: relative;
-						margin-right: 10px;
-						cursor: pointer;
-					} //end li
-				} //end social-icons
-			} //end main-footer
-		} // end lower-nav-elements
+					} //end img
+
+					#smi-yt {
+						
+						
+					} //end smi-yt
+					
+					#smi-yt:hover {
+						@include alt-lowerNav-hoverstate-gray;
+					} //end #smi-yt:hover
+
+					//======================================================
+
+					#smi-b {
+						
+						
+					} //end smi-b
+
+					#smi-b:hover {
+						@include alt-lowerNav-hoverstate-gray;
+					} //end #smi-b:hover
+
+					//======================================================
+
+
+
+					#smi-fb {
+					
+					} // end smi-fb
+
+					#smi-fb:hover {
+						@include alt-lowerNav-hoverstate-gray;
+					} //end #smi-fb:hover
+
+
+
+					//======================================================
+
+					#smi-ig {
+						
+					} //end smi-ig
+
+
+					#smi-ig:hover {
+						@include alt-lowerNav-hoverstate-gray;
+					} //end #smi-ig:hover
+					//======================================================
+
+					#smi-lk {
+						
+					} //end smi-lk
+
+
+					#smi-lk:hover {
+						@include alt-lowerNav-hoverstate-gray;
+					} //end #smi-lk:hover
+					//======================================================
+
+					position: relative;
+					margin-right: 10px;
+					cursor: pointer;
+				} //end li
+			} //end social-icons
+		} //end main-footer
+	}//end lower-nav-container
+
+	}//end lower-nav-wrapper
+
+	
 		/*SECTION  ANIMATIONS & TRANSITIONS 
 		ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >1920px */
 		/*ANIMATIONS: */

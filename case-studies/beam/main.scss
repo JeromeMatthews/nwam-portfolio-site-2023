@@ -5,8 +5,7 @@
 //SECTION: UNIVERSAL VARIABLES, LISTS & MIXINS
 @mixin csContentBox {
 	position: relative;
-	width: 287px;
-	height: 274px;
+	//NOTE: removed the static width&height assignments so the flex bow container works correctly to fill the content space.
 	top: 29px;
 	left: 0px;
 	background-color: rgba(255, 255, 255, 0.11);
@@ -28,47 +27,154 @@
 // 	}
 // }
 
-body {
-	.atf-1,
-	.btf-2,
-	.btl,
-	.btl-content-block-1,
-	.btl-content-block-2,
-	.mobile-cta-footer {
-		position: relative;
-		width: 100%;
-		@include flexMix;
-		align-content: center;
-		justify-content: center;
-	}
+@media (max-width: 767px) {
 
-	.atf-1 {
-		// height: 800px;
-		// background-image: url("/img/img-desktop-l/desktop-l-beam-bg.png");
-		background-repeat: no-repeat;
-		background-position: -150px center; // first value left and right, second - top and bottom.
-		background-attachment: scroll;
+	body {
+		.atf-1,
+		.btf-2,
+		.btl,
+		.btl-content-block-1,
+		.btl-content-block-2,
+		.mobile-cta-footer {
+			position: relative;
+			
+			@include flexMix;
+			align-content: center;
+			
+		}
 
-		.cs-project,
-		.cs-project__title,
-		.cs-project__services,
-		.cs-project__service,
-		.cs-client-details,
-		.cs-client-details__title,
-		.cs-client-details__status,
-		.cs-client-details__text,
-		.status-flag {
-			list-style: none;
+		.atf-1 {
+			// height: 800px;
+			// background-image: url("/img/img-desktop-l/desktop-l-beam-bg.png");
+			// background-repeat: no-repeat;
+			// background-position: -150px center; // first value left and right, second - top and bottom.
+			// background-attachment: scroll;
+			background-color: #000000;
+
+			.cs-project,
+			.cs-project__title,
+			.cs-project__services,
+			.cs-project__service,
+			.cs-client-details,
+			.cs-client-details__title,
+			.cs-client-details__status,
+			.cs-client-details__text,
+			.status-flag {
+				list-style: none;
+				color: #fff;
+				text-align: center;
+			}
+
+			//All content block title styles - Above the Fold and Below
+
+			.cs-project {
+				@include csContentBox;
+
+				.cs-project__title {
+					font-family: $font-list-h;
+					font-weight: nth($f-weights, 1);
+					font-style: normal;
+					font-size: $text2x-5; //40px;
+					line-height: 95%;
+				}
+
+				.cs-project__services {
+					padding: 0%;
+					.cs-project__service {
+						font-family: $font-list-b;
+						font-weight: nth($f-weights, 3);
+						font-style: normal;
+						font-size: $textSmall-93; //15px;
+					}
+				}
+				margin: 30px 30px;
+			}
+
+			.cs-client-details {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				@include csContentBox;
+				top:0px; //NOTE: Design variant: adjusting for change to client box top property to lower the container below the logo. 
+				.cs-client-details__title {
+					font-family: $font-list-h;
+					font-weight: nth($f-weights, 1);
+					font-style: normal;
+					font-size: $text2x-5; //40px;
+					line-height: 95%;
+				}
+
+				.cs-client-details__status {
+					font-family: $font-list-h;
+					font-weight: nth($f-weights, 3);
+				}
+				.status-flag {
+					font-family: $font-list-h;
+					font-weight: nth($f-weights, 1);
+					font-size: $text1X-25; //20px;
+				}
+				.cs-client-details__text {
+					font-family: $font-list-b;
+					font-weight: nth($f-weights, 3);
+					font-style: normal;
+					font-size: $textSmall-93; //15px;
+				}//end cs-client-details__text
+
+				.tt-circle:hover ::after {
+                    //NOTE: design variant: tool-tip info for Natours Project Details copy.
+					content: "Ms. Browne had long set the goal of creating one of the first full-service performance arts and professional dance companies in Jamaica. In 2014 She had the opportunity to begin this venture and required an accompanying web presence to match the launch of the company. \a\a nomad got shortlisted among some possible options of local web developers as Ms. Browne had the experience of working with nomad prior; with multiple projects, primarily in print and digital graphic art.";
+
+					display: block;
+					top: -3vh;
+					left: -45vw;
+					width: 90vw;
+					// height: 16vh; 
+					background-color: #fffff2ed;
+					border: 1px solid #ffffff;
+					font-family: $font-list-b;
+					color: #000000;
+					position: relative;
+					font-style: inherit;
+					text-align: center;
+					padding: 1vw;
+
+					 //NOTE: Tooltip animation:
+					animation: tooltip-animate 0.3s ease forwards;
+                 } //end tt-circle:hover
+
+                .tt-circle{
+					position: relative;
+					top: -19vh;
+					
+    				width: 20px;
+					height: 20px;
+					background-color: rgba(138, 138, 138, 0.5960784314);
+					border: 1px solid white;
+					border-radius: 55%;
+					box-shadow: 0.1px 0.7px #000;
+					opacity: 0;
+					z-index: 13;
+					cursor: pointer;
+					animation: info-tool-tip 1s ease-in 5.5s forwards;
+                }//end tt-circle
+			}//end cs-client-details  
+		}//end ATF-1
+
+				//BTF --------
+
+		.btf-2 {
+			height: 800px;
+			
+			background-image: url("/img/img-mobile-p/shortwood-bg-overlayedit.jpg");
+			background-repeat: no-repeat;
+
+			// background-position: left -1px top 801px;
+			background-attachment: scroll;
 			color: #fff;
 			text-align: center;
-		}
 
-		//All content block title styles - Above the Fold and Below
-
-		.cs-project {
-			@include csContentBox;
-
-			.cs-project__title {
+			.cs-project-desc__title,
+			.cs-project-sum__title {
 				font-family: $font-list-h;
 				font-weight: nth($f-weights, 1);
 				font-style: normal;
@@ -76,278 +182,300 @@ body {
 				line-height: 95%;
 			}
 
-			.cs-project__services {
-				padding: 0%;
-				.cs-project__service {
+			.cs-project-desc {
+				@include csContentBox;
+				top: -9px;
+
+				.cs-project-desc__text {
 					font-family: $font-list-b;
 					font-weight: nth($f-weights, 3);
 					font-style: normal;
 					font-size: $textSmall-93; //15px;
 				}
 			}
-			margin: 30px 30px;
-		}
 
-		.cs-client-details {
-			@include csContentBox;
-			top:0px; //NOTE: Design variant: adjusting for change to client box top property to lower the container below the logo. 
-			.cs-client-details__title {
-				font-family: $font-list-h;
-				font-weight: nth($f-weights, 1);
-				font-style: normal;
-				font-size: $text2x-5; //40px;
-				line-height: 95%;
-			}
+			.cs-project-sum {
+				@include csContentBox;
+				height: 420px;
+				top: -1px;
 
-			.cs-client-details__status {
-				font-family: $font-list-h;
-				font-weight: nth($f-weights, 3);
-			}
-			.status-flag {
-				font-family: $font-list-h;
-				font-weight: nth($f-weights, 1);
-				font-size: $text1X-25; //20px;
-			}
-			.cs-client-details__text {
-				font-family: $font-list-b;
-				font-weight: nth($f-weights, 3);
-				font-style: normal;
-				font-size: $textSmall-93; //15px;
-			}
-		}
-	} // END of ATF--
-
-	//BTF --------
-
-	.btf-2 {
-		height: 800px;
-
-		background-image: url("/img/img-mobile-p/shortwood-bg-overlayedit.jpg");
-		background-repeat: no-repeat;
-
-		// background-position: left -1px top 801px;
-		background-attachment: scroll;
-		color: #fff;
-		text-align: center;
-
-		.cs-project-desc__title,
-		.cs-project-sum__title {
-			font-family: $font-list-h;
-			font-weight: nth($f-weights, 1);
-			font-style: normal;
-			font-size: $text2x-5; //40px;
-			line-height: 95%;
-		}
-
-		.cs-project-desc {
-			@include csContentBox;
-			top: -9px;
-
-			.cs-project-desc__text {
-				font-family: $font-list-b;
-				font-weight: nth($f-weights, 3);
-				font-style: normal;
-				font-size: $textSmall-93; //15px;
-			}
-		}
-
-		.cs-project-sum {
-			@include csContentBox;
-			height: 420px;
-			top: -1px;
-
-			.cs-project-sum__text-1 {
-				.cs-project-sum__text__head {
-					font-family: $font-list-b;
-					font-weight: nth($f-weights, 3);
-					font-style: normal;
-					font-size: $textSmall-93; //15px;
+				.cs-project-sum__text-1 {
+					.cs-project-sum__text__head {
+						font-family: $font-list-b;
+						font-weight: nth($f-weights, 3);
+						font-style: normal;
+						font-size: $textSmall-93; //15px;
+					}
+					.cs-project-sum__text__body {
+						font-family: $font-list-b;
+						font-weight: nth($f-weights, 3);
+						font-style: normal;
+						font-size: $textSmall-93; //15px;
+					}
 				}
-				.cs-project-sum__text__body {
-					font-family: $font-list-b;
-					font-weight: nth($f-weights, 3);
-					font-style: normal;
-					font-size: $textSmall-93; //15px;
-				}
-			}
-		} // END of Project-sum
-	} // END of BTF--
+			} // END of Project-sum
+		} // END of BTF--
 
-	//BETWEEN THE LINES
+		//BETWEEN THE LINES
 
-	.btl {
-		height: 215px;
-		background-color: #ffd866;
-		color: #363226;
-		text-align: center;
-
-		.btl__title {
-			line-height: 150%;
-			margin-bottom: 2px;
-			.btl__title-1 {
-				font-family: $font-list-h;
-				font-weight: nth($f-weights, 1);
-				font-style: normal;
-				font-size: $text3x-43; //55px;
-			}
-
-			.btl__title-2 {
-				font-family: $font-list-h;
-				font-weight: nth($f-weights, 1);
-				font-style: normal;
-				font-size: $text2X-81; //55px;
-			}
-		}
-		.btl__text {
-			line-height: 150%;
-			.btl__text-1 {
-				font-family: $font-list-h;
-				font-weight: nth($f-weights, 1);
-				font-style: normal;
-				font-size: $text1x-06; //17px;
-			}
-
-			.btl__text-2 {
-				font-family: $font-list-h;
-				font-weight: nth($f-weights, 1);
-				font-style: normal;
-				font-size: $textSmall-87; //14px;
-			}
-		}
-	}
-
-	.btl-content-block-1 {
-		background-color: #fcf8ec;
-		color: black;
-		flex-direction: column;
-		text-align: center;
-		// height: 1200px;
-		padding: 0 30px;
-
-		.btl-content-block__time {
-			font-family: $font-list-h;
-			font-weight: nth($f-weights, 2);
-			font-style: normal;
-			font-size: $text1X-25; //20px;
-			position: relative;
-		}
-		.btl-content-block__time-text_2 {
-			font-family: $font-list-h;
-			font-weight: nth($f-weights, 2);
-			font-style: normal;
-			font-size: $text1x-12; //16px;
-			position: relative;
-			top: -50px;
-		}
-		.btl-content-block__sub {
-			font-family: $font-list-b;
-			font-weight: nth($f-weights, 1);
-			font-style: normal;
-			font-size: $textSmall-93; //15px;
-		}
-		.btl-content-block__text {
-			font-family: $font-list-b;
-			font-weight: nth($f-weights, 3);
-			font-style: normal;
-			font-size: $textSmall-93; //15px;
-		}
-	}
-
-	.btl-content-block-2 {
-		background-color: #ffd866;
-		color: black;
-		// height: 800px;
-		flex-direction: column;
-		text-align: center;
-		padding: 0 30px;
-
-		.btl-content-block__time {
-			font-family: $font-list-h;
-			font-weight: nth($f-weights, 2);
-			font-style: normal;
-			font-size: $text1X-25; //20px;
-			position: relative;
-		}
-		.btl-content-block__time__sub {
-			font-family: $font-list-h;
-			font-weight: nth($f-weights, 2);
-			font-style: normal;
-			font-size: $text1x-12; //16px;
-			position: relative;
-			top: -50px;
-			left: 0px;
-		}
-		.btl-content-block__sub {
-			font-family: $font-list-b;
-			font-weight: nth($f-weights, 1);
-			font-style: normal;
-			font-size: $textSmall-93; //15px;
-		}
-		.btl-content-block__text {
-			font-family: $font-list-b;
-			font-weight: nth($f-weights, 3);
-			font-style: normal;
-			font-size: $textSmall-93; //15px;
-		}
-	}
-
-	.mobile-cta-footer {
-		height: 800px;
-
-		background-color: #fff;
-		color: black;
-
-		.mobile-cta-footer-branding {
-			.mobile-cta-footer-branding__text-1,
-			.mobile-cta-footer-branding__text-2 {
-				font-family: $font-list-h;
-				font-weight: nth($f-weights, 3);
-				font-style: normal;
-				font-size: $text1x-56; //25px;
-				margin: 0px 12px;
-			}
-
-			.mobile-cta-footer__logo {
-				width: 83px;
-				height: 30px;
-				position: relative;
-				top: -32px;
-				left: 185px;
-			}
-		}
-
-		.mobile-cta-footer__button {
-			width: 258px;
-			height: 50px;
-			background: #f5b600 0% 0% no-repeat padding-box;
-			box-shadow: 0px 2px 0px #000000;
-			border-radius: 5px;
-
-			font-family: $font-list-h;
-			font-weight: nth($f-weights, 1);
-			font-style: normal;
-			font-size: $text1X-25; //20px;
-			position: relative;
-
-			text-decoration: none;
+		.btl {
+			height: 215px;
+			background-color: #ffd866;
+			color: #363226;
 			text-align: center;
-			.hero-text {
-				position: relative;
-				top: 9px;
-				margin: auto 10%;
-				color: #000000;
-			} //end hero-text
+
+			.btl__title {
+				line-height: 150%;
+				margin-bottom: 2px;
+				.btl__title-1 {
+					font-family: $font-list-h;
+					font-weight: nth($f-weights, 1);
+					font-style: normal;
+					font-size: $text3x-43; //55px;
+				}
+
+				.btl__title-2 {
+					font-family: $font-list-h;
+					font-weight: nth($f-weights, 1);
+					font-style: normal;
+					font-size: $text2X-81; //55px;
+				}
+			}
+			.btl__text {
+				line-height: 150%;
+				.btl__text-1 {
+					font-family: $font-list-h;
+					font-weight: nth($f-weights, 1);
+					font-style: normal;
+					font-size: $text1x-06; //17px;
+				}
+
+				.btl__text-2 {
+					font-family: $font-list-h;
+					font-weight: nth($f-weights, 1);
+					font-style: normal;
+					font-size: $textSmall-87; //14px;
+				}
+			}
 		}
 
-		.mobile-cta-footer__sm-links {
-			@include flexMix;
-			list-style: none;
-			align-content: center;
-			position: relative;
-			padding: 0px; //reseting the padding to default of zero.
+		.btl-content-block-1 {
+			background-color: #fcf8ec;
+			color: black;
+			flex-direction: column;
+			text-align: center;
+			// height: 1200px;
+			padding: 0 30px;
+
+			.btl-content-block__time {
+				font-family: $font-list-h;
+				font-weight: nth($f-weights, 2);
+				font-style: normal;
+				font-size: $text1X-25; //20px;
+				position: relative;
+			}
+			.btl-content-block__time-text_2 {
+				font-family: $font-list-h;
+				font-weight: nth($f-weights, 2);
+				font-style: normal;
+				font-size: $text1x-12; //16px;
+				position: relative;
+				top: -50px;
+			}
+			.btl-content-block__sub {
+				font-family: $font-list-b;
+				font-weight: nth($f-weights, 1);
+				font-style: normal;
+				font-size: $textSmall-93; //15px;
+			}
+			.btl-content-block__text {
+				font-family: $font-list-b;
+				font-weight: nth($f-weights, 3);
+				font-style: normal;
+				font-size: $textSmall-93; //15px;
+			}
 		}
-	}
-}
+
+		.btl-content-block-2 {
+			background-color: #ffd866;
+			color: black;
+			// height: 800px;
+			flex-direction: column;
+			text-align: center;
+			padding: 0 30px;
+
+			.btl-content-block__time {
+				font-family: $font-list-h;
+				font-weight: nth($f-weights, 2);
+				font-style: normal;
+				font-size: $text1X-25; //20px;
+				position: relative;
+			}
+			.btl-content-block__time__sub {
+				font-family: $font-list-h;
+				font-weight: nth($f-weights, 2);
+				font-style: normal;
+				font-size: $text1x-12; //16px;
+				position: relative;
+				top: -50px;
+				left: 0px;
+			}
+			.btl-content-block__sub {
+				font-family: $font-list-b;
+				font-weight: nth($f-weights, 1);
+				font-style: normal;
+				font-size: $textSmall-93; //15px;
+			}
+			.btl-content-block__text {
+				font-family: $font-list-b;
+				font-weight: nth($f-weights, 3);
+				font-style: normal;
+				font-size: $textSmall-93; //15px;
+			}
+		}
+
+		.mobile-cta-footer {
+			background-color: #fff;
+			color: black;
+			.mobile-cta-footer__container {
+			width: 70vw;	
+			.mobile-cta-footer-branding {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				.mobile-cta-footer-branding__text-1,
+				.mobile-cta-footer-branding__text-2 {
+					font-family: $font-list-h;
+					font-weight: nth($f-weights, 3);
+					font-style: normal;
+					font-size: $text1x-56; //25px;
+					margin: 0px 12px;
+					text-align: center;
+				}//end mobile-cta-footer-branding 
+
+				.mobile-cta-footer__logo {
+					width: 83px;
+					height: 30px;
+					position: relative;
+					
+				}//end mobile-cta-footer__logo
+			}
+
+			.mobile-cta-footer__button {
+				width: 70vw;
+				height: 50px;
+				background: #f5b600 0% 0% no-repeat padding-box;
+				box-shadow: 0px 2px 0px #000000;
+				border-radius: 5px;
+
+				font-family: $font-list-h;
+				font-weight: nth($f-weights, 1);
+				font-style: normal;
+				font-size: $text1X-25; //20px;
+				position: relative;
+
+				text-decoration: none;
+				text-align: center;
+				.hero-text {
+					position: relative;
+					top: 9px;
+					margin: auto 10%;
+					color: #000000;
+				} //end hero-text
+
+				display: block;
+				margin: 10px auto;
+			} //end mobile-cta-footer__button
+
+			.mobile-cta-footer__button:hover {
+				background: #ffcf15 no-repeat padding-box;
+			   
+				text-shadow: 0px 2px .5px #4a45459e;
+
+				.hero-text {
+				   color: #f8f2f2;
+				} //end hero-text
+			} //end .mobile-cta-footer__button:hover state
+
+			.mobile-cta-footer__sm-links {
+				@include flexMix;
+				list-style: none;
+				align-content: center;
+				position: relative;
+				padding: 0px; //reseting the padding to default of zero.
+			}//end mobile-cta-footer__sm-links
+		}//end .mobile-cta-footer__container 
+		} //end .mobile-cta-footer
+
+				/*SECTION  ANIMATIONS & TRANSITIONS */
+
+		//11: info tooltip:
+		@keyframes info-tool-tip {
+			0% {
+				opacity: 0;
+				pointer-events: none;
+				transform: scale(0);
+			}
+	
+			50% {
+				opacity: 0.5;
+				pointer-events: none;
+				transform: scale(0.5);
+			}
+	
+			100% {
+				opacity: 1;
+				pointer-events: all;
+				transform: scale(1);
+			}
+		} //end info-tool-tip
+		//--------------------------
+	
+		//12: info tooltip-pulse:
+		@keyframes info-tt-pulse {
+			0% {
+				opacity: 1;
+				pointer-events: none;
+				transform: scale(1);
+			}
+	
+			50% {
+				opacity: 0.5;
+				pointer-events: none;
+				transform: scale(1.5);
+			}
+	
+			100% {
+				opacity: 0;
+				pointer-events: all;
+				transform: scale(2);
+			}
+		} //end info-tool-tip
+		//--------------------------
+	
+		//13: info tool-tip-animate:
+		@keyframes tooltip-animate {
+			0% {
+				opacity: 0;
+				transform: scale(0);
+			}
+	
+			50% {
+				opacity: 0.5;
+				transform: scale(0.5);
+			}
+	
+			100% {
+				opacity: 1;
+				transform: scale(1);
+			}
+		} //end info tool-tip-animate
+		//--------------------------
+
+			/*END ANIMATIONS*/
+			/*!SECTION END ANIMATIONS & TRANSITIONS */
+	}//end body
+}// end media query
 
 //SECTION: CASE STUDIES PAGE: mobile -> Desktop
 //NOTE: IMPORTANT! The order of the parital stylesheets matters. since the design variants go from mobile up through to desktop, each of the following sheets are built with design variants that mainly only modify the underlying style sheets. Hence removal or rearrangement of the stylesheets in the former part of the overall list will cause errors in latter - subsequent stylesheets.

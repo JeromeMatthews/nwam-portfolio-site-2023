@@ -2,7 +2,7 @@
 /*SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1920px */
 @media (min-width: 1920px) {
 
-		//NOTE: Design variant: For Case Studies Template page. Needed to bring the logo link more forward so it could be clicked on to trigger the page transition animation and hyper linking.
+	// 	//NOTE: Design variant: For Case Studies Template page. Needed to bring the logo link more forward so it could be clicked on to trigger the page transition animation and hyper linking.
 	#logo.logolink {
 		//NOTE: Design variant: The logo link back to the site index/home page on the case studies templates do not need to have a page transition effect. So diffierent trigger is set. Also tied to a different action on its event in the JS file. 
 		display: block;
@@ -64,8 +64,8 @@
 		animation: bg-reveal 0.5s ease-in forwards;
 
 		.mainnav__links{
-			top: 26px;
-			left: 698px;
+			// top: 26px;
+			// left: 698px;
 
 
 
@@ -425,7 +425,7 @@
 						//NOTE Design variant
 						position: relative;
 						top: 0px; //resetting values
-						right: 0px; //resetting values
+						right: -9px; //NOTE: adding  a little spacing between challenges and lessons learned. 
 						font-size: $text3x-12; //50px;
 					} //end of btl__text-2
 				} //end btl__text
@@ -546,118 +546,134 @@
 			//NOTE: Design Variant: Added 100% viewport height assignment to the footer section to even out the adjustments made to the BETWEEN THE LINES section of the case studies page. The BTL sections was moved up to cover the gap made after adjusting the ATF image for the page to better reflect the inner viewport dimensions (height specifically) on 1920px width devices. The actual amount of viewable pixels is 919px not 1080px as is stated, generally.
 			//919px height is the full amount of viewble pixels when working with browsers for the web.  
 			height: 100vh;
-			.mobile-cta-footer-branding {
-				.mobile-cta-footer-branding__text-1,
-				.mobile-cta-footer-branding__text-2 {
-					//NOTE: Design variant
-					font-size: $text4x-37; //70px;
-				}
+			@include flexMix-col;
+			align-items: center;
+			
 
-				.mobile-cta-footer__logo {
-					display: none; //replace the smaller logo with the bigger one.
-				} //end mobile-cta-footer__logo
+			background-color: #fff;
+			color: black;
 
-				.mobile-cta-footer__logo-l {
-					//NOTE: Design variant: adjustments with increase in brandingtext size: same size as logo image on contact page
-					//sing large image for logo.
-					display: block !important;
-					height: 137px;
-					position: relative;
-					top: -117px;
-					left: 485px;
-					overflow: hidden;
-				}
-			}
+			.mobile-cta-footer-footer__conttainer{
+				display: flex;
+  				flex-direction: column;
+  				flex-wrap: wrap;
 
-			.mobile-cta-footer__button {
-				//NOTE: Design variant
-				position: relative;
-				top: -110px;
-
-				.hero-text {
-					//NOTE: Design variant - slight adjustment for the text in the link styled like a button, to center it.
-					//Already has position relative inherited from parent stylesheet - main.scss.
-					top: 13px;
-					color: #644e0a;
-
-
-
-				} //end hero-text
-			}//end mobile-cta-footer__button
-
-			.mobile-cta-footer__button:hover {
-				background: #ffcf15 no-repeat padding-box;
-				
-				text-shadow: 0px 2px .5px #4a45459e;
-
-				.hero-text{
-					//NOTE: Design variant overiding the span tag color assignment from the tablet and mobile variants.
-					color: #f8f2f2 !important;
-				}//end hero-text
-			} //end .mobile-cta-footer__button:hover state
-
-			.mobile-cta-footer__sm-links {
-				//NOTE: Design variant
-				top: -100px;
-
-
-				li {
-					#smi-yt,
-					#smi-b,
-					#smi-fb,
-					#smi-ig,
-					#smi-lk {
+				  .mobile-cta-footer-branding {
+					.mobile-cta-footer-branding__text-1,
+					.mobile-cta-footer-branding__text-2 {
+						//NOTE: Design variant
+						font-size: $text4x-37; //70px;
+					}
+	
+					.mobile-cta-footer__logo {
+						display: none; //replace the smaller logo with the bigger one.
+					} //end mobile-cta-footer__logo
+	
+					.mobile-cta-footer__logo-l {
+						//NOTE: Design variant: adjustments with increase in brandingtext size: same size as logo image on contact page
+						//sing large image for logo.
+						display: block !important;
+						height: 137px;
 						position: relative;
-					} //end img
-
-					#smi-yt {
-					} //end smi-yt
-
-					#smi-yt:hover {
-						@include about-lowerNav-hoverstate;
-					} //end #smi-yt:hover
-
-					//======================================================
-
-					#smi-b {
-					} //end smi-b
-
-					#smi-b:hover {
-						@include about-lowerNav-hoverstate;
-					} //end #smi-b:hover
-
-					//======================================================
-
-					#smi-fb {
-					} // end smi-fb
-
-					#smi-fb:hover {
-						@include about-lowerNav-hoverstate;
-					} //end #smi-fb:hover
-
-					//======================================================
-
-					#smi-ig {
-					} //end smi-ig
-
-					#smi-ig:hover {
-						@include about-lowerNav-hoverstate;
-					} //end #smi-ig:hover
-					//======================================================
-
-					#smi-lk {
-					} //end smi-lk
-
-					#smi-lk:hover {
-						@include about-lowerNav-hoverstate;
-					} //end #smi-lk:hover
-					//======================================================
-
+						top: -117px;
+						left: 485px;
+						overflow: hidden;
+					}
+				}
+	
+				.mobile-cta-footer__button {
+					//NOTE: Design variant
 					position: relative;
-					margin-right: 10px;
-					cursor: pointer;
-				} //end li
-			} //end mobile-cta-footer__sm-links
+					top: -110px;
+	
+					.hero-text {
+						//NOTE: Design variant - slight adjustment for the text in the link styled like a button, to center it.
+						//Already has position relative inherited from parent stylesheet - main.scss.
+						top: 13px;
+						color: #644e0a;
+	
+	
+	
+					} //end hero-text
+				}//end mobile-cta-footer__button
+	
+				.mobile-cta-footer__button:hover {
+					background: #ffcf15 no-repeat padding-box;
+					
+					text-shadow: 0px 2px .5px #4a45459e;
+	
+					.hero-text{
+						//NOTE: Design variant overiding the span tag color assignment from the tablet and mobile variants.
+						color: #f8f2f2 !important;
+					}//end hero-text
+				} //end .mobile-cta-footer__button:hover state
+	
+				.mobile-cta-footer__sm-links {
+					//NOTE: Design variant
+					top: -100px;
+	
+	
+					li {
+						#smi-yt,
+						#smi-b,
+						#smi-fb,
+						#smi-ig,
+						#smi-lk {
+							position: relative;
+						} //end img
+	
+						#smi-yt {
+						} //end smi-yt
+	
+						#smi-yt:hover {
+							@include about-lowerNav-hoverstate;
+						} //end #smi-yt:hover
+	
+						//======================================================
+	
+						#smi-b {
+						} //end smi-b
+	
+						#smi-b:hover {
+							@include about-lowerNav-hoverstate;
+						} //end #smi-b:hover
+	
+						//======================================================
+	
+						#smi-fb {
+						} // end smi-fb
+	
+						#smi-fb:hover {
+							@include about-lowerNav-hoverstate;
+						} //end #smi-fb:hover
+	
+						//======================================================
+	
+						#smi-ig {
+						} //end smi-ig
+	
+						#smi-ig:hover {
+							@include about-lowerNav-hoverstate;
+						} //end #smi-ig:hover
+						//======================================================
+	
+						#smi-lk {
+						} //end smi-lk
+	
+						#smi-lk:hover {
+							@include about-lowerNav-hoverstate;
+						} //end #smi-lk:hover
+						//======================================================
+	
+						position: relative;
+						margin-right: 10px;
+						cursor: pointer;
+					} //end li
+				} //end mobile-cta-footer__sm-links
+				
+			}//end  mobile-cta-footer-footer-__conttainer
+
+			
 		} // end mobile-cta-footer
 
 		/*SECTION  ANIMATIONS & TRANSITIONS 

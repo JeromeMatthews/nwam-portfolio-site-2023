@@ -50,7 +50,7 @@
 
 			a#logo:hover {
 				.sitenav__logo {
-					top: -0.5px;
+					top: 7.5px;
 					// transform:  translate scaleZ(10px);
 				} //end .sitenav__logo
 			} //end a#logo:hover
@@ -66,8 +66,8 @@
 
 		.mainnav__links {
 			//NOTE: Design variant
-			top: 32px;
-			left: 472px;
+			// top: 32px;
+			// left: 472px;
 
 			a {
 				margin-top: 0px;
@@ -268,10 +268,14 @@
 
 			.hero-text {
 				//Font-size inherited from hero button declarations.
+				margin: 0px 0rem;
 				position: relative;
 				top: 8px;
-				margin: auto 10%;
+				left: 0px;
+				right: 0px;
+				
 				text-align: center;
+				
 				pointer-events: none; //NOTE: Design variant, removing the event propagation from the text element in the button so the JS file picks up only the click event of the button itself and passes the href target to the next page.
 			} //end hero-text
 
@@ -435,59 +439,61 @@
 		} //end tt-circle-pulse
 
 
+		.lower-nav-wrapper{
 
-
-		
+			display: flex;
+  			flex-direction: row;
+  			justify-content: center;
+			position: absolute;
+			width: 100vw;
+			top: 86.5vh;
 		.lower-nav-container {
 			display: block !important;
-			position: fixed;
-			bottom: 70px; //NOTE: placement to match the home, projects, and about positioning of the nav.
-			left: 50vw;
 
-			//NOTE: Design variant: Used the container for positioning the elements of the lower nav. With it being absolutely placed, we can use relative positioning for the child elements (chevrons and the social icons)
+			bottom: 40px;
+			// width: 300px;
+		  
+			
+
+			
 
 			.nav-chevrons {
+				display: flex !important; //NOTE: design variant: Turns on the nav chevrons for this variant, turned off by default from mobile.
 				position: relative; // NOTE: Relative to the parent lower-nav-container div.
-				top: 12px;
-				right: 81px;
+				top: -18px;
+				right: initial;
+   				left: initial;
+    			justify-content: center;
 				.left-chev {
-						
 
 					.dtlink.low-nav-a-left{
 				
 						img{
-							//NOTE: same issues as when adding the anchor links in the top menu. The inner most element's event propagation was blocking the wrapping anchor link tag. Therefore needed to turn it's default event propagation behavior off with pointer events: none.
+							//NOTE: same issues as when adding the anchor links in the top menu. The inner most elment's event propagation was blocking the wrapping anchor link tag. Therefore needed to turn it's default event propagation behavior off with pointer events: none.
 							pointer-events: none;
 						} //end img  
 					} //end dtlink.low-nav-a-left
-					position:  relative;						
-					left: -14px; //pull chevron to the left a little
-					opacity: 0; // set the inital state of the property - for animation
-					pointer-events: none; // set the inital state of the property - for animation
-					animation: lower-nav-reveal 0.8s ease-in 18s forwards;
+					
+					position: inherit;
+					left: -21px; //pull chevron to the left a little
 					cursor: pointer;
 				} //end left-chev
 
 				.right-chev {
 
 					.dtlink.low-nav-a-right{
-			
+				
 						img{
-							//NOTE:The inner most elment's event propagation was blocking the wrapping anchor link tag. Therefore needed to turn it's default event propagation behavior off with pointer events: none.
+							//NOTE: same issues as when adding the anchor links in the top menu. The inner most elment's event propagation was blocking the wrapping anchor link tag. Therefore needed to turn it's default event propagation behavior off with pointer events: none.
 							pointer-events: none;
 						} //end img  
 					} //end dtlink.low-nav-a-right
-				
-					position: relative;
-					right: -32px; //pull chevron to the right a little
-					opacity: 0; // set the inital state of the property - for animation
-					pointer-events: none; // set the inital state of the property - for animation
-					animation: lower-nav-reveal 0.8s ease-in 18.5s forwards;
-					cursor: pointer;
-				
-			
 
-		}//end right-chev
+					position: inherit;
+					right: -21px; //pull chevron to the right a little
+					cursor: pointer;
+				} //end right-chev
+
 			} //end nav-chevrons
 
 			.main-footer {
@@ -498,84 +504,83 @@
 					list-style: none;
 					text-decoration: none;
 					justify-content: center;
-					//NOTE: Design vaieant: The outer container creates an offset, so this corrects for it. Centering the social media icons.
-					position: relative;
-					right: 5.2vw;
+					right: -4px; //NOTE: Design Variant
 
-					li {
-						margin-right: 10px;
-					} //end li
-
-					//NOTE: UI/UX: ANIMATION & TRANSITIONS: 8 - Lower Social Media Icons - Appear and bounce effect
-					li {
-						#smi-yt,
-						#smi-b,
-						#smi-fb,
-						#smi-ig,
-						#smi-lk {
-							position: relative;
-						} //end img
-
-						#smi-yt {
-							opacity: 0; //initial state of property for animation - for animation
-							animation: social-icons-animate 0.5s ease 19.5s forwards;
-						} //end smi-yt
-
-						#smi-yt:hover {
-							@include lowerNav-hoverstate;
-						} //end #smi-yt:hover
-
-						//======================================================
-
-						#smi-b {
-							opacity: 0; //initial state of property for animation - for animation
-							animation: social-icons-animate 0.5s ease 19.9s forwards;
-						} //end smi-b
-
-						#smi-b:hover {
-							@include lowerNav-hoverstate;
-						} //end #smi-b:hover
-
-						//======================================================
-
-						#smi-fb {
-							opacity: 0; //initial state of property for animation - for animation
-							animation: social-icons-animate 0.5s ease 20s forwards;
-						} // end smi-fb
-
-						#smi-fb:hover {
-							@include lowerNav-hoverstate;
-						} //end #smi-fb:hover
-
-						//======================================================
-
-						#smi-ig {
-							opacity: 0; //initial state of property for animation - for animation
-							animation: social-icons-animate 0.5s ease 20.9s forwards;
-						} //end smi-ig
-
-						#smi-ig:hover {
-							@include lowerNav-hoverstate;
-						} //end #smi-ig:hover
-						//======================================================
-
-						#smi-lk {
-							opacity: 0; //initial state of property for animation - for animation
-							animation: social-icons-animate 0.5s ease 21s forwards;
-						} //end smi-lk
-
-						#smi-lk:hover {
-							@include lowerNav-hoverstate;
-						} //end #smi-lk:hover
-						//======================================================
-
+				   //NOTE: UI/UX: ANIMATION & TRANSITIONS: 8 - Lower Social Media Icons - Appear and bounce effect
+				li {
+					#smi-yt,
+					#smi-b,
+					#smi-fb,
+					#smi-ig,
+					#smi-lk {
 						position: relative;
-						margin-right: 10px;
-						cursor: pointer;
-					} //end li
+					} //end img
+
+					#smi-yt {
+						
+						
+					} //end smi-yt
+					
+					#smi-yt:hover {
+						@include alt-lowerNav-hoverstate-gray;
+					} //end #smi-yt:hover
+
+					//======================================================
+
+					#smi-b {
+						
+						
+					} //end smi-b
+
+					#smi-b:hover {
+						@include alt-lowerNav-hoverstate-gray;
+					} //end #smi-b:hover
+
+					//======================================================
+
+
+
+					#smi-fb {
+					
+					} // end smi-fb
+
+					#smi-fb:hover {
+						@include alt-lowerNav-hoverstate-gray;
+					} //end #smi-fb:hover
+
+
+
+					//======================================================
+
+					#smi-ig {
+						
+					} //end smi-ig
+
+
+					#smi-ig:hover {
+						@include alt-lowerNav-hoverstate-gray;
+					} //end #smi-ig:hover
+					//======================================================
+
+					#smi-lk {
+						
+					} //end smi-lk
+
+
+					#smi-lk:hover {
+						@include alt-lowerNav-hoverstate-gray;
+					} //end #smi-lk:hover
+					//======================================================
+
+					position: relative;
+					margin-right: 10px;
+					cursor: pointer;
+				} //end li
 				} //end social-icons
 			} //end main-footer
-		} // end lower-nav-elements
+		} // end lower-nav-container
+
+		}//end lower-nav-wrapper
 
 
 				/*SECTION  ANIMATIONS & TRANSITIONS 

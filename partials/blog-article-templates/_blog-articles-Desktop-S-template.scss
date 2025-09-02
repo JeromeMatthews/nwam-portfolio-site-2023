@@ -2,283 +2,285 @@
 @import "../../partials/navs/_nav-base-desktops-sm";
 @media(min-width: 1280px){
     body {
-		background-image: url("/img/img-desktop-sm-1280/desktop-sm-blog-article-bg.png");
+          background-image: url("/img/img-desktop-sm-1280/desktop-sm-blog-article-bg.png");
 
-        //NOTE: ANIMATIONS AND TRANSITIONS: Background reveal:
-        background-image: none;
-        opacity: 0;
-        background-color: #000;
-        
-        animation: article-bg-reveal 0.5s linear 0.5s forwards;
+          //NOTE: ANIMATIONS AND TRANSITIONS: Background reveal:
+          background-image: none;
+          opacity: 0;
+          background-color: #000;
+          
+          animation: article-bg-reveal 0.5s linear 0.5s forwards;
           .page-container {
 
-        @include pageContainer;
+            @include pageContainer;
 
-        .page__surface{
-        
-          @include pageSurface;
+            .page__surface{
+            
+              @include pageSurface;
 
-        }//end page__surface
+            }//end page__surface
 
-      }//end page-continer 
+          }//end page-continer 
 
 
-      .page-flipped{
-        transform: translateX(0.5%) rotateY(90deg);
+          .page-flipped{
+            transform: translateX(0.5%) rotateY(90deg);
           }
 
-    .mainnav__links{
-		//NOTE: Design variant
-    top: 32px;
-    left: 472px;
+        .mainnav__links{
+        //NOTE: Design variant
+        // top: 32px;
+        // left: 472px;
 
-			//NOTE: MN-TOP-NAV-LINK - UI/UX: HOVER STATE
-			//===================================
+          //NOTE: MN-TOP-NAV-LINK - UI/UX: HOVER STATE
+          //===================================
 
-			.mainnav__links-link-container {
-			
-				@include mainnav__links-link-container;
-				height: 35px; // - reduced by 10% of 1440px variant
-				//NOTE: Top Nav links  UI/UX additions:
-				/*Hover state changes */
-				.mainnav__links-link__href {
-					@include mainnav__links-link__href;
+          .mainnav__links-link-container {
+          
+            @include mainnav__links-link-container;
+            height: 35px; // - reduced by 10% of 1440px variant
+            //NOTE: Top Nav links  UI/UX additions:
+            /*Hover state changes */
+            .mainnav__links-link__href {
+              @include mainnav__links-link__href;
 
-          /*Using the padding section of the content box and not margin. This is so the puesdo element doesn't take that into account for the overall distance to travel across the link and ends up looking werid.*/
+              /*Using the padding section of the content box and not margin. This is so the puesdo element doesn't take that into account for the overall distance to travel across the link and ends up looking werid.*/
 
-					margin-left: 0px;
-					margin-right: 0px;
-					padding: 10px 10px; //-reduced by 30% of 1440px variant space added to anchor so they look nicer and have larger surface area to click on by users.
+              margin-left: 0px;
+              margin-right: 0px;
+              padding: 10px 10px; //-reduced by 30% of 1440px variant space added to anchor so they look nicer and have larger surface area to click on by users.
 
-				} //end mainnav__links-link__href
+            } //end mainnav__links-link__href
 
 
-				.mainnav__links-link__href:after {
-					@include mainnav__links-link__href-after;
-				} //end mainnav__links-link__href:after
+            .mainnav__links-link__href:after {
+              @include mainnav__links-link__href-after;
+            } //end mainnav__links-link__href:after
 
-				.mainnav__links-link__href:hover {
-					@include mainnav__links-link__href-hover;
-				} //end mainnav__links-link__href:hover
+            .mainnav__links-link__href:hover {
+              @include mainnav__links-link__href-hover;
+            } //end mainnav__links-link__href:hover
 
-				
+            
 
-				.mainnav__links-link__href:hover:after {
-					@include mainnav__links-link__href-hover-after;
-				} //end mainnav__links-link__href
+            .mainnav__links-link__href:hover:after {
+              @include mainnav__links-link__href-hover-after;
+            } //end mainnav__links-link__href
 
-				.mainnav__links-link__text {
-					@include mainnav__links-link__text;
-				} //end mainnav__links-link__text
+            .mainnav__links-link__text {
+              @include mainnav__links-link__text;
+            } //end mainnav__links-link__text
 
-				
-			} //end mainnav__links-link-container
+            
+          } //end mainnav__links-link-container
 
-		}//end mainnav__links 
+        }//end mainnav__links 
 
-    .main-container {
-      top:0px;//resetting the distance from the top back to default for this variant. Already has position set to relative in previous stylesheet.
-      
-    .article-container {
-      //NOTE: design variant
-              margin-left: 100px;
-              margin-right: 100px; 
+          .main-container {
+            top:0px;//resetting the distance from the top back to default for this variant. Already has position set to relative in previous stylesheet.
+            
+            //NOTE: NEW STURCTURE to better work with layout for flex
+              .title-container{
+                @include flexMix-col;
+                align-content:end;//NOTE:design variant
+                width: 80vw;
+                .title-container__article-title{
+                  text-align: center;
+                  font-size: 2.81rem;// 45px
+                  color: #fff;
 
-            .article__title {
-              //NOTE: design variant
-              font-size: $text2X-81; //45px - 25% of the dimensions of the 1440px variant. ;
+                  //NOTE: UI/UX: ANIMATION & TRANSITIONS: 2 - Article title reveal
+                  opacity: 0;// set the inital state of the text visibility - for animation
+                  animation: article-title-reveal 1s linear 1s forwards;
+                }//title-container__article-title
 
-               //NOTE: UI/UX: ANIMATION & TRANSITIONS: 2 - Article title reveal
-					  opacity: 0;// set the inital state of the text visibility - for animation
-					  animation: article-title-reveal 1s linear 1s forwards;
-            } //end article__title
+                .title-container__article-sub-title{
+              
+                  
+                font-size: 1.437rem;// 23px
 
-            .article__sub_title {
-              //NOTE: design variant
-                        font-size: $text1x-43;//22.5px = 23px  - 25% of the dimensions of the 1440px variant. 
 
-                           //NOTE: UI/UX: ANIMATION & TRANSITIONS: 3 - Article subtitle reveal
+                  //NOTE: UI/UX: ANIMATION & TRANSITIONS: 3 - Article subtitle reveal
 
-					            opacity: 0;// set the inital state of the text visibility - for animation
-					            animation: article-sub-reveal 1s linear 2s forwards;
+                  opacity: 0;// set the inital state of the text visibility - for animation
+                  animation: article-sub-reveal 1s linear 2s forwards;
+                }//end title-container__article-sub-title
 
-            } // end article__sub_title
+                .title-container-article-sm-top{
+                        .article-sm-top-link{
 
-            .article-sm-top {
-              //NOTE: design variant
-
-              .article-sm-top-link{
-
-                #smi-m,
-                #smi-t,
-                #smi-lk {
-    
-                  position: relative;
-                }// end img
-    
-                #smi-m:hover {
-                  @include alt-lowerNav-hoverstate-gray;
-                }//end smi-m:hover
-    
-                #smi-t:hover {
-                  @include alt-lowerNav-hoverstate-gray;
-                }//end smi-m:hover
-    
-                #smi-lk:hover {
-                  @include alt-lowerNav-hoverstate-gray;
-                }//end smi-m:hover
-    
+                      #smi-m,
+                      #smi-t,
+                      #smi-lk {
                 
-                #smi-m{
-                  //NOTE: UI/UX: ANIMATION & TRANSITIONS: 3 - Top nav social icons reveal
-    
-              opacity: 0;// set the inital state of the text visibility - for animation
-              animation: top-nav-social-reveal 1s linear 3s forwards;
-    
-                }//end smi-m
-                #smi-t{
-                  //NOTE: UI/UX: ANIMATION & TRANSITIONS: 3 - Top nav social icons reveal
-    
-              opacity: 0;// set the inital state of the text visibility - for animation
-              animation: top-nav-social-reveal 1s linear 3.4s forwards;	
-    
-                }//end smi-t
-                #smi-lk{
-                  //NOTE: UI/UX: ANIMATION & TRANSITIONS: 3 - Top nav social icons reveal
-    
-              opacity: 0;// set the inital state of the text visibility - for animation
-              animation: top-nav-social-reveal 1s linear 3.5s forwards;		
-    
-                }//end smi-lk
-    
-    
-              }//end article-sm-top-link 
-            } //end article-sm-top
+                      position: relative;
+                      }// end img
+                
+                      #smi-m:hover {
+                      @include alt-lowerNav-hoverstate-gray;
+                      }//end smi-m:hover
+                
+                      #smi-t:hover {
+                      @include alt-lowerNav-hoverstate-gray;
+                      }//end smi-m:hover
+                
+                      #smi-lk:hover {
+                      @include alt-lowerNav-hoverstate-gray;
+                      }//end smi-m:hover
+                
+                      
+                      #smi-m{
+                      //NOTE: UI/UX: ANIMATION & TRANSITIONS: 3 - Top nav social icons reveal
+                
+                    opacity: 0;// set the inital state of the text visibility - for animation
+                    animation: top-nav-social-reveal 1s linear 3s forwards;
+                
+                      }//end smi-m
+                      #smi-t{
+                      //NOTE: UI/UX: ANIMATION & TRANSITIONS: 3 - Top nav social icons reveal
+                
+                    opacity: 0;// set the inital state of the text visibility - for animation
+                    animation: top-nav-social-reveal 1s linear 3.4s forwards;	
+                
+                      }//end smi-t
+                      #smi-lk{
+                      //NOTE: UI/UX: ANIMATION & TRANSITIONS: 3 - Top nav social icons reveal
+                
+                    opacity: 0;// set the inital state of the text visibility - for animation
+                    animation: top-nav-social-reveal 1s linear 3.5s forwards;		
+                
+                      }//end smi-lk
+                
+                
+                    }//end article-sm-top-link 
+                }//end title-container-article-sm-top
 
+              }//end title-container
 
-            #top-divider{
+              #top-divider{
 
-              //NOTE: UI/UX: ANIMATION & TRANSITIONS: 4 - Header section divider reveal
-  
-              opacity: 0;// set the inital state of the text visibility - for animation
-              animation: title-divider 0.3s linear 4s forwards;
-  
-          }//end top-divider
-
-            .article__content {
-              //NOTE: design variant
-              margin: 0px 140px;
-
-              .support-topic {
-                            //NOTE: design variant
-                            .support-topic__head{
-                                font-size:$text1x-93;//30.75 - 31px - 25% of the dimensions of the 1440px variant.;
-
-                            }//end .support-topic__head
-                .support-topic__body {
-                  //NOTE: design variant
-                                font-size: $text1x-18;//18.75px - 19px - 18px used textbase for desktop viewports;
-
-                } //end support-topic-body
-              } //end support-topic
-
-                  //NOTE: UI/UX: ANIMATION & TRANSITIONS: 4 - Body section  reveal
+                //NOTE: UI/UX: ANIMATION & TRANSITIONS: 4 - Header section divider reveal
 
                 opacity: 0;// set the inital state of the text visibility - for animation
-                animation: body-content 1s linear 4.5s forwards;
-            } //end article__content
+                animation: title-divider 0.3s linear 4s forwards;
+
+            }//end top-divider
+
+              .article-container {
+
+                      .article__content {
+                        .support-topic {
+                                      //NOTE: design variant
+                                      .support-topic__head{
+                                          font-size:$text1x-93;//30.75 - 31px - 25% of the dimensions of the 1440px variant.;
+
+                                      }//end .support-topic__head
+                          .support-topic__body {
+                            //NOTE: design variant
+                                          font-size: $text1x-18;//18.75px - 19px - 18px used textbase for desktop viewports;
+
+                          } //end support-topic-body
+                        } //end support-topic
+
+                            //NOTE: UI/UX: ANIMATION & TRANSITIONS: 4 - Body section  reveal
+
+                          opacity: 0;// set the inital state of the text visibility - for animation
+                          animation: body-content 1s linear 4.5s forwards;
+                      } //end article__content
 
 
-            //NOTE: Design variant : Kept the same dimensions as the footer section in the 1440px variant. Same thought process as in the case-studies page footer. the need to make the CTA section large relative to the rest of the section, as was done in the original design drafts in adobe XD. 
-              .mobile-cta-footer {
-                @include flexMix-col;
-            align-items: center;
-            } //end mobile-cta-footer
-
-            .mobile-cta-footer-branding{
-                //NOTE: design variant
-                .mobile-cta-footer-branding__text-1,
-                .mobile-cta-footer-branding__text-2 {
-
-                    font-size: $text3x-28; //52.5 = 53px - 25% of the dimensions in the 1920px variant. 
-
-                }//.mobile-cta-footer-branding__text-1, __text-2
-
-                .mobile-cta-footer-branding__text-2 {
-                    //NOTE: design variant
-                    left: -128px;
-
-                }//end  .mobile-cta-footer-branding__text-2
-
-                .mobile-cta-footer__logo {
-                    //NOTE: design variant
-                    width: 233px; //232.5 - 233
-                    height: 118px; //117.25 - 118
-                    top: -94px;
-                    left:160px;
-                }//end .mobile-cta-footer__logo 
-
-
-            }//end mobile-cta-footer-branding
-
-            .mobile-cta-footer__button {
-                display: inline-block;
-                width: 297px; //297px
-                height:56px; //55.5 - 56px
-                .hero-text {
                   
-                  font-size:$text1x-64;//25.5 = 26px - 25% of 1920px variant.
-                  top:15%; //centering the text in the CTA hero button.
-                }//end hero-text
-                top: -115px;
-            }//end .mobile-cta-footer__button
+              } // end article-container
 
-            .mobile-cta-footer__button:hover {
-              background: #ffcf15 no-repeat padding-box;
               
-              text-shadow: 0px 2px .5px #4a45459e;
-    
-              .hero-text{
-                color: #f8f2f2
-              }//end hero-text
-            } //end .mobile-cta-footer__button:hover state
+        } //end main-container
 
-            .footer-divide {
-                width:900px;
-                top: -105px;
-
-
-            }//end footer-divide
-
-            .article-sm-bottom{
-                top: -110px;
-
-                .article-sm-bottom-link{
-              
-                    #smi-m,
-                    #smi-t,
-                    #smi-lk {
-        
-                      position: relative;
-                    }// end img
-        
-                    #smi-m:hover {
-                      @include alt-lowerNav-hoverstate-gray;
-                    }//end smi-m:hover
-        
-                    #smi-t:hover {
-                      @include alt-lowerNav-hoverstate-gray;
-                    }//end smi-m:hover
-        
-                    #smi-lk:hover {
-                      @include alt-lowerNav-hoverstate-gray;
-                    }//end smi-m:hover
+        .footer-divide {
+       
+      }//end footer-divide   
+          //NOTE: Design variant : Kept the same dimensions as the footer section in the 1440px variant. Same thought process as in the case-studies page footer. the need to make the CTA section large relative to the rest of the section, as was done in the original design drafts in adobe XD. 
+          .mobile-cta-footer {
                   
-                }//end article-sm-bottom-link
-            }//end article-sm-bottom
+            .mobile-cta-footer__container{
 
-    } // end article-container
-  } //end main-container
+                  .mobile-cta-footer-branding{
+                    //NOTE: design variant
+                    .mobile-cta-footer-branding__text-1,
+                    .mobile-cta-footer-branding__text-2 {
+
+                        font-size: $text3x-28; //52.5 = 53px - 25% of the dimensions in the 1920px variant. 
+
+                    }//.mobile-cta-footer-branding__text-1, __text-2
+
+                    .mobile-cta-footer-branding__text-2 {
+                        //NOTE: design variant
+                        left: -128px;
+
+                    }//end  .mobile-cta-footer-branding__text-2
+
+                    .mobile-cta-footer__logo {
+                        //NOTE: design variant
+                        width: 233px; //232.5 - 233
+                        height: 118px; //117.25 - 118
+                        top: -94px;
+                        left:160px;
+                    }//end .mobile-cta-footer__logo 
+
+
+                }//end mobile-cta-footer-branding
+
+                .mobile-cta-footer__button {
+                    
+                    width: 297px; //297px
+                    height:56px; //55.5 - 56px
+                    .hero-text {
+                      
+                      font-size:$text1x-64;//25.5 = 26px - 25% of 1920px variant.
+                      top:15%; //centering the text in the CTA hero button.
+                    }//end hero-text
+                    top: -115px;
+                }//end .mobile-cta-footer__button
+
+                .mobile-cta-footer__button:hover {
+                  background: #ffcf15 no-repeat padding-box;
+                  
+                  text-shadow: 0px 2px .5px #4a45459e;
+
+                  .hero-text{
+                    color: #f8f2f2
+                  }//end hero-text
+                } //end .mobile-cta-footer__button:hover state
+
+
+                .article-sm-bottom{
+                    top: -110px;
+
+                    .article-sm-bottom-link{
+                  
+                        #smi-m,
+                        #smi-t,
+                        #smi-lk {
+            
+                          position: relative;
+                        }// end img
+            
+                        #smi-m:hover {
+                          @include alt-lowerNav-hoverstate-gray;
+                        }//end smi-m:hover
+            
+                        #smi-t:hover {
+                          @include alt-lowerNav-hoverstate-gray;
+                        }//end smi-m:hover
+            
+                        #smi-lk:hover {
+                          @include alt-lowerNav-hoverstate-gray;
+                        }//end smi-m:hover
+                      
+                    }//end article-sm-bottom-link
+                }//end article-sm-bottom
+
+            }//end .mobile-cta-footer__container
+        } //end mobile-cta-footer
 
       /*SECTION  ANIMATIONS & TRANSITIONS 
         ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >1920px */
@@ -347,10 +349,7 @@
         /*END ANIMATIONS*/
         /*!SECTION END ANIMATIONS & TRANSITIONS 
         ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >1920px */
-
-
- }//end body
-
+  }//end body
 }//end media query
 /*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - DESKTOP-SMALL -   >1280px */
 /*!SECTION: END - [RESPONSIVE DESIGN] */

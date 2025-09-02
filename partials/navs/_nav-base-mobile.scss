@@ -12,13 +12,21 @@
 	position: relative;
 }
 
+#logo.dtlink{
+  width: 94px;
+  height: 60px;
+  position: absolute;
+  left: 27px;
+  z-index: 9;
+}//end dtlink
+
 .sitenav__logo {
 	position: absolute;
 	width: 94px;
 	height: 53px;
 	top: 0px;
-	left: 26px;
 	z-index: 7;
+	pointer-events: none;
 }
 
 .sitenav__contactNum {
@@ -44,7 +52,7 @@
 }
 
 .sitenav__links {
-	z-index: 11;
+	z-index: 14; //NOTE: Raised the  upper nav z-index above the lower nav(13)
 	left: calc(100vw * 0.25);
 	position: fixed;
 	padding: 0px;
@@ -114,7 +122,7 @@
 	background-color: rgba(0, 0, 0, 0.9);
 	width: 100vw;
 	height: 100vh;
-	z-index: 10; //NOTE: mobile-overlay needs to be higher than the parent's z-index.
+	z-index: 13; //NOTE: mobile-overlay needs to be higher than the parent's z-index. Also needs to be higher than lower nav
 }
 
 .mainnav__links {
@@ -122,56 +130,4 @@
 }
 
 //!SECTION END - MOBILE - PORTRAIT - NAVIGATION
-// /*SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1000px */
 
-// @media (min-width: 768px) {
-// 	.sitenav__links {
-// 		//NOTE: design variant
-// 		z-index: 11;
-// 		position: fixed;
-// 		left: 35%; //NOTE: shifting the manual positioning of the navigation over so its vertically aligned with the center of the veiwport. for tablet portiat devices.
-// 		margin-top:60px;//NOTE: brining down the top of the nav a bit, better fit in the viewport, asthestics.
-
-// 		@include mobileNavOverlayMenu;
-
-// 		#projects {
-// 			@include navOverlayMenuStyles;
-// 			margin-top: 67px;
-// 		}
-
-// 		#about,
-// 		#contact {
-// 			@include navOverlayMenuStyles;
-// 			margin-top: 130px;
-// 			margin-bottom: 130px;
-// 		}
-
-// 		#blog {
-// 			@include navOverlayMenuStyles;
-// 			margin-bottom: 66px;
-// 		}
-
-// 		#projects-text,
-// 		#about-text,
-// 		#contact-text,
-// 		#blog-text {
-// 			position: relative;
-// 			top: 15px;
-// 		}
-
-// 		a {
-// 			text-decoration: none;
-// 		}
-
-// 		li {
-// 			list-style: none;
-// 		}
-
-// 		a > li {
-// 			text-decoration: none;
-// 			color: #ffffff;
-// 		}
-// 	}
-// } // end media query - tablet-Portrait
-
-// /*SECTION ABOVE MOBILE PHONES - TABLET  - LANDSCAPE -  >1000px */

@@ -100,8 +100,7 @@
 		<!-- NAVIGATION: TABLET - > DESKTOP RANGE -->
 					<!--NOTE: Added the class dtlink to flag all the links that should trigger the animation omitting the tablet and mobile level links-->
 					<ul class="mainnav__links">
-						
-							
+						<div class="navlinks__wrapper">
 						<li>
 							<div id="mainnav__links-animate-c-1">
 
@@ -165,7 +164,8 @@
 						</div><!-- mn-blog-->
 					</div><!-- mainnav__links-animate-c-4-->
 						</li>
-				</ul><!-- end Ul-->
+					</div><!-- navlinks__wrapper -->
+					</ul><!-- end Ul-->
 			</nav>
 
 			<!-- end Navigation -->
@@ -174,16 +174,43 @@
 
         <main class="main-container">
             <section class="contact-container">
-                <h1 class="contact-heroCopy">
-					
-                   <span class="tw-fx-1">So, What's your story?...  </span> 
-                </h1>
-                <h1 class="contact-heroCopy">
-					
-                    <span class="tw-fx-2">Let's tell it, with </span> 
-                </h1>
 
-                <img class="contactheroimg"  src="/img/img-mobile-p/Nomad-orange.png" alt="nomad-logo-orange" />
+
+				<!-- NOTE: Added this container to better collectively align the herocopy -->
+				 <div class="contact-heroCopy-container">
+					<h1 class="contact-heroCopy">
+						
+					<span class="tw-fx-1">So, What's your story?...  </span> 
+					</h1>
+					<h1 class="contact-heroCopy">
+						
+						<span class="tw-fx-2">Let's tell it, with </span> 
+					</h1>
+					
+				</div><!-- END Contact-HeroCopy-Container -->
+				<img class="contactheroimg"  src="/img/img-mobile-p/Nomad-orange.png" alt="nomad-logo-orange" />
+
+
+				
+
+
+				<!-- Variant of Hero Copy text used for Desktop designs -->  
+
+				<div class="snd-line-branding-container" style="display: none;">
+					<h1 class="contact-heroCopy2">
+					
+						<span class="tw-fx-1">So, What's your story?...  </span> 
+					 </h1>
+					<h1 class="contact-heroCopy2">
+					
+						<span class="tw-fx-2">Let's tell it, with </span> 
+					</h1>
+	
+					<img class="contactheroimg-alt"  src="/img/img-mobile-p/Nomad-orange.png" alt="nomad-logo-orange" />
+
+				</div><!-- /2nd-line-branding-container -->
+            
+				<!-- Variant of Hero Copy text used for Desktop designs -->  
 
                 <!-- contact form-->
                 <form class="contact-form" action="submit">
@@ -200,17 +227,17 @@
                                 <label class="contact-form__label" for="email"><span class="label-text">email</span></label>
 
                             
-                            <input class="contact-form__input" type="email" size="29" style="height:30px;  position: relative;
+                            <input class="contact-form__input" type="email" size="30" style="height:30px;  position: relative;
                          text-align: center;" id="email" name="prospect-email"
                             placeholder="your email">
                         </li>
                         <li class="contact-form__element">
                             <label class="contact-form__label" id="project-name" for="project-name"><span class="label-text">  project</span></label>
-                            <input class="contact-form__input" type="text" size="29" style="height:30px;  position: relative;
+                            <input class="contact-form__input" type="text" size="30" style="height:30px;  position: relative;
                          text-align: center;" id="project-name" name="project-name"
                             placeholder="your project name">
                         </li>
-						<!--NOTE: For using placeholder in textarea it needs to be in one line without any indentations. otherwise the placeholdr attribute will not pick up -->
+						<!--NOTE: For using placeholder in textarea it needs to be in one line without any indentations. otherwise the placeholder attribute will not pick up -->
                         <textarea  name="textarea" id="project-desc" cols="30" rows="10" placeholder="Your story..." spellcheck="true"></textarea>
                         <li class="contact-form__element">
                             <a href="/contact/contact.html">
@@ -248,82 +275,77 @@
 					<p>
 						Source reference: photo by <a class="author-info__name" href="https://unsplash.com/@patrick_schneider" target="_blank">Patrick Schneider</a> on <a class="author-info__url" href="https://unsplash.com/" target="_blank">Unsplash.com</a>
 					</p>
-				</div><!-- end author-info->
+				</div><!-- end author-info-->
 
 				<!--end Infomation tooltip section -->
 
-			<div class="lower-nav-container" style="display:none;">
+		
+        </main>
+		<div class="lower-nav-wrapper">
+			<div class="lower-nav-container" style="display: none">
 				<!-- Lower navigation for wider viewports. Bascially tablet and above.Only visible for wider viewports, will not display on mobile devices. Screen real estate better used for most important content. -->
-
 				<div class="nav-chevrons">
+
 					<span class="left-chev">
-						<a class="dtlink low-nav-a-left" href="/about/about.html">
+						<a class="dtlink low-nav-a-left" href="/about/about.html" >
 							
 								<img
 									src="/img/img-tablet-p/icon-navigation-chevron_left_24px.svg"
 									alt="left navigation "
-							/>
-						</a>
+							/></a>
 					</span>
 				
 			
 
 				
 					<span class="right-chev">
-						<a  class="dtlink low-nav-a-right" href="/index.html ">
+						<a  class="dtlink low-nav-a-right" href="/index.html">
 						<img
 							src="/img/img-tablet-p/icon-navigation-chevron_right_24px.svg"
 							alt="right navigation "/>
 						</a>
 						
 					</span>
+				
+
 				</div>
 				<!-- end Nav chevrons -->
-	
+
 				<footer class="main-footer">
 					<!-- social-media-icons-->
-					<ul class="main-footer__social-icons" >
+					<ul class="main-footer__social-icons">
 						<li>
-							<a href="">
-								<img id="smi-yt" src="/img/m-p-sm-icons/icons8-youtube.svg" alt="youtube" />
+							<a href="#">
+									<img id="smi-yt" src="/img/m-p-sm-icons/icons8-youtube.svg" alt="youtube" />
 							</a>
-
-								</li>
-						<li>
-							<a href="">
-								<img id="smi-b" src="/img/m-p-sm-icons/icons8-behance.svg" alt="behance" />
-							</a>
-
-								</li>
-						<li>
-							<a href="">
-								<img id="smi-fb" src="/img/m-p-sm-icons/icons8-facebook.svg" alt="facebook" />
-							</a>
-
-								</li>
-						<li>
-							<a href="">
-								<img id="smi-ig" src="/img/m-p-sm-icons/icons8-instagram.svg" alt="instagram" />
-
-							</a>
-
-						
 						</li>
 						<li>
-							<a href="">
-								<img id="smi-lk" src="/img/m-p-sm-icons/icons8-linkedin.svg" alt="linkedin" />
-
+							<a href="#">
+									<img  id="smi-b"  src="/img/m-p-sm-icons/icons8-behance.svg" alt="behance" />
 							</a>
-
-								</li>
+						</li>
+						<li>
+							<a href="#">
+									<img id="smi-fb"  src="/img/m-p-sm-icons/icons8-facebook.svg" alt="facebook" />
+							</a>
+						</li>
+						<li>
+							<a href="#">
+									<img  id="smi-ig" src="/img/m-p-sm-icons/icons8-instagram.svg" alt="instagram" />
+							</a>
+						</li>
+						<li>
+							<a href="#">
+									<img  id="smi-lk" src="/img/m-p-sm-icons/icons8-linkedin.svg" alt="linkedin" />
+							</a>
+						</li>
 					</ul>
 					<!-- end Social-media-icons-->
 				</footer>
 				<!-- end Main Footer-->
-
 			</div><!-- lower-nav-container-->
-        </main>
-    </main>
+		</div><!-- lower-nav-wrapper -->
+		
 
 
 </div><!-- /page-container -->

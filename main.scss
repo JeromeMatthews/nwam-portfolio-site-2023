@@ -11,12 +11,13 @@
 //SECTION MOBILE - PORTRAIT - BODY
 
 .main-container {
-	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	
 	position: relative;
-	top: 220px;
-	@media (max-width: 359px) {
-		top: 150px;
-	}
+	// top: 95px;
+	top: 25vh;
+
 }
 
 .hero-section-1,
@@ -83,10 +84,11 @@ body {
 	.hero__copy {
 		@include heroCopyMobile-p;
 		color: #ffbf00;
-		margin: 0px 26px 61px 26px;
-		letter-spacing: 0px;
+		margin: 10px 10px;
+		letter-spacing: -1px;
+	  
 		text-shadow: 0px 1px 1px #000000;
-		line-height: 90%; //NOTE: The property for brining text vertically closer together.
+		line-height: 70%; //NOTE: The property for brining text vertically closer together.
 		text-align: center;
 
 		//NOTE: UI/UX: ANIMATION & TRANSITIONS: 2 - Hero Copy -Typewriter effect
@@ -129,7 +131,7 @@ body {
 	.hero__copy-body {
 		@include bodyCopyMobile-p;
 		color: #ffffff;
-		margin: auto 57px;
+		margin: auto 8vw;
 		letter-spacing: 0px;
 		text-shadow: 1px 1px 0px #00000059;
 		opacity: 1;
@@ -173,10 +175,10 @@ body {
 		border-radius: 4px;
 		opacity: 1;
 		position: relative;
-		top: -35px;
+		top: 9px;
 		width: 173px;
 		height: 34px;
-		margin-bottom: 51px;
+		
 		@include CTAbuttonMobile-p;
 		text-decoration: none;
 		overflow: hidden; //NOTE: Desgin variant: Added to constrain the animation of the gleam/light streak running across the button to stay within the dimensions of the hero button.
@@ -191,9 +193,7 @@ body {
 			pointer-events: none; //NOTE: Design variant, removing the event propagation from the text element in the button so the JS file picks up only the click event of the button itself and passes the href target to the next page.
 		} //end hero-text
 
-		@media (max-width: 359px) {
-			margin-bottom: 50px;
-		}
+		
 		opacity: 0; // set the inital state of the property - for animation
 		pointer-events: none; // set the inital state of the property - for animation
 		animation: CTAB-reveal 0.9s ease-in 17.5s forwards;
@@ -203,8 +203,8 @@ body {
 
 	.tt-circle {
 		position: absolute;
-		top: 523px;
-		left: 170px;
+		top: 464px;
+		left: 139px;
 		width: 20px;
 		height: 20px;
 		background-color: #8a8a8a98;
@@ -235,9 +235,10 @@ body {
 		position: absolute;
 		transition: 1s all ease;
 		top: 23px;
-		left: -167px;
-		width: 330px;
-		height: 20px;
+  		left: -84px;
+  		width: 172px;
+  		height: 24px;
+
 		// background-color: #77767255;
 		// border: 1px solid #ffffff;
 		// border-radius: 3px;
@@ -279,88 +280,112 @@ body {
 		} //end p
 
 		position: absolute;
-		right: 27px;
-		top: 543px;
+		width: 200px;
+		right: 47px;
+  		top: 517px;
+		text-align:center;
 
 		animation: info-tool-tip 1s ease-in 28.5s forwards;
 	} //end-author-info
 
 	//NOTE: BACKGROOUND IMAGE TOOLTIP
 	//----------------------------------------------------------------
-
+	//NOTE: DESIGN VARIANT: REMOVED NARRATIVE TOOL TIP FROM LAYOUT. CUT DOWN ON CLUTTER. 
 	.tt-bgimg-circle {
-		position: absolute;
-		top: -105px;
-  		left: 170px;
-		width: 20px;
-		height: 20px;
-		background-color: $brandColor;
-		border: 1px solid #ffff;
-		border-radius: 55%;
-		box-shadow: 0.1px 0.7px #000;
+		display: none;
+		//NOTE: Design variant: Made the decision to keep the narrative tooltips out of the mobile variant. Preservation of screen space and preventing over cluttering has higher priority.
+		// position: absolute;
+		// top: -105px;
+  		// left: 170px;
+		// width: 20px;
+		// height: 20px;
+		// background-color: $brandColor;
+		// border: 1px solid #ffff;
+		// border-radius: 55%;
+		// box-shadow: 0.1px 0.7px #000;
 		.tt-bgimg-circle__icon {
-			margin: 0 auto;
-			position: absolute;
-			left: 5px;
-			top: -0px;
-			text-align: center;
-			font: $textBase arial;
-			color: #fff;
-			cursor: pointer;
+			// margin: 0 auto;
+			// position: absolute;
+			// left: 5px;
+			// top: -0px;
+			// text-align: center;
+			// font: $textBase arial;
+			// color: #fff;
+			// cursor: pointer;
 		} //end tt-circle__icon
 
-		opacity: 0; //initializing the opacity of the tooltip.
-		pointer-events: none;
-		cursor: pointer;
-		animation: info-tool-tip 1s linear 22.5s forwards;
+		// opacity: 0; //initializing the opacity of the tooltip.
+		// pointer-events: none;
+		// cursor: pointer;
+		// animation: info-tool-tip 1s linear 22.5s forwards;
 	} //end tt-circle
 
-
-
 	.tt-bgimg-circle:hover ::after {
-		content: "An open book. The Journey, begins. \a Your story begins here (obviously enough). \a We chart a course of action and set out on our path. ";
-		white-space: pre-line; // to allow for inserting line breaks into the content propety
-		position: absolute;
-		transition: 1s all ease;
-		top: 23px;
-		left: -160px;
-  		width: 330px;
-		height: 70px;
-		// background-color: #86774855;
-		// border: 1px solid #ffffff;
-		// border-radius: 3px;
-		// box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-		font: $textBase $font-list-b;
-		color: #fff;
+		display: none;
+		//NOTE: Design variant: Made the decision to keep the narrative tooltips out of the mobile variant. Preservation of screen space and preventing over cluttering has higher priority.
+		// content: "An open book. The Journey, begins. \a Your story begins here (obviously enough). \a We chart a course of action and set out on our path. ";
+		// white-space: pre-line; // to allow for inserting line breaks into the content propety
+		// position: absolute;
+		// transition: 1s all ease;
+		// top: 23px;
+		// left: -160px;
+  		// width: 330px;
+		// height: 70px;
+		// // background-color: #86774855;
+		// // border: 1px solid #ffffff;
+		// // border-radius: 3px;
+		// // box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+		// font: $textBase $font-list-b;
+		// color: #fff;
 
-		//NOTE: Tooltip animation:
-		animation: tooltip-animate 0.3s ease forwards;
+		// //NOTE: Tooltip animation:
+		// animation: tooltip-animate 0.3s ease forwards;
 	} //end tt-circle:hover
 
 	.tt-bgimg-circle-pulse {
-		position: absolute;
-		z-index: -10; //brings the pulse effect forwards to make it look like its coming from the info button.
+		display: none;
+		//NOTE: Design variant: Made the decision to keep the narrative tooltips out of the mobile variant. Preservation of screen space and preventing over cluttering has higher priority.
 
-		top: -105px;
-		left: 170px;
-		width: 20px;
-		height: 20px;
-		background-color: transparent;
-		border: 1px solid  #000000;
-		border-radius: 55%;
-		opacity: 0; //initializing the opacity for the animation.
-		animation: info-tt-pulse 1.5s linear 24.5s 25;
+		// position: absolute;
+		// z-index: -10; //brings the pulse effect forwards to make it look like its coming from the info button.
+
+		// top: -105px;
+		// left: 170px;
+		// width: 20px;
+		// height: 20px;
+		// background-color: transparent;
+		// border: 1px solid  #000000;
+		// border-radius: 55%;
+		// opacity: 0; //initializing the opacity for the animation.
+		// animation: info-tt-pulse 1.5s linear 24.5s 25;
 	} //end tt-circle-pulse
 
 	//!SECTION  END- MOBILE - PORTRAIT - BODY
 
 	//SECTION MOBILE - PORTRAIT - NAVIGATION - FOOTER
 
+
+	//specific placement for lower nav elements:
+	.lower-nav-wrapper{
+
+		display: flex;
+		flex-direction: row;
+		justify-content: center; 
+		position: relative;
+		 top: 36.5vh;
+
+	
 	.lower-nav-container {
-				display: block !important;
-				position: fixed;
-				bottom: 46px;
-				left: 30vw;
+
+			display: flex !important;
+			flex-direction: row;
+	
+			z-index: 11;//NOTE: Needs to stay lower than site-nav overlay(has z-index: 13)
+			justify-content: center;
+				// display: block !important;
+				// position: fixed;
+				// bottom: 46px;
+				// left: 30vw;
 
 
 			
@@ -370,90 +395,92 @@ body {
 			}
 
 			.main-footer {
-				margin-bottom: 30px;
-			}
-			.main-footer__social-icons {
-				margin: 0px;
-				padding: 0px;
-				@include flexMix;
-				list-style: none;
-				text-decoration: none;
-				justify-content: center;
-			
-				li {
-					margin-right: 10px;
-				}
-
-				//NOTE: UI/UX: ANIMATION & TRANSITIONS: 8 - Lower Social Media Icons - Appear and bounce effect
-				li {
-					#smi-yt,
-					#smi-b,
-					#smi-fb,
-					#smi-ig,
-					#smi-lk {
+				.main-footer__social-icons {
+					margin: 0px;
+					padding: 0px;
+					@include flexMix;
+					list-style: none;
+					text-decoration: none;
+					justify-content: center;
+				
+					li {
+						margin-right: 10px;
+					}
+	
+					//NOTE: UI/UX: ANIMATION & TRANSITIONS: 8 - Lower Social Media Icons - Appear and bounce effect
+					li {
+						#smi-yt,
+						#smi-b,
+						#smi-fb,
+						#smi-ig,
+						#smi-lk {
+							position: relative;
+						} //end img
+	
+						#smi-yt {
+							opacity: 0; //initial state of property for animation - for animation
+							animation: social-icons-animate 0.5s ease 19.5s forwards;
+						} //end smi-yt
+	
+						#smi-yt:hover {
+							@include lowerNav-hoverstate;
+						} //end #smi-yt:hover
+	
+						//======================================================
+	
+						#smi-b {
+							opacity: 0; //initial state of property for animation - for animation
+							animation: social-icons-animate 0.5s ease 19.9s forwards;
+						} //end smi-b
+	
+						#smi-b:hover {
+							@include lowerNav-hoverstate;
+						} //end #smi-b:hover
+	
+						//======================================================
+	
+						#smi-fb {
+							opacity: 0; //initial state of property for animation - for animation
+							animation: social-icons-animate 0.5s ease 20s forwards;
+						} // end smi-fb
+	
+						#smi-fb:hover {
+							@include lowerNav-hoverstate;
+						} //end #smi-fb:hover
+	
+						//======================================================
+	
+						#smi-ig {
+							opacity: 0; //initial state of property for animation - for animation
+							animation: social-icons-animate 0.5s ease 20.9s forwards;
+						} //end smi-ig
+	
+						#smi-ig:hover {
+							@include lowerNav-hoverstate;
+						} //end #smi-ig:hover
+						//======================================================
+	
+						#smi-lk {
+							opacity: 0; //initial state of property for animation - for animation
+							animation: social-icons-animate 0.5s ease 21s forwards;
+						} //end smi-lk
+	
+						#smi-lk:hover {
+							@include lowerNav-hoverstate;
+						} //end #smi-lk:hover
+						//======================================================
+	
 						position: relative;
-					} //end img
+						margin-right: 10px;
+						cursor: pointer;
+					} //end li
+				}//end .main-footer__social-icons
+				
+			}// end main-footer
+			
+	}//end lower-nav-container
 
-					#smi-yt {
-						opacity: 0; //initial state of property for animation - for animation
-						animation: social-icons-animate 0.5s ease 19.5s forwards;
-					} //end smi-yt
-
-					#smi-yt:hover {
-						@include lowerNav-hoverstate;
-					} //end #smi-yt:hover
-
-					//======================================================
-
-					#smi-b {
-						opacity: 0; //initial state of property for animation - for animation
-						animation: social-icons-animate 0.5s ease 19.9s forwards;
-					} //end smi-b
-
-					#smi-b:hover {
-						@include lowerNav-hoverstate;
-					} //end #smi-b:hover
-
-					//======================================================
-
-					#smi-fb {
-						opacity: 0; //initial state of property for animation - for animation
-						animation: social-icons-animate 0.5s ease 20s forwards;
-					} // end smi-fb
-
-					#smi-fb:hover {
-						@include lowerNav-hoverstate;
-					} //end #smi-fb:hover
-
-					//======================================================
-
-					#smi-ig {
-						opacity: 0; //initial state of property for animation - for animation
-						animation: social-icons-animate 0.5s ease 20.9s forwards;
-					} //end smi-ig
-
-					#smi-ig:hover {
-						@include lowerNav-hoverstate;
-					} //end #smi-ig:hover
-					//======================================================
-
-					#smi-lk {
-						opacity: 0; //initial state of property for animation - for animation
-						animation: social-icons-animate 0.5s ease 21s forwards;
-					} //end smi-lk
-
-					#smi-lk:hover {
-						@include lowerNav-hoverstate;
-					} //end #smi-lk:hover
-					//======================================================
-
-					position: relative;
-					margin-right: 10px;
-					cursor: pointer;
-				} //end li
-			}//end .main-footer__social-icons
-		}//end lower-nav-container
-
+	} //end lower-nav-wrapper
 
 	/*SECTION  ANIMATIONS & TRANSITIONS 
 	MOBILE PHONES RANGE  -   >400~px */

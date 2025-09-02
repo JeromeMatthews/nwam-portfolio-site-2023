@@ -1,10 +1,10 @@
 /*SECTION ABOVE MOBILE PHONES - TABLET RANGE  - PORTRAIT -   >800px*/
-@mixin AlignAdjust {
-	@include flexMix;
-	justify-content: flex-end;
-	position: relative;
-	right: 137px;
-}
+// @mixin AlignAdjust {
+// 	@include flexMix;
+// 	justify-content: flex-end;
+// 	position: relative;
+// 	right: 137px;
+// }
 
 @media (min-width: 768px) {
 	body {
@@ -39,35 +39,35 @@
 		  }
 
 		.main-container {
-			.article-container {
-				//NOTE: design variant
 
-				.article__title {
-					//NOTE: design variant
-					@include AlignAdjust;
-					font-size: $text2x-5; //40px;
 
-						 //NOTE: UI/UX: ANIMATION & TRANSITIONS: 2 - Article title reveal
-						 opacity: 0;// set the inital state of the text visibility - for animation
-						 animation: article-title-reveal 1s linear 1s forwards;
-				} //end article__title
+			
+		//NOTE: NEW STURCTURE to better work with layout for flex
+		.title-container{
+			@include flexMix-col;
+			.title-container__article-title{
+				text-align: center;
+				// font-size: $text2x-5; //40px;
+				color: #fff;
 
-				.article__sub_title {
-					//NOTE: design variant
-					@include AlignAdjust;
-					font-size: $text1X-25; //20px;
+				//NOTE: UI/UX: ANIMATION & TRANSITIONS: 2 - Article title reveal
+				opacity: 0;// set the inital state of the text visibility - for animation
+				animation: article-title-reveal 1s linear 1s forwards;
+			}//title-container__article-title
 
-					 //NOTE: UI/UX: ANIMATION & TRANSITIONS: 3 - Article subtitle reveal
+			.title-container__article-sub-title{
+		
+				
+				font-size: $text1X-25; //20px;
 
-					 opacity: 0;// set the inital state of the text visibility - for animation
-					 animation: article-sub-reveal 1s linear 2s forwards;
-				} // end article__sub_title
+				//NOTE: UI/UX: ANIMATION & TRANSITIONS: 3 - Article subtitle reveal
 
-				.article-sm-top {
-					//NOTE: design variant
-					@include AlignAdjust;
+				opacity: 0;// set the inital state of the text visibility - for animation
+				animation: article-sub-reveal 1s linear 2s forwards;
+			}//end title-container__article-sub-title
 
-					.article-sm-top-link{
+			.title-container-article-sm-top{
+							.article-sm-top-link{
 
 						#smi-m,
 						#smi-t,
@@ -113,20 +113,23 @@
 			
 			
 					  }//end article-sm-top-link 
-				} //end article-sm-top
+			}//end title-container-article-sm-top
+
+		}//end title-container
+
+		#top-divider{
+
+			//NOTE: UI/UX: ANIMATION & TRANSITIONS: 4 - Header section divider reveal
+
+			opacity: 0;// set the inital state of the text visibility - for animation
+			animation: title-divider 0.3s linear 4s forwards;
+
+		}//end top-divider
 
 
-				#top-divider{
-
-					//NOTE: UI/UX: ANIMATION & TRANSITIONS: 4 - Header section divider reveal
+			.article-container {
+				//NOTE: design variant	
 		
-					opacity: 0;// set the inital state of the text visibility - for animation
-					animation: title-divider 0.3s linear 4s forwards;
-		
-				}//end top-divider
-
-
-
 				.article__content {
 					//NOTE: design variant
 					margin: 0px 79px;
@@ -143,51 +146,57 @@
 					 animation: body-content 1s linear 4.5s forwards;
 				}//end article__content
 			} // end article-container
+		} //end main-container
 
-			.mobile-cta-footer{
-				.mobile-cta-footer__button {
-					.hero-text {
-					//NOTE: design variant
-						margin: auto 5%; //reduce the button width by reducing the assigned amount of spacing on each side for the margins.
-					} //end hero-text
-				} //end mobile-cta-footer__button
 
-				.mobile-cta-footer__button:hover {
-					background: #ffcf15 no-repeat padding-box;
-					
-					text-shadow: 0px 2px .5px #4a45459e;
-		  
-					.hero-text{
-					  color: #f8f2f2
-					}//end hero-text
-				  } //end .mobile-cta-footer__button:hover state
 
-				  .article-sm-bottom-link{
-				  
-					#smi-m,
-					#smi-t,
-					#smi-lk {
-		
-					  position: relative;
-					}// end img
-		
-					#smi-m:hover {
-					  @include alt-lowerNav-hoverstate-gray;
-					}//end smi-m:hover
-		
-					#smi-t:hover {
-					  @include alt-lowerNav-hoverstate-gray;
-					}//end smi-m:hover
-		
-					#smi-lk:hover {
-					  @include alt-lowerNav-hoverstate-gray;
-					}//end smi-m:hover
-				  
-				}//end article-sm-bottom-link
+	.mobile-cta-footer{
+		.mobile-cta-footer__container{
+			.mobile-cta-footer__button {
+				width: 350px;
+				.hero-text {
+				//NOTE: design variant
+					margin: auto 5%; //reduce the button width by reducing the assigned amount of spacing on each side for the margins.
+				} //end hero-text
+			} //end mobile-cta-footer__button
+	
+			.mobile-cta-footer__button:hover {
+				background: #ffcf15 no-repeat padding-box;
+				
+				text-shadow: 0px 2px .5px #4a45459e;
+	  
+				.hero-text{
+				  color: #f8f2f2
+				}//end hero-text
+			  } //end .mobile-cta-footer__button:hover state
+	
+			  .article-sm-bottom-link{
+			  
+				#smi-m,
+				#smi-t,
+				#smi-lk {
+	
+				  position: relative;
+				}// end img
+	
+				#smi-m:hover {
+				  @include alt-lowerNav-hoverstate-gray;
+				}//end smi-m:hover
+	
+				#smi-t:hover {
+				  @include alt-lowerNav-hoverstate-gray;
+				}//end smi-m:hover
+	
+				#smi-lk:hover {
+				  @include alt-lowerNav-hoverstate-gray;
+				}//end smi-m:hover
+			  
+			}//end article-sm-bottom-link
 
-			}//end mobile-cta-footer
-			
-	} //end main-container
+		}//end .mobile-cta-footer__container
+	
+
+	}//end mobile-cta-footer
 
 		/*SECTION  ANIMATIONS & TRANSITIONS 
         ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >1920px */

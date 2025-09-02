@@ -2,9 +2,9 @@
 @media (min-width: 1024px) {
 	body {		
 		//NOTE: UI/UX: ANIMATION & TRANSITIONS: 1 - Page Background Image - Reveal effect
-		background-image: none; // set the inital state of the property 	- for animation
-		opacity: 0; // set the inital state of the property - for animation
-		background-color: black;
+		// background-image: none; // set the inital state of the property 	- for animation
+		opacity: 1; // set the inital state of the property - for animation
+		background-color: rgb(0, 0, 0);
 		animation: about-bg-reveal 0.5s ease-in forwards;
 
 		.page-container {
@@ -22,13 +22,32 @@
 		}
 
 		.main-container {
+					@include flexMix-col;
+					text-align: center;
+				// 	margin: auto 5vw;
+
+				// .body-sect-1,
+				// .body-sect-2,
+				// .body-sect-3, ,
+				// .mobile-cta-footer {
+
+				// 	margin: 8vh 3vw;
+				// }// end body-sections 
+
+
+
+
 			.about-hero {
 
 
 				.about-hero__copy {
+					
+
+
 					position: relative;
+					
 					//NOTE: variant change
-					margin: 190px 155px 360px 135px; // reminder: /\ > V <
+					// margin: 190px 155px 360px 135px; // reminder: /\ > V <
 					left: 0px; // correcting for push over to left in an earlier edit. 
 				} //end about-hero-copy
 
@@ -38,6 +57,7 @@
 					font-size: $text3x-59; //57.5px;
 					text-align: left;
 					line-height: 99%;
+					
 
 
 
@@ -261,14 +281,14 @@
 							opacity: 0; //initializing the opacity for the animation.
 							animation: info-tt-pulse 1.5s linear 7.5s 25;
 						} //end tt-circle-pulse
-					}//end of about-hero
+				}//end of about-hero
 
 
 				.lower-nav-container {
 				display: block !important;
 				position: absolute;
 				//NOTE: Design variant: Used the container for positioning the elements of the lower nav. With it being absolutely placed, we can use relative positioning for the child elements (chevrons and the social icons)
-				top: 670px;//NOTE: placement to match the home, projects, and about positioning of the nav.
+				top: 87vh;//NOTE: placement to match the home, projects, and about positioning of the nav.
 				left: 50vw;
 
 				.nav-chevrons {
@@ -319,163 +339,257 @@
 			} // end lower-nav-elements
 
 
-			.body-sect-1 {
-				.body-sect-1-art {
-					.body-sect-1__head {
+
+		
+
+		.article-container{
+			color: #fff;
+			@include flexMix-col;
+			// height: 100vh;
+			margin: 10vh 10vw 10vh 10vw;
+			text-align: center;
+
+		
+
+			
+			#about-body-sect-1.body-sect-1{
+				article.article__content.body-sect-1-art {
+					.body-sect-1__head{
 						//NOTE: variant change
-						margin: auto 167px; //reminder: ?| & V , < & >
+					
+					font-size: $text3x-59; //57.5px;
+					text-align: right;
+					position: relative;
+					right: -150px;
+
+					}//end body-sect-1__head
+					.body-sect-1__text{
+						//NOTE: variant change
+					text-align: right;
+					}//end body-sect-1__text
+
+
+				}//body-sect-1-art			
+			}//end body-sect-1
+
+
+			#about-body-sect-2.body-sect-2{
+				article.article__content.body-sect-2-art{
+					.body-sect-2__head{
 						font-size: $text3x-59; //57.5px;
-						text-align: right;
-						position: relative;
-						right: -150px;
-					} //end body-sect-1__head
-					.body-sect-1__text {
+						text-align: left;
+						margin: 0px;//reseting margins. 
+
+					}//end body-sect-2-head
+
+					.body-sect-2__text{
 						//NOTE: variant change
-						text-align: right;
-					} //body-sect-1__text
-				} //end body-sect-1-art
-				//NOTE: Design variant: spacing between body copy.
-				margin-bottom: 163px;
-			} //end of body-sect-1
+						text-align: left;
+
+					}//end body-sect-2-text
 
 
-            .body-sect-2 {
-                .body-sect-2-art {
-                .body-sect-2__head {
-                font-size: $text3x-59; //57.5px;
-                text-align: left;
-                margin: 0px;//reseting margins. 
-                }//end body-sect-2__head
-
-                .body-sect-2__text {
-                    //NOTE: variant change
-                   text-align: left;
-                }
+				}//body-sect-2-art
+			}//end body-sect-2
 
 
-            }//end body-sect-2-art
-
-			//NOTE: Design variant: spacing between body copy.
-			margin-bottom: 163px;
-
-            }// end of body-sect-2
-
-
-			.body-sect-3 {
-				.body-sect-3-art {
-					.body-sect-3__head {
+			#about-body-sect-3.body-sect-3{
+				article.article__content.body-sect-3-art{
+					.body-sect-3__head{
 						//NOTE: variant change
 						font-size: $text3x-59; //57.5px;
 						text-align: right;
 						margin: 0px;//reseting margins. 
-						
-					}
-					.body-sect-3__text {
+					}//end body-sect-2__head
+
+					.body-sect-3__text{
 						//NOTE: variant change
-						text-align: right;
-						
-					}
-				}//end body-sect-3__head
-				//NOTE: Design variant: spacing between body copy.
-				margin-bottom: 163px;
-			} //end of body-sect-3
-		} //end main-container
+					text-align: right;
+					}//end body-sect-3__text
+				}//end body-sect-3-art
+
+			}//end body-sect-3
+
+
+			.article__content{
+
+				.article-title{
+					@include aboutTitleCopy;
+					font-size: $text2X-81; //45px;
+				}//end article-title
+
+				.article-text{
+					@include bodyCopyMobile-p;
+					font-size: $text1X-25; //20px;
+					i {
+							font-style: italic;
+					  }
+				}//end article-text
+
+			}//end article__content
+		}//end article-container
+
+		// .body-sect-1 {
+		// 	.body-sect-1-art {
+		// 		.body-sect-1__head {
+		// 			//NOTE: variant change
+		// 			margin: auto 229px; //reminder: ?| & V , < & >
+		// 			font-size: $text3x-59; //57.5px;
+		// 			text-align: right;
+		// 			position: relative;
+		// 			right: -150px;
+		// 		} //end body-sect-1__head
+		// 		.body-sect-1__text {
+		// 			//NOTE: variant change
+		// 			text-align: right;
+		// 		} //body-sect-1__text
+		// 	} //end body-sect-1-art
+		// 	//NOTE: Design variant: spacing between body copy.
+			
+		// } //end of body-sect-1
+
+
+		// .body-sect-2 {
+		// 	.body-sect-2-art {
+		// 	.body-sect-2__head {
+		// 	font-size: $text3x-59; //57.5px;
+		// 	text-align: left;
+		// 	margin: 0px;//reseting margins. 
+		// 	}//end body-sect-2__head
+
+		// 	.body-sect-2__text {
+		// 		//NOTE: variant change
+		// 	   text-align: left;
+		// 	}
+
+
+		// }//end body-sect-2-art
+
+		// //NOTE: Design variant: spacing between body copy.
+		
+
+		// }// end of body-sect-2
+
+
+		// .body-sect-3 {
+		// 	.body-sect-3-art {
+		// 		.body-sect-3__head {
+		// 			//NOTE: variant change
+		// 			font-size: $text3x-59; //57.5px;
+		// 			text-align: right;
+		// 			margin: 0px;//reseting margins. 
+					
+		// 		}
+		// 		.body-sect-3__text {
+		// 			//NOTE: variant change
+		// 			text-align: right;
+					
+		// 		}
+		// 	}//end body-sect-3__head
+		// 	//NOTE: Design variant: spacing between body copy.
+			
+		// } //end of body-sect-3
+
 
 		.mobile-cta-footer {
-
-			.mobile-cta-footer__button {
-				//NOTE: design variant:
-				cursor: pointer;
-				.hero-text{
-					//NOTE: Design variant overiding the span tag color assignment from the tablet and mobile variants.
-					color: #644e0a;
-				}//end hero-text
-				
-
-			} //end mobile-cta-footer__button
-
-			
-			.mobile-cta-footer__button:hover {
-				background: #ffcf15 no-repeat padding-box;
-				
-				text-shadow: 0px 2px .5px #4a45459e;
-
-				.hero-text{
-					//NOTE: Design variant overiding the span tag color assignment from the tablet and mobile variants.
-					color: #f8f2f2 !important;
-				}//end hero-text
-			} //end .mobile-cta-footer__button:hover state
-
-			.mobile-cta-footer__sm-links {
-				display: flex;
-				margin: 0px;
-				padding: 0px;
-				list-style: none;
-				text-decoration: none;
-				justify-content: center;
-				//NOTE: Design vaieant: The outer container creates an offset, so this corrects for it. Centering the social media icons.
-				position: relative;
-				top: 8px;
-				//NOTE: UI/UX: ANIMATION & TRANSITIONS: 8 - Lower Social Media Icons - Appear and bounce effect
-				li {
-					#smi-yt,
-					#smi-b,
-					#smi-fb,
-					#smi-ig,
-					#smi-lk {
+				.mobile-footer-container{
+					color: #fff;
+					.mobile-cta-footer__button {
+						//NOTE: design variant:
+						cursor: pointer;
+						.hero-text{
+							//NOTE: Design variant overiding the span tag color assignment from the tablet and mobile variants.
+							color: #644e0a;
+						}//end hero-text
+						
+		
+					} //end mobile-cta-footer__button
+		
+					
+					.mobile-cta-footer__button:hover {
+						background: #ffcf15 no-repeat padding-box;
+						
+						text-shadow: 0px 2px .5px #4a45459e;
+		
+						.hero-text{
+							//NOTE: Design variant overiding the span tag color assignment from the tablet and mobile variants.
+							color: #f8f2f2 !important;
+						}//end hero-text
+					} //end .mobile-cta-footer__button:hover state
+		
+					.mobile-cta-footer__sm-links {
+						display: flex;
+						margin: 0px;
+						padding: 0px;
+						list-style: none;
+						text-decoration: none;
+						justify-content: center;
+						//NOTE: Design vaieant: The outer container creates an offset, so this corrects for it. Centering the social media icons.
 						position: relative;
-					} //end img
+						top: 8px;
+						//NOTE: UI/UX: ANIMATION & TRANSITIONS: 8 - Lower Social Media Icons - Appear and bounce effect
+						li {
+							#smi-yt,
+							#smi-b,
+							#smi-fb,
+							#smi-ig,
+							#smi-lk {
+								position: relative;
+							} //end img
+		
+							#smi-yt {
+							} //end smi-yt
+		
+							#smi-yt:hover {
+								@include about-lowerNav-hoverstate;
+							} //end #smi-yt:hover
+		
+							//======================================================
+		
+							#smi-b {
+							} //end smi-b
+		
+							#smi-b:hover {
+								@include about-lowerNav-hoverstate;
+							} //end #smi-b:hover
+		
+							//======================================================
+		
+							#smi-fb {
+							} // end smi-fb
+		
+							#smi-fb:hover {
+								@include about-lowerNav-hoverstate;
+							} //end #smi-fb:hover
+		
+							//======================================================
+		
+							#smi-ig {
+							} //end smi-ig
+		
+							#smi-ig:hover {
+								@include about-lowerNav-hoverstate;
+							} //end #smi-ig:hover
+							//======================================================
+		
+							#smi-lk {
+							} //end smi-lk
+		
+							#smi-lk:hover {
+								@include about-lowerNav-hoverstate;
+							} //end #smi-lk:hover
+							//======================================================
+		
+							position: relative;
+							margin-right: 10px;
+							cursor: pointer;
+						} //end li
+					} //end social-icons
 
-					#smi-yt {
-					} //end smi-yt
-
-					#smi-yt:hover {
-						@include about-lowerNav-hoverstate;
-					} //end #smi-yt:hover
-
-					//======================================================
-
-					#smi-b {
-					} //end smi-b
-
-					#smi-b:hover {
-						@include about-lowerNav-hoverstate;
-					} //end #smi-b:hover
-
-					//======================================================
-
-					#smi-fb {
-					} // end smi-fb
-
-					#smi-fb:hover {
-						@include about-lowerNav-hoverstate;
-					} //end #smi-fb:hover
-
-					//======================================================
-
-					#smi-ig {
-					} //end smi-ig
-
-					#smi-ig:hover {
-						@include about-lowerNav-hoverstate;
-					} //end #smi-ig:hover
-					//======================================================
-
-					#smi-lk {
-					} //end smi-lk
-
-					#smi-lk:hover {
-						@include about-lowerNav-hoverstate;
-					} //end #smi-lk:hover
-					//======================================================
-
-					position: relative;
-					margin-right: 10px;
-					cursor: pointer;
-				} //end li
-			} //end social-icons
+				}//end mobile-footer-container
+			
 		} //end main-footer
-
+	} //end main-container
 		/*SECTION  ANIMATIONS & TRANSITIOS 
 		ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >1920px */
 		/*ANIMATIONS: */
@@ -495,17 +609,19 @@
 
 		@keyframes about-bg-reveal {
 			0% {
-				opacity: 0%;
+				opacity: 0;
 				background-color: black;
 			}
 
 			100% {
-				opacity: 100%;
-				background-color: transparent;
+				opacity: 1;
+				background-color: none;
 			}
 		} //end bg-reveal
 
-		//--------------------------
+			//--------------------------
+
+			
 
 		//2 - Hero Copy:
 		@keyframes type1 {

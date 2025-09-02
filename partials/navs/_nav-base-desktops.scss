@@ -8,7 +8,7 @@
 		display: none;
 	} //end sitenav
 
-//NOTE: Design variant: Added dimension to the link s ithere is a clickable space for the user to actually interact with. 
+	//NOTE: Design variant: Added dimension to the link so ithere is a clickable space for the user to actually interact with. 
     #logo.dtlink {
             display: block;
             position: absolute;
@@ -16,6 +16,8 @@
             height: 94px;
             top: 10px;
             left: 166px;
+			//NOTE: adding the z-index adjustment so the logo can be interacted with. The page container that facilitates the page flip animation covers it
+			z-index: 9;
             
         }//end dtlink
 
@@ -31,21 +33,21 @@
 		pointer-events: none;
         //NOTE: Bring the logo img forward over the link area so that it still looks as though its the img being clicked, when it's actually the link.
         z-index: 7;
-	}
+	}//end sitenav__logo
 
 	.sitenav__contactNum {
 		top: 75px;
 		left: 180px;
 		font-size: $textBase; // 16px; rem base
-	}
+	}// end sitenav__contactNum
 
 	.mainnav__links {
 		//NOTE: Design variant: Instanciated desktop navigation - fixed top navigation for earger viewports.
 		display: flex;
 		list-style: none;
 		position: absolute;
-		top: 10px;
-		left: 620px;
+		// top: 10px;
+		// left: 620px;
 		z-index: 15;
 	} //end of mainnav__links
 

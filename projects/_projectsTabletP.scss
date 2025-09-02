@@ -26,231 +26,118 @@
 		.main-container {
 		//NOTE: design variant: As more get added switch to flex direction row / CSS GRID, for better layout arrangment, until then, these pages can be hidden on the live site until we put content in them.
 
-		@include flexMix-col;
-		margin: 0px auto;
-		position: relative;
-		top: 160px; //NOTE: Design variant: 
-
 		
-		//NOTE: Design variant
+			
+			  //NOTE: Design variant
 		// background-image: url("/img/img-tablet-p/tablet-ps-bg.png");
 
-		.show-box__title,
-		.show-box__subtitle,
-		.show-box__text {
-			//NOTE: Design variant
-			margin: auto 7px; // Top & bottom, left & right
-		}
-
-		.show-box {
-			.show-box__title {
-				//NOTE: Design variant
-				font-size: $text1x-31; //21px;
-			}
-			.show-box__subtitle {
-				//NOTE: Design variant
-				font-size: $text1x-31; //21px;
-			}
-			.show-box__text {
-				//NOTE: Design variant
-				font-size: $text1x-12; //18px;
-			} //end show-box__text
-		} //end show-box
-
-		#show-box-1,
-		#show-box-2,
-		#show-box-3 {
-			//NOTE: design variant
-
-			width: 230px;
-			height: 230px;
-
-			margin: 0px 128px 14px; // top, left & right, bottom.
-			border-radius: 3px;
-		} //end show-box-group styles
-
-		#show-box-1 {
-			//NOTE: design variant
-			background-image: url("/img/img-tablet-p/tablet-landscape-Natours-image.png");
-
-			//NOTE: Added the overlay to help strengthen the contrast of the text against the background image
-			.show-box__overlay {
-				@include showBoxOverlay;
-				//NOTE: design variant
-				width: 230px;
-				height: 230px;
-			} //end show-box__overlay
-
-			//NOTE: UI/UX ANIMATION & TRANSITIONS: 12 - Project Card Basic Reveal
-			opacity: 0;// set the inintal state of the project show boxes visbility for animation
-			animation: project-card-reveal 1s linear 3s forwards;
-		} //end show-box-1
-
-		#show-box-2 {
-			//NOTE: design variant
-			// Scales since its an svg image.
-			.show-box__overlay {
-				@include showBoxOverlay;
-				//NOTE: design variant
-				width: 230px;
-				height: 230px;
-			} //end show-box__overlay
-
-			//NOTE: UI/UX ANIMATION & TRANSITIONS: 12 - Project Card Basic Reveal
-			opacity: 0;// set the inintal state of the project show boxes visbility for animation
-			animation: project-card-reveal 0.7s linear 3.3s forwards;
-		} //end show-box-2
-
-		#show-box-3 {
-			//NOTE: design variant
-			background-image: url("/img/img-tablet-p/tablet-landscape-BEAM-imag.png");
-
-			.show-box__overlay {
-				@include showBoxOverlay;
-				//NOTE: design variant
-				width: 230px;
-				height: 230px;
-			} //end show-box__overlay
-
-			//NOTE: UI/UX ANIMATION & TRANSITIONS: 12 - Project Card Basic Reveal
-			opacity: 0;// set the inintal state of the project show boxes visbility for animation
-			animation: project-card-reveal 0.5s linear 3.5s forwards;
-		} //end show-box-3
-
-		.lower-nav-container{
-			display: flex !important;
-			bottom: 66px; //NOTE: Design variant:
-			width: 300px; //NOTE: prevents the horizontal scroll bars issue from before. Define an area which the conatiner should occupy on the page. 
 		
-			position: fixed;
-			flex-direction: column;
-			align-items: center;
-			z-index: 13;
-			right: 230px; //NOTE: Design variant: Needs to be right, to keep consistent with following adjustments in larger design variants, and not break them.
-			.nav-chevrons{
-				display: flex !important; //NOTE: design variant: Turns on the nav chevrons for this variant, turned off by default from mobile.
-				position: relative; // NOTE: Relative to the parent lower-nav-container div.
-				top: -18px;
-				.left-chev {
 
-					.dtlink.low-nav-a-left{
+		.show-box__container{
+			//   position: relative;
+  			//   top: 12vh;
+
+			  
+			//   display: flex;
+			 
+			//   justify-content: center;
+			//   align-items: center;
+			//   flex-direction: column;
+			//   flex-wrap: nowrap;
+
+			  .show-box__link{
+
+
 				
-						img{
-							//NOTE: same issues as when adding the anchor links in the top menu. The inner most elment's event propagation was blocking the wrapping anchor link tag. Therefore needed to turn it's default event propagation behavior off with pointer events: none.
-							pointer-events: none;
-						} //end img  
-					} //end dtlink.low-nav-a-left
-					
-					position: relative;
-					left: -21px; //pull chevron to the left a little
-					cursor: pointer;
-				} //end left-chev
+				.show-box {
+					.show-box__title {
+						//NOTE: Design variant
+						font-size: $text1x-31; //21px;
+					}
+					.show-box__subtitle {
+						//NOTE: Design variant
+						font-size: $text1x-31; //21px;
+					}
+					.show-box__text {
+						//NOTE: Design variant
+						font-size: $text1x-12; //18px;
+					} //end show-box__text
+				} //end show-box
 
-				.right-chev {
+				.show-box__title,
+				.show-box__subtitle,
+				.show-box__text {
+					//NOTE: Design variant
+					margin: auto 7px; // Top & bottom, left & right
+				}
 
-					.dtlink.low-nav-a-right{
-				
-						img{
-							//NOTE: same issues as when adding the anchor links in the top menu. The inner most elment's event propagation was blocking the wrapping anchor link tag. Therefore needed to turn it's default event propagation behavior off with pointer events: none.
-							pointer-events: none;
-						} //end img  
-					} //end dtlink.low-nav-a-right
+				#show-box-1,
+				#show-box-2,
+				#show-box-3 {
+					//NOTE: design variant
 
-					position: relative;
-					right: -21px; //pull chevron to the right a little
-					cursor: pointer;
-				} //end right-chev
+					width: 230px;
+					height: 230px;
 
-			}//end nav-cherons
-
-
-			.main-footer {
+					margin: 0px 128px 14px; // top, left & right, bottom.
+					border-radius: 3px;
+				} //end show-box-group styles
+		
 			
-				.main-footer__social-icons {
-					display: flex;
-					align-items: center;
-					flex-wrap: nowrap;			  
-					margin: 0px;
-					padding: 0px;
-					list-style: none;
-					text-decoration: none;
-					right: 0px;
-					//NOTE: Design variant: The outer container creates an offset, so this corrects for it. Centering the social media icons.
-					position: relative;
-				
-					//NOTE: UI/UX: ANIMATION & TRANSITIONS: 8 - Lower Social Media Icons - Appear and bounce effect
-					li {
-						#smi-yt,
-						#smi-b,
-						#smi-fb,
-						#smi-ig,
-						#smi-lk {
-							position: relative;
-						} //end img
+				#show-box-1 {
+					//NOTE: design variant
+					background-image: url("/img/img-tablet-p/tablet-landscape-Natours-image.png");
 	
-						#smi-yt {
-							
-							
-						} //end smi-yt
-						
-						#smi-yt:hover {
-							@include alt-lowerNav-hoverstate-gray;
-						} //end #smi-yt:hover
+					//NOTE: Added the overlay to help strengthen the contrast of the text against the background image
+					.show-box__overlay {
+						@include showBoxOverlay;
+						//NOTE: design variant
+						width: 230px;
+						height: 230px;
+					} //end show-box__overlay
 	
-						//======================================================
+					//NOTE: UI/UX ANIMATION & TRANSITIONS: 12 - Project Card Basic Reveal
+					opacity: 0;// set the inintal state of the project show boxes visbility for animation
+					animation: project-card-reveal 1s linear 3s forwards;
+				} //end show-box-1
 	
-						#smi-b {
-							
-							
-						} //end smi-b
+				#show-box-2 {
+					//NOTE: design variant
+					// Scales since its an svg image.
+					.show-box__overlay {
+						@include showBoxOverlay;
+						//NOTE: design variant
+						width: 230px;
+						height: 230px;
+					} //end show-box__overlay
 	
-						#smi-b:hover {
-							@include alt-lowerNav-hoverstate-gray;
-						} //end #smi-b:hover
+					//NOTE: UI/UX ANIMATION & TRANSITIONS: 12 - Project Card Basic Reveal
+					opacity: 0;// set the inintal state of the project show boxes visbility for animation
+					animation: project-card-reveal 0.7s linear 3.3s forwards;
+				} //end show-box-2
 	
-						//======================================================
+				#show-box-3 {
+					//NOTE: design variant
+					background-image: url("/img/img-tablet-p/tablet-landscape-BEAM-imag.png");
 	
+					.show-box__overlay {
+						@include showBoxOverlay;
+						//NOTE: design variant
+						width: 230px;
+						height: 230px;
+					} //end show-box__overlay
 	
-	
-						#smi-fb {
-						
-						} // end smi-fb
-	
-						#smi-fb:hover {
-							@include alt-lowerNav-hoverstate-gray;
-						} //end #smi-fb:hover
-	
-	
-	
-						//======================================================
-	
-						#smi-ig {
-							
-						} //end smi-ig
-	
-	
-						#smi-ig:hover {
-							@include alt-lowerNav-hoverstate-gray;
-						} //end #smi-ig:hover
-						//======================================================
-	
-						#smi-lk {
-							
-						} //end smi-lk
-	
-	
-						#smi-lk:hover {
-							@include alt-lowerNav-hoverstate-gray;
-						} //end #smi-lk:hover
-						//======================================================
-	
-						position: relative;
-						margin-right: 10px;
-						cursor: pointer;
-					} //end li
-				} //end social-icons
-			} //end main-footer		
-		}//end lower-nav-container
+					//NOTE: UI/UX ANIMATION & TRANSITIONS: 12 - Project Card Basic Reveal
+					opacity: 0;// set the inintal state of the project show boxes visbility for animation
+					animation: project-card-reveal 0.5s linear 3.5s forwards;
+				} //end show-box-3
+			
+			}//end show-box__link
+		
+		}//end show-box__container
+
+
+		
 
 
 		.tt-circle {
@@ -426,8 +313,151 @@
 		} //end tt-circle-pulse
 
 	}//end main-container
+	.lower-nav-wrapper{
 
+		  display: flex;
+		  flex-direction: row;
+		  justify-content: center; 
+		  position: relative;
+    	  top: 15.5vh;
 
+		  .lower-nav-container{
+			display: flex !important;
+			flex-direction: row;
+			z-index: 13;
+			justify-content: center;
+			flex-wrap: wrap;
+			height: 67px;
+			width: 162px;
+			align-items: center;
+			
+			.nav-chevrons{
+				display: block !important; //NOTE: design variant: Turns on the nav chevrons for this variant, turned off by default from mobile.
+				position: relative; // NOTE: Relative to the parent lower-nav-container div.
+				top: -18px;
+				.left-chev {
+	
+					.dtlink.low-nav-a-left{
+				
+						img{
+							//NOTE: same issues as when adding the anchor links in the top menu. The inner most elment's event propagation was blocking the wrapping anchor link tag. Therefore needed to turn it's default event propagation behavior off with pointer events: none.
+							pointer-events: none;
+						} //end img  
+					} //end dtlink.low-nav-a-left
+					
+					position: relative;
+					left: -21px; //pull chevron to the left a little
+					cursor: pointer;
+				} //end left-chev
+	
+				.right-chev {
+	
+					.dtlink.low-nav-a-right{
+				
+						img{
+							//NOTE: same issues as when adding the anchor links in the top menu. The inner most elment's event propagation was blocking the wrapping anchor link tag. Therefore needed to turn it's default event propagation behavior off with pointer events: none.
+							pointer-events: none;
+						} //end img  
+					} //end dtlink.low-nav-a-right
+	
+					position: relative;
+					right: -21px; //pull chevron to the right a little
+					cursor: pointer;
+				} //end right-chev
+	
+			}//end nav-cherons
+	
+	
+			.main-footer {
+			
+				.main-footer__social-icons {
+					display: flex;
+					align-items: center;
+					flex-wrap: nowrap;			  
+					margin: 0px;
+					padding: 0px;
+					list-style: none;
+					text-decoration: none;
+					right: 0px;
+					//NOTE: Design variant: The outer container creates an offset, so this corrects for it. Centering the social media icons.
+					position: relative;
+				
+					//NOTE: UI/UX: ANIMATION & TRANSITIONS: 8 - Lower Social Media Icons - Appear and bounce effect
+					li {
+						#smi-yt,
+						#smi-b,
+						#smi-fb,
+						#smi-ig,
+						#smi-lk {
+							position: relative;
+						} //end img
+	
+						#smi-yt {
+							
+							
+						} //end smi-yt
+						
+						#smi-yt:hover {
+							@include alt-lowerNav-hoverstate-gray;
+						} //end #smi-yt:hover
+	
+						//======================================================
+	
+						#smi-b {
+							
+							
+						} //end smi-b
+	
+						#smi-b:hover {
+							@include alt-lowerNav-hoverstate-gray;
+						} //end #smi-b:hover
+	
+						//======================================================
+	
+	
+	
+						#smi-fb {
+						
+						} // end smi-fb
+	
+						#smi-fb:hover {
+							@include alt-lowerNav-hoverstate-gray;
+						} //end #smi-fb:hover
+	
+	
+	
+						//======================================================
+	
+						#smi-ig {
+							
+						} //end smi-ig
+	
+	
+						#smi-ig:hover {
+							@include alt-lowerNav-hoverstate-gray;
+						} //end #smi-ig:hover
+						//======================================================
+	
+						#smi-lk {
+							
+						} //end smi-lk
+	
+	
+						#smi-lk:hover {
+							@include alt-lowerNav-hoverstate-gray;
+						} //end #smi-lk:hover
+						//======================================================
+	
+						position: relative;
+						margin-right: 10px;
+						cursor: pointer;
+					} //end li
+				} //end social-icons
+			} //end main-footer		
+		}//end lower-nav-container
+		
+		}//end lower-nav-wrapper
+	
 
 					/*SECTION  ANIMATIONS & TRANSITIONS 
 		ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >1920px */

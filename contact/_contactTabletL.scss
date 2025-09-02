@@ -27,11 +27,18 @@
 		.main-container {
 			
 					.contact-container {
+						width: 40vw;
+						left: 50vw;
+						position: relative;
+						display: flex;
+						flex-direction: column;
+						height: auto;
+						top: 9vh;
 						//NOTE design varitant
 						//NOTE design varitant
-					position:absolute;// better fit for the arrangement as relative is shifting the width of the container.
-					top: -145px;
-					right: 136px;
+					// position:absolute;// better fit for the arrangement as relative is shifting the width of the container.
+					// top: -145px;
+					// right: 136px;
 
 						.contact-heroCopy {
 							//NOTE design varitant
@@ -58,7 +65,7 @@
 
 							.tw-fx-2 {
 								position: relative;
-								top: -30px;
+								// top: -30px;
 								display: inline-block;
 								overflow: hidden;
 
@@ -80,13 +87,13 @@
 
 						.contactheroimg {
 							//NOTE design varitant
-							margin: 25px auto;
+							margin: auto;//25px top & bottom;
 							padding: 0px;
 							position: relative;
-							top: 11px;
-							left: 86px; //reseting left positioning from mobile settings.
-							width: 137px;//137.5px
-							height: 70px;//71.25px
+							// top: 11px;
+							// left: 86px; //reseting left positioning from mobile settings.
+							// width: 137px;//137.5px
+							// height: 70px;//71.25px
 
 							opacity: 0; //set inital state for animation
 							animation: logo-reveal 1 ease-in 1s 5s forwards;
@@ -95,7 +102,7 @@
 
 					.contact-form {
 						//NOTE: design variant: using the previous position relative declaration in the base scss cile on mobile, then just adjusting the position for subsequent device viewports.
-						top: 40px;
+						// top: 40px;
 						opacity: 0; //set inital state for animation
 						animation: contact-form-animate 1 ease-out 1s 6.5s forwards;
 
@@ -137,6 +144,7 @@
 								right: -100px;
 
 								cursor: pointer;
+								color: #644e0a;
 							} //end mobile-cta-footer__button
 
 							.mobile-cta-footer__button:hover {
@@ -324,18 +332,30 @@
 			animation: info-tt-pulse 1.5s linear 9.5s 25;
 		} //end tt-circle-pulse
 
+		}// end main-container
+		.lower-nav-wrapper{
+
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			position: absolute;
+			width: 100vw;
+			top: 87vh;
+
 			.lower-nav-container {
-				display: block !important;
-				position: fixed;
-				bottom: 40px; //NOTE: placement to match the home, projects, and about positioning of the nav.
-				left: 50vw;
+				display: flex !important;
+				flex-direction: column;
+				align-items: center;
+				// position: fixed;
+				// bottom: 40px; //NOTE: placement to match the home, projects, and about positioning of the nav.
+				// left: 50vw;
 
 				//NOTE: Design variant: Used the container for positioning the elements of the lower nav. With it being absolutely placed, we can use relative positioning for the child elements (chevrons and the social icons)
 
 				.nav-chevrons {
 					position: relative; // NOTE: Relative to the parent lower-nav-container div.
 					top: -18px;
-					right: 16px;
+					// right: 16px;
 					display: block !important;
 					.left-chev {
 
@@ -376,9 +396,7 @@
 						list-style: none;
 						text-decoration: none;
 						justify-content: center;
-						//NOTE: Design vaieant: The outer container creates an offset, so this corrects for it. Centering the social media icons.
-						position: relative;
-						right: 6.5vw;
+		
 
 						li {
 							margin-right: 10px;
@@ -444,7 +462,7 @@
 					} //end social-icons
 				} //end main-footer
 			} // end lower-nav-elements
-		} // end main-container
+		}//end lower-nav-wrapper
 
 		/*SECTION  ANIMATIONS & TRANSITIONS 
 		ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >1920px */
@@ -497,7 +515,7 @@
 				border-right: 0.15em solid #fff;
 			}
 			100% {
-				width: 73%;
+				width: 100%;
 				border-right: 0.15em solid #fff;
 			}
 		}

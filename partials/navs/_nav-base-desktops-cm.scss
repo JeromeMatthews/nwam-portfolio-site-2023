@@ -18,14 +18,15 @@
             height: 94px;
             top: 10px;
             left: 166px;
-            
+            // //NOTE: adding the z-index adjustment so the logo can be interacted with. The page container that facilitates the page flip animation covers it
+			z-index: 9;
         }//end dtlink
 
     .sitenav__logo {
         width: 144px;
         height: 77px;
         top: 3px;
-        left: 166px;
+        left:0px;
         //NOTE: Remove pointer-events: for the link so only the javascript trigger for the animation is executed; 
 		pointer-events: none;
     
@@ -42,9 +43,10 @@
         display: flex;
         list-style: none;
         position: absolute;
-        top: 10px;
-        left: 460px;
+        // top: 10px;
+        // left: 460px;
         z-index: 15;
+
     } //end of mainnav__links
 
 

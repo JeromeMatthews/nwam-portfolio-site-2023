@@ -9,13 +9,24 @@
     } //end sitenav
 
 
+    #logo.dtlink {
+        display: block;
+        position: absolute;
+        width: 144px;
+        height: 94px;
+       
+        left: 168px;
+        // //NOTE: adding the z-index adjustment so the logo can be interacted with. The page container that facilitates the page flip animation covers it
+        z-index: 9;
+    }//end dtlink
+
     //NOTE: Logo image and contact number - No change in height for small desktops. 
 
     .sitenav__logo {
         width: 94px;
         height: 53px;
         top: 10px;
-        left: 166px;
+        left: 0px;
         // //NOTE: Remove pointer-events: for the link so only the javascript trigger for the animation is executed; 
 		// pointer-events: none;
         pointer-events: none;
@@ -29,15 +40,28 @@
         // font-size: $textBase; // 16px; rem base
     }
 
-    .mainnav__links {
-        //NOTE: Design variant: Instanciated desktop navigation - fixed top navigation for earger viewports.
-        display: flex;
-        list-style: none;
-        position: absolute;
-        top: 10px;
-        left: 410px;
-        z-index: 15;
-    } //end of mainnav__links
+    
+     
+
+        .mainnav__links {
+            //NOTE: Design variant: Instanciated desktop navigation - fixed top navigation for larger viewports.
+            display: flex;
+            list-style: none;
+            position: absolute;
+            z-index: 15;
+            width: 100vw;
+            justify-content: center;
+            
+            top: 5vh;
+
+            .navlinks__wrapper{
+                display: flex;
+            }//end navlinks__wrapper
+            padding-left: 0px;
+        } //end of mainnav__links
+    
+
+  
 
     .mainnav__links {
         a {

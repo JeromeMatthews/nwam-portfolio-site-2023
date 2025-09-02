@@ -347,14 +347,14 @@
 
 					.btl__text-1 {
 						position: relative;
-						left: -125px;
+						left: initial;
 						font-size: $text1x-37; //22px;
 					} //end of btl__text-1
 
 					.btl__text-2 {
 						position: relative;
-						top: -26px;
-						right: -99px;
+						top:initial;
+						right:initial;
 						font-size: $text1x-37; //22px;
 					} //end of btl__text-2
 				} //end btl__text
@@ -445,6 +445,8 @@
 			justify-content: start;
 
 			.btl-content-block__time {
+				font-family: $font-list-h;
+				font-weight: nth($f-weights, 2);
 				//NOTE: design variant:
 				font-size: $text2X-81; //45px;
 				//NOTE: design variant: //reseting position witihin parent.
@@ -454,14 +456,21 @@
 			} //end btl-content-block__time
 
 			.btl-content-block__time__sub {
+				font-family: $font-list-h;
+				font-weight: nth($f-weights, 2);
 				//NOTE: design variant:
 				font-size: $text1x-56; //25px;
 				margin-top: 0px; //reseting position witihin parent.
 				margin-bottom: 0px; //reseting position witihin parent.
-				top: 10px; //reseting position witihin parent.
+				//NOTE: design variant:
+				// mMaking the alignment and spacing match the sub tiem heading in the first block.
+				top: 25px;
+    			position: relative;
 			} //end btl-content-block__time
 
 			.btl-content-block__sub {
+				font-family: $font-list-b;
+				font-weight: nth($f-weights, 1);
 				margin-left: 130px;
 				margin-right: 130px;
 				text-align: left;
@@ -469,6 +478,8 @@
 				
 			} //end btl-content-block__sub
 			.btl-content-block__text {
+				font-family: $font-list-b;
+				font-weight: nth($f-weights, 3);
 				margin-left: 130px;
 				margin-right: 130px;
 				text-align: left;
@@ -528,7 +539,7 @@
 				.hero-text{
 					//NOTE: Design variant - slight adjustment for the text in the link styled like a button, to center it. 
 					//Already has position relative inherited from parent stylesheet - main.scss. 
-					top: 13px;
+					// top: 13px;
 
 				}//end hero-text
 			}//end mobile-cta-footer__button

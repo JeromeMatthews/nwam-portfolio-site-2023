@@ -9,6 +9,24 @@
          //NOTE: only needs to add the single background image change below.    All other page styles imported from design template in partial folder:
             background-image: url("/img/img-tablet-l/tablet-landscape-ps-beam-bg.png");
 
+            .cs-project{
+
+                .cs-project__title {
+					//NOTE: Design variant:			
+							margin: 1vh 3vw;						
+				}//end .cs-project__title
+
+				.cs-project__services {
+					//NOTE: design variant:
+					
+					.cs-project__service {
+						//NOTE: design variant:
+						
+
+					} //end .cs-project__service
+				}
+            }//end cs-project
+
             .tt-circle {
                 top: 69px;
                 left: 101px;

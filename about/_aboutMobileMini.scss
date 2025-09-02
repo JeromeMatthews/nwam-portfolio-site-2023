@@ -1,0 +1,866 @@
+/*SECTION BELOW MOBILE PHONE 330PX DEVICE WIDTH */
+@import "..//partials/base";
+@import "..//partials/variables";
+@import "..//partials/mixins";
+@import "..//partials/navs/nav-base-mobile";
+
+@media(max-width:330px){
+
+    @mixin aboutTitleCopy {
+        font-family: $font-list-h;
+        font-weight: nth($f-weights, 1);
+        font-style: normal;
+        font-size: $text2x-5; //40px;
+    }
+    
+    @mixin aboutBodyCopy {
+        font-family: $font-list-b;
+        font-weight: nth($f-weights, 3);
+        font-style: normal;
+        font-size: $textSmall-93; //15px;
+    }
+
+    body {
+        // background-image: url("/img/img-mobile-p/mobile-about-bg.png");
+        // background-repeat: no-repeat;
+        // background-attachment: scroll;
+        // background-color: #fff;
+    
+        //NOTE: UI/UX: ANIMATION & TRANSITIONS: 1 - Page Background Image - Reveal effect
+        // background-image: none; // set the inital state of the property 	- for animation
+        // opacity: 0; // set the inital state of the property - for animation
+        // background-color: rgb(0, 0, 0);
+        // animation: about-bg-reveal 0.5s ease-in forwards;
+    
+        .page-container {
+            background: url("/img/img-mobile-p/mobile-about-bg.png");
+            /*Using the  !important flag to overide the assignment of the background images for the diffrent veiwport variants of the design.*/
+            @include pageContainer;
+    
+            .page__surface {
+                @include pageSurface;
+            } //end page__surface
+        } //end page-continer
+    
+        .page-flipped {
+            transform: translateX(0.5%) rotateY(90deg);
+        }
+    
+    
+    
+        .main-container {
+            @include flexMix-col;
+                text-align: center;
+                margin: auto 5vw;
+            .body-sect-1,
+            .body-sect-2,
+            .body-sect-3,
+            .mobile-cta-footer {
+                
+            }// end mobile-cta-footer
+    
+    
+            color: #000000;
+    
+            .about-hero{
+                display: none !important;
+            }//end about-hero
+
+
+            .alt-about-hero {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: center;
+                position: relative;
+                
+                height: 100vh;
+                justify-content: center;
+                    .alt-about-hero__copy {
+                        position: relative;
+                        letter-spacing: initial;
+            
+                        text-shadow: 0px 1px 1px #000000;
+                        line-height: initial; //NOTE: The property for bringing text vertically closer together. Reset to initial values.
+                        margin: auto 4vw;
+                        padding: 0px 4vw;
+                    }// end of about-hero__copy
+                    .alt-about-hero__text {
+                        position: relative;
+                        
+                        @include heroCopyMini;
+                        font-size: $text1x-56; //25px;
+                        color: $brandColor; 
+
+
+
+
+                        //NOTE: UI/UX: ANIMATION & TRANSITIONS: 14 - About Hero - Reveal
+                        opacity: 0;//NOTE: setting the opcaity to 0 so reveal takes effect.
+                        animation: alt-hero-reveal 1.5s  2s forwards; 
+                    }// end of about-hero__text
+    
+                }//end alt-about-hero
+
+
+                .chevron-down{
+                //NOTE: defaulting the position of t.e h cevron-down, in the context of the main-container. So it doesn't affect the one in the lower-nav-container 
+                    position: relative;
+                    top:0px;//set the defaulting here on the (top) attribute of the position property
+    
+                }//end chevron-down
+    
+                .lower-nav-container{
+                display: flex!important; 
+                position: absolute;
+                left: 48vw;
+                 top: 65vh;
+                    .nav-chevrons{display:none}//end nav-chevrons
+
+                    .chevron-down{
+                        display:flex;
+                        position: relative;
+                        // top: -320px;
+                        
+                        right: 0px;
+				        opacity: 0; //NOTE: initializing the starting state for the reveal of chevron.
+				        animation: chevron-down-reveal 2s linear 5s forwards,
+					    chevron-down-animate 1s ease 12s infinite;
+                    }//end chevron-down               
+                }//end-lower-nav-container
+            
+    
+                .tt-circle {
+                    position: absolute;
+                    top: 840px;
+                    left: 40px;
+                    width: 20px;
+                    height: 20px;
+                    background-color: #8a8a8a98;
+                    border: 1px solid #ffff;
+                    border-radius: 55%;
+                    box-shadow: 0.1px 0.7px #000;
+                    .tt-circle__icon {
+                        margin: 0 auto;
+                        position: absolute;
+                        left: 7px;
+                        top: -8px;
+                        text-align: center;
+                        font: $text1x-43 $font-list-b;
+                        color: #fff;
+                        cursor: pointer;
+                    } //end tt-circle__icon
+    
+                    opacity: 0; //initializing the opacity of the tooltip.
+                    pointer-events: none;
+                    cursor: pointer;
+                    animation: info-tool-tip 1s ease-in 8.5s forwards;
+                } //end tt-circle
+    
+                // .tt-circle:hover  ::before{
+                // 	content: "click and hold for info:";
+                // 	position:absolute;
+                // 	width: 210px;
+                // 	left: -225px;
+    
+                // }//end tt-circle::before
+    
+                .tt-circle:hover ::after {
+                    content: " Title: a-person-with-their-hand-on-a-rock";
+                    // white-space: pre-wrap; // to allow for inserting line breaks into the content propety
+                    position: absolute;
+                    transition: 1s all ease;
+                    top: 7px;
+                    left: -66px;
+                    width: 430px;
+                    height: 20px;
+                    // background-color: #77767255;
+                    // border: 1px solid #ffffff;
+                    // border-radius: 3px;
+                    // box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+                    color: #fff;
+                    font-size: $textBase;
+    
+                    //NOTE: Tooltip animation:
+                    animation: tooltip-animate 0.3s ease forwards;
+                } //end tt-circle:hover
+    
+                // .tt-circle-pulse {
+                // 	position: relative;
+                // 	z-index: -10; //brings the pulse effect forwards to make it look like its coming from the info button.
+                // 	top: 32px; // adjustment po vertical placement so the pulse effect fits correctly over the info button.
+                // 	left: 7px;
+                // 	width: 20px;
+                // 	height: 20px;
+                // 	background-color: transparent;
+                // 	border: 1px solid #ffff;
+                // 	border-radius: 55%;
+                // 	opacity: 0; //initializing the opacity for the animation.
+                // 	animation: info-tt-pulse 1.5s ease-in 26.5s 25;
+                // } //end tt-circle-pulse
+    
+                .author-info {
+                    opacity: 0;
+                    // display: block !important; //NOTE: overiding the defualt setting in the HTML so the code block won't show in the mobile and tablet variants.
+                    font: $textSmall-75 $font-list-b;
+                    color: #ffffff;
+                    p {
+                        .author-info__name {
+                            text-decoration: none;
+                            color: $brandColor;
+                        } //end author-info__name
+    
+                        .author-info__name:hover {
+                            color: #fdd14c;
+                        } //end author-info-hover
+    
+                        .author-info__url {
+                            text-decoration: none;
+                            color: $brandColor;
+                        } //end author-info__name
+    
+                        .author-info__url:hover {
+                            text-decoration: none;
+                            color: #fdd14c;
+                        } //end author-info__name
+                    } //end p
+    
+                    position: absolute;
+                    right: 1618px;
+                    bottom: 33px;
+    
+                    animation: info-tool-tip 1s ease-in 8.5s forwards;
+                } //end-author-info
+    
+                // //NOTE: BACKGROOUND IMAGE TOOLTIP
+                // //----------------------------------------------------------------
+    
+                .tt-bgimg-circle {
+                    position: fixed;
+                    top: 194px;
+                    left: 1337px;
+                    width: 20px;
+                    height: 20px;
+                    background-color: $brandColor;
+                    border: 1px solid #ffff;
+                    border-radius: 55%;
+                    box-shadow: 0.1px 0.7px #000;
+                    z-index: 19; //NOTE: needed to add z-index to bring the element forward to be interactable. In front of the show-box
+                    .tt-bgimg-circle__icon {
+                        margin: 0 auto;
+                        position: absolute;
+                        left: 5px;
+                        top: -0px;
+                        text-align: center;
+                        font: $textBase arial;
+                        color: #fff;
+                        cursor: pointer;
+                    } //end tt-circle__icon
+    
+                    opacity: 0; //initializing the opacity of the tooltip.
+                    pointer-events: none;
+                    cursor: pointer;
+                    animation: info-tool-tip 1s linear 7s forwards;
+                } //end tt-circle
+    
+                .tt-bgimg-circle:hover ::after {
+                    content: "The writing’s on the wall. \a A method of conveying information as old as human society itself. \a Like the cave paintings we employ the use of a narrative to communicate. \a Not just our clients’ stories, but also our own.";
+                    white-space: pre-line; // to allow for inserting line breaks into the content propety
+                    position: absolute;
+                    transition: 1s all ease;
+                    top: -34px;
+                    left: -581px;
+                    width: 580px;
+                    height: 80px;
+                    // background-color: #00000057;
+                    // border: 1px solid #ffffff54;
+                    // border-radius: 3px;
+                    // box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+                    text-shadow: 1px 1.5px 0px #00000059;
+                    font: $textBase 700 $font-list-b;
+                    color: #fff;
+    
+                    //NOTE: Tooltip animation:
+                    opacity: 1;
+                    animation: tooltip-animate 0.3s ease forwards;
+                } //end tt-circle:hover
+    
+                .tt-bgimg-circle-pulse {
+                    position: absolute;
+                    z-index: -10; //brings the pulse effect forwards to make it look like its coming from the info button.
+    
+                    top: 194px;
+                    left: 1337px;
+                    width: 20px;
+                    height: 20px;
+                    background-color: transparent;
+                    border: 1px solid #ffff;
+                    border-radius: 55%;
+                    opacity: 0; //initializing the opacity for the animation.
+                    animation: info-tt-pulse 1.5s linear 7.5s 25;
+                } //end tt-circle-pulse
+    
+            
+        
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    
+    
+            //BTF =======================
+            // .body-sect-1__text,
+            // .body-sect-2__text,
+            // .body-sect-3__text {
+            //     padding: 10px;
+            // }
+    
+            // .body-sect-1 {
+            //     .body-sect-1-art {
+            //         .body-sect-1__head {
+            //             @include aboutTitleCopy;
+            //         }
+            //         .body-sect-1__text {
+            //             @include bodyCopyMobile-p;
+            //             i {
+            //                 font-style: italic;
+            //             }
+            //         }
+            //     }
+            // }
+    
+            .body-sect-2 {
+                .body-sect-2-art {
+                    .body-sect-2__head {
+                        @include aboutTitleCopy;
+                    }
+                    .body-sect-2__text {
+                        @include bodyCopyMobile-p;
+                    }
+                }
+            }
+    
+            .body-sect-3 {
+                .body-sect-3-art {
+                    .body-sect-3__head {
+                        @include aboutTitleCopy;
+                    }
+                    .body-sect-3__text {
+                        @include bodyCopyMobile-p;
+                    }
+                }
+            }
+
+
+            
+            
+            .article-container{
+                @include flexMix-col;
+                // height: 100vh;
+                margin: 10vh 10vw 10vh 10vw;
+                text-align: center;
+                .article__content{
+
+                    .article-title{
+                        @include aboutTitleCopy;
+                    }//end article-title
+
+                    .article-text{
+                        @include bodyCopyMobile-p;
+                        i {
+                                font-style: italic;
+                          }
+                    }//end article-text
+
+                }//end article__content
+            }//end article-container
+    
+            .mobile-cta-footer {
+                .mobile-footer-container{
+                   //NOTE: design variant:
+                    margin-top: 5vh;
+
+                    position: relative;
+                    
+        
+                    color: rgb(255, 255, 255);
+        
+                    .mobile-cta-footer-branding {
+                        //NOTE: design variant:
+                         display: flex;
+                        flex-direction: column;
+                        flex-wrap: wrap;
+
+                        .mobile-cta-footer-branding__text-1,
+                        .mobile-cta-footer-branding__text-2 {
+                            font-family: $font-list-h;
+                            font-weight: nth($f-weights, 3);
+                            font-style: normal;
+                            font-size: $text1x-56; //25px;
+                            margin: 0px 12px;
+                        }
+        
+                        .mobile-cta-footer-branding__text-2 {
+                            position: relative;
+                            left: 0px;
+                        }
+        
+                        .mobile-cta-footer__logo {
+                            width: 83px;
+                            height: 30px;
+                            position: relative;
+                            top: 0px;
+                            left: 0px;
+                            margin: auto;
+                            margin-bottom: 2vh;
+                        }
+                    } //end of mobile-cta-footer-branding
+        
+                    .mobile-cta-footer__button {
+                        display: inline-block;
+                        width: 70vw;
+                        height: 50px;
+                        background: #f5b600 0% 0% no-repeat padding-box;
+                        box-shadow: 0px 2px 0px #000000;
+                        border-radius: 5px;
+        
+                        font-family: $font-list-h;
+                        font-weight: nth($f-weights, 1);
+                        font-style: normal;
+                        font-size: $text1X-25; //20px;
+                        position: relative;
+        
+                        text-decoration: none;
+        
+                        .hero-text {
+                            position: relative;
+                            margin: auto;
+                            top: 9px;
+                            text-align: center;
+                            //NOTE: turned off, clashing with the design variants above mobile base design. 
+                            color: #644e0a;
+                        } //end hero-text
+                        //NOTE: design variant:
+                        cursor: pointer;
+        
+        
+                    }//end of mobile-footer__button 
+        
+                    .mobile-cta-footer__button:hover {
+                        background: #ffcf15 no-repeat padding-box;
+                        
+                        text-shadow: 0px 2px .5px #4a45459e;
+        
+                        .hero-text{
+                            //NOTE: Design variant overiding the span tag color assignment from the tablet and mobile variants.
+                            color: #f8f2f2 !important;
+                        }//end hero-text
+                    } //end .mobile-cta-footer__button:hover state
+        
+                    .mobile-cta-footer__sm-links {
+                        @include flexMix;
+                        list-style: none;
+                        align-content: center;
+                        position: relative;
+                        padding: 0px; //reseting the padding to default of zero.
+        
+                        //NOTE: UI/UX: ANIMATION & TRANSITIONS: 8 - Lower Social Media Icons - Appear and bounce effect
+                        li {
+                            #smi-yt,
+                            #smi-b,
+                            #smi-fb,
+                            #smi-ig,
+                            #smi-lk {
+                                position: relative;
+                            } //end img
+        
+                            #smi-yt {
+                            } //end smi-yt
+        
+                            #smi-yt:hover {
+                                @include about-lowerNav-hoverstate;
+                            } //end #smi-yt:hover
+        
+                            //======================================================
+        
+                            #smi-b {
+                            } //end smi-b
+        
+                            #smi-b:hover {
+                                @include about-lowerNav-hoverstate;
+                            } //end #smi-b:hover
+        
+                            //======================================================
+        
+                            #smi-fb {
+                            } // end smi-fb
+        
+                            #smi-fb:hover {
+                                @include about-lowerNav-hoverstate;
+                            } //end #smi-fb:hover
+        
+                            //======================================================
+        
+                            #smi-ig {
+                            } //end smi-ig
+        
+                            #smi-ig:hover {
+                                @include about-lowerNav-hoverstate;
+                            } //end #smi-ig:hover
+                            //======================================================
+        
+                            #smi-lk {
+                            } //end smi-lk
+        
+                            #smi-lk:hover {
+                                @include about-lowerNav-hoverstate;
+                            } //end #smi-lk:hover
+                            //======================================================
+        
+                            position: relative;
+                            margin-right: 10px;
+                            cursor: pointer;
+                        } //end li
+                    }//end mobile-cta-footer__sm-links
+                }//end mobile-footer-container
+            } //end mobile-cta-footer
+
+           
+    
+        
+    
+            /*SECTION  ANIMATIONS & TRANSITIOS 
+            ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >1920px */
+            /*ANIMATIONS: */
+            //==========================
+            //Playback Master sequence:
+            //1 - page bg-image:
+            //2 - Hero Copy:
+            //3 - hero supporting text:
+            //4 - top nav elements- in order - h, p, a, c, b:
+            //5 - logo & contact number:
+            //6 - CTAB:
+            //7 - lower nav:
+            //8: - social icons:
+            //==========================
+    
+            //1 - page bg-image:
+    
+            @keyframes about-bg-reveal {
+                // 0% {
+                    
+                    
+                //     background-color: black;
+                // }
+    
+                // 100% {
+                    
+                //     background-color: none;
+                // }
+            } //end bg-reveal
+    
+            //--------------------------
+    
+            //2 - Hero Copy:
+            @keyframes type1 {
+                0% {
+                    width: 0;
+                    border-right: 0em;
+                }
+    
+                15% {
+                    width: 15%;
+                    border-right: 0.15em solid $brandColor;
+                }
+                100% {
+                    width: 100%;
+                    border-right: 0.15em solid $brandColor;
+                }
+            }
+    
+            @keyframes type2 {
+                0% {
+                    width: 0;
+                    border-right: 0em;
+                }
+    
+                15% {
+                    width: 15%;
+                    border-right: 0.15em solid $brandColor;
+                }
+                100% {
+                    width: 95.5%;
+                    border-right: 0.15em solid $brandColor;
+                }
+            }
+    
+            @keyframes short-type {
+                0% {
+                    width: 0;
+                    border-right: 0em;
+                }
+    
+                15% {
+                    width: 15%;
+                    border-right: 0.15em solid $brandColor;
+                }
+                100% {
+                    width: 53%;
+                    border-right: 0.15em solid $brandColor;
+                }
+            }
+    
+            @keyframes blink {
+                from {
+                    border-color: transparent;
+                }
+                to {
+                    border-color: $brandColor;
+                }
+            }
+    
+            @keyframes cursor-off {
+                from {
+                    border-color: $brandColor;
+                }
+                to {
+                    border-color: transparent;
+                }
+            }
+    
+            //--------------------------
+    
+            //3 - hero supporting text:
+            @keyframes support-reveal {
+                @include basicReveal;
+            } //end
+            //--------------------------
+    
+            //4 - top nav elements- in order - h, p, a, c, b:
+            @keyframes top-nav-reveal {
+                @include basicReveal;
+                from {
+                    opacity: 0;
+                    pointer-events: none;
+                }
+                to {
+                    opacity: 1;
+                    pointer-events: all;
+                }
+            } //end 	top-nav-reveal
+            //--------------------------
+    
+            //5 - logo & contact number:
+            @keyframes logo-animate {
+                @include basicReveal;
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+            } //end logo-reveal
+    
+            @keyframes logo-blink {
+                @include basicReveal;
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+            } // end logo-blink
+            //--------------------------
+    
+            //6 - CTAB:
+            @keyframes CTAB-reveal {
+                @include basicReveal;
+                from {
+                    opacity: 0;
+                    pointer-events: none;
+                }
+                to {
+                    opacity: 1;
+                    pointer-events: all;
+                }
+            } //end CTAB-reveal
+    
+            @keyframes gleam {
+                0% {
+                    left: 0;
+                    opacity: 0;
+                }
+    
+                50% {
+                    left: 50%;
+                    opacity: 50%;
+                }
+    
+                100% {
+                    left: 100%;
+                    opacity: 0%;
+                }
+            }
+    
+            // //6 - CTAB:
+            //--------------------------
+    
+            //7 - lower nav:
+            @keyframes lower-nav-reveal {
+                @include basicReveal;
+                from {
+                    opacity: 0;
+                    pointer-events: none;
+                }
+                to {
+                    opacity: 1;
+                    pointer-events: all;
+                }
+            } //end lower nav
+            //--------------------------
+    
+            //8: - social icons:
+    
+            @keyframes social-icons-animate {
+                @include basicReveal;
+                0% {
+                    top: 0px;
+                }
+    
+                50% {
+                    top: -4px;
+                }
+    
+                100% {
+                    top: 0px;
+                }
+            } //end social-icons-reveal
+            //--------------------------
+    
+            @keyframes top-nav-gleam {
+                0% {
+                    left: 0;
+                    opacity: 0;
+                }
+    
+                50% {
+                    left: 50%;
+                    opacity: 50%;
+                }
+    
+                100% {
+                    left: 100%;
+                    opacity: 0%;
+                }
+            } //end top-nav-gleam
+            //-------------------------
+    
+            //9: info tooltip:
+            @keyframes info-tool-tip {
+                0% {
+                    opacity: 0;
+                    pointer-events: none;
+                    transform: scale(0);
+                }
+    
+                50% {
+                    opacity: 0.5;
+                    pointer-events: none;
+                    transform: scale(0.5);
+                }
+    
+                100% {
+                    opacity: 1;
+                    pointer-events: all;
+                    transform: scale(1);
+                }
+            } //end info-tool-tip
+            //--------------------------
+    
+            //10: info tooltip-pulse:
+            @keyframes info-tt-pulse {
+                0% {
+                    opacity: 1;
+                    pointer-events: none;
+                    transform: scale(1);
+                }
+    
+                50% {
+                    opacity: 0.5;
+                    pointer-events: none;
+                    transform: scale(1.5);
+                }
+    
+                100% {
+                    opacity: 0;
+                    pointer-events: all;
+                    transform: scale(2);
+                }
+            } //end info-tool-tip
+            //--------------------------
+    
+            //11: info tool-tip-animate:
+            @keyframes tooltip-animate {
+                0% {
+                    opacity: 0;
+                    transform: scale(0);
+                }
+    
+                50% {
+                    opacity: 0.5;
+                    transform: scale(0.5);
+                }
+    
+                100% {
+                    opacity: 1;
+                    transform: scale(1);
+                }
+            } //end info tool-tip-animate
+            //--------------------------
+    
+            //12: chevron-down-animate
+            @keyframes chevron-down-animate {
+                0% {
+                    top: 0px;
+                }
+    
+                50% {
+                    top: 2.5px;
+                }
+    
+                100% {
+                    top: 0px;
+                }
+            } //end chevron-down-animate
+    
+            //13:  chevron-down-reveal
+            @keyframes chevron-down-reveal {
+                @include basicReveal;
+    
+                0%{
+                    pointer-events: none;
+                }
+                100%{
+                    pointer-events: all;
+    
+                }
+            } //end chevron-down-reveal
+
+            //14 - Alt-Hero-Text Reveal:
+            @keyframes alt-hero-reveal {
+                @include basicReveal;
+            } //end
+            //--------------------------
+    
+            /*END ANIMATIONS*/
+            /*!SECTION END ANIMATIONS & TRANSITIONS */
+        }//end main-container
+    }//end body
+}//end of Media Query 
+//end below 300 pixel width screen adjustments
+/*SECTION BELOW MOBILE PHONE 330PX DEVICE WIDTH */

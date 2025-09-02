@@ -32,10 +32,12 @@
 				.page-flipped {
 					transform: translateX(0.5%) rotateY(90deg);
 				}
-.main-container{
+				.main-container{
 
 				//NOTE: design variant: As more get added switch to flex direction row / CSS GRID, for better layout arrangment, until then, these pages can be hidden on the live site until we put content in them.
-				width: 100vw;
+
+				//NOTE: design variant:Added a constraint on the overall width of the main container to make use of the wrapping property of flex-wrap on the items: (the content of the page) in the container: (main container) - So that the alignment of the lower nav container and its contents would be placed under the content of the project display boxes. And not have everything inline.  The size contrainst on the width: 80% of the entire viewport instead of 100% creating a more defined area for the content to exsit in. 
+				width: 80vw;
 				height: 100vh;
 				margin: auto;
 				@include flexMix; //NOTE: Now switched over to horizontal layout for larger screens starting from the tablet landscape mode.
@@ -49,9 +51,27 @@
 		// //NOTE: Design variant
 		// background-image: url("/img/img-tablet-l/tablet-landscape-ps-bg.png");
 
-		#show-box-1,
-		#show-box-2,
-		#show-box-3 {
+	
+
+
+
+		.show-box__container{
+
+			position: relative;
+			top: 4vh;
+			text-align: center;
+			display: flex;
+		   
+			justify-content: center;
+			align-items: center;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			
+			.show-box__link{
+			
+			#show-box-1,
+			#show-box-2,
+			#show-box-3 {
 			//NOTE: design variant
 
 			width: 230px;
@@ -59,169 +79,36 @@
 			//NOTE: design variant - Reduced the  left and right margins as the layout is now row not column - Horizontal. Later iterate to CSS GRID as more projects are added.
 			margin: 0px 18px 14px; // top, left & right, bottom.
 			border-radius: 3px;
-		} //end show-box-group styles
+			} //end show-box-group styles
 
-		#show-box-1{
-
-			//NOTE: UI/UX ANIMATION & TRANSITIONS: 12 - Project Card Basic Reveal
-			opacity: 0;// set the inintal state of the project show boxes visbility for animation
-			animation: project-card-reveal 1s linear 3s forwards;
-		}//end show-box-1
-		
-		#show-box-2{
+			}//end show-box__link
 			
-			//NOTE: UI/UX ANIMATION & TRANSITIONS: 12 - Project Card Basic Reveal
-			opacity: 0;// set the inintal state of the project show boxes visbility for animation
-			animation: project-card-reveal 0.7s linear 3.3s forwards;
-		}//end show-box-2
+			#show-box-1{
 
-
-		#show-box-3{
+				//NOTE: UI/UX ANIMATION & TRANSITIONS: 12 - Project Card Basic Reveal
+				opacity: 0;// set the inintal state of the project show boxes visbility for animation
+				animation: project-card-reveal 1s linear 3s forwards;
+			}//end show-box-1
 			
-			//NOTE: UI/UX ANIMATION & TRANSITIONS: 12 - Project Card Basic Reveal
-			opacity: 0;// set the inintal state of the project show boxes visbility for animation
-			animation: project-card-reveal 0.5s linear 3.5s forwards;
-		}//end show-box-3
-
-
-
-
-
-		.lower-nav-container{
-			display: flex !important;
-			bottom: 40px;
-			width: 300px; //NOTE: prevents the horizontal scroll bars issue from before. Define an area which the conatiner should occupy on the page. 
-		
-			position: fixed;
-			flex-direction: column;
-			align-items: center;
-			z-index: 13;
-
-			right: 358px; //NOTE Design variant : Adjustment building up from Tablet Portriat.
-			.nav-chevrons{
-				display: flex !important; //NOTE: design variant: Turns on the nav chevrons for this variant, turned off by default from mobile.
-				position: relative; // NOTE: Relative to the parent lower-nav-container div.
-				top: -18px;
-				.left-chev {
-
-					.dtlink.low-nav-a-left{
+			#show-box-2{
 				
-						img{
-							//NOTE: same issues as when adding the anchor links in the top menu. The inner most elment's event propagation was blocking the wrapping anchor link tag. Therefore needed to turn it's default event propagation behavior off with pointer events: none.
-							pointer-events: none;
-						} //end img  
-					} //end dtlink.low-nav-a-left
-					
-					position: relative;
-					left: -21px; //pull chevron to the left a little
-					cursor: pointer;
-				} //end left-chev
-
-				.right-chev {
-
-					.dtlink.low-nav-a-right{
+				//NOTE: UI/UX ANIMATION & TRANSITIONS: 12 - Project Card Basic Reveal
+				opacity: 0;// set the inintal state of the project show boxes visbility for animation
+				animation: project-card-reveal 0.7s linear 3.3s forwards;
+			}//end show-box-2
+	
+	
+			#show-box-3{
 				
-						img{
-							//NOTE: same issues as when adding the anchor links in the top menu. The inner most elment's event propagation was blocking the wrapping anchor link tag. Therefore needed to turn it's default event propagation behavior off with pointer events: none.
-							pointer-events: none;
-						} //end img  
-					} //end dtlink.low-nav-a-right
-
-					position: relative;
-					right: -21px; //pull chevron to the right a little
-					cursor: pointer;
-				} //end right-chev
-
-			}//end nav-cherons
+				//NOTE: UI/UX ANIMATION & TRANSITIONS: 12 - Project Card Basic Reveal
+				opacity: 0;// set the inintal state of the project show boxes visbility for animation
+				animation: project-card-reveal 0.5s linear 3.5s forwards;
+			}//end show-box-3						
+		}//end show-box__container
 
 
-			.main-footer {
-			
-				.main-footer__social-icons {
-					display: flex;
-					align-items: center;
-					flex-wrap: nowrap;			  
-					margin: 0px;
-					padding: 0px;
-					list-style: none;
-					text-decoration: none;
-					right: 0px;
-					//NOTE: Design variant: The outer container creates an offset, so this corrects for it. Centering the social media icons.
-					position: relative;
-				
-					//NOTE: UI/UX: ANIMATION & TRANSITIONS: 8 - Lower Social Media Icons - Appear and bounce effect
-					li {
-						#smi-yt,
-						#smi-b,
-						#smi-fb,
-						#smi-ig,
-						#smi-lk {
-							position: relative;
-						} //end img
-	
-						#smi-yt {
-							
-							
-						} //end smi-yt
-						
-						#smi-yt:hover {
-							@include alt-lowerNav-hoverstate-gray;
-						} //end #smi-yt:hover
-	
-						//======================================================
-	
-						#smi-b {
-							
-							
-						} //end smi-b
-	
-						#smi-b:hover {
-							@include alt-lowerNav-hoverstate-gray;
-						} //end #smi-b:hover
-	
-						//======================================================
-	
-	
-	
-						#smi-fb {
-						
-						} // end smi-fb
-	
-						#smi-fb:hover {
-							@include alt-lowerNav-hoverstate-gray;
-						} //end #smi-fb:hover
-	
-	
-	
-						//======================================================
-	
-						#smi-ig {
-							
-						} //end smi-ig
-	
-	
-						#smi-ig:hover {
-							@include alt-lowerNav-hoverstate-gray;
-						} //end #smi-ig:hover
-						//======================================================
-	
-						#smi-lk {
-							
-						} //end smi-lk
-	
-	
-						#smi-lk:hover {
-							@include alt-lowerNav-hoverstate-gray;
-						} //end #smi-lk:hover
-						//======================================================
-	
-						position: relative;
-						margin-right: 10px;
-						cursor: pointer;
-					} //end li
-				} //end social-icons
-			} //end main-footer		
-		}//end lower-nav-container
+
+
 
 
 		.tt-circle {
@@ -398,6 +285,137 @@
 		} //end tt-circle-pulse
 
 }//end main-container
+	
+		.lower-nav-wrapper{
+
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			position: absolute;
+			width: 100vw;
+			top: 86vh;
+
+			.lower-nav-container {
+				display: flex !important;
+				flex-direction: column;
+				align-items: center;
+				// position: fixed;
+				// bottom: 40px; //NOTE: placement to match the home, projects, and about positioning of the nav.
+				// left: 50vw;
+
+				//NOTE: Design variant: Used the container for positioning the elements of the lower nav. With it being absolutely placed, we can use relative positioning for the child elements (chevrons and the social icons)
+
+				.nav-chevrons {
+					position: relative; // NOTE: Relative to the parent lower-nav-container div.
+					top: -18px;
+					// right: 16px;
+					display: block !important;
+					.left-chev {
+
+						.dtlink.low-nav-a-left{
+					
+							img{
+								//NOTE: same issues as when adding the anchor links in the top menu. The inner most elment's event propagation was blocking the wrapping anchor link tag. Therefore needed to turn it's default event propagation behavior off with pointer events: none.
+								pointer-events: none;
+							} //end img  
+						} //end dtlink.low-nav-a-left
+
+						position: inherit;
+						left: -21px; //pull chevron to the left a little
+						cursor: pointer;
+					} //end left-chev
+
+					.right-chev {
+
+						.dtlink.low-nav-a-right{
+					
+							img{
+								//NOTE: same issues as when adding the anchor links in the top menu. The inner most elment's event propagation was blocking the wrapping anchor link tag. Therefore needed to turn it's default event propagation behavior off with pointer events: none.
+								pointer-events: none;
+							} //end img  
+						} //end dtlink.low-nav-a-right
+
+						position: inherit;
+						right: -21px; //pull chevron to the right a little
+						cursor: pointer;
+					} //end right-chev
+				} //end nav-chevrons
+
+				.main-footer {
+					.main-footer__social-icons {
+						display: flex;
+						margin: 0px;
+						padding: 0px;
+						list-style: none;
+						text-decoration: none;
+						justify-content: center;
+		
+
+						li {
+							margin-right: 10px;
+						} //end li
+
+						//NOTE: UI/UX: ANIMATION & TRANSITIONS: 8 - Lower Social Media Icons - Appear and bounce effect
+						li {
+							#smi-yt,
+							#smi-b,
+							#smi-fb,
+							#smi-ig,
+							#smi-lk {
+								position: relative;
+							} //end img
+
+							#smi-yt {
+							} //end smi-yt
+
+							#smi-yt:hover {
+								@include lowerNav-hoverstate;
+							} //end #smi-yt:hover
+
+							//======================================================
+
+							#smi-b {
+							} //end smi-b
+
+							#smi-b:hover {
+								@include lowerNav-hoverstate;
+							} //end #smi-b:hover
+
+							//======================================================
+
+							#smi-fb {
+							} // end smi-fb
+
+							#smi-fb:hover {
+								@include lowerNav-hoverstate;
+							} //end #smi-fb:hover
+
+							//======================================================
+
+							#smi-ig {
+							} //end smi-ig
+
+							#smi-ig:hover {
+								@include lowerNav-hoverstate;
+							} //end #smi-ig:hover
+							//======================================================
+
+							#smi-lk {
+							} //end smi-lk
+
+							#smi-lk:hover {
+								@include lowerNav-hoverstate;
+							} //end #smi-lk:hover
+							//======================================================
+
+							position: relative;
+							margin-right: 10px;
+							cursor: pointer;
+						} //end li
+					} //end social-icons
+				} //end main-footer
+			} // end lower-nav-elements
+		}//end lower-nav-wrapper
 
 			/*SECTION  ANIMATIONS & TRANSITIONS 
 		ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >1920px */

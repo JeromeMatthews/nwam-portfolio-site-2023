@@ -24,12 +24,15 @@
 		<title>nomad | case-studies: Nishida's Gymnastics</title>
 	</head>
 	<body>
+			<!--NOTE: UX/UI PAGE TURN NAVIGATION TRANSITION ELEMENTS -->
+			<div class="page-container">
+				<div class="page__surface"></div>
 		<div class="sitenav__overlay"></div>
 		<!-- end mobile overlay-->
 		<header class="header">
 			<nav class="sitenav-container">
 				<div class="sitenav-logo-contact-container">
-					<a id="logo" class="logolink" href="/index.html">
+					<a id="logo" class="dtlink" href="/index.html">
 						<img
 							class="sitenav__logo"
 							src="/img/img-mobile-p/Nomad-orange.png"
@@ -79,8 +82,7 @@
 					<!-- NAVIGATION: TABLET - > DESKTOP RANGE -->
 					<!--NOTE: Added the class dtl to flag all the links that should trigger the animation omitting the tablet and mobile level links-->
 					<ul class="mainnav__links">
-						
-							
+						<div class="navlinks__wrapper">
 						<li>
 							<div id="mainnav__links-animate-c-1">
 
@@ -105,7 +107,7 @@
 							
 								<div class="mainnav__links-link-container">
 
-									<a id="mainnav__links-about" class="mainnav__links-link__href" class="dtlink" href="/about/about.html"
+									<a id="mainnav__links-about" class="mainnav__links-link__href dtlink" href="/about/about.html"
 										><span class="mainnav__links-link__text">About</span>
 									
 									</a>
@@ -144,7 +146,8 @@
 						</div><!-- mn-blog-->
 					</div><!-- mainnav__links-animate-c-4-->
 						</li>
-				</ul><!-- end Ul-->
+					 </div> <!--navlinks__wrapper -->
+					</ul><!-- end Ul-->
 			</nav>
 
 			<!-- end Navigation -->
@@ -251,7 +254,7 @@
 			</section>
 			<!-- END BTF-1 CONTAINER Project Description Project Details Summary -->
 
-			<div class="nav-chevrons">
+			<div class="nav-chevrons" style="display: none;">
 				<a href="/case-studies/nishidas-gymnastics/nishida.html#btl">
 					<span class="chevron-down"
 						><img
@@ -363,54 +366,58 @@
 
 			<!-- BTF PAGE 4 - 5 BETWEEN THE LINES MILESTONES AND DELIVERABLES  FOOTER - -->
 
-			<div class="mobile-cta-footer">
-				<div class="mobile-cta-footer-branding">
-					<p class="mobile-cta-footer-branding__text-1">So, What's your story?...</p>
-					<p class="mobile-cta-footer-branding__text-2">Let's tell it, with</p>
+		    <div class="mobile-cta-footer">
+				<div class="mobile-cta-footer__container">
+					<div class="mobile-cta-footer-branding">
+						<p class="mobile-cta-footer-branding__text-1">So, What's your story?...</p>
+						<p class="mobile-cta-footer-branding__text-2">Let's tell it, with</p>
 
-					<img
-						class="mobile-cta-footer__logo"
-						src="/img/img-tablet-p/nomad-black-tablet-p-cs-footer.png"
-						alt="nomad-web- and-media-logo-black-tablet-p"
-					/>
+						<img
+							class="mobile-cta-footer__logo"
+							src="/img/img-tablet-p/nomad-black-tablet-p-cs-footer.png"
+							alt="nomad-web- and-media-logo-black-tablet-p"
+						/>
 
 
-					<!-- alternate image for larger viewports only activated with screens wider than 1024px -->
-			
-					<img style="display: none;" class="mobile-cta-footer__logo-l" src="/img/img-desktop-l/nomad-black-l.png" alt="nomad-web- and-media-logo-black-desktop-l">
-				</div>
-				<!-- mobile-cta-footer -branding -->
+						<!-- alternate image for larger viewports only activated with screens wider than 1024px -->
+				
+						<img style="display: none;" class="mobile-cta-footer__logo-l" src="/img/img-desktop-l/nomad-black-l.png" alt="nomad-web- and-media-logo-black-desktop-l">
+					</div>
+					<!-- mobile-cta-footer -branding -->
 
-				<a class="mobile-cta-footer__button" href="/contact/contact.html"> <span class="hero-text">share your story </span> 
-				</a>
+					<a class="mobile-cta-footer__button" href="/contact/contact.html"> <span class="hero-text">share your story </span> 
+					</a>
 
-				<ul class="mobile-cta-footer__sm-links">
-					<li>
-						<a href="#"
-							><img id="smi-yt" src="/img/sm-icons/icons8-youtube-black.svg" alt="youtube"
-						/></a>
-					</li>
-					<li>
-						<a href="#"
-							><img id="smi-b" src="/img/sm-icons/icons8-behance-black.svg" alt="behance"
-						/></a>
-					</li>
-					<li>
-						<a href="#"
-							><img id="smi-fb" src="/img/sm-icons/icons8-facebook-black.svg" alt="facebook"
-						/></a>
-					</li>
-					<li>
-						<a href="#"
-							><img id="smi-ig" src="/img/sm-icons/icons8-instagram-black.svg" alt="instagram"
-						/></a>
-					</li>
-					<li>
-						<a href="#"
-							><img id="smi-lk" src="/img/sm-icons/icons8-linkedin-black.svg" alt="linkedin"
-						/></a>
-					</li>
-				</ul>
+					<ul class="mobile-cta-footer__sm-links">
+						<li>
+							<a href="#"
+								><img id="smi-yt" src="/img/sm-icons/icons8-youtube-black.svg" alt="youtube"
+							/></a>
+						</li>
+						<li>
+							<a href="#"
+								><img id="smi-b" src="/img/sm-icons/icons8-behance-black.svg" alt="behance"
+							/></a>
+						</li>
+						<li>
+							<a href="#"
+								><img id="smi-fb" src="/img/sm-icons/icons8-facebook-black.svg" alt="facebook"
+							/></a>
+						</li>
+						<li>
+							<a href="#"
+								><img id="smi-ig" src="/img/sm-icons/icons8-instagram-black.svg" alt="instagram"
+							/></a>
+						</li>
+						<li>
+							<a href="#"
+								><img id="smi-lk" src="/img/sm-icons/icons8-linkedin-black.svg" alt="linkedin"
+							/></a>
+						</li>
+					</ul>
+
+				</div><!-- mobile-cta-footer__container -->
+			  
 			</div>
 
 			<!-- END BTF PAGE 4 - 5 BETWEEN THE LINES MILESTONES AND DELIVERABLES  FOOTER - -->

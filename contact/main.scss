@@ -35,70 +35,95 @@ body {
 	
 	.main-container {
 		.contact-container {
-          
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
 
-				.contact-heroCopy {
-							margin: 0px;
-							padding: 0px;
-							position: relative;
-							top: 130px;
-							font-family: $font-list-h;
-							font-size: $text1x-56; //25px;
-							font-weight: nth($f-weights, 1);
-							color: #fff;
-							text-align: center;
+				.contact-heroCopy-container {
+					@media(max-width: 400px){
+					//NOTE: Made to help better align and display the HeroCopy text, espectially on smaller viewports
+						display: flex;
+						flex-direction: row;
+						flex-wrap: wrap;
+						align-items: center;
+						position: relative;
+						justify-content: center;
+						.contact-heroCopy{
+							.tw-fx-1,.tw-fx-2{
+							font-weight: nth($f-weights, 3);
+							}//end tw-fx-1, tw-fx-2 
+						}//end contact-heroCopy
+						
+					}//end media-query
+			
 
-							//NOTE: UI/UX: ANIMATION & TRANSITIONS: 2 - About Hero - Typewriter effect
-								.tw-fx-1 {
-									display: inline-block;
-									overflow: hidden;
 
-									white-space: nowrap;
-									font-size: inherit; //take it from the original font-size, easier to scale.
-									width: 0;
-									animation: type1 1.6s steps(21, end) 0.8s forwards,
-										cursor-off 1 linear 0.2s 2.4s forwards;
-									/*name -> 
-									iteration-count-> 
-									timing-function->
-									duration->
-									delay->
-									fill-mode*/
-								} //end tw-fx-1
+					.contact-heroCopy {
+								margin: 0px;
+								padding: 0px;
+								position: relative;
+								// top: 130px;
+								font-family: $font-list-h;
+								font-size: $text1x-56; //25px;
+								font-weight: nth($f-weights, 1);
+								color: #fff;
+								text-align: center;
 
-								.tw-fx-2 {
-									position: relative;
-									top: -30px;
-									display: inline-block;
-									overflow: hidden;
+								//NOTE: UI/UX: ANIMATION & TRANSITIONS: 2 - About Hero - Typewriter effect
+									.tw-fx-1 {
+										display: inline-block;
+										overflow: hidden;
 
-									white-space: nowrap;
-									font-size: inherit; //take it from the original font-size, easier to scale.
-									width: 0;
+										white-space: nowrap;
+										font-size: inherit; //take it from the original font-size, easier to scale.
+										width: 0;
+										animation: type1 1.6s steps(21, end) 0.8s forwards,
+											cursor-off 1 linear 0.2s 2.4s forwards;
+										/*name -> 
+										iteration-count-> 
+										timing-function->
+										duration->
+										delay->
+										fill-mode*/
+									} //end tw-fx-1
 
-									animation: type2 1.5s steps(20, end) 3s forwards,
-										cursor-off 1 linear 0.2s 4.4s forwards;
-									/*name -> 
-									iteration-count-> 
-									timing-function->
-									duration->
-									delay->
-									fill-mode*/
-								} //end tw-fx-2
-				} //end contact-heroCopy
+									.tw-fx-2 {
+										position: relative;
+										// top: -30px;
+										display: inline-block;
+										overflow: hidden;
+
+										white-space: nowrap;
+										font-size: inherit; //take it from the original font-size, easier to scale.
+										width: 0;
+
+										animation: type2 1.5s steps(20, end) 3s forwards,
+											cursor-off 1 linear 0.2s 4.4s forwards;
+										/*name -> 
+										iteration-count-> 
+										timing-function->
+										duration->
+										delay->
+										fill-mode*/
+									} //end tw-fx-2
+					} //end contact-heroCopy		
+				}//end contact-heroCopy-container
 
 				.contactheroimg {
-							margin: 0px;
-							padding: 0px;
-							position: relative;
-							top: 110px;
-							left: 88px;
-							height: 95px;
+					margin: 0px;
+					padding: 0px;
+					position: relative;
+					// top: 110px;
+					// left: 88px;
+					// height: 95px;
 
-							//NOTE: UI/UX: ANIMATION & TRANSITIONS:
-							opacity: 0; //set inital state for animation
-							animation: logo-reveal 1 ease-in 1s 5s forwards;
-				}//end contact-heroimg
+					//NOTE: UI/UX: ANIMATION & TRANSITIONS:
+					opacity: 0; //set inital state for animation
+					animation: logo-reveal 1 ease-in 1s 5s forwards;
+		}//end contact-heroimg
+			
 
 				.contact-form {
 
@@ -107,7 +132,7 @@ body {
 						animation: contact-form-animate 1 ease-out 1s 6.5s forwards;
 
 					position: relative;
-					top: 100px;
+					// top: 100px;
 					.contact-form__elements {
 						@include flexMix-col;
 						text-align: center;
@@ -118,7 +143,12 @@ body {
 							margin: 6px auto;
 
 							list-style: none;
-
+								@media(max-width: 400px) {
+									//NOTE: removes the labels from the interface and relies on the placeholddre text within the input fields. 
+									.contact-form__label{
+										display: none;
+									}//end contact-form-label
+								}//end media-query
 							.contact-form__label {
 								position: relative;
 								//to align the labels with the inputs.
@@ -131,6 +161,7 @@ body {
 								width: 69px;
 								height: 30px;
 								padding: 5px 15px 6px 15px;
+								border-radius: 4px 0px 0px 4px; 
 
 								
 
@@ -159,6 +190,7 @@ body {
 							position: relative;
 
 							cursor: pointer;
+							color: #644e0a;
 						}//end mobile-cta-footer__button
 
 						.mobile-cta-footer__button:hover {
@@ -184,32 +216,32 @@ body {
 		
 
 		
-		.tt-circle {
-			position: absolute;
-			top: 730px;
-			left: 40px;
-			width: 20px;
-			height: 20px;
-			background-color: #8a8a8a98;
-			border: 1px solid #ffff;
-			border-radius: 55%;
-			box-shadow: 0.1px 0.7px #000;
-			.tt-circle__icon {
-				margin: 0 auto;
-				position: absolute;
-				left: 7px;
-				top: -8px;
-				text-align: center;
-				font: $text1x-43 $font-list-b;
-				color: #fff;
-				cursor: pointer;
-			} //end tt-circle__icon
+		// .tt-circle {
+		// 	position: absolute;
+		// 	top: 730px;
+		// 	left: 40px;
+		// 	width: 20px;
+		// 	height: 20px;
+		// 	background-color: #8a8a8a98;
+		// 	border: 1px solid #ffff;
+		// 	border-radius: 55%;
+		// 	box-shadow: 0.1px 0.7px #000;
+		// 	.tt-circle__icon {
+		// 		margin: 0 auto;
+		// 		position: absolute;
+		// 		left: 7px;
+		// 		top: -8px;
+		// 		text-align: center;
+		// 		font: $text1x-43 $font-list-b;
+		// 		color: #fff;
+		// 		cursor: pointer;
+		// 	} //end tt-circle__icon
 
-			opacity: 0; //initializing the opacity of the tooltip.
-			pointer-events: none;
-			cursor: pointer;
-			animation: info-tool-tip 1s ease-in 10.5s forwards;
-		} //end tt-circle
+		// 	opacity: 0; //initializing the opacity of the tooltip.
+		// 	pointer-events: none;
+		// 	cursor: pointer;
+		// 	animation: info-tool-tip 1s ease-in 10.5s forwards;
+		// } //end tt-circle
 
 		// .tt-circle:hover  ::before{
 		// 	content: "click and hold for info:";
@@ -219,25 +251,25 @@ body {
 
 		// }//end tt-circle::before
 
-		.tt-circle:hover ::after {
-			content: " Title: person-standing-beside-tent";
-			// white-space: pre-wrap; // to allow for inserting line breaks into the content propety
-			position: absolute;
-			transition: 1s all ease;
-			top: 7px;
-			left: -92px;
-			width: 430px;
-			height: 20px;
-			// background-color: #77767255;
-			// border: 1px solid #ffffff;
-			// border-radius: 3px;
-			// box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-			color: #fff;
-			font-size: $textBase;
+		// .tt-circle:hover ::after {
+		// 	content: " Title: person-standing-beside-tent";
+		// 	// white-space: pre-wrap; // to allow for inserting line breaks into the content propety
+		// 	position: absolute;
+		// 	transition: 1s all ease;
+		// 	top: 7px;
+		// 	left: -92px;
+		// 	width: 430px;
+		// 	height: 20px;
+		// 	// background-color: #77767255;
+		// 	// border: 1px solid #ffffff;
+		// 	// border-radius: 3px;
+		// 	// box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+		// 	color: #fff;
+		// 	font-size: $textBase;
 
-			//NOTE: Tooltip animation:
-			animation: tooltip-animate 0.3s ease forwards;
-		} //end tt-circle:hover
+		// 	//NOTE: Tooltip animation:
+		// 	animation: tooltip-animate 0.3s ease forwards;
+		// } //end tt-circle:hover
 
 		// .tt-circle-pulse {
 		// 	position: relative;
@@ -253,7 +285,16 @@ body {
 		// 	animation: info-tt-pulse 1.5s ease-in 26.5s 25;
 		// } //end tt-circle-pulse
 
+	
 		.author-info {
+			@media(max-width: 400px){
+
+			
+				display: none;
+			
+		
+		}//end media query removes the author info section on narrower viewports. 
+
 			opacity: 0;
 			// display: block !important; //NOTE: overiding the defualt setting in the HTML so the code block won't show in the mobile and tablet variants.
 			font: $textSmall-75 $font-list-b;
@@ -285,84 +326,95 @@ body {
 
 			animation: info-tool-tip 1s ease-in 11.5s forwards;
 		} //end-author-info
+	
 
+		// //NOTE: INFORMATION TOOLTIP
+	 //----------------------------------------------------------------
+
+	 .tt-circle{
+		//NOTE: Toggled off by default for this variant: mobile devices below 768px;
+		display: none;
+	 }//end tt-circle
 
 		// //NOTE: BACKGROOUND IMAGE TOOLTIP
-	// //----------------------------------------------------------------
+	 //----------------------------------------------------------------
 
 	.tt-bgimg-circle {
-		position: fixed;
-		top: 664px;
-		left: 593px;
-		width: 20px;
-		height: 20px;
-		background-color: $brandColor;
-		border: 1px solid #ffff;
-		border-radius: 55%;
-		box-shadow: 0.1px 0.7px #000;
-		z-index: 19;//NOTE: needed to add z-index to bring the element forward to be interactable. In front of the show-box
-		.tt-bgimg-circle__icon {
-			margin: 0 auto;
-			position: absolute;
-			left: 5px;
-			top: -0px;
-			text-align: center;
-			font: $textBase arial;
-			color: #fff;
-			cursor: pointer;
-		} //end tt-circle__icon
+		display: none;
 
-		opacity: 0; //initializing the opacity of the tooltip.
-		pointer-events: none;
-		cursor: pointer;
-		animation: info-tool-tip 1s linear 8.5s forwards;
+		// position: fixed;
+		// top: 664px;
+		// left: 593px;
+		// width: 20px;
+		// height: 20px;
+		// background-color: $brandColor;
+		// border: 1px solid #ffff;
+		// border-radius: 55%;
+		// box-shadow: 0.1px 0.7px #000;
+		// z-index: 19;//NOTE: needed to add z-index to bring the element forward to be interactable. In front of the show-box
+		// .tt-bgimg-circle__icon {
+		// 	margin: 0 auto;
+		// 	position: absolute;
+		// 	left: 5px;
+		// 	top: -0px;
+		// 	text-align: center;
+		// 	font: $textBase arial;
+		// 	color: #fff;
+		// 	cursor: pointer;
+		// } //end tt-circle__icon
+
+		// opacity: 0; //initializing the opacity of the tooltip.
+		// pointer-events: none;
+		// cursor: pointer;
+		// animation: info-tool-tip 1s linear 8.5s forwards;
 	} //end tt-circle
 
 
 
 	.tt-bgimg-circle:hover ::after {
-		content: "Message in a bottle... \a Just as this Mongolian youth stares into the night sky with intrepidness and wonder, so too do we have an interest in what stories could be told out there. \a We can’t wait. Let’s go, Let’s tell your story…  \a";
-		white-space: pre-line; // to allow for inserting line breaks into the content propety
-		position: absolute;
-		transition: 1s all ease;
-		top: -125px;
-		left: -581px;
-		width: 580px;
-		height: 80px;
-		background-color: #00000057;
-		border: 1px solid #ffffff54;
-		border-radius: 1px;
-		box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-		text-shadow: 1px 1.5px 0px #00000059;
-		font: $textBase 700 $font-list-b;
-		color: #fff;
+		display:none;
+		// content: "Message in a bottle... \a Just as this Mongolian youth stares into the night sky with intrepidness and wonder, so too do we have an interest in what stories could be told out there. \a We can’t wait. Let’s go, Let’s tell your story…  \a";
+		// white-space: pre-line; // to allow for inserting line breaks into the content propety
+		// position: absolute;
+		// transition: 1s all ease;
+		// top: -125px;
+		// left: -581px;
+		// width: 580px;
+		// height: 80px;
+		// background-color: #00000057;
+		// border: 1px solid #ffffff54;
+		// border-radius: 1px;
+		// box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+		// text-shadow: 1px 1.5px 0px #00000059;
+		// font: $textBase 700 $font-list-b;
+		// color: #fff;
 
-		//NOTE: Tooltip animation:
-		opacity: 1;
-		animation: tooltip-animate 0.3s ease forwards;
+		// //NOTE: Tooltip animation:
+		// opacity: 1;
+		// animation: tooltip-animate 0.3s ease forwards;
 	} //end tt-circle:hover
 
 	.tt-bgimg-circle-pulse {
-		position: absolute;
-		z-index: -10; //brings the pulse effect forwards to make it look like its coming from the info button.
+		display:none;
+		// position: absolute;
+		// z-index: -10; //brings the pulse effect forwards to make it look like its coming from the info button.
 
-		top: 554px;
-		left: 593px;
-		width: 20px;
-		height: 20px;
-		background-color: transparent;
-		border: 1px solid #ffff;
-		border-radius: 55%;
-		opacity: 0; //initializing the opacity for the animation.
-		animation: info-tt-pulse 1.5s linear 9.5s 25;
+		// top: 554px;
+		// left: 593px;
+		// width: 20px;
+		// height: 20px;
+		// background-color: transparent;
+		// border: 1px solid #ffff;
+		// border-radius: 55%;
+		// opacity: 0; //initializing the opacity for the animation.
+		// animation: info-tt-pulse 1.5s linear 9.5s 25;
 	} //end tt-circle-pulse
 
+	} //end main-container
+	.lower-nav-wrapper{
+		display: none;
 		.lower-nav-container {
-			display: block !important;
-			position: fixed;
-			bottom: 40px; //NOTE: placement to match the home, projects, and about positioning of the nav.
-			left: 50vw;
-
+		
 			//NOTE: Design variant: Used the container for positioning the elements of the lower nav. With it being absolutely placed, we can use relative positioning for the child elements (chevrons and the social icons)
 
 
@@ -382,7 +434,7 @@ body {
 					justify-content: center;
 					//NOTE: Design vaieant: The outer container creates an offset, so this corrects for it. Centering the social media icons.
 					position: relative;
-					right:  5.2vw;
+					// right:  5.2vw;
 
 					li {
 						margin-right: 10px;
@@ -448,9 +500,9 @@ body {
 				} //end social-icons
 			} //end main-footer
 		} // end lower-nav-elements
+	
+}//end lower-nav-wrapper
 
-
-	} //end main-container
 
 
 /*SECTION  ANIMATIONS & TRANSITIONS 
@@ -504,7 +556,7 @@ body {
 				border-right: 0.15em solid #fff;
 			}
 			100% {
-				width: 73%;
+				width: 100%;
 				border-right: 0.15em solid #fff;
 			}
 		}
@@ -564,15 +616,15 @@ body {
 
 			//NOTE: the top position values based on the top-position value given on contact form. top: -105px
 			0% {
-				top: -125px;
+				top: -27px;
 			}
 
 			50% {
-				top: -110px;
+				top: -20px;
 			}
 
 			100% {
-				top: -105px;
+				top: -7px;
 			}
 		}//end contact-form-animate
 		//--------------------------

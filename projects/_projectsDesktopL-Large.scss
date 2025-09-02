@@ -3,12 +3,7 @@
 @media (min-width: 1920px) {
 
 
-	//NOTE: Design variant: For Projects page. Needed to bring the logo link more forward so it could be clicked on to trigger the page transition animation and hyper linking.
-	#logo.dtlink {
-		//NOTE: Already has a position property set from the nav-base-desktops partial file import. So just adjusting the z-index here building on top of that.
-		z-index: 9;
-	}
-
+	
 	.main-container {
 		//NOTE: design variant: resetting the main container height to the default.
 		top: 0px;
@@ -37,8 +32,8 @@
 
 
 		.mainnav__links {
-			top: 26px;
-			left: 698px;
+			// top: 26px;
+			// left: 698px;
 
 			a {
 				margin-top: 0px;
@@ -105,234 +100,116 @@
 			//NOTE: Design variant
 			// background-image: url("/img/img-desktop-l/desktop-ps-bg.png");
 
-			.show-box {
-				.show-box__title {
-					//NOTE: Design variant
-					font-size: $text2X-81; //45px;
-				}
-				.show-box__subtitle {
-					//NOTE: Design variant: instansiated on large viewports.
-					display: block !important;
-					font-size: $text2x-18; //35px;
-				}
-				.show-box__text {
-					//NOTE: Design variant
-					top: -80px;
-					font-size: $text1X-25; //20px;
-				} //end show-box__text
-			} //end show-box
+			.show-box__container{
+				// position: relative;
+				// top: 4vh;
 
-			#show-box-1,
-			#show-box-2,
-			#show-box-3 {
-				//NOTE: design variant
-				width: 488px;
-				height: 490px;
-				opacity: 0.95;
-			} //end show-box-group styles
-
-			#show-box-1 {
-				//NOTE: design variant
-				background-image: url("/img/img-desktop-l/desktop-ps-natours-bg.png");
-
-				//NOTE: Added the overlay to help strengthen the contrast of the text against the background image
-				.show-box__overlay {
-					@include showBoxOverlay;
-
-					//NOTE: design variant
-					width: 488px;
-					height: 490px;
-				} //end show-box__overlay
-
-
-				//NOTE: UI/UX ANIMATION & TRANSITIONS: 12 - Project Card Basic Reveal
-				opacity: 0;// set the inintal state of the project show boxes visbility for animation
-				animation: project-card-reveal 1s linear 3s forwards;
-			} //end show-box-1
-
-			#show-box-2 {
-				//NOTE: design variant
-				// Scales since its an svg image.
-				.show-box__overlay {
-					@include showBoxOverlay;
-					//NOTE: design variant
-					width: 488px;
-					height: 490px;
-				} //end show-box__overlay
-
-
-				//NOTE: UI/UX ANIMATION & TRANSITIONS: 12 - Project Card Basic Reveal
-				opacity: 0;// set the inintal state of the project show boxes visbility for animation
-				animation: project-card-reveal 0.7s linear 3.3s forwards;
-			} //end show-box-2
-
-			#show-box-3 {
-				//NOTE: design variant
-				background-image: url("/img/img-desktop-l/desktop-ps-beam-bg.png");
-				.show-box__overlay {
-					@include showBoxOverlay;
-					//NOTE: design variant
-					width: 488px;
-					height: 490px;
-				} //end show-box__overlay
-
-
-				//NOTE: UI/UX ANIMATION & TRANSITIONS: 12 - Project Card Basic Reveal
-				opacity: 0;// set the inintal state of the project show boxes visbility for animation
-				animation: project-card-reveal 0.5s linear 3.5s forwards;
-			} //end show-box-3
-
-
-
-
-
-
-
-
-
-
-
-
-			//specific placement for lower nav elements:
-			.lower-nav-container{
-				display: flex !important;
-				//NOTE: design variant: positioned from the right so needed the adjustment. Or will seem like display is still set to none.
-				right: 806px;
-				bottom: 40px;
-				width: 300px; //NOTE: prevents the horizontal scroll bars issue from before. Define an area which the conatiner should occupy on the page. 
-			
-				position: fixed;
-				flex-direction: column;
-				align-items: center;
-				z-index: 13;
-
-				.nav-chevrons {
-					display: flex !important; //NOTE: design variant: Turns on the nav chevrons for this variant, turned off by default from mobile.
-                    position: relative; // NOTE: Relative to the parent lower-nav-container div.
-                    top: -18px;
-                    right: 5px;
-
-
-                    .left-chev {
-
-						.dtlink.low-nav-a-left{
-					
-							img{
-								//NOTE: same issues as when adding the anchor links in the top menu. The inner most elment's event propagation was blocking the wrapping anchor link tag. Therefore needed to turn it's default event propagation behavior off with pointer events: none.
-								pointer-events: none;
-							} //end img  
-						} //end dtlink.low-nav-a-left
-						
-                        position: inherit;
-                        left: -21px; //pull chevron to the left a little
-						cursor: pointer;
-                    } //end left-chev
-
-                    .right-chev {
-
-						.dtlink.low-nav-a-right{
-					
-							img{
-								//NOTE: same issues as when adding the anchor links in the top menu. The inner most elment's event propagation was blocking the wrapping anchor link tag. Therefore needed to turn it's default event propagation behavior off with pointer events: none.
-								pointer-events: none;
-							} //end img  
-						} //end dtlink.low-nav-a-right
-
-                        position: inherit;
-                        right: -21px; //pull chevron to the right a little
-						cursor: pointer;
-                    } //end right-chev
-
-					
-                } //end nav-chevrons
-	
-			.main-footer {
-			
-				.main-footer__social-icons {
-					display: flex;
-					align-items: center;
-					flex-wrap: nowrap;			  
-					margin: 0px;
-					padding: 0px;
-					list-style: none;
-					text-decoration: none;
-					right: 0px;
-					//NOTE: Design variant: The outer container creates an offset, so this corrects for it. Centering the social media icons.
-					position: relative;
+				// text-align: center;
+				// display: flex;
 				
-					//NOTE: UI/UX: ANIMATION & TRANSITIONS: 8 - Lower Social Media Icons - Appear and bounce effect
-					li {
-						#smi-yt,
-						#smi-b,
-						#smi-fb,
-						#smi-ig,
-						#smi-lk {
-							position: relative;
-						} //end img
+				// justify-content: center;
+				// align-items: center;
+				// flex-direction: row;
+				// flex-wrap: nowrap;
+
+				.show-box__link{
+
+					.show-box {
+						.show-box__title {
+							//NOTE: Design variant
+							font-size: $text2X-81; //45px;
+						}
+						.show-box__subtitle {
+							//NOTE: Design variant: instansiated on large viewports.
+							display: block !important;
+							font-size: $text2x-18; //35px;
+						}
+						.show-box__text {
+							//NOTE: Design variant
+							top: 11px;
+							font-size: $text1X-25; //20px;
+						} //end show-box__text
+					} //end show-box
+		
+					#show-box-1,
+					#show-box-2,
+					#show-box-3 {
+						//NOTE: design variant
+						width: 488px;
+						height: 490px;
+						opacity: 0.95;
+					} //end show-box-group sty
+
+
+					#show-box-1 {
+						//NOTE: design variant
+						background-image: url("/img/img-desktop-l/desktop-ps-natours-bg.png");
+		
+						//NOTE: Added the overlay to help strengthen the contrast of the text against the background image
+						.show-box__overlay {
+							@include showBoxOverlay;
+		
+							//NOTE: design variant
+							width: 488px;
+							height: 490px;
+						} //end show-box__overlay
+		
+		
+						//NOTE: UI/UX ANIMATION & TRANSITIONS: 12 - Project Card Basic Reveal
+						opacity: 0;// set the inintal state of the project show boxes visbility for animation
+						animation: project-card-reveal 1s linear 3s forwards;
+					} //end show-box-1
+		
+					#show-box-2 {
+						//NOTE: design variant
+						// Scales since its an svg image.
+						.show-box__overlay {
+							@include showBoxOverlay;
+							//NOTE: design variant
+							width: 488px;
+							height: 490px;
+						} //end show-box__overlay
+		
+		
+						//NOTE: UI/UX ANIMATION & TRANSITIONS: 12 - Project Card Basic Reveal
+						opacity: 0;// set the inintal state of the project show boxes visbility for animation
+						animation: project-card-reveal 0.7s linear 3.3s forwards;
+					} //end show-box-2
+		
+					#show-box-3 {
+						//NOTE: design variant
+						background-image: url("/img/img-desktop-l/desktop-ps-beam-bg.png");
+						.show-box__overlay {
+							@include showBoxOverlay;
+							//NOTE: design variant
+							width: 488px;
+							height: 490px;
+						} //end show-box__overlay
+		
+		
+						//NOTE: UI/UX ANIMATION & TRANSITIONS: 12 - Project Card Basic Reveal
+						opacity: 0;// set the inintal state of the project show boxes visbility for animation
+						animation: project-card-reveal 0.5s linear 3.5s forwards;
+					} //end show-box-3
 	
-						#smi-yt {
-							
-							
-						} //end smi-yt
-						
-						#smi-yt:hover {
-							@include alt-lowerNav-hoverstate-gray;
-						} //end #smi-yt:hover
+				}//end show-box__link
+
+			
+			}//end show-box__container//
+		
+
+
+
+
+
+
+
+
+
+
+
+
 	
-						//======================================================
-	
-						#smi-b {
-							
-							
-						} //end smi-b
-	
-						#smi-b:hover {
-							@include alt-lowerNav-hoverstate-gray;
-						} //end #smi-b:hover
-	
-						//======================================================
-	
-	
-	
-						#smi-fb {
-						
-						} // end smi-fb
-	
-						#smi-fb:hover {
-							@include alt-lowerNav-hoverstate-gray;
-						} //end #smi-fb:hover
-	
-	
-	
-						//======================================================
-	
-						#smi-ig {
-							
-						} //end smi-ig
-	
-	
-						#smi-ig:hover {
-							@include alt-lowerNav-hoverstate-gray;
-						} //end #smi-ig:hover
-						//======================================================
-	
-						#smi-lk {
-							
-						} //end smi-lk
-	
-	
-						#smi-lk:hover {
-							@include alt-lowerNav-hoverstate-gray;
-						} //end #smi-lk:hover
-						//======================================================
-	
-						position: relative;
-						margin-right: 10px;
-						cursor: pointer;
-					} //end li
-				} //end social-icons
-			} //end main-footer
-		}//end lower-nav-container
 
 
 		
@@ -511,8 +388,159 @@
 
 
 		} //end main-container
+				//specific placement for lower nav elements:
 
 
+			.lower-nav-wrapper{
+
+					display: flex;
+					  flex-direction: row;
+					  justify-content: center;
+					  position: absolute;
+					  width: 100vw;
+					  top: 86.5vh;
+
+			.lower-nav-container{
+					display: flex !important;
+				
+					bottom: 40px;
+					width: 300px; //NOTE: prevents the horizontal scroll bars issue from before. Define an area which the conatiner should occupy on the page. 
+				
+					
+					
+					flex-direction: column;
+					align-items: center;
+					z-index: 13;
+	
+					.nav-chevrons {
+						display: flex !important; //NOTE: design variant: Turns on the nav chevrons for this variant, turned off by default from mobile.
+						position: relative; // NOTE: Relative to the parent lower-nav-container div.
+						top: -18px;
+						right: 5px;
+	
+	
+						.left-chev {
+	
+							.dtlink.low-nav-a-left{
+						
+								img{
+									//NOTE: same issues as when adding the anchor links in the top menu. The inner most elment's event propagation was blocking the wrapping anchor link tag. Therefore needed to turn it's default event propagation behavior off with pointer events: none.
+									pointer-events: none;
+								} //end img  
+							} //end dtlink.low-nav-a-left
+							
+							position: inherit;
+							left: -21px; //pull chevron to the left a little
+							cursor: pointer;
+						} //end left-chev
+	
+						.right-chev {
+	
+							.dtlink.low-nav-a-right{
+						
+								img{
+									//NOTE: same issues as when adding the anchor links in the top menu. The inner most elment's event propagation was blocking the wrapping anchor link tag. Therefore needed to turn it's default event propagation behavior off with pointer events: none.
+									pointer-events: none;
+								} //end img  
+							} //end dtlink.low-nav-a-right
+	
+							position: inherit;
+							right: -21px; //pull chevron to the right a little
+							cursor: pointer;
+						} //end right-chev
+	
+						
+					} //end nav-chevrons
+		
+				.main-footer {
+				
+					.main-footer__social-icons {
+						display: flex;
+						align-items: center;
+						flex-wrap: nowrap;			  
+						margin: 0px;
+						padding: 0px;
+						list-style: none;
+						text-decoration: none;
+						right: 0px;
+						//NOTE: Design variant: The outer container creates an offset, so this corrects for it. Centering the social media icons.
+						position: relative;
+					
+						//NOTE: UI/UX: ANIMATION & TRANSITIONS: 8 - Lower Social Media Icons - Appear and bounce effect
+						li {
+							#smi-yt,
+							#smi-b,
+							#smi-fb,
+							#smi-ig,
+							#smi-lk {
+								position: relative;
+							} //end img
+		
+							#smi-yt {
+								
+								
+							} //end smi-yt
+							
+							#smi-yt:hover {
+								@include alt-lowerNav-hoverstate-gray;
+							} //end #smi-yt:hover
+		
+							//======================================================
+		
+							#smi-b {
+								
+								
+							} //end smi-b
+		
+							#smi-b:hover {
+								@include alt-lowerNav-hoverstate-gray;
+							} //end #smi-b:hover
+		
+							//======================================================
+		
+		
+		
+							#smi-fb {
+							
+							} // end smi-fb
+		
+							#smi-fb:hover {
+								@include alt-lowerNav-hoverstate-gray;
+							} //end #smi-fb:hover
+		
+		
+		
+							//======================================================
+		
+							#smi-ig {
+								
+							} //end smi-ig
+		
+		
+							#smi-ig:hover {
+								@include alt-lowerNav-hoverstate-gray;
+							} //end #smi-ig:hover
+							//======================================================
+		
+							#smi-lk {
+								
+							} //end smi-lk
+		
+		
+							#smi-lk:hover {
+								@include alt-lowerNav-hoverstate-gray;
+							} //end #smi-lk:hover
+							//======================================================
+		
+							position: relative;
+							margin-right: 10px;
+							cursor: pointer;
+						} //end li
+					} //end social-icons
+				} //end main-footer
+			}//end lower-nav-container
+
+			}//end lower-nav-wrapper
 
 
 

@@ -59,8 +59,8 @@
 
 		.mainnav__links{
 			//NOTE: Design variant
-			top: 32px;
-			left: 472px;
+			// top: 32px;
+			// left: 472px;
 
 
 
@@ -355,7 +355,7 @@
 						//NOTE Design variant
 						position: relative;
 						top: 0px; //resetting values
-						right: 0px; //resetting values
+						right: -9px; //NOTE: adding  a little spacing between challenges and lessons learned. 
 						font-size: $text1x-75; //28.125px = 28px //25% of the dimensions of 1440px variant.
 					} //end of btl__text-2
 				} //end btl__text
@@ -455,124 +455,133 @@
 			background-color: #fff;
 			color: black;
 
-			.mobile-cta-footer-branding {
-				.mobile-cta-footer-branding__text-1,
-				.mobile-cta-footer-branding__text-2 {
-					font-family: $font-list-h;
-					font-weight: nth($f-weights, 3);
-					font-style: normal;
-					font-size: $text2X-81; //45px;
-					margin: 0px 12px;
-				}
+			.mobile-cta-footer-footer__conttainer{
+				display: flex;
+  				flex-direction: column;
+  				flex-wrap: wrap;
+			
 
-				.mobile-cta-footer__logo {
-					width: 155px;
-					height: 55px;
-					position: relative;
-					top: -59px;
-					left: 315px;
-				}
-			}
+					.mobile-cta-footer-branding {
+						.mobile-cta-footer-branding__text-1,
+						.mobile-cta-footer-branding__text-2 {
+							font-family: $font-list-h;
+							font-weight: nth($f-weights, 3);
+							font-style: normal;
+							font-size: $text2X-81; //45px;
+							margin: 0px 12px;
+						}
 
-			.mobile-cta-footer__button {
-				width: 379px;
-				height: 74px;
-				background: #f5b600 0% 0% no-repeat padding-box;
-				box-shadow: 0px 2px 0px #000000;
-				border-radius: 5px;
+						.mobile-cta-footer__logo {
+							width: 155px;
+							height: 55px;
+							position: relative;
+							top: -59px;
+							left: 315px;
+						}
+					}
 
-				font-family: $font-list-h;
-				font-weight: nth($f-weights, 1);
-				font-style: normal;
-				font-size: $text1x-87; //30px;
-				position: relative;
-				top:-27px;
+					.mobile-cta-footer__button {
+						width: 379px;
+						height: 74px;
+						background: #f5b600 0% 0% no-repeat padding-box;
+						box-shadow: 0px 2px 0px #000000;
+						border-radius: 5px;
 
-				.hero-text {
-					//NOTE: Design variant - slight adjustment for the text in the link styled like a button, to center it.
-					//Already has position relative inherited from parent stylesheet - main.scss.
-					top: 13px;
-				} //end hero-text
-			}//end mobile-cta-footer__button
-
-			.mobile-cta-footer__button:hover {
-				background: #ffcf15 no-repeat padding-box;
-				
-				text-shadow: 0px 2px .5px #4a45459e;
-
-				.hero-text{
-					//NOTE: Design variant overiding the span tag color assignment from the tablet and mobile variants.
-					color: #f8f2f2 !important;
-				}//end hero-text
-			} //end .mobile-cta-footer__button:hover state
-
-			.mobile-cta-footer__sm-links {
-				@include flexMix;
-				list-style: none;
-				align-content: center;
-				position: relative;
-				//NOTE: Design variant
-				padding: 0px; //reseting the padding to default of zero.
-				position: relative;
-    			top: -20px;
-
-				li {
-					#smi-yt,
-					#smi-b,
-					#smi-fb,
-					#smi-ig,
-					#smi-lk {
+						font-family: $font-list-h;
+						font-weight: nth($f-weights, 1);
+						font-style: normal;
+						font-size: $text1x-87; //30px;
 						position: relative;
-					} //end img
+						top:-27px;
 
-					#smi-yt {
-					} //end smi-yt
+						.hero-text {
+							//NOTE: Design variant - slight adjustment for the text in the link styled like a button, to center it.
+							//Already has position relative inherited from parent stylesheet - main.scss.
+							top: 13px;
+						} //end hero-text
+					}//end mobile-cta-footer__button
 
-					#smi-yt:hover {
-						@include about-lowerNav-hoverstate;
-					} //end #smi-yt:hover
+					.mobile-cta-footer__button:hover {
+						background: #ffcf15 no-repeat padding-box;
+						
+						text-shadow: 0px 2px .5px #4a45459e;
 
-					//======================================================
+						.hero-text{
+							//NOTE: Design variant overiding the span tag color assignment from the tablet and mobile variants.
+							color: #f8f2f2 !important;
+						}//end hero-text
+					} //end .mobile-cta-footer__button:hover state
 
-					#smi-b {
-					} //end smi-b
+					.mobile-cta-footer__sm-links {
+						@include flexMix;
+						list-style: none;
+						align-content: center;
+						position: relative;
+						//NOTE: Design variant
+						padding: 0px; //reseting the padding to default of zero.
+						position: relative;
+						top: -20px;
 
-					#smi-b:hover {
-						@include about-lowerNav-hoverstate;
-					} //end #smi-b:hover
+						li {
+							#smi-yt,
+							#smi-b,
+							#smi-fb,
+							#smi-ig,
+							#smi-lk {
+								position: relative;
+							} //end img
 
-					//======================================================
+							#smi-yt {
+							} //end smi-yt
 
-					#smi-fb {
-					} // end smi-fb
+							#smi-yt:hover {
+								@include about-lowerNav-hoverstate;
+							} //end #smi-yt:hover
 
-					#smi-fb:hover {
-						@include about-lowerNav-hoverstate;
-					} //end #smi-fb:hover
+							//======================================================
 
-					//======================================================
+							#smi-b {
+							} //end smi-b
 
-					#smi-ig {
-					} //end smi-ig
+							#smi-b:hover {
+								@include about-lowerNav-hoverstate;
+							} //end #smi-b:hover
 
-					#smi-ig:hover {
-						@include about-lowerNav-hoverstate;
-					} //end #smi-ig:hover
-					//======================================================
+							//======================================================
 
-					#smi-lk {
-					} //end smi-lk
+							#smi-fb {
+							} // end smi-fb
 
-					#smi-lk:hover {
-						@include about-lowerNav-hoverstate;
-					} //end #smi-lk:hover
-					//======================================================
+							#smi-fb:hover {
+								@include about-lowerNav-hoverstate;
+							} //end #smi-fb:hover
 
-					position: relative;
-					margin-right: 10px;
-					cursor: pointer;
-				} //end li
-			} //end mobile-cta-footer__sm-links
+							//======================================================
+
+							#smi-ig {
+							} //end smi-ig
+
+							#smi-ig:hover {
+								@include about-lowerNav-hoverstate;
+							} //end #smi-ig:hover
+							//======================================================
+
+							#smi-lk {
+							} //end smi-lk
+
+							#smi-lk:hover {
+								@include about-lowerNav-hoverstate;
+							} //end #smi-lk:hover
+							//======================================================
+
+							position: relative;
+							margin-right: 10px;
+							cursor: pointer;
+						} //end li
+					} //end mobile-cta-footer__sm-links
+
+
+			}//end  mobile-cta-footer-footer-__conttainer
 		} // end mobile-cta-footer
 
 

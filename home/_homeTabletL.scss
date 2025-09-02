@@ -2,13 +2,10 @@
 @media (min-width: 1024px) {
 	//SECTION MOBILE - PORTRAIT - BODY
 
-	.main-container {
-		justify-content: center;
+	.main-container { 
 		position: relative;
-		top: 220px;
-		@media (max-width: 359px) {
-			top: 150px;
-		}
+		top: 29vh;
+		
 	} // end main container
 
 	.hero-section-1,
@@ -351,84 +348,213 @@
 			animation: info-tt-pulse 1.5s linear 24.5s 25;
 		} //end tt-circle-pulse
 
+	// .lower-nav-wrapper{
 
+	// 		display: flex;
+	// 		flex-direction: row;
+	// 		justify-content: center;
+	// 		position: absolute;
+	// 		width: 100vw;
+	// 		top: 87vh;
+
+	// 		.lower-nav-container {
+	// 			display: flex !important;
+	// 			flex-direction: column;
+	// 			align-items: center;
+	// 			// position: fixed;
+	// 			// bottom: 40px; //NOTE: placement to match the home, projects, and about positioning of the nav.
+	// 			// left: 50vw;
+
+	// 			//NOTE: Design variant: Used the container for positioning the elements of the lower nav. With it being absolutely placed, we can use relative positioning for the child elements (chevrons and the social icons)
+
+	// 			.nav-chevrons {
+	// 				position: relative; // NOTE: Relative to the parent lower-nav-container div.
+	// 				top: -18px;
+	// 				// right: 16px;
+	// 				display: block !important;
+	// 				.left-chev {
+
+	// 					.dtlink.low-nav-a-left{
+					
+	// 						img{
+	// 							//NOTE: same issues as when adding the anchor links in the top menu. The inner most elment's event propagation was blocking the wrapping anchor link tag. Therefore needed to turn it's default event propagation behavior off with pointer events: none.
+	// 							pointer-events: none;
+	// 						} //end img  
+	// 					} //end dtlink.low-nav-a-left
+
+	// 					position: inherit;
+	// 					left: -21px; //pull chevron to the left a little
+	// 					cursor: pointer;
+	// 				} //end left-chev
+
+	// 				.right-chev {
+
+	// 					.dtlink.low-nav-a-right{
+					
+	// 						img{
+	// 							//NOTE: same issues as when adding the anchor links in the top menu. The inner most elment's event propagation was blocking the wrapping anchor link tag. Therefore needed to turn it's default event propagation behavior off with pointer events: none.
+	// 							pointer-events: none;
+	// 						} //end img  
+	// 					} //end dtlink.low-nav-a-right
+
+	// 					position: inherit;
+	// 					right: -21px; //pull chevron to the right a little
+	// 					cursor: pointer;
+	// 				} //end right-chev
+	// 			} //end nav-chevrons
+
+	// 			.main-footer {
+	// 				.main-footer__social-icons {
+	// 					display: flex;
+	// 					margin: 0px;
+	// 					padding: 0px;
+	// 					list-style: none;
+	// 					text-decoration: none;
+	// 					justify-content: center;
+		
+
+	// 					li {
+	// 						margin-right: 10px;
+	// 					} //end li
+
+	// 					//NOTE: UI/UX: ANIMATION & TRANSITIONS: 8 - Lower Social Media Icons - Appear and bounce effect
+	// 					li {
+	// 						#smi-yt,
+	// 						#smi-b,
+	// 						#smi-fb,
+	// 						#smi-ig,
+	// 						#smi-lk {
+	// 							position: relative;
+	// 						} //end img
+
+	// 						#smi-yt {
+	// 						} //end smi-yt
+
+	// 						#smi-yt:hover {
+	// 							@include lowerNav-hoverstate;
+	// 						} //end #smi-yt:hover
+
+	// 						//======================================================
+
+	// 						#smi-b {
+	// 						} //end smi-b
+
+	// 						#smi-b:hover {
+	// 							@include lowerNav-hoverstate;
+	// 						} //end #smi-b:hover
+
+	// 						//======================================================
+
+	// 						#smi-fb {
+	// 						} // end smi-fb
+
+	// 						#smi-fb:hover {
+	// 							@include lowerNav-hoverstate;
+	// 						} //end #smi-fb:hover
+
+	// 						//======================================================
+
+	// 						#smi-ig {
+	// 						} //end smi-ig
+
+	// 						#smi-ig:hover {
+	// 							@include lowerNav-hoverstate;
+	// 						} //end #smi-ig:hover
+	// 						//======================================================
+
+	// 						#smi-lk {
+	// 						} //end smi-lk
+
+	// 						#smi-lk:hover {
+	// 							@include lowerNav-hoverstate;
+	// 						} //end #smi-lk:hover
+	// 						//======================================================
+
+	// 						position: relative;
+	// 						margin-right: 10px;
+	// 						cursor: pointer;
+	// 					} //end li
+	// 				} //end social-icons
+	// 			} //end main-footer
+	// 		} // end lower-nav-elements
+	// 	}//end lower-nav-wrapper
+
+	.lower-nav-wrapper{
+
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		position: absolute;
+		width: 100vw;
+		top: 87vh;
+		
+		
 
 		.lower-nav-container {
-			display: block !important;
-			position: fixed;
-			bottom: 70px; //NOTE: placement to match the home, projects, and about positioning of the nav.
-			left: 42vw;
-  
+			display: flex !important;
+			flex-direction: column;
+			align-items: center;
+			// position: fixed;
+			// bottom: 40px; //NOTE: placement to match the home, projects, and about positioning of the nav.
+			// left: 50vw;
+			width: auto;
+			height: auto;
 
 			//NOTE: Design variant: Used the container for positioning the elements of the lower nav. With it being absolutely placed, we can use relative positioning for the child elements (chevrons and the social icons)
-		
 
-		.nav-chevrons {
-			@include flexMix;
-			position: relative;
-			
-		
-			.left-chev {
-						
+			.nav-chevrons {
+				position: relative; // NOTE: Relative to the parent lower-nav-container div.
+				top: -18px;
+				// right: 16px;
+				display: block !important;
+				.left-chev {
 
-				.dtlink.low-nav-a-left{
-			
-					img{
-						//NOTE: same issues as when adding the anchor links in the top menu. The inner most element's event propagation was blocking the wrapping anchor link tag. Therefore needed to turn it's default event propagation behavior off with pointer events: none.
-						pointer-events: none;
-					} //end img  
-				} //end dtlink.low-nav-a-left
-				position:  relative;						
-				left: -14px; //pull chevron to the left a little
-				opacity: 0; // set the inital state of the property - for animation
-				pointer-events: none; // set the inital state of the property - for animation
-				animation: lower-nav-reveal 0.8s ease-in 18s forwards;
-				cursor: pointer;
-			} //end left-chev
+					.dtlink.low-nav-a-left{
+				
+						img{
+							//NOTE: same issues as when adding the anchor links in the top menu. The inner most elment's event propagation was blocking the wrapping anchor link tag. Therefore needed to turn it's default event propagation behavior off with pointer events: none.
+							pointer-events: none;
+						} //end img  
+					} //end dtlink.low-nav-a-left
 
-			.right-chev {
+					position: inherit;
+					left: -21px; //pull chevron to the left a little
+					cursor: pointer;
+				} //end left-chev
 
-				.dtlink.low-nav-a-right{
-		
-					img{
-						//NOTE:The inner most elment's event propagation was blocking the wrapping anchor link tag. Therefore needed to turn it's default event propagation behavior off with pointer events: none.
-						pointer-events: none;
-					} //end img  
-				} //end dtlink.low-nav-a-right
-			
-				position: relative;
-				right: -32px; //pull chevron to the right a little
-				opacity: 0; // set the inital state of the property - for animation
-				pointer-events: none; // set the inital state of the property - for animation
-				animation: lower-nav-reveal 0.8s ease-in 18.5s forwards;
-				cursor: pointer;
-			
-		
+				.right-chev {
 
-			}//end right-chev
-		
-		} //end nav-chevrons
+					.dtlink.low-nav-a-right{
+				
+						img{
+							//NOTE: same issues as when adding the anchor links in the top menu. The inner most elment's event propagation was blocking the wrapping anchor link tag. Therefore needed to turn it's default event propagation behavior off with pointer events: none.
+							pointer-events: none;
+						} //end img  
+					} //end dtlink.low-nav-a-right
 
-		.main-footer {
-			margin: 0px;
-			position: relative;
-			//NOTE: design variant
-			top: 30px;
-		}
-		.main-footer__social-icons {
-			margin: 0px;
-			padding: 0px;
-			@include flexMix;
-			list-style: none;
-			text-decoration: none;
-			justify-content: center;
+					position: inherit;
+					right: -21px; //pull chevron to the right a little
+					cursor: pointer;
+				} //end right-chev
+			} //end nav-chevrons
 
-			li {
-				margin-right: 10px;
-			}
-		
+			.main-footer {
+				margin-top: 0px;
+				margin-bottom: 0px;  //NOTE: Design note reset the margin from adjustments in tablet portrait.
+				.main-footer__social-icons {
+					display: flex;
+					margin: 0px;
+					padding: 0px;
+					list-style: none;
+					text-decoration: none;
+					justify-content: center;
+					right: 0px;//NOTE  Design note reset the margin from adjustments in tablet portrait.
 
-		//NOTE: UI/UX: ANIMATION & TRANSITIONS: 8 - Lower Social Media Icons - Appear and bounce effect
+					li {
+						margin-right: 10px;
+					} //end li
+
+					//NOTE: UI/UX: ANIMATION & TRANSITIONS: 8 - Lower Social Media Icons - Appear and bounce effect
 					li {
 						#smi-yt,
 						#smi-b,
@@ -439,8 +565,6 @@
 						} //end img
 
 						#smi-yt {
-							opacity: 0; //initial state of property for animation - for animation
-							animation: social-icons-animate 0.5s ease 19.5s forwards;
 						} //end smi-yt
 
 						#smi-yt:hover {
@@ -450,8 +574,6 @@
 						//======================================================
 
 						#smi-b {
-							opacity: 0; //initial state of property for animation - for animation
-							animation: social-icons-animate 0.5s ease 19.9s forwards;
 						} //end smi-b
 
 						#smi-b:hover {
@@ -461,8 +583,6 @@
 						//======================================================
 
 						#smi-fb {
-							opacity: 0; //initial state of property for animation - for animation
-							animation: social-icons-animate 0.5s ease 20s forwards;
 						} // end smi-fb
 
 						#smi-fb:hover {
@@ -472,8 +592,6 @@
 						//======================================================
 
 						#smi-ig {
-							opacity: 0; //initial state of property for animation - for animation
-							animation: social-icons-animate 0.5s ease 20.9s forwards;
 						} //end smi-ig
 
 						#smi-ig:hover {
@@ -482,8 +600,6 @@
 						//======================================================
 
 						#smi-lk {
-							opacity: 0; //initial state of property for animation - for animation
-							animation: social-icons-animate 0.5s ease 21s forwards;
 						} //end smi-lk
 
 						#smi-lk:hover {
@@ -495,13 +611,13 @@
 						margin-right: 10px;
 						cursor: pointer;
 					} //end li
+				} //end social-icons
+			} //end main-footer
+		} // end lower-nav-elements
+	}//end lower-nav-wrapper
 
-					//NOTE: Design variant centers the lower nav on tablet landscape
-					right: -15px;
-    				position: relative;
-		} // end main-footer__social-icons
-	}//end lower-nav-container
-		
+
+
 		/*SECTION  ANIMATIONS & TRANSITIONS 
 		ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >1024px */
 		/*ANIMATIONS: */
