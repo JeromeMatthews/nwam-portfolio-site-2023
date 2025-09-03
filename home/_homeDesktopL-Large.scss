@@ -9,6 +9,8 @@
 	}
 
 	body {
+		//NOTE: Layout adjustments: Preventing unwanted scroll bars in layout.
+		overflow: hidden;
 		//NOTE: UI/UX: ANIMATION & TRANSITIONS: 1 - Page Background Image - Reveal effect
 		background-image: none; // set the inital state of the property 	- for animation
 		opacity: 0; // set the inital state of the property - for animation
@@ -272,8 +274,10 @@
 
 		.tt-circle {
 			position: absolute;
-			top: 650px;
-			left: 40px;
+			//NOTE: Design variant:
+			top: 148px;
+			left: 286px;
+			//NOTE: Design variant:
 			width: 20px;
 			height: 20px;
 			background-color: #8a8a8a98;
@@ -367,8 +371,10 @@
 			} //end p
 
 			position: absolute;
-			right: 1569px;
-			top: 656px;
+			//NOTE: Design variant: 
+			right: 1442px;
+    		top: 156px;
+
 
 			animation: info-tool-tip 1s ease-in 28.5s forwards;
 		} //end-author-info
@@ -447,12 +453,14 @@
 			  justify-content: center;
 			  position: absolute;
 			  width: 100vw;
+			  //NOTE: Design variant:
 			  top: 86.5vh;
 
 	.lower-nav-container{
 			display: flex !important;
-		
-			bottom: 40px;
+			position: relative;
+			
+			bottom: 0px;
 			width: 300px; //NOTE: prevents the horizontal scroll bars issue from before. Define an area which the conatiner should occupy on the page. 
 		
 			

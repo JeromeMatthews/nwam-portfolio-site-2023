@@ -7,7 +7,14 @@
 		@include flexMix;
 	}
 	body {
-		//NOTE: Moved this code from the nav base css. Correcting the separation of concerns in the scss files. Ensures the Hero Copy is placed in the right area for Desktop screens.
+		/*NOTE: Moved this code from the nav base css. 
+		Correcting the separation of concerns in the scss files. 
+		Ensures the Hero Copy is placed in the right area for Desktop screens.
+		*/
+
+		//NOTE: Layout adjustments: Preventing unwanted scroll bars in layout.
+		overflow: hidden;
+		
 		.main-container {
 			position: relative;
 			top: 220px;

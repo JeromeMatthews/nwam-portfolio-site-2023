@@ -402,8 +402,11 @@
 
 			.lower-nav-container{
 					display: flex !important;
+					position: relative;
 				
-					bottom: 40px;
+					bottom: 0px;
+					height: initial; /*reset the height so the placement is calibrated correctly 
+					when comparing the placement of the lower nav to the other pages.*/ 
 					width: 300px; //NOTE: prevents the horizontal scroll bars issue from before. Define an area which the conatiner should occupy on the page. 
 				
 					

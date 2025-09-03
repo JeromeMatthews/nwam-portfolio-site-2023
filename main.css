@@ -2036,6 +2036,7 @@ body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-i
     justify-content: center;
   }
   body {
+    overflow: hidden;
     background-image: none;
     opacity: 0;
     background-color: #000000;
@@ -2745,6 +2746,11 @@ body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-i
     justify-content: center;
   }
   body {
+    /*NOTE: Moved this code from the nav base css. 
+    Correcting the separation of concerns in the scss files. 
+    Ensures the Hero Copy is placed in the right area for Desktop screens.
+    */
+    overflow: hidden;
     background-image: none;
     opacity: 0;
     background-color: #000000;
@@ -3469,6 +3475,7 @@ body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-i
     justify-content: center;
   }
   body {
+    overflow: hidden;
     background-image: none;
     opacity: 0;
     background-color: #000000;
@@ -3708,8 +3715,8 @@ body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-i
 @media (min-width: 1920px) {
   body .tt-circle {
     position: absolute;
-    top: 650px;
-    left: 40px;
+    top: 148px;
+    left: 286px;
     width: 20px;
     height: 20px;
     background-color: rgba(138, 138, 138, 0.5960784314);
@@ -3748,8 +3755,8 @@ body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-i
     font: 0.75rem futura-pt, Helvetica, Arial, sans-serif;
     color: #ffffff;
     position: absolute;
-    right: 1569px;
-    top: 656px;
+    right: 1442px;
+    top: 156px;
     animation: info-tool-tip 1s ease-in 28.5s forwards;
   }
   body .author-info p .author-info__name {
@@ -3828,7 +3835,8 @@ body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-i
   }
   body .lower-nav-wrapper .lower-nav-container {
     display: flex !important;
-    bottom: 40px;
+    position: relative;
+    bottom: 0px;
     width: 300px;
     flex-direction: column;
     align-items: center;
