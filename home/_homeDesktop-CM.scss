@@ -465,7 +465,8 @@
 	   .lower-nav-container {
 		  display: flex !important;
 			  //NOTE: design variant: positioned rom the right so needed the adjustment. Or will seem like display is still set to none.
-		  bottom: 41px;
+		 	position: relative;
+			bottom: 0px;
 		  
   
 		  width: 300px; //NOTE: prevents the horizontal scroll bars issue from before. Define an area which the conatiner should occupy on the page. 

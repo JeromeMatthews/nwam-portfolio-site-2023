@@ -2500,7 +2500,6 @@ body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-i
   }
   body .lower-nav-wrapper .lower-nav-container {
     display: flex !important;
-    bottom: 41px;
     width: 300px;
   }
   body .lower-nav-wrapper .lower-nav-container .nav-chevrons {
@@ -3035,7 +3034,6 @@ body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-i
   }
   body .lower-nav-wrapper .lower-nav-container {
     display: flex !important;
-    bottom: 40px;
     width: 300px;
     flex-direction: column;
     align-items: center;
