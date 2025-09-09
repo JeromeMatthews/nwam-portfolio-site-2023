@@ -15,7 +15,8 @@
 	}
 
 	body {
-	
+		//NOTE: Layout adjustments: Preventing unwanted scroll bars in layout.
+		overflow: hidden;
 		background-position: top 0px left 0px;
 		background-repeat: no-repeat;
 		background-attachment: scroll;

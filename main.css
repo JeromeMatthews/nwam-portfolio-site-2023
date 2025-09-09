@@ -1395,6 +1395,7 @@ body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-i
     justify-content: center;
   }
   body {
+    overflow: hidden;
     background-position: top 0px left 0px;
     background-repeat: no-repeat;
     background-attachment: scroll;
