@@ -22,6 +22,7 @@
 	}
 
 	body {
+		overflow:hidden;
 		background-position: top 0px left 0px;
 		background-repeat: no-repeat;
 		background-attachment: scroll;
@@ -368,8 +369,11 @@
 			display: flex;
 			flex-direction: row;
 			justify-content: center; 
-			position: relative;
-			top: 43.0vh;
+			position: absolute;
+			width: 100vw;
+			/*NOTE: Design variant: For whatever reason, 
+			small difference in placement using vh/ so added .2*/
+			top: 86.8vh;
 
 		.lower-nav-container {
 			// display: block !important;
@@ -377,18 +381,15 @@
 			// bottom: 18px;
    			// left: 40vw;
 			   display: flex !important;
-			   flex-direction: row;
-			   z-index: 13;
-			   justify-content: center;
-			   flex-wrap: wrap;
-			   height: 67px;
-			   width: 162px;
-			   align-items: center;
+			  	flex-direction: column;
+				align-items: center;
+				
 			 
 
 			.nav-chevrons {
-				@include flexMix;
 				position: relative;
+   				display: block;
+    			top: -18px;
 			
 			
 				.left-chev {
@@ -402,7 +403,7 @@
 						} //end img  
 					} //end dtlink.low-nav-a-left
 					position:  relative;						
-					left: -14px; //pull chevron to the left a little
+					left: -21px; //pull chevron to the left a little
 					opacity: 0; // set the inital state of the property - for animation
 					pointer-events: none; // set the inital state of the property - for animation
 					animation: lower-nav-reveal 0.8s ease-in 18s forwards;
@@ -420,7 +421,7 @@
 					} //end dtlink.low-nav-a-right
 				
 					position: relative;
-					right: -32px; //pull chevron to the right a little
+					right: -21px; //pull chevron to the right a little
 					opacity: 0; // set the inital state of the property - for animation
 					pointer-events: none; // set the inital state of the property - for animation
 					animation: lower-nav-reveal 0.8s ease-in 18.5s forwards;
@@ -434,16 +435,15 @@
 
 
 		.main-footer {
-			margin-top: 15px;
-			margin-bottom: 30px;
-		}
+		
+		
 		.main-footer__social-icons {
 			margin: 0px;
 			padding: 0px;
 			@include flexMix;
 			list-style: none;
 			text-decoration: none;
-			justify-content: center;
+			
 
 			li {
 				margin-right: 10px;
@@ -517,9 +517,11 @@
 						cursor: pointer;
 					} //end li
 					position: relative;
-					right: -10px;
+					
     
 		}//end main-footer__social-icons
+
+		}//end main-footer
 
 		}//end lower-nav-container
 		

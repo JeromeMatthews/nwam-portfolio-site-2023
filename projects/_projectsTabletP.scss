@@ -3,6 +3,7 @@
 
 
 	body {
+			overflow:hidden;
 			//NOTE: UI/UX: ANIMATION & TRANSITIONS: 1 - Page Background Image - Reveal effect
 			background-image: none; // set the inital state of the property 	- for animation
 			opacity: 0; // set the inital state of the property - for animation
@@ -318,8 +319,9 @@
 		  display: flex;
 		  flex-direction: row;
 		  justify-content: center; 
-		  position: relative;
-    	  top: 15.5vh;
+			position: absolute;
+			width: 100vw;
+			top: 86.5vh;
 
 		  .lower-nav-container{
 			display: flex !important;
@@ -327,7 +329,7 @@
 			z-index: 13;
 			justify-content: center;
 			flex-wrap: wrap;
-			height: 67px;
+			
 			width: 162px;
 			align-items: center;
 			

@@ -594,6 +594,7 @@ body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-i
 /*SECTION: END - [RESPONSIVE DESIGN] */
 @media (min-width: 768px) {
   body {
+    overflow: hidden;
     background-image: none;
     opacity: 0;
     background-color: #000000;

@@ -755,6 +755,7 @@ body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-i
     justify-content: center;
   }
   body {
+    overflow: hidden;
     background-position: top 0px left 0px;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -1034,29 +1035,25 @@ body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-i
     display: flex;
     flex-direction: row;
     justify-content: center;
-    position: relative;
-    top: 43vh;
+    position: absolute;
+    width: 100vw;
+    /*NOTE: Design variant: For whatever reason, 
+    small difference in placement using vh/ so added .2*/
+    top: 86.8vh;
   }
   body .lower-nav-wrapper .lower-nav-container {
     display: flex !important;
-    flex-direction: row;
-    z-index: 13;
-    justify-content: center;
-    flex-wrap: wrap;
-    height: 67px;
-    width: 162px;
+    flex-direction: column;
     align-items: center;
   }
   body .lower-nav-wrapper .lower-nav-container .nav-chevrons {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
     position: relative;
+    display: block;
+    top: -18px;
   }
   body .lower-nav-wrapper .lower-nav-container .nav-chevrons .left-chev {
     position: relative;
-    left: -14px;
+    left: -21px;
     opacity: 0;
     pointer-events: none;
     animation: lower-nav-reveal 0.8s ease-in 18s forwards;
@@ -1067,7 +1064,7 @@ body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-i
   }
   body .lower-nav-wrapper .lower-nav-container .nav-chevrons .right-chev {
     position: relative;
-    right: -32px;
+    right: -21px;
     opacity: 0;
     pointer-events: none;
     animation: lower-nav-reveal 0.8s ease-in 18.5s forwards;
@@ -1076,11 +1073,7 @@ body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-i
   body .lower-nav-wrapper .lower-nav-container .nav-chevrons .right-chev .dtlink.low-nav-a-right img {
     pointer-events: none;
   }
-  body .lower-nav-wrapper .lower-nav-container .main-footer {
-    margin-top: 15px;
-    margin-bottom: 30px;
-  }
-  body .lower-nav-wrapper .lower-nav-container .main-footer__social-icons {
+  body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-icons {
     margin: 0px;
     padding: 0px;
     display: flex;
@@ -1089,62 +1082,60 @@ body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-i
     justify-content: center;
     list-style: none;
     text-decoration: none;
-    justify-content: center;
     position: relative;
-    right: -10px;
   }
-  body .lower-nav-wrapper .lower-nav-container .main-footer__social-icons li {
+  body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-icons li {
     margin-right: 10px;
   }
-  body .lower-nav-wrapper .lower-nav-container .main-footer__social-icons li {
+  body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-icons li {
     position: relative;
     margin-right: 10px;
     cursor: pointer;
   }
-  body .lower-nav-wrapper .lower-nav-container .main-footer__social-icons li #smi-yt,
-  body .lower-nav-wrapper .lower-nav-container .main-footer__social-icons li #smi-b,
-  body .lower-nav-wrapper .lower-nav-container .main-footer__social-icons li #smi-fb,
-  body .lower-nav-wrapper .lower-nav-container .main-footer__social-icons li #smi-ig,
-  body .lower-nav-wrapper .lower-nav-container .main-footer__social-icons li #smi-lk {
+  body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-icons li #smi-yt,
+  body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-icons li #smi-b,
+  body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-icons li #smi-fb,
+  body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-icons li #smi-ig,
+  body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-icons li #smi-lk {
     position: relative;
   }
-  body .lower-nav-wrapper .lower-nav-container .main-footer__social-icons li #smi-yt {
+  body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-icons li #smi-yt {
     opacity: 0;
     animation: social-icons-animate 0.5s ease 19.5s forwards;
   }
-  body .lower-nav-wrapper .lower-nav-container .main-footer__social-icons li #smi-yt:hover {
+  body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-icons li #smi-yt:hover {
     transform: translateY(-2px);
     filter: drop-shadow(0px 4px rgb(0, 0, 0));
   }
-  body .lower-nav-wrapper .lower-nav-container .main-footer__social-icons li #smi-b {
+  body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-icons li #smi-b {
     opacity: 0;
     animation: social-icons-animate 0.5s ease 19.9s forwards;
   }
-  body .lower-nav-wrapper .lower-nav-container .main-footer__social-icons li #smi-b:hover {
+  body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-icons li #smi-b:hover {
     transform: translateY(-2px);
     filter: drop-shadow(0px 4px rgb(0, 0, 0));
   }
-  body .lower-nav-wrapper .lower-nav-container .main-footer__social-icons li #smi-fb {
+  body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-icons li #smi-fb {
     opacity: 0;
     animation: social-icons-animate 0.5s ease 20s forwards;
   }
-  body .lower-nav-wrapper .lower-nav-container .main-footer__social-icons li #smi-fb:hover {
+  body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-icons li #smi-fb:hover {
     transform: translateY(-2px);
     filter: drop-shadow(0px 4px rgb(0, 0, 0));
   }
-  body .lower-nav-wrapper .lower-nav-container .main-footer__social-icons li #smi-ig {
+  body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-icons li #smi-ig {
     opacity: 0;
     animation: social-icons-animate 0.5s ease 20.9s forwards;
   }
-  body .lower-nav-wrapper .lower-nav-container .main-footer__social-icons li #smi-ig:hover {
+  body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-icons li #smi-ig:hover {
     transform: translateY(-2px);
     filter: drop-shadow(0px 4px rgb(0, 0, 0));
   }
-  body .lower-nav-wrapper .lower-nav-container .main-footer__social-icons li #smi-lk {
+  body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-icons li #smi-lk {
     opacity: 0;
     animation: social-icons-animate 0.5s ease 21s forwards;
   }
-  body .lower-nav-wrapper .lower-nav-container .main-footer__social-icons li #smi-lk:hover {
+  body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-icons li #smi-lk:hover {
     transform: translateY(-2px);
     filter: drop-shadow(0px 4px rgb(0, 0, 0));
   }

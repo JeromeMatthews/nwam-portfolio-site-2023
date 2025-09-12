@@ -620,6 +620,7 @@ body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-i
 /*SECTION ABOVE MOBILE PHONES - TABLET RANGE  - PORTRAIT -   >800px */
 @media (min-width: 768px) {
   body {
+    overflow: hidden;
     background-image: none;
     opacity: 0;
     background-color: #000000;
@@ -835,8 +836,9 @@ body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-i
     display: flex;
     flex-direction: row;
     justify-content: center;
-    position: relative;
-    top: 15.5vh;
+    position: absolute;
+    width: 100vw;
+    top: 86.5vh;
   }
   body .lower-nav-wrapper .lower-nav-container {
     display: flex !important;
@@ -844,7 +846,6 @@ body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-i
     z-index: 13;
     justify-content: center;
     flex-wrap: wrap;
-    height: 67px;
     width: 162px;
     align-items: center;
   }
