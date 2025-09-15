@@ -494,6 +494,20 @@
 		.mobile-cta-footer {
 				.mobile-footer-container{
 					color: #fff;
+
+					.mobile-cta-footer-branding{
+
+						//NOTE: Design variant: adjustment to dimensions of logo
+						.mobile-cta-footer__logo {
+							//NOTE: variant change
+							width: 134px;
+							height: 68px;
+							top: -55px;
+							left: 70px;
+
+						}//end mobile-cta-footer__logo
+
+					}//end mobile-cta-footer-branding
 					.mobile-cta-footer__button {
 						//NOTE: design variant:
 						cursor: pointer;
