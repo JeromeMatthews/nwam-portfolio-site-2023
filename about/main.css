@@ -2565,6 +2565,12 @@ body {
   body .main-container .mobile-cta-footer .mobile-footer-container {
     color: #fff;
   }
+  body .main-container .mobile-cta-footer .mobile-footer-container .mobile-cta-footer-branding .mobile-cta-footer__logo {
+    width: 134px;
+    height: 68px;
+    top: -55px;
+    left: 70px;
+  }
   body .main-container .mobile-cta-footer .mobile-footer-container .mobile-cta-footer__button {
     cursor: pointer;
   }
