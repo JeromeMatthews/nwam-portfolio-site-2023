@@ -10,17 +10,17 @@
 		 background-color: #000;
 		 
 		 animation: article-bg-reveal 0.5s linear 0.5s forwards;
-		   .page-container {
+	// 	   .page-container {
  
-		 @include pageContainer;
+	// 			@include pageContainer;
+		
+	// 			.page__surface{
+				
+	// 			@include pageSurface;
+		
+	// 			}//end page__surface
  
-		 .page__surface{
-		 
-		   @include pageSurface;
- 
-		 }//end page__surface
- 
-	   }//end page-continer 
+	//    }//end page-continer 
  
  
 	   .page-flipped{

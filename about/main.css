@@ -67,20 +67,24 @@ body {
   height: 60px;
   position: absolute;
   left: 27px;
-  z-index: 9;
+  z-index: 14;
 }
 
 .sitenav__logo {
-  position: absolute;
+  /*NOTE: design variant: applied fixed positioning 
+   to elements in header navigation for better accessibility on long pages with scrolling.*/
+  position: fixed;
   width: 94px;
   height: 53px;
   top: 0px;
-  z-index: 7;
+  z-index: 14;
   pointer-events: none;
 }
 
 .sitenav__contactNum {
-  position: absolute;
+  /*NOTE: design variant: applied fixed positioning 
+   to elements in header navigation for better accessibility on long pages with scrolling.*/
+  position: fixed;
   display: inline-block;
   width: 115px;
   top: 45px;
@@ -90,7 +94,7 @@ body {
   font-style: normal;
   font-size: 0.62rem;
   color: #fff;
-  z-index: 7;
+  z-index: 14;
 }
 
 .sitenav__links--hide {
@@ -156,12 +160,14 @@ body {
 }
 
 .sitenav__hamburger {
-  position: absolute;
+  /*NOTE: design variant: applied fixed positioning 
+   to elements in header navigation for better accessibility on long pages with scrolling.*/
+  position: fixed;
   right: 36px;
   top: 20px;
   width: 20px;
   height: 20px;
-  z-index: 7;
+  z-index: 14;
 }
 
 .--overlay-remove {
@@ -169,6 +175,8 @@ body {
 }
 
 .--mobile-overlay {
+  /*NOTE: design variant: applied fixed positioning 
+   to elements in header navigation for better accessibility on long pages with scrolling.*/
   position: fixed;
   background-color: rgba(0, 0, 0, 0.9);
   width: 100vw;
@@ -917,20 +925,24 @@ body {
   height: 60px;
   position: absolute;
   left: 27px;
-  z-index: 9;
+  z-index: 14;
 }
 
 .sitenav__logo {
-  position: absolute;
+  /*NOTE: design variant: applied fixed positioning 
+   to elements in header navigation for better accessibility on long pages with scrolling.*/
+  position: fixed;
   width: 94px;
   height: 53px;
   top: 0px;
-  z-index: 7;
+  z-index: 14;
   pointer-events: none;
 }
 
 .sitenav__contactNum {
-  position: absolute;
+  /*NOTE: design variant: applied fixed positioning 
+   to elements in header navigation for better accessibility on long pages with scrolling.*/
+  position: fixed;
   display: inline-block;
   width: 115px;
   top: 45px;
@@ -940,7 +952,7 @@ body {
   font-style: normal;
   font-size: 0.62rem;
   color: #fff;
-  z-index: 7;
+  z-index: 14;
 }
 
 .sitenav__links--hide {
@@ -1006,12 +1018,14 @@ body {
 }
 
 .sitenav__hamburger {
-  position: absolute;
+  /*NOTE: design variant: applied fixed positioning 
+   to elements in header navigation for better accessibility on long pages with scrolling.*/
+  position: fixed;
   right: 36px;
   top: 20px;
   width: 20px;
   height: 20px;
-  z-index: 7;
+  z-index: 14;
 }
 
 .--overlay-remove {
@@ -1019,6 +1033,8 @@ body {
 }
 
 .--mobile-overlay {
+  /*NOTE: design variant: applied fixed positioning 
+   to elements in header navigation for better accessibility on long pages with scrolling.*/
   position: fixed;
   background-color: rgba(0, 0, 0, 0.9);
   width: 100vw;
@@ -1663,22 +1679,22 @@ body {
     /*END ANIMATIONS*/
     /*!SECTION END ANIMATIONS & TRANSITIONS */
   }
+  body #logo.dtlink {
+    width: 94px;
+    height: 60px;
+    position: fixed;
+    left: 27px;
+    z-index: 14;
+  }
   body .page-container {
     background: url("/img/img-tablet-p/tablet-about-bg.png");
     /*Using the  !important flag to overide the assignment of the background images for the diffrent veiwport variants of the design.*/
-    width: 100vw;
-    height: 100vh;
-    transform-origin: left center;
-    perspective: 2500px;
-    transform-style: preserve-3d;
-    transition: transform 0.5s ease-in;
-  }
-  body .page-container .page__surface {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    transform: translateX(0deg) rotateY(0deg);
-    backface-visibility: hidden;
+    /*NOTE: removes the transform and perspective assignments 
+    so containing block is only based on viewport for fixed navigation elements. 
+    The page doesn't use the page turn effect 
+    */
+    perspective: none;
+    transform-style: unset;
   }
   body .page-flipped {
     transform: translateX(0.5%) rotateY(90deg);

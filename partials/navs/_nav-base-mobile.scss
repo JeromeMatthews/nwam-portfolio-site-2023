@@ -17,20 +17,24 @@
   height: 60px;
   position: absolute;
   left: 27px;
-  z-index: 9;
+  z-index: 14;
 }//end dtlink
 
 .sitenav__logo {
-	position: absolute;
+	/*NOTE: design variant: applied fixed positioning 
+	 to elements in header navigation for better accessibility on long pages with scrolling.*/ 
+	position: fixed;
 	width: 94px;
 	height: 53px;
 	top: 0px;
-	z-index: 7;
+	z-index: 14;
 	pointer-events: none;
 }
 
 .sitenav__contactNum {
-	position: absolute;
+	/*NOTE: design variant: applied fixed positioning 
+	 to elements in header navigation for better accessibility on long pages with scrolling.*/ 
+	position: fixed;
 	display: inline-block;
 	width: 115px;
 	top: 45px;
@@ -38,7 +42,7 @@
 
 	@include heroContactNumSmall;
 	color: #fff;
-	z-index: 7;
+	z-index: 14;
 }
 
 //NOTE: Mobile navigation links html code hidden since they'll only be shown in the overlay prompt. After Clicking Hamburger menu icon.
@@ -105,12 +109,14 @@
 }
 
 .sitenav__hamburger {
-	position: absolute;
+	/*NOTE: design variant: applied fixed positioning 
+	 to elements in header navigation for better accessibility on long pages with scrolling.*/ 
+	position: fixed;
 	right: 36px;
 	top: 20px;
 	width: 20px;
 	height: 20px;
-	z-index: 7;
+	z-index: 14;
 }
 
 .--overlay-remove {
@@ -118,6 +124,8 @@
 }
 
 .--mobile-overlay {
+	/*NOTE: design variant: applied fixed positioning 
+	 to elements in header navigation for better accessibility on long pages with scrolling.*/ 
 	position: fixed;
 	background-color: rgba(0, 0, 0, 0.9);
 	width: 100vw;

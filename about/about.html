@@ -25,17 +25,17 @@
 	</head>
 
 	<body>
-	<!--NOTE: UX/UI PAGE TURN NAVIGATION TRANSITION ELEMENTS -->
-	<div class="page-container">
+		<!--NOTE: UX/UI modifications: Fixed navs and 3D perspective elements. 
+			Pages affected: About Page, Case Study Pages, and Blog Articles pages
+			separation of navigation on pages that scroll
+			vertically and not "flip" horizontally. 
 
-
-		
-		<div class="page__surface"></div><!-- /page-surface -->
-
-
-
-		
-		<div class="sitenav__overlay"></div>
+			Using perspective on the page container element overrides the relation 
+			to the viewport that is used as the default context when using position:fixed
+			best solution was to do an extraction of the header section to set the containing 
+			block to be the viewport and not the element with perspective on it, that's set to 
+			the page container. 
+		-->
 		<header class="header">
 			<nav class="sitenav-container">
 				<div class="sitenav-logo-contact-container">
@@ -163,6 +163,20 @@
 			<!-- end Navigation -->
 		</header>
 		<!-- end Header -->
+
+
+	<!--NOTE: UX/UI PAGE TURN NAVIGATION TRANSITION ELEMENTS -->
+	<div class="page-container">
+
+
+		
+		<div class="page__surface"></div><!-- /page-surface -->
+
+
+
+		
+		<div class="sitenav__overlay"></div>
+		
 
 		<main class="main-container">
 			<!--ATF Landing prompt -->
