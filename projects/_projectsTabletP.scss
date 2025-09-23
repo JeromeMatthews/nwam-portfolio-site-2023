@@ -326,7 +326,7 @@
 		  .lower-nav-container{
 			display: flex !important;
 			flex-direction: row;
-			z-index: 13;
+			z-index: 11; //NOTE: keep it below the mobile-nav overlay.
 			justify-content: center;
 			flex-wrap: wrap;
 			

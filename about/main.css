@@ -71,9 +71,8 @@ body {
 }
 
 .sitenav__logo {
-  /*NOTE: design variant: applied fixed positioning 
-   to elements in header navigation for better accessibility on long pages with scrolling.*/
-  position: fixed;
+  /*NOTE: design variant: Kept Logo at absolute as only the page navigation needs to scroll. */
+  position: absolute;
   width: 94px;
   height: 53px;
   top: 0px;
@@ -168,6 +167,10 @@ body {
   width: 20px;
   height: 20px;
   z-index: 14;
+  /*NOTE: design variant: stand-in until we figure out something more elegant.
+  Keeps the nav menu visible as it passes over different colored backgrounds on the page. */
+  background-color: black;
+  padding: 0.5px;
 }
 
 .--overlay-remove {
@@ -929,9 +932,8 @@ body {
 }
 
 .sitenav__logo {
-  /*NOTE: design variant: applied fixed positioning 
-   to elements in header navigation for better accessibility on long pages with scrolling.*/
-  position: fixed;
+  /*NOTE: design variant: Kept Logo at absolute as only the page navigation needs to scroll. */
+  position: absolute;
   width: 94px;
   height: 53px;
   top: 0px;
@@ -1026,6 +1028,10 @@ body {
   width: 20px;
   height: 20px;
   z-index: 14;
+  /*NOTE: design variant: stand-in until we figure out something more elegant.
+  Keeps the nav menu visible as it passes over different colored backgrounds on the page. */
+  background-color: black;
+  padding: 0.5px;
 }
 
 .--overlay-remove {
@@ -2307,19 +2313,12 @@ body {
   body .page-container {
     background: url("/img/img-tablet-l/tablet-landscape-about-bg.png");
     /*Using the  !important flag to overide the assignment of the background images for the diffrent veiwport variants of the design.*/
-    width: 100vw;
-    height: 100vh;
-    transform-origin: left center;
-    perspective: 2500px;
-    transform-style: preserve-3d;
-    transition: transform 0.5s ease-in;
-  }
-  body .page-container .page__surface {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    transform: translateX(0deg) rotateY(0deg);
-    backface-visibility: hidden;
+    /*NOTE: removes the transform and perspective assignments 
+    	so containing block is only based on viewport for fixed navigation elements. 
+    	The page doesn't use the page turn effect 
+    	*/
+    perspective: none;
+    transform-style: unset;
   }
   body .page-flipped {
     transform: translateX(0.5%) rotateY(90deg);

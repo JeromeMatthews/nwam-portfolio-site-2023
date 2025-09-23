@@ -70,9 +70,8 @@ body {
 }
 
 .sitenav__logo {
-  /*NOTE: design variant: applied fixed positioning 
-   to elements in header navigation for better accessibility on long pages with scrolling.*/
-  position: fixed;
+  /*NOTE: design variant: Kept Logo at absolute as only the page navigation needs to scroll. */
+  position: absolute;
   width: 94px;
   height: 53px;
   top: 0px;
@@ -167,6 +166,10 @@ body {
   width: 20px;
   height: 20px;
   z-index: 14;
+  /*NOTE: design variant: stand-in until we figure out something more elegant.
+  Keeps the nav menu visible as it passes over different colored backgrounds on the page. */
+  background-color: black;
+  padding: 0.5px;
 }
 
 .--overlay-remove {

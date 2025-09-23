@@ -10,11 +10,16 @@
 		.page-container {
 			background: url("/img/img-tablet-l/tablet-landscape-about-bg.png");
 			/*Using the  !important flag to overide the assignment of the background images for the diffrent veiwport variants of the design.*/
-			@include pageContainer;
-
-			.page__surface {
-				@include pageSurface;
-			} //end page__surface
+			/*NOTE: removes the transform and perspective assignments 
+				so containing block is only based on viewport for fixed navigation elements. 
+				The page doesn't use the page turn effect 
+				*/
+				// @include pageContainer;
+					// .page__surface {
+				// 	@include pageSurface;
+				// } //end page__surface
+				perspective: none;
+				transform-style:unset;
 		} //end page-continer
 
 		.page-flipped {
