@@ -67,22 +67,23 @@
 
 	@include mobileNavOverlayMenu;
 
-	#projects {
-		@include navOverlayMenuStyles;
-		// margin-top: 67px;
-	}
-
-	#about,
-	#contact {
+	#projects,#about,
+	#contact, #blog {
 		@include navOverlayMenuStyles;
 		// margin-top: 130px;
 		// margin-bottom: 130px;
 	}
 
-	#blog {
-		@include navOverlayMenuStyles;
-		// margin-bottom: 66px;
+	#projects:hover, 
+	#about:hover,
+	#contact:hover,
+	#blog:hover {
+		@include navOverlayMenuStylesOnHover;
+		// margin-top: 67px;
 	}
+
+	
+
 
 	#projects-text,
 	#about-text,

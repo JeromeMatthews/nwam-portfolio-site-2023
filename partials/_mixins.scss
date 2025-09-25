@@ -65,6 +65,11 @@
 	position: relative;
 }
 
+@mixin navOverlayMenuStylesOnHover {
+	background-color: #ffbf00;
+    text-shadow: 0px 0.9px 0px #000000;
+}
+
 @mixin flexMix {
 	display: flex;
 		flex-direction: row;
