@@ -35,11 +35,16 @@
         .page-container {
             background: url("/img/img-mobile-p/mobile-about-bg.png");
             /*Using the  !important flag to overide the assignment of the background images for the diffrent veiwport variants of the design.*/
-            @include pageContainer;
-    
-            .page__surface {
-                @include pageSurface;
-            } //end page__surface
+           /*NOTE: removes the transform and perspective assignments 
+				so containing block is only based on viewport for fixed navigation elements. 
+				The page doesn't use the page turn effect 
+				*/
+				// @include pageContainer;
+					// .page__surface {
+				// 	@include pageSurface;
+				// } //end page__surface
+				perspective: none;
+				transform-style:unset;
         } //end page-continer
     
         .page-flipped {
@@ -411,8 +416,10 @@
                         }
         
                         .mobile-cta-footer__logo {
-                            width: 83px;
-                            height: 30px;
+                       
+                            //NOTE: Design variant logo dimensions change
+                            width: 101px;
+                            height: 51px;
                             position: relative;
                             top: 0px;
                             left: 0px;

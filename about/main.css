@@ -504,10 +504,10 @@ body .main-container .mobile-cta-footer .mobile-cta-footer-branding .mobile-cta-
   left: -45px;
 }
 body .main-container .mobile-cta-footer .mobile-cta-footer-branding .mobile-cta-footer__logo {
-  width: 83px;
-  height: 30px;
+  width: 101px;
+  height: 51px;
   position: relative;
-  top: -32px;
+  top: -41px;
   left: 85px;
 }
 body .main-container .mobile-cta-footer .mobile-cta-footer__button {
@@ -1042,19 +1042,12 @@ body {
   body .page-container {
     background: url("/img/img-mobile-p/mobile-about-bg.png");
     /*Using the  !important flag to overide the assignment of the background images for the diffrent veiwport variants of the design.*/
-    width: 100vw;
-    height: 100vh;
-    transform-origin: left center;
-    perspective: 2500px;
-    transform-style: preserve-3d;
-    transition: transform 0.5s ease-in;
-  }
-  body .page-container .page__surface {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    transform: translateX(0deg) rotateY(0deg);
-    backface-visibility: hidden;
+    /*NOTE: removes the transform and perspective assignments 
+    so containing block is only based on viewport for fixed navigation elements. 
+    The page doesn't use the page turn effect 
+    */
+    perspective: none;
+    transform-style: unset;
   }
   body .page-flipped {
     transform: translateX(0.5%) rotateY(90deg);
@@ -1308,8 +1301,8 @@ body {
     left: 0px;
   }
   body .main-container .mobile-cta-footer .mobile-footer-container .mobile-cta-footer-branding .mobile-cta-footer__logo {
-    width: 83px;
-    height: 30px;
+    width: 101px;
+    height: 51px;
     position: relative;
     top: 0px;
     left: 0px;

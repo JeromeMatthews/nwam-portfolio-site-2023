@@ -184,9 +184,14 @@ body {
   display: none;
 }
 
+html {
+  overflow: hidden;
+}
+
 /*SECTION: [RESPONSIVE DESIGN] */
 /*NOTE : Query breakpoints*/
 body {
+  overflow: hidden;
   background-image: none;
   opacity: 0;
   background-color: #000000;

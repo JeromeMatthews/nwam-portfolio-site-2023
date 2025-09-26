@@ -3,6 +3,7 @@
 @import "../../partials/mixins";
 @import "../../partials/navs/nav-base-mobile";
 //SECTION: UNIVERSAL VARIABLES, LISTS & MIXINS
+
 @mixin csContentBox {
 	position: relative;
 	// width: 287px;
@@ -23,6 +24,7 @@
 
 
 @media (max-width: 767px) {
+
 
 	body {
 		.atf-1,
@@ -184,7 +186,8 @@
 				flex-direction: column;
 				align-items: center;
 				@include csContentBox;
-				top: -9px;
+				//NOTE: Design variant: lowered the description container box.
+				top: 11px;
 
 				.cs-project-desc__text {
 					font-family: $font-list-b;

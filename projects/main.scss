@@ -3,6 +3,12 @@
 @import "..//partials/mixins";
 @import "..//partials/navs/nav-base-mobile";
 //SECTION: UNIVERSAL VARIABLES, LISTS & MIXINS
+//NOTE: Design variant - needed for projects page design layout. 
+html{
+	//NOTE: Preventing any scroll bars 
+	overflow: hidden;
+}
+
 
 @mixin showBoxOverlay{
 	position: absolute;
@@ -28,7 +34,7 @@
 
 
 body {
-
+		overflow:hidden;
 		// background-image: url("/img/img-mobile-p/mobile-ps-bg.png");
 		// 	background-repeat: no-repeat;
 		// 	background-attachment: scroll;
