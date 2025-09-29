@@ -45,11 +45,11 @@
 
 		.atf-1 {
 			// height: 800px;
-			// background-image: url("/img/img-desktop-l/desktop-l-beam-bg.png");
+			background-image: url("/img/img-mobile-p/mobile-ps-beam-bg.png");
 			// background-repeat: no-repeat;
 			// background-position: -150px center; // first value left and right, second - top and bottom.
 			// background-attachment: scroll;
-			background-color: #000000;
+			// background-color: #000000;
 
 			.cs-project,
 			.cs-project__title,
@@ -163,9 +163,9 @@
 				//BTF --------
 
 		.btf-2 {
-			height: 800px;
+			height: 795px;
 			
-			background-image: url("/img/img-mobile-p/shortwood-bg-overlayedit.jpg");
+			background-image: url("/img/img-mobile-p/beamteam-male-members.jpg");
 			background-repeat: no-repeat;
 
 			// background-position: left -1px top 801px;
@@ -196,7 +196,7 @@
 
 			.cs-project-sum {
 				@include csContentBox;
-				height: 420px;
+				height: 500px;
 				top: -1px;
 
 				.cs-project-sum__text-1 {

@@ -206,7 +206,7 @@ body {
     align-content: center;
   }
   body .atf-1 {
-    background-color: #000000;
+    background-image: url("/img/img-mobile-p/mobile-ps-beam-bg.png");
   }
   body .atf-1 .cs-project,
   body .atf-1 .cs-project__title,
@@ -311,8 +311,8 @@ body {
     animation: info-tool-tip 1s ease-in 5.5s forwards;
   }
   body .btf-2 {
-    height: 800px;
-    background-image: url("/img/img-mobile-p/shortwood-bg-overlayedit.jpg");
+    height: 795px;
+    background-image: url("/img/img-mobile-p/beamteam-male-members.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
     color: #fff;
@@ -348,7 +348,7 @@ body {
     background-color: rgba(255, 255, 255, 0.11);
     border-radius: 4%;
     margin: 0 36px;
-    height: 420px;
+    height: 500px;
     top: -1px;
   }
   body .btf-2 .cs-project-sum .cs-project-sum__text-1 .cs-project-sum__text__head {
