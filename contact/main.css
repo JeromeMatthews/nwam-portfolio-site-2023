@@ -744,86 +744,16 @@ body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-i
     animation: tooltip-animate 0.3s ease forwards;
   }
   body .main-container .author-info {
-    opacity: 0;
-    font: 0.75rem futura-pt, Helvetica, Arial, sans-serif;
-    color: #ffffff;
-    position: absolute;
-    top: 867px;
-    right: 419px;
-    animation: info-tool-tip 1s ease-in 11.5s forwards;
-  }
-  body .main-container .author-info p .author-info__name {
-    text-decoration: none;
-    color: #ffbf00;
-  }
-  body .main-container .author-info p .author-info__name:hover {
-    color: #fdd14c;
-  }
-  body .main-container .author-info p .author-info__url {
-    text-decoration: none;
-    color: #ffbf00;
-  }
-  body .main-container .author-info p .author-info__url:hover {
-    text-decoration: none;
-    color: #fdd14c;
+    display: none;
   }
   body .main-container .tt-bgimg-circle {
-    position: fixed;
-    top: 703px;
-    left: 89px;
-    width: 20px;
-    height: 20px;
-    background-color: #ffbf00;
-    border: 1px solid white;
-    border-radius: 55%;
-    box-shadow: 0.1px 0.7px #000;
-    z-index: 19;
-    opacity: 0;
-    pointer-events: none;
-    cursor: pointer;
-    animation: info-tool-tip 1s linear 8.5s forwards;
-  }
-  body .main-container .tt-bgimg-circle .tt-bgimg-circle__icon {
-    margin: 0 auto;
-    position: absolute;
-    left: 5px;
-    top: 0px;
-    text-align: center;
-    font: 1rem arial;
-    color: #fff;
-    cursor: pointer;
+    display: none;
   }
   body .main-container .tt-bgimg-circle:hover ::after {
-    content: "Message in a bottle... \aJust as this Mongolian youth stares into the night sky with intrepidness and wonder, so too do we have an interest in what stories could be told out there. \aWe can’t wait. Let’s go, Let’s tell your story…  \a";
-    white-space: pre-line;
-    position: absolute;
-    transition: 1s all ease;
-    top: -228px;
-    left: -85px;
-    width: 175px;
-    height: 212px;
-    background-color: rgba(0, 0, 0, 0.3411764706);
-    border: 1px solid rgba(255, 255, 255, 0.3294117647);
-    border-radius: 1px;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-    text-shadow: 1px 1.5px 0px rgba(0, 0, 0, 0.3490196078);
-    font: 1rem 700 futura-pt, Helvetica, Arial, sans-serif;
-    color: #fff;
-    opacity: 1;
-    animation: tooltip-animate 0.3s ease forwards;
+    display: none;
   }
   body .main-container .tt-bgimg-circle-pulse {
-    position: absolute;
-    z-index: -10;
-    top: 593px;
-    left: 89px;
-    width: 20px;
-    height: 20px;
-    background-color: transparent;
-    border: 1px solid white;
-    border-radius: 55%;
-    opacity: 0;
-    animation: info-tt-pulse 1.5s linear 9.5s 25;
+    display: none;
   }
   body .lower-nav-wrapper {
     display: flex;

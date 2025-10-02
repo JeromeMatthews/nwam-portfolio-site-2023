@@ -153,7 +153,7 @@
 					border-radius: 55%;
 					box-shadow: 0.1px 0.7px #000;
 					opacity: 0;
-					z-index: 13;
+					z-index: 10; //NOTE: design variant, keeps it lower than overlay navigation. 
 					cursor: pointer;
 					animation: info-tool-tip 1s ease-in 5.5s forwards;
                 }//end tt-circle

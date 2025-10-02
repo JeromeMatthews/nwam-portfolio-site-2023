@@ -202,90 +202,95 @@ body {
 
 
 	.tt-circle {
-		position: absolute;
-		top: 464px;
-		left: 139px;
-		width: 20px;
-		height: 20px;
-		background-color: #8a8a8a98;
-		border: 1px solid #ffff;
-		border-radius: 55%;
-		box-shadow: 0.1px 0.7px #000;
-		.tt-circle__icon {
-			margin: 0 auto;
-			position: absolute;
-			left: 7px;
-			top: -8px;
-			text-align: center;
-			font: $text1x-43 $font-list-b;
-			color: #fff;
-			cursor: pointer;
-		} //end tt-circle__icon
+		display: none;
+		//NOTE: Design variant: Made the decision to keep the narrative tooltips out of the mobile variant. Preservation of screen space and preventing over cluttering has higher priority.
+		// position: absolute;
+		// top: 464px;
+		// left: 139px;
+		// width: 20px;
+		// height: 20px;
+		// background-color: #8a8a8a98;
+		// border: 1px solid #ffff;
+		// border-radius: 55%;
+		// box-shadow: 0.1px 0.7px #000;
+		// .tt-circle__icon {
+		// 	margin: 0 auto;
+		// 	position: absolute;
+		// 	left: 7px;
+		// 	top: -8px;
+		// 	text-align: center;
+		// 	font: $text1x-43 $font-list-b;
+		// 	color: #fff;
+		// 	cursor: pointer;
+		// } //end tt-circle__icon
 
-		opacity: 0; //initializing the opacity of the tooltip.
-		pointer-events: none;
-		cursor: pointer;
-		animation: info-tool-tip 1s ease-in 28.5s forwards;
+		// opacity: 0; //initializing the opacity of the tooltip.
+		// pointer-events: none;
+		// cursor: pointer;
+		// animation: info-tool-tip 1s ease-in 28.5s forwards;
+
 	} //end tt-circle
 
 
-	.tt-circle:hover ::after {
-		content: " Title: adventure-storytelling-image-dariusz-sankowski";
-		// white-space: pre-wrap; // to allow for inserting line breaks into the content propety
-		position: absolute;
-		transition: 1s all ease;
-		top: 23px;
-  		left: -84px;
-  		width: 172px;
-  		height: 24px;
+	// .tt-circle:hover ::after {
+	// 	// content: " Title: adventure-storytelling-image-dariusz-sankowski";
+	// 	// // white-space: pre-wrap; // to allow for inserting line breaks into the content propety
+	// 	// position: absolute;
+	// 	// transition: 1s all ease;
+	// 	// top: 23px;
+  	// 	// left: -84px;
+  	// 	// width: 172px;
+  	// 	// height: 24px;
 
-		// background-color: #77767255;
-		// border: 1px solid #ffffff;
-		// border-radius: 3px;
-		// box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-		color: #fff;
-		font-size: $textSmall-93;
+	// 	// // background-color: #77767255;
+	// 	// // border: 1px solid #ffffff;
+	// 	// // border-radius: 3px;
+	// 	// // box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+	// 	// color: #fff;
+	// 	// font-size: $textSmall-93;
 
-		//NOTE: Tooltip animation:
-		animation: tooltip-animate 0.3s ease forwards;
-	} //end tt-circle:hover
+	// 	// //NOTE: Tooltip animation:
+	// 	// animation: tooltip-animate 0.3s ease forwards;
+	// } //end tt-circle:hover
 
 
 
 	
 	.author-info {
-		opacity: 0;
+		display: none;
+		//NOTE: Design variant: Made the decision to keep the narrative tooltips out of the mobile variant. Preservation of screen space and preventing over cluttering has higher priority.
+		// opacity: 0;
 		// display: block !important; //NOTE: overiding the defualt setting in the HTML so the code block won't show in the mobile and tablet variants.
-		font: $textSmall-75 $font-list-b;
-		color: #ffffff;
-		p {
-			.author-info__name {
-				text-decoration: none;
-				color: $brandColor;
-			} //end author-info__name
+		// font: $textSmall-75 $font-list-b;
+		// color: #ffffff;
+		// p {
+		// 	.author-info__name {
+		// 		text-decoration: none;
+		// 		color: $brandColor;
+		// 	} //end author-info__name
 
-			.author-info__name:hover {
-				color: #fdd14c;
-			} //end author-info-hover
+		// 	.author-info__name:hover {
+		// 		color: #fdd14c;
+		// 	} //end author-info-hover
 
-			.author-info__url {
-				text-decoration: none;
-				color: $brandColor;
-			} //end author-info__name
+		// 	.author-info__url {
+		// 		text-decoration: none;
+		// 		color: $brandColor;
+		// 	} //end author-info__name
 
-			.author-info__url:hover {
-				text-decoration: none;
-				color: #fdd14c;
-			} //end author-info__name
-		} //end p
+		// 	.author-info__url:hover {
+		// 		text-decoration: none;
+		// 		color: #fdd14c;
+		// 	} //end author-info__name
+		// } //end p
 
-		position: absolute;
-		width: 200px;
-		right: 47px;
-  		top: 517px;
-		text-align:center;
+		// position: absolute;
+		// width: 200px;
+		// right: 47px;
+  		// top: 517px;
+		// text-align:center;
 
-		animation: info-tool-tip 1s ease-in 28.5s forwards;
+		// animation: info-tool-tip 1s ease-in 28.5s forwards;
 	} //end-author-info
 
 	//NOTE: BACKGROOUND IMAGE TOOLTIP
@@ -304,6 +309,8 @@ body {
 		// border-radius: 55%;
 		// box-shadow: 0.1px 0.7px #000;
 		.tt-bgimg-circle__icon {
+			display: none;
+		//NOTE: Design variant: Made the decision to keep the narrative tooltips out of the mobile variant. Preservation of screen space and preventing over cluttering has higher priority.
 			// margin: 0 auto;
 			// position: absolute;
 			// left: 5px;

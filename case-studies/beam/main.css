@@ -306,7 +306,7 @@ body {
     border-radius: 55%;
     box-shadow: 0.1px 0.7px #000;
     opacity: 0;
-    z-index: 13;
+    z-index: 10;
     cursor: pointer;
     animation: info-tool-tip 1s ease-in 5.5s forwards;
   }

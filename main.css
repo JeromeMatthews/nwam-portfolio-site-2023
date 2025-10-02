@@ -357,69 +357,15 @@ body .hero-button .hero-text {
   pointer-events: none;
 }
 body .tt-circle {
-  position: absolute;
-  top: 464px;
-  left: 139px;
-  width: 20px;
-  height: 20px;
-  background-color: rgba(138, 138, 138, 0.5960784314);
-  border: 1px solid white;
-  border-radius: 55%;
-  box-shadow: 0.1px 0.7px #000;
-  opacity: 0;
-  pointer-events: none;
-  cursor: pointer;
-  animation: info-tool-tip 1s ease-in 28.5s forwards;
-}
-body .tt-circle .tt-circle__icon {
-  margin: 0 auto;
-  position: absolute;
-  left: 7px;
-  top: -8px;
-  text-align: center;
-  font: 1.437rem futura-pt, Helvetica, Arial, sans-serif;
-  color: #fff;
-  cursor: pointer;
-}
-body .tt-circle:hover ::after {
-  content: " Title: adventure-storytelling-image-dariusz-sankowski";
-  position: absolute;
-  transition: 1s all ease;
-  top: 23px;
-  left: -84px;
-  width: 172px;
-  height: 24px;
-  color: #fff;
-  font-size: 0.93rem;
-  animation: tooltip-animate 0.3s ease forwards;
+  display: none;
 }
 body .author-info {
-  opacity: 0;
-  font: 0.75rem futura-pt, Helvetica, Arial, sans-serif;
-  color: #ffffff;
-  position: absolute;
-  width: 200px;
-  right: 47px;
-  top: 517px;
-  text-align: center;
-  animation: info-tool-tip 1s ease-in 28.5s forwards;
-}
-body .author-info p .author-info__name {
-  text-decoration: none;
-  color: #ffbf00;
-}
-body .author-info p .author-info__name:hover {
-  color: #fdd14c;
-}
-body .author-info p .author-info__url {
-  text-decoration: none;
-  color: #ffbf00;
-}
-body .author-info p .author-info__url:hover {
-  text-decoration: none;
-  color: #fdd14c;
+  display: none;
 }
 body .tt-bgimg-circle {
+  display: none;
+}
+body .tt-bgimg-circle .tt-bgimg-circle__icon {
   display: none;
 }
 body .tt-bgimg-circle:hover ::after {
