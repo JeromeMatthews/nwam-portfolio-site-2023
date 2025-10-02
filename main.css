@@ -2211,6 +2211,8 @@ body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-i
     pointer-events: none;
   }
   body .tt-circle {
+    display: block; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     position: absolute;
     top: 452px;
     left: 40px;
@@ -2249,6 +2251,8 @@ body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-i
   }
   body .author-info {
     opacity: 0;
+    display: block; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     font: 0.75rem futura-pt, Helvetica, Arial, sans-serif;
     color: #ffffff;
     position: absolute;
@@ -2272,6 +2276,8 @@ body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-i
     color: #fdd14c;
   }
   body .tt-bgimg-circle {
+    display: block; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     position: absolute;
     top: 213px;
     left: 450px;
