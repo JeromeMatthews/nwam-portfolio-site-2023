@@ -199,6 +199,7 @@ body {
 
 		
 		.tt-circle {
+			display: none;
 			// position: absolute;
 			// top: 604px;
   			// left: 140px;
@@ -209,6 +210,7 @@ body {
 			// border-radius: 55%;
 			// box-shadow: 0.1px 0.7px #000;
 			.tt-circle__icon {
+				display: none;
 				// margin: 0 auto;
 				// position: absolute;
 				// left: 7px;
@@ -234,6 +236,7 @@ body {
 		// }//end tt-circle::before
 
 		.tt-circle:hover ::after {
+			display: none;
 			// content: " Title: gold-and-red-crown-on-brown-wooden-table";
 			// // white-space: pre-wrap; // to allow for inserting line breaks into the content propety
 			// position: absolute;
@@ -253,7 +256,8 @@ body {
 			// animation: tooltip-animate 0.3s ease forwards;
 		} //end tt-circle:hover
 
-		// .tt-circle-pulse {
+		.tt-circle-pulse {
+			display: none;
 		// 	position: relative;
 		// 	z-index: -10; //brings the pulse effect forwards to make it look like its coming from the info button.
 		// 	top: 32px; // adjustment po vertical placement so the pulse effect fits correctly over the info button.
@@ -265,9 +269,10 @@ body {
 		// 	border-radius: 55%;
 		// 	opacity: 0; //initializing the opacity for the animation.
 		// 	animation: info-tt-pulse 1.5s ease-in 26.5s 25;
-		// } //end tt-circle-pulse
+		} //end tt-circle-pulse
 
 		.author-info {
+			display: none;
 			// opacity: 0;
 			// display: block !important; //NOTE: overiding the defualt setting in the HTML so the code block won't show in the mobile and tablet variants.
 			// font: $textSmall-75 $font-list-b;
@@ -304,6 +309,7 @@ body {
 		// //----------------------------------------------------------------
 
 		.tt-bgimg-circle {
+			display: none;
 			// position: fixed;
 			// top: 56px; //NOTE: Design variant:
 			// left: 139px; //NOTE: Design variant:
@@ -334,6 +340,7 @@ body {
 	
 
 		.tt-bgimg-circle:hover ::after {
+			display: none;
 			// content: "“Thar be Treasure!” -The main event. \a Where we make it happen. \a Here’s an offering of our pride and joy. \a Your projects.";
 			// white-space: pre-line; // to allow for inserting line breaks into the content propety
 			// position: absolute;
@@ -356,6 +363,7 @@ body {
 		} //end tt-circle:hover
 
 		.tt-bgimg-circle-pulse {
+			display: none;
 			// position: absolute;
 			// z-index: -10; //brings the pulse effect forwards to make it look like its coming from the info button.
 

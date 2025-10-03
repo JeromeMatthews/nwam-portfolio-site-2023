@@ -323,6 +323,30 @@ body .main-container .show-box__container .show-box__link #show-box-3 .show-box_
 body .main-container .show-box__container .show-box__link #show-box-3 .show-box__text {
   z-index: 3;
 }
+body .main-container .tt-circle {
+  display: none;
+}
+body .main-container .tt-circle .tt-circle__icon {
+  display: none;
+}
+body .main-container .tt-circle:hover ::after {
+  display: none;
+}
+body .main-container .tt-circle-pulse {
+  display: none;
+}
+body .main-container .author-info {
+  display: none;
+}
+body .main-container .tt-bgimg-circle {
+  display: none;
+}
+body .main-container .tt-bgimg-circle:hover ::after {
+  display: none;
+}
+body .main-container .tt-bgimg-circle-pulse {
+  display: none;
+}
 body .lower-nav-wrapper {
   display: flex;
   flex-direction: row;
@@ -1897,6 +1921,8 @@ body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-i
     height: 275px;
   }
   body .main-container .tt-circle {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     position: absolute;
     top: 677px;
     left: 40px;
@@ -1922,6 +1948,8 @@ body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-i
     cursor: pointer;
   }
   body .main-container .tt-circle:hover ::after {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     content: " Title: gold-and-red-crown-on-brown-wooden-table";
     position: absolute;
     transition: 1s all ease;
@@ -1933,7 +1961,24 @@ body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-i
     font-size: 1rem;
     animation: tooltip-animate 0.3s ease forwards;
   }
+  body .main-container .tt-circle-pulse {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
+    position: relative;
+    z-index: -10;
+    top: 32px;
+    left: 7px;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 55%;
+    opacity: 0;
+    animation: info-tt-pulse 1.5s ease-in 26.5s 25;
+  }
   body .main-container .author-info {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     opacity: 0;
     font: 0.75rem futura-pt, Helvetica, Arial, sans-serif;
     color: #ffffff;
@@ -1958,6 +2003,8 @@ body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-i
     color: #fdd14c;
   }
   body .main-container .tt-bgimg-circle {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     position: fixed;
     top: 96px;
     left: 630px;
@@ -1984,6 +2031,8 @@ body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-i
     cursor: pointer;
   }
   body .main-container .tt-bgimg-circle:hover ::after {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     content: "“Thar be Treasure!” -The main event. \aWhere we make it happen. \aHere’s an offering of our pride and joy. \aYour projects.";
     white-space: pre-line;
     position: absolute;
@@ -1999,6 +2048,8 @@ body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-i
     animation: tooltip-animate 0.3s ease forwards;
   }
   body .main-container .tt-bgimg-circle-pulse {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     position: absolute;
     z-index: -10;
     top: 96px;
