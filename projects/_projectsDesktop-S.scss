@@ -218,8 +218,9 @@
 				display: initial; /*NOTE: overiding the default setting in the HTML 
 			 	 so the code block won't show in the mobile and tablet variants. */
                 position: absolute;
-                top: 677px; //NOTE: Design variant
-                left: 40px;
+                  top: 84.8vh;
+    			  left: 3.8vw;
+
                 width: 20px;
                 height: 20px;
                 background-color: #8a8a8a98;
@@ -227,6 +228,8 @@
                 border-radius: 55%;
                 box-shadow: 0.1px 0.7px #000;
                 .tt-circle__icon {
+					 display: initial; /*NOTE: overiding the default setting in the HTML 
+			 	 		so the code block won't show in the mobile and tablet variants. */
                     margin: 0 auto;
                     position: absolute;
                     left: 7px;
@@ -319,8 +322,9 @@
                 } //end p
     
                 position: absolute;
-                right: 944px; //NOTE Design variant.
-                bottom: 2px; //NOTE Design variant.
+                 left: 4vw; //NOTE: Design variant
+    			  top: 86vh; //NOTE: Design variant
+
     
                 animation: info-tool-tip 1s ease-in 2.5s forwards;
             } //end-author-info
@@ -332,8 +336,9 @@
 				display: initial; /*NOTE: overiding the default setting in the HTML 
 			 	 so the code block won't show in the mobile and tablet variants. */
                 position: fixed;
-                top: 96px;
-                left: 630px; //NOTE: Design variant
+                top: 13.3vh; //NOTE: Design Variant
+    			left: 49.3vw; //NOTE: Design Variant
+
                 width: 20px;
                 height: 20px;
                 background-color: $brandColor;
@@ -390,8 +395,9 @@
                 position: absolute;
                 z-index: -10; //brings the pulse effect forwards to make it look like its coming from the info button.
     
-                top: 96px;
-                left: 630px; //NOTE: Design variant
+               top: 13.3vh; //NOTE: Design Variant
+    	 		left: 39.3vw; //NOTE: Design Variant
+
                 width: 20px;
                 height: 20px;
                 background-color: transparent;

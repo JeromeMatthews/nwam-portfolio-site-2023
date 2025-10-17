@@ -303,119 +303,31 @@ body .main-container .chevron-down {
   top: -320px;
 }
 body .main-container .tt-circle {
-  position: absolute;
-  top: 840px;
-  left: 40px;
-  width: 20px;
-  height: 20px;
-  background-color: rgba(138, 138, 138, 0.5960784314);
-  border: 1px solid white;
-  border-radius: 55%;
-  box-shadow: 0.1px 0.7px #000;
-  opacity: 0;
-  pointer-events: none;
-  cursor: pointer;
-  animation: info-tool-tip 1s ease-in 8.5s forwards;
+  display: none;
 }
 body .main-container .tt-circle .tt-circle__icon {
-  margin: 0 auto;
-  position: absolute;
-  left: 7px;
-  top: -8px;
-  text-align: center;
-  font: 1.437rem futura-pt, Helvetica, Arial, sans-serif;
-  color: #fff;
-  cursor: pointer;
+  display: none;
 }
 body .main-container .tt-circle:hover ::after {
-  content: " Title: a-person-with-their-hand-on-a-rock";
-  position: absolute;
-  transition: 1s all ease;
-  top: 7px;
-  left: -66px;
-  width: 430px;
-  height: 20px;
-  color: #fff;
-  font-size: 1rem;
-  animation: tooltip-animate 0.3s ease forwards;
+  display: none;
+}
+body .main-container .tt-circle-pulse {
+  display: none;
 }
 body .main-container .author-info {
-  opacity: 0;
-  font: 0.75rem futura-pt, Helvetica, Arial, sans-serif;
-  color: #ffffff;
-  position: absolute;
-  right: 1618px;
-  bottom: 33px;
-  animation: info-tool-tip 1s ease-in 8.5s forwards;
-}
-body .main-container .author-info p .author-info__name {
-  text-decoration: none;
-  color: #ffbf00;
-}
-body .main-container .author-info p .author-info__name:hover {
-  color: #fdd14c;
-}
-body .main-container .author-info p .author-info__url {
-  text-decoration: none;
-  color: #ffbf00;
-}
-body .main-container .author-info p .author-info__url:hover {
-  text-decoration: none;
-  color: #fdd14c;
+  display: none;
 }
 body .main-container .tt-bgimg-circle {
-  position: fixed;
-  top: 194px;
-  left: 1337px;
-  width: 20px;
-  height: 20px;
-  background-color: #ffbf00;
-  border: 1px solid white;
-  border-radius: 55%;
-  box-shadow: 0.1px 0.7px #000;
-  z-index: 19;
-  opacity: 0;
-  pointer-events: none;
-  cursor: pointer;
-  animation: info-tool-tip 1s linear 7s forwards;
+  display: none;
 }
 body .main-container .tt-bgimg-circle .tt-bgimg-circle__icon {
-  margin: 0 auto;
-  position: absolute;
-  left: 5px;
-  top: 0px;
-  text-align: center;
-  font: 1rem arial;
-  color: #fff;
-  cursor: pointer;
+  display: none;
 }
 body .main-container .tt-bgimg-circle:hover ::after {
-  content: "The writing’s on the wall. \a A method of conveying information as old as human society itself. \aLike the cave paintings we employ the use of a narrative to communicate. \aNot just our clients’ stories, but also our own.";
-  white-space: pre-line;
-  position: absolute;
-  transition: 1s all ease;
-  top: -34px;
-  left: -581px;
-  width: 580px;
-  height: 80px;
-  text-shadow: 1px 1.5px 0px rgba(0, 0, 0, 0.3490196078);
-  font: 1rem 700 futura-pt, Helvetica, Arial, sans-serif;
-  color: #fff;
-  opacity: 1;
-  animation: tooltip-animate 0.3s ease forwards;
+  display: none;
 }
 body .main-container .tt-bgimg-circle-pulse {
-  position: absolute;
-  z-index: -10;
-  top: 194px;
-  left: 1337px;
-  width: 20px;
-  height: 20px;
-  background-color: transparent;
-  border: 1px solid white;
-  border-radius: 55%;
-  opacity: 0;
-  animation: info-tt-pulse 1.5s linear 7.5s 25;
+  display: none;
 }
 body .main-container .lower-nav-container {
   display: flex !important;
@@ -3094,10 +3006,12 @@ body {
     width: 0;
     animation: short-type 1s steps(20, end) 5.2s forwards, blink 0.8s infinite;
   }
-  body .main-container .about-hero .tt-circle {
+  body .main-container .tt-circle {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     position: absolute;
-    top: 641px;
-    left: 40px;
+    top: 84.5vh;
+    left: 13.9vw;
     width: 20px;
     height: 20px;
     background-color: rgba(138, 138, 138, 0.5960784314);
@@ -3109,7 +3023,9 @@ body {
     cursor: pointer;
     animation: info-tool-tip 1s ease-in 8.5s forwards;
   }
-  body .main-container .about-hero .tt-circle .tt-circle__icon {
+  body .main-container .tt-circle .tt-circle__icon {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     margin: 0 auto;
     position: absolute;
     left: 7px;
@@ -3119,7 +3035,9 @@ body {
     color: #fff;
     cursor: pointer;
   }
-  body .main-container .about-hero .tt-circle:hover ::after {
+  body .main-container .tt-circle:hover ::after {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     content: " Title: a-person-with-their-hand-on-a-rock";
     position: absolute;
     transition: 1s all ease;
@@ -3131,34 +3049,38 @@ body {
     font-size: 1rem;
     animation: tooltip-animate 0.3s ease forwards;
   }
-  body .main-container .about-hero .author-info {
+  body .main-container .author-info {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     opacity: 0;
     font: 0.75rem futura-pt, Helvetica, Arial, sans-serif;
     color: #ffffff;
     position: absolute;
-    right: 974px;
-    bottom: 33px;
+    left: 13.9vw;
+    top: 85.5vh;
     animation: info-tool-tip 1s ease-in 8.5s forwards;
   }
-  body .main-container .about-hero .author-info p .author-info__name {
+  body .main-container .author-info p .author-info__name {
     text-decoration: none;
     color: #ffbf00;
   }
-  body .main-container .about-hero .author-info p .author-info__name:hover {
+  body .main-container .author-info p .author-info__name:hover {
     color: #fdd14c;
   }
-  body .main-container .about-hero .author-info p .author-info__url {
+  body .main-container .author-info p .author-info__url {
     text-decoration: none;
     color: #ffbf00;
   }
-  body .main-container .about-hero .author-info p .author-info__url:hover {
+  body .main-container .author-info p .author-info__url:hover {
     text-decoration: none;
     color: #fdd14c;
   }
-  body .main-container .about-hero .tt-bgimg-circle {
+  body .main-container .tt-bgimg-circle {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     position: fixed;
-    top: 194px;
-    left: 630px;
+    top: 58vh;
+    left: 73.8vw;
     width: 20px;
     height: 20px;
     background-color: #ffbf00;
@@ -3171,7 +3093,9 @@ body {
     cursor: pointer;
     animation: info-tool-tip 1s linear 7s forwards;
   }
-  body .main-container .about-hero .tt-bgimg-circle .tt-bgimg-circle__icon {
+  body .main-container .tt-bgimg-circle .tt-bgimg-circle__icon {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     margin: 0 auto;
     position: absolute;
     left: 5px;
@@ -3181,7 +3105,9 @@ body {
     color: #fff;
     cursor: pointer;
   }
-  body .main-container .about-hero .tt-bgimg-circle:hover ::after {
+  body .main-container .tt-bgimg-circle:hover ::after {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     content: "The writing’s on the wall. \a A method of conveying information as old as human society itself. \aLike the cave paintings we employ the use of a narrative to communicate. \aNot just our clients’ stories, but also our own.";
     white-space: pre-line;
     position: absolute;
@@ -3196,11 +3122,13 @@ body {
     opacity: 1;
     animation: tooltip-animate 0.3s ease forwards;
   }
-  body .main-container .about-hero .tt-bgimg-circle-pulse {
+  body .main-container .tt-bgimg-circle-pulse {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     position: absolute;
     z-index: -10;
-    top: 194px;
-    left: 630px;
+    top: 58vh;
+    left: 73.8vw;
     width: 20px;
     height: 20px;
     background-color: transparent;
@@ -3813,10 +3741,12 @@ body {
     width: 0;
     animation: short-type 1s steps(20, end) 5.2s forwards, blink 0.8s infinite;
   }
-  body .main-container .about-hero .tt-circle {
+  body .main-container .tt-circle {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     position: absolute;
-    top: 821px;
-    left: 40px;
+    top: 85.5vh;
+    left: 12.3vw;
     width: 20px;
     height: 20px;
     background-color: rgba(138, 138, 138, 0.5960784314);
@@ -3828,7 +3758,9 @@ body {
     cursor: pointer;
     animation: info-tool-tip 1s ease-in 8.5s forwards;
   }
-  body .main-container .about-hero .tt-circle .tt-circle__icon {
+  body .main-container .tt-circle .tt-circle__icon {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     margin: 0 auto;
     position: absolute;
     left: 7px;
@@ -3838,7 +3770,9 @@ body {
     color: #fff;
     cursor: pointer;
   }
-  body .main-container .about-hero .tt-circle:hover ::after {
+  body .main-container .tt-circle:hover ::after {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     content: " Title: a-person-with-their-hand-on-a-rock";
     position: absolute;
     transition: 1s all ease;
@@ -3850,34 +3784,38 @@ body {
     font-size: 1rem;
     animation: tooltip-animate 0.3s ease forwards;
   }
-  body .main-container .about-hero .author-info {
+  body .main-container .author-info {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     opacity: 0;
     font: 0.75rem futura-pt, Helvetica, Arial, sans-serif;
     color: #ffffff;
     position: absolute;
-    right: 1133px;
-    bottom: 33px;
+    left: 12.3vw;
+    top: 86.3vh;
     animation: info-tool-tip 1s ease-in 8.5s forwards;
   }
-  body .main-container .about-hero .author-info p .author-info__name {
+  body .main-container .author-info p .author-info__name {
     text-decoration: none;
     color: #ffbf00;
   }
-  body .main-container .about-hero .author-info p .author-info__name:hover {
+  body .main-container .author-info p .author-info__name:hover {
     color: #fdd14c;
   }
-  body .main-container .about-hero .author-info p .author-info__url {
+  body .main-container .author-info p .author-info__url {
     text-decoration: none;
     color: #ffbf00;
   }
-  body .main-container .about-hero .author-info p .author-info__url:hover {
+  body .main-container .author-info p .author-info__url:hover {
     text-decoration: none;
     color: #fdd14c;
   }
-  body .main-container .about-hero .tt-bgimg-circle {
+  body .main-container .tt-bgimg-circle {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     position: fixed;
-    top: 194px;
-    left: 710px;
+    top: 62.5vh;
+    left: 74.3vw;
     width: 20px;
     height: 20px;
     background-color: #ffbf00;
@@ -3890,7 +3828,7 @@ body {
     cursor: pointer;
     animation: info-tool-tip 1s linear 7s forwards;
   }
-  body .main-container .about-hero .tt-bgimg-circle .tt-bgimg-circle__icon {
+  body .main-container .tt-bgimg-circle .tt-bgimg-circle__icon {
     margin: 0 auto;
     position: absolute;
     left: 5px;
@@ -3900,7 +3838,9 @@ body {
     color: #fff;
     cursor: pointer;
   }
-  body .main-container .about-hero .tt-bgimg-circle:hover ::after {
+  body .main-container .tt-bgimg-circle:hover ::after {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     content: "The writing’s on the wall. \a A method of conveying information as old as human society itself. \aLike the cave paintings we employ the use of a narrative to communicate. \aNot just our clients’ stories, but also our own.";
     white-space: pre-line;
     position: absolute;
@@ -3915,11 +3855,13 @@ body {
     opacity: 1;
     animation: tooltip-animate 0.3s ease forwards;
   }
-  body .main-container .about-hero .tt-bgimg-circle-pulse {
+  body .main-container .tt-bgimg-circle-pulse {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     position: absolute;
     z-index: -10;
-    top: 194px;
-    left: 710px;
+    top: 62.5vh;
+    left: 74.3vw;
     width: 20px;
     height: 20px;
     background-color: transparent;
@@ -4524,10 +4466,12 @@ body {
     width: 0;
     animation: short-type 1s steps(20, end) 5.2s forwards, blink 0.8s infinite;
   }
-  body .main-container .about-hero .tt-circle {
+  body .main-container .tt-circle {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     position: absolute;
-    top: 840px;
-    left: 40px;
+    top: 85.2vh;
+    left: 9.2vw;
     width: 20px;
     height: 20px;
     background-color: rgba(138, 138, 138, 0.5960784314);
@@ -4539,7 +4483,9 @@ body {
     cursor: pointer;
     animation: info-tool-tip 1s ease-in 8.5s forwards;
   }
-  body .main-container .about-hero .tt-circle .tt-circle__icon {
+  body .main-container .tt-circle .tt-circle__icon {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     margin: 0 auto;
     position: absolute;
     left: 7px;
@@ -4549,7 +4495,9 @@ body {
     color: #fff;
     cursor: pointer;
   }
-  body .main-container .about-hero .tt-circle:hover ::after {
+  body .main-container .tt-circle:hover ::after {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     content: " Title: a-person-with-their-hand-on-a-rock";
     position: absolute;
     transition: 1s all ease;
@@ -4561,34 +4509,38 @@ body {
     font-size: 1rem;
     animation: tooltip-animate 0.3s ease forwards;
   }
-  body .main-container .about-hero .author-info {
+  body .main-container .author-info {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     opacity: 0;
     font: 0.75rem futura-pt, Helvetica, Arial, sans-serif;
     color: #ffffff;
     position: absolute;
-    right: 1618px;
-    bottom: 33px;
+    left: 9.2vw;
+    top: 86.2vh;
     animation: info-tool-tip 1s ease-in 8.5s forwards;
   }
-  body .main-container .about-hero .author-info p .author-info__name {
+  body .main-container .author-info p .author-info__name {
     text-decoration: none;
     color: #ffbf00;
   }
-  body .main-container .about-hero .author-info p .author-info__name:hover {
+  body .main-container .author-info p .author-info__name:hover {
     color: #fdd14c;
   }
-  body .main-container .about-hero .author-info p .author-info__url {
+  body .main-container .author-info p .author-info__url {
     text-decoration: none;
     color: #ffbf00;
   }
-  body .main-container .about-hero .author-info p .author-info__url:hover {
+  body .main-container .author-info p .author-info__url:hover {
     text-decoration: none;
     color: #fdd14c;
   }
-  body .main-container .about-hero .tt-bgimg-circle {
+  body .main-container .tt-bgimg-circle {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     position: fixed;
-    top: 194px;
-    left: 1337px;
+    top: 74.5vh;
+    left: 74.5vw;
     width: 20px;
     height: 20px;
     background-color: #ffbf00;
@@ -4601,7 +4553,9 @@ body {
     cursor: pointer;
     animation: info-tool-tip 1s linear 7s forwards;
   }
-  body .main-container .about-hero .tt-bgimg-circle .tt-bgimg-circle__icon {
+  body .main-container .tt-bgimg-circle .tt-bgimg-circle__icon {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     margin: 0 auto;
     position: absolute;
     left: 5px;
@@ -4611,13 +4565,15 @@ body {
     color: #fff;
     cursor: pointer;
   }
-  body .main-container .about-hero .tt-bgimg-circle:hover ::after {
+  body .main-container .tt-bgimg-circle:hover ::after {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     content: "The writing’s on the wall. \a A method of conveying information as old as human society itself. \aLike the cave paintings we employ the use of a narrative to communicate. \aNot just our clients’ stories, but also our own.";
     white-space: pre-line;
     position: absolute;
     transition: 1s all ease;
-    top: -34px;
-    left: -581px;
+    top: 30px;
+    left: -283px;
     width: 580px;
     height: 80px;
     text-shadow: 1px 1.5px 0px rgba(0, 0, 0, 0.3490196078);
@@ -4626,11 +4582,13 @@ body {
     opacity: 1;
     animation: tooltip-animate 0.3s ease forwards;
   }
-  body .main-container .about-hero .tt-bgimg-circle-pulse {
+  body .main-container .tt-bgimg-circle-pulse {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     position: absolute;
     z-index: -10;
-    top: 194px;
-    left: 1337px;
+    top: 74.5vh;
+    left: 74.5vw;
     width: 20px;
     height: 20px;
     background-color: transparent;

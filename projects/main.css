@@ -1924,8 +1924,8 @@ body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-i
     display: initial; /*NOTE: overiding the default setting in the HTML 
 so the code block won't show in the mobile and tablet variants. */
     position: absolute;
-    top: 677px;
-    left: 40px;
+    top: 84.8vh;
+    left: 3.8vw;
     width: 20px;
     height: 20px;
     background-color: rgba(138, 138, 138, 0.5960784314);
@@ -1938,6 +1938,8 @@ so the code block won't show in the mobile and tablet variants. */
     animation: info-tool-tip 1s ease-in 2.5s forwards;
   }
   body .main-container .tt-circle .tt-circle__icon {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     margin: 0 auto;
     position: absolute;
     left: 7px;
@@ -1983,8 +1985,8 @@ so the code block won't show in the mobile and tablet variants. */
     font: 0.75rem futura-pt, Helvetica, Arial, sans-serif;
     color: #ffffff;
     position: absolute;
-    right: 944px;
-    bottom: 2px;
+    left: 4vw;
+    top: 86vh;
     animation: info-tool-tip 1s ease-in 2.5s forwards;
   }
   body .main-container .author-info p .author-info__name {
@@ -2006,8 +2008,8 @@ so the code block won't show in the mobile and tablet variants. */
     display: initial; /*NOTE: overiding the default setting in the HTML 
 so the code block won't show in the mobile and tablet variants. */
     position: fixed;
-    top: 96px;
-    left: 630px;
+    top: 13.3vh;
+    left: 49.3vw;
     width: 20px;
     height: 20px;
     background-color: #ffbf00;
@@ -2052,8 +2054,8 @@ so the code block won't show in the mobile and tablet variants. */
 so the code block won't show in the mobile and tablet variants. */
     position: absolute;
     z-index: -10;
-    top: 96px;
-    left: 630px;
+    top: 13.3vh;
+    left: 39.3vw;
     width: 20px;
     height: 20px;
     background-color: transparent;
@@ -2594,9 +2596,11 @@ so the code block won't show in the mobile and tablet variants. */
     height: 366px;
   }
   body .main-container .tt-circle {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     position: absolute;
-    top: 857px;
-    left: 40px;
+    top: 84.99vh;
+    left: 12.2vw;
     width: 20px;
     height: 20px;
     background-color: rgba(138, 138, 138, 0.5960784314);
@@ -2609,6 +2613,8 @@ so the code block won't show in the mobile and tablet variants. */
     animation: info-tool-tip 1s ease-in 2.5s forwards;
   }
   body .main-container .tt-circle .tt-circle__icon {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     margin: 0 auto;
     position: absolute;
     left: 7px;
@@ -2619,6 +2625,8 @@ so the code block won't show in the mobile and tablet variants. */
     cursor: pointer;
   }
   body .main-container .tt-circle:hover ::after {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     content: " Title: gold-and-red-crown-on-brown-wooden-table";
     position: absolute;
     transition: 1s all ease;
@@ -2631,12 +2639,14 @@ so the code block won't show in the mobile and tablet variants. */
     animation: tooltip-animate 0.3s ease forwards;
   }
   body .main-container .author-info {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     opacity: 0;
     font: 0.75rem futura-pt, Helvetica, Arial, sans-serif;
     color: #ffffff;
     position: absolute;
-    right: 1106px;
-    bottom: -1px;
+    left: 12.2vw;
+    top: 86vh;
     animation: info-tool-tip 1s ease-in 2.5s forwards;
   }
   body .main-container .author-info p .author-info__name {
@@ -2655,9 +2665,11 @@ so the code block won't show in the mobile and tablet variants. */
     color: #fdd14c;
   }
   body .main-container .tt-bgimg-circle {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     position: fixed;
-    top: 96px;
-    left: 710px;
+    top: 13.3vh;
+    left: 49.3vw;
     width: 20px;
     height: 20px;
     background-color: #ffbf00;
@@ -2671,6 +2683,8 @@ so the code block won't show in the mobile and tablet variants. */
     animation: info-tool-tip 1s linear 1.5s forwards;
   }
   body .main-container .tt-bgimg-circle .tt-bgimg-circle__icon {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     margin: 0 auto;
     position: absolute;
     left: 5px;
@@ -2681,6 +2695,8 @@ so the code block won't show in the mobile and tablet variants. */
     cursor: pointer;
   }
   body .main-container .tt-bgimg-circle:hover ::after {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     content: "“Thar be Treasure!” -The main event. \aWhere we make it happen. \aHere’s an offering of our pride and joy. \aYour projects.";
     white-space: pre-line;
     position: absolute;
@@ -2696,10 +2712,12 @@ so the code block won't show in the mobile and tablet variants. */
     animation: tooltip-animate 0.3s ease forwards;
   }
   body .main-container .tt-bgimg-circle-pulse {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     position: absolute;
     z-index: -10;
-    top: 96px;
-    left: 710px;
+    top: 13.3vh;
+    left: 49.3vw;
     width: 20px;
     height: 20px;
     background-color: transparent;
@@ -3235,9 +3253,11 @@ when comparing the placement of the lower nav to the other pages.*/
     height: 490px;
   }
   body .main-container .tt-circle {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     position: absolute;
-    top: 840px;
-    left: 40px;
+    top: 84.99vh;
+    left: 9.2vw;
     width: 20px;
     height: 20px;
     background-color: rgba(138, 138, 138, 0.5960784314);
@@ -3250,6 +3270,8 @@ when comparing the placement of the lower nav to the other pages.*/
     animation: info-tool-tip 1s ease-in 2.5s forwards;
   }
   body .main-container .tt-circle .tt-circle__icon {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     margin: 0 auto;
     position: absolute;
     left: 7px;
@@ -3260,6 +3282,8 @@ when comparing the placement of the lower nav to the other pages.*/
     cursor: pointer;
   }
   body .main-container .tt-circle:hover ::after {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     content: " Title: gold-and-red-crown-on-brown-wooden-table";
     position: absolute;
     transition: 1s all ease;
@@ -3272,12 +3296,14 @@ when comparing the placement of the lower nav to the other pages.*/
     animation: tooltip-animate 0.3s ease forwards;
   }
   body .main-container .author-info {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     opacity: 0;
     font: 0.75rem futura-pt, Helvetica, Arial, sans-serif;
     color: #ffffff;
     position: absolute;
-    right: 1588px;
-    bottom: 33px;
+    left: 9.2vw;
+    top: 86vh;
     animation: info-tool-tip 1s ease-in 2.5s forwards;
   }
   body .main-container .author-info p .author-info__name {
@@ -3296,9 +3322,11 @@ when comparing the placement of the lower nav to the other pages.*/
     color: #fdd14c;
   }
   body .main-container .tt-bgimg-circle {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     position: fixed;
-    top: 96px;
-    left: 936px;
+    top: 13.3vh;
+    left: 49.5vw;
     width: 20px;
     height: 20px;
     background-color: #ffbf00;
@@ -3312,6 +3340,8 @@ when comparing the placement of the lower nav to the other pages.*/
     animation: info-tool-tip 1s linear 1.5s forwards;
   }
   body .main-container .tt-bgimg-circle .tt-bgimg-circle__icon {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     margin: 0 auto;
     position: absolute;
     left: 5px;
@@ -3322,6 +3352,8 @@ when comparing the placement of the lower nav to the other pages.*/
     cursor: pointer;
   }
   body .main-container .tt-bgimg-circle:hover ::after {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     content: "“Thar be Treasure!” -The main event. \aWhere we make it happen. \aHere’s an offering of our pride and joy. \aYour projects.";
     white-space: pre-line;
     position: absolute;
@@ -3337,10 +3369,12 @@ when comparing the placement of the lower nav to the other pages.*/
     animation: tooltip-animate 0.3s ease forwards;
   }
   body .main-container .tt-bgimg-circle-pulse {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     position: absolute;
     z-index: -10;
-    top: 96px;
-    left: 936px;
+    top: 13.3vh;
+    left: 49.5vw;
     width: 20px;
     height: 20px;
     background-color: transparent;

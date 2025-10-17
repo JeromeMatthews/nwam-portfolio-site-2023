@@ -155,13 +155,19 @@
 							animation: short-type 1s steps(20, end) 5.2s forwards, blink 0.8s infinite;
 						} //end tw-fx-3
 					}//end about-hero__text
-				} //end about-hero-copy
-				
+				} //end about-hero-copy				
+			} //end of about-hero
 
+
+			
 				.tt-circle {
+					display: initial; /*NOTE: overiding the default setting in the HTML 
+			 	 	so the code block won't show in the mobile and tablet variants. */
+
 					position: absolute;
-					top: 821px;
-					left: 40px;
+					  top: 85.5vh; //NOTE:Design Variant 
+    				left: 12.3vw; //NOTE:Design Variant  
+
 					width: 20px;
 					height: 20px;
 					background-color: #8a8a8a98;
@@ -169,6 +175,8 @@
 					border-radius: 55%;
 					box-shadow: 0.1px 0.7px #000;
 					.tt-circle__icon {
+						display: initial; /*NOTE: overiding the default setting in the HTML 
+			 	 		so the code block won't show in the mobile and tablet variants. */
 						margin: 0 auto;
 						position: absolute;
 						left: 7px;
@@ -194,6 +202,8 @@
 				// }//end tt-circle::before
 
 				.tt-circle:hover ::after {
+					display: initial; /*NOTE: overiding the default setting in the HTML 
+			 	 	so the code block won't show in the mobile and tablet variants. */
 					content: " Title: a-person-with-their-hand-on-a-rock";
 					// white-space: pre-wrap; // to allow for inserting line breaks into the content propety
 					position: absolute;
@@ -228,6 +238,8 @@
 				// } //end tt-circle-pulse
 
 				.author-info {
+					display: initial; /*NOTE: overiding the default setting in the HTML 
+			 	 	so the code block won't show in the mobile and tablet variants. */
 					opacity: 0;
 					// display: block !important; //NOTE: overiding the defualt setting in the HTML so the code block won't show in the mobile and tablet variants.
 					font: $textSmall-75 $font-list-b;
@@ -254,8 +266,8 @@
 					} //end p
 
 					position: absolute;
-					right: 1133px;
-					bottom: 33px;
+					  left: 12.3vw; //NOTE:Design Variant 
+    					top: 86.3vh; //NOTE:Design Variant 
 
 					animation: info-tool-tip 1s ease-in 8.5s forwards;
 				} //end-author-info
@@ -264,9 +276,12 @@
 				// //----------------------------------------------------------------
 
 				.tt-bgimg-circle {
+					display: initial; /*NOTE: overiding the default setting in the HTML 
+			 	 	so the code block won't show in the mobile and tablet variants. */
 					position: fixed;
-					top: 194px;
-					left: 710px;
+					top: 62.5vh; //NOTE: Design Variant 
+    				left: 74.3vw; //NOTE: Design Variant 
+
 					width: 20px;
 					height: 20px;
 					background-color: $brandColor;
@@ -292,6 +307,8 @@
 				} //end tt-circle
 
 				.tt-bgimg-circle:hover ::after {
+					display: initial; /*NOTE: overiding the default setting in the HTML 
+			 	 	so the code block won't show in the mobile and tablet variants. */
 					content: "The writing’s on the wall. \a A method of conveying information as old as human society itself. \a Like the cave paintings we employ the use of a narrative to communicate. \a Not just our clients’ stories, but also our own.";
 					white-space: pre-line; // to allow for inserting line breaks into the content propety
 					position: absolute;
@@ -314,11 +331,14 @@
 				} //end tt-circle:hover
 
 				.tt-bgimg-circle-pulse {
+					display: initial; /*NOTE: overiding the default setting in the HTML 
+			 	 	so the code block won't show in the mobile and tablet variants. */
 					position: absolute;
 					z-index: -10; //brings the pulse effect forwards to make it look like its coming from the info button.
 
-					top: 194px;
-					left: 710px;
+					top: 62.5vh; //NOTE: Design Variant 
+    				left: 74.3vw; //NOTE: Design Variant 
+
 					width: 20px;
 					height: 20px;
 					background-color: transparent;
@@ -327,9 +347,6 @@
 					opacity: 0; //initializing the opacity for the animation.
 					animation: info-tt-pulse 1.5s linear 7.5s 25;
 				} //end tt-circle-pulse
-
-
-			} //end of about-hero
 
 			.lower-nav-container {
 				display: block !important;

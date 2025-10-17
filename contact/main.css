@@ -1705,9 +1705,11 @@ body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-i
     font-size: 1.56rem;
   }
   body .main-container .tt-circle {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     position: absolute;
-    top: 561px;
-    left: 40px;
+    top: 84.5vh;
+    left: 13.8vw;
     width: 20px;
     height: 20px;
     background-color: rgba(138, 138, 138, 0.5960784314);
@@ -1720,6 +1722,8 @@ body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-i
     animation: info-tool-tip 1s ease-in 10.5s forwards;
   }
   body .main-container .tt-circle .tt-circle__icon {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     margin: 0 auto;
     position: absolute;
     left: 7px;
@@ -1730,6 +1734,8 @@ body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-i
     cursor: pointer;
   }
   body .main-container .tt-circle:hover ::after {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     content: " Title: person-standing-beside-tent";
     position: absolute;
     transition: 1s all ease;
@@ -1742,12 +1748,14 @@ body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-i
     animation: tooltip-animate 0.3s ease forwards;
   }
   body .main-container .author-info {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     opacity: 0;
     font: 0.75rem futura-pt, Helvetica, Arial, sans-serif;
     color: #ffffff;
     position: absolute;
-    right: 929px;
-    top: 563px;
+    left: 13.9vw;
+    top: 85.5vh;
     animation: info-tool-tip 1s ease-in 11.5s forwards;
   }
   body .main-container .author-info p .author-info__name {
@@ -1766,9 +1774,11 @@ body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-i
     color: #fdd14c;
   }
   body .main-container .tt-bgimg-circle {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     position: fixed;
-    top: 518px;
-    left: 391px;
+    top: 72vh;
+    left: 30.5vw;
     width: 20px;
     height: 20px;
     background-color: #ffbf00;
@@ -1782,6 +1792,8 @@ body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-i
     animation: info-tool-tip 1s linear 8.5s forwards;
   }
   body .main-container .tt-bgimg-circle .tt-bgimg-circle__icon {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     margin: 0 auto;
     position: absolute;
     left: 5px;
@@ -1792,12 +1804,14 @@ body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-i
     cursor: pointer;
   }
   body .main-container .tt-bgimg-circle:hover ::after {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     content: "Message in a bottle... \aJust as this Mongolian youth stares into the night sky with intrepidness and wonder, so too do we have an interest in what stories could be told out there. \aWe can’t wait. Let’s go, Let’s tell your story…  \a";
     white-space: pre-line;
     position: absolute;
     transition: 1s all ease;
-    top: -125px;
-    left: -308px;
+    top: -99px;
+    left: -345px;
     width: 580px;
     height: 80px;
     background-color: rgba(0, 0, 0, 0.3411764706);
@@ -1811,10 +1825,12 @@ body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-i
     animation: tooltip-animate 0.3s ease forwards;
   }
   body .main-container .tt-bgimg-circle-pulse {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     position: absolute;
     z-index: -10;
-    top: 408px;
-    left: 391px;
+    top: 72vh;
+    left: 30.5vw;
     width: 20px;
     height: 20px;
     background-color: transparent;
@@ -2307,9 +2323,11 @@ body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-i
     font-size: 1.56rem;
   }
   body .main-container .tt-circle {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     position: absolute;
-    top: 742px;
-    left: 40px;
+    top: 84.5vh;
+    left: 12.3vw;
     width: 20px;
     height: 20px;
     background-color: rgba(138, 138, 138, 0.5960784314);
@@ -2322,6 +2340,8 @@ body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-i
     animation: info-tool-tip 1s ease-in 10.5s forwards;
   }
   body .main-container .tt-circle .tt-circle__icon {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     margin: 0 auto;
     position: absolute;
     left: 7px;
@@ -2332,6 +2352,8 @@ body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-i
     cursor: pointer;
   }
   body .main-container .tt-circle:hover ::after {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     content: " Title: person-standing-beside-tent";
     position: absolute;
     transition: 1s all ease;
@@ -2344,12 +2366,14 @@ body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-i
     animation: tooltip-animate 0.3s ease forwards;
   }
   body .main-container .author-info {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     opacity: 0;
     font: 0.75rem futura-pt, Helvetica, Arial, sans-serif;
     color: #ffffff;
     position: absolute;
-    right: 1089px;
-    top: 743px;
+    left: 12.2vw;
+    top: 85.5vh;
     animation: info-tool-tip 1s ease-in 11.5s forwards;
   }
   body .main-container .author-info p .author-info__name {
@@ -2368,9 +2392,11 @@ body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-i
     color: #fdd14c;
   }
   body .main-container .tt-bgimg-circle {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     position: fixed;
-    top: 650px;
-    left: 442px;
+    top: 72vh;
+    left: 30.5vw;
     width: 20px;
     height: 20px;
     background-color: #ffbf00;
@@ -2394,12 +2420,14 @@ body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-i
     cursor: pointer;
   }
   body .main-container .tt-bgimg-circle:hover ::after {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     content: "Message in a bottle... \aJust as this Mongolian youth stares into the night sky with intrepidness and wonder, so too do we have an interest in what stories could be told out there. \aWe can’t wait. Let’s go, Let’s tell your story…  \a";
     white-space: pre-line;
     position: absolute;
     transition: 1s all ease;
-    top: -125px;
-    left: -396px;
+    top: -94px;
+    left: -330px;
     width: 580px;
     height: 80px;
     background-color: rgba(0, 0, 0, 0.3411764706);
@@ -2413,10 +2441,12 @@ body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-i
     animation: tooltip-animate 0.3s ease forwards;
   }
   body .main-container .tt-bgimg-circle-pulse {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     position: absolute;
     z-index: -10;
-    top: 540px;
-    left: 442px;
+    top: 72vh;
+    left: 30.5vw;
     width: 20px;
     height: 20px;
     background-color: transparent;
@@ -2841,9 +2871,11 @@ body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-i
     font-size: 1.56rem;
   }
   body .main-container .tt-circle {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     position: absolute;
-    top: 730px;
-    left: 40px;
+    top: 85vh;
+    left: 9.2vw;
     width: 20px;
     height: 20px;
     background-color: rgba(138, 138, 138, 0.5960784314);
@@ -2856,6 +2888,8 @@ body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-i
     animation: info-tool-tip 1s ease-in 10.5s forwards;
   }
   body .main-container .tt-circle .tt-circle__icon {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     margin: 0 auto;
     position: absolute;
     left: 7px;
@@ -2866,6 +2900,8 @@ body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-i
     cursor: pointer;
   }
   body .main-container .tt-circle:hover ::after {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     content: " Title: person-standing-beside-tent";
     position: absolute;
     transition: 1s all ease;
@@ -2878,12 +2914,14 @@ body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-i
     animation: tooltip-animate 0.3s ease forwards;
   }
   body .main-container .author-info {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     opacity: 0;
     font: 0.75rem futura-pt, Helvetica, Arial, sans-serif;
     color: #ffffff;
     position: absolute;
-    right: 1574px;
-    top: 736px;
+    left: 9.2vw;
+    top: 86.5vh;
     animation: info-tool-tip 1s ease-in 11.5s forwards;
   }
   body .main-container .author-info p .author-info__name {
@@ -2902,9 +2940,11 @@ body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-i
     color: #fdd14c;
   }
   body .main-container .tt-bgimg-circle {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     position: fixed;
-    top: 664px;
-    left: 593px;
+    top: 72vh;
+    left: 30.5vw;
     width: 20px;
     height: 20px;
     background-color: #ffbf00;
@@ -2928,12 +2968,14 @@ body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-i
     cursor: pointer;
   }
   body .main-container .tt-bgimg-circle:hover ::after {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     content: "Message in a bottle... \aJust as this Mongolian youth stares into the night sky with intrepidness and wonder, so too do we have an interest in what stories could be told out there. \aWe can’t wait. Let’s go, Let’s tell your story…  \a";
     white-space: pre-line;
     position: absolute;
     transition: 1s all ease;
-    top: -125px;
-    left: -581px;
+    top: -99px;
+    left: -315px;
     width: 580px;
     height: 80px;
     background-color: rgba(0, 0, 0, 0.3411764706);
@@ -2947,10 +2989,12 @@ body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-i
     animation: tooltip-animate 0.3s ease forwards;
   }
   body .main-container .tt-bgimg-circle-pulse {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     position: absolute;
     z-index: -10;
-    top: 554px;
-    left: 593px;
+    top: 72vh;
+    left: 30.5vw;
     width: 20px;
     height: 20px;
     background-color: transparent;

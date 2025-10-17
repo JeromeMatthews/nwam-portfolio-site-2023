@@ -290,11 +290,12 @@
 
 
 		.tt-circle {
-			 display: block; /*NOTE: overiding the default setting in the HTML 
-			 so the code block won't show in the mobile and tablet variants. */
+			  display: initial; /*NOTE: overiding the default setting in the HTML 
+			 	 so the code block won't show in the mobile and tablet variants. */
 			position: absolute;
-			top: 452px;
-			left: 40px;
+			top: 54vh; //NOTE: Design Variant 
+			left: 14vw;  //NOTE: Design Variant 
+
 			width: 20px;
 			height: 20px;
 			background-color: #8a8a8a98;
@@ -348,8 +349,8 @@
 		
 		.author-info {
 			opacity: 0;
-			 display: block; /*NOTE: overiding the default setting in the HTML 
-			 so the code block won't show in the mobile and tablet variants. */
+			 display: initial; /*NOTE: overiding the default setting in the HTML 
+			 	 so the code block won't show in the mobile and tablet variants. */
 			font: $textSmall-75 $font-list-b;
 			color: #ffffff;
 			p {
@@ -374,8 +375,9 @@
 			} //end p
 
 			position: absolute;
-			right: 927px;
-    		top: 454px;
+			top: 55vh; //NOTE: Design Variant 
+			left: 14vw; //NOTE: Design Variant 
+
 
 			animation: info-tool-tip 1s ease-in 28.5s forwards;
 		} //end-author-info
@@ -384,8 +386,8 @@
 		//----------------------------------------------------------------
 
 		.tt-bgimg-circle {
-			 display: initial; /*NOTE: overiding the default setting in the HTML 
-			 so the code block won't show in the mobile and tablet variants. */
+			  display: initial; /*NOTE: overiding the default setting in the HTML 
+			so the code block won't show in the mobile and tablet variants. */
 			position: absolute;
 			top: 213px;
 			left: 450px;
@@ -424,15 +426,18 @@
 			position: absolute;
 			transition: 1s all ease;
 			top: -57px;
-    		left: -117px;
-			width: 430px;
+			left: -15px;
+			width: 231px;
 			height: 70px;
+			background: none;
+			color: #3b3939;
+
 			// background-color: #86774855;
 			// border: 1px solid #ffffff;
 			// border-radius: 3px;
 			// box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 			font: $textBase $font-list-b;
-			color: #fff;
+			
 
 			//NOTE: Tooltip animation:
 			animation: tooltip-animate 0.3s ease forwards;

@@ -301,9 +301,12 @@
 				} //end contact-form
 			} //end of contact-container
 			.tt-circle {
+				display: initial; /*NOTE: overiding the default setting in the HTML 
+			 	so the code block won't show in the mobile and tablet variants. */
 				position: absolute;
-				top: 561px;
-				left: 40px;
+				 top: 84.5vh; //NOTE: Design Variant 
+    			left: 13.8vw;  //NOTE: Design Variant 
+
 				width: 20px;
 				height: 20px;
 				background-color: #8a8a8a98;
@@ -311,6 +314,8 @@
 				border-radius: 55%;
 				box-shadow: 0.1px 0.7px #000;
 				.tt-circle__icon {
+					display: initial; /*NOTE: overiding the default setting in the HTML 
+			 	 	so the code block won't show in the mobile and tablet variants. */
 					margin: 0 auto;
 					position: absolute;
 					left: 7px;
@@ -336,6 +341,8 @@
 			// }//end tt-circle::before
 
 			.tt-circle:hover ::after {
+				display: initial; /*NOTE: overiding the default setting in the HTML 
+			 	so the code block won't show in the mobile and tablet variants. */
 				content: " Title: person-standing-beside-tent";
 				// white-space: pre-wrap; // to allow for inserting line breaks into the content propety
 				position: absolute;
@@ -370,6 +377,8 @@
 			// } //end tt-circle-pulse
 
 			.author-info {
+				display: initial; /*NOTE: overiding the default setting in the HTML 
+			 	so the code block won't show in the mobile and tablet variants. */
 				opacity: 0;
 				// display: block !important; //NOTE: overiding the defualt setting in the HTML so the code block won't show in the mobile and tablet variants.
 				font: $textSmall-75 $font-list-b;
@@ -396,8 +405,9 @@
 				} //end p
 
 				position: absolute;
-				right: 929px;
-				top: 563px;
+				left: 13.9vw; //NOTE: Design Variant 
+    			top: 85.5vh; //NOTE: Design Variant 
+
 
 				animation: info-tool-tip 1s ease-in 11.5s forwards;
 			} //end-author-info
@@ -406,9 +416,12 @@
 			// //----------------------------------------------------------------
 
 			.tt-bgimg-circle {
+				display: initial; /*NOTE: overiding the default setting in the HTML 
+			 	so the code block won't show in the mobile and tablet variants. */
 				position: fixed;
-				top: 518px;
-				left: 391px;
+				top: 72vh;//NOTE: Design Variant 
+    			left: 30.5vw;//NOTE: Design Variant   
+
 				width: 20px;
 				height: 20px;
 				background-color: $brandColor;
@@ -417,6 +430,8 @@
 				box-shadow: 0.1px 0.7px #000;
 				z-index: 19; //NOTE: needed to add z-index to bring the element forward to be interactable. In front of the show-box
 				.tt-bgimg-circle__icon {
+					display: initial; /*NOTE: overiding the default setting in the HTML 
+			 		so the code block won't show in the mobile and tablet variants. */
 					margin: 0 auto;
 					position: absolute;
 					left: 5px;
@@ -434,12 +449,15 @@
 			} //end tt-circle
 
 			.tt-bgimg-circle:hover ::after {
+				display: initial; /*NOTE: overiding the default setting in the HTML 
+			 	so the code block won't show in the mobile and tablet variants. */
 				content: "Message in a bottle... \a Just as this Mongolian youth stares into the night sky with intrepidness and wonder, so too do we have an interest in what stories could be told out there. \a We can’t wait. Let’s go, Let’s tell your story…  \a";
 				white-space: pre-line; // to allow for inserting line breaks into the content propety
 				position: absolute;
 				transition: 1s all ease;
-				top: -125px;
-				left: -308px;
+				top: -99px; //NOTE: Design Variant 
+    			left: -345px; //NOTE: Design Variant 
+
 				width: 580px;
 				height: 80px;
 				background-color: #00000057;
@@ -456,11 +474,13 @@
 			} //end tt-circle:hover
 
 			.tt-bgimg-circle-pulse {
+				display: initial; /*NOTE: overiding the default setting in the HTML 
+			 	so the code block won't show in the mobile and tablet variants. */
 				position: absolute;
 				z-index: -10; //brings the pulse effect forwards to make it look like its coming from the info button.
 
-				top: 408px;
-				left: 391px;
+				top: 72vh;//NOTE: Design Variant 
+    			left: 30.5vw;//NOTE: Design Variant 
 				width: 20px;
 				height: 20px;
 				background-color: transparent;

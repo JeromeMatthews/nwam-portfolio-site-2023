@@ -2211,11 +2211,11 @@ body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-i
     pointer-events: none;
   }
   body .tt-circle {
-    display: block; /*NOTE: overiding the default setting in the HTML 
+    display: initial; /*NOTE: overiding the default setting in the HTML 
 so the code block won't show in the mobile and tablet variants. */
     position: absolute;
-    top: 452px;
-    left: 40px;
+    top: 54vh;
+    left: 14vw;
     width: 20px;
     height: 20px;
     background-color: rgba(138, 138, 138, 0.5960784314);
@@ -2255,13 +2255,13 @@ so the code block won't show in the mobile and tablet variants. */
   }
   body .author-info {
     opacity: 0;
-    display: block; /*NOTE: overiding the default setting in the HTML 
+    display: initial; /*NOTE: overiding the default setting in the HTML 
 so the code block won't show in the mobile and tablet variants. */
     font: 0.75rem futura-pt, Helvetica, Arial, sans-serif;
     color: #ffffff;
     position: absolute;
-    right: 927px;
-    top: 454px;
+    top: 55vh;
+    left: 14vw;
     animation: info-tool-tip 1s ease-in 28.5s forwards;
   }
   body .author-info p .author-info__name {
@@ -2316,11 +2316,12 @@ so the code block won't show in the mobile and tablet variants. */
     position: absolute;
     transition: 1s all ease;
     top: -57px;
-    left: -117px;
-    width: 430px;
+    left: -15px;
+    width: 231px;
     height: 70px;
+    background: none;
+    color: #3b3939;
     font: 1rem futura-pt, Helvetica, Arial, sans-serif;
-    color: #fff;
     animation: tooltip-animate 0.3s ease forwards;
   }
   body .tt-bgimg-circle-pulse {
@@ -2940,9 +2941,11 @@ so the code block won't show in the mobile and tablet variants. */
     pointer-events: none;
   }
   body .tt-circle {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     position: absolute;
-    top: 631px;
-    left: 40px;
+    top: 60.5vh;
+    left: 12.5vw;
     width: 20px;
     height: 20px;
     background-color: rgba(138, 138, 138, 0.5960784314);
@@ -2955,6 +2958,8 @@ so the code block won't show in the mobile and tablet variants. */
     animation: info-tool-tip 1s ease-in 28.5s forwards;
   }
   body .tt-circle .tt-circle__icon {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     margin: 0 auto;
     position: absolute;
     left: 7px;
@@ -2965,6 +2970,8 @@ so the code block won't show in the mobile and tablet variants. */
     cursor: pointer;
   }
   body .tt-circle:hover ::after {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     content: " Title: adventure-storytelling-image-dariusz-sankowski";
     position: absolute;
     transition: 1s all ease;
@@ -2977,12 +2984,14 @@ so the code block won't show in the mobile and tablet variants. */
     animation: tooltip-animate 0.3s ease forwards;
   }
   body .author-info {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     opacity: 0;
     font: 0.75rem futura-pt, Helvetica, Arial, sans-serif;
     color: #ffffff;
     position: absolute;
-    right: 1087px;
-    top: 634px;
+    left: 12.5vw;
+    top: 61.5vh;
     animation: info-tool-tip 1s ease-in 28.5s forwards;
   }
   body .author-info p .author-info__name {
@@ -3001,6 +3010,8 @@ so the code block won't show in the mobile and tablet variants. */
     color: #fdd14c;
   }
   body .tt-bgimg-circle {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     position: absolute;
     top: 332px;
     left: 510px;
@@ -3026,6 +3037,8 @@ so the code block won't show in the mobile and tablet variants. */
     cursor: pointer;
   }
   body .tt-bgimg-circle:hover ::after {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     content: "An open book. \aThe Journey, begins. \aYour story begins here \a(obviously enough). \aWe chart a course of action \a and set out on our path. ";
     white-space: pre-line;
     position: absolute;
@@ -3034,11 +3047,14 @@ so the code block won't show in the mobile and tablet variants. */
     left: -111px;
     width: 430px;
     height: 70px;
+    background: none;
+    color: #3b3939;
     font: 1rem futura-pt, Helvetica, Arial, sans-serif;
-    color: #fff;
     animation: tooltip-animate 0.3s ease forwards;
   }
   body .tt-bgimg-circle-pulse {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     position: absolute;
     z-index: -10;
     top: 332px;
@@ -3673,9 +3689,11 @@ so the code block won't show in the mobile and tablet variants. */
 }
 @media (min-width: 1920px) {
   body .tt-circle {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     position: absolute;
-    top: 148px;
-    left: 286px;
+    top: 60.5vh;
+    left: 9.3vw;
     width: 20px;
     height: 20px;
     background-color: rgba(138, 138, 138, 0.5960784314);
@@ -3688,6 +3706,8 @@ so the code block won't show in the mobile and tablet variants. */
     animation: info-tool-tip 1s ease-in 28.5s forwards;
   }
   body .tt-circle .tt-circle__icon {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     margin: 0 auto;
     position: absolute;
     left: 7px;
@@ -3698,6 +3718,8 @@ so the code block won't show in the mobile and tablet variants. */
     cursor: pointer;
   }
   body .tt-circle:hover ::after {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     content: " Title: adventure-storytelling-image-dariusz-sankowski";
     position: absolute;
     transition: 1s all ease;
@@ -3710,12 +3732,14 @@ so the code block won't show in the mobile and tablet variants. */
     animation: tooltip-animate 0.3s ease forwards;
   }
   body .author-info {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     opacity: 0;
     font: 0.75rem futura-pt, Helvetica, Arial, sans-serif;
     color: #ffffff;
     position: absolute;
-    right: 1442px;
-    top: 156px;
+    left: 9.3vw;
+    top: 61.5vh;
     animation: info-tool-tip 1s ease-in 28.5s forwards;
   }
   body .author-info p .author-info__name {
@@ -3734,6 +3758,8 @@ so the code block won't show in the mobile and tablet variants. */
     color: #fdd14c;
   }
   body .tt-bgimg-circle {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     position: absolute;
     top: 333px;
     left: 671px;
@@ -3749,6 +3775,8 @@ so the code block won't show in the mobile and tablet variants. */
     animation: info-tool-tip 1s linear 22.5s forwards;
   }
   body .tt-bgimg-circle .tt-bgimg-circle__icon {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     margin: 0 auto;
     position: absolute;
     left: 5px;
@@ -3759,6 +3787,8 @@ so the code block won't show in the mobile and tablet variants. */
     cursor: pointer;
   }
   body .tt-bgimg-circle:hover ::after {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     content: "An open book. The Journey, begins. \aYour story begins here (obviously enough). \aWe chart a course of action and set out on our path. ";
     white-space: pre-line;
     position: absolute;
@@ -3767,11 +3797,14 @@ so the code block won't show in the mobile and tablet variants. */
     left: -54px;
     width: 430px;
     height: 70px;
+    background: none;
+    color: #3b3939;
     font: 1rem futura-pt, Helvetica, Arial, sans-serif;
-    color: #fff;
     animation: tooltip-animate 0.3s ease forwards;
   }
   body .tt-bgimg-circle-pulse {
+    display: initial; /*NOTE: overiding the default setting in the HTML 
+so the code block won't show in the mobile and tablet variants. */
     position: absolute;
     z-index: -10;
     top: 333px;
