@@ -12,7 +12,7 @@ body {
   margin: 0;
   padding: 0;
   color: rgb(139, 139, 139);
-  background-color: antiquewhite;
+  background-color: rgb(0, 0, 0);
 }
 
 /*
@@ -206,6 +206,9 @@ body {
     align-content: center;
   }
   body .atf-1 {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-color: #000000;
   }
   body .atf-1 .cs-project,
@@ -359,6 +362,9 @@ body {
     font-weight: 400;
     font-style: normal;
     font-size: 0.93rem;
+  }
+  body .nav-chevrons .chevron-down {
+    display: none;
   }
   body .btl {
     height: 215px;
@@ -866,6 +872,7 @@ body {
     font-size: 1rem;
   }
   body .nav-chevrons {
+    display: initial;
     position: absolute;
     z-index: 13;
     right: 51px;
@@ -1264,6 +1271,18 @@ body {
 @media (min-width: 768px) {
   body .atf-1 {
     background-image: url("/img/img-tablet-p/tablet-ps-natours-bg.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  body .atf-1 .gradient__overlay {
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.096), transparent, black);
+    top: 0;
+    right: 0;
   }
   body .atf-1 .cs-project {
     top: -226px;
@@ -1922,7 +1941,10 @@ body {
 @media (min-width: 1024px) {
   body .atf-1 {
     height: 768px;
-    background-image: url("/img/img-tablet-l/tablet-landscape-ps-natours-page-bg.png");
+    background-image: url("/img/img-desktop-l/desktop-ps-natours-page-bg.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   body .atf-1 .cs-project {
     top: -91px;
@@ -2622,7 +2644,10 @@ body {
     animation: bg-reveal 0.5s ease-in forwards;
   }
   body .atf-1 {
-    background-image: url("/img/img-desktop-sm-1280/desktop-sm-natours-page-bg.png");
+    background-image: url("/img/img-desktop-l/desktop-ps-natours-page-bg.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   body .atf-1 .cs-project .cs-project__title {
     font-size: 1.56rem;
@@ -3372,7 +3397,10 @@ body {
     animation: bg-reveal 0.5s ease-in forwards;
   }
   body .atf-1 {
-    background-image: url("/img/img-desktop-cm-1440/desktop-ps-natours-page-bg.png");
+    background-image: url("/img/img-desktop-l/desktop-ps-natours-page-bg.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   body .atf-1 .cs-project .cs-project__services {
     padding: 0px 13px;
@@ -4136,6 +4164,9 @@ body {
   }
   body .atf-1 {
     background-image: url("/img/img-desktop-l/desktop-ps-natours-page-bg.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   body .atf-1 .cs-project .cs-project__title {
     font-size: 2.81rem;

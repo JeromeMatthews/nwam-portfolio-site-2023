@@ -23,6 +23,7 @@
 
 //SECTION MOBILE - PORTRAIT - BODY
 
+
 @media (max-width: 767px) {
 	body {
 		.atf-1,
@@ -39,7 +40,8 @@
 		}
 	
 		.atf-1 {
-			
+			@include bg-image-base-dim;
+
 			// background-image: url("/img/img-desktop-l/desktop-l-beam-bg.png");
 			background-color: #000000;
 			// background-image: -webkit-linear-gradient(180deg, #000000 0%, #ffbf00 100%);
@@ -225,6 +227,12 @@
 		} // END of BTF--
 	
 		//BETWEEN THE LINES
+
+		.nav-chevrons{
+			.chevron-down{
+				display: none;
+			}//end-chevron-down
+		}//end nav-chevrons
 	
 		.btl {
 			height: 215px;

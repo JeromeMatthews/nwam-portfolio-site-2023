@@ -12,8 +12,9 @@
         animation: bg-reveal 0.5s ease-in forwards;
 
         .page-container {
-            background-image: url("/img/img-tablet-l/tablet-landscape-blog-bg.png");
-            @include pageContainer;
+            background-image: url("/img/img-desktop-l/desktop-blog-bg.png");
+			@include pageContainer;
+			@include bg-image-base-dim;
 
             .page__surface{
             

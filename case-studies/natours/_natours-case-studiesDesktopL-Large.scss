@@ -68,6 +68,7 @@
          //NOTE: only needs to add the single background image change below.    All other page styles imported from design template in partial folder:
             background-image: url("/img/img-desktop-l/desktop-ps-natours-page-bg.png");
 			// background-color: #000;
+			@include bg-image-base-dim;
 
             .cs-project {
 			

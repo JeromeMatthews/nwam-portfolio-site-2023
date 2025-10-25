@@ -11,7 +11,7 @@ body {
   margin: 0;
   padding: 0;
   color: rgb(139, 139, 139);
-  background-color: antiquewhite;
+  background-color: rgb(0, 0, 0);
 }
 
 /*
@@ -184,11 +184,23 @@ body {
 }
 
 body {
-  background-color: black;
   background-image: url("/img/img-mobile-p/book-stack-p-a-bg.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
+}
+body .gradient__overlay {
+  display: block;
+  height: 101%;
+  width: 100vw;
+  position: fixed;
+  background: linear-gradient(to left, black, transparent);
+  top: 0;
+  right: 0;
+}
+body .main-container {
+  /*Added a position context to the main container 
+  so it automatically stacks on top of the gradient overlay*/
 }
 body .main-container .title-container {
   display: flex;
@@ -276,6 +288,8 @@ body .mobile-cta-footer {
   width: 100vw;
 }
 body .mobile-cta-footer .mobile-cta-footer__container {
+  /*Added a position context to the main container 
+  so it automatically stacks on top of the gradient overlay*/
   margin-top: 15vh;
 }
 body .mobile-cta-footer .mobile-cta-footer__container .mobile-cta-footer-branding {

@@ -16,6 +16,7 @@
         .page-container {
             background-image: url("/img/img-tablet-p/tablet-blog-bg.png");
             @include pageContainer;
+			@include bg-image-base-dim;
 
             .page__surface{
             

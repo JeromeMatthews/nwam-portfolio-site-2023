@@ -41,11 +41,20 @@
 		}
 
 		.atf-1 {
+			.gradient__overlay {
+            display: block;
+            height: 100vh;
+            width: 100vw;
+            position: absolute; //NOTE: Remove it from Doc Flow. 
+            background: linear-gradient(to right,transparent, black); //NOTE: Creates Gradient overlay from black to transparent creating a mask reveal of underlying image without any fixed values assigned.   
+            top: 0;  //NOTE: Direction to generate the gradient overlay from. 
+            right: 0;  //NOTE: Direction to generate the gradient overlay from.
+		} //end gradient__overlay
 			// height: 800px;
-			background-image: url("/img/img-mobile-p/nishida-sensei-hi5-overlayedit.jpg");
-			background-repeat: no-repeat;
-			background-position: -150px center; // first value left and right, second - top and bottom.
-			background-attachment: scroll;
+			background-image: url("/img/img-tablet-p/tablet-ps-ng-bg.png");
+			// background-repeat: no-repeat;
+			// background-position: -150px center; // first value left and right, second - top and bottom.
+			// background-attachment: scroll;
 
 			.cs-project,
 			.cs-project__title,
@@ -163,7 +172,16 @@
 
 		.btf-2 {
 			// height: 800px;
-
+			.gradient__overlay {
+            display: block;
+            height: 100vh;
+            width: 100vw;
+            position: absolute; //NOTE: Remove it from Doc Flow. 
+            background: linear-gradient(to right,transparent, black); //NOTE: Creates Gradient overlay from black to transparent creating a mask reveal of underlying image without any fixed values assigned.   
+            top: 0;  //NOTE: Direction to generate the gradient overlay from. 
+            right: 0;  //NOTE: Direction to generate the gradient overlay from.
+		} //end gradient__overlay
+		
 			background-image: url("/img/img-mobile-p/shortwood-bg-overlayedit.jpg");
 			background-repeat: no-repeat;
 
@@ -279,6 +297,11 @@
 		} // END of BTF--
 
 		//BETWEEN THE LINES
+		.nav-chevrons{
+			.chevron-down{
+				display: none;
+			}//end-chevron-down
+		}//end nav-chevrons
 
 		.btl {
 			height: 215px;

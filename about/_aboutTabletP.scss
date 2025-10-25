@@ -30,6 +30,7 @@
 				// } //end page__surface
 				perspective: none;
 				transform-style:unset;
+				@include bg-image-base-dim;
 			
 			} //end page-continer
 	

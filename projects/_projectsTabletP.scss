@@ -14,6 +14,7 @@
 				background: url("/img/img-tablet-p/tablet-ps-bg.png");
 				/*Using the  !important flag to overide the assignment of the background images for the diffrent veiwport variants of the design.*/
 				@include pageContainer;
+				@include bg-image-base-dim;
 	
 				.page__surface {
 					@include pageSurface;

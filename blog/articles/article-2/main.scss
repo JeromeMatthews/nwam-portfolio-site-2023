@@ -4,6 +4,18 @@
 @import "../../../partials/navs/nav-base-mobile";
 
 body {
+
+	.gradient__overlay {
+				display: block;
+				height: 101%; //NOTE physically extendes the dimensions of the overlay vercially beyond any likely scrolling depth of the body.
+				width: 100vw;
+				position: fixed; //NOTE: Remove it from Doc Flow. 
+				background: linear-gradient(to left, black, transparent); //NOTE: Creates Gradient overlay from black to transparent creating a mask reveal of underlying image without any fixed values assigned.   
+				top: 0;  //NOTE: Direction to generate the gradient overlay from. 
+				right: 0;  //NOTE: Direction to generate the gradient overlay from.
+		} //end gradient__overlay
+
+
 	background-image: url("/img/img-mobile-p/book-stack-p-a-bg.png");
 	background-repeat: no-repeat;
 	background-position: center center;

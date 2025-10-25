@@ -13,6 +13,7 @@
 			background-image: url("/img/img-desktop-l/desktop-contact-bg.png");
 
 			@include pageContainer;
+			@include bg-image-base-dim;
 
 			.page__surface {
 				@include pageSurface;

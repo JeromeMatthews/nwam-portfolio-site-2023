@@ -11,7 +11,7 @@ body {
   margin: 0;
   padding: 0;
   color: rgb(139, 139, 139);
-  background-color: antiquewhite;
+  background-color: rgb(0, 0, 0);
 }
 
 /*
@@ -217,7 +217,7 @@ body {
    MOBILE PHONES RANGE  -   >400~px */
 }
 body .page-container {
-  background-image: url("/img/img-mobile-p/m-p-home-bg-img.png");
+  background-image: url("/img/img-tablet-p/tabletP-home-bg.png");
   /*Using the  !important flag to overide the assignment of the background images for the diffrent veiwport variants of the design.*/
   width: 100vw;
   height: 100vh;
@@ -225,6 +225,18 @@ body .page-container {
   perspective: 2500px;
   transform-style: preserve-3d;
   transition: transform 0.5s ease-in;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body .page-container .gradient__overlay {
+  display: block;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  background: radial-gradient(transparent, rgba(218, 177, 13, 0.137), black);
+  top: 0;
+  right: 0;
 }
 body .page-container .page__surface {
   position: absolute;
@@ -729,6 +741,9 @@ body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-i
     perspective: 2500px;
     transform-style: preserve-3d;
     transition: transform 0.5s ease-in;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   body .page-container .page__surface {
     position: absolute;
@@ -1352,7 +1367,7 @@ body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-i
     ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >1024px */
   }
   body .page-container {
-    background: url("/img/img-tablet-l/tablet-landscape-home-bg.png");
+    background: url("/img/img-desktop-l/desktop-home-bg.png");
     /*Using the  !important flag to overide the assignment of the background images for the diffrent veiwport variants of the design.*/
     width: 100vw;
     height: 100vh;
@@ -1360,6 +1375,9 @@ body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-i
     perspective: 2500px;
     transform-style: preserve-3d;
     transition: transform 0.5s ease-in;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   body .page-container .page__surface {
     position: absolute;
@@ -1995,7 +2013,7 @@ body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-i
     top: 220px;
   }
   body .page-container {
-    background: url("/img/img-desktop-sm-1280/desktop-sm-home-bg.PNG");
+    background: url("/img/img-desktop-l/desktop-home-bg.png");
     /*Using the  !important flag to overide the assignment of the background images for the diffrent veiwport variants of the design.*/
     width: 100vw;
     height: 100vh;
@@ -2003,6 +2021,9 @@ body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-i
     perspective: 2500px;
     transform-style: preserve-3d;
     transition: transform 0.5s ease-in;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   body .page-container .page__surface {
     position: absolute;
@@ -2726,7 +2747,7 @@ so the code block won't show in the mobile and tablet variants. */
     top: 220px;
   }
   body .page-container {
-    background: url("/img/img-desktop-cm-1440/desktop-cm-home-bg.PNG");
+    background: url("/img/img-desktop-l/desktop-home-bg.png");
     /*Using the  !important flag to overide the assignment of the background images for the diffrent veiwport variants of the design.*/
     width: 100vw;
     height: 100vh;
@@ -2734,6 +2755,9 @@ so the code block won't show in the mobile and tablet variants. */
     perspective: 2500px;
     transform-style: preserve-3d;
     transition: transform 0.5s ease-in;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   body .page-container .page__surface {
     position: absolute;
@@ -3463,7 +3487,7 @@ so the code block won't show in the mobile and tablet variants. */
     ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >1920px */
   }
   body .page-container {
-    background: url("/img/img-desktop-l/desktop-home-bg-grad-alt.png");
+    background: url("/img/img-desktop-l/desktop-home-bg.png");
     /*Using the  !important flag to overide the assignment of the background images for the diffrent veiwport variants of the design.*/
     width: 100vw;
     height: 100vh;
@@ -3471,6 +3495,9 @@ so the code block won't show in the mobile and tablet variants. */
     perspective: 2500px;
     transform-style: preserve-3d;
     transition: transform 0.5s ease-in;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   body .page-container .page__surface {
     position: absolute;

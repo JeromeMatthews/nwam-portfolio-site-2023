@@ -21,6 +21,7 @@
 			background-image: url("/img/img-tablet-p/tablet-contact-bg.png");
 
 			@include pageContainer;
+			@include bg-image-base-dim;
 
 			.page__surface {
 				@include pageSurface;

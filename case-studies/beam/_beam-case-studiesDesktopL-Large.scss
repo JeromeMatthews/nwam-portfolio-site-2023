@@ -8,6 +8,7 @@
         .atf-1 {
          //NOTE: only needs to add the single background image change below.    All other page styles imported from design template in partial folder:
             background-image: url("/img/img-desktop-l/desktop-l-beam-bg.png");
+            @include bg-image-base-dim;
 
 
             .cs-project{

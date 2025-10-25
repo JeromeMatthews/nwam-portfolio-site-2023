@@ -46,14 +46,24 @@ body {
 	animation: bg-reveal 0.5s ease-in forwards;
 
 	.page-container {
-		background-image: url("/img/img-mobile-p/mobile-ps-bg.png");
+		background-image: url("/img/img-tablet-p/tablet-ps-bg.png");;
 		
 		@include pageContainer;
+		@include bg-image-base-dim;
 
+		.gradient__overlay {
+		display: block;
+		height: 100vh;
+		width: 100vw;
+		position: absolute; //NOTE: Remove it from Doc Flow. 
+		background: linear-gradient(to left, black, transparent); //NOTE: Creates Gradient overlay from black to transparent creating a mask reveal of underlying image without any fixed values assigned.   
+		top: 0;  //NOTE: Direction to generate the gradient overlay from. 
+		right: 0;  //NOTE: Direction to generate the gradient overlay from.
+		} //end gradient__overlay
 		.page__surface {
 			@include pageSurface;
 		} //end page__surface
-	} //end page-continer
+	} //end page-container
 
 	.page-flipped {
 		transform: translateX(0.5%) rotateY(90deg);

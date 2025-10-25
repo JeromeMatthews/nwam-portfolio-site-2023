@@ -12,7 +12,7 @@ body {
   margin: 0;
   padding: 0;
   color: rgb(139, 139, 139);
-  background-color: antiquewhite;
+  background-color: rgb(0, 0, 0);
 }
 
 /*
@@ -203,13 +203,25 @@ body {
   /*!SECTION END ANIMATIONS & TRANSITIONS */
 }
 body .page-container {
-  background-image: url("/img/img-mobile-p/mobile-ps-bg.png");
+  background-image: url("/img/img-tablet-p/tablet-ps-bg.png");
   width: 100vw;
   height: 100vh;
   transform-origin: left center;
   perspective: 2500px;
   transform-style: preserve-3d;
   transition: transform 0.5s ease-in;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body .page-container .gradient__overlay {
+  display: block;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  background: linear-gradient(to left, black, transparent);
+  top: 0;
+  right: 0;
 }
 body .page-container .page__surface {
   position: absolute;
@@ -673,6 +685,9 @@ body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-i
     perspective: 2500px;
     transform-style: preserve-3d;
     transition: transform 0.5s ease-in;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   body .page-container .page__surface {
     position: absolute;
@@ -1208,7 +1223,7 @@ body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-i
     z-index: 9;
   }
   body .page-container {
-    background: url("/img/img-tablet-l/tablet-landscape-ps-bg.png");
+    background: url("/img/img-desktop-l/desktop-ps-bg-alt1.png");
     /*Using the  !important flag to overide the assignment of the background images for the diffrent veiwport variants of the design.*/
     width: 100vw;
     height: 100vh;
@@ -1216,6 +1231,9 @@ body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-i
     perspective: 2500px;
     transform-style: preserve-3d;
     transition: transform 0.5s ease-in;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   body .page-container .page__surface {
     position: absolute;
@@ -1779,7 +1797,7 @@ body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-i
     /*!SECTION END ANIMATIONS & TRANSITIONS */
   }
   body .page-container {
-    background: url("/img/img-desktop-sm-1280/desktop-sm-ps-bg.PNG");
+    background: url("/img/img-desktop-l/desktop-ps-bg-alt1.png");
     /*Using the  !important flag to overide the assignment of the background images for the diffrent veiwport variants of the design.*/
     width: 100vw;
     height: 100vh;
@@ -1787,6 +1805,9 @@ body .lower-nav-wrapper .lower-nav-container .main-footer .main-footer__social-i
     perspective: 2500px;
     transform-style: preserve-3d;
     transition: transform 0.5s ease-in;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   body .page-container .page__surface {
     position: absolute;
@@ -2453,7 +2474,7 @@ so the code block won't show in the mobile and tablet variants. */
     /*!SECTION END ANIMATIONS & TRANSITIONS */
   }
   body .page-container {
-    background: url("/img/img-desktop-cm-1440/desktop-cm-ps-bg.PNG");
+    background: url("/img/img-desktop-l/desktop-ps-bg-alt1.png");
     /*Using the  !important flag to overide the assignment of the background images for the diffrent veiwport variants of the design.*/
     width: 100vw;
     height: 100vh;
@@ -2461,6 +2482,9 @@ so the code block won't show in the mobile and tablet variants. */
     perspective: 2500px;
     transform-style: preserve-3d;
     transition: transform 0.5s ease-in;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   body .page-container .page__surface {
     position: absolute;
@@ -3126,6 +3150,9 @@ when comparing the placement of the lower nav to the other pages.*/
     perspective: 2500px;
     transform-style: preserve-3d;
     transition: transform 0.5s ease-in;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   body .page-container .page__surface {
     position: absolute;

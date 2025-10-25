@@ -293,6 +293,17 @@
 //!SECTION PSEUDO ELEMENTS & CLASSES
 
 //!SECTION END - UI & UX ELEMENTS
+
+//SECTION BACKGROUND DIMENSIONS - UNIVERSAL BASE
+@mixin bg-image-base-dim{
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+//!SECTION END - BACKGROUND DIMENSIONS - UNIVERSAL BASE
+
 //!SECTION END - MIXINS 
 
 //!SECTION UNIVERSAL VARIABLES, LISTS & MIXINS - END

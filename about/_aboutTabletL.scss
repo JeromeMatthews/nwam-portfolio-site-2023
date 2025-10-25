@@ -8,7 +8,7 @@
 		animation: about-bg-reveal 0.5s ease-in forwards;
 
 		.page-container {
-			background: url("/img/img-tablet-l/tablet-landscape-about-bg.png");
+			background: url("/img/img-desktop-l/desktop-about-bg-alt1.png");
 			/*Using the  !important flag to overide the assignment of the background images for the diffrent veiwport variants of the design.*/
 			/*NOTE: removes the transform and perspective assignments 
 				so containing block is only based on viewport for fixed navigation elements. 
@@ -20,6 +20,8 @@
 				// } //end page__surface
 				perspective: none;
 				transform-style:unset;
+
+				@include bg-image-base-dim;
 		} //end page-continer
 
 		.page-flipped {

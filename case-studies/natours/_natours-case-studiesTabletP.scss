@@ -6,8 +6,21 @@
 
         //NOTE: Background image generated specfic to case study instance of the base template for design variant: Tablet-Portrait-768px. Platforming off of the template pointer to the main refereence in case-studies sub folder in the paritals folder. 
         .atf-1 {
+
+        .gradient__overlay {
+            display: block;
+            height: 100vh;
+            width: 100vw;
+            position: absolute; //NOTE: Remove it from Doc Flow. 
+            background: linear-gradient(to right,rgba(255, 255, 255, 0.096),transparent, black); //NOTE: Creates Gradient overlay from black to transparent creating a mask reveal of underlying image without any fixed values assigned.   
+            top: 0;  //NOTE: Direction to generate the gradient overlay from. 
+            right: 0;  //NOTE: Direction to generate the gradient overlay from.
+		} //end gradient__overlay
+
          //NOTE: only needs to add the single background image change below.    All other page styles imported from design template in partial folder:
             background-image: url("/img/img-tablet-p/tablet-ps-natours-bg.png");
+            
+			@include bg-image-base-dim;
             .cs-project {
                 top: -226px;
                 height: 400px;

@@ -1,6 +1,9 @@
 .main-container {
-		
-	
+		//NOTE: Design Variant. 
+        /*Added a position context to the main container 
+        so it automatically stacks on top of the gradient overlay*/
+		// position: relative;
+        // z-index: 2;
 
     //NOTE: NEW STURCTURE to better work with layout for flex
     .title-container{
@@ -96,8 +99,12 @@
             
 
         .mobile-cta-footer__container {
+        //NOTE: Design Variant. 
+        /*Added a position context to the main container 
+        so it automatically stacks on top of the gradient overlay*/
+		// position: relative;
+        // z-index: 2;
                 margin-top: 15vh;
-
                 .mobile-cta-footer-branding {
                     
                     display: flex;

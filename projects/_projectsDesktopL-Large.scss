@@ -20,6 +20,7 @@
 			background: url("/img/img-desktop-l/desktop-ps-bg-alt1.png");
 			/*Using the  !important flag to overide the assignment of the background images for the diffrent veiwport variants of the design.*/
 			@include pageContainer;
+			@include bg-image-base-dim;
 
 			.page__surface {
 				@include pageSurface;

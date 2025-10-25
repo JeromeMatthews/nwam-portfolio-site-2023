@@ -26,9 +26,10 @@
 				background-color: #000000;
 				animation: bg-reveal 4.5s ease-in forwards;
 		.page-container {
-			background: url("/img/img-desktop-cm-1440/desktop-cm-home-bg.PNG");
+			background: url("/img/img-desktop-l/desktop-home-bg.png");
 			/*Using the  !important flag to overide the assignment of the background images for the diffrent veiwport variants of the design.*/
 			@include pageContainer;
+			@include bg-image-base-dim;
 
 			.page__surface {
 				@include pageSurface;

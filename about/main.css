@@ -12,7 +12,7 @@ body {
   margin: 0;
   padding: 0;
   color: rgb(139, 139, 139);
-  background-color: antiquewhite;
+  background-color: rgb(0, 0, 0);
 }
 
 /*
@@ -191,7 +191,7 @@ body {
   animation: about-bg-reveal 0.5s ease-in forwards;
 }
 body .page-container {
-  background: url("/img/img-mobile-p/mobile-about-bg.png");
+  background: url("/img/img-tablet-p/tablet-about-bg.png");
   /*Using the  !important flag to overide the assignment of the background images for the diffrent veiwport variants of the design.*/
   width: 100vw;
   height: 100vh;
@@ -199,6 +199,18 @@ body .page-container {
   perspective: 2500px;
   transform-style: preserve-3d;
   transition: transform 0.5s ease-in;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body .page-container .gradient__overlay {
+  display: block;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  background: linear-gradient(to left, transparent, black);
+  top: 0;
+  right: 0;
 }
 body .page-container .page__surface {
   position: absolute;
@@ -778,7 +790,7 @@ body {
   margin: 0;
   padding: 0;
   color: rgb(139, 139, 139);
-  background-color: antiquewhite;
+  background-color: rgb(0, 0, 0);
 }
 
 /*
@@ -952,7 +964,7 @@ body {
 
 @media (max-width: 330px) {
   body .page-container {
-    background: url("/img/img-mobile-p/mobile-about-bg.png");
+    background: url("/img/img-tablet-p/tablet-about-bg.png");
     /*Using the  !important flag to overide the assignment of the background images for the diffrent veiwport variants of the design.*/
     /*NOTE: removes the transform and perspective assignments 
     so containing block is only based on viewport for fixed navigation elements. 
@@ -960,6 +972,9 @@ body {
     */
     perspective: none;
     transform-style: unset;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   body .page-flipped {
     transform: translateX(0.5%) rotateY(90deg);
@@ -1592,6 +1607,9 @@ body {
     */
     perspective: none;
     transform-style: unset;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   body .page-flipped {
     transform: translateX(0.5%) rotateY(90deg);
@@ -2202,7 +2220,7 @@ body {
     /*!SECTION END ANIMATIONS & TRANSITIONS */
   }
   body .page-container {
-    background: url("/img/img-tablet-l/tablet-landscape-about-bg.png");
+    background: url("/img/img-desktop-l/desktop-about-bg-alt1.png");
     /*Using the  !important flag to overide the assignment of the background images for the diffrent veiwport variants of the design.*/
     /*NOTE: removes the transform and perspective assignments 
     	so containing block is only based on viewport for fixed navigation elements. 
@@ -2210,6 +2228,9 @@ body {
     	*/
     perspective: none;
     transform-style: unset;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   body .page-flipped {
     transform: translateX(0.5%) rotateY(90deg);
@@ -2870,7 +2891,7 @@ body {
     /*!SECTION END ANIMATIONS & TRANSITIONS */
   }
   body .page-container {
-    background: url("/img/img-desktop-sm-1280/desktop-sm-about-bg.png");
+    background: url("/img/img-desktop-l/desktop-about-bg-alt1.png");
     /*Using the  !important flag to overide the assignment of the background images for the diffrent veiwport variants of the design.*/
     width: 100vw;
     height: 100vh;
@@ -2878,6 +2899,9 @@ body {
     perspective: 2500px;
     transform-style: preserve-3d;
     transition: transform 0.5s ease-in;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   body .page-container .page__surface {
     position: absolute;
@@ -3603,7 +3627,7 @@ so the code block won't show in the mobile and tablet variants. */
     /*!SECTION END ANIMATIONS & TRANSITIONS */
   }
   body .page-container {
-    background: url("/img/img-desktop-cm-1440/desktop-cm-about-bg.png");
+    background: url("/img/img-desktop-l/desktop-about-bg-alt1.png");
     /*Using the  !important flag to overide the assignment of the background images for the diffrent veiwport variants of the design.*/
     width: 100vw;
     height: 100vh;
@@ -3611,6 +3635,9 @@ so the code block won't show in the mobile and tablet variants. */
     perspective: 2500px;
     transform-style: preserve-3d;
     transition: transform 0.5s ease-in;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   body .page-container .page__surface {
     position: absolute;
@@ -4339,6 +4366,9 @@ so the code block won't show in the mobile and tablet variants. */
     perspective: 2500px;
     transform-style: preserve-3d;
     transition: transform 0.5s ease-in;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   body .page-container .page__surface {
     position: absolute;

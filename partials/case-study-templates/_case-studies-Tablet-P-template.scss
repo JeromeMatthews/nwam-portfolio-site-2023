@@ -364,6 +364,7 @@
 		} // END of BTF--
 
 		.nav-chevrons{
+			display: initial; //NOTE: Activates the nav chevron that's off by default.
 			position: absolute;
 			z-index: 13;
 			right: 51px;

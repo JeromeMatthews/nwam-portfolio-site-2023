@@ -12,7 +12,7 @@ body {
   margin: 0;
   padding: 0;
   color: rgb(139, 139, 139);
-  background-color: antiquewhite;
+  background-color: rgb(0, 0, 0);
 }
 
 /*
@@ -208,10 +208,16 @@ body {
     justify-content: center;
   }
   body .atf-1 {
-    background-image: url("/img/img-mobile-p/nishida-sensei-hi5-overlayedit.jpg");
-    background-repeat: no-repeat;
-    background-position: -150px center;
-    background-attachment: scroll;
+    background-image: url("/img/img-tablet-p/tablet-ps-ng-bg.png");
+  }
+  body .atf-1 .gradient__overlay {
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background: linear-gradient(to right, transparent, black);
+    top: 0;
+    right: 0;
   }
   body .atf-1 .cs-project,
   body .atf-1 .cs-project__title,
@@ -321,6 +327,15 @@ body {
     color: #fff;
     text-align: center;
   }
+  body .btf-2 .gradient__overlay {
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background: linear-gradient(to right, transparent, black);
+    top: 0;
+    right: 0;
+  }
   body .btf-2 .cs-project-desc__title,
   body .btf-2 .cs-project-sum__title {
     font-family: proxima-nova, Arial, Helvetica, sans-serif;
@@ -409,6 +424,9 @@ body {
     font-weight: 400;
     font-style: normal;
     font-size: 0.93rem;
+  }
+  body .nav-chevrons .chevron-down {
+    display: none;
   }
   body .btl {
     height: 215px;
@@ -916,6 +934,7 @@ body {
     font-size: 1rem;
   }
   body .nav-chevrons {
+    display: initial;
     position: absolute;
     z-index: 13;
     right: 51px;
@@ -1314,6 +1333,18 @@ body {
 @media (min-width: 768px) {
   body .atf-1 {
     background-image: url("/img/img-tablet-p/tablet-ps-ng-bg.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  body .atf-1 .gradient__overlay {
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background: linear-gradient(to right, transparent, black);
+    top: 0;
+    right: 0;
   }
   body .atf-1 .tt-circle {
     top: 67px;
@@ -1956,7 +1987,10 @@ body {
 /*!SECTION ABOVE MOBILE PHONES - TABLET RANGE  - LANDSCAPE -   >1024px */
 @media (min-width: 1024px) {
   body .atf-1 {
-    background-image: url("/img/img-tablet-l/tablet-landscape-ps-ng-bg.png");
+    background-image: url("/img/img-desktop-l/desktop-ps-ng-bg.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   body .atf-1 .tt-circle {
     top: 69px;
@@ -2611,7 +2645,10 @@ body {
 /*!SECTION: END - [RESPONSIVE DESIGN] */
 @media (min-width: 1280px) {
   body .atf-1 {
-    background-image: url("/img/img-desktop-sm-1280/desktop-sm-ps-ng-bg.PNG");
+    background-image: url("/img/img-desktop-l/desktop-ps-ng-bg.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   body .atf-1 .cs-project .cs-project__title {
     font-size: 1.56rem;
@@ -3389,7 +3426,10 @@ body {
 /*!SECTION: END - [RESPONSIVE DESIGN] */
 @media (min-width: 1440px) {
   body .atf-1 {
-    background-image: url("/img/img-desktop-cm-1440/desktop-cm-ps-ng-bg.PNG");
+    background-image: url("/img/img-desktop-l/desktop-ps-ng-bg.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   body .atf-1 .cs-client-details .tt-circle:hover ::after {
     content: "Nishida’s Gymnastics recreational and competitive boys and girls gymnastics clubs. \a\aThe group of clubs provides recreational and competitive level gymnastics in both Men’s and Women’s Artistic Gymnastics training.";
@@ -4095,5 +4135,8 @@ body {
 @media (min-width: 1920px) {
   body .atf-1 {
     background-image: url("/img/img-desktop-l/desktop-ps-ng-bg.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }/*# sourceMappingURL=main.css.map */

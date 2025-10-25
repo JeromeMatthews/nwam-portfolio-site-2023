@@ -12,7 +12,7 @@ body {
   margin: 0;
   padding: 0;
   color: rgb(139, 139, 139);
-  background-color: antiquewhite;
+  background-color: rgb(0, 0, 0);
 }
 
 /*
@@ -203,6 +203,18 @@ body .page-container {
   perspective: 2500px;
   transform-style: preserve-3d;
   transition: transform 0.5s ease-in;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body .page-container .gradient__overlay {
+  display: block;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  background: linear-gradient(to left, black, transparent);
+  top: 0;
+  right: 0;
 }
 body .page-container .page__surface {
   position: absolute;
@@ -249,7 +261,7 @@ body .main-container .blog-box__link .blog-box {
   width: 197px;
   height: 197px;
   background-image: url("/img/img-mobile-p/book-stack.png");
-  color: #000;
+  color: #1f1d1d;
 }
 body .main-container .blog-box__link .blog-box .blog-box__title,
 body .main-container .blog-box__link .blog-box .blog-box__subtitle,
@@ -341,6 +353,9 @@ body .main-container .blog-box__link .blog-box__text-container {
     perspective: 2500px;
     transform-style: preserve-3d;
     transition: transform 0.5s ease-in;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   body .page-container .page__surface {
     position: absolute;
@@ -443,13 +458,16 @@ body .main-container .blog-box__link .blog-box__text-container {
     /*!SECTION END ANIMATIONS & TRANSITIONS */
   }
   body .page-container {
-    background-image: url("/img/img-tablet-l/tablet-landscape-blog-bg.png");
+    background-image: url("/img/img-desktop-l/desktop-blog-bg.png");
     width: 100vw;
     height: 100vh;
     transform-origin: left center;
     perspective: 2500px;
     transform-style: preserve-3d;
     transition: transform 0.5s ease-in;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   body .page-container .page__surface {
     position: absolute;
@@ -618,13 +636,16 @@ body .main-container .blog-box__link .blog-box__text-container {
     /*!SECTION END ANIMATIONS & TRANSITIONS */
   }
   body .page-container {
-    background-image: url("/img/img-desktop-sm-1280/desktop-sm-blog-bg.png");
+    background-image: url("/img/img-desktop-l/desktop-blog-bg.png");
     width: 100vw;
     height: 100vh;
     transform-origin: left center;
     perspective: 2500px;
     transform-style: preserve-3d;
     transition: transform 0.5s ease-in;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   body .page-container .page__surface {
     position: absolute;
@@ -845,13 +866,16 @@ body .main-container .blog-box__link .blog-box__text-container {
     /*!SECTION END ANIMATIONS & TRANSITIONS */
   }
   body .page-container {
-    background-image: url("/img/img-desktop-cm-1440/desktop-cm-blog-bg.png");
+    background-image: url("/img/img-desktop-l/desktop-blog-bg.png");
     width: 100vw;
     height: 100vh;
     transform-origin: left center;
     perspective: 2500px;
     transform-style: preserve-3d;
     transition: transform 0.5s ease-in;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   body .page-container .page__surface {
     position: absolute;
@@ -1081,6 +1105,9 @@ body .main-container .blog-box__link .blog-box__text-container {
     perspective: 2500px;
     transform-style: preserve-3d;
     transition: transform 0.5s ease-in;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   body .page-container .page__surface {
     position: absolute;
